@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="My Square Face Icon logo">
+  <rect width="128" height="128" rx="24" fill="#c9f3ee"/>
+  <rect x="26" y="28" width="76" height="76" rx="18" fill="#ffd7b5" stroke="#17212b" stroke-width="6"/>
+  <path d="M30 48c7-20 56-26 70 0v20H30V48Z" fill="#46322b"/>
+  <circle cx="50" cy="66" r="6" fill="#17212b"/>
+  <circle cx="78" cy="66" r="6" fill="#17212b"/>
+  <path d="M52 84c8 10 16 10 24 0" fill="none" stroke="#17212b" stroke-width="6" stroke-linecap="round"/>
+  <rect x="34" y="78" width="14" height="8" rx="4" fill="#ff6f61" opacity=".55"/>
+  <rect x="80" y="78" width="14" height="8" rx="4" fill="#ff6f61" opacity=".55"/>
+</svg>

@@ -1,0 +1,4 @@
+ADMIN_PASSWORD=change-this-before-preview
+SESSION_SECRET=change-this-random-secret-before-preview
+CLOUDFLARE_WEB_ANALYTICS_TOKEN=
+MSFI_USE_CLOUDFLARE_BINDINGS=true

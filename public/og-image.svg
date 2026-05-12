@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="My Square Face Icon preview">
+  <rect width="1200" height="630" fill="#f7fbfa"/>
+  <rect x="70" y="70" width="1060" height="490" rx="28" fill="#ffffff" stroke="#dcebe8" stroke-width="4"/>
+  <text x="115" y="180" fill="#0f766e" font-family="Arial, sans-serif" font-size="30" font-weight="700">Free HTML5 Canvas avatar maker</text>
+  <text x="115" y="265" fill="#17212b" font-family="Arial, sans-serif" font-size="72" font-weight="800">My Square Face Icon</text>
+  <text x="115" y="330" fill="#5f6f7a" font-family="Arial, sans-serif" font-size="34">Create cute square face icons online.</text>
+  <rect x="115" y="395" width="250" height="64" rx="12" fill="#20b8aa"/>
+  <text x="150" y="437" fill="#ffffff" font-family="Arial, sans-serif" font-size="26" font-weight="800">Download PNG</text>
+  <rect x="760" y="120" width="300" height="300" rx="52" fill="#c9f3ee" stroke="#17212b" stroke-width="8"/>
+  <rect x="812" y="166" width="196" height="196" rx="44" fill="#ffd7b5" stroke="#17212b" stroke-width="8"/>
+  <path d="M804 205c26-70 174-82 214 0v58H804v-58Z" fill="#46322b"/>
+  <circle cx="875" cy="265" r="14" fill="#17212b"/>
+  <circle cx="945" cy="265" r="14" fill="#17212b"/>
+  <path d="M875 315c25 28 46 28 70 0" fill="none" stroke="#17212b" stroke-width="10" stroke-linecap="round"/>
+  <rect x="830" y="302" width="44" height="20" rx="10" fill="#ff6f61" opacity=".55"/>
+  <rect x="948" y="302" width="44" height="20" rx="10" fill="#ff6f61" opacity=".55"/>
+  <text x="770" y="485" fill="#17212b" font-family="Arial, sans-serif" font-size="28" font-weight="700">Randomize • Customize • Save</text>
+</svg>

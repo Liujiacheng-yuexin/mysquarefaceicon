@@ -1,0 +1,20 @@
+name = "mysquarefaceicon"
+main = ".open-next/worker.js"
+compatibility_date = "2026-05-12"
+compatibility_flags = ["nodejs_compat"]
+
+assets = { directory = ".open-next/assets", binding = "ASSETS" }
+
+[[kv_namespaces]]
+binding = "COMMENTS_KV"
+id = "8c034ff6aa5e434caa73bc8bbcf8a46b"
+preview_id = "0c9e3397b4dd4389aa4b2d2ba45a1d40"
+
+[[r2_buckets]]
+binding = "COMMENT_IMAGES_R2"
+bucket_name = "mysquarefaceicon-comment-images"
+preview_bucket_name = "mysquarefaceicon-comment-images-preview"
+
+[vars]
+CLOUDFLARE_WEB_ANALYTICS_TOKEN = ""
+MSFI_USE_CLOUDFLARE_BINDINGS = "true"
