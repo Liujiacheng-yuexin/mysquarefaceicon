@@ -369,7 +369,7 @@ h3 {
   left: 50%;
   bottom: 16px;
   z-index: 1;
-  display: inline-flex;
+  display: none;
   align-items: center;
   gap: 8px;
   padding: 11px 16px;
@@ -386,6 +386,13 @@ h3 {
 
 .flash-cover.is-loading {
   cursor: progress;
+}
+
+.flash-cover.is-loading .flash-cover-status {
+  top: 50%;
+  bottom: auto;
+  display: inline-flex;
+  transform: translate(-50%, -50%);
 }
 
 .flash-cover.is-loading .flash-cover-status svg {
