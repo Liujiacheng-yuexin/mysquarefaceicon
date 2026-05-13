@@ -20,11 +20,13 @@
 - Navigation
 - Tool-first hero with Ruffle/SWF generator
 - HTML5 Canvas fallback for load failures
-- How to use
-- Features
-- Use cases
+- Why use this generator
+- How it works
+- Perfect for
+- What is a Square Face Generator
+- Share your creation / comments
 - FAQ
-- Footer
+- Grouped footer links
 
 ## Admin and API Routes
 

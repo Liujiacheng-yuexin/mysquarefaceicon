@@ -86,20 +86,28 @@ export type LocaleContent = {
 const sharedFeatures = {
   en: [
     {
-      title: "Runs in Modern Browsers",
-      text: "Ruffle runs the authorized SWF in modern browsers without requiring the old Flash Player plugin."
+      title: "Simple & Fun",
+      text: "Open the square face generator, press Start Game, and begin making a cute icon without a long setup flow."
+    },
+    {
+      title: "Free to Use",
+      text: "The generator is free to play in your browser and does not require signup, payment, or an installed app."
     },
     {
       title: "Original Game Feel",
-      text: "The main tool keeps the familiar Flash game interaction instead of approximating every part with new drawings."
+      text: "The main tool keeps the familiar Flash avatar maker interaction by running the authorized SWF through Ruffle."
+    },
+    {
+      title: "Browser Friendly",
+      text: "Ruffle lets modern browsers play the generator without installing the old Flash Player plugin."
     },
     {
       title: "Fallback Available",
       text: "If Ruffle or the SWF cannot load, a lightweight HTML5 Canvas fallback can still create a square icon."
     },
     {
-      title: "No Signup",
-      text: "Start the generator immediately and create a profile icon without an account."
+      title: "Made for Profile Icons",
+      text: "The square layout works well for Discord, TikTok, YouTube, forums, game profiles, and small account avatars."
     }
   ],
   es: [
@@ -148,11 +156,16 @@ const sharedFeatures = {
 
 const sharedFaq = {
   en: [
-    { question: "What is My Square Face Icon?", answer: "It is a free square face generator that runs an authorized Flash avatar game through Ruffle." },
-    { question: "Is it free?", answer: "Yes. You can start the game and create square face icons without signup." },
-    { question: "Why does it use Ruffle?", answer: "Ruffle lets modern browsers play the authorized SWF without installing the old Flash plugin." },
-    { question: "Can I post a comment with an image?", answer: "Yes. Comments enter review first, and approved comments can appear publicly." },
-    { question: "Does it work on mobile?", answer: "The page is responsive. The original SWF works best on screens with enough space for the full game." }
+    { question: "What is My Square Face Icon?", answer: "My Square Face Icon is a free square face generator for creating cute square avatar icons in the browser." },
+    { question: "Is this Square Face Generator completely free?", answer: "Yes. You can start the generator and create square face icons without signup or payment." },
+    { question: "What size are Square Face Generator avatars?", answer: "The original game is designed around small square profile icons. Use the in-game save option when available, or use the HTML5 fallback for a downloadable canvas icon." },
+    { question: "Can I use Square Face Generator avatars commercially?", answer: "You can use your generated icons for personal profiles, communities, and most small projects. Avoid using the tool to imitate trademarks, copyrighted characters, or another person's identity." },
+    { question: "Does Square Face Generator need installation?", answer: "No. The page runs in the browser with Ruffle for the authorized SWF and does not require installing Flash Player." },
+    { question: "Does Square Face Generator work on mobile?", answer: "The website is responsive, but the original SWF is easiest to use on screens with enough room for the full game interface." },
+    { question: "How many square face icons can I create?", answer: "You can keep creating new combinations with the game controls. The exact options depend on the original generator interface." },
+    { question: "Is My Square Face Icon privacy protected?", answer: "The generator loads in your browser. Comments and optional uploads are reviewed before publishing, and email addresses are not shown publicly." },
+    { question: "Is Square Face Generator like Picrew?", answer: "It has a similar avatar-maker purpose, but this site focuses on a square face icon game experience rather than copying Picrew's platform or artwork." },
+    { question: "Why does it use Ruffle?", answer: "Ruffle lets modern browsers play the authorized SWF without installing the old Flash plugin." }
   ],
   es: [
     { question: "Que es My Square Face Icon?", answer: "Es un generador gratis que ejecuta un juego Flash autorizado con Ruffle." },
@@ -207,9 +220,10 @@ const sharedFaq = {
 
 const baseUseCases = {
   en: [
-    { title: "Chat Apps", text: "Make a recognizable square face icon for Discord, Slack, or forum accounts." },
-    { title: "Social Media", text: "Create a playful profile image for TikTok, YouTube, Instagram, or X." },
-    { title: "Games", text: "Use a simple character icon for game profiles, lobbies, and community pages." }
+    { title: "Social Media Profiles", text: "Create a playful square face icon for TikTok, YouTube, Instagram, X, or any profile page that uses a small avatar." },
+    { title: "Game Profiles", text: "Use a simple character icon for game accounts, lobbies, clans, and casual player communities." },
+    { title: "Team & Community", text: "Make matching square avatars for friend groups, chat servers, classroom projects, or small online communities." },
+    { title: "Creative Projects", text: "Use a cute square face as a placeholder character, profile badge, mood board detail, or lightweight visual identity." }
   ],
   es: [
     { title: "Apps de chat", text: "Crea un icono para Discord, Slack o foros." },
@@ -259,8 +273,8 @@ export const locales: Record<LocaleCode, LocaleContent> = {
     description: "Play a free square face generator online. Create cute square face icons in a Ruffle-powered avatar game with an HTML5 fallback.",
     nav: { generator: "Generator", howTo: "How to Use", comments: "Comments", faq: "FAQ" },
     hero: { eyebrow: "Free Ruffle-powered avatar game", h1: "Square Face Generator", text: "Play the square face avatar maker in your browser. Start the game, customize a cute icon, and share your creation with the community." },
-    sections: { howEyebrow: "Simple workflow", howTitle: "How to Use the Square Face Icon Generator", galleryEyebrow: "Original examples", galleryTitle: "Square Face Icon Ideas", galleryNote: "These examples are simple CSS previews inspired by the generator style. Start the game above to create your own square face icon.", featuresEyebrow: "Built for quick profiles", featuresTitle: "Why Use My Square Face Icon?", useEyebrow: "Use cases", useTitle: "Square Avatars for Every Profile", commentsEyebrow: "Community", commentsTitle: "User Comments", faqEyebrow: "FAQ", faqTitle: "Frequently Asked Questions" },
-    steps: [{ title: "Start the game", text: "Press Start Game to load the authorized SWF through Ruffle. The page only loads the Flash runtime after you choose to play." }, { title: "Customize the face", text: "Use the original game controls to choose face parts, hair, expression, clothing, accessories, and colors." }, { title: "Save or use fallback", text: "Use the game save option when supported. If Ruffle cannot load the SWF, use the included HTML5 Canvas fallback." }],
+    sections: { howEyebrow: "Simple workflow", howTitle: "How It Works", galleryEyebrow: "Guide", galleryTitle: "What Is a Square Face Generator?", galleryNote: "Learn how this browser-based generator helps create cute square profile icons without installing anything.", featuresEyebrow: "Built for quick profiles", featuresTitle: "Why Use This Square Face Generator?", useEyebrow: "Perfect for", useTitle: "Perfect For", commentsEyebrow: "Community", commentsTitle: "Share Your Creation", faqEyebrow: "FAQ", faqTitle: "Frequently Asked Questions" },
+    steps: [{ title: "Choose face parts", text: "Press Start Game and use the original tabs to choose face parts, hair, eyes, mouth, clothes, and accessories." }, { title: "Adjust colors & styles", text: "Try different combinations until your square face icon matches the mood you want for your profile or project." }, { title: "Save your square face icon", text: "Use the game save option when supported. If Ruffle cannot load the SWF, use the included HTML5 Canvas fallback." }],
     features: sharedFeatures.en,
     useCases: baseUseCases.en,
     faq: sharedFaq.en,

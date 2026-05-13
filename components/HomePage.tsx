@@ -9,6 +9,24 @@ type HomePageProps = {
   locale: LocaleCode;
 };
 
+const aboutCards = [
+  {
+    title: "Welcome to a Cute Square Face Generator",
+    text:
+      "My Square Face Icon is built for people who want a quick, playful square avatar without opening a design app. The page keeps the generator in the first screen, so the main action is always simple: start the game, customize the face, and save an icon when the game workflow supports it."
+  },
+  {
+    title: "Why Choose This Square Face Icon Generator?",
+    text:
+      "The tool focuses on a compact square icon style that reads well at small sizes. It uses a self-hosted Ruffle setup for the authorized SWF and includes a Canvas fallback so visitors still have a usable path if the Flash runtime cannot load."
+  },
+  {
+    title: "Tips for Creating a Better Avatar",
+    text:
+      "Start with a clear expression, then adjust hair, eyes, mouth, clothes, and accessories. Strong contrast and simple colors usually work best for tiny profile pictures because the icon remains recognizable in chat lists, comments, and game lobbies."
+  }
+];
+
 export default function HomePage({ locale }: HomePageProps) {
   const content = locales[locale];
   const canonicalUrl = getLocaleUrl(locale);
@@ -107,7 +125,22 @@ export default function HomePage({ locale }: HomePageProps) {
           <ShareButtons share={content.share} title={content.title} url={canonicalUrl} />
         </section>
 
-        <section className="content-band" id="how-to-use">
+        <section className="content-band">
+          <div className="section-heading">
+            <p className="eyebrow">{content.sections.featuresEyebrow}</p>
+            <h2>{content.sections.featuresTitle}</h2>
+          </div>
+          <div className="feature-grid">
+            {content.features.map((feature) => (
+              <article className="info-card" key={feature.title}>
+                <h3>{feature.title}</h3>
+                <p>{feature.text}</p>
+              </article>
+            ))}
+          </div>
+        </section>
+
+        <section className="content-band alt-band" id="how-to-use">
           <div className="section-heading">
             <p className="eyebrow">{content.sections.howEyebrow}</p>
             <h2>{content.sections.howTitle}</h2>
@@ -125,21 +158,6 @@ export default function HomePage({ locale }: HomePageProps) {
 
         <section className="content-band">
           <div className="section-heading">
-            <p className="eyebrow">{content.sections.featuresEyebrow}</p>
-            <h2>{content.sections.featuresTitle}</h2>
-          </div>
-          <div className="feature-grid">
-            {content.features.map((feature) => (
-              <article className="info-card" key={feature.title}>
-                <h3>{feature.title}</h3>
-                <p>{feature.text}</p>
-              </article>
-            ))}
-          </div>
-        </section>
-
-        <section className="content-band alt-band">
-          <div className="section-heading">
             <p className="eyebrow">{content.sections.useEyebrow}</p>
             <h2>{content.sections.useTitle}</h2>
           </div>
@@ -148,6 +166,22 @@ export default function HomePage({ locale }: HomePageProps) {
               <article key={useCase.title}>
                 <h3>{useCase.title}</h3>
                 <p>{useCase.text}</p>
+              </article>
+            ))}
+          </div>
+        </section>
+
+        <section className="content-band alt-band" id="about">
+          <div className="section-heading">
+            <p className="eyebrow">{content.sections.galleryEyebrow}</p>
+            <h2>{content.sections.galleryTitle}</h2>
+            <p className="section-intro">{content.sections.galleryNote}</p>
+          </div>
+          <div className="text-grid">
+            {aboutCards.map((card) => (
+              <article className="text-card" key={card.title}>
+                <h3>{card.title}</h3>
+                <p>{card.text}</p>
               </article>
             ))}
           </div>
@@ -178,11 +212,28 @@ export default function HomePage({ locale }: HomePageProps) {
       </main>
 
       <footer className="site-footer">
-        <p>&copy; 2026 My Square Face Icon. {content.footer.description}</p>
-        <div className="footer-links">
-          <a href="/privacy-policy">{content.footer.privacy}</a>
-          <a href="/terms-of-service">{content.footer.terms}</a>
-          <a href={`${siteUrl}/sitemap.xml`}>Sitemap</a>
+        <div className="footer-brand">
+          <p>&copy; 2026 My Square Face Icon.</p>
+          <p>{content.footer.description}</p>
+        </div>
+        <div className="footer-grid" aria-label="Footer navigation">
+          <div>
+            <h3>Quick Links</h3>
+            <a href="#generator">Square Face Generator</a>
+            <a href="#how-to-use">How It Works</a>
+            <a href="#faq">FAQ</a>
+          </div>
+          <div>
+            <h3>Resources</h3>
+            <a href="#about">What Is a Square Face Generator?</a>
+            <a href="#comments">Share Your Creation</a>
+            <a href={`${siteUrl}/sitemap.xml`}>Sitemap</a>
+          </div>
+          <div>
+            <h3>Legal</h3>
+            <a href="/privacy-policy">{content.footer.privacy}</a>
+            <a href="/terms-of-service">{content.footer.terms}</a>
+          </div>
         </div>
       </footer>
       <InstallPrompt />
