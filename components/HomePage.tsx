@@ -27,6 +27,24 @@ const aboutCards = [
   }
 ];
 
+const resourceCards = [
+  {
+    title: "Square Face Icon Generator Guide",
+    text: "Learn what makes a square face icon work well and when to use the original game or the fallback tool.",
+    href: "/square-face-icon-generator"
+  },
+  {
+    title: "Cute Square Avatar Generator Tips",
+    text: "See practical ideas for making a softer, friendlier square avatar for social profiles and communities.",
+    href: "/cute-square-avatar-generator"
+  },
+  {
+    title: "Discord Profile Icon Guide",
+    text: "Make a small avatar that still looks clear in servers, friend lists, and chat replies.",
+    href: "/blog/how-to-make-a-cute-discord-profile-icon"
+  }
+];
+
 export default function HomePage({ locale }: HomePageProps) {
   const content = locales[locale];
   const canonicalUrl = getLocaleUrl(locale);
@@ -95,6 +113,8 @@ export default function HomePage({ locale }: HomePageProps) {
             <Grid3X3 aria-hidden="true" size={16} />
             How to Use
           </a>
+          <a href="/square-face-icon-generator">Icon Guide</a>
+          <a href="/blog">Blog</a>
           <div className="language-links" aria-label="Language selection">
             <span className="language-current">
               {content.label}
@@ -187,6 +207,24 @@ export default function HomePage({ locale }: HomePageProps) {
           </div>
         </section>
 
+        <section className="content-band">
+          <div className="section-heading">
+            <p className="eyebrow">Useful next steps</p>
+            <h2>Square Face Icon Resources</h2>
+            <p className="section-intro">
+              Use these guides when you want a clearer profile icon, a more playful avatar style, or a better fit for a specific platform.
+            </p>
+          </div>
+          <div className="resource-grid">
+            {resourceCards.map((card) => (
+              <a className="resource-card" href={card.href} key={card.href}>
+                <h3>{card.title}</h3>
+                <p>{card.text}</p>
+              </a>
+            ))}
+          </div>
+        </section>
+
         <section className="content-band" id="comments">
           <div className="section-heading">
             <p className="eyebrow">{content.sections.commentsEyebrow}</p>
@@ -221,11 +259,14 @@ export default function HomePage({ locale }: HomePageProps) {
             <h3>Quick Links</h3>
             <a href="#generator">Square Face Generator</a>
             <a href="#how-to-use">How It Works</a>
+            <a href="/square-face-icon-generator">Icon Guide</a>
             <a href="#faq">FAQ</a>
           </div>
           <div>
             <h3>Resources</h3>
             <a href="#about">What Is a Square Face Generator?</a>
+            <a href="/cute-square-avatar-generator">Cute Square Avatars</a>
+            <a href="/blog">Blog</a>
             <a href="#comments">Share Your Creation</a>
             <a href={`${siteUrl}/sitemap.xml`}>Sitemap</a>
           </div>

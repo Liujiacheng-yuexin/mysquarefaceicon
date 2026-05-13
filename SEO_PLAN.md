@@ -26,3 +26,19 @@
 - Keep `MSFI_USE_CLOUDFLARE_BINDINGS=true` in Wrangler variables so comment
   routes use KV/R2 on Cloudflare while normal local Next runs use the memory
   fallback.
+
+## Current SEO Architecture
+
+- Homepage `/`: primary ranking and tool page for `square face generator`.
+- Support pages:
+  - `/square-face-icon-generator`: secondary keyword guide and internal link hub.
+  - `/cute-square-avatar-generator`: style-focused long-tail support page.
+- Blog hub `/blog`: guide index, not a thin company news page.
+- Blog guide `/blog/how-to-make-a-cute-discord-profile-icon`: first long-tail ranking page.
+- Legal pages remain low-priority indexable utility pages.
+
+## Page Quality Rules
+
+- Do not publish a new support page unless it has a unique search intent, unique metadata, visible H1, useful body content, and internal links back to the generator.
+- Do not add a URL to sitemap until it has a stable canonical URL and at least one relevant internal link.
+- If a page receives no impressions, no clicks, and no useful role after review, merge it into a stronger page or remove it from sitemap before expanding similar pages.

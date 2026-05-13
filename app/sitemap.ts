@@ -3,8 +3,15 @@ import { getLocaleUrl, localeCodes } from "@/lib/locales";
 
 const baseUrl = "https://mysquarefaceicon.com";
 
+const contentPaths = [
+  "/square-face-icon-generator",
+  "/cute-square-avatar-generator",
+  "/blog",
+  "/blog/how-to-make-a-cute-discord-profile-icon"
+];
+
 export default function sitemap(): MetadataRoute.Sitemap {
-  const lastModified = new Date("2026-05-12");
+  const lastModified = new Date("2026-05-13");
 
   return [
     ...localeCodes.map((locale) => ({
@@ -12,6 +19,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified,
       changeFrequency: "weekly",
       priority: locale === "en" ? 1 : 0.8
+    }) satisfies MetadataRoute.Sitemap[number]),
+    ...contentPaths.map((path) => ({
+      url: `${baseUrl}${path}`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: path === "/blog" ? 0.65 : 0.7
     }) satisfies MetadataRoute.Sitemap[number]),
     {
       url: `${baseUrl}/privacy-policy`,
