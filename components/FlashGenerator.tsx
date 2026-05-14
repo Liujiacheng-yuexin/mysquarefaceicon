@@ -1,6 +1,6 @@
 "use client";
 
-import { Maximize2, Play, RefreshCw } from "lucide-react";
+import { Maximize2, RefreshCw } from "lucide-react";
 import type { KeyboardEvent } from "react";
 import { useRef, useState } from "react";
 import AvatarGenerator from "./AvatarGenerator";
@@ -175,10 +175,12 @@ export default function FlashGenerator() {
               }}
               onKeyDown={handleCoverKeyDown}
             >
-              <span className="flash-cover-status" aria-live="polite">
-                {loadState === "loading" ? <RefreshCw aria-hidden="true" size={18} /> : <Play aria-hidden="true" size={18} />}
-                {loadState === "loading" ? message : "Click to start"}
-              </span>
+              {loadState === "loading" && (
+                <span className="flash-cover-status" aria-live="polite">
+                  <RefreshCw aria-hidden="true" size={18} />
+                  {message}
+                </span>
+              )}
             </div>
           )}
           <button className="flash-fullscreen" type="button" onClick={toggleFullscreen} aria-label="Fullscreen game">
