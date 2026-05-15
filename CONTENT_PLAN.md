@@ -9,9 +9,13 @@
 - Support guide pages:
   - `/square-face-icon-generator`
   - `/cute-square-avatar-generator`
+  - `/pixel-square-face-maker`
 - Blog hub and first long-tail guide:
   - `/blog`
   - `/blog/how-to-make-a-cute-discord-profile-icon`
+  - `/blog/discord-avatar-size-guide`
+  - `/blog/tiktok-profile-icon-ideas`
+  - `/blog/square-avatar-vs-round-avatar`
 
 ## Content Rules
 
@@ -25,7 +29,7 @@
 
 | Page Idea | Search Intent | Timing |
 |---|---|---|
-| Blog guide: Discord avatar sizes | Users making profile icons for Discord | After GSC impressions |
-| Blog guide: TikTok profile icon ideas | Users seeking social avatar ideas | After GSC impressions |
-| Blog guide: Square avatar vs round avatar | Users comparing profile image shapes | After GSC impressions |
-| Support page: pixel square face maker | Users looking for pixel-style avatar tools | After GSC impressions |
+| Blog guide: Cute profile picture ideas | Users looking for avatar inspiration | After GSC impressions |
+| Blog guide: Best avatar style for Discord servers | Users choosing community identity styles | After GSC impressions |
+| Support page: square avatar generator | Users searching for a broader avatar generator term | After GSC impressions |
+| Future gallery: user square face creations | Users looking for examples and inspiration | Only after enough approved original comments/images |

@@ -2,7 +2,7 @@ import FlashGenerator from "@/components/FlashGenerator";
 import ShareButtons from "@/components/ShareButtons";
 import CommentSection from "@/components/CommentSection";
 import InstallPrompt from "@/components/InstallPrompt";
-import { ChevronDown, Grid3X3 } from "lucide-react";
+import { ChevronDown, CirclePlay, Grid3X3, ShieldCheck, Sparkles } from "lucide-react";
 import { getLocaleUrl, localeCodes, locales, siteUrl, type LocaleCode } from "@/lib/locales";
 
 type HomePageProps = {
@@ -42,8 +42,25 @@ const resourceCards = [
     title: "Discord Profile Icon Guide",
     text: "Make a small avatar that still looks clear in servers, friend lists, and chat replies.",
     href: "/blog/how-to-make-a-cute-discord-profile-icon"
+  },
+  {
+    title: "Discord Avatar Size Guide",
+    text: "Learn how square source images behave when profile icons are displayed small or cropped.",
+    href: "/blog/discord-avatar-size-guide"
+  },
+  {
+    title: "TikTok Profile Icon Ideas",
+    text: "Explore cute square avatar styles for short-form creator profiles and mobile previews.",
+    href: "/blog/tiktok-profile-icon-ideas"
+  },
+  {
+    title: "Pixel Square Face Maker",
+    text: "Use simple shapes and strong colors to make a retro, pixel-inspired square avatar.",
+    href: "/pixel-square-face-maker"
   }
 ];
+
+const heroIcons = [CirclePlay, ShieldCheck, Sparkles];
 
 export default function HomePage({ locale }: HomePageProps) {
   const content = locales[locale];
@@ -134,15 +151,44 @@ export default function HomePage({ locale }: HomePageProps) {
 
       <main>
         <section className="hero-section" id="generator">
-          <div className="hero-copy hero-copy-compact">
-            <div>
+          <div className="hero-inner">
+            <div className="hero-copy hero-copy-stacked">
               <p className="eyebrow">{content.hero.eyebrow}</p>
               <h1>{content.hero.h1}</h1>
+              <p className="hero-text">{content.hero.text}</p>
+              <div className="hero-actions" aria-label="Generator actions">
+                <a className="hero-primary-link" href="#generator-tool">
+                  <CirclePlay aria-hidden="true" size={20} />
+                  Start Creating
+                </a>
+                <a className="hero-secondary-link" href="#how-to-use">
+                  {content.nav.howTo}
+                </a>
+              </div>
+              <div className="hero-proof-grid" aria-label="Generator highlights">
+                {content.features.slice(0, 3).map((feature, index) => {
+                  const Icon = heroIcons[index] ?? Sparkles;
+                  return (
+                    <div className="hero-proof-item" key={feature.title}>
+                      <Icon aria-hidden="true" size={18} />
+                      <span>{feature.title}</span>
+                    </div>
+                  );
+                })}
+              </div>
             </div>
-            <p className="hero-text">{content.hero.text}</p>
+            <div className="hero-tool-card" id="generator-tool">
+              <div className="tool-card-header">
+                <div>
+                  <p className="tool-card-kicker">Browser avatar tool</p>
+                  <p className="tool-card-title">{content.nav.generator}</p>
+                </div>
+                <span className="tool-card-badge">Free</span>
+              </div>
+              <FlashGenerator />
+              <ShareButtons share={content.share} title={content.title} url={canonicalUrl} />
+            </div>
           </div>
-          <FlashGenerator />
-          <ShareButtons share={content.share} title={content.title} url={canonicalUrl} />
         </section>
 
         <section className="content-band">
@@ -266,6 +312,7 @@ export default function HomePage({ locale }: HomePageProps) {
             <h3>Resources</h3>
             <a href="#about">What Is a Square Face Generator?</a>
             <a href="/cute-square-avatar-generator">Cute Square Avatars</a>
+            <a href="/pixel-square-face-maker">Pixel Square Face Maker</a>
             <a href="/blog">Blog</a>
             <a href="#comments">Share Your Creation</a>
             <a href={`${siteUrl}/sitemap.xml`}>Sitemap</a>

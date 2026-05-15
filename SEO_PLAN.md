@@ -33,8 +33,12 @@
 - Support pages:
   - `/square-face-icon-generator`: secondary keyword guide and internal link hub.
   - `/cute-square-avatar-generator`: style-focused long-tail support page.
+  - `/pixel-square-face-maker`: pixel-inspired avatar workflow support page.
 - Blog hub `/blog`: guide index, not a thin company news page.
 - Blog guide `/blog/how-to-make-a-cute-discord-profile-icon`: first long-tail ranking page.
+- Blog guide `/blog/discord-avatar-size-guide`: Discord avatar sizing and crop-safe icon intent.
+- Blog guide `/blog/tiktok-profile-icon-ideas`: TikTok avatar inspiration intent.
+- Blog guide `/blog/square-avatar-vs-round-avatar`: avatar shape comparison intent.
 - Legal pages remain low-priority indexable utility pages.
 
 ## Page Quality Rules

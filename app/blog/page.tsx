@@ -47,6 +47,18 @@ export default function BlogIndexPage() {
               <h3>How to Make a Cute Discord Profile Icon</h3>
               <p>Choose a readable expression, simple colors, and a square avatar style that works in chat lists and servers.</p>
             </a>
+            <a href="/blog/discord-avatar-size-guide">
+              <h3>Discord Avatar Size Guide</h3>
+              <p>Plan a square source image, protect the center, and make your avatar readable in small Discord previews.</p>
+            </a>
+            <a href="/blog/tiktok-profile-icon-ideas">
+              <h3>TikTok Profile Icon Ideas</h3>
+              <p>Explore cute square avatar ideas for creator profiles, comments, and mobile profile previews.</p>
+            </a>
+            <a href="/blog/square-avatar-vs-round-avatar">
+              <h3>Square Avatar vs Round Avatar</h3>
+              <p>Compare square source images, round platform crops, and the safest profile icon workflow.</p>
+            </a>
           </div>
         </section>
 
@@ -64,6 +76,10 @@ export default function BlogIndexPage() {
             <a href="/cute-square-avatar-generator">
               <h3>Cute Square Avatar Generator Tips</h3>
               <p>Make your avatar feel softer, friendlier, and easier to recognize.</p>
+            </a>
+            <a href="/pixel-square-face-maker">
+              <h3>Pixel Square Face Maker</h3>
+              <p>Use simple details and strong colors to create a pixel-inspired square face avatar.</p>
             </a>
           </div>
         </section>

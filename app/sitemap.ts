@@ -6,12 +6,16 @@ const baseUrl = "https://mysquarefaceicon.com";
 const contentPaths = [
   "/square-face-icon-generator",
   "/cute-square-avatar-generator",
+  "/pixel-square-face-maker",
   "/blog",
-  "/blog/how-to-make-a-cute-discord-profile-icon"
+  "/blog/how-to-make-a-cute-discord-profile-icon",
+  "/blog/discord-avatar-size-guide",
+  "/blog/tiktok-profile-icon-ideas",
+  "/blog/square-avatar-vs-round-avatar"
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const lastModified = new Date("2026-05-13");
+  const lastModified = new Date("2026-05-15");
 
   return [
     ...localeCodes.map((locale) => ({
