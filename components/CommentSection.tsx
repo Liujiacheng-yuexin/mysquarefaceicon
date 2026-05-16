@@ -1,6 +1,7 @@
 "use client";
 
-import { ImagePlus, Send } from "lucide-react";
+import Image from "next/image";
+import { ImagePlus, Send, Star } from "lucide-react";
 import { useEffect, useMemo, useState } from "react";
 import type { FormEvent } from "react";
 import type { LocaleCode, LocaleContent } from "@/lib/locales";
@@ -90,7 +91,7 @@ export default function CommentSection({ locale, content }: CommentSectionProps)
                 onClick={() => setRating(star)}
                 type="button"
               >
-                ★
+                <Star aria-hidden="true" fill="currentColor" size={18} />
               </button>
             ))}
           </div>
@@ -118,11 +119,20 @@ export default function CommentSection({ locale, content }: CommentSectionProps)
               <span className="comment-avatar">{comment.name.slice(0, 1).toUpperCase()}</span>
               <div>
                 <strong>{comment.name}</strong>
-                <span>{"★".repeat(comment.rating)}</span>
+                <span>{`Rating ${comment.rating}/5`}</span>
               </div>
             </div>
             <p>{comment.content}</p>
-            {comment.imageUrl && <img src={comment.imageUrl} alt={`Square face icon shared by ${comment.name}`} loading="lazy" />}
+            {comment.imageUrl && (
+              <Image
+                src={comment.imageUrl}
+                alt={`Square face icon shared by ${comment.name}`}
+                width={220}
+                height={220}
+                loading="lazy"
+                unoptimized
+              />
+            )}
           </article>
         ))}
       </div>

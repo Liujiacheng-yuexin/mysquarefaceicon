@@ -6,12 +6,13 @@ export default function SiteHeader() {
         <span>Square Face Generator</span>
       </a>
       <nav className="nav-links" aria-label="Primary navigation">
-        <a href="/#generator">Generator</a>
+        <a href="/#maker">Generator</a>
+        <a href="/free-avatar-maker">Free Avatar Maker</a>
+        <a href="/gallery">Gallery</a>
         <a href="/square-face-icon-generator">Icon Guide</a>
-        <a href="/cute-square-avatar-generator">Cute Avatars</a>
-        <a href="/pixel-square-face-maker">Pixel Maker</a>
         <a href="/blog">Blog</a>
-        <a className="nav-cta" href="/#generator">Start Creating</a>
+        <a href="/about-us">About</a>
+        <a className="nav-cta" href="/#maker">Start Creating</a>
       </nav>
     </header>
   );

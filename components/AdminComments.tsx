@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { Check, RefreshCw, Trash2, X } from "lucide-react";
 import { useState } from "react";
 
@@ -85,11 +86,20 @@ export default function AdminComments() {
               <strong>{comment.name}</strong>
               <span>{comment.email}</span>
               <span>
-                {comment.locale} / {comment.status} / {"★".repeat(comment.rating)}
+                {comment.locale} / {comment.status} / Rating {comment.rating}/5
               </span>
             </div>
             <p>{comment.content}</p>
-            {comment.imageUrl && <img src={comment.imageUrl} alt={`Upload from ${comment.name}`} loading="lazy" />}
+            {comment.imageUrl && (
+              <Image
+                src={comment.imageUrl}
+                alt={`Upload from ${comment.name}`}
+                width={220}
+                height={220}
+                loading="lazy"
+                unoptimized
+              />
+            )}
             <div className="admin-actions">
               <button className="tool-button secondary" type="button" onClick={() => updateStatus(comment.id, "approved")}>
                 <Check aria-hidden="true" size={18} />

@@ -4,10 +4,15 @@ import { getLocaleUrl, localeCodes } from "@/lib/locales";
 const baseUrl = "https://mysquarefaceicon.com";
 
 const contentPaths = [
+  "/about-us",
+  "/free-avatar-maker",
+  "/gallery",
   "/square-face-icon-generator",
   "/cute-square-avatar-generator",
   "/pixel-square-face-maker",
   "/blog",
+  "/blog/cute-profile-picture-ideas",
+  "/blog/best-discord-avatar-style",
   "/blog/how-to-make-a-cute-discord-profile-icon",
   "/blog/discord-avatar-size-guide",
   "/blog/tiktok-profile-icon-ideas",
@@ -15,7 +20,7 @@ const contentPaths = [
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const lastModified = new Date("2026-05-15");
+  const lastModified = new Date("2026-05-16");
 
   return [
     ...localeCodes.map((locale) => ({
@@ -28,7 +33,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${baseUrl}${path}`,
       lastModified,
       changeFrequency: "monthly",
-      priority: path === "/blog" ? 0.65 : 0.7
+      priority: path === "/blog" ? 0.65 : path === "/about-us" ? 0.45 : 0.7
     }) satisfies MetadataRoute.Sitemap[number]),
     {
       url: `${baseUrl}/privacy-policy`,

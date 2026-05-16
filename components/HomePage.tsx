@@ -29,6 +29,16 @@ const aboutCards = [
 
 const resourceCards = [
   {
+    title: "Free Avatar Maker",
+    text: "Create a free browser avatar without signup, then use the square face style for social and gaming profiles.",
+    href: "/free-avatar-maker"
+  },
+  {
+    title: "Square Face Icon Gallery",
+    text: "Browse original square face icon ideas for expressions, colors, accessories, and platform-ready avatar styles.",
+    href: "/gallery"
+  },
+  {
     title: "Square Face Icon Generator Guide",
     text: "Learn what makes a square face icon work well and when to use the original game or the fallback tool.",
     href: "/square-face-icon-generator"
@@ -42,6 +52,16 @@ const resourceCards = [
     title: "Discord Profile Icon Guide",
     text: "Make a small avatar that still looks clear in servers, friend lists, and chat replies.",
     href: "/blog/how-to-make-a-cute-discord-profile-icon"
+  },
+  {
+    title: "Cute Profile Picture Ideas",
+    text: "Find profile picture ideas for cute square avatars, matching friend icons, and simple privacy-friendly profiles.",
+    href: "/blog/cute-profile-picture-ideas"
+  },
+  {
+    title: "Best Discord Avatar Style",
+    text: "Choose a Discord avatar style that survives small previews, dark UI, and circular crops.",
+    href: "/blog/best-discord-avatar-style"
   },
   {
     title: "Discord Avatar Size Guide",
@@ -130,6 +150,8 @@ export default function HomePage({ locale }: HomePageProps) {
             <Grid3X3 aria-hidden="true" size={16} />
             How to Use
           </a>
+          <a href="/free-avatar-maker">Free Avatar Maker</a>
+          <a href="/gallery">Gallery</a>
           <a href="/square-face-icon-generator">Icon Guide</a>
           <a href="/blog">Blog</a>
           <div className="language-links" aria-label="Language selection">
@@ -145,12 +167,13 @@ export default function HomePage({ locale }: HomePageProps) {
               ))}
             </div>
           </div>
-          <a className="nav-cta" href="#generator">Start Creating</a>
+          <a className="nav-cta" href="#maker">Start Creating</a>
         </nav>
       </header>
 
       <main>
         <section className="hero-section" id="generator">
+          <span className="anchor-target" id="maker" aria-hidden="true" />
           <div className="hero-inner">
             <div className="hero-copy hero-copy-stacked">
               <p className="eyebrow">{content.hero.eyebrow}</p>
@@ -191,7 +214,7 @@ export default function HomePage({ locale }: HomePageProps) {
           </div>
         </section>
 
-        <section className="content-band">
+        <section className="content-band" id="features">
           <div className="section-heading">
             <p className="eyebrow">{content.sections.featuresEyebrow}</p>
             <h2>{content.sections.featuresTitle}</h2>
@@ -237,7 +260,8 @@ export default function HomePage({ locale }: HomePageProps) {
           </div>
         </section>
 
-        <section className="content-band alt-band" id="about">
+        <section className="content-band alt-band" id="what-is">
+          <span className="anchor-target" id="about" aria-hidden="true" />
           <div className="section-heading">
             <p className="eyebrow">{content.sections.galleryEyebrow}</p>
             <h2>{content.sections.galleryTitle}</h2>
@@ -305,12 +329,14 @@ export default function HomePage({ locale }: HomePageProps) {
             <h3>Quick Links</h3>
             <a href="#generator">Square Face Generator</a>
             <a href="#how-to-use">How It Works</a>
+            <a href="/free-avatar-maker">Free Avatar Maker</a>
             <a href="/square-face-icon-generator">Icon Guide</a>
             <a href="#faq">FAQ</a>
           </div>
           <div>
             <h3>Resources</h3>
-            <a href="#about">What Is a Square Face Generator?</a>
+            <a href="#what-is">What Is a Square Face Generator?</a>
+            <a href="/gallery">Gallery</a>
             <a href="/cute-square-avatar-generator">Cute Square Avatars</a>
             <a href="/pixel-square-face-maker">Pixel Square Face Maker</a>
             <a href="/blog">Blog</a>

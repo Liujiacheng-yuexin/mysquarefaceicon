@@ -7,7 +7,17 @@ This document turns the general SEO rules into the current operating system for 
 ```text
 Home /
   -> Generator first viewport
+  -> Anchor sections
+      -> #maker
+      -> #what-is
+      -> #features
+      -> #how-to-use
+      -> #faq
   -> Square face icon resources
+  -> Trust and inspiration pages
+      -> /about-us
+      -> /free-avatar-maker
+      -> /gallery
   -> Support pages
       -> /square-face-icon-generator
       -> /cute-square-avatar-generator
@@ -18,6 +28,8 @@ Home /
       -> /blog/discord-avatar-size-guide
       -> /blog/tiktok-profile-icon-ideas
       -> /blog/square-avatar-vs-round-avatar
+      -> /blog/cute-profile-picture-ideas
+      -> /blog/best-discord-avatar-style
   -> Legal
       -> /privacy-policy
       -> /terms-of-service
@@ -28,9 +40,12 @@ Home /
 | Page Type | Role | Current URLs |
 |---|---|---|
 | Core tool page | Primary ranking page and product page | `/`, locale pages |
+| Trust page | Explains project purpose, originality, privacy, and roadmap | `/about-us` |
+| Broad support page | Broader avatar maker intent tied back to the generator | `/free-avatar-maker` |
+| Gallery | Original inspiration examples and internal discovery | `/gallery` |
 | Support guide | Secondary keyword and internal link hub | `/square-face-icon-generator`, `/cute-square-avatar-generator`, `/pixel-square-face-maker` |
 | Blog hub | Lists practical guides and distributes internal links | `/blog` |
-| Blog guide | Long-tail search landing page | `/blog/how-to-make-a-cute-discord-profile-icon`, `/blog/discord-avatar-size-guide`, `/blog/tiktok-profile-icon-ideas`, `/blog/square-avatar-vs-round-avatar` |
+| Blog guide | Long-tail search landing page | `/blog/how-to-make-a-cute-discord-profile-icon`, `/blog/discord-avatar-size-guide`, `/blog/tiktok-profile-icon-ideas`, `/blog/square-avatar-vs-round-avatar`, `/blog/cute-profile-picture-ideas`, `/blog/best-discord-avatar-style` |
 | Legal | Trust and compliance | `/privacy-policy`, `/terms-of-service` |
 | Admin/API | Utility only, not indexable | `/admin/*`, `/api/*` |
 
@@ -78,6 +93,9 @@ Descriptions should explain the page value in one or two natural sentences and s
 | URL | Type | Ranking Intent |
 |---|---|---|
 | `/` | Ranking page | Primary keyword and tool intent |
+| `/about-us` | Trust page | Brand and project trust intent |
+| `/free-avatar-maker` | Ranking support page | Free avatar maker workflow intent |
+| `/gallery` | Middle + inspiration page | Square face icon examples and style intent |
 | `/square-face-icon-generator` | Ranking + hub page | Secondary keyword and education intent |
 | `/cute-square-avatar-generator` | Ranking support page | Cute avatar style intent |
 | `/pixel-square-face-maker` | Ranking support page | Pixel-inspired avatar workflow intent |
@@ -86,6 +104,8 @@ Descriptions should explain the page value in one or two natural sentences and s
 | `/blog/discord-avatar-size-guide` | Ranking page | Discord avatar sizing and crop-safe source intent |
 | `/blog/tiktok-profile-icon-ideas` | Ranking page | TikTok profile icon inspiration intent |
 | `/blog/square-avatar-vs-round-avatar` | Ranking page | Avatar shape comparison intent |
+| `/blog/cute-profile-picture-ideas` | Ranking page | Cute profile picture inspiration intent |
+| `/blog/best-discord-avatar-style` | Ranking page | Discord avatar style and server identity intent |
 
 ## 9. Blog Strategy
 
@@ -95,7 +115,8 @@ Prioritize practical guides that lead back to the generator:
 2. Discord avatar size and crop guide.
 3. TikTok profile icon ideas.
 4. Square avatar vs round avatar.
-5. Cute profile icon ideas for communities.
+5. Cute profile picture ideas.
+6. Best avatar style for Discord servers.
 
 Each article must include a clear answer, H2/H3 structure, related links, metadata, and schema when appropriate.
 
@@ -131,6 +152,9 @@ Review pages after search data is available:
 
 - `/`
 - `/es`, `/vi`, `/ja`, `/th`, `/ar`, `/ru`, `/id`
+- `/about-us`
+- `/free-avatar-maker`
+- `/gallery`
 - `/square-face-icon-generator`
 - `/cute-square-avatar-generator`
 - `/pixel-square-face-maker`
@@ -139,6 +163,8 @@ Review pages after search data is available:
 - `/blog/discord-avatar-size-guide`
 - `/blog/tiktok-profile-icon-ideas`
 - `/blog/square-avatar-vs-round-avatar`
+- `/blog/cute-profile-picture-ideas`
+- `/blog/best-discord-avatar-style`
 - `/privacy-policy`
 - `/terms-of-service`
 

@@ -43,6 +43,14 @@ export default function BlogIndexPage() {
         <section>
           <h2>Latest Guides</h2>
           <div className="link-grid">
+            <a href="/blog/cute-profile-picture-ideas">
+              <h3>Cute Profile Picture Ideas for Avatars</h3>
+              <p>Explore cute avatar ideas for social, gaming, and community profiles using readable square face styles.</p>
+            </a>
+            <a href="/blog/best-discord-avatar-style">
+              <h3>Best Discord Avatar Style</h3>
+              <p>Choose a Discord avatar style that stays clear in server lists, chat rows, and circular crops.</p>
+            </a>
             <a href="/blog/how-to-make-a-cute-discord-profile-icon">
               <h3>How to Make a Cute Discord Profile Icon</h3>
               <p>Choose a readable expression, simple colors, and a square avatar style that works in chat lists and servers.</p>
@@ -68,6 +76,14 @@ export default function BlogIndexPage() {
             <a href="/#generator">
               <h3>Square Face Generator</h3>
               <p>Open the browser tool and start creating a square face icon.</p>
+            </a>
+            <a href="/free-avatar-maker">
+              <h3>Free Avatar Maker</h3>
+              <p>Use a simple browser workflow to make a profile-ready avatar without signup.</p>
+            </a>
+            <a href="/gallery">
+              <h3>Square Face Icon Gallery</h3>
+              <p>Browse original example styles for expressions, colors, and accessories.</p>
             </a>
             <a href="/square-face-icon-generator">
               <h3>Square Face Icon Generator Guide</h3>

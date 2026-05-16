@@ -7,6 +7,11 @@
 - [x] Homepage is accessible
 - [x] `/privacy-policy` is accessible
 - [x] `/terms-of-service` is accessible
+- [x] `/about-us` is accessible
+- [x] `/free-avatar-maker` is accessible
+- [x] `/gallery` is accessible
+- [x] `/blog/cute-profile-picture-ideas` is accessible
+- [x] `/blog/best-discord-avatar-style` is accessible
 - [x] `sitemap.xml` is accessible
 - [x] `robots.txt` is accessible and declares sitemap
 - [x] Local SWF file is accessible at `/games/square-face.swf`
@@ -14,7 +19,7 @@
 - [x] Every indexable page has a canonical URL
 - [x] Every page has exactly one H1
 - [x] Important buttons have accessible labels
-- [x] Homepage does not link to unsupported Blog or Gallery pages
+- [x] Homepage links only to supported public pages
 - [ ] `npm run cf:build` passes
 - [ ] `wrangler dev` preview works with valid KV/R2 bindings
 - [x] `COMMENTS_KV` production and preview namespaces are created

@@ -30,6 +30,11 @@
 ## Current SEO Architecture
 
 - Homepage `/`: primary ranking and tool page for `square face generator`.
+- Homepage anchors: `#maker`, `#what-is`, `#features`, `#how-to-use`, and `#faq` support direct sharing and search-result sitelink style navigation.
+- Trust and inspiration pages:
+  - `/about-us`: project trust, originality, privacy, and roadmap context.
+  - `/free-avatar-maker`: broader free avatar maker intent tied back to the square face generator.
+  - `/gallery`: original square face icon examples and inspiration, not third-party image reuse.
 - Support pages:
   - `/square-face-icon-generator`: secondary keyword guide and internal link hub.
   - `/cute-square-avatar-generator`: style-focused long-tail support page.
@@ -39,6 +44,8 @@
 - Blog guide `/blog/discord-avatar-size-guide`: Discord avatar sizing and crop-safe icon intent.
 - Blog guide `/blog/tiktok-profile-icon-ideas`: TikTok avatar inspiration intent.
 - Blog guide `/blog/square-avatar-vs-round-avatar`: avatar shape comparison intent.
+- Blog guide `/blog/cute-profile-picture-ideas`: cute profile picture inspiration intent.
+- Blog guide `/blog/best-discord-avatar-style`: Discord avatar style and community identity intent.
 - Legal pages remain low-priority indexable utility pages.
 
 ## Page Quality Rules

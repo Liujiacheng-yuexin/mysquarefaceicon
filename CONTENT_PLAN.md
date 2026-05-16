@@ -6,6 +6,11 @@
 - Legal pages: `/privacy-policy` and `/terms-of-service`.
 - Public comment section with moderation before publishing.
 - Original local game-style SVG preview for the authorized SWF experience, not copied images.
+- P0 homepage anchor support for `#maker`, `#what-is`, `#features`, `#how-to-use`, and `#faq`.
+- Trust and inspiration pages:
+  - `/about-us`
+  - `/free-avatar-maker`
+  - `/gallery`
 - Support guide pages:
   - `/square-face-icon-generator`
   - `/cute-square-avatar-generator`
@@ -16,6 +21,8 @@
   - `/blog/discord-avatar-size-guide`
   - `/blog/tiktok-profile-icon-ideas`
   - `/blog/square-avatar-vs-round-avatar`
+  - `/blog/cute-profile-picture-ideas`
+  - `/blog/best-discord-avatar-style`
 
 ## Content Rules
 
@@ -29,7 +36,5 @@
 
 | Page Idea | Search Intent | Timing |
 |---|---|---|
-| Blog guide: Cute profile picture ideas | Users looking for avatar inspiration | After GSC impressions |
-| Blog guide: Best avatar style for Discord servers | Users choosing community identity styles | After GSC impressions |
 | Support page: square avatar generator | Users searching for a broader avatar generator term | After GSC impressions |
-| Future gallery: user square face creations | Users looking for examples and inspiration | Only after enough approved original comments/images |
+| Future gallery expansion: user square face creations | Users looking for examples and inspiration | Only after enough approved original comments/images |
