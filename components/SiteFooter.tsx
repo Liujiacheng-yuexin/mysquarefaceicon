@@ -23,7 +23,6 @@ export default function SiteFooter() {
           <a href="/blog/how-to-make-a-cute-discord-profile-icon">Discord Icon Guide</a>
           <a href="/blog/discord-avatar-size-guide">Discord Avatar Size</a>
           <a href="/pixel-square-face-maker">Pixel Square Face Maker</a>
-          <a href="/sitemap.xml">Sitemap</a>
         </div>
         <div>
           <h3>Legal</h3>

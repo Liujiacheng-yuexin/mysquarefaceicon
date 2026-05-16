@@ -351,7 +351,6 @@ export default function HomePage({ locale }: HomePageProps) {
             <a href="/pixel-square-face-maker">Pixel Square Face Maker</a>
             <a href="/blog">Blog</a>
             <a href="#comments">Share Your Creation</a>
-            <a href={`${siteUrl}/sitemap.xml`}>Sitemap</a>
           </div>
           <div>
             <h3>Legal</h3>

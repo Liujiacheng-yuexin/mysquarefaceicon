@@ -32,4 +32,4 @@
 - Buttons: clear icon plus label when the action benefits from a symbol.
 - Controls: segmented buttons for option sets, color inputs for colors.
 - FAQ: native details/summary for accessibility and no JavaScript dependency.
-- Footer: simple legal and sitemap links.
+- Footer: simple user-facing navigation and legal links. Keep `/sitemap.xml` available for crawlers, but do not show it as a visible footer link.
