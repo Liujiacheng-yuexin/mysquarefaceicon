@@ -10,6 +10,7 @@
 - Trust and inspiration pages:
   - `/about-us`
   - `/free-avatar-maker`
+  - `/square-avatar-generator`
   - `/gallery`
 - Support guide pages:
   - `/square-face-icon-generator`
@@ -23,6 +24,7 @@
   - `/blog/square-avatar-vs-round-avatar`
   - `/blog/cute-profile-picture-ideas`
   - `/blog/best-discord-avatar-style`
+  - `/blog/avatar-maker-without-signup`
 
 ## Content Rules
 
@@ -36,5 +38,4 @@
 
 | Page Idea | Search Intent | Timing |
 |---|---|---|
-| Support page: square avatar generator | Users searching for a broader avatar generator term | After GSC impressions |
 | Future gallery expansion: user square face creations | Users looking for examples and inspiration | Only after enough approved original comments/images |

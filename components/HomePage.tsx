@@ -34,6 +34,11 @@ const resourceCards = [
     href: "/free-avatar-maker"
   },
   {
+    title: "Square Avatar Generator",
+    text: "Learn how square source avatars work across profile crops, small previews, and social platforms.",
+    href: "/square-avatar-generator"
+  },
+  {
     title: "Square Face Icon Gallery",
     text: "Browse original square face icon ideas for expressions, colors, accessories, and platform-ready avatar styles.",
     href: "/gallery"
@@ -57,6 +62,11 @@ const resourceCards = [
     title: "Cute Profile Picture Ideas",
     text: "Find profile picture ideas for cute square avatars, matching friend icons, and simple privacy-friendly profiles.",
     href: "/blog/cute-profile-picture-ideas"
+  },
+  {
+    title: "Avatar Maker Without Signup",
+    text: "Make a quick profile avatar without creating an account or installing design software.",
+    href: "/blog/avatar-maker-without-signup"
   },
   {
     title: "Best Discord Avatar Style",

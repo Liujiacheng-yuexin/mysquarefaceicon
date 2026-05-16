@@ -17,6 +17,7 @@ Home /
   -> Trust and inspiration pages
       -> /about-us
       -> /free-avatar-maker
+      -> /square-avatar-generator
       -> /gallery
   -> Support pages
       -> /square-face-icon-generator
@@ -30,6 +31,7 @@ Home /
       -> /blog/square-avatar-vs-round-avatar
       -> /blog/cute-profile-picture-ideas
       -> /blog/best-discord-avatar-style
+      -> /blog/avatar-maker-without-signup
   -> Legal
       -> /privacy-policy
       -> /terms-of-service
@@ -41,7 +43,7 @@ Home /
 |---|---|---|
 | Core tool page | Primary ranking page and product page | `/`, locale pages |
 | Trust page | Explains project purpose, originality, privacy, and roadmap | `/about-us` |
-| Broad support page | Broader avatar maker intent tied back to the generator | `/free-avatar-maker` |
+| Broad support page | Broader avatar maker intent tied back to the generator | `/free-avatar-maker`, `/square-avatar-generator` |
 | Gallery | Original inspiration examples and internal discovery | `/gallery` |
 | Support guide | Secondary keyword and internal link hub | `/square-face-icon-generator`, `/cute-square-avatar-generator`, `/pixel-square-face-maker` |
 | Blog hub | Lists practical guides and distributes internal links | `/blog` |
@@ -95,6 +97,7 @@ Descriptions should explain the page value in one or two natural sentences and s
 | `/` | Ranking page | Primary keyword and tool intent |
 | `/about-us` | Trust page | Brand and project trust intent |
 | `/free-avatar-maker` | Ranking support page | Free avatar maker workflow intent |
+| `/square-avatar-generator` | Ranking support page | Square avatar workflow and profile crop intent |
 | `/gallery` | Middle + inspiration page | Square face icon examples and style intent |
 | `/square-face-icon-generator` | Ranking + hub page | Secondary keyword and education intent |
 | `/cute-square-avatar-generator` | Ranking support page | Cute avatar style intent |
@@ -106,6 +109,7 @@ Descriptions should explain the page value in one or two natural sentences and s
 | `/blog/square-avatar-vs-round-avatar` | Ranking page | Avatar shape comparison intent |
 | `/blog/cute-profile-picture-ideas` | Ranking page | Cute profile picture inspiration intent |
 | `/blog/best-discord-avatar-style` | Ranking page | Discord avatar style and server identity intent |
+| `/blog/avatar-maker-without-signup` | Ranking page | No-signup avatar maker workflow intent |
 
 ## 9. Blog Strategy
 
@@ -117,6 +121,7 @@ Prioritize practical guides that lead back to the generator:
 4. Square avatar vs round avatar.
 5. Cute profile picture ideas.
 6. Best avatar style for Discord servers.
+7. Avatar maker without signup.
 
 Each article must include a clear answer, H2/H3 structure, related links, metadata, and schema when appropriate.
 
@@ -154,6 +159,7 @@ Review pages after search data is available:
 - `/es`, `/vi`, `/ja`, `/th`, `/ar`, `/ru`, `/id`
 - `/about-us`
 - `/free-avatar-maker`
+- `/square-avatar-generator`
 - `/gallery`
 - `/square-face-icon-generator`
 - `/cute-square-avatar-generator`
@@ -165,6 +171,7 @@ Review pages after search data is available:
 - `/blog/square-avatar-vs-round-avatar`
 - `/blog/cute-profile-picture-ideas`
 - `/blog/best-discord-avatar-style`
+- `/blog/avatar-maker-without-signup`
 - `/privacy-policy`
 - `/terms-of-service`
 

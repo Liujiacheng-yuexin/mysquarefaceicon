@@ -14,6 +14,7 @@
 | Home ID | `/id` | Tool page | square face generator | Play the localized generator | P0 | Implemented |
 | About Us | `/about-us` | Trust page | about My Square Face Icon | Learn who runs the site and how the project handles originality and privacy | P1 | Implemented |
 | Free Avatar Maker | `/free-avatar-maker` | Support / guide page | free avatar maker | Create a free avatar with a square face icon workflow | P1 | Implemented |
+| Square Avatar Generator | `/square-avatar-generator` | Support / guide page | square avatar generator | Learn how square source avatars work across profile crops and platforms | P1 | Implemented |
 | Square Face Icon Gallery | `/gallery` | Inspiration gallery | square face icon gallery | Browse original square face icon examples and style ideas | P1 | Implemented |
 | Square Face Icon Guide | `/square-face-icon-generator` | Support / guide page | square face icon generator | Learn how to create and use square face icons | P1 | Implemented |
 | Cute Square Avatar Tips | `/cute-square-avatar-generator` | Support / guide page | cute square avatar generator | Learn style tips for cute square profile avatars | P1 | Implemented |
@@ -25,6 +26,7 @@
 | Square Avatar vs Round Avatar | `/blog/square-avatar-vs-round-avatar` | Blog comparison | square avatar vs round avatar | Compare avatar source shape and platform display crops | P1 | Implemented |
 | Cute Profile Picture Ideas | `/blog/cute-profile-picture-ideas` | Blog guide | cute profile picture ideas | Find cute avatar ideas for social and gaming profiles | P1 | Implemented |
 | Best Discord Avatar Style | `/blog/best-discord-avatar-style` | Blog guide | best Discord avatar style | Choose a readable Discord avatar style for servers and circular crops | P1 | Implemented |
+| Avatar Maker Without Signup | `/blog/avatar-maker-without-signup` | Blog guide | avatar maker without signup | Create a profile avatar without account creation or design software | P1 | Implemented |
 | Privacy Policy | `/privacy-policy` | Legal | privacy policy | Understand data handling | P0 | Implemented |
 | Terms of Service | `/terms-of-service` | Legal | terms of service | Understand usage terms | P0 | Implemented |
 
@@ -59,6 +61,7 @@
 | Home | `/privacy-policy` | Privacy Policy |
 | Home | `/terms-of-service` | Terms of Service |
 | Home | `/free-avatar-maker` | Free Avatar Maker |
+| Home | `/square-avatar-generator` | Square Avatar Generator |
 | Home | `/gallery` | Gallery |
 | Home | `/about-us` | About Us |
 | Home | `/square-face-icon-generator` | Icon Guide |
@@ -71,6 +74,7 @@
 | Blog | `/blog/square-avatar-vs-round-avatar` | Square Avatar vs Round Avatar |
 | Blog | `/blog/cute-profile-picture-ideas` | Cute Profile Picture Ideas |
 | Blog | `/blog/best-discord-avatar-style` | Best Discord Avatar Style |
+| Blog | `/blog/avatar-maker-without-signup` | Avatar Maker Without Signup |
 | Blog guide | `/` | Square Face Generator |
 | Blog guide | `/square-face-icon-generator` | Square Face Icon Generator Guide |
 | About Us | `/` | Square Face Generator |

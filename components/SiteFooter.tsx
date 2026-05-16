@@ -10,13 +10,14 @@ export default function SiteFooter() {
           <h3>Quick Links</h3>
           <a href="/#maker">Square Face Generator</a>
           <a href="/free-avatar-maker">Free Avatar Maker</a>
+          <a href="/square-avatar-generator">Square Avatar Generator</a>
           <a href="/gallery">Gallery</a>
           <a href="/square-face-icon-generator">Icon Guide</a>
-          <a href="/cute-square-avatar-generator">Cute Avatars</a>
         </div>
         <div>
           <h3>Resources</h3>
           <a href="/blog">Blog</a>
+          <a href="/blog/avatar-maker-without-signup">Avatar Maker Without Signup</a>
           <a href="/blog/cute-profile-picture-ideas">Cute Profile Picture Ideas</a>
           <a href="/blog/best-discord-avatar-style">Discord Avatar Style</a>
           <a href="/blog/how-to-make-a-cute-discord-profile-icon">Discord Icon Guide</a>

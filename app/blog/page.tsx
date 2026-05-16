@@ -43,6 +43,10 @@ export default function BlogIndexPage() {
         <section>
           <h2>Latest Guides</h2>
           <div className="link-grid">
+            <a href="/blog/avatar-maker-without-signup">
+              <h3>Avatar Maker Without Signup</h3>
+              <p>Learn how to create a cute profile avatar quickly without account creation or design software.</p>
+            </a>
             <a href="/blog/cute-profile-picture-ideas">
               <h3>Cute Profile Picture Ideas for Avatars</h3>
               <p>Explore cute avatar ideas for social, gaming, and community profiles using readable square face styles.</p>
@@ -80,6 +84,10 @@ export default function BlogIndexPage() {
             <a href="/free-avatar-maker">
               <h3>Free Avatar Maker</h3>
               <p>Use a simple browser workflow to make a profile-ready avatar without signup.</p>
+            </a>
+            <a href="/square-avatar-generator">
+              <h3>Square Avatar Generator</h3>
+              <p>Learn how square source images work for social, gaming, and community avatars.</p>
             </a>
             <a href="/gallery">
               <h3>Square Face Icon Gallery</h3>

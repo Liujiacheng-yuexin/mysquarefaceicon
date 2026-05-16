@@ -9,9 +9,11 @@
 - [x] `/terms-of-service` is accessible
 - [x] `/about-us` is accessible
 - [x] `/free-avatar-maker` is accessible
+- [x] `/square-avatar-generator` is accessible
 - [x] `/gallery` is accessible
 - [x] `/blog/cute-profile-picture-ideas` is accessible
 - [x] `/blog/best-discord-avatar-style` is accessible
+- [x] `/blog/avatar-maker-without-signup` is accessible
 - [x] `sitemap.xml` is accessible
 - [x] `robots.txt` is accessible and declares sitemap
 - [x] Local SWF file is accessible at `/games/square-face.swf`
