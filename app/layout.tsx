@@ -1,8 +1,10 @@
 import type { Metadata, Viewport } from "next";
+import Script from "next/script";
 import CloudflareAnalytics from "@/components/CloudflareAnalytics";
 import "./globals.css";
 
 const siteUrl = "https://mysquarefaceicon.com";
+const googleAnalyticsId = "G-VPL9X65STX";
 const siteTitle = "My Square Face Icon - Free Square Face Generator Online";
 const siteDescription =
   "Play a free square face generator online. Create cute square face icons in a Ruffle-powered avatar game with an HTML5 fallback.";
@@ -58,6 +60,18 @@ export default function RootLayout({
     <html lang="en">
       <body>
         {children}
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${googleAnalyticsId}`}
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${googleAnalyticsId}');
+          `}
+        </Script>
         <CloudflareAnalytics />
       </body>
     </html>

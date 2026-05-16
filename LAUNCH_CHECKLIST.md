@@ -22,6 +22,7 @@
 - [x] Every page has exactly one H1
 - [x] Important buttons have accessible labels
 - [x] Homepage links only to supported public pages
+- [x] GA4 Google tag is configured once across all pages
 - [ ] `npm run cf:build` passes
 - [ ] `wrangler dev` preview works with valid KV/R2 bindings
 - [x] `COMMENTS_KV` production and preview namespaces are created
