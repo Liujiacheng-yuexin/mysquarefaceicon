@@ -37,6 +37,9 @@ const swfSources = [
   "/games/square-face.swf"
 ];
 
+const SCRIPT_TIMEOUT_MS = 8000;
+const SWF_LOAD_TIMEOUT_MS = 15000;
+
 const gameGuideSteps = [
   {
     title: "Click the preview",
@@ -64,19 +67,44 @@ function loadScript(url: string) {
     }
 
     const script = existing ?? document.createElement("script");
+    const timeout = window.setTimeout(() => {
+      reject(new Error(`Timed out loading Ruffle from ${url}`));
+    }, SCRIPT_TIMEOUT_MS);
+
     script.src = url;
     script.async = true;
     script.crossOrigin = "anonymous";
     script.dataset.ruffleUrl = url;
     script.onload = () => {
+      window.clearTimeout(timeout);
       script.dataset.loaded = "true";
       resolve();
     };
-    script.onerror = () => reject(new Error(`Failed to load Ruffle from ${url}`));
+    script.onerror = () => {
+      window.clearTimeout(timeout);
+      reject(new Error(`Failed to load Ruffle from ${url}`));
+    };
 
     if (!existing) {
       document.head.appendChild(script);
     }
+  });
+}
+
+function withTimeout<T>(promise: Promise<T>, timeoutMs: number, errorMessage: string) {
+  return new Promise<T>((resolve, reject) => {
+    const timeout = window.setTimeout(() => reject(new Error(errorMessage)), timeoutMs);
+
+    promise.then(
+      (value) => {
+        window.clearTimeout(timeout);
+        resolve(value);
+      },
+      (error) => {
+        window.clearTimeout(timeout);
+        reject(error);
+      }
+    );
   });
 }
 
@@ -129,15 +157,19 @@ export default function FlashGenerator() {
       for (const source of swfSources) {
         try {
           setMessage(source.startsWith("/") ? "Loading local game file..." : "Loading authorized fallback game file...");
-          await player.load({
-            url: source,
-            autoplay: "on",
-            unmuteOverlay: "hidden",
-            backgroundColor: "#FFAF03",
-            letterbox: "on",
-            warnOnUnsupportedContent: false,
-            contextMenu: "on"
-          });
+          await withTimeout(
+            player.load({
+              url: source,
+              autoplay: "on",
+              unmuteOverlay: "hidden",
+              backgroundColor: "#FFAF03",
+              letterbox: "on",
+              warnOnUnsupportedContent: false,
+              contextMenu: "on"
+            }),
+            SWF_LOAD_TIMEOUT_MS,
+            "The game file took too long to load."
+          );
           setLoadState("ready");
           setMessage("Game loaded.");
           return;

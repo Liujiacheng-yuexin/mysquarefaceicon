@@ -1,6 +1,6 @@
 "use client";
 
-import { Download, Palette, RotateCcw, Shuffle } from "lucide-react";
+import { Copy, Download, Palette, RotateCcw, Shuffle, Sparkles } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 
 type FaceStyle = "soft" | "wide" | "rounded" | "tiny";
@@ -9,6 +9,7 @@ type EyeStyle = "dot" | "happy" | "sleepy" | "sparkle" | "wink";
 type MouthStyle = "smile" | "flat" | "open" | "cat" | "tiny";
 type CheekStyle = "none" | "blush" | "dots" | "pixel";
 type AccessoryStyle = "none" | "glasses" | "star" | "bandage" | "freckles";
+type ExportSize = 512 | 256 | 128;
 
 type AvatarConfig = {
   face: FaceStyle;
@@ -47,6 +48,63 @@ const skinPalette = ["#ffd7b5", "#f2bd8f", "#d9956a", "#8d5b43", "#ffe4ce"];
 const hairPalette = ["#31241e", "#75462e", "#f0c05a", "#25364a", "#d85b7f"];
 const backgroundPalette = ["#c9f3ee", "#f8d7de", "#fff0b8", "#d9dcff", "#e7f5d4"];
 const accentPalette = ["#ff6f61", "#20b8aa", "#ffbf3f", "#8f7ff5", "#ef5da8"];
+const exportSizes: ExportSize[] = [512, 256, 128];
+
+const stylePresets: Array<{ name: string; note: string; config: AvatarConfig }> = [
+  {
+    name: "Soft Mint",
+    note: "Friendly chat icon",
+    config: defaultConfig
+  },
+  {
+    name: "Creator Coral",
+    note: "Bright mobile profile",
+    config: {
+      face: "rounded",
+      hair: "side",
+      eyes: "sparkle",
+      mouth: "smile",
+      cheeks: "pixel",
+      accessory: "star",
+      skinColor: "#ffe4ce",
+      hairColor: "#31241e",
+      backgroundColor: "#fff0b8",
+      accentColor: "#ff6f61"
+    }
+  },
+  {
+    name: "Retro Pixel",
+    note: "Small-size readable",
+    config: {
+      face: "wide",
+      hair: "cap",
+      eyes: "dot",
+      mouth: "flat",
+      cheeks: "dots",
+      accessory: "freckles",
+      skinColor: "#f2bd8f",
+      hairColor: "#25364a",
+      backgroundColor: "#d9dcff",
+      accentColor: "#20b8aa"
+    }
+  },
+  {
+    name: "Cozy Game",
+    note: "Discord-ready look",
+    config: {
+      face: "soft",
+      hair: "curtain",
+      eyes: "wink",
+      mouth: "cat",
+      cheeks: "blush",
+      accessory: "glasses",
+      skinColor: "#ffd7b5",
+      hairColor: "#75462e",
+      backgroundColor: "#e7f5d4",
+      accentColor: "#ffbf3f"
+    }
+  }
+];
 
 function randomItem<T>(items: T[]) {
   return items[Math.floor(Math.random() * items.length)];
@@ -423,6 +481,9 @@ function ColorControl({ label, value, presets, onChange }: ColorControlProps) {
 export default function AvatarGenerator() {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
   const [config, setConfig] = useState<AvatarConfig>(defaultConfig);
+  const [exportSize, setExportSize] = useState<ExportSize>(512);
+  const [previewUrl, setPreviewUrl] = useState("");
+  const [status, setStatus] = useState("Ready to customize.");
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -430,21 +491,67 @@ export default function AvatarGenerator() {
     if (!canvas || !ctx) return;
 
     drawAvatar(ctx, config);
+    setPreviewUrl(canvas.toDataURL("image/png"));
   }, [config]);
 
   function updateConfig<T extends keyof AvatarConfig>(key: T, value: AvatarConfig[T]) {
     setConfig((current) => ({ ...current, [key]: value }));
   }
 
+  function applyPreset(preset: AvatarConfig, presetName: string) {
+    setConfig(preset);
+    setStatus(`${presetName} preset applied.`);
+  }
+
+  function randomizeAvatar() {
+    setConfig(makeRandomConfig());
+    setStatus("Random square face generated.");
+  }
+
+  function resetAvatar() {
+    setConfig(defaultConfig);
+    setStatus("Default square face restored.");
+  }
+
+  function createExportCanvas(size: ExportSize) {
+    const source = canvasRef.current;
+    if (!source) return null;
+
+    const output = document.createElement("canvas");
+    output.width = size;
+    output.height = size;
+    const ctx = output.getContext("2d");
+    if (!ctx) return null;
+
+    ctx.imageSmoothingEnabled = false;
+    ctx.drawImage(source, 0, 0, size, size);
+    return output;
+  }
+
   function downloadAvatar() {
-    const canvas = canvasRef.current;
+    const canvas = createExportCanvas(exportSize);
     if (!canvas) return;
 
     const link = document.createElement("a");
-    link.download = "my-square-face-icon.png";
+    link.download = `my-square-face-icon-${exportSize}.png`;
     link.href = canvas.toDataURL("image/png");
     link.click();
+    setStatus(`Downloaded ${exportSize}x${exportSize} PNG.`);
   }
+
+  async function copyAvatarCaption() {
+    const caption = `I made a cute ${exportSize}x${exportSize} square face icon with My Square Face Icon.`;
+
+    try {
+      await navigator.clipboard.writeText(caption);
+      setStatus("Caption copied for sharing.");
+    } catch {
+      window.prompt("Copy this caption", caption);
+      setStatus("Caption ready to copy.");
+    }
+  }
+
+  const previewStyle = previewUrl ? { backgroundImage: `url(${previewUrl})` } : undefined;
 
   return (
     <div className="generator-shell" aria-label="Square face icon generator">
@@ -458,26 +565,81 @@ export default function AvatarGenerator() {
             width={512}
           />
         </div>
+        <div className="avatar-output-previews" aria-label="Profile icon previews">
+          <div className="output-preview-card">
+            <span className="mini-preview-image is-square" style={previewStyle} aria-hidden="true" />
+            <strong>Square</strong>
+            <span>Source icon</span>
+          </div>
+          <div className="output-preview-card">
+            <span className="mini-preview-image is-circle" style={previewStyle} aria-hidden="true" />
+            <strong>Round crop</strong>
+            <span>Discord / YouTube</span>
+          </div>
+          <div className="output-preview-card">
+            <span className="mini-preview-image is-tiny" style={previewStyle} aria-hidden="true" />
+            <strong>48px check</strong>
+            <span>Small preview</span>
+          </div>
+        </div>
+        <div className="export-size-panel" aria-label="Download size">
+          <span>Download size</span>
+          <div className="size-options">
+            {exportSizes.map((size) => (
+              <button
+                className={size === exportSize ? "size-option is-active" : "size-option"}
+                key={size}
+                onClick={() => {
+                  setExportSize(size);
+                  setStatus(`${size}x${size} export selected.`);
+                }}
+                type="button"
+              >
+                {size}
+              </button>
+            ))}
+          </div>
+        </div>
+        <p className="studio-status" aria-live="polite">{status}</p>
         <div className="action-row">
-          <button className="tool-button secondary" type="button" onClick={() => setConfig(makeRandomConfig())}>
+          <button className="tool-button secondary" type="button" onClick={randomizeAvatar}>
             <Shuffle aria-hidden="true" size={18} />
             Random
           </button>
-          <button className="tool-button secondary" type="button" onClick={() => setConfig(defaultConfig)}>
+          <button className="tool-button secondary" type="button" onClick={resetAvatar}>
             <RotateCcw aria-hidden="true" size={18} />
             Reset
           </button>
           <button className="tool-button primary" type="button" onClick={downloadAvatar}>
             <Download aria-hidden="true" size={18} />
-            Download PNG
+            Download {exportSize}px
           </button>
         </div>
+        <button className="tool-button secondary full-width" type="button" onClick={copyAvatarCaption}>
+          <Copy aria-hidden="true" size={18} />
+          Copy share caption
+        </button>
       </div>
 
       <div className="controls-panel">
         <div className="panel-title">
           <Palette aria-hidden="true" size={20} />
           <h2>Customize Your Icon</h2>
+        </div>
+
+        <div className="preset-panel" aria-label="Quick avatar style presets">
+          <div className="preset-panel-heading">
+            <Sparkles aria-hidden="true" size={18} />
+            <h3>Quick Styles</h3>
+          </div>
+          <div className="preset-grid">
+            {stylePresets.map((preset) => (
+              <button className="preset-button" type="button" key={preset.name} onClick={() => applyPreset(preset.config, preset.name)}>
+                <strong>{preset.name}</strong>
+                <span>{preset.note}</span>
+              </button>
+            ))}
+          </div>
         </div>
 
         <div className="controls-grid">

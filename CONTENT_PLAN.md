@@ -9,6 +9,7 @@
 - P0 homepage anchor support for `#maker`, `#what-is`, `#features`, `#how-to-use`, and `#faq`.
 - Homepage guidance now explains the game flow before loading: click preview, press START, customize, and SAVE.
 - HTML5 Canvas backup maker is available as an explicit user option as well as an error fallback.
+- HTML5 Canvas backup maker includes quick style presets, 512/256/128 PNG export sizes, round-crop and small-size previews, and a share-caption helper.
 - Cute original CSS avatar examples and platform preview cards support inspiration without copying external artwork.
 - Trust and inspiration pages:
   - `/about-us`

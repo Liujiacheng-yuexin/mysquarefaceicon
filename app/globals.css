@@ -709,6 +709,103 @@ h3 {
   image-rendering: crisp-edges;
 }
 
+.avatar-output-previews {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.output-preview-card {
+  display: grid;
+  min-width: 0;
+  justify-items: center;
+  gap: 4px;
+  padding: 10px;
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  text-align: center;
+}
+
+.output-preview-card strong {
+  color: var(--text);
+  font-size: 13px;
+  line-height: 1.1;
+}
+
+.output-preview-card span:last-child {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 750;
+  line-height: 1.2;
+}
+
+.mini-preview-image {
+  display: block;
+  width: 62px;
+  aspect-ratio: 1;
+  background-color: #e7f5f2;
+  background-position: center;
+  background-size: cover;
+  border: 3px solid #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 0 1px var(--border);
+}
+
+.mini-preview-image.is-circle {
+  border-radius: 50%;
+}
+
+.mini-preview-image.is-tiny {
+  width: 48px;
+  image-rendering: crisp-edges;
+}
+
+.export-size-panel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px;
+  background: #fff8e8;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.export-size-panel > span,
+.studio-status {
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.size-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.size-option {
+  min-height: 34px;
+  padding: 6px 10px;
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--text);
+  cursor: pointer;
+  font-weight: 900;
+}
+
+.size-option.is-active {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: #ffffff;
+}
+
+.studio-status {
+  margin: -4px 0 0;
+}
+
 .action-row {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -751,6 +848,10 @@ h3 {
   color: var(--text);
 }
 
+.tool-button.full-width {
+  width: 100%;
+}
+
 .controls-panel {
   min-width: 0;
   padding: clamp(16px, 2vw, 24px);
@@ -765,6 +866,60 @@ h3 {
 
 .panel-title h2 {
   font-size: 22px;
+}
+
+.preset-panel {
+  display: grid;
+  gap: 12px;
+  margin-bottom: 20px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid var(--border);
+}
+
+.preset-panel-heading {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.preset-panel-heading h3 {
+  font-size: 16px;
+}
+
+.preset-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.preset-button {
+  display: grid;
+  gap: 4px;
+  min-height: 66px;
+  padding: 10px;
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--text);
+  cursor: pointer;
+  text-align: left;
+}
+
+.preset-button:hover {
+  border-color: var(--primary);
+  background: #f1fff9;
+}
+
+.preset-button strong {
+  font-size: 14px;
+  line-height: 1.1;
+}
+
+.preset-button span {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 750;
+  line-height: 1.2;
 }
 
 .controls-grid {
@@ -1904,14 +2059,26 @@ h3 {
   }
 
   .action-row,
+  .avatar-output-previews,
   .color-grid,
   .use-grid,
   .feature-grid,
+  .preset-grid,
   .style-preview-grid,
   .platform-preview-strip,
   .gallery-showcase-grid,
   .footer-grid {
     grid-template-columns: 1fr;
+  }
+
+  .export-size-panel {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .size-options {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .tool-button {

@@ -25,6 +25,7 @@
 - Keep the Ruffle/SWF game centered in the first viewport. The Canvas generator should only appear as fallback.
 - Keep the tool flow explicit near the game: click preview, press START, customize, and save.
 - The HTML5 Canvas maker can be offered as a visible backup path, but the Ruffle/SWF game remains the primary experience.
+- The HTML5 backup should feel like a complete lightweight studio: quick style presets, clear export sizes, platform previews, and direct PNG download.
 - Cards should use 8px border radius unless a control needs to be circular.
 - Avoid large decorative gradients, blobs, and empty hero sections.
 - Keep text readable and prevent horizontal overflow on mobile.
@@ -33,6 +34,7 @@
 
 - Buttons: clear icon plus label when the action benefits from a symbol.
 - Controls: segmented buttons for option sets, color inputs for colors.
+- Export controls: offer practical sizes first (`512`, `256`, `128`) and show small/circular previews so users understand profile cropping.
 - FAQ: native details/summary for accessibility and no JavaScript dependency.
 - Footer: simple user-facing navigation and legal links. Keep `/sitemap.xml` available for crawlers, but do not show it as a visible footer link.
 - Mobile navigation: keep the first viewport compact by showing a short Start button and collapsing secondary links into a menu.
