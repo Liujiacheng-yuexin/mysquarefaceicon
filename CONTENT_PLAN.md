@@ -7,6 +7,9 @@
 - Public comment section with moderation before publishing.
 - Original local game-style SVG preview for the authorized SWF experience, not copied images.
 - P0 homepage anchor support for `#maker`, `#what-is`, `#features`, `#how-to-use`, and `#faq`.
+- Homepage guidance now explains the game flow before loading: click preview, press START, customize, and SAVE.
+- HTML5 Canvas backup maker is available as an explicit user option as well as an error fallback.
+- Cute original CSS avatar examples and platform preview cards support inspiration without copying external artwork.
 - Trust and inspiration pages:
   - `/about-us`
   - `/free-avatar-maker`

@@ -1,6 +1,6 @@
 "use client";
 
-import { Maximize2, RefreshCw } from "lucide-react";
+import { CirclePlay, Download, Maximize2, MousePointerClick, Palette, RefreshCw } from "lucide-react";
 import type { KeyboardEvent } from "react";
 import { useRef, useState } from "react";
 import AvatarGenerator from "./AvatarGenerator";
@@ -35,6 +35,24 @@ const ruffleUrls = [
 
 const swfSources = [
   "/games/square-face.swf"
+];
+
+const gameGuideSteps = [
+  {
+    title: "Click the preview",
+    text: "Load the original square face game in your browser.",
+    icon: MousePointerClick
+  },
+  {
+    title: "Press START",
+    text: "Use the START button inside the game screen.",
+    icon: CirclePlay
+  },
+  {
+    title: "Customize & SAVE",
+    text: "Pick parts, colors, and save when your icon is ready.",
+    icon: Download
+  }
 ];
 
 function loadScript(url: string) {
@@ -94,7 +112,6 @@ export default function FlashGenerator() {
 
     setLoadState("loading");
     setMessage("Loading Flash player...");
-    setShowFallback(false);
     mount.replaceChildren();
 
     try {
@@ -161,6 +178,21 @@ export default function FlashGenerator() {
 
   return (
     <div className="flash-tool-shell" aria-label="Square face Flash generator">
+      <div className="play-guide" aria-label="How to start the square face game">
+        {gameGuideSteps.map((step, index) => {
+          const Icon = step.icon;
+          return (
+            <div className="play-guide-step" key={step.title}>
+              <span className="play-guide-number">{index + 1}</span>
+              <Icon aria-hidden="true" size={18} />
+              <div>
+                <strong>{step.title}</strong>
+                <span>{step.text}</span>
+              </div>
+            </div>
+          );
+        })}
+      </div>
       <div className="flash-stage" ref={stageRef}>
         <div className="flash-player">
           <div className="ruffle-mount" ref={mountRef} />
@@ -175,6 +207,12 @@ export default function FlashGenerator() {
               }}
               onKeyDown={handleCoverKeyDown}
             >
+              {loadState !== "loading" && (
+                <span className="flash-start-chip" aria-live="polite">
+                  <CirclePlay aria-hidden="true" size={18} />
+                  {loadState === "error" ? "Retry game" : "Click preview to start"}
+                </span>
+              )}
               {loadState === "loading" && (
                 <span className="flash-cover-status" aria-live="polite">
                   <RefreshCw aria-hidden="true" size={18} />
@@ -189,20 +227,27 @@ export default function FlashGenerator() {
         </div>
       </div>
 
-      {loadState === "ready" && (
-        <div className="flash-actions">
+      <div className="flash-actions">
+        <button className="tool-button secondary" type="button" onClick={() => setShowFallback((current) => !current)}>
+          <Palette aria-hidden="true" size={18} />
+          {showFallback ? "Hide HTML5 backup" : "Use HTML5 backup maker"}
+        </button>
+        {loadState === "ready" && (
           <button className="tool-button secondary" type="button" onClick={startPlayer}>
             <RefreshCw aria-hidden="true" size={18} />
             Reload Game
           </button>
-        </div>
-      )}
+        )}
+      </div>
 
       {showFallback && (
         <div className="fallback-section">
           <div className="section-heading compact-heading">
             <p className="eyebrow">Backup option</p>
-            <h2>Ruffle could not load</h2>
+            <h2>{loadState === "error" ? "Ruffle could not load" : "HTML5 backup maker"}</h2>
+            <p className="section-intro">
+              Use this lightweight Canvas maker if you want a quick downloadable square avatar without waiting for the original game.
+            </p>
           </div>
           <AvatarGenerator />
         </div>

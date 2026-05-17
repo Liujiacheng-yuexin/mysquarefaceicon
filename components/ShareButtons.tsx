@@ -1,6 +1,6 @@
 "use client";
 
-import { Copy, Share2 } from "lucide-react";
+import { Copy, MessageSquareText, Share2 } from "lucide-react";
 import { useState } from "react";
 import type { LocaleContent } from "@/lib/locales";
 
@@ -12,15 +12,30 @@ type ShareButtonsProps = {
 
 export default function ShareButtons({ share, url, title }: ShareButtonsProps) {
   const [copied, setCopied] = useState(false);
+  const [captionCopied, setCaptionCopied] = useState(false);
+  const caption = `I made a cute square face icon with ${title}. Try the free generator: ${url}`;
+
+  async function copyText(text: string, success: () => void, fallbackLabel: string) {
+    try {
+      await navigator.clipboard.writeText(text);
+      success();
+    } catch {
+      window.prompt(fallbackLabel, text);
+    }
+  }
 
   async function copyLink() {
-    try {
-      await navigator.clipboard.writeText(url);
+    await copyText(url, () => {
       setCopied(true);
       window.setTimeout(() => setCopied(false), 1800);
-    } catch {
-      window.prompt(share.copy, url);
-    }
+    }, share.copy);
+  }
+
+  async function copyCaption() {
+    await copyText(caption, () => {
+      setCaptionCopied(true);
+      window.setTimeout(() => setCaptionCopied(false), 1800);
+    }, "Copy this caption");
   }
 
   async function nativeShare() {
@@ -42,6 +57,10 @@ export default function ShareButtons({ share, url, title }: ShareButtonsProps) {
       <button className="tool-button secondary" type="button" onClick={copyLink}>
         <Copy aria-hidden="true" size={18} />
         {copied ? share.copied : share.copy}
+      </button>
+      <button className="tool-button secondary" type="button" onClick={copyCaption}>
+        <MessageSquareText aria-hidden="true" size={18} />
+        {captionCopied ? "Caption copied" : "Copy caption"}
       </button>
     </div>
   );

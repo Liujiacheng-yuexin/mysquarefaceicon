@@ -1,3 +1,5 @@
+import { Menu } from "lucide-react";
+
 export default function SiteHeader() {
   return (
     <header className="site-nav">
@@ -5,6 +7,7 @@ export default function SiteHeader() {
         <span className="brand-mark" aria-hidden="true" />
         <span>Square Face Generator</span>
       </a>
+      <a className="mobile-start-link" href="/#maker">Start</a>
       <nav className="nav-links" aria-label="Primary navigation">
         <a href="/#maker">Generator</a>
         <a href="/free-avatar-maker">Free Avatar Maker</a>
@@ -14,6 +17,20 @@ export default function SiteHeader() {
         <a href="/about-us">About</a>
         <a className="nav-cta" href="/#maker">Start Creating</a>
       </nav>
+      <details className="mobile-nav-menu">
+        <summary aria-label="Open navigation menu">
+          <Menu aria-hidden="true" size={18} />
+          Menu
+        </summary>
+        <div className="mobile-nav-panel">
+          <a href="/#maker">Start Creating</a>
+          <a href="/free-avatar-maker">Free Avatar Maker</a>
+          <a href="/gallery">Gallery</a>
+          <a href="/square-face-icon-generator">Icon Guide</a>
+          <a href="/blog">Blog</a>
+          <a href="/about-us">About</a>
+        </div>
+      </details>
     </header>
   );
 }

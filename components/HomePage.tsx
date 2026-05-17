@@ -2,7 +2,7 @@ import FlashGenerator from "@/components/FlashGenerator";
 import ShareButtons from "@/components/ShareButtons";
 import CommentSection from "@/components/CommentSection";
 import InstallPrompt from "@/components/InstallPrompt";
-import { ChevronDown, CirclePlay, Grid3X3, ShieldCheck, Sparkles } from "lucide-react";
+import { ChevronDown, CirclePlay, Grid3X3, Menu, ShieldCheck, Sparkles } from "lucide-react";
 import { getLocaleUrl, localeCodes, locales, siteUrl, type LocaleCode } from "@/lib/locales";
 
 type HomePageProps = {
@@ -90,6 +90,51 @@ const resourceCards = [
   }
 ];
 
+const styleSamples = [
+  {
+    title: "Soft Friend Icon",
+    text: "Warm colors, rounded features, and a gentle expression for chat profiles.",
+    theme: "mint"
+  },
+  {
+    title: "Bright Creator Icon",
+    text: "High contrast color blocks help the avatar stay visible in tiny mobile previews.",
+    theme: "coral"
+  },
+  {
+    title: "Pixel Mood Icon",
+    text: "Simple shapes and a smaller mouth make the face feel closer to retro profile art.",
+    theme: "pixel",
+    neutral: true
+  },
+  {
+    title: "Matching Group Icon",
+    text: "Use one shared background color, then vary hair and cheeks for friend sets.",
+    theme: "violet"
+  }
+];
+
+const platformPreviews = [
+  {
+    name: "Discord",
+    note: "Round crop safe",
+    shape: "circle",
+    theme: "mint"
+  },
+  {
+    name: "TikTok",
+    note: "Readable on mobile",
+    shape: "rounded",
+    theme: "coral"
+  },
+  {
+    name: "YouTube",
+    note: "Clear channel icon",
+    shape: "circle",
+    theme: "violet"
+  }
+];
+
 const heroIcons = [CirclePlay, ShieldCheck, Sparkles];
 
 export default function HomePage({ locale }: HomePageProps) {
@@ -155,6 +200,7 @@ export default function HomePage({ locale }: HomePageProps) {
           <span className="brand-mark" aria-hidden="true" />
           <span>Square Face Generator</span>
         </a>
+        <a className="mobile-start-link" href="#maker">Start</a>
         <nav className="nav-links" aria-label="Primary navigation">
           <a href="#how-to-use">
             <Grid3X3 aria-hidden="true" size={16} />
@@ -164,11 +210,11 @@ export default function HomePage({ locale }: HomePageProps) {
           <a href="/gallery">Gallery</a>
           <a href="/square-face-icon-generator">Icon Guide</a>
           <a href="/blog">Blog</a>
-          <div className="language-links" aria-label="Language selection">
-            <span className="language-current">
+          <details className="language-links">
+            <summary className="language-current" aria-label="Select language">
               {content.label}
               <ChevronDown aria-hidden="true" size={14} />
-            </span>
+            </summary>
             <div className="language-menu">
               {localeCodes.map((code) => (
                 <a className={code === locale ? "is-active" : ""} href={locales[code].path} hrefLang={code} key={code}>
@@ -176,9 +222,30 @@ export default function HomePage({ locale }: HomePageProps) {
                 </a>
               ))}
             </div>
-          </div>
+          </details>
           <a className="nav-cta" href="#maker">Start Creating</a>
         </nav>
+        <details className="mobile-nav-menu">
+          <summary aria-label="Open navigation menu">
+            <Menu aria-hidden="true" size={18} />
+            Menu
+          </summary>
+          <div className="mobile-nav-panel">
+            <a href="#maker">Start Creating</a>
+            <a href="#how-to-use">How to Use</a>
+            <a href="/free-avatar-maker">Free Avatar Maker</a>
+            <a href="/gallery">Gallery</a>
+            <a href="/square-face-icon-generator">Icon Guide</a>
+            <a href="/blog">Blog</a>
+            <div className="mobile-language-grid" aria-label="Language links">
+              {localeCodes.map((code) => (
+                <a className={code === locale ? "is-active" : ""} href={locales[code].path} hrefLang={code} key={code}>
+                  {locales[code].shortLabel}
+                </a>
+              ))}
+            </div>
+          </div>
+        </details>
       </header>
 
       <main>
@@ -221,6 +288,45 @@ export default function HomePage({ locale }: HomePageProps) {
               <FlashGenerator />
               <ShareButtons share={content.share} title={content.title} url={canonicalUrl} />
             </div>
+          </div>
+        </section>
+
+        <section className="content-band playful-band" aria-label="Square face style previews">
+          <div className="section-heading">
+            <p className="eyebrow">Cute icon ideas</p>
+            <h2>Make a Square Face That Feels Like Yours</h2>
+            <p className="section-intro">
+              Start with the original game, then use these simple style directions when you want a clearer profile icon for a specific platform.
+            </p>
+          </div>
+          <div className="style-preview-grid">
+            {styleSamples.map((sample) => (
+              <article className="style-preview-card" key={sample.title}>
+                <div className={`avatar-sample avatar-sample-${sample.theme}`} aria-hidden="true">
+                  <span className="sample-hair" />
+                  <span className="sample-eye sample-eye-left" />
+                  <span className="sample-eye sample-eye-right" />
+                  <span className={sample.neutral ? "sample-mouth is-neutral" : "sample-mouth"} />
+                  <span className="sample-cheek sample-cheek-left" />
+                  <span className="sample-cheek sample-cheek-right" />
+                </div>
+                <h3>{sample.title}</h3>
+                <p>{sample.text}</p>
+              </article>
+            ))}
+          </div>
+          <div className="platform-preview-strip" aria-label="Profile platform preview examples">
+            {platformPreviews.map((preview) => (
+              <div className="platform-preview" key={preview.name}>
+                <div className={`platform-avatar platform-avatar-${preview.theme} ${preview.shape === "circle" ? "is-circle" : ""}`} aria-hidden="true">
+                  <span />
+                </div>
+                <div>
+                  <strong>{preview.name}</strong>
+                  <span>{preview.note}</span>
+                </div>
+              </div>
+            ))}
           </div>
         </section>
 
