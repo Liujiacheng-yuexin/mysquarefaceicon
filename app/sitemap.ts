@@ -1,16 +1,16 @@
 import type { MetadataRoute } from "next";
-import { getLocaleUrl, localeCodes } from "@/lib/locales";
+import { getLocaleUrl, reviewedLocaleCodes } from "@/lib/locales";
 
 const baseUrl = "https://mysquarefaceicon.com";
 
 const contentPaths = [
   "/about-us",
+  "/contact",
+  "/editorial-policy",
   "/free-avatar-maker",
   "/square-avatar-generator",
   "/gallery",
   "/square-face-icon-generator",
-  "/cute-square-avatar-generator",
-  "/pixel-square-face-maker",
   "/blog",
   "/blog/avatar-maker-without-signup",
   "/blog/cute-profile-picture-ideas",
@@ -22,10 +22,10 @@ const contentPaths = [
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const lastModified = new Date("2026-05-17");
+  const lastModified = new Date("2026-05-19");
 
   return [
-    ...localeCodes.map((locale) => ({
+    ...reviewedLocaleCodes.map((locale) => ({
       url: getLocaleUrl(locale),
       lastModified,
       changeFrequency: "weekly",

@@ -5,9 +5,9 @@ import "./globals.css";
 
 const siteUrl = "https://mysquarefaceicon.com";
 const googleAnalyticsId = "G-VPL9X65STX";
-const siteTitle = "My Square Face Icon - Free Square Face Generator Online";
+const siteTitle = "Square Face Generator - Play the Classic Flash Avatar Game Online";
 const siteDescription =
-  "Play a free square face generator online. Create cute square face icons in a Ruffle-powered avatar game with an HTML5 fallback.";
+  "Play Square Face Generator online, a classic Flash avatar maker game where you can create funny square face icons in your browser. No Flash Player required.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),

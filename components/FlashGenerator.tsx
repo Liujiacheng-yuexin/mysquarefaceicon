@@ -1,9 +1,8 @@
 "use client";
 
-import { CirclePlay, Download, Maximize2, MousePointerClick, Palette, RefreshCw } from "lucide-react";
+import { CirclePlay, Flag, Maximize2, RefreshCw, RotateCcw } from "lucide-react";
 import type { KeyboardEvent } from "react";
-import { useRef, useState } from "react";
-import AvatarGenerator from "./AvatarGenerator";
+import { useEffect, useRef, useState } from "react";
 
 declare global {
   interface Window {
@@ -39,24 +38,6 @@ const swfSources = [
 
 const SCRIPT_TIMEOUT_MS = 8000;
 const SWF_LOAD_TIMEOUT_MS = 15000;
-
-const gameGuideSteps = [
-  {
-    title: "Click the preview",
-    text: "Load the original square face game in your browser.",
-    icon: MousePointerClick
-  },
-  {
-    title: "Press START",
-    text: "Use the START button inside the game screen.",
-    icon: CirclePlay
-  },
-  {
-    title: "Customize & SAVE",
-    text: "Pick parts, colors, and save when your icon is ready.",
-    icon: Download
-  }
-];
 
 function loadScript(url: string) {
   return new Promise<void>((resolve, reject) => {
@@ -130,17 +111,37 @@ async function loadRuffleRuntime() {
 export default function FlashGenerator() {
   const mountRef = useRef<HTMLDivElement | null>(null);
   const stageRef = useRef<HTMLDivElement | null>(null);
+  const slowLoadingTimerRef = useRef<number | null>(null);
   const [loadState, setLoadState] = useState<LoadState>("idle");
-  const [message, setMessage] = useState("Click the preview to load the square face game.");
-  const [showFallback, setShowFallback] = useState(false);
+  const [message, setMessage] = useState("Click Play Now to start the classic Flash game.");
+  const [showSlowHint, setShowSlowHint] = useState(false);
+  const [fullscreenAvailable, setFullscreenAvailable] = useState(false);
+
+  useEffect(() => {
+    setFullscreenAvailable(Boolean(stageRef.current?.requestFullscreen));
+
+    return () => {
+      if (slowLoadingTimerRef.current) {
+        window.clearTimeout(slowLoadingTimerRef.current);
+      }
+    };
+  }, []);
 
   async function startPlayer() {
     const mount = mountRef.current;
     if (!mount) return;
 
+    if (slowLoadingTimerRef.current) {
+      window.clearTimeout(slowLoadingTimerRef.current);
+    }
+
     setLoadState("loading");
-    setMessage("Loading Flash player...");
+    setMessage("Loading Square Face Generator...");
+    setShowSlowHint(false);
     mount.replaceChildren();
+    slowLoadingTimerRef.current = window.setTimeout(() => {
+      setShowSlowHint(true);
+    }, 6000);
 
     try {
       await loadRuffleRuntime();
@@ -156,7 +157,7 @@ export default function FlashGenerator() {
       let lastError: unknown;
       for (const source of swfSources) {
         try {
-          setMessage(source.startsWith("/") ? "Loading local game file..." : "Loading authorized fallback game file...");
+          setMessage("Loading Square Face Generator...");
           await withTimeout(
             player.load({
               url: source,
@@ -170,6 +171,9 @@ export default function FlashGenerator() {
             SWF_LOAD_TIMEOUT_MS,
             "The game file took too long to load."
           );
+          if (slowLoadingTimerRef.current) {
+            window.clearTimeout(slowLoadingTimerRef.current);
+          }
           setLoadState("ready");
           setMessage("Game loaded.");
           return;
@@ -180,10 +184,12 @@ export default function FlashGenerator() {
 
       throw lastError ?? new Error("SWF failed to load.");
     } catch {
+      if (slowLoadingTimerRef.current) {
+        window.clearTimeout(slowLoadingTimerRef.current);
+      }
       mount.replaceChildren();
       setLoadState("error");
-      setMessage("The Flash game could not load. You can use the HTML5 fallback below.");
-      setShowFallback(true);
+      setMessage("The game could not be loaded. Please refresh the page or try a desktop browser.");
     }
   }
 
@@ -191,12 +197,21 @@ export default function FlashGenerator() {
     const stage = stageRef.current;
     if (!stage) return;
 
-    if (document.fullscreenElement) {
-      await document.exitFullscreen();
-      return;
-    }
+    try {
+      if (!stage.requestFullscreen) {
+        setMessage("Fullscreen is not available in this browser.");
+        return;
+      }
 
-    await stage.requestFullscreen();
+      if (document.fullscreenElement) {
+        await document.exitFullscreen();
+        return;
+      }
+
+      await stage.requestFullscreen();
+    } catch {
+      setMessage("Fullscreen is not available in this browser.");
+    }
   }
 
   function handleCoverKeyDown(event: KeyboardEvent<HTMLDivElement>) {
@@ -210,21 +225,6 @@ export default function FlashGenerator() {
 
   return (
     <div className="flash-tool-shell" aria-label="Square face Flash generator">
-      <div className="play-guide" aria-label="How to start the square face game">
-        {gameGuideSteps.map((step, index) => {
-          const Icon = step.icon;
-          return (
-            <div className="play-guide-step" key={step.title}>
-              <span className="play-guide-number">{index + 1}</span>
-              <Icon aria-hidden="true" size={18} />
-              <div>
-                <strong>{step.title}</strong>
-                <span>{step.text}</span>
-              </div>
-            </div>
-          );
-        })}
-      </div>
       <div className="flash-stage" ref={stageRef}>
         <div className="flash-player">
           <div className="ruffle-mount" ref={mountRef} />
@@ -239,51 +239,52 @@ export default function FlashGenerator() {
               }}
               onKeyDown={handleCoverKeyDown}
             >
-              {loadState !== "loading" && (
+              {loadState === "idle" && (
                 <span className="flash-start-chip" aria-live="polite">
                   <CirclePlay aria-hidden="true" size={18} />
-                  {loadState === "error" ? "Retry game" : "Click preview to start"}
+                  Click to start
+                </span>
+              )}
+              {loadState === "error" && (
+                <span className="flash-error-panel" aria-live="polite">
+                  {message}
+                  <strong>Click to retry.</strong>
                 </span>
               )}
               {loadState === "loading" && (
                 <span className="flash-cover-status" aria-live="polite">
                   <RefreshCw aria-hidden="true" size={18} />
                   {message}
+                  {showSlowHint && (
+                    <small>Still loading? This classic Flash game may take a few seconds to start.</small>
+                  )}
                 </span>
               )}
             </div>
           )}
-          <button className="flash-fullscreen" type="button" onClick={toggleFullscreen} aria-label="Fullscreen game">
-            <Maximize2 aria-hidden="true" size={22} />
-          </button>
         </div>
       </div>
 
-      <div className="flash-actions">
-        <button className="tool-button secondary" type="button" onClick={() => setShowFallback((current) => !current)}>
-          <Palette aria-hidden="true" size={18} />
-          {showFallback ? "Hide HTML5 backup" : "Use HTML5 backup maker"}
+      <div className="game-control-bar" aria-label="Game controls">
+        <button className="tool-button secondary" type="button" onClick={toggleFullscreen} disabled={!fullscreenAvailable}>
+          <Maximize2 aria-hidden="true" size={18} />
+          Fullscreen
         </button>
-        {loadState === "ready" && (
-          <button className="tool-button secondary" type="button" onClick={startPlayer}>
-            <RefreshCw aria-hidden="true" size={18} />
-            Reload Game
-          </button>
-        )}
+        <button className="tool-button secondary" type="button" onClick={() => void startPlayer()}>
+          <RotateCcw aria-hidden="true" size={18} />
+          Reload Game
+        </button>
+        <a className="tool-button secondary" href="/contact">
+          <Flag aria-hidden="true" size={18} />
+          Report Issue
+        </a>
       </div>
 
-      {showFallback && (
-        <div className="fallback-section">
-          <div className="section-heading compact-heading">
-            <p className="eyebrow">Backup option</p>
-            <h2>{loadState === "error" ? "Ruffle could not load" : "HTML5 backup maker"}</h2>
-            <p className="section-intro">
-              Use this lightweight Canvas maker if you want a quick downloadable square avatar without waiting for the original game.
-            </p>
-          </div>
-          <AvatarGenerator />
-        </div>
-      )}
+      <p className="game-status" aria-live="polite">{message}</p>
+      <aside className="game-device-notice">
+        This classic Flash game works best on desktop. If you are using a phone, try landscape mode for a better
+        experience.
+      </aside>
     </div>
   );
 }

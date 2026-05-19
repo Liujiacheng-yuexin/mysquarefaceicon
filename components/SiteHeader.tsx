@@ -15,6 +15,7 @@ export default function SiteHeader() {
         <a href="/square-face-icon-generator">Icon Guide</a>
         <a href="/blog">Blog</a>
         <a href="/about-us">About</a>
+        <a href="/contact">Contact</a>
         <a className="nav-cta" href="/#maker">Start Creating</a>
       </nav>
       <details className="mobile-nav-menu">
@@ -29,6 +30,7 @@ export default function SiteHeader() {
           <a href="/square-face-icon-generator">Icon Guide</a>
           <a href="/blog">Blog</a>
           <a href="/about-us">About</a>
+          <a href="/contact">Contact</a>
         </div>
       </details>
     </header>

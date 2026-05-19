@@ -18,6 +18,10 @@
 - [x] `robots.txt` is accessible and declares sitemap
 - [x] Local SWF file is accessible at `/games/square-face.swf`
 - [x] Local Ruffle runtime is accessible at `/ruffle/ruffle.js`
+- [ ] Game loading overlay appears before Ruffle/SWF is ready
+- [ ] Fullscreen control works on desktop browsers
+- [ ] Reload Game restarts the Ruffle player without reloading the whole page
+- [ ] Game failure state shows the refresh/desktop fallback message
 - [x] Every indexable page has a canonical URL
 - [x] Every page has exactly one H1
 - [x] Important buttons have accessible labels
@@ -34,7 +38,7 @@
 - [x] Approved comments render publicly
 - [ ] Mobile layout has no horizontal overflow
 - [ ] Ruffle loads the SWF game
-- [ ] Canvas fallback randomize, reset, color update, and download work
+- [ ] Game help content, troubleshooting, and FAQ match visible page copy
 
 ## Launch Day
 

@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   description:
     "Privacy Policy for My Square Face Icon, a free browser-based square face generator.",
   alternates: {
-    canonical: "/privacy-policy"
+    canonical: "https://mysquarefaceicon.com/privacy-policy"
   }
 };
 
@@ -16,9 +16,9 @@ export default function PrivacyPolicyPage() {
       <h1>Privacy Policy</h1>
       <p>Last updated: May 12, 2026</p>
       <p>
-        My Square Face Icon is designed as a browser-based avatar tool. The main
-        game runs through Ruffle, and a small HTML5 Canvas fallback may appear if
-        the Flash game cannot load.
+        My Square Face Icon is designed as a browser-based classic Flash avatar
+        maker page. The main game runs through Ruffle so visitors can play the
+        SWF game in modern browsers without installing Adobe Flash Player.
       </p>
       <h2>Information We Collect</h2>
       <p>
@@ -29,9 +29,9 @@ export default function PrivacyPolicyPage() {
       </p>
       <h2>Generated Images</h2>
       <p>
-        The game and fallback run in your browser. If you save or download an
-        image, the save action is handled by your browser and the active tool
-        workflow.
+        The game runs in your browser. If you save an image through the original
+        game or take a screenshot of your creation, that action is handled by
+        your browser or device.
       </p>
       <h2>Comment Images</h2>
       <p>
@@ -53,8 +53,8 @@ export default function PrivacyPolicyPage() {
       </p>
       <h2>Contact</h2>
       <p>
-        For privacy questions, contact the site owner through the contact method
-        published with the production site.
+        For privacy questions, use the <a href="/contact">contact page</a> or email
+        <a href="mailto:contact@mysquarefaceicon.com"> contact@mysquarefaceicon.com</a>.
       </p>
     </main>
   );

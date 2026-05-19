@@ -3,16 +3,20 @@
 ## Current Release Scope
 
 - Homepage tool pages for EN, ES, VI, JA, TH, AR, RU, and ID.
+- Non-English pages are draft/localization-review pages and should stay noindex
+  until reviewed by a native or fluent editor.
 - Legal pages: `/privacy-policy` and `/terms-of-service`.
 - Public comment section with moderation before publishing.
 - Original local game-style SVG preview for the authorized SWF experience, not copied images.
 - P0 homepage anchor support for `#maker`, `#what-is`, `#features`, `#how-to-use`, and `#faq`.
-- Homepage guidance now explains the game flow before loading: click preview, press START, customize, and SAVE.
-- HTML5 Canvas backup maker is available as an explicit user option as well as an error fallback.
-- HTML5 Canvas backup maker includes quick style presets, 512/256/128 PNG export sizes, round-crop and small-size previews, and a share-caption helper.
+- Homepage guidance now positions Square Face Generator as a classic Flash avatar maker game, not an AI generator or a rebuilt modern generator.
+- The Ruffle/SWF game player is the public homepage primary experience, with visible loading, reload, fullscreen, troubleshooting, and desktop/mobile guidance.
+- If the original game does not provide saving in a given browser, homepage copy recommends taking a screenshot instead of promising a download.
 - Cute original CSS avatar examples and platform preview cards support inspiration without copying external artwork.
 - Trust and inspiration pages:
   - `/about-us`
+  - `/contact`
+  - `/editorial-policy`
   - `/free-avatar-maker`
   - `/square-avatar-generator`
   - `/gallery`
@@ -33,10 +37,13 @@
 ## Content Rules
 
 - Keep the generator visible before long explanatory content.
+- Preserve the SWF game file and do not modify, decompile, or rewrite game internals.
 - Use the primary keyword naturally: `square face generator`.
 - Use the secondary keyword naturally: `square face icon generator`.
 - Keep FAQ schema aligned with the visible FAQ on each language page.
 - Do not copy competitor comments, screenshots, SWF wrappers, or article text.
+- Do not put draft translations, weak support pages, or unreviewed AI-assisted pages
+  into sitemap.
 
 ## Future Content Ideas
 

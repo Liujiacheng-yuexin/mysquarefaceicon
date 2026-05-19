@@ -158,7 +158,7 @@ export default function DiscordProfileIconGuidePage() {
             </article>
           </div>
           <p>
-            If the Ruffle-powered game cannot load in your browser, use the fallback generator on the same page. The fallback is simpler, but it is useful when you need a quick square avatar without waiting for the original game runtime.
+            If the Ruffle-powered game cannot load in your browser, use the Reload Game button, refresh the page, or try a desktop browser. Classic Flash games can be less reliable on small mobile browsers because they were originally designed around desktop controls.
           </p>
         </section>
 

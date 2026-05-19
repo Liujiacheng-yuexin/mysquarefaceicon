@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   description:
     "Terms of Service for My Square Face Icon, a free square face icon generator.",
   alternates: {
-    canonical: "/terms-of-service"
+    canonical: "https://mysquarefaceicon.com/terms-of-service"
   }
 };
 
@@ -48,6 +48,11 @@ export default function TermsOfServicePage() {
       <p>
         These terms may be updated as the site adds new features such as asset
         packs, analytics, advertising, or additional pages.
+      </p>
+      <h2>Contact and Corrections</h2>
+      <p>
+        For questions about these terms, content corrections, or moderation issues,
+        use the <a href="/contact">contact page</a>.
       </p>
     </main>
   );

@@ -5,7 +5,7 @@
 - Style keywords: clean, cute, practical, fast, friendly
 - Mood: light tool interface with enough personality for an avatar maker
 - First viewport: show the generator immediately
-- Current homepage direction: US-style cute tool page with a compact white nav, mint hero band, orange CTA, and the SWF preview as the main visual.
+- Current homepage direction: US-style retro Flash game page with a compact white nav, mint hero band, orange CTA, and the self-hosted Ruffle/SWF player as the main visual.
 
 ## Colors
 
@@ -22,10 +22,10 @@
 
 ## Layout
 
-- Keep the Ruffle/SWF game centered in the first viewport. The Canvas generator should only appear as fallback.
-- Keep the tool flow explicit near the game: click preview, press START, customize, and save.
-- The HTML5 Canvas maker can be offered as a visible backup path, but the Ruffle/SWF game remains the primary experience.
-- The HTML5 backup should feel like a complete lightweight studio: quick style presets, clear export sizes, platform previews, and direct PNG download.
+- Keep the Ruffle/SWF game centered near the first viewport and treat it as a classic Flash avatar maker game.
+- Keep the game flow explicit near the game: load the player, press START, customize, and save or screenshot when the original game allows it.
+- Do not present the page as an AI generator or a rebuilt modern generator.
+- The HTML5 Canvas maker may remain available in the codebase for future fallback work, but the public homepage should prioritize the classic Flash game player.
 - Cards should use 8px border radius unless a control needs to be circular.
 - Avoid large decorative gradients, blobs, and empty hero sections.
 - Keep text readable and prevent horizontal overflow on mobile.

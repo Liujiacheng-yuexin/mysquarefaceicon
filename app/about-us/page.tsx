@@ -121,6 +121,7 @@ export default function AboutUsPage() {
           </p>
           <p>
             You can read the full details in the <a href="/privacy-policy">Privacy Policy</a> and <a href="/terms-of-service">Terms of Service</a>.
+            Content standards, AI assistance, and page quality rules are documented in the <a href="/editorial-policy">Editorial Policy</a>.
           </p>
         </section>
 
@@ -138,6 +139,10 @@ export default function AboutUsPage() {
             <a href="/gallery">
               <h3>Browse the gallery</h3>
               <p>See original square face icon ideas for style inspiration.</p>
+            </a>
+            <a href="/contact">
+              <h3>Contact the project</h3>
+              <p>Send generator feedback, privacy questions, or correction requests.</p>
             </a>
           </div>
         </section>

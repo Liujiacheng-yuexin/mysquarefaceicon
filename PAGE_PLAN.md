@@ -13,6 +13,8 @@
 | Home RU | `/ru` | Tool page | square face generator | Play the localized generator | P0 | Implemented |
 | Home ID | `/id` | Tool page | square face generator | Play the localized generator | P0 | Implemented |
 | About Us | `/about-us` | Trust page | about My Square Face Icon | Learn who runs the site and how the project handles originality and privacy | P1 | Implemented |
+| Contact | `/contact` | Trust page | contact My Square Face Icon | Contact the project about feedback, privacy, corrections, or moderation | P1 | Implemented |
+| Editorial Policy | `/editorial-policy` | Trust page | editorial policy | Explain content quality, AI assistance, moderation, and correction standards | P1 | Implemented |
 | Free Avatar Maker | `/free-avatar-maker` | Support / guide page | free avatar maker | Create a free avatar with a square face icon workflow | P1 | Implemented |
 | Square Avatar Generator | `/square-avatar-generator` | Support / guide page | square avatar generator | Learn how square source avatars work across profile crops and platforms | P1 | Implemented |
 | Square Face Icon Gallery | `/gallery` | Inspiration gallery | square face icon gallery | Browse original square face icon examples and style ideas | P1 | Implemented |
@@ -33,15 +35,17 @@
 ## Homepage Modules
 
 - Navigation
-- Tool-first hero with Ruffle/SWF generator
+- Hero section with classic Flash avatar maker positioning
+- Game player section with self-hosted Ruffle/SWF player
+- Game control bar with Fullscreen, Reload Game, and Report Issue
+- Desktop/mobile experience notice
 - Anchor compatibility for `#maker`, `#what-is`, `#features`, `#how-to-use`, and `#faq`
-- HTML5 Canvas fallback for load failures
-- Why use this generator
-- How it works
-- Perfect for
-- What is a Square Face Generator
-- Square Face Icon Resources
-- Share your creation / comments
+- What is Square Face Generator
+- How to play
+- Game features
+- Tips for best experience
+- Troubleshooting
+- Related avatar games and tools
 - FAQ
 - Grouped footer links
 
@@ -53,6 +57,11 @@
 | `/api/comments` | Public comments and new submissions | No |
 | `/api/admin/comments` | Admin comment listing | No |
 | `/api/comment-images/*` | Serves approved or stored comment image files | No |
+
+## Temporary Noindex Controls
+
+- Locale pages other than `/` are draft pages until native-language review is complete. They should remain noindex, hidden from sitemap, and excluded from hreflang.
+- `/cute-square-avatar-generator` and `/pixel-square-face-maker` are useful support resources, but they should remain noindex until they contain stronger standalone product value.
 
 ## Internal Links
 

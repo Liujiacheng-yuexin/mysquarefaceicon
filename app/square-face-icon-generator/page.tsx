@@ -35,9 +35,9 @@ const faq = [
       "A square face icon generator is a browser tool for making compact avatar-style face icons that work well as profile pictures."
   },
   {
-    question: "Should I use the Flash game or the fallback generator?",
+    question: "Should I use the Flash game on desktop?",
     answer:
-      "Use the Ruffle-powered game when it loads correctly because it preserves the original square face workflow. Use the fallback only when the SWF cannot load."
+      "Yes. Use the Ruffle-powered game on a desktop or laptop browser when possible because it preserves the original square face workflow."
   },
   {
     question: "Where can I use a square face icon?",
@@ -69,7 +69,7 @@ export default function SquareFaceIconGeneratorPage() {
         <p className="eyebrow">Square avatar guide</p>
         <h1>Square Face Icon Generator Guide</h1>
         <p className="lead">
-          A square face icon generator helps you create a compact avatar that stays readable at small sizes. My Square Face Icon keeps the original game experience available through Ruffle and adds a fallback path for browsers that cannot load the game.
+          A square face icon generator helps you create a compact avatar that stays readable at small sizes. My Square Face Icon keeps the original classic Flash game experience available through Ruffle in modern browsers.
         </p>
 
         <nav className="toc-card" aria-label="Page sections">

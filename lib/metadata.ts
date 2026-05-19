@@ -1,19 +1,32 @@
 import type { Metadata } from "next";
-import { getLanguageAlternates, getLocaleUrl, locales, type LocaleCode } from "./locales";
+import { getLanguageAlternates, getLocaleUrl, isReviewedLocaleCode, locales, type LocaleCode } from "./locales";
 
 export function buildHomeMetadata(locale: LocaleCode): Metadata {
   const content = locales[locale];
+  const isIndexable = isReviewedLocaleCode(locale);
 
   return {
-    title: content.title,
+    title: {
+      absolute: content.title
+    },
     description: content.description,
     alternates: {
       canonical: getLocaleUrl(locale),
-      languages: {
-        ...getLanguageAlternates(),
-        "x-default": getLocaleUrl("en")
-      }
+      ...(isIndexable
+        ? {
+            languages: {
+              ...getLanguageAlternates(),
+              "x-default": getLocaleUrl("en")
+            }
+          }
+        : {})
     },
+    robots: isIndexable
+      ? undefined
+      : {
+          index: false,
+          follow: true
+        },
     openGraph: {
       type: "website",
       url: getLocaleUrl(locale),

@@ -6,16 +6,19 @@ This document turns the general SEO rules into the current operating system for 
 
 ```text
 Home /
-  -> Generator first viewport
+  -> Classic Flash game hero
+  -> Ruffle/SWF game player
   -> Anchor sections
       -> #maker
       -> #what-is
       -> #features
       -> #how-to-use
       -> #faq
-  -> Square face icon resources
+  -> How to play / troubleshooting / related tools
   -> Trust and inspiration pages
       -> /about-us
+      -> /contact
+      -> /editorial-policy
       -> /free-avatar-maker
       -> /square-avatar-generator
       -> /gallery
@@ -41,8 +44,8 @@ Home /
 
 | Page Type | Role | Current URLs |
 |---|---|---|
-| Core tool page | Primary ranking page and product page | `/`, locale pages |
-| Trust page | Explains project purpose, originality, privacy, and roadmap | `/about-us` |
+| Core game page | Primary ranking page and classic Flash avatar maker page | `/`, locale pages |
+| Trust page | Explains project purpose, originality, privacy, contact, editorial standards, and roadmap | `/about-us`, `/contact`, `/editorial-policy` |
 | Broad support page | Broader avatar maker intent tied back to the generator | `/free-avatar-maker`, `/square-avatar-generator` |
 | Gallery | Original inspiration examples and internal discovery | `/gallery` |
 | Support guide | Secondary keyword and internal link hub | `/square-face-icon-generator`, `/cute-square-avatar-generator`, `/pixel-square-face-maker` |
@@ -61,7 +64,7 @@ Home /
 
 ## 4. Metadata Templates
 
-- Homepage: `My Square Face Icon - Free Square Face Generator Online`
+- Homepage: `Square Face Generator - Play the Classic Flash Avatar Game Online`
 - Support guide: `{Topic} - My Square Face Icon`
 - Blog article: `{Natural question or tutorial title} - My Square Face Icon`
 - Legal: `{Policy Name} - My Square Face Icon`
@@ -74,6 +77,7 @@ Descriptions should explain the page value in one or two natural sentences and s
 - Sitemap includes only public, indexable pages.
 - Admin routes, API routes, uploads, and low-value experimental pages stay out of sitemap.
 - New important pages must be added to sitemap only after canonical, metadata, and internal links exist.
+- Draft locale pages and weak support pages stay out of sitemap until they pass quality review.
 
 ## 6. Canonical Strategy
 
@@ -94,14 +98,16 @@ Descriptions should explain the page value in one or two natural sentences and s
 
 | URL | Type | Ranking Intent |
 |---|---|---|
-| `/` | Ranking page | Primary keyword and tool intent |
+| `/` | Ranking page | Primary keyword and classic Flash game intent |
 | `/about-us` | Trust page | Brand and project trust intent |
+| `/contact` | Trust page | Contact, corrections, privacy, and moderation requests |
+| `/editorial-policy` | Trust page | Content quality, AI assistance, moderation, and corrections |
 | `/free-avatar-maker` | Ranking support page | Free avatar maker workflow intent |
 | `/square-avatar-generator` | Ranking support page | Square avatar workflow and profile crop intent |
 | `/gallery` | Middle + inspiration page | Square face icon examples and style intent |
 | `/square-face-icon-generator` | Ranking + hub page | Secondary keyword and education intent |
-| `/cute-square-avatar-generator` | Ranking support page | Cute avatar style intent |
-| `/pixel-square-face-maker` | Ranking support page | Pixel-inspired avatar workflow intent |
+| `/cute-square-avatar-generator` | Noindex support page until upgraded | Cute avatar style intent |
+| `/pixel-square-face-maker` | Noindex support page until upgraded | Pixel-inspired avatar workflow intent |
 | `/blog` | Middle page | Discovery and internal distribution |
 | `/blog/how-to-make-a-cute-discord-profile-icon` | Ranking page | Discord avatar tutorial intent |
 | `/blog/discord-avatar-size-guide` | Ranking page | Discord avatar sizing and crop-safe source intent |
@@ -131,6 +137,7 @@ Each article must include a clear answer, H2/H3 structure, related links, metada
 - Every page needs unique intent, not just a keyword variant.
 - Pages with overlapping intent should be merged instead of split.
 - Pages must be useful without relying on generated filler text.
+- Draft translations must be noindex and excluded from hreflang/sitemap until reviewed.
 
 ## 11. Page Pruning Rules
 
@@ -158,6 +165,8 @@ Review pages after search data is available:
 - `/`
 - `/es`, `/vi`, `/ja`, `/th`, `/ar`, `/ru`, `/id`
 - `/about-us`
+- `/contact`
+- `/editorial-policy`
 - `/free-avatar-maker`
 - `/square-avatar-generator`
 - `/gallery`
