@@ -1,8 +1,8 @@
 "use client";
 
-import { CirclePlay, Flag, Maximize2, RefreshCw, RotateCcw } from "lucide-react";
+import { Flag, Maximize2, RefreshCw, RotateCcw } from "lucide-react";
 import type { KeyboardEvent } from "react";
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 
 declare global {
   interface Window {
@@ -35,6 +35,8 @@ const ruffleUrls = [
 const swfSources = [
   "/games/square-face.swf"
 ];
+
+const coverImageUrl = "https://static.mysquarefaceicon.com/squarefacegenerator/square-face-cover.png";
 
 const SCRIPT_TIMEOUT_MS = 8000;
 const SWF_LOAD_TIMEOUT_MS = 15000;
@@ -112,22 +114,13 @@ export default function FlashGenerator() {
   const mountRef = useRef<HTMLDivElement | null>(null);
   const stageRef = useRef<HTMLDivElement | null>(null);
   const slowLoadingTimerRef = useRef<number | null>(null);
-  const [loadState, setLoadState] = useState<LoadState>("idle");
-  const [message, setMessage] = useState("Click Play Now to start the classic Flash game.");
+  const autoStartedRef = useRef(false);
+  const [loadState, setLoadState] = useState<LoadState>("loading");
+  const [message, setMessage] = useState("Loading Square Face Generator...");
   const [showSlowHint, setShowSlowHint] = useState(false);
   const [fullscreenAvailable, setFullscreenAvailable] = useState(false);
 
-  useEffect(() => {
-    setFullscreenAvailable(Boolean(stageRef.current?.requestFullscreen));
-
-    return () => {
-      if (slowLoadingTimerRef.current) {
-        window.clearTimeout(slowLoadingTimerRef.current);
-      }
-    };
-  }, []);
-
-  async function startPlayer() {
+  const startPlayer = useCallback(async () => {
     const mount = mountRef.current;
     if (!mount) return;
 
@@ -191,7 +184,22 @@ export default function FlashGenerator() {
       setLoadState("error");
       setMessage("The game could not be loaded. Please refresh the page or try a desktop browser.");
     }
-  }
+  }, []);
+
+  useEffect(() => {
+    setFullscreenAvailable(Boolean(stageRef.current?.requestFullscreen));
+
+    if (!autoStartedRef.current) {
+      autoStartedRef.current = true;
+      void startPlayer();
+    }
+
+    return () => {
+      if (slowLoadingTimerRef.current) {
+        window.clearTimeout(slowLoadingTimerRef.current);
+      }
+    };
+  }, [startPlayer]);
 
   async function toggleFullscreen() {
     const stage = stageRef.current;
@@ -231,6 +239,7 @@ export default function FlashGenerator() {
           {loadState !== "ready" && (
             <div
               className={loadState === "loading" ? "flash-cover is-loading" : "flash-cover"}
+              style={{ backgroundImage: `url("${coverImageUrl}")` }}
               role="button"
               tabIndex={loadState === "loading" ? -1 : 0}
               aria-label="Start Square Face Generator game"
@@ -239,12 +248,6 @@ export default function FlashGenerator() {
               }}
               onKeyDown={handleCoverKeyDown}
             >
-              {loadState === "idle" && (
-                <span className="flash-start-chip" aria-live="polite">
-                  <CirclePlay aria-hidden="true" size={18} />
-                  Click to start
-                </span>
-              )}
               {loadState === "error" && (
                 <span className="flash-error-panel" aria-live="polite">
                   {message}
