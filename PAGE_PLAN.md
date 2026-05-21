@@ -45,6 +45,7 @@
 - Game features
 - Tips for best experience
 - Troubleshooting
+- Recent approved community creations with comment submission and likes
 - Related avatar games and tools
 - FAQ
 - Grouped footer links
@@ -55,6 +56,7 @@
 |---|---|---|
 | `/admin/comments` | Moderate pending, approved, rejected, and deleted comments | No |
 | `/api/comments` | Public comments and new submissions | No |
+| `/api/comments/*/like` | Lightweight public like actions for approved comments | No |
 | `/api/admin/comments` | Admin comment listing | No |
 | `/api/comment-images/*` | Serves approved or stored comment image files | No |
 

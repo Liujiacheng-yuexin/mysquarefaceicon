@@ -11,6 +11,7 @@ type AdminComment = {
   email: string;
   content: string;
   rating: number;
+  likes?: number;
   status: "pending" | "approved" | "rejected";
   imageUrl?: string;
   createdAt: string;
@@ -86,7 +87,7 @@ export default function AdminComments() {
               <strong>{comment.name}</strong>
               <span>{comment.email}</span>
               <span>
-                {comment.locale} / {comment.status} / Rating {comment.rating}/5
+                {comment.locale} / {comment.status} / Rating {comment.rating}/5 / Likes {comment.likes ?? 0}
               </span>
             </div>
             <p>{comment.content}</p>

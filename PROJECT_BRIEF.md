@@ -36,4 +36,5 @@
 - The public page should not present the game as an AI generator or a modern rebuilt generator.
 - The core user action should take three steps: start the Flash game, customize the square face, then save through the game or take a screenshot if saving is not available.
 - Production target is Cloudflare Workers through OpenNext, with Cloudflare KV for
-  moderated comment metadata and R2 for optional comment images.
+  moderated comment metadata and lightweight like records, and R2 for optional
+  comment images.

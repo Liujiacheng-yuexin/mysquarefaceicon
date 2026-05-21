@@ -6,8 +6,8 @@
 - Non-English pages are draft/localization-review pages and should stay noindex
   until reviewed by a native or fluent editor.
 - Legal pages: `/privacy-policy` and `/terms-of-service`.
-- Public comment section with moderation before publishing.
-- Original local game-style SVG preview for the authorized SWF experience, not copied images.
+- Public comment section with moderation before publishing, homepage preview, gallery archive, and lightweight likes.
+- User-provided public R2 cover image for the authorized SWF loading experience, not copied competitor screenshots.
 - P0 homepage anchor support for `#maker`, `#what-is`, `#features`, `#how-to-use`, and `#faq`.
 - Homepage guidance now positions Square Face Generator as a classic Flash avatar maker game, not an AI generator or a rebuilt modern generator.
 - The Ruffle/SWF game player is the public homepage primary experience, with visible loading, reload, fullscreen, troubleshooting, and desktop/mobile guidance.
@@ -19,7 +19,7 @@
   - `/editorial-policy`
   - `/free-avatar-maker`
   - `/square-avatar-generator`
-  - `/gallery`
+  - `/gallery` as the approved community creations archive plus original inspiration examples
 - Support guide pages:
   - `/square-face-icon-generator`
   - `/cute-square-avatar-generator`
@@ -42,6 +42,7 @@
 - Use the secondary keyword naturally: `square face icon generator`.
 - Keep FAQ schema aligned with the visible FAQ on each language page.
 - Do not copy competitor comments, screenshots, SWF wrappers, or article text.
+- Only approved comments and approved comment images should appear in the homepage preview or gallery.
 - Do not put draft translations, weak support pages, or unreviewed AI-assisted pages
   into sitemap.
 

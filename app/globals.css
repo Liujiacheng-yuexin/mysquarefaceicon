@@ -1712,6 +1712,10 @@ h3 {
   align-items: start;
 }
 
+.comments-layout-single {
+  grid-template-columns: 1fr;
+}
+
 .comment-form,
 .comments-list,
 .admin-panel,
@@ -1846,7 +1850,60 @@ h3 {
   padding: 16px;
 }
 
+.comments-list-header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 4px;
+}
+
+.comments-list-header div:first-child {
+  display: grid;
+  gap: 2px;
+}
+
+.comments-list-header strong {
+  color: var(--text);
+  font-size: 16px;
+}
+
+.comments-list-header span {
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.comment-sort {
+  display: inline-flex;
+  gap: 6px;
+  padding: 4px;
+  background: var(--surface-strong);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.comment-sort button {
+  min-height: 34px;
+  padding: 6px 10px;
+  border: 0;
+  border-radius: calc(var(--radius) - 2px);
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  font-weight: 900;
+}
+
+.comment-sort button.is-active {
+  background: #ffffff;
+  color: var(--primary-dark);
+  box-shadow: 0 2px 8px rgba(63, 48, 40, 0.08);
+}
+
 .comment-card {
+  display: grid;
+  gap: 10px;
   padding: 16px;
   border: 1px solid var(--border);
   border-radius: var(--radius);
@@ -1895,6 +1952,55 @@ h3 {
   margin-top: 12px;
   border: 1px solid var(--border);
   border-radius: var(--radius);
+}
+
+.comment-actions {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.like-button {
+  display: inline-flex;
+  min-height: 36px;
+  align-items: center;
+  gap: 7px;
+  padding: 7px 11px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface-strong);
+  color: var(--muted);
+  cursor: pointer;
+  font-weight: 900;
+}
+
+.like-button:hover:not(:disabled),
+.like-button.is-liked {
+  border-color: #ff8ca3;
+  background: #fff0f3;
+  color: #d92d54;
+}
+
+.like-button:disabled {
+  cursor: default;
+}
+
+.gallery-link-card {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border: 1px solid var(--primary);
+  border-radius: var(--radius);
+  background: #e8fff6;
+  color: var(--primary-dark);
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.gallery-link-card:hover {
+  background: #d5faea;
 }
 
 .admin-page {

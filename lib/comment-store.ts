@@ -9,6 +9,7 @@ export type StoredComment = {
   email: string;
   content: string;
   rating: number;
+  likes?: number;
   status: CommentStatus;
   imageKey?: string;
   imageType?: string;
@@ -58,6 +59,7 @@ const localStore = globalThis as typeof globalThis & {
     index: string[];
     comments: Map<string, StoredComment>;
     images: Map<string, { bytes: ArrayBuffer; contentType: string }>;
+    likes: Set<string>;
   };
 };
 
@@ -65,8 +67,10 @@ function getLocalStore() {
   localStore.__MSFI_COMMENTS__ ??= {
     index: [],
     comments: new Map(),
-    images: new Map()
+    images: new Map(),
+    likes: new Set()
   };
+  localStore.__MSFI_COMMENTS__.likes ??= new Set();
   return localStore.__MSFI_COMMENTS__;
 }
 
@@ -99,6 +103,7 @@ function publicComment(comment: StoredComment) {
     name: comment.name,
     content: comment.content,
     rating: comment.rating,
+    likes: comment.likes ?? 0,
     imageUrl: comment.imageUrl,
     createdAt: comment.createdAt
   };
@@ -106,6 +111,27 @@ function publicComment(comment: StoredComment) {
 
 function commentKey(id: string) {
   return `${COMMENT_PREFIX}${id}`;
+}
+
+function commentIdFromImageKey(key: string) {
+  const match = /^comments\/([^/]+)\//.exec(key);
+  return match?.[1] ?? null;
+}
+
+function likeKey(id: string, visitorHash: string) {
+  return `comment_like:${id}:${visitorHash}`;
+}
+
+async function hashVisitorId(visitorId: string) {
+  const value = visitorId.trim();
+  if (!value || value.length > 160) {
+    throw new Error("Invalid visitor id.");
+  }
+
+  const digest = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(value));
+  return Array.from(new Uint8Array(digest))
+    .map((byte) => byte.toString(16).padStart(2, "0"))
+    .join("");
 }
 
 async function readIndex(kv?: KVLike) {
@@ -211,15 +237,69 @@ export async function createComment(input: {
 }
 
 export async function listPublicComments(locale?: LocaleCode) {
+  return listPublicCommentsWithOptions({ locale });
+}
+
+export async function listPublicCommentsWithOptions(options: {
+  locale?: LocaleCode;
+  limit?: number;
+  sort?: "latest" | "liked";
+} = {}) {
   const context = await getStoreContext();
   const index = await readIndex(context.kv);
   const comments = await Promise.all(index.map((id) => readComment(id, context.kv)));
-  return comments
+  const limit = Math.max(1, Math.min(options.limit ?? 50, 500));
+  const visible = comments
     .filter((comment): comment is StoredComment => Boolean(comment))
     .filter((comment) => comment.status === "approved")
-    .filter((comment) => !locale || comment.locale === locale)
-    .slice(0, 50)
+    .filter((comment) => !options.locale || comment.locale === options.locale);
+
+  if (options.sort === "liked") {
+    visible.sort((a, b) => (b.likes ?? 0) - (a.likes ?? 0) || Date.parse(b.createdAt) - Date.parse(a.createdAt));
+  } else {
+    visible.sort((a, b) => Date.parse(b.createdAt) - Date.parse(a.createdAt));
+  }
+
+  return visible
+    .slice(0, limit)
     .map(publicComment);
+}
+
+export async function likeComment(id: string, visitorId: string) {
+  const context = await getStoreContext();
+  const comment = await readComment(id, context.kv);
+  if (!comment || comment.status !== "approved") {
+    throw new Error("Comment not found.");
+  }
+
+  const visitorHash = await hashVisitorId(visitorId);
+  const storageKey = likeKey(id, visitorHash);
+  const currentLikes = comment.likes ?? 0;
+
+  if (context.kv) {
+    const existing = await context.kv.get(storageKey, "text");
+    if (existing) {
+      return { likes: currentLikes, liked: true, alreadyLiked: true };
+    }
+    await context.kv.put(storageKey, "1");
+  } else {
+    const store = getLocalStore();
+    if (store.likes.has(storageKey)) {
+      return { likes: currentLikes, liked: true, alreadyLiked: true };
+    }
+    store.likes.add(storageKey);
+  }
+
+  const now = new Date().toISOString();
+  const updated: StoredComment = {
+    ...comment,
+    likes: currentLikes + 1,
+    updatedAt: now,
+    audit: [...comment.audit, { action: "liked", at: now }]
+  };
+  await writeComment(updated, context.kv);
+
+  return { likes: updated.likes ?? 0, liked: true, alreadyLiked: false };
 }
 
 export async function listAdminComments(password: string | null) {
@@ -266,6 +346,14 @@ export async function deleteComment(id: string, password: string | null) {
 
 export async function getCommentImage(key: string) {
   const context = await getStoreContext();
+  const commentId = commentIdFromImageKey(key);
+  if (!commentId) return null;
+
+  const comment = await readComment(commentId, context.kv);
+  if (!comment || comment.status !== "approved" || comment.imageKey !== key) {
+    return null;
+  }
+
   if (context.r2) {
     const object = await context.r2.get(key);
     if (!object?.body) return null;

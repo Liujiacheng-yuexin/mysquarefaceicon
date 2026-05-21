@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { createComment, listPublicComments } from "@/lib/comment-store";
+import { createComment, listPublicCommentsWithOptions } from "@/lib/comment-store";
 import { isLocaleCode, type LocaleCode } from "@/lib/locales";
 
 export const dynamic = "force-dynamic";
@@ -12,7 +12,13 @@ function normalizeLocale(value: string | null): LocaleCode {
 export async function GET(request: Request) {
   const url = new URL(request.url);
   const locale = normalizeLocale(url.searchParams.get("locale"));
-  const comments = await listPublicComments(locale);
+  const limitParam = Number(url.searchParams.get("limit") ?? 50);
+  const sortParam = url.searchParams.get("sort");
+  const comments = await listPublicCommentsWithOptions({
+    locale,
+    limit: Number.isFinite(limitParam) ? limitParam : 50,
+    sort: sortParam === "liked" ? "liked" : "latest"
+  });
   return NextResponse.json({ comments });
 }
 

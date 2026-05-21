@@ -14,7 +14,7 @@ export default function PrivacyPolicyPage() {
     <main className="legal-page">
       <a className="back-link" href="/">Back to Square Face Generator</a>
       <h1>Privacy Policy</h1>
-      <p>Last updated: May 12, 2026</p>
+      <p>Last updated: May 21, 2026</p>
       <p>
         My Square Face Icon is designed as a browser-based classic Flash avatar
         maker page. The main game runs through Ruffle so visitors can play the
@@ -42,8 +42,15 @@ export default function PrivacyPolicyPage() {
       <h2>Cookies and Local Storage</h2>
       <p>
         The site may use local storage to remember whether you dismissed the PWA
-        install prompt. The moderation area may use configured secrets or request
-        headers to protect admin actions.
+        install prompt and to keep a simple visitor ID for comment likes. The
+        visitor ID is used to reduce duplicate likes from the same browser and is
+        not a login account.
+      </p>
+      <p>
+        Comment likes may store a hashed visitor identifier with the comment ID
+        in Cloudflare KV. This helps count likes without showing your identity on
+        the public page. The moderation area may use configured secrets or
+        request headers to protect admin actions.
       </p>
       <h2>Analytics and Advertising</h2>
       <p>

@@ -36,6 +36,9 @@
 - [x] Comment submission enters pending status
 - [x] Admin approve/reject/delete works
 - [x] Approved comments render publicly
+- [ ] Homepage shows only a limited set of approved comments
+- [ ] Gallery shows approved community comments and images
+- [ ] Like buttons increment once per local visitor ID
 - [ ] Mobile layout has no horizontal overflow
 - [ ] Ruffle loads the SWF game
 - [ ] Game help content, troubleshooting, and FAQ match visible page copy

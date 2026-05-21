@@ -1,30 +1,32 @@
 import type { CSSProperties } from "react";
 import type { Metadata } from "next";
+import CommentSection from "@/components/CommentSection";
 import SiteFooter from "@/components/SiteFooter";
 import SiteHeader from "@/components/SiteHeader";
+import { locales } from "@/lib/locales";
 
 const pageUrl = "https://mysquarefaceicon.com/gallery";
 
 export const metadata: Metadata = {
-  title: "Square Face Icon Gallery",
+  title: "Square Face Icon Gallery - Community Creations",
   description:
-    "Browse original square face icon gallery ideas for cute avatars, profile pictures, gaming icons, and social media styles.",
+    "Browse approved square face icon community creations, user screenshots, ratings, and original avatar style ideas.",
   alternates: {
     canonical: pageUrl
   },
   openGraph: {
     type: "website",
     url: pageUrl,
-    title: "Square Face Icon Gallery",
+    title: "Square Face Icon Gallery - Community Creations",
     description:
-      "Original square face icon ideas for avatar expressions, colors, accessories, and profile picture styles.",
+      "Approved square face icon community creations, screenshots, ratings, and original avatar style ideas.",
     images: ["/og-image.svg"]
   },
   twitter: {
     card: "summary_large_image",
-    title: "Square Face Icon Gallery",
+    title: "Square Face Icon Gallery - Community Creations",
     description:
-      "Browse original square face avatar ideas before making your own icon.",
+      "Browse approved square face avatar creations and ideas before making your own icon.",
     images: ["/og-image.svg"]
   }
 };
@@ -119,7 +121,7 @@ export default function GalleryPage() {
     "@type": "CollectionPage",
     name: "Square Face Icon Gallery",
     description:
-      "Original square face icon style ideas for profile avatars and social media icons.",
+      "Approved community square face icon creations plus original style ideas for profile avatars and social media icons.",
     url: pageUrl,
     isPartOf: {
       "@type": "WebSite",
@@ -157,8 +159,19 @@ export default function GalleryPage() {
         <p className="eyebrow">Original avatar ideas</p>
         <h1>Square Face Icon Gallery</h1>
         <p className="lead">
-          This gallery shows original square face icon ideas made for My Square Face Icon. Use these examples as style references for expressions, colors, and profile-picture readability before making your own avatar in the generator.
+          This gallery collects approved community submissions from My Square Face Icon along with original style ideas.
+          Use it to browse screenshots, ratings, expressions, colors, and profile-picture readability before making your
+          own avatar in the generator.
         </p>
+
+        <section>
+          <h2>Community Square Face Creations</h2>
+          <p>
+            These public cards come from approved user submissions only. New comments and optional images are reviewed
+            before they appear here, and email addresses are never displayed publicly.
+          </p>
+          <CommentSection locale="en" content={locales.en.comments} limit={500} showForm={false} showSort />
+        </section>
 
         <section>
           <h2>Browse Square Face Avatar Ideas</h2>

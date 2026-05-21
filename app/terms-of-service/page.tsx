@@ -14,7 +14,7 @@ export default function TermsOfServicePage() {
     <main className="legal-page">
       <a className="back-link" href="/">Back to Square Face Generator</a>
       <h1>Terms of Service</h1>
-      <p>Last updated: May 12, 2026</p>
+      <p>Last updated: May 21, 2026</p>
       <h2>Use of the Tool</h2>
       <p>
         My Square Face Icon provides a free browser-based generator for creating
@@ -32,6 +32,8 @@ export default function TermsOfServicePage() {
         Comments and optional uploaded images are moderated before public
         display. Do not submit illegal, abusive, private, copyrighted, or
         impersonating content. We may reject or delete submissions at any time.
+        Likes are a lightweight community signal and may be limited, removed, or
+        adjusted if they appear automated or abusive.
       </p>
       <h2>Authorized Game File</h2>
       <p>

@@ -1,3 +1,4 @@
+import CommentSection from "@/components/CommentSection";
 import FlashGenerator from "@/components/FlashGenerator";
 import InstallPrompt from "@/components/InstallPrompt";
 import { ChevronDown, CirclePlay, Gamepad2, Menu, Monitor, Sparkles } from "lucide-react";
@@ -207,6 +208,7 @@ export default function HomePage({ locale }: HomePageProps) {
           <a href="#how-to-play">How to Play</a>
           <a href="#features">Features</a>
           <a href="#faq">FAQ</a>
+          <a href="/gallery">Gallery</a>
           <a href="/blog">Blog</a>
           <a href="/contact">Contact</a>
           {reviewedLocaleCodes.length > 1 && (
@@ -236,6 +238,7 @@ export default function HomePage({ locale }: HomePageProps) {
             <a href="#how-to-play">How to Play</a>
             <a href="#features">Features</a>
             <a href="#faq">FAQ</a>
+            <a href="/gallery">Gallery</a>
             <a href="/blog">Blog</a>
             <a href="/contact">Contact</a>
           </div>
@@ -382,6 +385,18 @@ export default function HomePage({ locale }: HomePageProps) {
               </details>
             ))}
           </div>
+        </section>
+
+        <section className="content-band playful-band" id="community">
+          <div className="section-heading">
+            <p className="eyebrow">Community gallery</p>
+            <h2>Recent Square Face Creations</h2>
+            <p className="section-intro">
+              Share a screenshot or feedback after you play. New comments are reviewed before publishing, and the home
+              page shows a small recent sample only.
+            </p>
+          </div>
+          <CommentSection locale={locale} content={content.comments} limit={6} showGalleryLink />
         </section>
 
         <section className="content-band alt-band">

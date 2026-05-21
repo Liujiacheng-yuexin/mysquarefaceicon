@@ -1,0 +1,962 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>My Square Face Icon 网站开发监测看板</title>
+  <style>
+    :root {
+      --bg: #fffaf1;
+      --panel: #fffdf8;
+      --ink: #3f3028;
+      --muted: #6f6158;
+      --line: #efd8b7;
+      --primary: #19c58d;
+      --primary-dark: #08795e;
+      --accent: #ff7a1a;
+      --accent-dark: #c75a08;
+      --blue: #2563eb;
+      --red: #b91c1c;
+      --amber: #b45309;
+      --violet: #6d28d9;
+      --shadow: 0 14px 34px rgba(63, 48, 40, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: Arial, "Microsoft YaHei", sans-serif;
+      line-height: 1.5;
+    }
+
+    a {
+      color: var(--primary-dark);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    code {
+      padding: 2px 5px;
+      border-radius: 5px;
+      background: #fff3df;
+      color: #513428;
+      font-family: Consolas, "Courier New", monospace;
+      font-size: 0.94em;
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+      margin-top: 0;
+    }
+
+    h1 {
+      margin-bottom: 12px;
+      font-size: clamp(28px, 4vw, 44px);
+      line-height: 1.1;
+      letter-spacing: 0;
+    }
+
+    h2 {
+      margin-bottom: 4px;
+      font-size: 22px;
+      letter-spacing: 0;
+    }
+
+    h3 {
+      margin-bottom: 8px;
+      font-size: 16px;
+      letter-spacing: 0;
+    }
+
+    .shell {
+      width: min(1360px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 28px 0 56px;
+    }
+
+    .hero-grid,
+    .main-grid {
+      display: grid;
+      gap: 20px;
+    }
+
+    .hero-grid {
+      grid-template-columns: minmax(0, 1.3fr) minmax(300px, 0.7fr);
+      align-items: stretch;
+      margin-bottom: 20px;
+    }
+
+    .main-grid {
+      grid-template-columns: minmax(0, 1fr) minmax(360px, 0.42fr);
+      align-items: start;
+    }
+
+    .panel {
+      margin-bottom: 20px;
+      padding: 20px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+      box-shadow: var(--shadow);
+    }
+
+    .hero {
+      padding: 28px;
+      background: #d8f5e1;
+    }
+
+    .hero p {
+      max-width: 840px;
+      margin-bottom: 0;
+      color: #4f5e47;
+    }
+
+    .subhead {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 18px;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      min-height: 28px;
+      padding: 4px 10px;
+      border: 1px solid rgba(8, 121, 94, 0.24);
+      border-radius: 999px;
+      background: rgba(255, 253, 248, 0.72);
+      color: var(--primary-dark);
+      font-size: 13px;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .score-card {
+      display: grid;
+      gap: 12px;
+      align-content: center;
+    }
+
+    .score-card strong {
+      display: block;
+      font-size: 36px;
+      line-height: 1;
+    }
+
+    .score-card span,
+    .small {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .progress {
+      height: 11px;
+      overflow: hidden;
+      border-radius: 999px;
+      background: #f4e4ca;
+    }
+
+    .progress span,
+    .phase-bar span {
+      display: block;
+      height: 100%;
+      width: var(--value, 0%);
+      border-radius: inherit;
+      background: linear-gradient(90deg, var(--primary), var(--accent));
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 14px;
+      margin-bottom: 20px;
+    }
+
+    .stat {
+      padding: 18px;
+    }
+
+    .stat .num {
+      display: block;
+      font-size: 32px;
+      font-weight: 800;
+      line-height: 1.1;
+    }
+
+    .stat .label {
+      display: block;
+      margin-top: 8px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .panel-title {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 16px;
+    }
+
+    .panel-title p {
+      margin: 4px 0 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+
+    input,
+    select,
+    button {
+      min-height: 38px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: #fff;
+      color: var(--ink);
+      font: inherit;
+    }
+
+    input,
+    select {
+      padding: 8px 10px;
+    }
+
+    input[type="search"] {
+      min-width: 260px;
+      flex: 1 1 260px;
+    }
+
+    button {
+      padding: 8px 12px;
+      cursor: pointer;
+      font-weight: 700;
+    }
+
+    button:hover {
+      border-color: var(--accent);
+      color: var(--accent-dark);
+    }
+
+    .table-wrap {
+      overflow-x: auto;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+    }
+
+    table {
+      width: 100%;
+      min-width: 1080px;
+      border-collapse: collapse;
+      background: #fff;
+    }
+
+    th,
+    td {
+      padding: 12px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+      font-size: 14px;
+    }
+
+    th {
+      position: sticky;
+      top: 0;
+      z-index: 1;
+      background: #fff7e9;
+      color: #5b473d;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0;
+    }
+
+    tbody tr:hover {
+      background: #fffbf4;
+    }
+
+    .status {
+      display: inline-flex;
+      align-items: center;
+      padding: 4px 8px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+
+    .status-indexable {
+      color: var(--primary-dark);
+      background: #dcfce7;
+    }
+
+    .status-draft {
+      color: var(--amber);
+      background: #fef3c7;
+    }
+
+    .status-noindex {
+      color: var(--blue);
+      background: #dbeafe;
+    }
+
+    .status-ops {
+      color: #475569;
+      background: #e2e8f0;
+    }
+
+    .status-risk {
+      color: var(--red);
+      background: #fee2e2;
+    }
+
+    .priority {
+      font-weight: 800;
+    }
+
+    .priority.p0,
+    .priority.p1 {
+      color: var(--red);
+    }
+
+    .priority.p2 {
+      color: var(--amber);
+    }
+
+    .priority.p3 {
+      color: var(--violet);
+    }
+
+    .review-mark {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      white-space: nowrap;
+      font-weight: 700;
+      color: #5b473d;
+    }
+
+    .review-mark input {
+      width: 18px;
+      height: 18px;
+      min-width: 18px;
+      min-height: 18px;
+      accent-color: var(--primary-dark);
+      cursor: pointer;
+    }
+
+    .kd-input {
+      width: 78px;
+      min-width: 78px;
+      text-align: center;
+      font-weight: 700;
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .todo {
+      margin: 0;
+      padding-left: 18px;
+      color: var(--muted);
+    }
+
+    .todo li + li {
+      margin-top: 8px;
+    }
+
+    .phase-list,
+    .metric-list,
+    .check-list {
+      display: grid;
+      gap: 10px;
+    }
+
+    .phase,
+    .check-item {
+      padding: 14px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+    }
+
+    .phase strong,
+    .check-item strong {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    .phase-bar {
+      height: 9px;
+      overflow: hidden;
+      border-radius: 999px;
+      background: #f4e4ca;
+    }
+
+    .metric-row {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 12px;
+      padding: 10px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .metric-row:last-child {
+      border-bottom: 0;
+    }
+
+    .metric-row b {
+      font-size: 14px;
+    }
+
+    .metric-row span {
+      display: block;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .check-ok {
+      border-left: 4px solid var(--primary);
+    }
+
+    .check-warn {
+      border-left: 4px solid var(--amber);
+    }
+
+    .check-risk {
+      border-left: 4px solid var(--red);
+    }
+
+    .callout {
+      border-left: 4px solid var(--accent);
+      background: #fff3df;
+      padding: 12px 14px;
+      color: #6d3a10;
+      border-radius: 6px;
+    }
+
+    @media (max-width: 1040px) {
+      .hero-grid,
+      .main-grid,
+      .stats,
+      .two-col {
+        grid-template-columns: 1fr;
+      }
+
+      .shell {
+        width: min(100% - 20px, 1360px);
+        padding-top: 16px;
+      }
+
+      .hero,
+      .panel {
+        padding: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <header class="hero-grid">
+      <section class="hero panel">
+        <h1>My Square Face Icon 网站开发监测看板</h1>
+        <p>
+          根据本项目的 <code>PAGE_PLAN.md</code>、<code>SEO_ARCHITECTURE.md</code>、<code>LAUNCH_CHECKLIST.md</code> 和 <code>SEO_LOG.md</code> 整理，用于跟踪页面实现、索引状态、Cloudflare 发布风险和下一步 SEO 工作。本页是内部监测页，默认 noindex，不进入 sitemap。
+        </p>
+        <div class="subhead">
+          <span class="pill">数据日期：2026-05-21</span>
+          <span class="pill">生产域名：https://mysquarefaceicon.com</span>
+          <span class="pill">部署目标：Cloudflare Workers / OpenNext</span>
+          <span class="pill">本地记录：Review 与 KD 存在浏览器 localStorage</span>
+        </div>
+      </section>
+
+      <aside class="score-card panel">
+        <div>
+          <strong id="overallProgress">0%</strong>
+          <span>上线准备得分：索引页、noindex 草稿、运维路由和待验证项按不同权重计算。</span>
+        </div>
+        <div class="progress" aria-label="总体上线准备进度">
+          <span id="overallBar"></span>
+        </div>
+        <p class="small">
+          当前重点是稳定主域名、减少重复入口、验证 Ruffle/SWF 与评论 KV/R2，再根据 GSC 数据决定是否恢复多语言和弱支持页索引。
+        </p>
+      </aside>
+    </header>
+
+    <section class="stats" aria-label="核心统计">
+      <div class="stat panel">
+        <span class="num" id="pageCount">0</span>
+        <span class="label">监测条目</span>
+      </div>
+      <div class="stat panel">
+        <span class="num" id="indexableCount">0</span>
+        <span class="label">已进 sitemap 的可索引页</span>
+      </div>
+      <div class="stat panel">
+        <span class="num" id="draftCount">0</span>
+        <span class="label">noindex / 草稿页</span>
+      </div>
+      <div class="stat panel">
+        <span class="num" id="opsCount">0</span>
+        <span class="label">Admin/API 运维路由</span>
+      </div>
+      <div class="stat panel">
+        <span class="num" id="reviewCount">0</span>
+        <span class="label">已人工 Review</span>
+      </div>
+    </section>
+
+    <main class="main-grid">
+      <section>
+        <div class="panel">
+          <div class="panel-title">
+            <div>
+              <h2>页面与路由监测</h2>
+              <p>状态含义：可索引 = 已实现且在 sitemap；noindex = 已实现但暂不索引；草稿 = 多语言待人工审校；运维 = admin/api，不参与 SEO。</p>
+            </div>
+          </div>
+
+          <div class="filters">
+            <input id="searchBox" type="search" placeholder="搜索 URL、关键词、阶段或下一步">
+            <select id="phaseFilter" aria-label="按阶段筛选">
+              <option value="all">全部阶段</option>
+              <option value="Core">Core</option>
+              <option value="Trust">Trust</option>
+              <option value="Support">Support</option>
+              <option value="Blog">Blog</option>
+              <option value="Locale">Locale</option>
+              <option value="Ops">Ops</option>
+            </select>
+            <select id="statusFilter" aria-label="按状态筛选">
+              <option value="all">全部状态</option>
+              <option value="indexable">可索引</option>
+              <option value="draft">草稿 noindex</option>
+              <option value="noindex">noindex 待升级</option>
+              <option value="ops">运维 noindex</option>
+              <option value="risk">风险待验证</option>
+            </select>
+            <button id="resetBtn" type="button">重置</button>
+          </div>
+
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>阶段</th>
+                  <th>优先级</th>
+                  <th>URL</th>
+                  <th>目标 / 关键词</th>
+                  <th>KD</th>
+                  <th>状态</th>
+                  <th>证据</th>
+                  <th>下一步</th>
+                  <th>Review</th>
+                  <th>最后 Review</th>
+                </tr>
+              </thead>
+              <tbody id="pageTable"></tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="panel">
+          <div class="panel-title">
+            <div>
+              <h2>SEO 基础设施检查</h2>
+              <p>监测对象不是“页面数量”，而是生产域名、可抓取性、canonical、sitemap、内部链接和页面质量是否一致。</p>
+            </div>
+          </div>
+          <div class="two-col">
+            <div>
+              <h3>已具备</h3>
+              <ul class="todo">
+                <li><code>app/sitemap.ts</code> 已将首页、信任页、主要支持页、博客和法律页写入 sitemap。</li>
+                <li><code>app/robots.ts</code> 允许公开页面抓取，禁止 <code>/admin/</code> 和 <code>/api/</code>。</li>
+                <li>英文首页是唯一已审校语言首页，其他语言页已保留测试入口但 noindex。</li>
+                <li>核心工具页保持首屏可见，使用本地 Ruffle 与授权 SWF，并保留 Canvas/故障路径。</li>
+                <li>社区评论、Gallery 与 like API 已接入，仍需生产 KV/R2 实测。</li>
+              </ul>
+            </div>
+            <div>
+              <h3>高优先级风险</h3>
+              <ul class="todo">
+                <li><code>www</code> 和 <code>workers.dev</code> 入口如果仍返回 200，会造成重复入口，应统一跳转或关闭。</li>
+                <li><code>npm run cf:build</code> 在 Windows/OpenNext 环境曾因权限问题失败，生产构建应在 WSL 或 Linux CI 验证。</li>
+                <li>Cloudflare Worker 日志里的 errors 需要按状态码和路径拆分，不能只看 Requests 总量。</li>
+                <li>noindex 支持页和多语言页不要重新进 sitemap，除非完成内容质量升级或母语审校。</li>
+                <li>上线后需要提交 sitemap、请求首页索引，并用 GSC 区分“搜索点击”和 Cloudflare 请求。</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <aside>
+        <div class="panel">
+          <div class="panel-title">
+            <div>
+              <h2>阶段进度</h2>
+              <p>可索引页按 1 分、noindex 草稿按 0.5 分、运维路由按 0.25 分、风险项按 0 分计算。</p>
+            </div>
+          </div>
+          <div class="phase-list" id="phaseProgress"></div>
+        </div>
+
+        <div class="panel">
+          <div class="panel-title">
+            <div>
+              <h2>发布指标</h2>
+              <p>来自项目文档与本地人工记录，不替代 GA4/GSC/Cloudflare Analytics。</p>
+            </div>
+          </div>
+          <div class="metric-list">
+            <div class="metric-row">
+              <div><b>sitemap 可索引 URL</b><span>按 <code>app/sitemap.ts</code> 当前配置</span></div>
+              <strong id="sitemapMetric">0</strong>
+            </div>
+            <div class="metric-row">
+              <div><b>生产域名</b><span>SEO_RULES 指定主域名</span></div>
+              <strong>mysquarefaceicon.com</strong>
+            </div>
+            <div class="metric-row">
+              <div><b>最新 SEO_LOG</b><span>最近一次记录</span></div>
+              <strong>2026-05-21</strong>
+            </div>
+            <div class="metric-row">
+              <div><b>人工 Review</b><span>保存在本机浏览器</span></div>
+              <strong id="reviewMetric">0/0</strong>
+            </div>
+            <div class="metric-row">
+              <div><b>已填写 KD</b><span>手动录入的关键词难度</span></div>
+              <strong id="kdMetric">0/0</strong>
+            </div>
+            <div class="metric-row">
+              <div><b>最后 Review 时间</b><span>本地勾选记录</span></div>
+              <strong id="lastReviewTime">暂无</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel">
+          <div class="panel-title">
+            <div>
+              <h2>上线检查</h2>
+              <p>按当前文档整理，完成后应同步更新对应项目文档。</p>
+            </div>
+          </div>
+          <div class="check-list" id="checkList"></div>
+        </div>
+
+        <div class="panel">
+          <div class="panel-title">
+            <div>
+              <h2>优先行动</h2>
+              <p>建议按影响范围排序处理。</p>
+            </div>
+          </div>
+          <ol class="todo">
+            <li>确认 <code>https://mysquarefaceicon.com</code> 为唯一主站，<code>www</code> 做 301/308，关闭或重定向 <code>workers.dev</code>。</li>
+            <li>在 Cloudflare 生产环境验证 KV/R2、评论审核、图片代理、like API 和 Worker 错误日志。</li>
+            <li>跑通 Linux/WSL 的 <code>npm run cf:build</code>，再部署 Worker。</li>
+            <li>提交 <code>/sitemap.xml</code> 到 GSC 和 Bing，使用 URL Inspection 请求首页索引。</li>
+            <li>等 GSC 有 impressions 后，只扩展有明确搜索意图且能链接回工具的页面。</li>
+          </ol>
+        </div>
+
+        <div class="callout">
+          维护建议：每次新增生产页或修改索引策略后，更新本页的页面数组、<code>PAGE_PLAN.md</code>、<code>SEO_LOG.md</code> 和 sitemap；只做内部监测页本身不需要进入 sitemap。
+        </div>
+      </aside>
+    </main>
+  </div>
+
+  <script>
+    const pages = [
+      { phase: "Core", priority: "P0", url: "/", keyword: "square face generator", status: "indexable", evidence: "sitemap + reviewed locale en", next: "验证主域名 200、canonical、自定义域跳转、Ruffle 首屏加载。" },
+
+      { phase: "Locale", priority: "P1", url: "/es", keyword: "generador de caras cuadradas", status: "draft", evidence: "locale route exists; reviewedLocaleCodes excludes es", next: "西语母语审校后再考虑进入 sitemap/hreflang。" },
+      { phase: "Locale", priority: "P1", url: "/vi", keyword: "square face generator", status: "draft", evidence: "locale route exists; noindex", next: "完成越南语审校与本地化关键词后再索引。" },
+      { phase: "Locale", priority: "P1", url: "/ja", keyword: "square face generator", status: "draft", evidence: "locale route exists; noindex", next: "完成日语审校，避免机器翻译页进入索引。" },
+      { phase: "Locale", priority: "P1", url: "/th", keyword: "square face generator", status: "draft", evidence: "locale route exists; noindex", next: "完成泰语审校后再恢复 sitemap。" },
+      { phase: "Locale", priority: "P1", url: "/ar", keyword: "square face generator", status: "draft", evidence: "locale route exists; rtl; noindex", next: "确认 RTL 布局和阿语译文质量。" },
+      { phase: "Locale", priority: "P1", url: "/ru", keyword: "square face generator", status: "draft", evidence: "locale route exists; noindex", next: "完成俄语审校后再进入 hreflang。" },
+      { phase: "Locale", priority: "P1", url: "/id", keyword: "square face generator", status: "draft", evidence: "locale route exists; noindex", next: "完成印尼语审校后再索引。" },
+
+      { phase: "Trust", priority: "P1", url: "/about-us", keyword: "about My Square Face Icon", status: "indexable", evidence: "sitemap + metadata canonical", next: "保持项目来源、原创性和隐私说明清晰。" },
+      { phase: "Trust", priority: "P1", url: "/contact", keyword: "contact My Square Face Icon", status: "indexable", evidence: "sitemap + SEO_ARCHITECTURE", next: "确认联系、纠错和隐私请求路径可用。" },
+      { phase: "Trust", priority: "P1", url: "/editorial-policy", keyword: "editorial policy", status: "indexable", evidence: "sitemap + SEO_ARCHITECTURE", next: "用于支撑内容质量、AI 辅助和评论审核可信度。" },
+      { phase: "Trust", priority: "P0", url: "/privacy-policy", keyword: "privacy policy", status: "indexable", evidence: "sitemap yearly priority", next: "评论、上传、GA4/Cloudflare Analytics 变更后同步更新。" },
+      { phase: "Trust", priority: "P0", url: "/terms-of-service", keyword: "terms of service", status: "indexable", evidence: "sitemap yearly priority", next: "确认用户生成内容、头像使用边界和限制说明。" },
+
+      { phase: "Support", priority: "P1", url: "/free-avatar-maker", keyword: "free avatar maker", status: "indexable", evidence: "sitemap + PAGE_PLAN", next: "继续链接回首页工具，避免泛 avatar maker 内容变薄。" },
+      { phase: "Support", priority: "P1", url: "/square-avatar-generator", keyword: "square avatar generator", status: "indexable", evidence: "sitemap + SEO_LOG 2026-05-17", next: "用 GSC 观察是否有 square avatar 相关 impressions。" },
+      { phase: "Support", priority: "P1", url: "/gallery", keyword: "square face icon gallery", status: "indexable", evidence: "sitemap + SEO_LOG 2026-05-21", next: "生产 KV/R2 验证后再推广社区图库。" },
+      { phase: "Support", priority: "P1", url: "/square-face-icon-generator", keyword: "square face icon generator", status: "indexable", evidence: "sitemap + PAGE_PLAN", next: "继续作为二级关键词 Hub，链接回主工具。" },
+      { phase: "Support", priority: "P2", url: "/cute-square-avatar-generator", keyword: "cute square avatar generator", status: "noindex", evidence: "metadata robots index:false", next: "升级内容质量和独特价值后再加入 sitemap。" },
+      { phase: "Support", priority: "P2", url: "/pixel-square-face-maker", keyword: "pixel square face maker", status: "noindex", evidence: "metadata robots index:false", next: "等页面有足够原创示例和搜索价值后再索引。" },
+
+      { phase: "Blog", priority: "P1", url: "/blog", keyword: "square face icon guides", status: "indexable", evidence: "sitemap + blog hub", next: "保持所有已发布指南入口完整，避免新闻式薄页。" },
+      { phase: "Blog", priority: "P1", url: "/blog/how-to-make-a-cute-discord-profile-icon", keyword: "how to make a cute Discord profile icon", status: "indexable", evidence: "sitemap + PAGE_PLAN", next: "观察 Discord tutorial 查询与 CTR。" },
+      { phase: "Blog", priority: "P1", url: "/blog/discord-avatar-size-guide", keyword: "Discord avatar size", status: "indexable", evidence: "sitemap + PAGE_PLAN", next: "补充平台尺寸更新时注意日期准确性。" },
+      { phase: "Blog", priority: "P1", url: "/blog/tiktok-profile-icon-ideas", keyword: "TikTok profile icon ideas", status: "indexable", evidence: "sitemap + PAGE_PLAN", next: "观察移动端 impressions 和点击率。" },
+      { phase: "Blog", priority: "P1", url: "/blog/square-avatar-vs-round-avatar", keyword: "square avatar vs round avatar", status: "indexable", evidence: "sitemap + PAGE_PLAN", next: "维护与 square-avatar-generator 的互链。" },
+      { phase: "Blog", priority: "P1", url: "/blog/cute-profile-picture-ideas", keyword: "cute profile picture ideas", status: "indexable", evidence: "sitemap + SEO_LOG 2026-05-16", next: "看是否带来泛 cute profile picture impressions。" },
+      { phase: "Blog", priority: "P1", url: "/blog/best-discord-avatar-style", keyword: "best Discord avatar style", status: "indexable", evidence: "sitemap + SEO_LOG 2026-05-16", next: "与 Discord avatar size guide 做兄弟页互链。" },
+      { phase: "Blog", priority: "P1", url: "/blog/avatar-maker-without-signup", keyword: "avatar maker without signup", status: "indexable", evidence: "sitemap + SEO_LOG 2026-05-17", next: "强调隐私和无需账号，与 Privacy Policy 保持一致。" },
+
+      { phase: "Ops", priority: "P0", url: "/admin/comments", keyword: "comment moderation", status: "ops", evidence: "metadata noindex + robots disallow /admin/", next: "配置 ADMIN_PASSWORD 与 SESSION_SECRET 后做生产审核测试。" },
+      { phase: "Ops", priority: "P0", url: "/api/comments", keyword: "comments API", status: "ops", evidence: "robots disallow /api/", next: "验证提交 pending、审核发布、限流和错误响应。" },
+      { phase: "Ops", priority: "P0", url: "/api/comment-images/*", keyword: "approved comment images", status: "ops", evidence: "robots disallow /api/", next: "验证 R2 对象读取、非法图片拒绝和隐私说明。" },
+      { phase: "Ops", priority: "P0", url: "www / workers.dev", keyword: "canonical host", status: "risk", evidence: "需用 curl -I 验证", next: "让 www 301/308 到根域，关闭或重定向 workers.dev。" }
+    ];
+
+    const checks = [
+      { level: "ok", title: "Next build / lint", text: "文档记录 npm run build 与 npm run lint 已通过；本次只新增内部静态监测 HTML。" },
+      { level: "ok", title: "robots / sitemap", text: "robots 声明 sitemap，且 disallow /admin/ 与 /api/；sitemap 只包含当前计划索引页。" },
+      { level: "warn", title: "Cloudflare cf:build", text: "Windows/OpenNext 曾出现 EPERM，需要在 WSL 或 Linux CI 跑通 npm run cf:build。" },
+      { level: "warn", title: "生产 secrets", text: "ADMIN_PASSWORD 与 SESSION_SECRET 仍需按 DEPLOYMENT_TODO 配置为 Wrangler secrets。" },
+      { level: "warn", title: "Ruffle / SWF", text: "上线前必须浏览器验证 Start Game、fullscreen、reload、移动端无横向溢出。" },
+      { level: "risk", title: "重复入口", text: "如果 www 或 workers.dev 返回完整 200 页面，需要尽快跳转或关闭，避免重复站点入口。" },
+      { level: "warn", title: "Search Console", text: "部署后提交 sitemap、请求首页索引；GSC 只统计 Google 搜索曝光/点击，不等于 Cloudflare requests。" }
+    ];
+
+    const labels = {
+      indexable: "可索引",
+      draft: "草稿 noindex",
+      noindex: "noindex 待升级",
+      ops: "运维 noindex",
+      risk: "风险待验证"
+    };
+
+    const weights = {
+      indexable: 1,
+      draft: 0.5,
+      noindex: 0.5,
+      ops: 0.25,
+      risk: 0
+    };
+
+    const storagePrefix = "msfi-development-monitor:";
+    const reviewPrefix = `${storagePrefix}review:`;
+    const kdPrefix = `${storagePrefix}kd:`;
+
+    const table = document.getElementById("pageTable");
+    const searchBox = document.getElementById("searchBox");
+    const phaseFilter = document.getElementById("phaseFilter");
+    const statusFilter = document.getElementById("statusFilter");
+
+    function escapeHtml(value) {
+      return String(value).replace(/[&<>"']/g, (char) => ({
+        "&": "&amp;",
+        "<": "&lt;",
+        ">": "&gt;",
+        '"': "&quot;",
+        "'": "&#039;"
+      }[char]));
+    }
+
+    function reviewKey(item) {
+      return `${reviewPrefix}${item.url}`;
+    }
+
+    function kdKey(item) {
+      return `${kdPrefix}${item.url}`;
+    }
+
+    function formatTime(iso) {
+      if (!iso) return "未标记";
+      return new Date(iso).toLocaleString("zh-CN", {
+        year: "numeric",
+        month: "2-digit",
+        day: "2-digit",
+        hour: "2-digit",
+        minute: "2-digit",
+        hour12: false
+      });
+    }
+
+    function getReviewState(item) {
+      try {
+        return JSON.parse(localStorage.getItem(reviewKey(item))) || { checked: false, updatedAt: "" };
+      } catch {
+        return { checked: false, updatedAt: "" };
+      }
+    }
+
+    function setReviewState(url, checked) {
+      const item = pages.find((entry) => entry.url === url);
+      if (!item) return;
+      const previous = getReviewState(item);
+      localStorage.setItem(reviewKey(item), JSON.stringify({
+        checked,
+        updatedAt: checked ? new Date().toISOString() : previous.updatedAt
+      }));
+    }
+
+    function getKdValue(item) {
+      return localStorage.getItem(kdKey(item)) || "";
+    }
+
+    function setKdValue(url, value) {
+      const item = pages.find((entry) => entry.url === url);
+      if (!item) return;
+      const cleanValue = value.trim();
+      if (cleanValue) {
+        localStorage.setItem(kdKey(item), cleanValue);
+      } else {
+        localStorage.removeItem(kdKey(item));
+      }
+    }
+
+    function getFilteredRows() {
+      const query = searchBox.value.trim().toLowerCase();
+      const phase = phaseFilter.value;
+      const status = statusFilter.value;
+      return pages.filter((item) => {
+        const text = [item.phase, item.priority, item.url, item.keyword, item.status, item.evidence, item.next].join(" ").toLowerCase();
+        return (phase === "all" || item.phase === phase)
+          && (status === "all" || item.status === status)
+          && (!query || text.includes(query));
+      });
+    }
+
+    function renderTable() {
+      table.innerHTML = getFilteredRows().map((item) => {
+        const review = getReviewState(item);
+        const kd = getKdValue(item);
+        return `
+          <tr>
+            <td>${escapeHtml(item.phase)}</td>
+            <td><span class="priority ${item.priority.toLowerCase()}">${escapeHtml(item.priority)}</span></td>
+            <td><code>${escapeHtml(item.url)}</code></td>
+            <td>${escapeHtml(item.keyword)}</td>
+            <td><input class="kd-input" type="text" inputmode="decimal" data-url="${escapeHtml(item.url)}" value="${escapeHtml(kd)}" placeholder="KD"></td>
+            <td><span class="status status-${item.status}">${labels[item.status]}</span></td>
+            <td>${escapeHtml(item.evidence)}</td>
+            <td>${escapeHtml(item.next)}</td>
+            <td>
+              <label class="review-mark">
+                <input class="review-check" type="checkbox" data-url="${escapeHtml(item.url)}" ${review.checked ? "checked" : ""}>
+                已 Review
+              </label>
+            </td>
+            <td class="small">${escapeHtml(formatTime(review.updatedAt))}</td>
+          </tr>
+        `;
+      }).join("");
+    }
+
+    function renderStats() {
+      const score = pages.reduce((sum, item) => sum + weights[item.status], 0);
+      const pct = Math.round((score / pages.length) * 100);
+      const reviewStates = pages.map(getReviewState);
+      const reviewed = reviewStates.filter((item) => item.checked).length;
+      const kdFilled = pages.filter((item) => getKdValue(item)).length;
+      const latestReview = reviewStates.map((item) => item.updatedAt).filter(Boolean).sort().at(-1);
+      const sitemapCount = pages.filter((item) => item.status === "indexable").length;
+
+      document.getElementById("pageCount").textContent = pages.length;
+      document.getElementById("indexableCount").textContent = sitemapCount;
+      document.getElementById("draftCount").textContent = pages.filter((item) => item.status === "draft" || item.status === "noindex").length;
+      document.getElementById("opsCount").textContent = pages.filter((item) => item.status === "ops").length;
+      document.getElementById("reviewCount").textContent = reviewed;
+      document.getElementById("overallProgress").textContent = `${pct}%`;
+      document.getElementById("overallBar").style.setProperty("--value", `${pct}%`);
+      document.getElementById("sitemapMetric").textContent = sitemapCount;
+      document.getElementById("reviewMetric").textContent = `${reviewed}/${pages.length}`;
+      document.getElementById("kdMetric").textContent = `${kdFilled}/${pages.length}`;
+      document.getElementById("lastReviewTime").textContent = latestReview ? formatTime(latestReview) : "暂无";
+    }
+
+    function renderPhaseProgress() {
+      const phases = ["Core", "Trust", "Support", "Blog", "Locale", "Ops"];
+      const container = document.getElementById("phaseProgress");
+      container.innerHTML = phases.map((phase) => {
+        const items = pages.filter((item) => item.phase === phase);
+        const score = items.reduce((sum, item) => sum + weights[item.status], 0);
+        const pct = items.length ? Math.round((score / items.length) * 100) : 0;
+        const indexable = items.filter((item) => item.status === "indexable").length;
+        const pending = items.length - indexable;
+        return `
+          <div class="phase">
+            <strong>${phase}：${pct}%</strong>
+            <div class="phase-bar" style="--value:${pct}%"><span></span></div>
+            <p class="small">可索引 ${indexable}，其他/待处理 ${pending}，共 ${items.length} 项。</p>
+          </div>
+        `;
+      }).join("");
+    }
+
+    function renderChecks() {
+      const container = document.getElementById("checkList");
+      container.innerHTML = checks.map((item) => `
+        <div class="check-item check-${item.level}">
+          <strong>${escapeHtml(item.title)}</strong>
+          <span class="small">${escapeHtml(item.text)}</span>
+        </div>
+      `).join("");
+    }
+
+    searchBox.addEventListener("input", renderTable);
+    phaseFilter.addEventListener("change", renderTable);
+    statusFilter.addEventListener("change", renderTable);
+    document.getElementById("resetBtn").addEventListener("click", () => {
+      searchBox.value = "";
+      phaseFilter.value = "all";
+      statusFilter.value = "all";
+      renderTable();
+    });
+
+    table.addEventListener("change", (event) => {
+      if (event.target.classList.contains("review-check")) {
+        setReviewState(event.target.dataset.url, event.target.checked);
+        renderStats();
+        renderTable();
+      }
+      if (event.target.classList.contains("kd-input")) {
+        setKdValue(event.target.dataset.url, event.target.value);
+        renderStats();
+      }
+    });
+
+    table.addEventListener("blur", (event) => {
+      if (!event.target.classList.contains("kd-input")) return;
+      setKdValue(event.target.dataset.url, event.target.value);
+      renderStats();
+    }, true);
+
+    table.addEventListener("keydown", (event) => {
+      if (!event.target.classList.contains("kd-input") || event.key !== "Enter") return;
+      event.target.blur();
+    });
+
+    renderStats();
+    renderPhaseProgress();
+    renderChecks();
+    renderTable();
+  </script>
+</body>
+</html>
