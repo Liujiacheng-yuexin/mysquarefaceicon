@@ -5,6 +5,7 @@ import "./globals.css";
 
 const siteUrl = "https://mysquarefaceicon.com";
 const googleAnalyticsId = "G-VPL9X65STX";
+const googleAdsenseClient = "ca-pub-9616934112105331";
 const siteTitle = "Square Face Generator - Play the Classic Flash Avatar Game Online";
 const siteDescription =
   "Play Square Face Generator online, a classic Flash avatar maker game where you can create funny square face icons in your browser. No Flash Player required.";
@@ -58,6 +59,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <script
+          async
+          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${googleAdsenseClient}`}
+          crossOrigin="anonymous"
+        />
+      </head>
       <body>
         {children}
         <Script
