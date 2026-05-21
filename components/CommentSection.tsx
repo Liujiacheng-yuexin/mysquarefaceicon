@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { ArrowRight, Heart, ImagePlus, Send, Star } from "lucide-react";
+import { ArrowRight, Heart, ImagePlus, MessageCircle, Send, ShieldCheck, Sparkles, Star } from "lucide-react";
 import { useEffect, useMemo, useState } from "react";
 import type { FormEvent } from "react";
 import type { LocaleCode, LocaleContent } from "@/lib/locales";
@@ -63,6 +63,8 @@ export default function CommentSection({
   const [loadError, setLoadError] = useState(false);
   const [sort, setSort] = useState<"latest" | "liked">("latest");
   const [likedIds, setLikedIds] = useState<Set<string>>(new Set());
+  const [selectedImageName, setSelectedImageName] = useState("");
+  const [imagePreviewUrl, setImagePreviewUrl] = useState("");
 
   const stars = useMemo(() => [1, 2, 3, 4, 5], []);
 
@@ -84,6 +86,12 @@ export default function CommentSection({
     setLikedIds(readLikedIds());
   }, []);
 
+  useEffect(() => {
+    return () => {
+      if (imagePreviewUrl) URL.revokeObjectURL(imagePreviewUrl);
+    };
+  }, [imagePreviewUrl]);
+
   async function submitComment(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     setStatus("submitting");
@@ -104,8 +112,24 @@ export default function CommentSection({
     }
 
     form.reset();
+    if (imagePreviewUrl) URL.revokeObjectURL(imagePreviewUrl);
+    setImagePreviewUrl("");
+    setSelectedImageName("");
     setRating(5);
     setStatus("success");
+  }
+
+  function updateSelectedImage(file: File | undefined) {
+    if (imagePreviewUrl) URL.revokeObjectURL(imagePreviewUrl);
+
+    if (!file) {
+      setImagePreviewUrl("");
+      setSelectedImageName("");
+      return;
+    }
+
+    setSelectedImageName(file.name);
+    setImagePreviewUrl(URL.createObjectURL(file));
   }
 
   async function likeComment(commentId: string) {
@@ -138,7 +162,15 @@ export default function CommentSection({
     <div className={showForm ? "comments-layout" : "comments-layout comments-layout-single"}>
       {showForm && (
         <form className="comment-form" onSubmit={submitComment}>
-          <p>{content.intro}</p>
+          <div className="comment-form-hero">
+            <span className="comment-form-icon" aria-hidden="true">
+              <ImagePlus size={22} />
+            </span>
+            <div>
+              <strong>Share your square face</strong>
+              <p>{content.intro}</p>
+            </div>
+          </div>
           <div className="form-grid">
             <label>
               <span>{content.name}</span>
@@ -154,7 +186,10 @@ export default function CommentSection({
             <textarea name="content" required maxLength={2000} rows={5} />
           </label>
           <fieldset className="rating-field">
-            <legend>{content.rating}</legend>
+            <legend>
+              {content.rating}
+              <small>Choose how much you liked the game.</small>
+            </legend>
             <div className="rating-row">
               {stars.map((star) => (
                 <button
@@ -169,26 +204,50 @@ export default function CommentSection({
               ))}
             </div>
           </fieldset>
-          <label className="file-label">
-            <ImagePlus aria-hidden="true" size={18} />
-            <span>{content.image}</span>
-            <input name="image" type="file" accept="image/jpeg,image/png,image/webp,image/gif" />
+          <label className={selectedImageName ? "file-label has-file" : "file-label"}>
+            <span
+              className="upload-preview"
+              style={imagePreviewUrl ? { backgroundImage: `url("${imagePreviewUrl}")` } : undefined}
+              aria-hidden="true"
+            >
+              {!imagePreviewUrl && <ImagePlus size={22} />}
+            </span>
+            <span className="upload-copy">
+              <strong>{selectedImageName || content.image}</strong>
+              <small>JPG, PNG, WebP, or GIF. Maximum 2MB.</small>
+            </span>
+            <span className="upload-action">Choose image</span>
+            <input
+              name="image"
+              type="file"
+              accept="image/jpeg,image/png,image/webp,image/gif"
+              onChange={(event) => updateSelectedImage(event.currentTarget.files?.[0])}
+            />
           </label>
-          <p className="form-help">JPG, PNG, WebP, or GIF. Maximum 2MB.</p>
           <button className="tool-button primary" type="submit" disabled={status === "submitting"}>
             <Send aria-hidden="true" size={18} />
-            {content.submit}
+            {status === "submitting" ? "Submitting..." : content.submit}
           </button>
-          {status === "success" && <p className="form-message success">{content.pending}</p>}
+          {status === "success" && (
+            <p className="form-message success">
+              <ShieldCheck aria-hidden="true" size={17} />
+              {content.pending}
+            </p>
+          )}
           {status === "error" && <p className="form-message error">{content.error}</p>}
         </form>
       )}
 
       <div className="comments-list" aria-live="polite">
         <div className="comments-list-header">
-          <div>
-            <strong>{showForm ? "Recent approved comments" : "Approved community creations"}</strong>
-            <span>{showForm ? "Only reviewed comments are shown." : "Sorted from reviewed public submissions."}</span>
+          <div className="comments-title-group">
+            <span className="comments-title-icon" aria-hidden="true">
+              <MessageCircle size={18} />
+            </span>
+            <div>
+              <strong>{showForm ? "Community picks" : "Approved community creations"}</strong>
+              <span>{showForm ? "A small set of reviewed comments from players." : "Sorted from reviewed public submissions."}</span>
+            </div>
           </div>
           {showSort && (
             <div className="comment-sort" aria-label="Sort gallery comments">
@@ -202,27 +261,38 @@ export default function CommentSection({
           )}
         </div>
         {loadError && <p className="form-message error">{content.loadError}</p>}
-        {!loadError && comments.length === 0 && <p className="empty-comments">{content.empty}</p>}
+        {!loadError && comments.length === 0 && (
+          <div className="empty-comments">
+            <Sparkles aria-hidden="true" size={24} />
+            <strong>No creations yet</strong>
+            <p>{content.empty} Share the first screenshot after your comment is reviewed.</p>
+          </div>
+        )}
         {comments.map((comment) => (
           <article className="comment-card" key={comment.id}>
-            <div className="comment-header">
-              <span className="comment-avatar">{comment.name.slice(0, 1).toUpperCase()}</span>
-              <div>
-                <strong>{comment.name}</strong>
-                <span>{`Rating ${comment.rating}/5`}</span>
-              </div>
-            </div>
-            <p>{comment.content}</p>
             {comment.imageUrl && (
               <Image
+                className="comment-image"
                 src={comment.imageUrl}
                 alt={`Square face icon shared by ${comment.name}`}
-                width={220}
-                height={220}
+                width={420}
+                height={420}
                 loading="lazy"
                 unoptimized
               />
             )}
+            <div className="comment-header">
+              <span className="comment-avatar">{comment.name.slice(0, 1).toUpperCase()}</span>
+              <div>
+                <strong>{comment.name}</strong>
+                <span aria-label={`Rating ${comment.rating} out of 5`}>
+                  {stars.map((star) => (
+                    <Star aria-hidden="true" fill="currentColor" key={star} size={13} />
+                  )).slice(0, comment.rating)}
+                </span>
+              </div>
+            </div>
+            <p>{comment.content}</p>
             <div className="comment-actions">
               <button
                 className={likedIds.has(comment.id) ? "like-button is-liked" : "like-button"}

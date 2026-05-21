@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { Check, RefreshCw, Trash2, X } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 type AdminComment = {
   id: string;
@@ -13,9 +13,66 @@ type AdminComment = {
   rating: number;
   likes?: number;
   status: "pending" | "approved" | "rejected";
+  imageKey?: string;
   imageUrl?: string;
   createdAt: string;
 };
+
+function AdminCommentImage({ imageKey, name, password }: { imageKey: string; name: string; password: string }) {
+  const [src, setSrc] = useState<string | null>(null);
+  const [failed, setFailed] = useState(false);
+
+  useEffect(() => {
+    let active = true;
+    let objectUrl: string | null = null;
+
+    async function loadImage() {
+      setFailed(false);
+      setSrc(null);
+
+      const response = await fetch(`/api/admin/comment-images/${imageKey}`, {
+        headers: {
+          "x-admin-password": password
+        }
+      });
+
+      if (!response.ok) {
+        setFailed(true);
+        return;
+      }
+
+      const blob = await response.blob();
+      objectUrl = URL.createObjectURL(blob);
+      if (active) setSrc(objectUrl);
+    }
+
+    void loadImage();
+
+    return () => {
+      active = false;
+      if (objectUrl) URL.revokeObjectURL(objectUrl);
+    };
+  }, [imageKey, password]);
+
+  if (failed) {
+    return <p className="form-message error">Could not load uploaded image for review.</p>;
+  }
+
+  if (!src) {
+    return <p className="form-message">Loading uploaded image...</p>;
+  }
+
+  return (
+    <Image
+      src={src}
+      alt={`Upload from ${name}`}
+      width={220}
+      height={220}
+      loading="lazy"
+      unoptimized
+    />
+  );
+}
 
 export default function AdminComments() {
   const [password, setPassword] = useState("");
@@ -91,16 +148,7 @@ export default function AdminComments() {
               </span>
             </div>
             <p>{comment.content}</p>
-            {comment.imageUrl && (
-              <Image
-                src={comment.imageUrl}
-                alt={`Upload from ${comment.name}`}
-                width={220}
-                height={220}
-                loading="lazy"
-                unoptimized
-              />
-            )}
+            {comment.imageKey && <AdminCommentImage imageKey={comment.imageKey} name={comment.name} password={password} />}
             <div className="admin-actions">
               <button className="tool-button secondary" type="button" onClick={() => updateStatus(comment.id, "approved")}>
                 <Check aria-hidden="true" size={18} />

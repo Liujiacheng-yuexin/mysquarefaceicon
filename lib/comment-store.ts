@@ -355,12 +355,7 @@ export async function getCommentImage(key: string) {
   }
 
   if (context.r2) {
-    const object = await context.r2.get(key);
-    if (!object?.body) return null;
-    return {
-      body: object.body,
-      contentType: object.httpMetadata?.contentType ?? "application/octet-stream"
-    };
+    return readStoredImage(key, context.r2);
   }
 
   const image = getLocalStore().images.get(key);
@@ -368,6 +363,39 @@ export async function getCommentImage(key: string) {
   return {
     body: image.bytes,
     contentType: image.contentType
+  };
+}
+
+export async function getAdminCommentImage(key: string, password: string | null) {
+  const context = await getStoreContext();
+  assertAdmin(password, context.adminPassword);
+
+  const commentId = commentIdFromImageKey(key);
+  if (!commentId) return null;
+
+  const comment = await readComment(commentId, context.kv);
+  if (!comment || comment.imageKey !== key) {
+    return null;
+  }
+
+  if (context.r2) {
+    return readStoredImage(key, context.r2);
+  }
+
+  const image = getLocalStore().images.get(key);
+  if (!image) return null;
+  return {
+    body: image.bytes,
+    contentType: image.contentType
+  };
+}
+
+async function readStoredImage(key: string, r2: R2Like) {
+  const object = await r2.get(key);
+  if (!object?.body) return null;
+  return {
+    body: object.body,
+    contentType: object.httpMetadata?.contentType ?? "application/octet-stream"
   };
 }
 
