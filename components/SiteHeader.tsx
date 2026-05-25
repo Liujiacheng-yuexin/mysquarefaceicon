@@ -1,4 +1,4 @@
-import { Menu } from "lucide-react";
+import { ChevronDown, Gamepad2, Menu } from "lucide-react";
 
 export default function SiteHeader() {
   return (
@@ -9,8 +9,17 @@ export default function SiteHeader() {
       </a>
       <a className="mobile-start-link" href="/#maker">Start</a>
       <nav className="nav-links" aria-label="Primary navigation">
-        <a href="/#maker">Generator</a>
-        <a href="/oval-face-icon-generator">Oval Face</a>
+        <details className="nav-dropdown">
+          <summary>
+            <Gamepad2 aria-hidden="true" size={16} />
+            Game
+            <ChevronDown aria-hidden="true" size={14} />
+          </summary>
+          <div className="nav-dropdown-menu">
+            <a href="/#maker">Square Face Generator</a>
+            <a href="/oval-face-icon-generator">Oval Face Icon Generator</a>
+          </div>
+        </details>
         <a href="/free-avatar-maker">Free Avatar Maker</a>
         <a href="/gallery">Gallery</a>
         <a href="/square-face-icon-generator">Icon Guide</a>

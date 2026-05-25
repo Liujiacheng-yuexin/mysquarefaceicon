@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import FlashGenerator from "@/components/FlashGenerator";
 import InstallPrompt from "@/components/InstallPrompt";
-import { CirclePlay, Gamepad2, Menu, Monitor, Sparkles } from "lucide-react";
+import { ChevronDown, CirclePlay, Gamepad2, Menu, Monitor, Sparkles } from "lucide-react";
 
 const pageUrl = "https://mysquarefaceicon.com/oval-face-icon-generator";
 const pageTitle = "Oval Face Icon Generator - Play the Classic Flash Avatar Game Online";
@@ -193,14 +193,20 @@ export default function OvalFaceIconGeneratorPage() {
         </a>
         <a className="mobile-start-link" href="#game-player">Play</a>
         <nav className="nav-links" aria-label="Primary navigation">
-          <a href="#game-player">
-            <Gamepad2 aria-hidden="true" size={16} />
-            Game
-          </a>
+          <details className="nav-dropdown">
+            <summary>
+              <Gamepad2 aria-hidden="true" size={16} />
+              Game
+              <ChevronDown aria-hidden="true" size={14} />
+            </summary>
+            <div className="nav-dropdown-menu">
+              <a href="/">Square Face Generator</a>
+              <a href="#game-player">Oval Face Icon Generator</a>
+            </div>
+          </details>
           <a href="#how-to-play">How to Play</a>
           <a href="#features">Features</a>
           <a href="#faq">FAQ</a>
-          <a href="/">Square Game</a>
           <a href="/gallery">Gallery</a>
           <a href="/blog">Blog</a>
           <a className="nav-cta" href="#game-player">Play Now</a>

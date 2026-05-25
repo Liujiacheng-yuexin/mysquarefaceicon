@@ -201,14 +201,20 @@ export default function HomePage({ locale }: HomePageProps) {
         </a>
         <a className="mobile-start-link" href="#game-player">Play</a>
         <nav className="nav-links" aria-label="Primary navigation">
-          <a href="#game-player">
-            <Gamepad2 aria-hidden="true" size={16} />
-            Game
-          </a>
+          <details className="nav-dropdown">
+            <summary>
+              <Gamepad2 aria-hidden="true" size={16} />
+              Game
+              <ChevronDown aria-hidden="true" size={14} />
+            </summary>
+            <div className="nav-dropdown-menu">
+              <a href="#game-player">Square Face Generator</a>
+              <a href="/oval-face-icon-generator">Oval Face Icon Generator</a>
+            </div>
+          </details>
           <a href="#how-to-play">How to Play</a>
           <a href="#features">Features</a>
           <a href="#faq">FAQ</a>
-          <a href="/oval-face-icon-generator">Oval Face</a>
           <a href="/gallery">Gallery</a>
           <a href="/blog">Blog</a>
           <a href="/contact">Contact</a>
