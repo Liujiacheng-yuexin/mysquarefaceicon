@@ -18,6 +18,7 @@
   - `/contact`
   - `/editorial-policy`
   - `/free-avatar-maker`
+  - `/oval-face-icon-generator` as a standalone classic Flash oval avatar maker page using the authorized local oval SWF and distinct oval-face copy
   - `/square-avatar-generator`
   - `/gallery` as the approved community creations archive plus original inspiration examples
 - Support guide pages:

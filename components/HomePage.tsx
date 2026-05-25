@@ -116,6 +116,11 @@ const faq = [
 
 const relatedCards = [
   {
+    title: "Oval Face Icon Generator",
+    text: "Try a softer rounded avatar maker with oval-shaped profile icons.",
+    href: "/oval-face-icon-generator"
+  },
+  {
     title: "Avatar Games",
     text: "Find a quick browser workflow for playful profile avatars.",
     href: "/free-avatar-maker"
@@ -134,11 +139,6 @@ const relatedCards = [
     title: "Gallery",
     text: "Browse original square face icon ideas for colors, expressions, and profile crops.",
     href: "/gallery"
-  },
-  {
-    title: "Dress Up Games",
-    text: "More lightweight dress-up style tools may be added later.",
-    disabled: true
   },
   {
     title: "Flash Games",
@@ -208,6 +208,7 @@ export default function HomePage({ locale }: HomePageProps) {
           <a href="#how-to-play">How to Play</a>
           <a href="#features">Features</a>
           <a href="#faq">FAQ</a>
+          <a href="/oval-face-icon-generator">Oval Face</a>
           <a href="/gallery">Gallery</a>
           <a href="/blog">Blog</a>
           <a href="/contact">Contact</a>
@@ -238,6 +239,7 @@ export default function HomePage({ locale }: HomePageProps) {
             <a href="#how-to-play">How to Play</a>
             <a href="#features">Features</a>
             <a href="#faq">FAQ</a>
+            <a href="/oval-face-icon-generator">Oval Face</a>
             <a href="/gallery">Gallery</a>
             <a href="/blog">Blog</a>
             <a href="/contact">Contact</a>
@@ -439,6 +441,7 @@ export default function HomePage({ locale }: HomePageProps) {
           </div>
           <div>
             <h3>Resources</h3>
+            <a href="/oval-face-icon-generator">Oval Face Icon Generator</a>
             <a href="/square-face-icon-generator">Icon Guide</a>
             <a href="/free-avatar-maker">Free Avatar Maker</a>
             <a href="/gallery">Gallery</a>

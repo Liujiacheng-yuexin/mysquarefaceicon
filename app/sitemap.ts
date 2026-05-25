@@ -8,6 +8,7 @@ const contentPaths = [
   "/contact",
   "/editorial-policy",
   "/free-avatar-maker",
+  "/oval-face-icon-generator",
   "/square-avatar-generator",
   "/gallery",
   "/square-face-icon-generator",
@@ -22,7 +23,7 @@ const contentPaths = [
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const lastModified = new Date("2026-05-19");
+  const lastModified = new Date("2026-05-26");
 
   return [
     ...reviewedLocaleCodes.map((locale) => ({

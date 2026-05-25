@@ -284,6 +284,53 @@ select {
   box-shadow: 0 6px 0 rgba(8, 121, 94, 0.18);
 }
 
+.oval-nostalgia-icon {
+  background: #fffdf8;
+  border-color: #ff9b31;
+}
+
+.oval-nostalgia-icon::before {
+  position: absolute;
+  inset: 12px 24px 14px;
+  background: #fffaf1;
+  border: 3px solid var(--primary);
+  border-radius: 50%;
+  content: "";
+}
+
+.oval-nostalgia-icon span::before,
+.oval-nostalgia-icon span::after {
+  position: absolute;
+  top: 38px;
+  z-index: 1;
+  width: 7px;
+  height: 7px;
+  background: #111111;
+  border-radius: 50%;
+  content: "";
+}
+
+.oval-nostalgia-icon span::before {
+  left: 34px;
+}
+
+.oval-nostalgia-icon span::after {
+  right: 34px;
+}
+
+.oval-nostalgia-icon::after {
+  position: absolute;
+  left: 50%;
+  bottom: 24px;
+  z-index: 1;
+  width: 28px;
+  height: 16px;
+  border-bottom: 4px solid #ff9698;
+  border-radius: 0 0 28px 28px;
+  content: "";
+  transform: translateX(-50%);
+}
+
 .nostalgia-tags {
   display: flex;
   flex-wrap: wrap;

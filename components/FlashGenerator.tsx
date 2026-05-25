@@ -2,7 +2,7 @@
 
 import { Flag, Maximize2, RefreshCw, RotateCcw } from "lucide-react";
 import type { KeyboardEvent } from "react";
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 
 declare global {
   interface Window {
@@ -32,14 +32,28 @@ const ruffleUrls = [
   "https://cdn.jsdelivr.net/npm/@ruffle-rs/ruffle@latest/ruffle.js"
 ];
 
-const swfSources = [
+const defaultSwfSources = [
   "/games/square-face.swf"
 ];
 
-const coverImageUrl = "https://static.mysquarefaceicon.com/squarefacegenerator/square-face-cover.png";
+const defaultCoverImageUrl = "https://static.mysquarefaceicon.com/squarefacegenerator/square-face-cover.png";
 
 const SCRIPT_TIMEOUT_MS = 8000;
 const SWF_LOAD_TIMEOUT_MS = 15000;
+
+type FlashGeneratorProps = {
+  gameName?: string;
+  swfSources?: string[];
+  coverImageUrl?: string;
+  backgroundColor?: string;
+  ariaLabel?: string;
+  coverLabel?: string;
+  loadingMessage?: string;
+  errorMessage?: string;
+  slowLoadingHint?: string;
+  deviceNotice?: string;
+  reportHref?: string;
+};
 
 function loadScript(url: string) {
   return new Promise<void>((resolve, reject) => {
@@ -110,15 +124,28 @@ async function loadRuffleRuntime() {
   throw lastError ?? new Error("Ruffle did not initialize.");
 }
 
-export default function FlashGenerator() {
+export default function FlashGenerator({
+  gameName = "Square Face Generator",
+  swfSources = defaultSwfSources,
+  coverImageUrl = defaultCoverImageUrl,
+  backgroundColor = "#FFAF03",
+  ariaLabel = "Square face Flash generator",
+  coverLabel = "Start Square Face Generator game",
+  loadingMessage = "Loading Square Face Generator...",
+  errorMessage = "The game could not be loaded. Please refresh the page or try a desktop browser.",
+  slowLoadingHint = "Still loading? This classic Flash game may take a few seconds to start.",
+  deviceNotice = "This classic Flash game works best on desktop. If you are using a phone, try landscape mode for a better experience.",
+  reportHref = "/contact"
+}: FlashGeneratorProps) {
   const mountRef = useRef<HTMLDivElement | null>(null);
   const stageRef = useRef<HTMLDivElement | null>(null);
   const slowLoadingTimerRef = useRef<number | null>(null);
   const autoStartedRef = useRef(false);
   const [loadState, setLoadState] = useState<LoadState>("loading");
-  const [message, setMessage] = useState("Loading Square Face Generator...");
+  const [message, setMessage] = useState(loadingMessage);
   const [showSlowHint, setShowSlowHint] = useState(false);
   const [fullscreenAvailable, setFullscreenAvailable] = useState(false);
+  const sourceList = useMemo(() => (swfSources.length > 0 ? swfSources : defaultSwfSources), [swfSources]);
 
   const startPlayer = useCallback(async () => {
     const mount = mountRef.current;
@@ -129,7 +156,7 @@ export default function FlashGenerator() {
     }
 
     setLoadState("loading");
-    setMessage("Loading Square Face Generator...");
+    setMessage(loadingMessage);
     setShowSlowHint(false);
     mount.replaceChildren();
     slowLoadingTimerRef.current = window.setTimeout(() => {
@@ -148,15 +175,15 @@ export default function FlashGenerator() {
       mount.appendChild(player);
 
       let lastError: unknown;
-      for (const source of swfSources) {
+      for (const source of sourceList) {
         try {
-          setMessage("Loading Square Face Generator...");
+          setMessage(loadingMessage);
           await withTimeout(
             player.load({
               url: source,
               autoplay: "on",
               unmuteOverlay: "hidden",
-              backgroundColor: "#FFAF03",
+              backgroundColor,
               letterbox: "on",
               warnOnUnsupportedContent: false,
               contextMenu: "on"
@@ -168,7 +195,7 @@ export default function FlashGenerator() {
             window.clearTimeout(slowLoadingTimerRef.current);
           }
           setLoadState("ready");
-          setMessage("Game loaded.");
+          setMessage(`${gameName} loaded.`);
           return;
         } catch (error) {
           lastError = error;
@@ -182,9 +209,9 @@ export default function FlashGenerator() {
       }
       mount.replaceChildren();
       setLoadState("error");
-      setMessage("The game could not be loaded. Please refresh the page or try a desktop browser.");
+      setMessage(errorMessage);
     }
-  }, []);
+  }, [backgroundColor, errorMessage, gameName, loadingMessage, sourceList]);
 
   useEffect(() => {
     setFullscreenAvailable(Boolean(stageRef.current?.requestFullscreen));
@@ -232,17 +259,17 @@ export default function FlashGenerator() {
   }
 
   return (
-    <div className="flash-tool-shell" aria-label="Square face Flash generator">
+    <div className="flash-tool-shell" aria-label={ariaLabel}>
       <div className="flash-stage" ref={stageRef}>
         <div className="flash-player">
           <div className="ruffle-mount" ref={mountRef} />
           {loadState !== "ready" && (
             <div
               className={loadState === "loading" ? "flash-cover is-loading" : "flash-cover"}
-              style={{ backgroundImage: `url("${coverImageUrl}")` }}
+              style={coverImageUrl ? { backgroundImage: `url("${coverImageUrl}")` } : undefined}
               role="button"
               tabIndex={loadState === "loading" ? -1 : 0}
-              aria-label="Start Square Face Generator game"
+              aria-label={coverLabel}
               onClick={() => {
                 if (loadState !== "loading") void startPlayer();
               }}
@@ -259,7 +286,7 @@ export default function FlashGenerator() {
                   <RefreshCw aria-hidden="true" size={18} />
                   {message}
                   {showSlowHint && (
-                    <small>Still loading? This classic Flash game may take a few seconds to start.</small>
+                    <small>{slowLoadingHint}</small>
                   )}
                 </span>
               )}
@@ -277,7 +304,7 @@ export default function FlashGenerator() {
           <RotateCcw aria-hidden="true" size={18} />
           Reload Game
         </button>
-        <a className="tool-button secondary" href="/contact">
+        <a className="tool-button secondary" href={reportHref}>
           <Flag aria-hidden="true" size={18} />
           Report Issue
         </a>
@@ -285,8 +312,7 @@ export default function FlashGenerator() {
 
       <p className="game-status" aria-live="polite">{message}</p>
       <aside className="game-device-notice">
-        This classic Flash game works best on desktop. If you are using a phone, try landscape mode for a better
-        experience.
+        {deviceNotice}
       </aside>
     </div>
   );

@@ -34,6 +34,7 @@
 - Trust and inspiration pages:
   - `/about-us`: project trust, originality, privacy, and roadmap context.
   - `/free-avatar-maker`: broader free avatar maker intent tied back to the square face generator.
+  - `/oval-face-icon-generator`: second classic Flash avatar maker page for rounded and oval face icon intent, using unique copy and the authorized oval SWF.
   - `/square-avatar-generator`: broader square avatar workflow intent tied back to the generator.
   - `/gallery`: original square face icon examples and inspiration, not third-party image reuse.
 - Support pages:

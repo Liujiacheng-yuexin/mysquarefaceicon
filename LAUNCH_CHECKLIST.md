@@ -9,6 +9,7 @@
 - [x] `/terms-of-service` is accessible
 - [x] `/about-us` is accessible
 - [x] `/free-avatar-maker` is accessible
+- [x] `/oval-face-icon-generator` is accessible
 - [x] `/square-avatar-generator` is accessible
 - [x] `/gallery` is accessible
 - [x] `/blog/cute-profile-picture-ideas` is accessible
@@ -17,6 +18,7 @@
 - [x] `sitemap.xml` is accessible
 - [x] `robots.txt` is accessible and declares sitemap
 - [x] Local SWF file is accessible at `/games/square-face.swf`
+- [x] Local SWF file is accessible at `/games/oval-face.swf`
 - [x] Local Ruffle runtime is accessible at `/ruffle/ruffle.js`
 - [ ] Game loading overlay appears before Ruffle/SWF is ready
 - [ ] Fullscreen control works on desktop browsers

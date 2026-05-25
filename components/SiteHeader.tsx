@@ -10,6 +10,7 @@ export default function SiteHeader() {
       <a className="mobile-start-link" href="/#maker">Start</a>
       <nav className="nav-links" aria-label="Primary navigation">
         <a href="/#maker">Generator</a>
+        <a href="/oval-face-icon-generator">Oval Face</a>
         <a href="/free-avatar-maker">Free Avatar Maker</a>
         <a href="/gallery">Gallery</a>
         <a href="/square-face-icon-generator">Icon Guide</a>
@@ -25,6 +26,7 @@ export default function SiteHeader() {
         </summary>
         <div className="mobile-nav-panel">
           <a href="/#maker">Start Creating</a>
+          <a href="/oval-face-icon-generator">Oval Face</a>
           <a href="/free-avatar-maker">Free Avatar Maker</a>
           <a href="/gallery">Gallery</a>
           <a href="/square-face-icon-generator">Icon Guide</a>

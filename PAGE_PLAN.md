@@ -16,6 +16,7 @@
 | Contact | `/contact` | Trust page | contact My Square Face Icon | Contact the project about feedback, privacy, corrections, or moderation | P1 | Implemented |
 | Editorial Policy | `/editorial-policy` | Trust page | editorial policy | Explain content quality, AI assistance, moderation, and correction standards | P1 | Implemented |
 | Free Avatar Maker | `/free-avatar-maker` | Support / guide page | free avatar maker | Create a free avatar with a square face icon workflow | P1 | Implemented |
+| Oval Face Icon Generator | `/oval-face-icon-generator` | Tool page | oval face icon generator | Play an oval face avatar maker and create a rounded profile icon | P1 | Implemented |
 | Square Avatar Generator | `/square-avatar-generator` | Support / guide page | square avatar generator | Learn how square source avatars work across profile crops and platforms | P1 | Implemented |
 | Square Face Icon Gallery | `/gallery` | Inspiration gallery | square face icon gallery | Browse original square face icon examples and style ideas | P1 | Implemented |
 | Square Face Icon Guide | `/square-face-icon-generator` | Support / guide page | square face icon generator | Learn how to create and use square face icons | P1 | Implemented |
@@ -72,6 +73,7 @@
 | Home | `/privacy-policy` | Privacy Policy |
 | Home | `/terms-of-service` | Terms of Service |
 | Home | `/free-avatar-maker` | Free Avatar Maker |
+| Home | `/oval-face-icon-generator` | Oval Face Icon Generator |
 | Home | `/square-avatar-generator` | Square Avatar Generator |
 | Home | `/gallery` | Gallery |
 | Home | `/about-us` | About Us |
@@ -90,6 +92,8 @@
 | Blog guide | `/square-face-icon-generator` | Square Face Icon Generator Guide |
 | About Us | `/` | Square Face Generator |
 | Free Avatar Maker | `/` | Square Face Generator |
+| Oval Face Icon Generator | `/` | Square Face Generator |
+| Oval Face Icon Generator | `/square-face-icon-generator` | Square Face Icon Guide |
 | Gallery | `/` | Square Face Generator |
 | Support pages | `/blog` | Square Face Icon Guides |
 | Legal pages | `/` | Square Face Generator |
