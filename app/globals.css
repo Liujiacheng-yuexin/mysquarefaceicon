@@ -96,7 +96,7 @@ select {
   display: inline-block;
   width: 40px;
   height: 40px;
-  background: #fffdf8 url("/favicon.svg") center / 82% 82% no-repeat;
+  background: #fffdf8 url("/square-face-icon.png") center / 82% 82% no-repeat;
   border: 1.5px solid #ff9b31;
   border-radius: 8px;
   box-shadow: 0 3px 0 #ffd89b;
@@ -278,7 +278,7 @@ select {
   width: 92px;
   aspect-ratio: 1;
   overflow: hidden;
-  background: #fffdf8 url("/favicon.svg") center / 90% 90% no-repeat;
+  background: #fffdf8 url("/square-face-icon.png") center / 90% 90% no-repeat;
   border: 6px solid var(--primary);
   border-radius: var(--radius);
   box-shadow: 0 6px 0 rgba(8, 121, 94, 0.18);
@@ -1205,15 +1205,20 @@ h3 {
 }
 
 .step-number {
-  display: grid;
-  width: 36px;
-  height: 36px;
-  place-items: center;
+  display: inline-flex;
+  width: max-content;
+  min-width: 36px;
+  min-height: 36px;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 14px;
+  padding: 0 10px;
   background: var(--accent);
   border-radius: 8px;
   color: #ffffff;
   font-weight: 900;
+  line-height: 1;
+  white-space: nowrap;
 }
 
 .use-grid {

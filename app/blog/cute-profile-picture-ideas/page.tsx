@@ -62,7 +62,7 @@ export default function CuteProfilePictureIdeasPage() {
       name: "My Square Face Icon",
       logo: {
         "@type": "ImageObject",
-        url: "https://mysquarefaceicon.com/favicon.svg"
+        url: "https://mysquarefaceicon.com/favicon512.png"
       }
     },
     datePublished: "2026-05-16",

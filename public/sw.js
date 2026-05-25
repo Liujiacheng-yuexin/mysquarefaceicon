@@ -1,6 +1,12 @@
-const CACHE_NAME = "msfi-v3";
+const CACHE_NAME = "msfi-v4";
 const CORE_ASSETS = [
-  "/favicon.svg",
+  "/favicon.ico",
+  "/favicon16.png",
+  "/favicon32.png",
+  "/favicon180.png",
+  "/favicon192.png",
+  "/favicon512.png",
+  "/square-face-icon.png",
   "/og-image.svg",
   "/games/square-face.swf",
   "/ruffle/ruffle.js"

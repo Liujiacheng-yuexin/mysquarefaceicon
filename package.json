@@ -9,7 +9,8 @@
     "cf:preview": "opennextjs-cloudflare preview",
     "cf:deploy": "opennextjs-cloudflare build && node scripts/patch-opennext-worker.mjs && opennextjs-cloudflare deploy",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "indexnow": "node scripts/submit-indexnow.mjs"
   },
   "dependencies": {
     "@ruffle-rs/ruffle": "^0.2.0-nightly.2026.5.12",

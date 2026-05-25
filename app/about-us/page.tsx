@@ -40,7 +40,7 @@ export default function AboutUsPage() {
       "@type": "Organization",
       name: "My Square Face Icon",
       url: "https://mysquarefaceicon.com",
-      logo: "https://mysquarefaceicon.com/favicon.svg"
+      logo: "https://mysquarefaceicon.com/favicon512.png"
     }
   };
 
