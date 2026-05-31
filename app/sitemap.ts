@@ -9,6 +9,7 @@ const contentPaths = [
   "/editorial-policy",
   "/free-avatar-maker",
   "/oval-face-icon-generator",
+  "/pixel-art-avatar-icon-generator",
   "/square-avatar-generator",
   "/gallery",
   "/square-face-icon-generator",

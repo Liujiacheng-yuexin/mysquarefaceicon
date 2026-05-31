@@ -18,6 +18,7 @@ export default function SiteHeader() {
           <div className="nav-dropdown-menu">
             <a href="/#maker">Square Face Generator</a>
             <a href="/oval-face-icon-generator">Oval Face Icon Generator</a>
+            <a href="/pixel-art-avatar-icon-generator">Pixel Art Avatar Icon Generator</a>
           </div>
         </details>
         <a href="/free-avatar-maker">Free Avatar Maker</a>
@@ -36,6 +37,7 @@ export default function SiteHeader() {
         <div className="mobile-nav-panel">
           <a href="/#maker">Start Creating</a>
           <a href="/oval-face-icon-generator">Oval Face</a>
+          <a href="/pixel-art-avatar-icon-generator">Pixel Avatar</a>
           <a href="/free-avatar-maker">Free Avatar Maker</a>
           <a href="/gallery">Gallery</a>
           <a href="/square-face-icon-generator">Icon Guide</a>

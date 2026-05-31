@@ -19,6 +19,7 @@
   - `/editorial-policy`
   - `/free-avatar-maker`
   - `/oval-face-icon-generator` as a standalone classic Flash oval avatar maker page using the authorized local oval SWF and distinct oval-face copy
+  - `/pixel-art-avatar-icon-generator` as an external embedded tool page for the icongenerators.net pixel avatar maker, with source attribution, no copied assets, and a direct original-page fallback
   - `/square-avatar-generator`
   - `/gallery` as the approved community creations archive plus original inspiration examples
 - Support guide pages:
@@ -43,6 +44,7 @@
 - Use the secondary keyword naturally: `square face icon generator`.
 - Keep FAQ schema aligned with the visible FAQ on each language page.
 - Do not copy competitor comments, screenshots, SWF wrappers, or article text.
+- External tool embeds must clearly identify the source, link to the original page, and avoid copying external assets or code into this project.
 - Only approved comments and approved comment images should appear in the homepage preview or gallery.
 - Do not put draft translations, weak support pages, or unreviewed AI-assisted pages
   into sitemap.

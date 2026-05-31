@@ -10,6 +10,7 @@ export default function SiteFooter() {
           <h3>Quick Links</h3>
           <a href="/#maker">Square Face Generator</a>
           <a href="/oval-face-icon-generator">Oval Face Icon Generator</a>
+          <a href="/pixel-art-avatar-icon-generator">Pixel Art Avatar Icon Generator</a>
           <a href="/free-avatar-maker">Free Avatar Maker</a>
           <a href="/square-avatar-generator">Square Avatar Generator</a>
           <a href="/gallery">Gallery</a>

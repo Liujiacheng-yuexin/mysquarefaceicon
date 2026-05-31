@@ -132,8 +132,8 @@ const relatedCards = [
   },
   {
     title: "Pixel Avatar Games",
-    text: "Explore retro-inspired square avatar ideas and simple pixel-style rules.",
-    href: "/pixel-square-face-maker"
+    text: "Use an embedded external chibi pixel avatar maker with source credit.",
+    href: "/pixel-art-avatar-icon-generator"
   },
   {
     title: "Gallery",
@@ -210,6 +210,7 @@ export default function HomePage({ locale }: HomePageProps) {
             <div className="nav-dropdown-menu">
               <a href="#game-player">Square Face Generator</a>
               <a href="/oval-face-icon-generator">Oval Face Icon Generator</a>
+              <a href="/pixel-art-avatar-icon-generator">Pixel Art Avatar Icon Generator</a>
             </div>
           </details>
           <a href="#how-to-play">How to Play</a>
@@ -246,6 +247,7 @@ export default function HomePage({ locale }: HomePageProps) {
             <a href="#features">Features</a>
             <a href="#faq">FAQ</a>
             <a href="/oval-face-icon-generator">Oval Face</a>
+            <a href="/pixel-art-avatar-icon-generator">Pixel Avatar</a>
             <a href="/gallery">Gallery</a>
             <a href="/blog">Blog</a>
             <a href="/contact">Contact</a>
@@ -448,6 +450,7 @@ export default function HomePage({ locale }: HomePageProps) {
           <div>
             <h3>Resources</h3>
             <a href="/oval-face-icon-generator">Oval Face Icon Generator</a>
+            <a href="/pixel-art-avatar-icon-generator">Pixel Art Avatar Icon Generator</a>
             <a href="/square-face-icon-generator">Icon Guide</a>
             <a href="/free-avatar-maker">Free Avatar Maker</a>
             <a href="/gallery">Gallery</a>

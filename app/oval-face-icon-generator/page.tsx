@@ -202,6 +202,7 @@ export default function OvalFaceIconGeneratorPage() {
             <div className="nav-dropdown-menu">
               <a href="/">Square Face Generator</a>
               <a href="#game-player">Oval Face Icon Generator</a>
+              <a href="/pixel-art-avatar-icon-generator">Pixel Art Avatar Icon Generator</a>
             </div>
           </details>
           <a href="#how-to-play">How to Play</a>
@@ -222,6 +223,7 @@ export default function OvalFaceIconGeneratorPage() {
             <a href="#features">Features</a>
             <a href="#faq">FAQ</a>
             <a href="/">Square Game</a>
+            <a href="/pixel-art-avatar-icon-generator">Pixel Avatar</a>
             <a href="/gallery">Gallery</a>
             <a href="/blog">Blog</a>
           </div>
@@ -416,6 +418,7 @@ export default function OvalFaceIconGeneratorPage() {
             <h3>Games</h3>
             <a href="/">Square Face Generator</a>
             <a href="#game-player">Oval Face Icon Generator</a>
+            <a href="/pixel-art-avatar-icon-generator">Pixel Art Avatar Icon Generator</a>
             <a href="#how-to-play">How to Play</a>
             <a href="#faq">FAQ</a>
           </div>

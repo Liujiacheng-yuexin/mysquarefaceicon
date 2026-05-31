@@ -17,6 +17,7 @@
 | Editorial Policy | `/editorial-policy` | Trust page | editorial policy | Explain content quality, AI assistance, moderation, and correction standards | P1 | Implemented |
 | Free Avatar Maker | `/free-avatar-maker` | Support / guide page | free avatar maker | Create a free avatar with a square face icon workflow | P1 | Implemented |
 | Oval Face Icon Generator | `/oval-face-icon-generator` | Tool page | oval face icon generator | Play an oval face avatar maker and create a rounded profile icon | P1 | Implemented |
+| Pixel Art Avatar Icon Generator | `/pixel-art-avatar-icon-generator` | External embedded tool page | pixel art avatar icon generator | Use the embedded icongenerators.net pixel avatar maker with source attribution and fallback link | P1 | Implemented |
 | Square Avatar Generator | `/square-avatar-generator` | Support / guide page | square avatar generator | Learn how square source avatars work across profile crops and platforms | P1 | Implemented |
 | Square Face Icon Gallery | `/gallery` | Inspiration gallery | square face icon gallery | Browse original square face icon examples and style ideas | P1 | Implemented |
 | Square Face Icon Guide | `/square-face-icon-generator` | Support / guide page | square face icon generator | Learn how to create and use square face icons | P1 | Implemented |
@@ -74,6 +75,7 @@
 | Home | `/terms-of-service` | Terms of Service |
 | Home | `/free-avatar-maker` | Free Avatar Maker |
 | Home | `/oval-face-icon-generator` | Oval Face Icon Generator |
+| Home | `/pixel-art-avatar-icon-generator` | Pixel Art Avatar Icon Generator |
 | Home | `/square-avatar-generator` | Square Avatar Generator |
 | Home | `/gallery` | Gallery |
 | Home | `/about-us` | About Us |
@@ -94,6 +96,10 @@
 | Free Avatar Maker | `/` | Square Face Generator |
 | Oval Face Icon Generator | `/` | Square Face Generator |
 | Oval Face Icon Generator | `/square-face-icon-generator` | Square Face Icon Guide |
+| Pixel Art Avatar Icon Generator | `https://www.icongenerators.net/pixelavatar.html` | Original Pixel Art Avatar Icon Generator |
+| Pixel Art Avatar Icon Generator | `/` | Square Face Generator |
+| Pixel Art Avatar Icon Generator | `/oval-face-icon-generator` | Oval Face Icon Generator |
+| Pixel Art Avatar Icon Generator | `/pixel-square-face-maker` | Pixel Square Face Maker Guide |
 | Gallery | `/` | Square Face Generator |
 | Support pages | `/blog` | Square Face Icon Guides |
 | Legal pages | `/` | Square Face Generator |

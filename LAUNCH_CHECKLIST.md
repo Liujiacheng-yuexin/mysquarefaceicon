@@ -10,6 +10,7 @@
 - [x] `/about-us` is accessible
 - [x] `/free-avatar-maker` is accessible
 - [x] `/oval-face-icon-generator` is accessible
+- [ ] `/pixel-art-avatar-icon-generator` is accessible
 - [x] `/square-avatar-generator` is accessible
 - [x] `/gallery` is accessible
 - [x] `/blog/cute-profile-picture-ideas` is accessible
@@ -43,6 +44,7 @@
 - [ ] Like buttons increment once per local visitor ID
 - [ ] Mobile layout has no horizontal overflow
 - [ ] Ruffle loads the SWF game
+- [ ] Pixel Art Avatar Icon Generator iframe loads, or the original-page fallback is visible
 - [ ] Game help content, troubleshooting, and FAQ match visible page copy
 
 ## Launch Day
