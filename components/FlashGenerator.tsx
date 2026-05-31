@@ -1,7 +1,7 @@
 "use client";
 
 import { Flag, Maximize2, RefreshCw, RotateCcw } from "lucide-react";
-import type { KeyboardEvent } from "react";
+import type { CSSProperties, KeyboardEvent } from "react";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 
 declare global {
@@ -53,6 +53,8 @@ type FlashGeneratorProps = {
   slowLoadingHint?: string;
   deviceNotice?: string;
   reportHref?: string;
+  aspectRatio?: string;
+  maxWidth?: string;
 };
 
 function loadScript(url: string) {
@@ -135,7 +137,9 @@ export default function FlashGenerator({
   errorMessage = "The game could not be loaded. Please refresh the page or try a desktop browser.",
   slowLoadingHint = "Still loading? This classic Flash game may take a few seconds to start.",
   deviceNotice = "This classic Flash game works best on desktop. If you are using a phone, try landscape mode for a better experience.",
-  reportHref = "/contact"
+  reportHref = "/contact",
+  aspectRatio = "690 / 600",
+  maxWidth = "980px"
 }: FlashGeneratorProps) {
   const mountRef = useRef<HTMLDivElement | null>(null);
   const stageRef = useRef<HTMLDivElement | null>(null);
@@ -146,6 +150,10 @@ export default function FlashGenerator({
   const [showSlowHint, setShowSlowHint] = useState(false);
   const [fullscreenAvailable, setFullscreenAvailable] = useState(false);
   const sourceList = useMemo(() => (swfSources.length > 0 ? swfSources : defaultSwfSources), [swfSources]);
+  const stageStyle = {
+    "--flash-aspect-ratio": aspectRatio,
+    "--flash-max-width": maxWidth
+  } as CSSProperties;
 
   const startPlayer = useCallback(async () => {
     const mount = mountRef.current;
@@ -260,7 +268,7 @@ export default function FlashGenerator({
 
   return (
     <div className="flash-tool-shell" aria-label={ariaLabel}>
-      <div className="flash-stage" ref={stageRef}>
+      <div className="flash-stage" ref={stageRef} style={stageStyle}>
         <div className="flash-player">
           <div className="ruffle-mount" ref={mountRef} />
           {loadState !== "ready" && (

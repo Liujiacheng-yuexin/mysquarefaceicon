@@ -275,7 +275,9 @@ export default function OvalFaceIconGeneratorPage() {
             <FlashGenerator
               gameName="Oval Face Icon Generator"
               swfSources={["/games/oval-face.swf"]}
-              coverImageUrl="/games/oval-face-cover.svg"
+              coverImageUrl="/games/oval-face-cover.png"
+              aspectRatio="972 / 774"
+              maxWidth="972px"
               ariaLabel="Oval face Flash generator"
               coverLabel="Start Oval Face Icon Generator game"
               loadingMessage="Loading Oval Face Icon Generator..."
