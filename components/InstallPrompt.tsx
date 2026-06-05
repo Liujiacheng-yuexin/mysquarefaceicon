@@ -13,8 +13,25 @@ export default function InstallPrompt() {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
-    if ("serviceWorker" in navigator) {
-      navigator.serviceWorker.register("/sw.js").catch(() => undefined);
+    function registerServiceWorker() {
+      if (!("serviceWorker" in navigator)) return;
+
+      const register = () => {
+        navigator.serviceWorker.register("/sw.js").catch(() => undefined);
+      };
+
+      if ("requestIdleCallback" in window) {
+        window.requestIdleCallback(register, { timeout: 4000 });
+        return;
+      }
+
+      globalThis.setTimeout(register, 2500);
+    }
+
+    if (document.readyState === "complete") {
+      registerServiceWorker();
+    } else {
+      window.addEventListener("load", registerServiceWorker, { once: true });
     }
 
     function onBeforeInstallPrompt(event: Event) {
@@ -27,7 +44,10 @@ export default function InstallPrompt() {
     }
 
     window.addEventListener("beforeinstallprompt", onBeforeInstallPrompt);
-    return () => window.removeEventListener("beforeinstallprompt", onBeforeInstallPrompt);
+    return () => {
+      window.removeEventListener("load", registerServiceWorker);
+      window.removeEventListener("beforeinstallprompt", onBeforeInstallPrompt);
+    };
   }, []);
 
   if (!visible || !promptEvent) return null;

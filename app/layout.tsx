@@ -1,6 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import Script from "next/script";
-import CloudflareAnalytics from "@/components/CloudflareAnalytics";
+import DeferredThirdPartyScripts from "@/components/DeferredThirdPartyScripts";
 import "./globals.css";
 
 const siteUrl = "https://mysquarefaceicon.com";
@@ -63,28 +62,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <script
-          async
-          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${googleAdsenseClient}`}
-          crossOrigin="anonymous"
-        />
-      </head>
       <body>
         {children}
-        <Script
-          src={`https://www.googletagmanager.com/gtag/js?id=${googleAnalyticsId}`}
-          strategy="afterInteractive"
+        <DeferredThirdPartyScripts
+          googleAnalyticsId={googleAnalyticsId}
+          googleAdsenseClient={googleAdsenseClient}
+          cloudflareAnalyticsToken={process.env.CLOUDFLARE_WEB_ANALYTICS_TOKEN}
         />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${googleAnalyticsId}');
-          `}
-        </Script>
-        <CloudflareAnalytics />
       </body>
     </html>
   );

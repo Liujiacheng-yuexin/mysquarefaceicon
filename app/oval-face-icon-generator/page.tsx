@@ -280,6 +280,8 @@ export default function OvalFaceIconGeneratorPage() {
               coverImageUrl="/games/oval-face-cover.png"
               aspectRatio="972 / 774"
               maxWidth="972px"
+              coverImageWidth={972}
+              coverImageHeight={774}
               ariaLabel="Oval face Flash generator"
               coverLabel="Start Oval Face Icon Generator game"
               loadingMessage="Loading Oval Face Icon Generator..."

@@ -1,4 +1,4 @@
-const CACHE_NAME = "msfi-v6";
+const CACHE_NAME = "msfi-v7";
 const CORE_ASSETS = [
   "/favicon.ico",
   "/favicon16.png",
@@ -9,10 +9,7 @@ const CORE_ASSETS = [
   "/square-face-icon.png",
   "/og-image.svg",
   "/games/oval-face-cover.png",
-  "/games/oval-face-icon.png",
-  "/games/oval-face.swf",
-  "/games/square-face.swf",
-  "/ruffle/ruffle.js"
+  "/games/oval-face-icon.png"
 ];
 
 self.addEventListener("install", (event) => {
