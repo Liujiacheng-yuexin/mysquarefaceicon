@@ -1,4 +1,4 @@
-const CACHE_NAME = "msfi-v7";
+const CACHE_NAME = "msfi-v8";
 const CORE_ASSETS = [
   "/favicon.ico",
   "/favicon16.png",

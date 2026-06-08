@@ -58,6 +58,9 @@ type FlashGeneratorProps = {
   maxWidth?: string;
   coverImageWidth?: number;
   coverImageHeight?: number;
+  startLabel?: string;
+  reloadLabel?: string;
+  helpLabel?: string;
 };
 
 function loadScript(url: string) {
@@ -148,7 +151,9 @@ export default function FlashGenerator({
   deviceNotice = "This classic Flash game works best on desktop. If you are using a phone, try landscape mode for a better experience.",
   reportHref = "/contact",
   aspectRatio = "690 / 600",
-  maxWidth = "980px"
+  maxWidth = "980px",
+  reloadLabel = "Reload",
+  helpLabel = "Game Help"
 }: FlashGeneratorProps) {
   const mountRef = useRef<HTMLDivElement | null>(null);
   const stageRef = useRef<HTMLDivElement | null>(null);
@@ -319,11 +324,11 @@ export default function FlashGenerator({
         </button>
         <button className="tool-button secondary" type="button" onClick={() => void startPlayer()}>
           <RotateCcw aria-hidden="true" size={18} />
-          Reload Game
+          {reloadLabel}
         </button>
         <a className="tool-button secondary" href={reportHref}>
           <Flag aria-hidden="true" size={18} />
-          Report Issue
+          {helpLabel}
         </a>
       </div>
 

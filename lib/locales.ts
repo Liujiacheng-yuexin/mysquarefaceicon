@@ -135,44 +135,28 @@ const englishUseCases: Card[] = [
 
 const englishFaq: Faq[] = [
   {
-    question: "What is My Square Face Icon?",
-    answer: "My Square Face Icon is a free square face generator for creating cute square avatar icons in the browser."
+    question: "What is Square Face Generator?",
+    answer: "Square Face Generator is a classic Flash avatar maker game where you can create funny retro square face icons."
   },
   {
-    question: "Is this Square Face Generator completely free?",
-    answer: "Yes. You can start the generator and create square face icons without signup or payment."
+    question: "Can I use my square face as an avatar?",
+    answer: "Yes. You can use your square face as a Discord PFP, GitHub avatar, Notion icon, favicon, or social profile picture."
   },
   {
-    question: "What size are Square Face Generator avatars?",
-    answer: "The original game is designed around small square profile icons. Use the in-game save option when available, or take a screenshot if saving is not available in your browser."
+    question: "Do I need Adobe Flash Player?",
+    answer: "No. The game runs in modern browsers with Ruffle, so you do not need to install Adobe Flash Player."
   },
   {
-    question: "Can I use Square Face Generator avatars commercially?",
-    answer: "You can use your generated icons for personal profiles, communities, and most small projects. Avoid using the tool to imitate trademarks, copyrighted characters, or another person's identity."
+    question: "How do I save my square face icon?",
+    answer: "Use the in-game save option if it works in your browser, or take a screenshot and crop it into a square icon."
   },
   {
-    question: "Does Square Face Generator need installation?",
-    answer: "No. The page runs in the browser with Ruffle for the authorized SWF and does not require installing Flash Player."
+    question: "Does it work on mobile?",
+    answer: "It may work on some mobile browsers, but the classic Flash game works best on desktop or laptop devices."
   },
   {
-    question: "Does Square Face Generator work on mobile?",
-    answer: "The website is responsive, but the original SWF is easiest to use on screens with enough room for the full game interface."
-  },
-  {
-    question: "How many square face icons can I create?",
-    answer: "You can keep creating new combinations with the game controls. The exact options depend on the original generator interface."
-  },
-  {
-    question: "Is My Square Face Icon privacy protected?",
-    answer: "The generator loads in your browser. Comments and optional uploads are reviewed before publishing, and email addresses are not shown publicly."
-  },
-  {
-    question: "Is Square Face Generator like Picrew?",
-    answer: "It has a similar avatar-maker purpose, but this site focuses on a square face icon game experience rather than copying Picrew's platform or artwork."
-  },
-  {
-    question: "Why does it use Ruffle?",
-    answer: "Ruffle lets modern browsers play the authorized SWF without installing the old Flash plugin."
+    question: "Is Square Face Generator free?",
+    answer: "Yes. The game is free to play and does not require signup."
   }
 ];
 
@@ -240,8 +224,8 @@ const enContent: LocaleContent = {
   shortLabel: "EN",
   path: "/",
   dir: "ltr",
-  title: "Square Face Generator - Play the Classic Flash Avatar Game Online",
-  description: "Play Square Face Generator online, a classic Flash avatar maker game where you can create funny square face icons in your browser. No Flash Player required.",
+  title: "Square Face Generator - Classic Flash Avatar & Icon Maker",
+  description: "Play Square Face Generator online and create retro square face icons for avatars, Discord PFPs, GitHub profiles, favicons, and more. Free, no signup, no Flash plugin required.",
   nav: {
     generator: "Generator",
     howTo: "How to Use",
@@ -251,7 +235,7 @@ const enContent: LocaleContent = {
   hero: {
     eyebrow: "Classic Flash avatar maker",
     h1: "Square Face Generator",
-    text: "Play the classic Square Face Generator Flash game online. Create funny square face icons directly in your browser."
+    text: "Play the classic Square Face Generator online and create retro square face icons for avatars, Discord PFPs, GitHub profiles, favicons, and more."
   },
   sections: englishSections,
   steps: englishSteps,

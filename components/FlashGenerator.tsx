@@ -21,6 +21,9 @@ type FlashGeneratorProps = {
   maxWidth?: string;
   coverImageWidth?: number;
   coverImageHeight?: number;
+  startLabel?: string;
+  reloadLabel?: string;
+  helpLabel?: string;
 };
 
 const FlashGeneratorRuntime = dynamic(() => import("@/components/FlashGeneratorRuntime"), {
@@ -41,6 +44,9 @@ export default function FlashGenerator({
   maxWidth = "980px",
   coverImageWidth = 690,
   coverImageHeight = 600,
+  startLabel = "Start Game",
+  reloadLabel = "Reload",
+  helpLabel = "Game Help",
   ...runtimeProps
 }: FlashGeneratorProps) {
   const stageRef = useRef<HTMLDivElement | null>(null);
@@ -96,6 +102,9 @@ export default function FlashGenerator({
         maxWidth={maxWidth}
         coverImageWidth={coverImageWidth}
         coverImageHeight={coverImageHeight}
+        startLabel={startLabel}
+        reloadLabel={reloadLabel}
+        helpLabel={helpLabel}
       />
     );
   }
@@ -127,7 +136,7 @@ export default function FlashGenerator({
             )}
             <span className="flash-play-panel" aria-hidden="true">
               <Play size={18} />
-              Play Game
+              {startLabel}
             </span>
           </div>
         </div>
@@ -136,7 +145,7 @@ export default function FlashGenerator({
       <div className="game-control-bar" aria-label="Game controls">
         <button className="tool-button primary" type="button" onClick={startGame}>
           <Play aria-hidden="true" size={18} />
-          Play Game
+          {startLabel}
         </button>
         <button className="tool-button secondary" type="button" onClick={toggleFullscreen} disabled={!fullscreenAvailable}>
           <Maximize2 aria-hidden="true" size={18} />
@@ -144,16 +153,16 @@ export default function FlashGenerator({
         </button>
         <button className="tool-button secondary" type="button" onClick={startGame}>
           <RotateCcw aria-hidden="true" size={18} />
-          Reload Game
+          {reloadLabel}
         </button>
         <a className="tool-button secondary" href={reportHref}>
           <Flag aria-hidden="true" size={18} />
-          Report Issue
+          {helpLabel}
         </a>
       </div>
 
       <p className="game-status" aria-live="polite">
-        {gameName} is ready. Click Play Game to load the classic Flash player.
+        {gameName} is ready. Click {startLabel} to load the classic Flash player.
       </p>
       <aside className="game-device-notice">{deviceNotice}</aside>
     </div>

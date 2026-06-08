@@ -10,9 +10,10 @@
 - User-provided public R2 cover image for the authorized SWF loading experience, not copied competitor screenshots.
 - P0 homepage anchor support for `#maker`, `#what-is`, `#features`, `#how-to-use`, and `#faq`.
 - Homepage guidance now positions Square Face Generator as a classic Flash avatar maker game, not an AI generator or a rebuilt modern generator.
-- The Ruffle/SWF game player is the public homepage primary experience, with visible loading, reload, fullscreen, troubleshooting, and desktop/mobile guidance.
+- The homepage frames the tool as Classic Square Face Generator plus a modern browser-playable Flash game for retro square face icons and avatars.
+- The Ruffle/SWF game player is the public homepage primary experience, with click-to-load behavior, visible loading, reload, fullscreen, troubleshooting, and desktop/mobile guidance.
 - If the original game does not provide saving in a given browser, homepage copy recommends taking a screenshot instead of promising a download.
-- Cute original CSS avatar examples and platform preview cards support inspiration without copying external artwork.
+- Cute original CSS avatar examples, a Square Face Icon Ideas grid, and platform use-case cards support inspiration without copying external artwork or showing an empty community state.
 - Trust and inspiration pages:
   - `/about-us`
   - `/contact`

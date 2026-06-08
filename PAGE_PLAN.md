@@ -37,17 +37,20 @@
 ## Homepage Modules
 
 - Navigation
-- Hero section with classic Flash avatar maker positioning
-- Game player section with self-hosted Ruffle/SWF player
+- Hero section with classic Flash avatar maker positioning, square face example collage, and generator-focused CTAs
+- Trust badges: Original Flash Style, No Flash Plugin, 100% Free, No Signup, Runs in Browser
+- Game player section with click-to-load self-hosted Ruffle/SWF player
 - Game control bar with Fullscreen, Reload Game, and Report Issue
 - Desktop/mobile experience notice
 - Anchor compatibility for `#maker`, `#what-is`, `#features`, `#how-to-use`, and `#faq`
+- How to save your square face icon
+- Static Square Face Icon Ideas grid when approved community examples are not available
+- Profile use cases for Discord PFP, GitHub avatar, Notion icon, favicon, gaming, and social media
 - What is Square Face Generator
 - How to play
 - Game features
 - Tips for best experience
 - Troubleshooting
-- Recent approved community creations with comment submission and likes
 - Related avatar games and tools
 - FAQ
 - Grouped footer links
