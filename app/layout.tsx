@@ -62,10 +62,22 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <script async src={`https://www.googletagmanager.com/gtag/js?id=${googleAnalyticsId}`} />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', '${googleAnalyticsId}');
+            `
+          }}
+        />
+      </head>
       <body>
         {children}
         <DeferredThirdPartyScripts
-          googleAnalyticsId={googleAnalyticsId}
           googleAdsenseClient={googleAdsenseClient}
           cloudflareAnalyticsToken={process.env.CLOUDFLARE_WEB_ANALYTICS_TOKEN}
         />

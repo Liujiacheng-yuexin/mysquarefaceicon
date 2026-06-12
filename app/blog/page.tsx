@@ -7,7 +7,7 @@ const pageUrl = "https://mysquarefaceicon.com/blog";
 export const metadata: Metadata = {
   title: "Square Face Icon Guides",
   description:
-    "Read practical guides for making cute square face icons, profile avatars, Discord icons, and browser-based avatar generator workflows.",
+    "Browse Square Face Icon Guides for making cute square face icons, profile avatars, Discord icons, and browser-based avatar generator workflows.",
   alternates: {
     canonical: pageUrl
   },
@@ -41,7 +41,7 @@ export default function BlogIndexPage() {
         </p>
 
         <section>
-          <h2>Latest Guides</h2>
+          <h2>Latest Square Face Icon Guides</h2>
           <div className="link-grid">
             <a href="/blog/avatar-maker-without-signup">
               <h3>Avatar Maker Without Signup</h3>

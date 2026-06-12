@@ -15,7 +15,7 @@ export default function TermsOfServicePage() {
       <a className="back-link" href="/">Back to Square Face Generator</a>
       <h1>Terms of Service</h1>
       <p>Last updated: May 21, 2026</p>
-      <h2>Use of the Tool</h2>
+      <h2>Terms of Service: Use of the Tool</h2>
       <p>
         My Square Face Icon provides a free browser-based generator for creating
         simple square avatar images. Use the site responsibly and do not attempt

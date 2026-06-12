@@ -25,7 +25,7 @@ const faq = [
 export const metadata: Metadata = {
   title: "Square Avatar vs Round Avatar",
   description:
-    "Compare square avatars and round avatars for profile icons, social platforms, game accounts, and cute square face generator workflows.",
+    "Square avatar vs round avatar: compare profile icon shapes for social platforms, game accounts, and cute square face generator workflows.",
   alternates: {
     canonical: pageUrl
   },

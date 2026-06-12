@@ -105,7 +105,7 @@ export default function BestDiscordAvatarStylePage() {
         </nav>
 
         <section id="rules">
-          <h2>Discord Avatar Style Rules That Matter</h2>
+          <h2>Best Discord Avatar Style Rules That Matter</h2>
           <div className="feature-grid">
             <article className="info-card">
               <h3>Keep the face centered</h3>

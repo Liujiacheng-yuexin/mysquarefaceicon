@@ -105,7 +105,7 @@ export default function DiscordProfileIconGuidePage() {
         </nav>
 
         <section id="size">
-          <h2>Plan for Small Discord Avatar Sizes</h2>
+          <h2>How to Make a Cute Discord Profile Icon for Small Sizes</h2>
           <p>
             Discord profile icons often appear as small circles in server member lists, chat messages, direct messages, and notifications. That means your avatar should be recognizable even when it is much smaller than the original file.
           </p>

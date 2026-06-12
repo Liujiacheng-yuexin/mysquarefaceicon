@@ -20,7 +20,7 @@ export default function PrivacyPolicyPage() {
         maker page. The main game runs through Ruffle so visitors can play the
         SWF game in modern browsers without installing Adobe Flash Player.
       </p>
-      <h2>Information We Collect</h2>
+      <h2>Privacy Policy: Information We Collect</h2>
       <p>
         We do not require accounts to use the generator. If you submit a public
         comment, we collect the name, email address, rating, comment text, and

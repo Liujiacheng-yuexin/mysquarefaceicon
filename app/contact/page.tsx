@@ -55,7 +55,7 @@ export default function ContactPage() {
         </p>
 
         <section>
-          <h2>Email</h2>
+          <h2>Contact My Square Face Icon by Email</h2>
           <p>
             Contact: <a href="mailto:contact@mysquarefaceicon.com">contact@mysquarefaceicon.com</a>
           </p>

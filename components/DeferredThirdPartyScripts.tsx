@@ -3,14 +3,8 @@
 import { useEffect } from "react";
 
 type DeferredThirdPartyScriptsProps = {
-  googleAnalyticsId: string;
   googleAdsenseClient: string;
   cloudflareAnalyticsToken?: string;
-};
-
-type AnalyticsWindow = Window & {
-  dataLayer?: unknown[];
-  gtag?: (...args: unknown[]) => void;
 };
 
 const INTERACTION_EVENTS = ["pointerdown", "keydown", "touchstart", "scroll"];
@@ -30,7 +24,6 @@ function appendScript(src: string, attributes: Record<string, string> = {}) {
 }
 
 export default function DeferredThirdPartyScripts({
-  googleAnalyticsId,
   googleAdsenseClient,
   cloudflareAnalyticsToken
 }: DeferredThirdPartyScriptsProps) {
@@ -53,15 +46,6 @@ export default function DeferredThirdPartyScripts({
       appendScript(`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${googleAdsenseClient}`, {
         crossorigin: "anonymous"
       });
-
-      const analyticsWindow = window as AnalyticsWindow;
-      analyticsWindow.dataLayer = analyticsWindow.dataLayer || [];
-      analyticsWindow.gtag = function gtag(...args: unknown[]) {
-        analyticsWindow.dataLayer?.push(args);
-      };
-      analyticsWindow.gtag("js", new Date());
-      analyticsWindow.gtag("config", googleAnalyticsId);
-      appendScript(`https://www.googletagmanager.com/gtag/js?id=${googleAnalyticsId}`);
 
       if (cloudflareAnalyticsToken) {
         appendScript("https://static.cloudflareinsights.com/beacon.min.js", {
@@ -89,7 +73,7 @@ export default function DeferredThirdPartyScripts({
       window.removeEventListener("load", scheduleAfterLoad);
       cleanup();
     };
-  }, [cloudflareAnalyticsToken, googleAdsenseClient, googleAnalyticsId]);
+  }, [cloudflareAnalyticsToken, googleAdsenseClient]);
 
   return null;
 }

@@ -77,7 +77,7 @@ export default function AboutUsPage() {
         </p>
 
         <section>
-          <h2>Why This Site Exists</h2>
+          <h2>About My Square Face Icon: Why This Site Exists</h2>
           <p>
             A good profile picture should be quick to make and easy to recognize at small sizes. Many users only need a playful avatar for Discord, TikTok, YouTube, forums, game profiles, classroom projects, or small communities. My Square Face Icon keeps that workflow simple: open the generator, create a face, and save or share the result when the tool supports it.
           </p>

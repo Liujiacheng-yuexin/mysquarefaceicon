@@ -1,57 +1,197 @@
 # CONTENT_PLAN.md
 
-## Current Release Scope
+本文件用于规划内容生产、长尾覆盖和页面质量控制。适用于内容站、工具站、SaaS、生成器、目录站和程序化 SEO 站。
 
-- Homepage tool pages for EN, ES, VI, JA, TH, AR, RU, and ID.
-- Non-English pages are draft/localization-review pages and should stay noindex
-  until reviewed by a native or fluent editor.
-- Legal pages: `/privacy-policy` and `/terms-of-service`.
-- Public comment section with moderation before publishing, homepage preview, gallery archive, and lightweight likes.
-- User-provided public R2 cover image for the authorized SWF loading experience, not copied competitor screenshots.
-- P0 homepage anchor support for `#maker`, `#what-is`, `#features`, `#how-to-use`, and `#faq`.
-- Homepage guidance now positions Square Face Generator as a classic Flash avatar maker game, not an AI generator or a rebuilt modern generator.
-- The homepage frames the tool as Classic Square Face Generator plus a modern browser-playable Flash game for retro square face icons and avatars.
-- The Ruffle/SWF game player is the public homepage primary experience, with click-to-load behavior, visible loading, reload, fullscreen, troubleshooting, and desktop/mobile guidance.
-- If the original game does not provide saving in a given browser, homepage copy recommends taking a screenshot instead of promising a download.
-- Cute original CSS avatar examples, a Square Face Icon Ideas grid, and platform use-case cards support inspiration without copying external artwork or showing an empty community state.
-- Trust and inspiration pages:
-  - `/about-us`
-  - `/contact`
-  - `/editorial-policy`
-  - `/free-avatar-maker`
-  - `/oval-face-icon-generator` as a standalone classic Flash oval avatar maker page using the authorized local oval SWF and distinct oval-face copy
-  - `/pixel-art-avatar-icon-generator` as an external embedded tool page for the icongenerators.net pixel avatar maker, with source attribution, no copied assets, and a direct original-page fallback
-  - `/square-avatar-generator`
-  - `/gallery` as the approved community creations archive plus original inspiration examples
-- Support guide pages:
-  - `/square-face-icon-generator`
-  - `/cute-square-avatar-generator`
-  - `/pixel-square-face-maker`
-- Blog hub and first long-tail guide:
-  - `/blog`
-  - `/blog/how-to-make-a-cute-discord-profile-icon`
-  - `/blog/discord-avatar-size-guide`
-  - `/blog/tiktok-profile-icon-ideas`
-  - `/blog/square-avatar-vs-round-avatar`
-  - `/blog/cute-profile-picture-ideas`
-  - `/blog/best-discord-avatar-style`
-  - `/blog/avatar-maker-without-signup`
+## 内容资产类型
 
-## Content Rules
+根据项目选择：
 
-- Keep the generator visible before long explanatory content.
-- Preserve the SWF game file and do not modify, decompile, or rewrite game internals.
-- Use the primary keyword naturally: `square face generator`.
-- Use the secondary keyword naturally: `square face icon generator`.
-- Keep FAQ schema aligned with the visible FAQ on each language page.
-- Do not copy competitor comments, screenshots, SWF wrappers, or article text.
-- External tool embeds must clearly identify the source, link to the original page, and avoid copying external assets or code into this project.
-- Only approved comments and approved comment images should appear in the homepage preview or gallery.
-- Do not put draft translations, weak support pages, or unreviewed AI-assisted pages
-  into sitemap.
+- 核心工具页 / 功能页
+- 核心指南页
+- 聚合页
+- 分类页 / 列表页
+- 详情页 / 排名页
+- 博客 / 教程 / FAQ
+- 对比页
+- 模板页
+- 资源页
+- 可下载或可分享资产
 
-## Future Content Ideas
+## 内容创建原则
 
-| Page Idea | Search Intent | Timing |
-|---|---|---|
-| Future gallery expansion: user square face creations | Users looking for examples and inspiration | Only after enough approved original comments/images |
+- 首段必须直接回答问题。
+- 每个页面必须服务一个清晰搜索意图。
+- 每个 index 页面必须检查主关键词密度，目标范围为 `3% - 5%`。
+- 不编造事实、数据、案例或来源。
+- 不使用无法证实的绝对化承诺。
+- 不把 AI 生成内容未经检查直接发布。
+- 每篇文章必须内链到相关工具页、功能页、指南页或聚合页。
+- 同一语义关键词必须合并到一个 canonical 页面。
+- 内容不足、重复或无独立价值的页面默认 noindex。
+- 图片、动画和视频必须服务内容理解、功能展示或分享，不替代正文。
+
+## 关键词密度写作规则
+
+每次新增、改写或优化内容时，必须检查主关键词密度。
+
+要求：
+
+- 主关键词密度保持在 `3% - 5%`。
+- 密度低于 `3%` 时，优先在首段、H2、正文解释、FAQ、示例、图片 alt 或内链上下文中自然补充。
+- 密度高于 `5%` 时，必须删减重复主词，并用同义词、相关实体、问题表达或更具体的解释替代。
+- 不为了密度牺牲可读性，不堆词，不制造重复段落。
+- 关键词密度检查只统计页面主内容区，不统计导航、页脚、脚本、schema、隐藏文本和重复模板。
+
+推荐写法：
+
+- 主关键词出现在 Title、Description、H1、首段和至少一个 H2。
+- 正文中自然重复主关键词，并穿插次级关键词、同义词、场景词和用户问题。
+- FAQ 中可以自然覆盖主关键词和长尾问题。
+- 内链锚文本可以使用主关键词或主关键词的自然变体，但不要所有锚文本都完全相同。
+
+## 重复按钮文案处理技巧
+
+工具页、生成器、资源列表、表情列表、模板列表中经常会出现大量重复按钮，例如 `Play`、`Copy`、`Download`、`Use`、`Generate`、`Preview`。这些文案是 UI 操作提示，不是正文内容，重复过多时会影响关键词密度判断。
+
+处理规则：
+
+- 如果同一按钮文案重复 10 次以上，必须检查它是否影响主关键词密度。
+- 如果重复按钮文案明显稀释或干扰主关键词密度，可以把视觉按钮文案移到 CSS `content` 中。
+- 页面正文、标题、FAQ、教程步骤、产品说明不能使用 CSS `content` 代替。
+- 按钮必须保留可访问名称，不能因为移走可见 DOM 文案导致屏幕阅读器无法识别。
+
+示例：
+
+```css
+.copy-button::after {
+  content: "Copy";
+  margin-left: .5rem;
+}
+```
+
+多语言技巧：
+
+- 多语言站点可以按语言拆分 UI 文案 CSS，例如 `cn.css`、`en.css`、`ja.css`。
+- 当前语言页面只加载当前语言的 UI 文案 CSS。
+- 不要在一个页面里同时输出多个语言版本的重复按钮文案。
+- 多语言 CSS 只处理 UI 标签，不处理正文内容、标题、FAQ 和 SEO 文案。
+
+## 多语言内容技巧
+
+多语言内容必须先做关键词和搜索意图本地化，再写内容。
+
+执行方法：
+
+- 每个语言版本单独确定主关键词、次级关键词和搜索意图。
+- 不把源语言内容逐句直译后直接发布。
+- 保留页面目标，但重写 title、description、H1、首段、H2、FAQ 和 CTA。
+- 根据目标语言补充本地用户常见问题、使用场景、单位、日期格式、货币、平台名称和表达习惯。
+- 不同语言页面都必须单独检查关键词密度 `3% - 5%`。
+- 多语言页面如果内容深度不足、翻译生硬或没有独立搜索价值，先 noindex。
+- 需要多语言索引时，必须配合 canonical、hreflang、sitemap 和语言 URL 规则。
+
+## 页面内容字段
+
+如果项目存在批量页面或结构化内容，至少准备以下字段：
+
+| 字段 | 说明 |
+|---|---|
+| slug | URL slug |
+| pageType | 页面类型 |
+| primaryKeyword | 主关键词 |
+| secondaryKeywords | 次级关键词 |
+| searchIntent | 搜索意图 |
+| title | SEO title |
+| description | SEO description |
+| h1 | 页面 H1 |
+| summary | 首段摘要 |
+| sections | 页面主体模块 |
+| faqs | FAQ |
+| relatedPages | 相关页面 |
+| canonical | canonical URL |
+| indexStatus | index / noindex |
+| qualityScore | 页面质量分 |
+| lastUpdated | 最后更新时间 |
+
+## 首批内容计划
+
+| 标题 / 页面 | URL | 主关键词 | 搜索意图 | 页面类型 | 内链到 | 状态 |
+|---|---|---|---|---|---|---|
+|  |  |  |  |  |  | 待写 |
+
+## 博客更新方向
+
+优先类型：
+
+- How to
+- Best
+- Alternatives
+- vs
+- Templates
+- Use cases
+- FAQ
+- Examples
+- Comparison
+- Resources
+- Glossary
+
+每篇博客必须：
+
+- 绑定一个明确搜索问题。
+- 首段直接回答。
+- 有清晰 H2 / H3。
+- 有 FAQ。
+- 有内部链接到核心页面。
+- 有唯一 title 和 description。
+- 有 Article / FAQPage schema。
+- 能自然引导用户继续使用产品或浏览相关页面。
+
+## 内容质量检查
+
+发布前检查：
+
+- 是否回答了一个独立问题？
+- 是否和已有页面有明显实质差异？
+- 用户看完是否不用返回 Google 再找答案？
+- 是否包含示例、步骤、对比、数据、工具结果、模板或资源？
+- 是否有内部链接？
+- 是否有唯一 title、description、H1？
+- 主关键词密度是否在 `3% - 5%`？
+- 是否设置正确 canonical？
+- 是否需要 index？
+- 是否有明显 AI 泛文、空话或重复段落？
+
+## 程序化内容控制
+
+程序化页面必须满足：
+
+- 有独立搜索意图。
+- 有独立数据或独特解释。
+- 有相关内链。
+- 有明确 indexStatus。
+- 有 qualityScore。
+- 不把低质量页面放入 sitemap。
+
+默认质量阈值：
+
+- `qualityScore < 70`：自动 noindex，且不进入 sitemap。
+- `70-84`：暂缓 index，必须人工检查搜索意图、重复度、内容深度和内链后再决定。
+- `85+`：可以作为候选 index 页面，但仍需满足 canonical、内链、TDK 和内容质量要求。
+
+低质量页面处理方式：
+
+- 合并到更强页面。
+- noindex。
+- 移出 sitemap。
+- 减少内链入口。
+- 删除前检查是否有外链、收录或排名。
+
+## AI 内容和 AI 图片规则
+
+允许使用 AI 辅助，但必须：
+
+- 人工检查事实、语气、重复度和可读性。
+- 不编造来源、数据或案例。
+- 不使用 AI 图片掩盖薄内容。
+- AI 图片必须有明确主题、alt、文件名和上下文。
+- 必要时在 Editorial Policy 中说明 AI 使用方式。

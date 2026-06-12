@@ -10,7 +10,7 @@ const pageUrl = "https://mysquarefaceicon.com/gallery";
 export const metadata: Metadata = {
   title: "Square Face Icon Gallery - Community Creations",
   description:
-    "Browse approved square face icon community creations, user screenshots, ratings, and original avatar style ideas.",
+    "Browse the Square Face Icon Gallery for approved community creations, user screenshots, ratings, and original avatar style ideas.",
   alternates: {
     canonical: pageUrl
   },
@@ -174,7 +174,7 @@ export default function GalleryPage() {
         </section>
 
         <section>
-          <h2>Browse Square Face Avatar Ideas</h2>
+          <h2>Browse Square Face Icon Gallery Examples</h2>
           <div className="gallery-showcase-grid">
             {examples.map((example) => (
               <article className="gallery-card" key={example.title}>
