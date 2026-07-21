@@ -24,6 +24,7 @@ type FlashGeneratorProps = {
   startLabel?: string;
   reloadLabel?: string;
   helpLabel?: string;
+  showStartControl?: boolean;
 };
 
 const FlashGeneratorRuntime = dynamic(() => import("@/components/FlashGeneratorRuntime"), {
@@ -47,6 +48,7 @@ export default function FlashGenerator({
   startLabel = "Start Game",
   reloadLabel = "Reload",
   helpLabel = "Game Help",
+  showStartControl = true,
   ...runtimeProps
 }: FlashGeneratorProps) {
   const stageRef = useRef<HTMLDivElement | null>(null);
@@ -143,10 +145,12 @@ export default function FlashGenerator({
       </div>
 
       <div className="game-control-bar" aria-label="Game controls">
-        <button className="tool-button primary" type="button" onClick={startGame}>
-          <Play aria-hidden="true" size={18} />
-          {startLabel}
-        </button>
+        {showStartControl && (
+          <button className="tool-button primary" type="button" onClick={startGame}>
+            <Play aria-hidden="true" size={18} />
+            {startLabel}
+          </button>
+        )}
         <button className="tool-button secondary" type="button" onClick={toggleFullscreen} disabled={!fullscreenAvailable}>
           <Maximize2 aria-hidden="true" size={18} />
           Fullscreen

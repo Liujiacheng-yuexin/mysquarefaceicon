@@ -1,7 +1,9 @@
 ﻿import FlashGenerator from "@/components/FlashGenerator";
+import GalleryPreview from "@/components/GalleryPreview";
+import GameSidebar, { type GameSidebarItem } from "@/components/GameSidebar";
 import InstallPrompt from "@/components/InstallPrompt";
-import { Camera, CheckCircle2, ChevronDown, CirclePlay, Gamepad2, Menu, Monitor, Sparkles } from "lucide-react";
 import Image from "next/image";
+import { CheckCircle2, ChevronDown, CirclePlay, Gamepad2, Menu, Monitor, Sparkles } from "lucide-react";
 import { getLocaleUrl, locales, reviewedLocaleCodes, type LocaleCode } from "@/lib/locales";
 
 type HomePageProps = {
@@ -102,78 +104,53 @@ const heroSamples = [
   }
 ];
 
-const iconIdeas = [
+const galleryPreviewItems = heroSamples.map((sample, index) => ({
+  ...sample,
+  likes: [120, 98, 76, 142, 110, 85][index] ?? 64
+}));
+
+const homeSidebarItems: GameSidebarItem[] = [
   {
-    title: "Cute Square Face",
-    text: "Soft smile, simple eyes, and a friendly profile mood.",
-    src: "/game-face-samples/ideas/cute-square-face.webp",
-    alt: "Cute square face avatar made with the classic game"
+    title: "Oval Face Icon Generator",
+    text: "Create cute oval face icons with a softer rounded avatar game.",
+    href: "/oval-face-icon-generator",
+    imageSrc: "/games/oval-face-icon.png",
+    imageAlt: "Oval face icon generator preview"
   },
   {
-    title: "Retro Flash Face",
-    text: "A nostalgic look inspired by browser avatar games.",
-    src: "/game-face-samples/ideas/retro-flash-face.webp",
-    alt: "Retro Flash style square face avatar made with the game"
+    title: "Pixel Art Avatar Icon Generator",
+    text: "Open a chibi pixel avatar maker with source credit.",
+    href: "/pixel-art-avatar-icon-generator",
+    imageSrc: "/game-face-samples/gamer.webp",
+    imageAlt: "Pixel avatar icon preview"
   },
   {
-    title: "Simple Icon Face",
-    text: "Clean shapes and a profile-friendly face that reads at small sizes.",
-    src: "/game-face-samples/ideas/simple-icon-face.webp",
-    alt: "Simple square face icon made with Square Face Generator"
+    title: "Free Avatar Maker",
+    text: "Use a fast avatar workflow for profile pictures and icons.",
+    href: "/free-avatar-maker",
+    imageSrc: "/game-face-samples/ideas/discord-pfp.webp",
+    imageAlt: "Free avatar maker preview"
   },
   {
-    title: "Funny Square Face",
-    text: "A playful expression for casual game and forum profiles.",
-    src: "/game-face-samples/ideas/funny-square-face.webp",
-    alt: "Funny spiral eye square face icon made with the game"
+    title: "Square Avatar Guide",
+    text: "Learn how to create the best square face icons.",
+    href: "/square-face-icon-generator",
+    imageSrc: "/game-face-samples/ideas/simple-icon-face.webp",
+    imageAlt: "Square avatar guide preview"
   },
   {
-    title: "Minimal Face",
-    text: "A clean face icon that works for tiny favicons and badges.",
-    src: "/game-face-samples/ideas/minimal-face.webp",
-    alt: "Minimal square face avatar made with the game"
+    title: "Gallery",
+    text: "Explore square face icons created by players.",
+    href: "/gallery",
+    imageSrc: "/game-face-samples/ideas/cute-square-face.webp",
+    imageAlt: "Square face gallery preview"
   },
   {
-    title: "Gamer Avatar",
-    text: "A stronger color combo for lobbies, clans, and game accounts.",
-    src: "/game-face-samples/ideas/gamer-avatar.webp",
-    alt: "Gamer square face avatar with glasses"
-  },
-  {
-    title: "Discord PFP",
-    text: "A bright square source that crops well into a circle.",
-    src: "/game-face-samples/ideas/discord-pfp.webp",
-    alt: "Square face icon suitable for a Discord profile picture"
-  },
-  {
-    title: "GitHub Avatar",
-    text: "A lightweight developer avatar with a clean face shape.",
-    src: "/game-face-samples/ideas/github-avatar.webp",
-    alt: "Simple square face icon suitable for a GitHub avatar"
-  },
-  {
-    title: "Notion Icon",
-    text: "A cute face marker for pages, dashboards, and notes.",
-    src: "/game-face-samples/ideas/notion-icon.webp",
-    alt: "Cute square face icon suitable for Notion"
-  },
-  {
-    title: "Favicon Style",
-    text: "High contrast details that remain readable when tiny.",
-    src: "/game-face-samples/ideas/favicon-style.webp",
-    alt: "Square face icon with strong features for small icon use"
-  },
-  {
-    title: "Classic Face",
-    text: "Simple square face styling close to the original game mood.",
-    src: "/game-face-samples/ideas/classic-face.webp",
-    alt: "Classic square face icon made in the Flash game"
-  },
-  {
-    title: "Weird Face",
-    text: "An odd little expression for comments and playful projects.",
-    src: "/game-face-samples/ideas/weird-face.webp",
-    alt: "Weird square face avatar with glasses made with the game"
+    title: "Blog Guide",
+    text: "Tips, tutorials, and guides about avatar making.",
+    href: "/blog",
+    imageSrc: "/game-face-samples/ideas/favicon-style.webp",
+    imageAlt: "Avatar blog guide preview"
   }
 ];
 
@@ -365,11 +342,11 @@ export default function HomePage({ locale }: HomePageProps) {
               <a href="/pixel-art-avatar-icon-generator">Pixel Art Avatar Icon Generator</a>
             </div>
           </details>
-          <a href="#how-to-play">How to Play</a>
-          <a href="#features">Features</a>
-          <a href="#faq">FAQ</a>
+          <a href="/free-avatar-maker">Free Avatar Maker</a>
           <a href="/gallery">Gallery</a>
+          <a href="/square-face-icon-generator">Icon Guide</a>
           <a href="/blog">Blog</a>
+          <a href="/about-us">About</a>
           <a href="/contact">Contact</a>
           {reviewedLocaleCodes.length > 1 && (
             <details className="language-links">
@@ -386,7 +363,7 @@ export default function HomePage({ locale }: HomePageProps) {
               </div>
             </details>
           )}
-          <a className="nav-cta" href="#game-player">Play Now</a>
+          <a className="nav-cta" href="#game-player">Start Creating</a>
         </nav>
         <details className="mobile-nav-menu">
           <summary aria-label="Open navigation menu">
@@ -395,192 +372,109 @@ export default function HomePage({ locale }: HomePageProps) {
           </summary>
           <div className="mobile-nav-panel">
             <a href="#game-player">Play Now</a>
-            <a href="#how-to-play">How to Play</a>
-            <a href="#features">Features</a>
-            <a href="#faq">FAQ</a>
             <a href="/oval-face-icon-generator">Oval Face</a>
             <a href="/pixel-art-avatar-icon-generator">Pixel Avatar</a>
+            <a href="/free-avatar-maker">Free Avatar Maker</a>
             <a href="/gallery">Gallery</a>
+            <a href="/square-face-icon-generator">Icon Guide</a>
             <a href="/blog">Blog</a>
+            <a href="/about-us">About</a>
             <a href="/contact">Contact</a>
           </div>
         </details>
       </header>
 
       <main>
-        <section className="game-hero">
-          <div className="game-hero-inner">
-            <div className="game-hero-copy">
-              <p className="eyebrow">Classic Flash avatar maker</p>
-              <h1>Square Face Generator</h1>
-              <p className="hero-text">
-                Play the classic Square Face Generator online and create retro square face icons for avatars, Discord
-                PFPs, GitHub profiles, favicons, and more.
-              </p>
-              <div className="hero-badge-row" aria-label="Square Face Generator benefits">
-                {trustBadges.map((badge) => (
-                  <span key={badge}>
-                    <CheckCircle2 aria-hidden="true" size={15} />
-                    {badge}
-                  </span>
-                ))}
-              </div>
-              <div className="hero-actions" aria-label="Hero actions">
-                <a className="hero-primary-link" href="#game-player">
-                  <CirclePlay aria-hidden="true" size={20} />
-                  Create My Square Face
-                </a>
-                <a className="hero-secondary-link" href="#game-player">Play Classic Game</a>
-              </div>
-            </div>
-            <div className="hero-sample-board" aria-label="Square face icon style examples">
-              {heroSamples.map((sample) => (
-                <article className="hero-sample-tile" key={sample.title}>
-                  <Image
-                    className="game-face-sample-image"
-                    src={sample.src}
-                    alt={sample.alt}
-                    width={512}
-                    height={512}
-                    sizes="112px"
-                  />
-                  <strong>{sample.title}</strong>
-                </article>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section className="trust-strip" aria-label="Square Face Generator quick facts">
-          {trustBadges.map((badge) => (
-            <span key={badge}>
-              <CheckCircle2 aria-hidden="true" size={17} />
-              {badge}
-            </span>
-          ))}
-        </section>
-
-        <section className="game-player-section" id="game-player">
+        <section className="game-station" id="game-player">
           <span className="anchor-target" id="maker" aria-hidden="true" />
-          <div className="game-card">
-            <div className="game-card-header">
-              <div>
-                <p className="tool-card-kicker">Square Face Generator</p>
-                <h2>Play Square Face Generator Online</h2>
-                <p className="tool-card-description">
-                  Click the button below to load the classic Flash game. It runs in your browser with Ruffle, so you do
-                  not need to install Adobe Flash Player.
+          <div className="game-station-grid">
+            <div className="game-station-main">
+              <div className="game-title-block">
+                <p className="eyebrow">Classic Flash avatar maker</p>
+                <h1>Square Face Generator</h1>
+                <p className="hero-text">
+                  Play the classic Square Face Generator online and create retro square face icons for avatars, Discord
+                  PFPs, GitHub profiles, favicons, and more.
                 </p>
               </div>
-              <span className="tool-card-badge">Classic Flash Game</span>
-            </div>
-            <FlashGenerator reportHref="#troubleshooting" />
-          </div>
-        </section>
-
-        <section className="content-band" id="save-icon">
-          <div className="section-heading">
-            <p className="eyebrow">Save your icon</p>
-            <h2>How to Save Your Square Face Icon</h2>
-            <p className="section-intro">
-              After creating your square face, you can use the in-game save option if it is available. If the classic
-              Flash game does not save correctly in your browser, take a screenshot of your finished face and crop it
-              into a square icon.
-            </p>
-          </div>
-          <div className="steps-grid">
-            {saveSteps.map((step, index) => (
-              <article className="info-card save-step-card" key={step.title}>
-                <span className="step-number">Step {index + 1}</span>
-                <Camera aria-hidden="true" size={22} />
-                <h3>{step.title}</h3>
-                <p>{step.text}</p>
-              </article>
-            ))}
-          </div>
-        </section>
-
-        <section className="content-band playful-band" id="icon-ideas">
-          <div className="section-heading">
-            <p className="eyebrow">Style ideas</p>
-            <h2>Square Face Icon Ideas</h2>
-            <p className="section-intro">
-              Get inspired by cute, retro, pixel, and funny square face styles before creating your own.
-            </p>
-          </div>
-          <div className="ideas-grid">
-            {iconIdeas.map((idea) => (
-              <article className="idea-card" key={idea.title}>
-                <Image
-                  className="game-face-sample-image"
-                  src={idea.src}
-                  alt={idea.alt}
-                  width={512}
-                  height={512}
-                  sizes="96px"
+              <div className="home-game-player-card" aria-label="Play Square Face Generator Online">
+                <FlashGenerator
+                  reportHref="/contact"
+                  startLabel="Play Game"
+                  reloadLabel="Reload Game"
+                  helpLabel="Report Issue"
+                  showStartControl={false}
                 />
-                <h3>{idea.title}</h3>
-                <p>{idea.text}</p>
-                <a href="#game-player">Make This Style</a>
-              </article>
-            ))}
+              </div>
+            </div>
+            <GameSidebar items={homeSidebarItems} />
           </div>
         </section>
 
-        <section className="content-band alt-band" id="use-cases">
-          <div className="section-heading">
-            <p className="eyebrow">Use cases</p>
-            <h2>Use Your Square Face Icon Anywhere</h2>
-          </div>
-          <div className="use-grid">
-            {profileUseCases.map((useCase) => (
-              <article key={useCase.title}>
-                <h3>{useCase.title}</h3>
-                <p>{useCase.text}</p>
-              </article>
-            ))}
+        <GalleryPreview
+          title="Community Gallery Preview"
+          intro="Check out square face icon styles from the community and our original examples before making your own."
+          items={galleryPreviewItems}
+        />
+
+        <section className="content-band about-game-band" id="what-is">
+          <div className="about-game-card">
+            <div className="about-game-art" aria-hidden="true">
+              <Image src="/square-face-icon.png" alt="" width={260} height={260} sizes="260px" />
+            </div>
+            <div className="about-game-copy">
+              <p className="eyebrow">About the game</p>
+              <h2>What Is Square Face Generator?</h2>
+              <p className="section-intro">
+                Square Face Generator is a classic Flash avatar maker game where you can create funny square-shaped
+                face icons. Mix different facial features, expressions, hairstyles, and accessories to design a unique
+                square face character.
+              </p>
+              <div className="about-proof-grid" aria-label="Square Face Generator browser notes">
+                <span>
+                  <CheckCircle2 aria-hidden="true" size={24} />
+                  Runs in modern browsers with Ruffle
+                </span>
+                <span>
+                  <CheckCircle2 aria-hidden="true" size={24} />
+                  No Flash Player installation
+                </span>
+              </div>
+            </div>
           </div>
         </section>
 
-        <section className="content-band" id="what-is">
+        <section className="content-band" id="features">
           <div className="section-heading">
-            <p className="eyebrow">About the game</p>
-            <h2>What Is Square Face Generator?</h2>
-            <p className="section-intro">
-              Square Face Generator is a classic Flash avatar maker game where you can create funny square-shaped face
-              icons. Mix different facial features, expressions, hairstyles, and accessories to design a unique square
-              face character.
-            </p>
+            <h2>Square Face Generator Features</h2>
+          </div>
+          <div className="feature-grid">
+            {gameFeatures.map((feature, index) => (
+              <article className="info-card feature-card" key={feature.title}>
+                <span className={`feature-icon feature-icon-${index + 1}`} aria-hidden="true" />
+                <h3>{feature.title}</h3>
+                <p>{feature.text}</p>
+              </article>
+            ))}
           </div>
         </section>
 
         <section className="content-band alt-band" id="how-to-play">
           <span className="anchor-target" id="how-to-use" aria-hidden="true" />
           <div className="section-heading">
-            <p className="eyebrow">Three simple steps</p>
-            <h2>How to Play Square Face Generator</h2>
+            <h2>
+              <Gamepad2 aria-hidden="true" size={24} />
+              How to Play
+            </h2>
           </div>
-          <div className="steps-grid">
+          <div className="steps-grid play-steps-grid">
             {howToSteps.map((step, index) => (
-              <article className="info-card" key={step.title}>
-                <span className="step-number">Step {index + 1}</span>
-                <h3>{step.title}</h3>
-                <p>{step.text}</p>
-              </article>
-            ))}
-          </div>
-        </section>
-
-        <section className="content-band" id="features">
-          <div className="section-heading">
-            <p className="eyebrow">Game features</p>
-            <h2>Square Face Generator Features</h2>
-          </div>
-          <div className="feature-grid">
-            {gameFeatures.map((feature) => (
-              <article className="info-card" key={feature.title}>
-                <h3>{feature.title}</h3>
-                <p>{feature.text}</p>
+              <article className="info-card play-step-card" key={step.title}>
+                <span className="step-number">{index + 1}</span>
+                <div>
+                  <h3>{step.title}</h3>
+                  <p>{step.text}</p>
+                </div>
               </article>
             ))}
           </div>
@@ -596,7 +490,7 @@ export default function HomePage({ locale }: HomePageProps) {
             </p>
           </div>
           <ul className="tips-list">
-            {tips.map((tip) => (
+            {tips.slice(0, 4).map((tip) => (
               <li key={tip}>
                 <Monitor aria-hidden="true" size={18} />
                 {tip}
@@ -605,25 +499,12 @@ export default function HomePage({ locale }: HomePageProps) {
           </ul>
         </section>
 
-        <section className="content-band alt-band" id="troubleshooting">
-          <div className="section-heading">
-            <p className="eyebrow">Help</p>
-            <h2>Troubleshooting</h2>
-          </div>
-          <div className="faq-list">
-            {troubleshooting.map((item) => (
-              <details className="faq-item" key={item.title}>
-                <summary>{item.title}</summary>
-                <p>{item.text}</p>
-              </details>
-            ))}
-          </div>
-        </section>
-
         <section className="content-band" id="faq">
           <div className="section-heading">
-            <p className="eyebrow">FAQ</p>
-            <h2>Frequently Asked Questions</h2>
+            <h2>
+              <Sparkles aria-hidden="true" size={24} />
+              Frequently Asked Questions (FAQ)
+            </h2>
           </div>
           <div className="faq-list">
             {faq.map((item) => (
@@ -635,60 +516,41 @@ export default function HomePage({ locale }: HomePageProps) {
           </div>
         </section>
 
-        <section className="content-band alt-band">
-          <div className="section-heading">
-            <p className="eyebrow">More to explore</p>
-            <h2>Related Avatar Games</h2>
+        <section className="home-final-cta" aria-label="Start playing Square Face Generator">
+          <span className="cta-face" aria-hidden="true" />
+          <div>
+            <h2>Ready to make a square face icon?</h2>
+            <p>Jump into the classic Square Face Generator and start creating now!</p>
+            <a className="hero-primary-link" href="#game-player">
+              <CirclePlay aria-hidden="true" size={20} />
+              Play Square Face Generator Now
+            </a>
           </div>
-          <div className="related-grid">
-            {relatedCards.map((card) =>
-              card.disabled ? (
-                <article className="related-card is-disabled" key={card.title}>
-                  <Sparkles aria-hidden="true" size={20} />
-                  <h3>{card.title}</h3>
-                  <p>{card.text}</p>
-                </article>
-              ) : (
-                <a className="related-card" href={card.href} key={card.title}>
-                  <Sparkles aria-hidden="true" size={20} />
-                  <h3>{card.title}</h3>
-                  <p>{card.text}</p>
-                </a>
-              )
-            )}
-          </div>
+          <span className="cta-sparkles" aria-hidden="true">✦ ♡ ✧</span>
         </section>
       </main>
 
       <footer className="site-footer">
         <div className="footer-brand">
-          <p>&copy; 2026 My Square Face Icon.</p>
-          <p>Classic square face generator game for quick profile icons.</p>
+          <span className="brand-mark" aria-hidden="true" />
+          <div>
+            <p>My Square Face Icon</p>
+            <p>Classic Flash avatar games and free tools.</p>
+          </div>
         </div>
-        <div className="footer-grid" aria-label="Footer navigation">
-          <div>
-            <h3>Game</h3>
-            <a href="#game-player">Play Square Face Generator</a>
-            <a href="#how-to-play">How to Play</a>
-            <a href="#troubleshooting">Troubleshooting</a>
-            <a href="#faq">FAQ</a>
-          </div>
-          <div>
-            <h3>Resources</h3>
-            <a href="/oval-face-icon-generator">Oval Face Icon Generator</a>
-            <a href="/pixel-art-avatar-icon-generator">Pixel Art Avatar Icon Generator</a>
-            <a href="/square-face-icon-generator">Icon Guide</a>
-            <a href="/free-avatar-maker">Free Avatar Maker</a>
-            <a href="/gallery">Gallery</a>
-            <a href="/blog">Blog</a>
-          </div>
-          <div>
-            <h3>Legal</h3>
-            <a href="/contact">Contact</a>
-            <a href="/editorial-policy">Editorial Policy</a>
-            <a href="/privacy-policy">Privacy Policy</a>
-            <a href="/terms-of-service">Terms of Service</a>
-          </div>
+        <nav className="footer-links" aria-label="Footer navigation">
+          <a href="/">Home</a>
+          <a href="/gallery">Gallery</a>
+          <a href="/square-face-icon-generator">Icon Guide</a>
+          <a href="/blog">Blog</a>
+          <a href="/about-us">About</a>
+          <a href="/contact">Contact</a>
+        </nav>
+        <p className="footer-copyright">&copy; 2025 mysquarefaceicon.com. All rights reserved.</p>
+        <div className="footer-social" aria-label="Social links">
+          <a href="/contact" aria-label="Contact My Square Face Icon">●</a>
+          <a href="/blog" aria-label="Read the blog">●</a>
+          <a href="/gallery" aria-label="Open gallery">●</a>
         </div>
       </footer>
       <InstallPrompt />

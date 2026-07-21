@@ -1,18 +1,20 @@
 import type { Metadata } from "next";
+import GalleryPreview from "@/components/GalleryPreview";
+import GameSidebar, { type GameSidebarItem } from "@/components/GameSidebar";
 import SiteFooter from "@/components/SiteFooter";
 import SiteHeader from "@/components/SiteHeader";
-import { ExternalLink, Gamepad2, Monitor, ShieldCheck, Sparkles, Wrench } from "lucide-react";
+import { ExternalLink, Gamepad2, Monitor, Sparkles, Wrench } from "lucide-react";
 
 const pageUrl = "https://mysquarefaceicon.com/pixel-art-avatar-icon-generator";
 const originalUrl = "https://www.icongenerators.net/pixelavatar.html";
-const pageTitle = "Pixel Art Avatar Icon Generator - Embedded Chibi Icon Maker";
+const pageTitle = "Pixel Art Avatar Icon Generator - Open the Original Chibi Icon Maker";
 const pageDescription =
-  "Use the embedded Pixel Art Avatar Icon Generator from icongenerators.net to create cute chibi pixel icons, with source credit, play tips, and browser guidance.";
+  "Open the Pixel Art Avatar Icon Generator from icongenerators.net to create cute chibi pixel icons, with source credit, play tips, and browser guidance.";
 
 const howToSteps = [
   {
-    title: "Open the embedded generator",
-    text: "Wait for the icongenerators.net pixel avatar maker to load in the frame above. If it does not appear, use the original-page button."
+    title: "Open the original generator",
+    text: "Use the original-page button to open the icongenerators.net pixel avatar maker in a new tab."
   },
   {
     title: "Choose pixel character parts",
@@ -20,14 +22,14 @@ const howToSteps = [
   },
   {
     title: "Save or copy your result",
-    text: "Follow the controls inside the original generator. If a browser blocks a feature, open the original page in a new tab."
+    text: "Follow the controls inside the original generator. If a browser blocks a feature, try a desktop browser or another network."
   }
 ];
 
 const features = [
   {
     title: "External original tool",
-    text: "The generator is embedded from icongenerators.net, with visible source credit and a direct link to the original page."
+    text: "The generator is provided by icongenerators.net, with visible source credit and a direct link to the original page."
   },
   {
     title: "Pixel art avatar style",
@@ -42,8 +44,8 @@ const features = [
     text: "This page does not copy the external site files, artwork, comments, or generator source."
   },
   {
-    title: "Original page fallback",
-    text: "If browser security blocks the iframe, you can still open the generator directly on icongenerators.net."
+    title: "Original page access",
+    text: "The original site currently blocks iframe embedding, so the safest path is opening the generator directly."
   },
   {
     title: "Desktop recommended",
@@ -53,10 +55,94 @@ const features = [
 
 const tips = [
   "Use a desktop browser when editing detailed pixel parts",
-  "Keep the original page button available if the iframe fails",
+  "Open the original generator in a new tab for the most reliable experience",
   "Try a simple color palette so the avatar stays readable at small sizes",
   "Check the icon at profile-picture size before using it",
   "Respect the original creator and link back when sharing the tool"
+];
+
+const pixelGalleryPreviewItems = [
+  {
+    title: "Gamer",
+    src: "/game-face-samples/gamer.webp",
+    alt: "Pixel-friendly gamer avatar preview",
+    likes: 110
+  },
+  {
+    title: "Cute",
+    src: "/game-face-samples/cute.webp",
+    alt: "Cute avatar gallery preview",
+    likes: 120
+  },
+  {
+    title: "Retro",
+    src: "/game-face-samples/retro.webp",
+    alt: "Retro avatar gallery preview",
+    likes: 98
+  },
+  {
+    title: "Funny",
+    src: "/game-face-samples/funny.webp",
+    alt: "Funny avatar gallery preview",
+    likes: 76
+  },
+  {
+    title: "Minimal",
+    src: "/game-face-samples/minimal.webp",
+    alt: "Minimal avatar gallery preview",
+    likes: 64
+  },
+  {
+    title: "Classic",
+    src: "/game-face-samples/classic.webp",
+    alt: "Classic avatar gallery preview",
+    likes: 85
+  }
+];
+
+const pixelSidebarItems: GameSidebarItem[] = [
+  {
+    title: "Square Face Generator",
+    text: "Play the original classic Flash square face avatar maker.",
+    href: "/",
+    imageSrc: "/square-face-icon.png",
+    imageAlt: "Square Face Generator preview"
+  },
+  {
+    title: "Oval Face Icon Generator",
+    text: "Create cute oval face icons with a rounded avatar game.",
+    href: "/oval-face-icon-generator",
+    imageSrc: "/games/oval-face-icon.png",
+    imageAlt: "Oval Face Icon Generator preview"
+  },
+  {
+    title: "Free Avatar Maker",
+    text: "Use a fast avatar workflow for profile pictures and icons.",
+    href: "/free-avatar-maker",
+    imageSrc: "/game-face-samples/ideas/discord-pfp.webp",
+    imageAlt: "Free avatar maker preview"
+  },
+  {
+    title: "Square Avatar Guide",
+    text: "Learn how to create the best square face icons.",
+    href: "/square-face-icon-generator",
+    imageSrc: "/game-face-samples/ideas/simple-icon-face.webp",
+    imageAlt: "Square avatar guide preview"
+  },
+  {
+    title: "Gallery",
+    text: "Explore approved community face icon creations.",
+    href: "/gallery",
+    imageSrc: "/game-face-samples/ideas/cute-square-face.webp",
+    imageAlt: "Community gallery preview"
+  },
+  {
+    title: "Blog Guide",
+    text: "Read tips and tutorials about avatar making.",
+    href: "/blog",
+    imageSrc: "/game-face-samples/ideas/favicon-style.webp",
+    imageAlt: "Avatar blog guide preview"
+  }
 ];
 
 const faq = [
@@ -68,12 +154,12 @@ const faq = [
   {
     question: "Is this tool owned by My Square Face Icon?",
     answer:
-      "No. This page embeds the external generator with source attribution. The original tool and its assets remain on icongenerators.net."
+      "No. This page links to the external generator with source attribution. The original tool and its assets remain on icongenerators.net."
   },
   {
-    question: "Why might the embedded generator not load?",
+    question: "Why does the embedded generator not load?",
     answer:
-      "Some browsers, extensions, network filters, or iframe security settings can block embedded pages. Use the Open Original Page button if that happens."
+      "The original site currently sends browser security headers that allow the page to be framed only by itself. Use the Open Original Page button to launch it directly."
   },
   {
     question: "Can a VPN, proxy, or network filter stop the generator from opening?",
@@ -83,7 +169,7 @@ const faq = [
   {
     question: "Does this page copy the generator assets?",
     answer:
-      "No. The external page is loaded by iframe, so this site does not host or copy the original generator files."
+      "No. This site does not host or copy the original generator files, artwork, comments, or source code."
   },
   {
     question: "Can I use it on mobile?",
@@ -184,19 +270,20 @@ export default function PixelArtAvatarIconGeneratorPage() {
 
       <SiteHeader />
       <main>
-        <section className="game-hero external-game-hero">
-          <div className="game-hero-inner">
-            <div className="game-hero-copy">
+        <section className="game-station external-game-hero" id="external-generator">
+          <div className="game-station-grid">
+            <div className="game-station-main">
+              <div className="game-title-block">
               <p className="eyebrow">Embedded external avatar maker</p>
               <h1>Pixel Art Avatar Icon Generator</h1>
               <p className="hero-text">
-                Use the embedded Pixel Art Avatar Icon Generator from icongenerators.net to create cute chibi pixel
-                icons. This page keeps the original source visible and adds quick guidance for desktop and mobile users.
+                Open the Pixel Art Avatar Icon Generator from icongenerators.net to create cute chibi pixel icons. This
+                page keeps the original source visible and adds quick guidance for desktop and mobile users.
               </p>
               <div className="hero-actions" aria-label="Hero actions">
-                <a className="hero-primary-link" href="#embedded-generator">
+                <a className="hero-primary-link" href={originalUrl} target="_blank" rel="noopener noreferrer">
                   <Gamepad2 aria-hidden="true" size={20} />
-                  Use Embedded Generator
+                  Open Generator
                 </a>
                 <a className="hero-secondary-link" href={originalUrl} target="_blank" rel="noopener noreferrer">
                   Open Original
@@ -204,52 +291,42 @@ export default function PixelArtAvatarIconGeneratorPage() {
                 </a>
               </div>
             </div>
-            <div className="nostalgia-card external-source-card">
-              <ShieldCheck aria-hidden="true" size={30} />
-              <div>
-                <strong>Source-first embed</strong>
-                <p>
-                  The generator below is loaded from icongenerators.net. If your browser blocks embedded pages, open the
-                  original tool directly.
-                </p>
-              </div>
-              <div className="nostalgia-tags" aria-label="Tool tags">
-                <span>Pixel Avatar</span>
-                <span>External Tool</span>
-                <span>Chibi Icon</span>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section className="game-player-section" id="embedded-generator">
-          <div className="game-card external-embed-card">
+            <div className="game-card external-embed-card station-game-card">
             <div className="game-card-header">
               <div>
-                <p className="tool-card-kicker">icongenerators.net embed</p>
-                <h2>Use Pixel Art Avatar Icon Generator Online</h2>
+                <p className="tool-card-kicker">icongenerators.net original tool</p>
+                <h2>Open Pixel Art Avatar Icon Generator Online</h2>
+                <p className="tool-card-description">
+                  The original generator is hosted by icongenerators.net. Their current security headers prevent iframe
+                  embedding, so this page sends players to the working original tool.
+                </p>
               </div>
               <a className="tool-card-badge badge-link" href={originalUrl} target="_blank" rel="noopener noreferrer">
                 Original Page
                 <ExternalLink aria-hidden="true" size={14} />
               </a>
             </div>
-            <div className="external-embed-frame">
-              <iframe
-                src={originalUrl}
-                title="Embedded Pixel Art Avatar Icon Generator from icongenerators.net"
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-popups-to-escape-sandbox allow-downloads allow-modals"
-                allow="clipboard-write; fullscreen"
-              >
-                Open the Pixel Art Avatar Icon Generator on icongenerators.net.
-              </iframe>
+            <div className="external-open-panel">
+              <div className="external-open-icon" aria-hidden="true">
+                <Gamepad2 size={42} />
+              </div>
+              <div>
+                <p className="eyebrow">Iframe blocked by the original site</p>
+                <h3>Open the generator in a new tab</h3>
+                <p>
+                  icongenerators.net now sends <code>X-Frame-Options: SAMEORIGIN</code> and{" "}
+                  <code>{`frame-ancestors 'self'`}</code>, so browsers refuse to show it inside another website. Use the
+                  direct link below for the working generator.
+                </p>
+                <a className="hero-primary-link" href={originalUrl} target="_blank" rel="noopener noreferrer">
+                  Open Pixel Art Avatar Icon Generator
+                  <ExternalLink aria-hidden="true" size={18} />
+                </a>
+              </div>
             </div>
             <div className="external-embed-note">
               <Wrench aria-hidden="true" size={18} />
               <p>
-                If the embedded generator stays blank, your browser or the original site may be blocking iframe loading.
                 VPNs, proxy tools, privacy extensions, school networks, company networks, or DNS filters can also stop
                 the external page from opening. Try turning off the proxy for this page, switching networks, or use{" "}
                 <a href={originalUrl} target="_blank" rel="noopener noreferrer">
@@ -259,7 +336,16 @@ export default function PixelArtAvatarIconGeneratorPage() {
               </p>
             </div>
           </div>
+            </div>
+            <GameSidebar items={pixelSidebarItems} />
+          </div>
         </section>
+
+        <GalleryPreview
+          title="Community Gallery Preview"
+          intro="Browse a few face icon examples before opening the pixel avatar tool."
+          items={pixelGalleryPreviewItems}
+        />
 
         <section className="content-band" id="what-is">
           <div className="section-heading">

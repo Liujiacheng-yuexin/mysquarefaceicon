@@ -39,7 +39,7 @@ export default function InstallPrompt() {
       const installEvent = event as BeforeInstallPromptEvent;
       setPromptEvent(installEvent);
       if (!window.localStorage.getItem("msfi-install-dismissed")) {
-        setVisible(true);
+        window.setTimeout(() => setVisible(true), 8000);
       }
     }
 
