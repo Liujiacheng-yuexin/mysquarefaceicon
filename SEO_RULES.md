@@ -1,293 +1,72 @@
-# SEO_RULES.md
+# SEO_RULES.md · MySquareFaceIcon 项目 SEO 决策
 
-本文件是通用 SEO 规则，适用于工具站、AI 工具站、SaaS、内容站、模板站、资源站、目录站、生成器和程序化 SEO 网站。
+> 口径版本：`2026-08-31 / v2.1`
+>
+> 迁移决定：用户在验收 `BASE-001` 时明确选择“SEO 口径迁移到 v2.1”。
+>
+> 通用规则唯一来源：[RULES.md](RULES.md)。本文件只保留 `mysquarefaceicon.com` 已确认的项目决策，不再复制通用规则。
 
-## 核心原则
+## 1. 权威顺序
 
-- 上线当天必须提交 Google Search Console。
-- 必须有 sitemap.xml。
-- robots.txt 必须声明 sitemap。
-- 每个可索引页面必须有 canonical。
-- 每个页面只能有一个 H1。
-- 每个重要页面必须有 2-5 个相关内链。
-- URL 全小写，英文，短横线分隔。
-- 不生成低质量薄页面。
-- 不做 doorway pages。
-- 不按关键词变体批量拆页。
-- sitemap 只包含希望被收录的规范 URL。
-- noindex 页面不得进入 sitemap。
-- 页面必须服务真实用户，不只服务搜索引擎。
+1. 用户当前明确指令。
+2. `AGENTS.md` 的任务与验收门禁。
+3. 本文件的项目专用 SEO 决策。
+4. `RULES.md` v2.1 的规则 ID、分级和算法。
+5. `PAGE_PLAN.md`、`CONTENT_PLAN.md`、`LAUNCH_CHECKLIST.md` 等执行记录。
 
-## 独立搜索意图规则
+本次迁移已经解决旧版 `3%-5%` 主关键词密度冲突：以后不得再把该数值当成目标或发布门禁，也不得用 CSS `content` 隐藏可见按钮文案来调节词频。
 
-不要按“每个关键词一个页面”建站，而是按“每个独立搜索意图一个页面”建站。
+## 2. 核心搜索意图与 URL
 
-同义词、近义词、词序变化、轻微修饰词必须合并到同一个 canonical URL。
+- `/` 是 `square face generator` 的主排名页和核心可玩页；默认保持 URL、canonical、主意图与首屏工具优先级不变。
+- `/oval-face-icon-generator` 承担独立的 oval/rounded face generator 意图，保留现有 URL。
+- `/pixel-art-avatar-icon-generator` 是指向 `icongenerators.net` 的 **External Tool** 说明与出站页，不得描述成本站托管或本站可玩的游戏。
+- `/square-face-icon-generator`、`/square-avatar-generator`、`/free-avatar-maker` 等支持页必须与首页保持不同的搜索意图；同义词或轻微词序变化不另建页（IA-02）。
+- 已发布 URL 默认冻结；任何改名、合并或迁移必须先检查 GSC、索引与外链，并单独审批 301 映射（IA-03、OP-03、OP-04）。
+- 不扩展与 Avatar Maker / Face Maker / Character Creator / Pixel Avatar / Retro Flash / Dress-up Creator 无强关联的泛小游戏页面，除非用户另行确认品牌方向。
 
-可以单独建页的条件：
+## 3. 索引与多语言
 
-- 搜索意图明显不同。
-- SERP 结果明显不同。
-- 页面内容能写出真实差异。
-- 用户进入页面后能得到独立价值。
-- 页面不会和已有页面抢同一个主关键词。
+- sitemap 只包含希望索引、返回 200、canonical 正确且有站内入口的页面（IDX-01～IDX-07、LINK-01）。
+- `/es`、`/vi`、`/ja`、`/th`、`/ar`、`/ru`、`/id` 在完成目标语言关键词调研和人工本地化前保持 `noindex, follow`，不进入 sitemap，也不发布 hreflang。
+- `/cute-square-avatar-generator` 与 `/pixel-square-face-maker` 在具备更强独立价值前保持 noindex；不得因为已有 URL 就自动进入 sitemap。
+- 搜索、筛选、管理、API、错误和低质量页面默认不索引；noindex 页面不得进入 sitemap。
 
-不应该单独建页的情况：
+## 4. 关键词与内容口径
 
-- 只是关键词顺序不同。
-- 只是同义表达不同。
-- 只是换一个地区、数字、标签、场景，但内容没有实际差异。
-- 内容只能写成已有页面的一个小节。
+所有 index 页面按 `RULES.md` 执行：
 
-## 页面 SEO 必填项
+- KW-01：主关键词或自然变体覆盖 Title、H1、首段前 100 词、至少一个 H2、至少一条指向本页的站内锚文本。
+- KW-02：主内容区正文中主关键词或自然变体至少出现 3 次。
+- KW-03：精确短语密度 `0.5%-2.0%` 仅作自然度观察；`>2.5%` 报堆砌风险，`=0` 视为错误。密度不是排名目标，也不作为单独“达标”结论。
+- KW-04：根据目标查询 SERP 前 10 名的共同子话题与实体建立语义覆盖清单，覆盖率至少 70%；缺失项说明原因。
+- KW-05～KW-07：禁止堆词、隐藏 SEO 正文或由脚本自动插入关键词。
+- 已有页面只能做可回滚的增量补强，遵守 KW-10～KW-16；不得整页覆盖用户已有内容。
 
-每个页面必须定义：
+## 5. 内链与页面质量
 
-- URL
-- 页面类型
-- 主关键词
-- 关键词组
-- 搜索意图
-- Title
-- Description
-- H1
-- H2 结构
-- 内链目标
-- schema 类型
-- index / noindex 状态
-- canonical
-- 页面质量判断
-- 主关键词密度检查结果
+- 每个 index 页面至少有 1 条站内入链（LINK-01）。
+- 首页、核心游戏页和重要指南页以至少 5 条相关入链为目标（LINK-02）；这是“入链”要求，不是机械添加 2～5 条出链。
+- 内容页至少提供 2 条相关出链（LINK-03），链接必须帮助用户继续完成同一主题任务。
+- 页面必须有独立搜索意图和至少一项独有内容（CT-01、CT-05）；不创建 thin、near-duplicate 或 doorway pages（CT-02）。
+- Gallery、推荐与热度数字必须来自真实数据或明确标记为 curated examples；不得编造社区规模、评分或受欢迎程度。
 
-## 关键词密度和关键词使用检查
-
-每次新增、改造或优化 index 页面时，必须检查主关键词密度。
+## 6. 游戏来源、权利与公开文案
 
-硬性范围：
+- Square、Oval 和所有未来游戏都必须进入 `data/game-license-registry.json`；`UNKNOWN` 不等于允许。
+- 未有可复核许可证据时，不得把 `authorized`、`official`、`original creator approved`、商业可用或可再分发写成已确认事实（CT-03、TR-07）。
+- 不复制竞品 SWF、图片、评论、文案、源码或下载资源；不反编译或修改 Square/Oval SWF。
+- External Tool 必须显示来源、实际打开方式和外部边界；能访问或能 iframe 不代表允许嵌入、商业使用或再托管。
+- 用户生成图片的用途必须遵守对应生成器的公开条款，站点不得擅自扩大为商业许可。
 
-- 主关键词密度目标范围：`3% - 5%`。
-- 低于 `3%`：需要自然补充主关键词，优先补在首段、关键 H2、正文解释、FAQ、图片 alt 或内链锚文本附近。
-- 高于 `5%`：必须降低重复，改用同义词、相关实体、上下文解释或更自然的表达。
-- 禁止为了达到密度而堆词、重复同一句、制造不自然标题或破坏可读性。
-
-检查口径：
-
-- 只统计页面主内容区，不统计导航、页脚、重复菜单、脚本、schema JSON、隐藏文本和站点通用模板。
-- 英文页面按可见正文单词数计算：`主关键词出现次数 / 正文总词数 * 100%`。
-- 多词关键词按完整短语出现次数计算，不拆开单个词硬凑。
-- 中文、日文、韩文等无空格语言，可用分词结果或可见正文词组单位估算；至少必须人工检查主关键词出现是否达到 `3% - 5%` 的等效覆盖。
-- 密度检查以主关键词为硬指标；次级关键词、同义词和相关实体用于补充语义覆盖，不替代主关键词密度检查。
-
-关键词必须自然覆盖的位置：
-
-- Title。
-- Description。
-- H1。
-- 首段或首屏核心说明。
-- 至少一个 H2 或核心内容模块标题。
-- 正文关键解释段落。
-- FAQ、示例、图片 alt 或内链锚文本中可自然出现的位置。
-
-检查结果必须在最终回复中说明：
+## 7. 性能、发布与证据
 
-- 主关键词是什么。
-- 估算密度是多少。
-- 是否在 `3% - 5%` 范围内。
-- 如果不在范围内，已如何调整或为什么需要用户确认。
+- 首页和 Oval 的 Ruffle/WASM/SWF 必须 click-to-load，首次加载不得请求 player runtime 或 SWF。
+- 移动端目标为 LCP ≤2.5s、INP ≤200ms、CLS ≤0.1，且不得横向滚动（PF-01、PF-05）。
+- 每次 SEO、页面、内容、内链、索引或发布相关工作更新 `SEO_LOG.md`（OP-05）。
+- 发布前必须通过 type-check、lint、必需测试、框架 build 和 Cloudflare/OpenNext 等效 build（OP-09）；失败或未执行不得写成通过。
+- 只有授权部署后才运行生产发布验收；HTTP/HTTPS、www/非 www 必须一跳归一（OP-02、OP-11、OP-12）。
 
-## 重复 UI 文案与关键词密度
-
-页面中大量重复的按钮、工具操作、卡片操作和列表操作文案，可能会干扰关键词密度判断。例如同一页面有 40 个 `Play`、`Copy`、`Download`、`Use`、`Generate` 按钮时，这些 UI 文案会让页面正文词频失真。
+## 8. 尚未决定
 
-规则：
-
-- 关键词密度检查应关注主内容区，不应让大量重复 UI 控件文案主导词频。
-- 如果同一个按钮或控件文案在主内容区重复出现 10 次以上，必须检查它是否干扰主关键词密度。
-- 重复 UI 文案不是正文内容，不能为了提高或降低关键词密度而把它当成 SEO 内容。
-- 不要把 H1、H2、正文段落、FAQ、产品说明、教程步骤等有 SEO 价值的内容放进 CSS `content`。
-- 只允许对大量重复、含义固定、非 SEO 正文的 UI 标签使用 CSS `content` 技巧。
-
-可选处理方法：
-
-```css
-.play-button::after {
-  content: "Play";
-  margin-left: .5rem;
-}
-```
-
-使用要求：
-
-- 按钮仍必须有可访问名称，例如 `aria-label`、`title` 或图标旁的可访问文本方案。
-- CSS `content` 只用于视觉 UI 标签，不用于隐藏正文关键词或制造虚假内容。
-- 处理后仍必须检查页面可用性、移动端显示、键盘操作和可访问名称。
-- 最终关键词密度报告中应说明是否存在重复按钮文案，以及是否采用 CSS `content` 方案处理。
-
-## 多语言关键词和内容规则
-
-多语言页面不能只做直译，必须按目标语言和目标国家重新处理关键词、搜索意图和内容表达。
-
-执行规则：
-
-- 每种语言应有独立 URL、独立 title、独立 description、独立 H1 和自引用 canonical。
-- 多语言页面必须规划 `hreflang`，并确保每个语言版本互相对应。
-- 不要把不同语言混在同一个 SEO 页面里，除非该页面本身服务“双语查询”或翻译场景。
-- 关键词不能逐字翻译后直接使用，必须按目标语言的真实搜索习惯选择主关键词和次级关键词。
-- 同一个主题在不同语言中可能有不同搜索意图，应按各语言 SERP 和用户需求决定是否拆页、合并或 noindex。
-- 低质量机器翻译、多语言空壳页、只替换关键词的翻译页默认 noindex。
-- 多语言内容必须本地化示例、单位、日期格式、货币、平台名称、语气和常见问题。
-- schema、OG、FAQ 和页面可见内容必须使用当前页面语言，并和页面内容一致。
-
-多语言关键词内容技巧：
-
-- 先确定每个语言版本的主关键词，不要用源语言主关键词强行翻译。
-- 保留核心搜索意图，但重写标题、首段、H2 和 FAQ。
-- 在正文中自然加入目标语言常见同义词、场景词、问题词和实体词。
-- 对英语页面关注自然短语和语义覆盖；对中文页面关注核心词、长尾词和问答表达的自然出现。
-- 翻译后必须人工读一遍，删除直译腔、重复句和不符合本地用户习惯的表达。
-- 如果某语言没有足够独立内容或商业价值，先 noindex 或暂缓创建。
-- 如果多语言页面存在大量重复按钮文案，可以按语言加载对应 CSS 文件，例如 `cn.css`、`en.css`、`ja.css`，用 CSS `content` 输出当前语言的 UI 标签。每个页面只加载当前语言需要的 UI 文案 CSS，不要在同一页面加载全部语言的重复文案。
-
-## URL 规则
-
-要求：
-
-- 全部小写。
-- 使用英文。
-- 使用短横线分隔。
-- 不使用大写字母。
-- 不使用无意义 ID 作为主要 SEO URL。
-- 尽量使用静态 URL。
-- 同一内容只能有一个可索引 URL。
-- URL 一旦发布，不要轻易修改。
-
-推荐：
-
-```text
-/primary-tool
-/category
-/category/topic
-/blog/how-to-example
-```
-
-不推荐：
-
-```text
-/Page?id=123
-/PrimaryTool
-/blog/2026/05/10?id=abc
-/search?q=keyword
-```
-
-## Title / Description 规则
-
-Title：
-
-- 每个页面必须唯一。
-- 核心关键词尽量靠前。
-- 自然可读，不堆砌。
-- 英文页面建议 50-60 个英文字符左右。
-- 末尾可加入品牌名。
-
-Description：
-
-- 每个页面必须唯一。
-- 英文页面建议 150-160 个英文字符左右。
-- 用 1-2 个自然句子描述页面价值。
-- 包含关键词或相关表达，但不能堆词。
-- 可包含行动提示，例如 Generate、Learn、Compare、Download、Try。
-
-页面类型模板：
-
-```text
-首页：{Brand} - {Slogan} - {Primary Keyword}
-工具页：{Tool Name} - {Core Benefit} | {Brand}
-聚合页：{Topic} - {Subtopic / Value} | {Brand}
-详情页：{Item Name} - {Category} | {Brand}
-博客页：{Question or Guide Title} | {Brand}
-```
-
-## Canonical 规范
-
-- 每个可索引页面必须有 canonical。
-- 普通页面 canonical 指向自身。
-- 带参数的重复页面 canonical 到标准 URL。
-- 分页页面 canonical 指向分页自身。
-- 搜索页如果不做排名，可 noindex 或 canonical 到合适聚合页。
-- 禁止所有页面 canonical 到首页。
-- 禁止多个不同内容页面 canonical 到同一页面。
-
-## Sitemap 规范
-
-- sitemap 只放希望被收录的页面。
-- 不放 404 页面、重定向页面、noindex 页面、重复页面、低质量页面或长期无价值页面。
-- 新增重要页面后应自动进入 sitemap。
-- 被淘汰页面应从 sitemap 移除。
-- 页面量大时使用 sitemap index。
-
-## 内链规则
-
-内链必须覆盖：
-
-- 父页面。
-- 子页面。
-- 兄弟页面。
-
-执行规则：
-
-- 重要页面获得更多内链。
-- 链接必须相关，不做机械随机互链。
-- 首页、聚合页、导航、热门模块应链接到重要页面。
-- 详情页应能返回分类页。
-- 博客页应链接到相关工具页、功能页或指南页。
-- 不存在孤岛页面。
-
-## 程序化 SEO 质量控制
-
-如果项目包含程序化页面，数据层必须支持：
-
-- slug
-- title
-- description
-- h1
-- canonical
-- indexStatus
-- qualityScore
-- pageType
-- primaryKeyword
-- secondaryKeywords
-- searchIntent
-- lastUpdated
-- relatedPages
-
-规则：
-
-- 模板只能控制结构，不能只替换关键词。
-- 没有足够独立数据的页面不得 index。
-- `qualityScore` 低于阈值的页面自动 noindex。
-- 默认质量阈值：`qualityScore < 70` 自动 noindex；`70-84` 进入人工审核或暂缓 index；`85+` 才允许进入 sitemap。具体项目可以在 `PROJECT_BRIEF.md` 或数据配置中调整，但必须说明原因。
-- 相似度过高的页面不得同时 index。
-- 搜索页、筛选页默认 noindex。
-- 长期无曝光、无点击、无内链价值的页面应移出 sitemap、合并、noindex 或删除。
-
-## Schema
-
-按页面类型使用：
-
-- 首页：WebSite、Organization、SearchAction
-- 工具页：WebApplication、FAQPage、BreadcrumbList
-- 博客页：Article、FAQPage、BreadcrumbList
-- 聚合页：CollectionPage、BreadcrumbList
-- 详情页：WebPage 或 Article、FAQPage、BreadcrumbList
-
-Schema 内容必须和页面可见内容一致。
-
-## 禁止事项
-
-- 不要生成大量薄页面。
-- 不要为关键词变体创建多个 URL。
-- 不要用图片、动画或视觉效果掩盖低质量内容。
-- 不要使用夸张承诺或无法证实的绝对化表达。
-- 不要冒充医疗、法律、财务、心理或宗教权威。
-- 不要把所有页面一次性放进 sitemap。
-- 不要购买垃圾外链或批量群发外链。
+`AI-01` 要求在 `PROJECT_BRIEF.md` 逐个记录 AI crawler 的允许/禁止决定。当前 robots 已有实现，但用户尚未确认完整的训练抓取与搜索抓取策略；在取得单独决定前不得擅自改变。

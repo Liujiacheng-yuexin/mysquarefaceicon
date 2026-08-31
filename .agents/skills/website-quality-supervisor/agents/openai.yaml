@@ -1,0 +1,6 @@
+interface:
+  display_name: "Website Quality Supervisor"
+  short_description: "Coordinate board gates, SEO checks, and QA evidence"
+  default_prompt: "Use $website-quality-supervisor to execute the current board task and stop at user acceptance."
+policy:
+  allow_implicit_invocation: true

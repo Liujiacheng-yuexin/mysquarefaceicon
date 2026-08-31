@@ -1,5 +1,7 @@
 # PAGE_PLAN.md
 
+> This file is the project page inventory and internal-link plan. Reusable SEO rules are defined only in `RULES.md`; project-specific decisions are in `SEO_RULES.md`. Page proposals use KW-01 position coverage, KW-04 semantic coverage, LINK-01/02/03, and CT-05—not the retired `3%-5%` density target.
+
 ## First Release Pages
 
 | Page | URL | Type | Primary Keyword | Search Intent | Priority | Status |
@@ -17,7 +19,7 @@
 | Editorial Policy | `/editorial-policy` | Trust page | editorial policy | Explain content quality, AI assistance, moderation, and correction standards | P1 | Implemented |
 | Free Avatar Maker | `/free-avatar-maker` | Support / guide page | free avatar maker | Create a free avatar with a square face icon workflow | P1 | Implemented |
 | Oval Face Icon Generator | `/oval-face-icon-generator` | Tool page | oval face icon generator | Play an oval face avatar maker and create a rounded profile icon | P1 | Implemented |
-| Pixel Art Avatar Icon Generator | `/pixel-art-avatar-icon-generator` | External embedded tool page | pixel art avatar icon generator | Use the embedded icongenerators.net pixel avatar maker with source attribution and fallback link | P1 | Implemented |
+| Pixel Art Avatar Icon Generator | `/pixel-art-avatar-icon-generator` | External Tool / direct-link page | pixel art avatar icon generator | Open the original icongenerators.net pixel avatar maker with source attribution and clear external boundaries | P1 | Implemented |
 | Square Avatar Generator | `/square-avatar-generator` | Support / guide page | square avatar generator | Learn how square source avatars work across profile crops and platforms | P1 | Implemented |
 | Square Face Icon Gallery | `/gallery` | Inspiration gallery | square face icon gallery | Browse original square face icon examples and style ideas | P1 | Implemented |
 | Square Face Icon Guide | `/square-face-icon-generator` | Support / guide page | square face icon generator | Learn how to create and use square face icons | P1 | Implemented |

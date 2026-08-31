@@ -34,8 +34,8 @@
 - Trust and inspiration pages:
   - `/about-us`: project trust, originality, privacy, and roadmap context.
   - `/free-avatar-maker`: broader free avatar maker intent tied back to the square face generator.
-  - `/oval-face-icon-generator`: second classic Flash avatar maker page for rounded and oval face icon intent, using unique copy and the authorized oval SWF.
-  - `/pixel-art-avatar-icon-generator`: external embedded pixel avatar maker page with clear icongenerators.net attribution, original-page fallback, and no copied external assets.
+  - `/oval-face-icon-generator`: second classic Flash avatar maker page for rounded and oval face icon intent, using unique copy and a local Oval SWF whose source/license fields remain `UNKNOWN` in the Game License Registry.
+  - `/pixel-art-avatar-icon-generator`: external-link pixel avatar maker page with clear icongenerators.net attribution, an explicit original-page CTA, and no copied or embedded external assets.
   - `/square-avatar-generator`: broader square avatar workflow intent tied back to the generator.
   - `/gallery`: original square face icon examples and inspiration, not third-party image reuse.
 - Support pages:
@@ -55,6 +55,6 @@
 ## Page Quality Rules
 
 - Do not publish a new support page unless it has a unique search intent, unique metadata, visible H1, useful body content, and internal links back to the generator.
-- Do not publish an embedded external tool page unless it adds source attribution, usage guidance, troubleshooting, a direct original-page fallback, and a clear reason for users to access it from this site.
+- Do not publish an external-tool page unless it adds source attribution, usage guidance, troubleshooting, a direct original-page CTA, and a clear reason for users to access it from this site. Embedding requires separate verified permission and compatible security headers.
 - Do not add a URL to sitemap until it has a stable canonical URL and at least one relevant internal link.
 - If a page receives no impressions, no clicks, and no useful role after review, merge it into a stronger page or remove it from sitemap before expanding similar pages.

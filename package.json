@@ -10,7 +10,10 @@
     "cf:deploy": "opennextjs-cloudflare build && node scripts/patch-opennext-worker.mjs && opennextjs-cloudflare deploy",
     "start": "next start",
     "lint": "next lint",
-    "indexnow": "node scripts/submit-indexnow.mjs"
+    "indexnow": "node scripts/submit-indexnow.mjs",
+    "seo:check": "node scripts/seo-check.mjs --base http://localhost:3000",
+    "seo:prod": "node scripts/post-deploy-check.mjs --base https://mysquarefaceicon.com",
+    "quality:code": "npm run lint && npm run build"
   },
   "dependencies": {
     "@ruffle-rs/ruffle": "^0.2.0-nightly.2026.5.12",

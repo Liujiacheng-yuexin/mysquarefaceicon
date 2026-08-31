@@ -1,0 +1,256 @@
+{
+  "schemaVersion": "1.0",
+  "registryId": "mysquarefaceicon-game-license-registry",
+  "reviewedAt": "2026-08-31T09:50:39.0521386+08:00",
+  "reviewScope": [
+    "Existing Square local SWF",
+    "Existing Oval local SWF",
+    "Pixel Art Avatar Icon Generator external-link page"
+  ],
+  "statusVocabulary": {
+    "VERIFIED": "The permission is supported by evidence that identifies the relevant work or service and the reviewed scope.",
+    "RESTRICTED": "The evidence grants only a limited use or explicitly prohibits part of the intended use.",
+    "UNKNOWN": "No evidence was found that safely proves the permission for the exact work. UNKNOWN never means allowed.",
+    "NOT_APPLICABLE": "The field does not apply to the current delivery model."
+  },
+  "policy": {
+    "unknownMeansAllowed": false,
+    "newGamePublishAllowedWhenLicenseUnknown": false,
+    "commercializationAllowedWhenLicenseUnknown": false,
+    "assetRedistributionAllowedWhenLicenseUnknown": false,
+    "externalToolDefaultMode": "DIRECT_LINK_ONLY",
+    "requiredEvidenceForLocalBinary": [
+      "Exact file identity, preferably SHA-256",
+      "Original source URL or delivery record",
+      "Rights holder or authorized licensor",
+      "License or written permission covering hosting and public performance",
+      "Commercial/advertising scope",
+      "Embedding, modification, attribution and redistribution terms"
+    ],
+    "reviewRule": "A public webpage, a working download, a project note that says authorized, or a third-party preservation site is not sufficient by itself to prove rights for a local binary."
+  },
+  "records": [
+    {
+      "id": "square-face-swf",
+      "gameName": "Square Face Generator",
+      "publicPage": "https://mysquarefaceicon.com/",
+      "deliveryType": "LOCAL_RUFFLE_SWF",
+      "currentState": "LIVE_EXISTING",
+      "source": {
+        "status": "PARTIALLY_DOCUMENTED",
+        "sourceName": "Project repository file",
+        "sourceUrl": "UNKNOWN",
+        "repositoryPath": "public/games/square-face.swf",
+        "sha256": "B1D074C95F15B7DCECDBC2405ABF820EAD985669BB12CD47247FC8EA7537BC1E",
+        "gitIntroduced": {
+          "commit": "64b10474a21051b9e4e55eb31c3530567d639d43",
+          "date": "2026-05-13T00:46:04+08:00",
+          "subject": "Initial mysquarefaceicon site"
+        },
+        "projectClaim": "Historical/current user-facing project copy described the Square file as provided or authorized. That wording is not license evidence; active governance documents now keep the exact binary at UNKNOWN.",
+        "claimEvidencePaths": [
+          "app/terms-of-service/page.tsx",
+          "app/about-us/page.tsx",
+          "lib/locales.ts",
+          "SEO_LOG.md (historical entries)"
+        ],
+        "correctedGovernancePaths": [
+          "PROJECT_BRIEF.md",
+          "public/games/README.md"
+        ]
+      },
+      "author": {
+        "status": "UNKNOWN",
+        "name": "UNKNOWN",
+        "candidate": {
+          "name": "Eichi Zerona / えいちぜろな (@h071019)",
+          "evidenceUrl": "https://www.icongenerators.net/square.html",
+          "relationshipToExactBinary": "UNVERIFIED",
+          "note": "The current official Square Face page names this creator, but no evidence found in the repository binds the local SWF hash to that page or proves permission to rehost it."
+        }
+      },
+      "rightsHolder": {
+        "status": "UNKNOWN",
+        "name": "UNKNOWN"
+      },
+      "license": {
+        "status": "UNKNOWN",
+        "licenseName": "UNKNOWN",
+        "licenseEvidenceUrl": "UNKNOWN",
+        "writtenPermissionPath": "UNKNOWN"
+      },
+      "permissions": {
+        "commercialUse": "UNKNOWN",
+        "embedOrPublicPerformance": "UNKNOWN",
+        "attributionRequired": "UNKNOWN",
+        "modificationAllowed": "UNKNOWN",
+        "assetRedistributionAllowed": "UNKNOWN",
+        "generatedOutputUse": "UNKNOWN"
+      },
+      "riskEvidence": [
+        {
+          "url": "https://www.icongenerators.net/terms.html",
+          "reviewedAt": "2026-08-31",
+          "note": "Current IconGenerators terms prohibit copying, republishing, embedding, framing, mirroring, proxying and hotlinking site resources without prior written permission. These terms are a risk signal, not proof that this exact binary came from that site."
+        }
+      ],
+      "releaseDecision": {
+        "status": "REVIEW_REQUIRED",
+        "allowedNow": "Existing live state was not changed by LEGAL-001.",
+        "blocked": [
+          "Do not publish another copy or move the SWF to a new host.",
+          "Do not claim verified authorization, official affiliation or commercial-use permission.",
+          "Do not use the file as the basis for new commercial game inventory until exact written evidence is attached."
+        ]
+      }
+    },
+    {
+      "id": "oval-face-swf",
+      "gameName": "Oval Face Icon Generator",
+      "publicPage": "https://mysquarefaceicon.com/oval-face-icon-generator",
+      "deliveryType": "LOCAL_RUFFLE_SWF",
+      "currentState": "LIVE_EXISTING",
+      "source": {
+        "status": "PARTIALLY_DOCUMENTED",
+        "sourceName": "Project repository file",
+        "sourceUrl": "UNKNOWN",
+        "repositoryPath": "public/games/oval-face.swf",
+        "sha256": "80E974D8EF4AD5E849E93464EAEA1833620C269BAC30601D960F5438C285E09B",
+        "gitIntroduced": {
+          "commit": "daeb291088cb65bf6860fdc24766919563fb7217",
+          "date": "2026-05-26T01:19:26+08:00",
+          "subject": "oval face 更新"
+        },
+        "projectClaim": "Historical SEO log entries described the Oval SWF as authorized. That wording is not license evidence; active governance documents now keep the exact binary at UNKNOWN.",
+        "claimEvidencePaths": [
+          "SEO_LOG.md (historical entries)"
+        ],
+        "correctedGovernancePaths": [
+          "SEO_PLAN.md",
+          "public/games/README.md"
+        ]
+      },
+      "author": {
+        "status": "UNKNOWN",
+        "name": "UNKNOWN",
+        "candidate": "UNKNOWN"
+      },
+      "rightsHolder": {
+        "status": "UNKNOWN",
+        "name": "UNKNOWN"
+      },
+      "license": {
+        "status": "UNKNOWN",
+        "licenseName": "UNKNOWN",
+        "licenseEvidenceUrl": "UNKNOWN",
+        "writtenPermissionPath": "UNKNOWN"
+      },
+      "permissions": {
+        "commercialUse": "UNKNOWN",
+        "embedOrPublicPerformance": "UNKNOWN",
+        "attributionRequired": "UNKNOWN",
+        "modificationAllowed": "UNKNOWN",
+        "assetRedistributionAllowed": "UNKNOWN",
+        "generatedOutputUse": "UNKNOWN"
+      },
+      "riskEvidence": [],
+      "releaseDecision": {
+        "status": "REVIEW_REQUIRED",
+        "allowedNow": "Existing live state was not changed by LEGAL-001.",
+        "blocked": [
+          "Do not publish another copy or move the SWF to a new host.",
+          "Do not claim verified authorization, authorship or commercial-use permission.",
+          "Do not use the file as the basis for new commercial game inventory until exact written evidence is attached."
+        ]
+      }
+    },
+    {
+      "id": "pixel-avatar-external",
+      "gameName": "Pixel Art Avatar Icon Generator",
+      "publicPage": "https://mysquarefaceicon.com/pixel-art-avatar-icon-generator",
+      "deliveryType": "EXTERNAL_LINK",
+      "currentState": "LIVE_EXISTING",
+      "source": {
+        "status": "VERIFIED",
+        "sourceName": "IconGenerators",
+        "sourceUrl": "https://www.icongenerators.net/pixelavatar.html",
+        "repositoryPath": "NOT_APPLICABLE",
+        "sha256": "NOT_APPLICABLE",
+        "projectBehavior": "The project links to the original page and does not host the generator or its assets."
+      },
+      "author": {
+        "status": "VERIFIED",
+        "name": "Eichi Zerona / えいちぜろな (@h071019)",
+        "evidenceUrl": "https://www.icongenerators.net/pixelavatar.html"
+      },
+      "rightsHolder": {
+        "status": "OFFICIAL_SITE_ATTRIBUTION",
+        "name": "IconGenerators / Eichi Zerona",
+        "evidenceUrl": "https://www.icongenerators.net/terms.html"
+      },
+      "license": {
+        "status": "RESTRICTED",
+        "licenseName": "IconGenerators custom Terms of Use",
+        "licenseEvidenceUrl": "https://www.icongenerators.net/terms.html",
+        "writtenPermissionPath": "NOT_APPLICABLE_FOR_DIRECT_LINK"
+      },
+      "permissions": {
+        "commercialUse": {
+          "status": "RESTRICTED",
+          "note": "Generated images are allowed for personal online activities. The official terms prohibit use in products made by companies or commercial organizations and prohibit selling or profiting from generated images."
+        },
+        "embedOrPublicPerformance": {
+          "status": "NO",
+          "note": "The official terms prohibit embedding/framing/mirroring/proxying without prior written permission. Live headers also send X-Frame-Options SAMEORIGIN and CSP frame-ancestors 'self'."
+        },
+        "attributionRequired": {
+          "status": "CONDITIONAL",
+          "note": "A link is appreciated for ordinary personal online use; attribution and a link are required for permitted personal, non-commercial printed/video/game uses described by the terms."
+        },
+        "modificationAllowed": {
+          "status": "YES_GENERATED_IMAGES_ONLY",
+          "note": "The terms allow editing generated images. They do not allow copying or modifying the generator, scripts, data or other site resources without written permission."
+        },
+        "assetRedistributionAllowed": {
+          "status": "NO",
+          "note": "Copying, republishing, redistributing, hotlinking or systematically downloading site resources is prohibited without written permission."
+        },
+        "directLinkAllowed": {
+          "status": "YES",
+          "note": "The official terms explicitly allow linking to individual generator pages."
+        }
+      },
+      "evidence": [
+        {
+          "url": "https://www.icongenerators.net/pixelavatar.html",
+          "reviewedAt": "2026-08-31",
+          "note": "Official generator page identifies the creator and presents the generated-image terms."
+        },
+        {
+          "url": "https://www.icongenerators.net/terms.html",
+          "reviewedAt": "2026-08-31",
+          "note": "Official terms define personal-use permissions, commercial restrictions, no-embed/no-copy rules and direct-link permission."
+        },
+        {
+          "url": "https://www.icongenerators.net/pixelavatar.html",
+          "reviewedAt": "2026-08-31",
+          "type": "HTTP_HEADERS",
+          "note": "HTTP 200; X-Frame-Options: SAMEORIGIN; Content-Security-Policy: frame-ancestors 'self'."
+        }
+      ],
+      "releaseDecision": {
+        "status": "DIRECT_LINK_ONLY",
+        "allowed": [
+          "Keep clear source attribution.",
+          "Open the official generator in a new tab.",
+          "Link directly to the individual generator page."
+        ],
+        "blocked": [
+          "Do not iframe, mirror, proxy or rehost the generator.",
+          "Do not hotlink or copy its images, scripts, data files or other resources.",
+          "Do not describe generated images as commercially licensed."
+        ]
+      }
+    }
+  ]
+}
