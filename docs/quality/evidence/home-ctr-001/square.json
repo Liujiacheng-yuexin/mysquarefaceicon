@@ -1,0 +1,10 @@
+{
+  "name": "square",
+  "command": "node scripts/check-square-homepage.mjs",
+  "startedAt": "2026-09-22T07:31:20.390Z",
+  "finishedAt": "2026-09-22T07:31:20.642Z",
+  "exitCode": 1,
+  "signal": null,
+  "stdout": "",
+  "stderr": "MIG-SQUARE-001 check failed: lib/games/game-player-model.ts changed outside its confirmed migration boundary\n+ actual - expected\n\n+ '26b6695fba8b6a5956d499ecfa2f61c0747b39cafd2d216ed23ba1879adabe78'\n- '42672e8d0917e9d7d6a1b28137e505ecd4d7b09ba40e3c971751b6d7f3fbe84c'\n\n"
+}

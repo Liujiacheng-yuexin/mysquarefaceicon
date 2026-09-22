@@ -1,0 +1,392 @@
+{
+  "task": "ABOUT-001",
+  "mode": "PROPOSAL_ONLY_IN_MEMORY",
+  "recordedAt": "2026-09-02T06:16:20.455Z",
+  "userRequest": "现在进行下一步开发",
+  "userProposalConfirmation": "NOT_RECEIVED",
+  "status": "PROPOSAL_AWAITING_CONFIRMATION",
+  "url": "/about-us",
+  "sourcePath": "app/about-us/page.tsx",
+  "sourceSha256": "7306e479af68c8035283da556f9cec215028d9afcd2b066141663829dede7198",
+  "proposedSourceSha256": "aa3d12179b517b6ca01fe7147fc5e5dafe11ba316cca981811f6b2600c07bedb",
+  "frozenRegionSha256": "1fa66ad37bc918b8f99b2fd907e8b2c0e32db8435d71a6c1badca8c3cf689e27",
+  "editCount": 7,
+  "edits": [
+    {
+      "id": "metadata-description",
+      "label": "metadata.description",
+      "old": "Learn about My Square Face Icon, a free browser-based square face generator focused on cute profile icons, privacy, and original avatar resources.",
+      "new": "Learn about My Square Face Icon, its browser-based avatar tools, curated examples, community gallery, privacy practices, and unverified game-file rights.",
+      "sourceLine": 10
+    },
+    {
+      "id": "twitter-description",
+      "label": "metadata.twitter.description",
+      "old": "Learn why My Square Face Icon exists and how the site approaches free avatar tools, privacy, and original content.",
+      "new": "Learn how My Square Face Icon handles avatar tools, curated examples, community submissions, privacy, and unverified game-file rights.",
+      "sourceLine": 26
+    },
+    {
+      "id": "gallery-heading",
+      "label": "What We Provide / third card H3",
+      "old": "Original gallery ideas",
+      "new": "Avatar inspiration",
+      "sourceLine": 104
+    },
+    {
+      "id": "gallery-paragraph",
+      "label": "What We Provide / third card paragraph",
+      "old": "Gallery examples are created for this site as inspiration. They are not copied from competitors, user comments, or third-party art packs.",
+      "new": "The homepage shows site-curated icon examples. The gallery includes simple style examples and approved community submissions when available. Selection or moderation does not establish authorship or grant image-use permissions.",
+      "sourceLine": 105
+    },
+    {
+      "id": "rights-heading",
+      "label": "Rights section H2",
+      "old": "Originality and Rights",
+      "new": "Game Files and Image Rights",
+      "sourceLine": 111
+    },
+    {
+      "id": "rights-paragraph",
+      "label": "Rights section / first paragraph",
+      "old": "The site does not copy competitor page text, screenshots, image libraries, comments, or downloadable assets. The main tool uses the square face game file that was provided for this project, while new examples and support content are written specifically for My Square Face Icon.",
+      "new": "Square and Oval run third-party Flash (SWF) files through Ruffle. We have not verified the original source, rights holder, or permissions for the exact files used here, including hosting, public use, redistribution, and use of generated images. The site's availability and examples do not establish authorization or grant third-party rights.",
+      "sourceLine": 113
+    },
+    {
+      "id": "gallery-link-description",
+      "label": "Next Product Direction / Browse the gallery paragraph",
+      "old": "See original square face icon ideas for style inspiration.",
+      "new": "Browse style ideas and approved community submissions when available.",
+      "sourceLine": 144
+    }
+  ],
+  "checks": {
+    "sourceJsxParse": "PASS",
+    "isolatedSsrPreview": "PASS_WITH_HEADER_FOOTER_STUBS_NOT_A_BROWSER",
+    "sevenExactReplacementsOnly": "PASS",
+    "acceptedKw02Sentence": "UNCHANGED",
+    "metadataExceptTwoDescriptions": "UNCHANGED",
+    "mainHrefSequence": "UNCHANGED",
+    "schemaJson": "UNCHANGED",
+    "protectedFilePathsChecked": 107,
+    "protectedSourceChanged": false
+  },
+  "before": {
+    "metadata": {
+      "title": "About My Square Face Icon",
+      "description": "Learn about My Square Face Icon, a free browser-based square face generator focused on cute profile icons, privacy, and original avatar resources.",
+      "alternates": {
+        "canonical": "https://mysquarefaceicon.com/about-us"
+      },
+      "openGraph": {
+        "type": "website",
+        "url": "https://mysquarefaceicon.com/about-us",
+        "title": "About My Square Face Icon",
+        "description": "A practical, privacy-aware avatar tool site for making cute square face icons in the browser.",
+        "images": [
+          "/og-image.svg"
+        ]
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "title": "About My Square Face Icon",
+        "description": "Learn why My Square Face Icon exists and how the site approaches free avatar tools, privacy, and original content.",
+        "images": [
+          "/og-image.svg"
+        ]
+      }
+    },
+    "headings": {
+      "h1": [
+        "About My Square Face Icon"
+      ],
+      "h2": [
+        "About My Square Face Icon: Why This Site Exists",
+        "What We Provide",
+        "Originality and Rights",
+        "Privacy and Community",
+        "Next Product Direction"
+      ],
+      "h3": [
+        "Free square face generator",
+        "Helpful avatar guides",
+        "Original gallery ideas",
+        "Use the generator",
+        "Free avatar maker guide",
+        "Browse the gallery",
+        "Contact the project"
+      ]
+    },
+    "paragraphCount": 16,
+    "keywordCount": 3,
+    "links": [
+      {
+        "href": "/#maker",
+        "text": "Back to the generator"
+      },
+      {
+        "href": "/privacy-policy",
+        "text": "Privacy Policy"
+      },
+      {
+        "href": "/terms-of-service",
+        "text": "Terms of Service"
+      },
+      {
+        "href": "/editorial-policy",
+        "text": "Editorial Policy"
+      },
+      {
+        "href": "/#maker",
+        "text": "Use the generator Start with the core square face generator experience."
+      },
+      {
+        "href": "/free-avatar-maker",
+        "text": "Free avatar maker guide Learn how to use the site as a simple free avatar maker."
+      },
+      {
+        "href": "/gallery",
+        "text": "Browse the gallery See original square face icon ideas for style inspiration."
+      },
+      {
+        "href": "/contact",
+        "text": "Contact the project Send generator feedback, privacy questions, or correction requests."
+      }
+    ],
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "AboutPage",
+        "name": "About My Square Face Icon",
+        "description": "About page for My Square Face Icon, a free browser-based square face generator and avatar resource site.",
+        "url": "https://mysquarefaceicon.com/about-us",
+        "mainEntity": {
+          "@type": "Organization",
+          "name": "My Square Face Icon",
+          "url": "https://mysquarefaceicon.com",
+          "logo": "https://mysquarefaceicon.com/favicon512.png"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://mysquarefaceicon.com"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "About Us",
+            "item": "https://mysquarefaceicon.com/about-us"
+          }
+        ]
+      }
+    ]
+  },
+  "proposed": {
+    "metadata": {
+      "title": "About My Square Face Icon",
+      "description": "Learn about My Square Face Icon, its browser-based avatar tools, curated examples, community gallery, privacy practices, and unverified game-file rights.",
+      "alternates": {
+        "canonical": "https://mysquarefaceicon.com/about-us"
+      },
+      "openGraph": {
+        "type": "website",
+        "url": "https://mysquarefaceicon.com/about-us",
+        "title": "About My Square Face Icon",
+        "description": "A practical, privacy-aware avatar tool site for making cute square face icons in the browser.",
+        "images": [
+          "/og-image.svg"
+        ]
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "title": "About My Square Face Icon",
+        "description": "Learn how My Square Face Icon handles avatar tools, curated examples, community submissions, privacy, and unverified game-file rights.",
+        "images": [
+          "/og-image.svg"
+        ]
+      }
+    },
+    "headings": {
+      "h1": [
+        "About My Square Face Icon"
+      ],
+      "h2": [
+        "About My Square Face Icon: Why This Site Exists",
+        "What We Provide",
+        "Game Files and Image Rights",
+        "Privacy and Community",
+        "Next Product Direction"
+      ],
+      "h3": [
+        "Free square face generator",
+        "Helpful avatar guides",
+        "Avatar inspiration",
+        "Use the generator",
+        "Free avatar maker guide",
+        "Browse the gallery",
+        "Contact the project"
+      ]
+    },
+    "paragraphCount": 16,
+    "keywordCount": 3,
+    "links": [
+      {
+        "href": "/#maker",
+        "text": "Back to the generator"
+      },
+      {
+        "href": "/privacy-policy",
+        "text": "Privacy Policy"
+      },
+      {
+        "href": "/terms-of-service",
+        "text": "Terms of Service"
+      },
+      {
+        "href": "/editorial-policy",
+        "text": "Editorial Policy"
+      },
+      {
+        "href": "/#maker",
+        "text": "Use the generator Start with the core square face generator experience."
+      },
+      {
+        "href": "/free-avatar-maker",
+        "text": "Free avatar maker guide Learn how to use the site as a simple free avatar maker."
+      },
+      {
+        "href": "/gallery",
+        "text": "Browse the gallery Browse style ideas and approved community submissions when available."
+      },
+      {
+        "href": "/contact",
+        "text": "Contact the project Send generator feedback, privacy questions, or correction requests."
+      }
+    ],
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "AboutPage",
+        "name": "About My Square Face Icon",
+        "description": "About page for My Square Face Icon, a free browser-based square face generator and avatar resource site.",
+        "url": "https://mysquarefaceicon.com/about-us",
+        "mainEntity": {
+          "@type": "Organization",
+          "name": "My Square Face Icon",
+          "url": "https://mysquarefaceicon.com",
+          "logo": "https://mysquarefaceicon.com/favicon512.png"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://mysquarefaceicon.com"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "About Us",
+            "item": "https://mysquarefaceicon.com/about-us"
+          }
+        ]
+      }
+    ]
+  },
+  "descriptionLengths": {
+    "current": 146,
+    "proposed": 153,
+    "currentTwitter": 114,
+    "proposedTwitter": 134
+  },
+  "fileHashes": {
+    "app/about-us/page.tsx": "7306e479af68c8035283da556f9cec215028d9afcd2b066141663829dede7198",
+    "app/terms-of-service/page.tsx": "8121043e9a474a19a5c1c366ed80e03db93ec6bc8dc1ed9eda63ef60d85c83f5",
+    "lib/locales.ts": "937e6c91f0cd3c67bdb9a5a1e865fe9c9829495d5d119ad464a4feaaf7ea3d36",
+    "components/HomePage.tsx": "6f112888eca633682594d9ecc717566142a3a78547fb48146c73351147b6d93b",
+    "app/gallery/page.tsx": "352e649d9ff6592e62f74aa91f7f3cf3cb0e7b48d4671d553d4eb0106c6dd12e",
+    "data/curated-icon-ideas.ts": "b51d0f7b57249b1e3cfe0e16bede29688154814168a2c6271a7388ad10933dce",
+    "data/game-license-registry.json": "fb0b94f56ffa3c7feca89ee136c73795a95d993de0ebe16d81ca8041da4a8924",
+    "public/games/square-face.swf": "b1d074c95f15b7dcecdbc2405abf820ead985669bb12cd47247fc8ea7537bc1e",
+    "public/games/oval-face.swf": "80e974d8ef4ad5e849e93464eaea1833620c269bac30601d960f5438c285e09b",
+    "components/game-player/GamePlayer.tsx": "142cf22ac3a485c78285d920bbe84114f3931a38f0e9aec067bbf8ca2e562d5c",
+    "package.json": "c33794391ed5e436f48459e5035b5befa1fdd5e6e3e268f0ff1b45835b682428"
+  },
+  "protectedInventoryReference": "docs/quality/evidence/terms-001-rights-copy/checks.json#verificationFollowUp.source",
+  "protectedInventorySha256": "95c5dcee82c03732b714c756b5f968cf491ff72b0b3fe72c6c5bd51890aa208b",
+  "applicationChecksRerun": [],
+  "applicationWritten": false,
+  "buildOrRuntimeChanged": false,
+  "boardVisual": "UNVERIFIED; prior local-file browser restriction respected",
+  "production": "UNVERIFIED_UNDEPLOYED",
+  "licenseGate": "UNKNOWN_UNCHANGED",
+  "migrationStarted": false,
+  "branch": "codex/game-platform-rebuild",
+  "head": "c6d30087c2c03a7c4eb8d5bfe6e055e9b8d40228",
+  "sourceReview": {
+    "about": "Seven scoped original/provided/source-assurance surfaces; no finding that copying has been proved",
+    "gallery": "Current source includes built-in style examples plus approved community CommentSection; do not imply all images are site-original or all are user submissions",
+    "localeCandidate": "lib/locales.ts:101 authorized SWF remains; field-reference scan found no current page-component features consumer; production visibility was not tested; out of scope"
+  },
+  "governanceValidation": {
+    "status": "PASS",
+    "recordedAt": "2026-09-02T06:24:24.139Z",
+    "exitCode": 0,
+    "boardVersion": "1.46",
+    "boardSyntaxAndProposalFocus": "PASS",
+    "staticDataAgreement": "PASS",
+    "previousAcceptancesPreserved": 22,
+    "aboutAcceptance": "NOT_RECEIVED",
+    "termsAcceptance": "PRESERVED",
+    "pf01Evidence": "UNCHANGED",
+    "cssAndRoadmap": "UNCHANGED",
+    "taskUpdates": "ONLY_DATED_ABOUT_PROPOSAL_APPEND",
+    "evidenceJsonAndProposalCopy": "PASS",
+    "sourceFilesUnchanged": 107,
+    "sourceProposalCandidate": "SEVEN_IN_MEMORY_REGIONS_ONLY",
+    "changedGovernanceFiles": 8,
+    "whitespace": "PASS",
+    "migrationStarted": false,
+    "applicationWritten": false,
+    "fullApplicationQa": "NOT_RERUN",
+    "boardVisual": "UNVERIFIED_PRIOR_LOCAL_FILE_POLICY_BOUNDARY",
+    "release": "NOT_PASSED_UNDEPLOYED",
+    "branch": "codex/game-platform-rebuild",
+    "head": "c6d30087c2c03a7c4eb8d5bfe6e055e9b8d40228",
+    "projectAndBoardDiffChecks": [
+      {
+        "command": "git diff --check",
+        "exitCode": 0,
+        "output": "warning: in the working copy of '.gitignore', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'LAUNCH_CHECKLIST.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'PAGE_PLAN.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'PROJECT_BRIEF.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'SEO_LOG.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'SEO_RULES.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/about-us/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/blog/avatar-maker-without-signup/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/blog/cute-profile-picture-ideas/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/blog/discord-avatar-size-guide/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/blog/how-to-make-a-cute-discord-profile-icon/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/blog/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/blog/tiktok-profile-icon-ideas/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/contact/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/editorial-policy/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/gallery/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/globals.css', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/oval-face-icon-generator/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/pixel-art-avatar-icon-generator/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/privacy-policy/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/robots.ts', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/sitemap.ts', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/terms-of-service/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'components/FlashGenerator.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'components/HomePage.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'components/SiteHeader.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'docs/legal/game-rights.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'docs/quality/installation-and-board-workflow.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'package.json', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'public/games/README.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'scripts/README.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'scripts/post-deploy-check.mjs', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'scripts/seo-check.mjs', LF will be replaced by CRLF the next time Git touches it\n"
+      },
+      {
+        "command": "git -C F:/LYXGIT/Liu-library diff --check -- F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+        "exitCode": 0,
+        "output": ""
+      }
+    ],
+    "changedFiles": [
+      "F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+      "D:/LYXGIT/mysquarefaceicon/docs/legal/about-rights-consistency-proposal.md",
+      "D:/LYXGIT/mysquarefaceicon/docs/quality/evidence/about-001-rights-copy/proposal-checks.json",
+      "D:/LYXGIT/mysquarefaceicon/LAUNCH_CHECKLIST.md",
+      "D:/LYXGIT/mysquarefaceicon/PAGE_PLAN.md",
+      "D:/LYXGIT/mysquarefaceicon/SEO_LOG.md",
+      "D:/LYXGIT/mysquarefaceicon/docs/legal/game-rights.md",
+      "D:/LYXGIT/mysquarefaceicon/docs/quality/evidence/release-2026-09-02/README.md"
+    ]
+  },
+  "proposalPath": "docs/legal/about-rights-consistency-proposal.md"
+}

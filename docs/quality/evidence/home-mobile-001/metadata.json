@@ -1,0 +1,10 @@
+{
+  "name": "metadata",
+  "command": "node scripts/run-game-metadata-check.mjs",
+  "startedAt": "2026-09-22T07:57:03.494Z",
+  "finishedAt": "2026-09-22T07:57:06.443Z",
+  "exitCode": 0,
+  "signal": null,
+  "stdout": "META-001 validation passed\n- Square, Oval, Pixel, and future game routes use the shared Game Data metadata builder\n- title, description, canonical, OG, Twitter, and one H1 resolve from validated records or the shared detail template\n- frozen legacy canonicals and current index states remain unchanged\n- missing required SEO fields and duplicate index metadata fail closed\n",
+  "stderr": ""
+}

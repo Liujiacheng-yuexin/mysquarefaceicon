@@ -1,0 +1,40 @@
+{
+  "version": "1.80",
+  "taskId": "RELATED-001",
+  "source": {
+    "beforeSha256LF": "d52adae5f4e58886ff467df0a335128ba5b1752cd9875d085edd29f452a27e22",
+    "afterSha256LF": "dcabb4e17228e253afe758d299a67ec7c514011272a39eb11575e25963ab4ae6",
+    "edits": [
+      {
+        "before": "import { requireLegacyGamePath } from \"@/lib/games/routes\";\n",
+        "after": "import { getPublicGameHref, requireLegacyGamePath } from \"@/lib/games/routes\";\n"
+      },
+      {
+        "before": "",
+        "after": "import { selectRelatedGames } from \"@/lib/recommendations/related-games\";\n"
+      },
+      {
+        "before": "",
+        "after": "const ovalRelatedGames = selectRelatedGames(ovalFaceGame).recommendations.map(({ game }) => {\n  const reviewedLegacyCard = ovalPage.relatedCards.find((card) => card.gameId === game.id);\n  return {\n    gameId: game.id,\n    title: reviewedLegacyCard?.title ?? game.name,\n    text: reviewedLegacyCard?.text ?? game.content.summary,\n    href: getPublicGameHref(game),\n    external: game.pageType === \"EXTERNAL_TOOL\"\n  };\n});\n"
+      },
+      {
+        "before": "        <section className=\"content-band alt-band\">\n",
+        "after": "        {ovalRelatedGames.length > 0 ? (\n          <section className=\"content-band alt-band\" aria-labelledby=\"related-avatar-games-heading\">\n            <div className=\"section-heading\">\n<p className=\"eyebrow\">{content.headings.relatedEyebrow}</p>\n<h2 id=\"related-avatar-games-heading\">{content.headings.related}</h2>\n            </div>\n            <div className=\"related-grid\" aria-label=\"Related avatar games and tools\">\n              {ovalRelatedGames.map((item) => (\n                <a\n                  className={`related-card${item.external ? \" route-game-link-external\" : \"\"}`}\n                  data-game-id={item.gameId}\n                  data-game-page-type={item.external ? \"EXTERNAL_TOOL\" : \"GAME\"}\n                  href={item.href}\n                  key={item.gameId}\n                >\n                  <Sparkles aria-hidden=\"true\" size={20} />\n                  {item.external ? <span className=\"route-game-type\">External tool</span> : null}\n                  <h3>{item.title}</h3>\n                  <p>{item.text}</p>\n                  {item.external ? <span className=\"route-card-action\">View access details</span> : null}\n                </a>\n              ))}\n            </div>\n          </section>\n        ) : null}\n\n        <section className=\"content-band\" aria-labelledby=\"avatar-guides-heading\">\n"
+      },
+      {
+        "before": "<p className=\"eyebrow\">{content.headings.relatedEyebrow}</p>\n<h2>{content.headings.related}</h2>\n",
+        "after": "            <h2 id=\"avatar-guides-heading\">Avatar guides and inspiration</h2>\n"
+      },
+      {
+        "before": "          <div className=\"related-grid\">\n            {ovalPage.relatedCards.map((item) => (\n              <a className=\"related-card\" href={item.href} key={item.gameId}>\n                <Sparkles aria-hidden=\"true\" size={20} />\n                <h3>{item.title}</h3>\n                <p>{item.text}</p>\n              </a>\n            ))}\n",
+        "after": "          <div className=\"related-grid\" aria-label=\"Avatar guides and inspiration\">\n"
+      }
+    ]
+  },
+  "markup": {
+    "beforeMainSha256": "be647c87859292b98ebb31382705b5d7e40bca6cbd3d6731297c1a881757ecae",
+    "afterMainSha256": "c212acfb88d35b0184713e9993d2afef88c5ca37960de6f5ab88e3eee2eeebb9",
+    "before": "><div class=\"section-heading\"><p class=\"eyebrow\">More avatar makers</p><h2>Related Avatar Games and Tools</h2></div><div class=\"related-grid\"><a class=\"related-card\" href=\"/\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-sparkles\" aria-hidden=\"true\"><path d=\"M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z\"></path><path d=\"M20 3v4\"></path><path d=\"M22 5h-4\"></path><path d=\"M4 17v2\"></path><path d=\"M5 18H3\"></path></svg><h3>Square Face Generator</h3><p>Play the square-shaped version of the classic face icon maker.</p></a",
+    "after": " aria-labelledby=\"related-avatar-games-heading\"><div class=\"section-heading\"><p class=\"eyebrow\">More avatar makers</p><h2 id=\"related-avatar-games-heading\">Related Avatar Games and Tools</h2></div><div class=\"related-grid\" aria-label=\"Related avatar games and tools\"><a class=\"related-card\" data-game-id=\"square-face\" data-game-page-type=\"GAME\" href=\"/\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-sparkles\" aria-hidden=\"true\"><path d=\"M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z\"></path><path d=\"M20 3v4\"></path><path d=\"M22 5h-4\"></path><path d=\"M4 17v2\"></path><path d=\"M5 18H3\"></path></svg><h3>Square Face Generator</h3><p>Play the square-shaped version of the classic face icon maker.</p></a><a class=\"related-card route-game-link-external\" data-game-id=\"pixel-art-avatar\" data-game-page-type=\"EXTERNAL_TOOL\" href=\"/pixel-art-avatar-icon-generator\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-sparkles\" aria-hidden=\"true\"><path d=\"M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z\"></path><path d=\"M20 3v4\"></path><path d=\"M22 5h-4\"></path><path d=\"M4 17v2\"></path><path d=\"M5 18H3\"></path></svg><span class=\"route-game-type\">External tool</span><h3>Pixel Art Avatar Icon Generator</h3><p>Open the original icongenerators.net pixel avatar maker with visible attribution, usage tips, and a direct-link-only boundary.</p><span class=\"route-card-action\">View access details</span></a></div></section><section class=\"content-band\" aria-labelledby=\"avatar-guides-heading\"><div class=\"section-heading\"><h2 id=\"avatar-guides-heading\">Avatar guides and inspiration</h2></div><div class=\"related-grid\" aria-label=\"Avatar guides and inspiration\""
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "at": "2026-09-22T08:53:09.720Z",
+  "exitCode": 0,
+  "stdout": "Legacy compatibility passed: 20 exact inverses; 40 drift fixtures rejected; old goldens unchanged.\n",
+  "stderr": ""
+}

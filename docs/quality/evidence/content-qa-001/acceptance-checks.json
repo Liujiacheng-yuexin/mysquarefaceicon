@@ -1,0 +1,131 @@
+{
+  "taskId": "CONTENT-QA-001",
+  "boardVersion": "1.71",
+  "recordedAt": "2026-09-03T14:14:26.356Z",
+  "request": "CONTENT-QA-001 验收通过，现在进行下一步开发",
+  "scope": "CONTENT_STANDARD_ONLY",
+  "userAcceptanceReceived": true,
+  "localOnly": true,
+  "sourceAcceptanceCount": 30,
+  "boardAcceptance": {
+    "result": "通过",
+    "scope": "CONTENT_STANDARD_ONLY",
+    "acceptedAt": "2026-09-03T14:14:26.356Z",
+    "source": "用户明确回复“CONTENT-QA-001 验收通过”，并要求“现在进行下一步开发”",
+    "localOnly": true,
+    "note": "仅验收 v1.70 的游戏内容标准与审核模板；不等于三页事实复审、自动内容门禁、实际许可或生产通过。原 QA 日期及 29 条既有验收保留。按当前指令只准备 GAMES-INDEX-001 目录方案，确认前不编码或部署。",
+    "evidencePath": "docs/quality/evidence/content-qa-001/acceptance-checks.json"
+  },
+  "originalEvidence": {
+    "path": "docs/quality/evidence/content-qa-001/checks.json",
+    "sha256": "40371180bbf00e36a69038596644f3c4701e7c869b00548cd29c80a167ccb641",
+    "recordedAt": "2026-09-03T13:42:25.273Z",
+    "verifiedAt": "2026-09-03T13:47:13.574Z",
+    "unchanged": true
+  },
+  "standard": {
+    "path": "docs/content/game-page-quality-standard.md",
+    "sha256": "e0f2d02ad0792e6bbe0b6fc13c478a856efe86d51a4bf78f1b05c62a10c2ca3b"
+  },
+  "template": {
+    "path": "docs/content/game-page-review-template.md",
+    "sha256": "3b690beea6cb73e5b16246053853c31e1db6d100c977d7f02d2a868067d0a7d3"
+  },
+  "priorAcceptanceIds": [
+    "AUDIT-001",
+    "BASE-001",
+    "LEGAL-001",
+    "STRAT-001",
+    "BACKUP-001",
+    "GAME-DATA-001",
+    "PLAYER-001",
+    "ROUTE-001",
+    "COMP-001",
+    "META-001",
+    "HOME-IA-001",
+    "HOME-HERO-001",
+    "HOME-DISC-001",
+    "HOME-GALLERY-001",
+    "PERF-HOME-001",
+    "GAME-TPL-001",
+    "OP-11",
+    "AI-01",
+    "KW-02-SAMPLE",
+    "KW-02",
+    "PF-01",
+    "TERMS-001",
+    "ABOUT-001",
+    "EDITORIAL-001",
+    "GALLERY-001",
+    "LOCALE-001",
+    "MIG-SQUARE-001",
+    "MIG-OVAL-001",
+    "MIG-PIXEL-001"
+  ],
+  "preacceptanceRecheck": {
+    "command": "node C:/Users/liu/AppData/Local/Temp/mysquarefaceicon-content-qa-v170-1fc57964925a4354a1ee2a2e73e447b3/verify.cjs final",
+    "recordedAt": "2026-09-03T14:14:26.316Z",
+    "result": "通过",
+    "counts": {
+      "assertions": 180,
+      "fieldGroups": 14,
+      "fieldPathsPerRecord": 38,
+      "fieldAssertions": 114,
+      "localReferences": 20,
+      "externalReferences": 6,
+      "sourceFiles": 154,
+      "historicalJson": 25,
+      "screenshotPaths": 173,
+      "artifacts": 18,
+      "sourceAcceptances": 29,
+      "staleCacheFixtures": 6
+    },
+    "boundary": "文档与离线看板检查，不是应用或生产 QA；原 checks.json 未更新"
+  },
+  "postWriteVerification": {
+    "result": "通过",
+    "recordedAt": "2026-09-03T14:19:09.352Z",
+    "evidencePath": "docs/quality/evidence/games-index-001/proposal-checks.json",
+    "counts": {
+      "assertions": 194,
+      "sourceAcceptances": 30,
+      "priorAcceptancesPreserved": 29,
+      "staleCacheFixtures": 6,
+      "localDocumentLinks": 16,
+      "externalPrimarySources": 2,
+      "source": 154,
+      "historical-json": 26,
+      "screenshot-path": 173,
+      "artifact": 18,
+      "swf": 2,
+      "registry": 1,
+      "cancelled-archive": 3,
+      "accepted-standard": 1,
+      "accepted-template": 1,
+      "content-plan": 1
+    },
+    "oldAcceptancesUnchanged": true,
+    "standardAndTemplateByteIdentical": true,
+    "originalChecksByteIdentical": true,
+    "boardOnlyOffline": true
+  },
+  "nextTaskId": "GAMES-INDEX-001",
+  "nextTaskBoundary": "PROPOSAL_ONLY; explicit confirmation required before coding",
+  "proposalPath": "docs/product/games-index-directory-proposal.md",
+  "cancelledMaterialTaskReopened": false,
+  "websiteCodeChanged": false,
+  "committed": false,
+  "pushed": false,
+  "deployed": false,
+  "productionSeoRun": false,
+  "affectedWebsiteUrls": [],
+  "completedFeatures": [
+    "CONTENT-QA-001 standards and worksheet user acceptance recorded; no website implementation"
+  ],
+  "unverified": [
+    "No application type/lint/tests, Next/OpenNext, HTTP/local SEO, browser/mobile or CWV rerun",
+    "No production deployment or production SEO validation",
+    "Standard acceptance is not human review of existing or future pages"
+  ],
+  "rollback": "仅逆向本轮治理增量；除用户另有明确指令外不撤销本次源验收，不回退既有应用或恢复材料待办。"
+}

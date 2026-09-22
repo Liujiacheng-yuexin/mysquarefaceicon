@@ -1,0 +1,3232 @@
+{
+  "taskId": "CONTENT-QA-001",
+  "boardVersion": "1.70",
+  "recordedAt": "2026-09-03T13:42:25.273Z",
+  "verifiedAt": "2026-09-03T13:47:13.574Z",
+  "request": "继续进行开发",
+  "scope": "CONTENT_STANDARD_ONLY",
+  "localOnly": true,
+  "taskStatus": "待验收",
+  "implementationCompleted": true,
+  "userAcceptanceReceived": false,
+  "acceptancePrompt": "CONTENT-QA-001 验收通过",
+  "sourceAcceptanceCount": 29,
+  "standardPath": "docs/content/game-page-quality-standard.md",
+  "reviewTemplatePath": "docs/content/game-page-review-template.md",
+  "result": {
+    "documentFieldReferenceReview": "通过",
+    "boardJavaScriptAndOfflineVm": "通过",
+    "boundedChangesAndHistoricalPreservation": "通过",
+    "actualBoardVisual": "未验证 / 既有访问限制，不绕行",
+    "applicationTypeLintTests": "未执行 / 本轮不改运行代码",
+    "frameworkAndPlatformBuild": "未执行 / 原产物保留",
+    "applicationBrowserMobileHttpSeoCwv": "未验证 / 本轮未重跑",
+    "fullThreePageHumanContentReview": "未执行 / 本项只建立标准",
+    "release": "不通过 / 原未关闭风险保留；未部署"
+  },
+  "environment": {
+    "root": "D:\\LYXGIT\\mysquarefaceicon",
+    "branch": "codex/game-platform-rebuild",
+    "head": "c6d30087c2c03a7c4eb8d5bfe6e055e9b8d40228",
+    "node": "v22.16.0",
+    "platform": "win32",
+    "buildId": "h1IC4O9PXVmRzgZw2n74n"
+  },
+  "affectedWebsiteUrls": [],
+  "reviewedRecordUrls": [
+    "/",
+    "/oval-face-icon-generator",
+    "/pixel-art-avatar-icon-generator"
+  ],
+  "changedFiles": [
+    {
+      "path": "PAGE_PLAN.md",
+      "change": "bounded governance update",
+      "beforeNormalizedSha256": "e611bfa81372c1b57cdcc9d9b456aa397fca8f67f368e64c79cd7e9b7402c957",
+      "afterNormalizedSha256": "86bb25ac1257b26ffd8e4a2e282f57237c884caa87efa516d8c24cd95bd8a05e"
+    },
+    {
+      "path": "LAUNCH_CHECKLIST.md",
+      "change": "bounded governance update",
+      "beforeNormalizedSha256": "2cee1ba8ff1a141e615c986fa1098f42dc5035088d09b1f4daa5034ae19018db",
+      "afterNormalizedSha256": "e9bb1b10d3a7db3fb5dbec97735c60425f9beec6a7edcc7cf4f2be88548c126a"
+    },
+    {
+      "path": "CONTENT_PLAN.md",
+      "change": "bounded governance update",
+      "beforeNormalizedSha256": "de4c10d91adb049885880e908e6e6fb855202308f43705c0860008caf93e3b45",
+      "afterNormalizedSha256": "f18e848328c708a896ec8e988d55979ee6fd121689249e67bb8f6c1934211d4c"
+    },
+    {
+      "path": "SEO_LOG.md",
+      "change": "bounded governance update",
+      "beforeNormalizedSha256": "862f616032e45ed26648b465453f9f3ec12024fc135a1a24eab04d219e6d6838",
+      "afterNormalizedSha256": "806cffad004914a4fb69c7b308305d1775070e9c3df67f4fbea8781b9110ab8e"
+    },
+    {
+      "path": "F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+      "change": "bounded governance update",
+      "beforeNormalizedSha256": "3b1e7e781efa4f5b0d5727a41e8682783e6c486f539acde4436fcaaa823bdfb7",
+      "afterNormalizedSha256": "5b110595601271710571bbf3bb95b466385c5e0cf73c439e09587c824f40e9e4"
+    },
+    {
+      "path": "docs/content/game-page-quality-standard.md",
+      "sha256": "e0f2d02ad0792e6bbe0b6fc13c478a856efe86d51a4bf78f1b05c62a10c2ca3b",
+      "change": "new document"
+    },
+    {
+      "path": "docs/content/game-page-review-template.md",
+      "sha256": "3b690beea6cb73e5b16246053853c31e1db6d100c977d7f02d2a868067d0a7d3",
+      "change": "new document"
+    },
+    {
+      "path": "docs/quality/evidence/content-qa-001/README.md",
+      "sha256": "ff0bd0b26d33ab3844db86b5bf58b8c17a2a613f751bca86dd03b65604494be6",
+      "change": "new document"
+    },
+    {
+      "path": "docs/quality/evidence/content-qa-001/checks.json",
+      "change": "this evidence record; no self hash"
+    }
+  ],
+  "tests": {
+    "assertions": 180,
+    "fieldGroups": 14,
+    "fieldPathsPerRecord": 38,
+    "fieldAssertions": 114,
+    "localReferences": 20,
+    "externalReferences": 6,
+    "sourceFiles": 154,
+    "historicalJson": 25,
+    "screenshotPaths": 173,
+    "artifacts": 18,
+    "sourceAcceptances": 29,
+    "staleCacheFixtures": 6,
+    "checks": [
+      {
+        "name": "cancelled_active_file_absent:docs/legal/swf-license-evidence-request.md",
+        "result": "PASS"
+      },
+      {
+        "name": "cancelled_active_file_absent:docs/quality/evidence/license-gate-2026-09-03/checks.json",
+        "result": "PASS"
+      },
+      {
+        "name": "cancelled_active_file_absent:docs/quality/evidence/license-gate-2026-09-03/release-order-confirmation.json",
+        "result": "PASS"
+      },
+      {
+        "name": "protected_source_count",
+        "result": "PASS"
+      },
+      {
+        "name": "build_id_unchanged",
+        "result": "PASS"
+      },
+      {
+        "name": "bounded_document_after:PAGE_PLAN.md",
+        "result": "PASS",
+        "detail": {
+          "expected": "86bb25ac1257b26ffd8e4a2e282f57237c884caa87efa516d8c24cd95bd8a05e",
+          "actual": "86bb25ac1257b26ffd8e4a2e282f57237c884caa87efa516d8c24cd95bd8a05e"
+        }
+      },
+      {
+        "name": "unique_reverse_hunk:PAGE_PLAN.md",
+        "result": "PASS"
+      },
+      {
+        "name": "unique_reverse_hunk:PAGE_PLAN.md",
+        "result": "PASS"
+      },
+      {
+        "name": "document_reverse_roundtrip:PAGE_PLAN.md",
+        "result": "PASS"
+      },
+      {
+        "name": "bounded_document_after:LAUNCH_CHECKLIST.md",
+        "result": "PASS",
+        "detail": {
+          "expected": "e9bb1b10d3a7db3fb5dbec97735c60425f9beec6a7edcc7cf4f2be88548c126a",
+          "actual": "e9bb1b10d3a7db3fb5dbec97735c60425f9beec6a7edcc7cf4f2be88548c126a"
+        }
+      },
+      {
+        "name": "unique_reverse_hunk:LAUNCH_CHECKLIST.md",
+        "result": "PASS"
+      },
+      {
+        "name": "unique_reverse_hunk:LAUNCH_CHECKLIST.md",
+        "result": "PASS"
+      },
+      {
+        "name": "document_reverse_roundtrip:LAUNCH_CHECKLIST.md",
+        "result": "PASS"
+      },
+      {
+        "name": "bounded_document_after:CONTENT_PLAN.md",
+        "result": "PASS",
+        "detail": {
+          "expected": "f18e848328c708a896ec8e988d55979ee6fd121689249e67bb8f6c1934211d4c",
+          "actual": "f18e848328c708a896ec8e988d55979ee6fd121689249e67bb8f6c1934211d4c"
+        }
+      },
+      {
+        "name": "unique_reverse_hunk:CONTENT_PLAN.md",
+        "result": "PASS"
+      },
+      {
+        "name": "document_reverse_roundtrip:CONTENT_PLAN.md",
+        "result": "PASS"
+      },
+      {
+        "name": "bounded_document_after:SEO_LOG.md",
+        "result": "PASS",
+        "detail": {
+          "expected": "806cffad004914a4fb69c7b308305d1775070e9c3df67f4fbea8781b9110ab8e",
+          "actual": "806cffad004914a4fb69c7b308305d1775070e9c3df67f4fbea8781b9110ab8e"
+        }
+      },
+      {
+        "name": "unique_reverse_hunk:SEO_LOG.md",
+        "result": "PASS"
+      },
+      {
+        "name": "document_reverse_roundtrip:SEO_LOG.md",
+        "result": "PASS"
+      },
+      {
+        "name": "bounded_document_after:F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+        "result": "PASS",
+        "detail": {
+          "expected": "5b110595601271710571bbf3bb95b466385c5e0cf73c439e09587c824f40e9e4",
+          "actual": "5b110595601271710571bbf3bb95b466385c5e0cf73c439e09587c824f40e9e4"
+        }
+      },
+      {
+        "name": "unique_reverse_hunk:F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+        "result": "PASS"
+      },
+      {
+        "name": "unique_reverse_hunk:F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+        "result": "PASS"
+      },
+      {
+        "name": "unique_reverse_hunk:F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+        "result": "PASS"
+      },
+      {
+        "name": "unique_reverse_hunk:F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+        "result": "PASS"
+      },
+      {
+        "name": "unique_reverse_hunk:F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+        "result": "PASS"
+      },
+      {
+        "name": "unique_reverse_hunk:F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+        "result": "PASS"
+      },
+      {
+        "name": "unique_reverse_hunk:F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+        "result": "PASS"
+      },
+      {
+        "name": "unique_reverse_hunk:F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+        "result": "PASS"
+      },
+      {
+        "name": "unique_reverse_hunk:F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+        "result": "PASS"
+      },
+      {
+        "name": "unique_reverse_hunk:F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+        "result": "PASS"
+      },
+      {
+        "name": "unique_reverse_hunk:F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+        "result": "PASS"
+      },
+      {
+        "name": "unique_reverse_hunk:F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+        "result": "PASS"
+      },
+      {
+        "name": "unique_reverse_hunk:F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+        "result": "PASS"
+      },
+      {
+        "name": "unique_reverse_hunk:F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+        "result": "PASS"
+      },
+      {
+        "name": "document_reverse_roundtrip:F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+        "result": "PASS"
+      },
+      {
+        "name": "standard_section:## 1. 使用范围",
+        "result": "PASS"
+      },
+      {
+        "name": "standard_section:## 2. 先证明独立价值",
+        "result": "PASS"
+      },
+      {
+        "name": "standard_section:## 3. 每条事实",
+        "result": "PASS"
+      },
+      {
+        "name": "standard_section:## 4. GameRecord",
+        "result": "PASS"
+      },
+      {
+        "name": "standard_section:## 5. FAQ",
+        "result": "PASS"
+      },
+      {
+        "name": "standard_section:## 6. 当前三条记录",
+        "result": "PASS"
+      },
+      {
+        "name": "standard_section:## 7. AI 草稿",
+        "result": "PASS"
+      },
+      {
+        "name": "standard_section:## 8. 检查、评分",
+        "result": "PASS"
+      },
+      {
+        "name": "standard_section:## 9. 单页交付",
+        "result": "PASS"
+      },
+      {
+        "name": "worksheet_section:A. 本轮身份",
+        "result": "PASS"
+      },
+      {
+        "name": "worksheet_section:B. 独立价值",
+        "result": "PASS"
+      },
+      {
+        "name": "worksheet_section:C. 主张",
+        "result": "PASS"
+      },
+      {
+        "name": "worksheet_section:D. FAQ",
+        "result": "PASS"
+      },
+      {
+        "name": "worksheet_section:E. 操作",
+        "result": "PASS"
+      },
+      {
+        "name": "worksheet_section:F. SEO",
+        "result": "PASS"
+      },
+      {
+        "name": "worksheet_section:G. 检查",
+        "result": "PASS"
+      },
+      {
+        "name": "worksheet_section:H. 复核",
+        "result": "PASS"
+      },
+      {
+        "name": "content_boundary:不设 800 字硬门槛",
+        "result": "PASS"
+      },
+      {
+        "name": "content_boundary:没有新增自动拦截器",
+        "result": "PASS"
+      },
+      {
+        "name": "content_boundary:不另创 SEO 评分",
+        "result": "PASS"
+      },
+      {
+        "name": "content_boundary:不重",
+        "result": "PASS"
+      },
+      {
+        "name": "content_boundary:UNKNOWN",
+        "result": "PASS"
+      },
+      {
+        "name": "content_boundary:CT-06",
+        "result": "PASS"
+      },
+      {
+        "name": "content_boundary:来源有记载",
+        "result": "PASS"
+      },
+      {
+        "name": "content_boundary:未验证",
+        "result": "PASS"
+      },
+      {
+        "name": "content_boundary:不适用",
+        "result": "PASS"
+      },
+      {
+        "name": "worksheet_does_not_forge_human_review",
+        "result": "PASS"
+      },
+      {
+        "name": "worksheet_acceptance_unset",
+        "result": "PASS"
+      },
+      {
+        "name": "fourteen_field_groups",
+        "result": "PASS",
+        "detail": {
+          "count": 14
+        }
+      },
+      {
+        "name": "schema_field_paths_exist",
+        "result": "PASS",
+        "detail": {
+          "records": 3,
+          "pathsPerRecord": 38,
+          "assertions": 114
+        }
+      },
+      {
+        "name": "unknown_sample_facts_remain_null:square-face",
+        "result": "PASS"
+      },
+      {
+        "name": "unknown_sample_facts_remain_null:oval-face",
+        "result": "PASS"
+      },
+      {
+        "name": "unknown_sample_facts_remain_null:pixel-art-avatar",
+        "result": "PASS"
+      },
+      {
+        "name": "sample_rights_boundaries",
+        "result": "PASS"
+      },
+      {
+        "name": "balanced_markdown_fences:docs/content/game-page-quality-standard.md",
+        "result": "PASS"
+      },
+      {
+        "name": "markdown_local_link:game-page-review-template.md",
+        "result": "PASS"
+      },
+      {
+        "name": "markdown_local_link:../../RULES.md",
+        "result": "PASS"
+      },
+      {
+        "name": "markdown_local_link:../../SEO_RULES.md",
+        "result": "PASS"
+      },
+      {
+        "name": "markdown_local_link:../../QUALITY_STANDARD.md",
+        "result": "PASS"
+      },
+      {
+        "name": "markdown_local_link:../../lib/games/game-schema.ts",
+        "result": "PASS"
+      },
+      {
+        "name": "markdown_local_link:../../data/game-license-registry.json",
+        "result": "PASS"
+      },
+      {
+        "name": "markdown_local_link:../../data/games/square-face.ts",
+        "result": "PASS"
+      },
+      {
+        "name": "markdown_local_link:../quality/evidence/mig-square-001/checks.json",
+        "result": "PASS"
+      },
+      {
+        "name": "markdown_local_link:../../data/games/oval-face.ts",
+        "result": "PASS"
+      },
+      {
+        "name": "markdown_local_link:../quality/evidence/mig-oval-001/checks.json",
+        "result": "PASS"
+      },
+      {
+        "name": "markdown_local_link:../../data/games/pixel-art-avatar.ts",
+        "result": "PASS"
+      },
+      {
+        "name": "markdown_local_link:../quality/evidence/mig-pixel-001/checks.json",
+        "result": "PASS"
+      },
+      {
+        "name": "balanced_markdown_fences:docs/content/game-page-review-template.md",
+        "result": "PASS"
+      },
+      {
+        "name": "markdown_local_link:game-page-quality-standard.md",
+        "result": "PASS"
+      },
+      {
+        "name": "balanced_markdown_fences:docs/quality/evidence/content-qa-001/README.md",
+        "result": "PASS"
+      },
+      {
+        "name": "markdown_local_link:../../../content/game-page-quality-standard.md",
+        "result": "PASS"
+      },
+      {
+        "name": "markdown_local_link:../../../content/game-page-review-template.md",
+        "result": "PASS"
+      },
+      {
+        "name": "markdown_local_link:checks.json",
+        "result": "PASS"
+      },
+      {
+        "name": "balanced_markdown_fences:CONTENT_PLAN.md",
+        "result": "PASS"
+      },
+      {
+        "name": "markdown_local_link:RULES.md",
+        "result": "PASS"
+      },
+      {
+        "name": "markdown_local_link:SEO_RULES.md",
+        "result": "PASS"
+      },
+      {
+        "name": "markdown_local_link:docs/content/game-page-quality-standard.md",
+        "result": "PASS"
+      },
+      {
+        "name": "markdown_local_link:docs/content/game-page-review-template.md",
+        "result": "PASS"
+      },
+      {
+        "name": "primary_source_reference:https://developers.google.com/search/docs/fundamentals/creating-helpful-content",
+        "result": "PASS"
+      },
+      {
+        "name": "primary_source_reference:https://developers.google.com/search/docs/essentials/spam-policies",
+        "result": "PASS"
+      },
+      {
+        "name": "primary_source_reference:https://developers.google.com/search/docs/appearance/structured-data/sd-policies",
+        "result": "PASS"
+      },
+      {
+        "name": "referenced_rule_exists:IA-02",
+        "result": "PASS"
+      },
+      {
+        "name": "referenced_rule_exists:CT-01",
+        "result": "PASS"
+      },
+      {
+        "name": "referenced_rule_exists:KW-05",
+        "result": "PASS"
+      },
+      {
+        "name": "referenced_rule_exists:TR-06",
+        "result": "PASS"
+      },
+      {
+        "name": "referenced_rule_exists:META-06",
+        "result": "PASS"
+      },
+      {
+        "name": "referenced_rule_exists:AY-03",
+        "result": "PASS"
+      },
+      {
+        "name": "referenced_rule_exists:PS-03",
+        "result": "PASS"
+      },
+      {
+        "name": "referenced_rule_exists:CT-05",
+        "result": "PASS"
+      },
+      {
+        "name": "referenced_rule_exists:CT-08",
+        "result": "PASS"
+      },
+      {
+        "name": "referenced_rule_exists:CT-02",
+        "result": "PASS"
+      },
+      {
+        "name": "referenced_rule_exists:CT-06",
+        "result": "PASS"
+      },
+      {
+        "name": "referenced_rule_exists:KW-01",
+        "result": "PASS"
+      },
+      {
+        "name": "referenced_rule_exists:KW-04",
+        "result": "PASS"
+      },
+      {
+        "name": "referenced_rule_exists:KW-02",
+        "result": "PASS"
+      },
+      {
+        "name": "board_javascript_compiles",
+        "result": "PASS"
+      },
+      {
+        "name": "board_css_unchanged",
+        "result": "PASS"
+      },
+      {
+        "name": "roadmap_unchanged",
+        "result": "PASS"
+      },
+      {
+        "name": "all_29_source_acceptances_unchanged",
+        "result": "PASS"
+      },
+      {
+        "name": "content_update_exact",
+        "result": "PASS"
+      },
+      {
+        "name": "all_previous_task_updates_unchanged",
+        "result": "PASS"
+      },
+      {
+        "name": "all_prior_quality_and_cancelled_gate_records_unchanged",
+        "result": "PASS"
+      },
+      {
+        "name": "current_user_instruction_scope",
+        "result": "PASS"
+      },
+      {
+        "name": "new_validation_scope_exact",
+        "result": "PASS"
+      },
+      {
+        "name": "default_pending_acceptance",
+        "result": "PASS"
+      },
+      {
+        "name": "default_content_focus",
+        "result": "PASS"
+      },
+      {
+        "name": "default_week_four",
+        "result": "PASS"
+      },
+      {
+        "name": "vm_source_acceptances_preserved",
+        "result": "PASS"
+      },
+      {
+        "name": "static_dynamic_focus:focusStatus",
+        "result": "PASS"
+      },
+      {
+        "name": "static_dynamic_focus:focusId",
+        "result": "PASS"
+      },
+      {
+        "name": "static_dynamic_focus:focusTitle",
+        "result": "PASS"
+      },
+      {
+        "name": "static_dynamic_focus:focusGoal",
+        "result": "PASS"
+      },
+      {
+        "name": "static_dynamic_focus:focusNext",
+        "result": "PASS"
+      },
+      {
+        "name": "static_dynamic_focus:focusEvidence",
+        "result": "PASS"
+      },
+      {
+        "name": "static_dynamic_focus:gateNote",
+        "result": "PASS"
+      },
+      {
+        "name": "pending_review_actions_enabled",
+        "result": "PASS"
+      },
+      {
+        "name": "no_automatic_content_acceptance",
+        "result": "PASS"
+      },
+      {
+        "name": "week_five_not_started",
+        "result": "PASS"
+      },
+      {
+        "name": "content_prompt_deliverable_and_single_task",
+        "result": "PASS"
+      },
+      {
+        "name": "cancelled_gate_does_not_hijack_template",
+        "result": "PASS"
+      },
+      {
+        "name": "cancelled_gate_no_disabled_details",
+        "result": "PASS"
+      },
+      {
+        "name": "pixel_prompt_retains_cancellation",
+        "result": "PASS"
+      },
+      {
+        "name": "oval_full_template_stays_deferred",
+        "result": "PASS"
+      },
+      {
+        "name": "oval_full_completion_menu_rejected",
+        "result": "PASS"
+      },
+      {
+        "name": "oval_scope_warning",
+        "result": "PASS"
+      },
+      {
+        "name": "stale_cache_pending:old_accepted",
+        "result": "PASS"
+      },
+      {
+        "name": "pixel_still_accepted:old_accepted",
+        "result": "PASS"
+      },
+      {
+        "name": "stale_acceptance_removed:old_accepted",
+        "result": "PASS"
+      },
+      {
+        "name": "stale_cache_pending:undated_accepted",
+        "result": "PASS"
+      },
+      {
+        "name": "pixel_still_accepted:undated_accepted",
+        "result": "PASS"
+      },
+      {
+        "name": "stale_acceptance_removed:undated_accepted",
+        "result": "PASS"
+      },
+      {
+        "name": "stale_cache_pending:invalid_date",
+        "result": "PASS"
+      },
+      {
+        "name": "pixel_still_accepted:invalid_date",
+        "result": "PASS"
+      },
+      {
+        "name": "stale_acceptance_removed:invalid_date",
+        "result": "PASS"
+      },
+      {
+        "name": "stale_cache_pending:old_return",
+        "result": "PASS"
+      },
+      {
+        "name": "pixel_still_accepted:old_return",
+        "result": "PASS"
+      },
+      {
+        "name": "stale_acceptance_removed:old_return",
+        "result": "PASS"
+      },
+      {
+        "name": "stale_cache_pending:false_complete_without_record",
+        "result": "PASS"
+      },
+      {
+        "name": "pixel_still_accepted:false_complete_without_record",
+        "result": "PASS"
+      },
+      {
+        "name": "stale_acceptance_removed:false_complete_without_record",
+        "result": "PASS"
+      },
+      {
+        "name": "stale_cache_pending:stale_pixel_downgrade",
+        "result": "PASS"
+      },
+      {
+        "name": "pixel_still_accepted:stale_pixel_downgrade",
+        "result": "PASS"
+      },
+      {
+        "name": "stale_acceptance_removed:stale_pixel_downgrade",
+        "result": "PASS"
+      },
+      {
+        "name": "malformed_cache_safe",
+        "result": "PASS"
+      },
+      {
+        "name": "cancelled_acceptance_does_not_complete",
+        "result": "PASS"
+      },
+      {
+        "name": "user_return_path_in_memory",
+        "result": "PASS"
+      },
+      {
+        "name": "fresh_return_survives_reload",
+        "result": "PASS"
+      },
+      {
+        "name": "cancel_reset_preserves_changes",
+        "result": "PASS"
+      },
+      {
+        "name": "reset_restores_pending_not_accepted",
+        "result": "PASS"
+      },
+      {
+        "name": "reset_restores_content_focus",
+        "result": "PASS"
+      },
+      {
+        "name": "reset_preserves_29_source_acceptances",
+        "result": "PASS"
+      },
+      {
+        "name": "export_version_170",
+        "result": "PASS"
+      },
+      {
+        "name": "export_pending_content",
+        "result": "PASS"
+      },
+      {
+        "name": "export_cancelled_gate_inactive",
+        "result": "PASS"
+      },
+      {
+        "name": "export_no_material_request",
+        "result": "PASS"
+      },
+      {
+        "name": "export_keeps_29_acceptances",
+        "result": "PASS"
+      },
+      {
+        "name": "weekly_report_pending",
+        "result": "PASS"
+      },
+      {
+        "name": "explicit_acceptance_path_in_memory_only",
+        "result": "PASS"
+      },
+      {
+        "name": "simulated_acceptance_does_not_start_next",
+        "result": "PASS"
+      },
+      {
+        "name": "fresh_explicit_acceptance_survives_reload",
+        "result": "PASS"
+      },
+      {
+        "name": "real_source_never_receives_simulated_acceptance",
+        "result": "PASS"
+      },
+      {
+        "name": "branch_unchanged",
+        "result": "PASS"
+      },
+      {
+        "name": "head_unchanged",
+        "result": "PASS"
+      },
+      {
+        "name": "git_diff_check:D:\\LYXGIT\\mysquarefaceicon",
+        "result": "PASS",
+        "detail": {
+          "exitCode": 0,
+          "signal": null
+        }
+      },
+      {
+        "name": "git_diff_check:F:/LYXGIT/Liu-library",
+        "result": "PASS",
+        "detail": {
+          "exitCode": 0,
+          "signal": null
+        }
+      }
+    ],
+    "recordFacts": [
+      {
+        "id": "square-face",
+        "path": "/",
+        "type": "RUFFLE_SWF",
+        "licenseStatus": "UNKNOWN",
+        "releaseDecision": "REVIEW_REQUIRED",
+        "howTo": 3,
+        "features": 6,
+        "tips": 5,
+        "faq": 6,
+        "mobileVerifiedAt": null,
+        "semanticScore": null,
+        "semanticReviewedAt": null,
+        "qualityScore": null,
+        "inboundLinks": null,
+        "author": null,
+        "publishedAt": null,
+        "modifiedAt": null
+      },
+      {
+        "id": "oval-face",
+        "path": "/oval-face-icon-generator",
+        "type": "RUFFLE_SWF",
+        "licenseStatus": "UNKNOWN",
+        "releaseDecision": "REVIEW_REQUIRED",
+        "howTo": 3,
+        "features": 6,
+        "tips": 5,
+        "faq": 5,
+        "mobileVerifiedAt": null,
+        "semanticScore": null,
+        "semanticReviewedAt": null,
+        "qualityScore": null,
+        "inboundLinks": null,
+        "author": null,
+        "publishedAt": null,
+        "modifiedAt": null
+      },
+      {
+        "id": "pixel-art-avatar",
+        "path": "/pixel-art-avatar-icon-generator",
+        "type": "EXTERNAL_LINK",
+        "licenseStatus": "RESTRICTED",
+        "releaseDecision": "DIRECT_LINK_ONLY",
+        "howTo": 3,
+        "features": 6,
+        "tips": 5,
+        "faq": 6,
+        "mobileVerifiedAt": null,
+        "semanticScore": null,
+        "semanticReviewedAt": null,
+        "qualityScore": null,
+        "inboundLinks": null,
+        "author": null,
+        "publishedAt": null,
+        "modifiedAt": null
+      }
+    ],
+    "references": [
+      {
+        "source": "docs/content/game-page-quality-standard.md",
+        "target": "game-page-review-template.md",
+        "kind": "local",
+        "resolvedPath": "D:/LYXGIT/mysquarefaceicon/docs/content/game-page-review-template.md"
+      },
+      {
+        "source": "docs/content/game-page-quality-standard.md",
+        "target": "../../RULES.md",
+        "kind": "local",
+        "resolvedPath": "D:/LYXGIT/mysquarefaceicon/RULES.md"
+      },
+      {
+        "source": "docs/content/game-page-quality-standard.md",
+        "target": "../../SEO_RULES.md",
+        "kind": "local",
+        "resolvedPath": "D:/LYXGIT/mysquarefaceicon/SEO_RULES.md"
+      },
+      {
+        "source": "docs/content/game-page-quality-standard.md",
+        "target": "../../QUALITY_STANDARD.md",
+        "kind": "local",
+        "resolvedPath": "D:/LYXGIT/mysquarefaceicon/QUALITY_STANDARD.md"
+      },
+      {
+        "source": "docs/content/game-page-quality-standard.md",
+        "target": "https://developers.google.com/search/docs/fundamentals/creating-helpful-content",
+        "kind": "external-reference"
+      },
+      {
+        "source": "docs/content/game-page-quality-standard.md",
+        "target": "https://developers.google.com/search/docs/essentials/spam-policies#scaled-content",
+        "kind": "external-reference"
+      },
+      {
+        "source": "docs/content/game-page-quality-standard.md",
+        "target": "../../lib/games/game-schema.ts",
+        "kind": "local",
+        "resolvedPath": "D:/LYXGIT/mysquarefaceicon/lib/games/game-schema.ts"
+      },
+      {
+        "source": "docs/content/game-page-quality-standard.md",
+        "target": "../../data/game-license-registry.json",
+        "kind": "local",
+        "resolvedPath": "D:/LYXGIT/mysquarefaceicon/data/game-license-registry.json"
+      },
+      {
+        "source": "docs/content/game-page-quality-standard.md",
+        "target": "https://developers.google.com/search/docs/appearance/structured-data/sd-policies",
+        "kind": "external-reference"
+      },
+      {
+        "source": "docs/content/game-page-quality-standard.md",
+        "target": "../../data/games/square-face.ts",
+        "kind": "local",
+        "resolvedPath": "D:/LYXGIT/mysquarefaceicon/data/games/square-face.ts"
+      },
+      {
+        "source": "docs/content/game-page-quality-standard.md",
+        "target": "../quality/evidence/mig-square-001/checks.json",
+        "kind": "local",
+        "resolvedPath": "D:/LYXGIT/mysquarefaceicon/docs/quality/evidence/mig-square-001/checks.json"
+      },
+      {
+        "source": "docs/content/game-page-quality-standard.md",
+        "target": "../../data/games/oval-face.ts",
+        "kind": "local",
+        "resolvedPath": "D:/LYXGIT/mysquarefaceicon/data/games/oval-face.ts"
+      },
+      {
+        "source": "docs/content/game-page-quality-standard.md",
+        "target": "../quality/evidence/mig-oval-001/checks.json",
+        "kind": "local",
+        "resolvedPath": "D:/LYXGIT/mysquarefaceicon/docs/quality/evidence/mig-oval-001/checks.json"
+      },
+      {
+        "source": "docs/content/game-page-quality-standard.md",
+        "target": "../../data/games/pixel-art-avatar.ts",
+        "kind": "local",
+        "resolvedPath": "D:/LYXGIT/mysquarefaceicon/data/games/pixel-art-avatar.ts"
+      },
+      {
+        "source": "docs/content/game-page-quality-standard.md",
+        "target": "../quality/evidence/mig-pixel-001/checks.json",
+        "kind": "local",
+        "resolvedPath": "D:/LYXGIT/mysquarefaceicon/docs/quality/evidence/mig-pixel-001/checks.json"
+      },
+      {
+        "source": "docs/content/game-page-review-template.md",
+        "target": "game-page-quality-standard.md",
+        "kind": "local",
+        "resolvedPath": "D:/LYXGIT/mysquarefaceicon/docs/content/game-page-quality-standard.md"
+      },
+      {
+        "source": "docs/quality/evidence/content-qa-001/README.md",
+        "target": "../../../content/game-page-quality-standard.md",
+        "kind": "local",
+        "resolvedPath": "D:/LYXGIT/mysquarefaceicon/docs/content/game-page-quality-standard.md"
+      },
+      {
+        "source": "docs/quality/evidence/content-qa-001/README.md",
+        "target": "../../../content/game-page-review-template.md",
+        "kind": "local",
+        "resolvedPath": "D:/LYXGIT/mysquarefaceicon/docs/content/game-page-review-template.md"
+      },
+      {
+        "source": "docs/quality/evidence/content-qa-001/README.md",
+        "target": "checks.json",
+        "kind": "local",
+        "resolvedPath": "D:/LYXGIT/mysquarefaceicon/docs/quality/evidence/content-qa-001/checks.json"
+      },
+      {
+        "source": "docs/quality/evidence/content-qa-001/README.md",
+        "target": "https://developers.google.com/search/docs/fundamentals/creating-helpful-content",
+        "kind": "external-reference"
+      },
+      {
+        "source": "docs/quality/evidence/content-qa-001/README.md",
+        "target": "https://developers.google.com/search/docs/essentials/spam-policies",
+        "kind": "external-reference"
+      },
+      {
+        "source": "docs/quality/evidence/content-qa-001/README.md",
+        "target": "https://developers.google.com/search/docs/appearance/structured-data/sd-policies",
+        "kind": "external-reference"
+      },
+      {
+        "source": "CONTENT_PLAN.md",
+        "target": "RULES.md",
+        "kind": "local",
+        "resolvedPath": "D:/LYXGIT/mysquarefaceicon/RULES.md"
+      },
+      {
+        "source": "CONTENT_PLAN.md",
+        "target": "SEO_RULES.md",
+        "kind": "local",
+        "resolvedPath": "D:/LYXGIT/mysquarefaceicon/SEO_RULES.md"
+      },
+      {
+        "source": "CONTENT_PLAN.md",
+        "target": "docs/content/game-page-quality-standard.md",
+        "kind": "local",
+        "resolvedPath": "D:/LYXGIT/mysquarefaceicon/docs/content/game-page-quality-standard.md"
+      },
+      {
+        "source": "CONTENT_PLAN.md",
+        "target": "docs/content/game-page-review-template.md",
+        "kind": "local",
+        "resolvedPath": "D:/LYXGIT/mysquarefaceicon/docs/content/game-page-review-template.md"
+      }
+    ]
+  },
+  "governance": {
+    "hunks": [
+      {
+        "file": "PAGE_PLAN.md",
+        "old": "# PAGE_PLAN.md",
+        "new": "# PAGE_PLAN.md\n\n> 当前 v1.70 · 2026-09-03：按用户“继续进行开发”，仅完成 CONTENT-QA-001 游戏内容事实核验标准与单页审核模板，待用户验收。入口：docs/content/game-page-quality-standard.md；证据：docs/quality/evidence/content-qa-001/checks.json。\n> 本项不改网站页面/URL/索引/布局、运行代码或数据，不重跑应用 QA，不部署或开始下一项。29 条源验收及原 QA 保留；LICENSE-GATE 继续取消，UNKNOWN 和其它未关闭风险不变。"
+      },
+      {
+        "file": "PAGE_PLAN.md",
+        "old": "> 当前 v1.69 · 2026-09-03：",
+        "new": "> v1.69 历史取消记录 · 2026-09-03："
+      },
+      {
+        "file": "LAUNCH_CHECKLIST.md",
+        "old": "# LAUNCH_CHECKLIST.md · v2.1 证据清单",
+        "new": "# LAUNCH_CHECKLIST.md · v2.1 证据清单\n\n> 当前 v1.70 · 2026-09-03：按用户“继续进行开发”，仅完成 CONTENT-QA-001 游戏内容事实核验标准与单页审核模板，待用户验收。入口：docs/content/game-page-quality-standard.md；证据：docs/quality/evidence/content-qa-001/checks.json。\n> 本项不改网站页面/URL/索引/布局、运行代码或数据，不重跑应用 QA，不部署或开始下一项。29 条源验收及原 QA 保留；LICENSE-GATE 继续取消，UNKNOWN 和其它未关闭风险不变。"
+      },
+      {
+        "file": "LAUNCH_CHECKLIST.md",
+        "old": "> 当前 v1.69 · 2026-09-03：",
+        "new": "> v1.69 历史取消记录 · 2026-09-03："
+      },
+      {
+        "file": "CONTENT_PLAN.md",
+        "old": "## 页面内容字段",
+        "new": "## 游戏内容事实 QA 执行入口\n\n后续经授权的游戏内容创建、数据记录和 AI 草稿审核，先读 [游戏页面独特内容与事实 QA 标准](docs/content/game-page-quality-standard.md)，再复制 [单页审核记录模板](docs/content/game-page-review-template.md) 到当前任务证据目录。\n\n- 标准将现有规则映射到 14 组 GameRecord 字段和具体证据；不只检查非空，不用统一字数或替换游戏名证明独立价值。\n- 审核表逐条区分源码/一手记载/实际操作/未知，分别记录 Agent 自查与人类审核；没有完成人类审核不记 CT-06 通过。\n- 本轮 CONTENT-QA-001 只交付标准与模板，不修改既有页面或自动发布逻辑。规范成果与未来页面审核不是同一次验收；当前状态及证据只以权威 HTML 看板为准。\n- LICENSE-GATE 材料任务保持取消；标准只保留现有 Registry 的真实边界，不重新催件，不把 UNKNOWN 写成许可通过。\n\n## 页面内容字段"
+      },
+      {
+        "file": "SEO_LOG.md",
+        "old": "| 2026-09-03 | Cancelled LICENSE-GATE material-request plan at explicit user request | Governance/reference cleanup only; no application, URL, index or production SEO change | Stop the follow-up without inventing verified rights | Checklist and two preflight files archived byte-identically under docs/archive/license-gate-cancelled-2026-09-03; 29 acceptances and original QA retained. Registry/UNKNOWN, source, SWF and artifacts unchanged | Board v1.69: plan cancelled/inactive, no further material requests or automatic recreation. Pixel remains locally accepted; old unresolved risks not marked passed. No application QA/build/browser/mobile/CWV rerun, commit/push/deploy/seo:prod or next-task development. Governance/file moves are recoverable |",
+        "new": "| 2026-09-03 | Cancelled LICENSE-GATE material-request plan at explicit user request | Governance/reference cleanup only; no application, URL, index or production SEO change | Stop the follow-up without inventing verified rights | Checklist and two preflight files archived byte-identically under docs/archive/license-gate-cancelled-2026-09-03; 29 acceptances and original QA retained. Registry/UNKNOWN, source, SWF and artifacts unchanged | Board v1.69: plan cancelled/inactive, no further material requests or automatic recreation. Pixel remains locally accepted; old unresolved risks not marked passed. No application QA/build/browser/mobile/CWV rerun, commit/push/deploy/seo:prod or next-task development. Governance/file moves are recoverable |\n| 2026-09-03 | Established CONTENT-QA-001 game-content fact-review standard and reusable single-page worksheet | Local standards/governance only; no website URL, UI, index or production SEO change | CT-01/02/03/05/06, FAQ evidence, actual GameRecord fields, External/mobile boundaries; no fixed 800-word gate or invented qualityScore | 14 field groups; document/link/field checks and offline board VM; 154 source/check/config, 25 historical JSON, 173 screenshot paths, 18 artifacts and 29 source acceptances preserved. Original QA dates retained; no fresh application type/lint/test/build/HTTP/SEO/browser/mobile/CWV claims | Board v1.70 pending CONTENT-QA-001 acceptance. LICENSE-GATE material request stays cancelled, UNKNOWN remains factual. No runtime content gate, full-page content certification, commit/push/deploy/seo:prod or Week 5 work. Evidence: docs/quality/evidence/content-qa-001/checks.json |"
+      },
+      {
+        "file": "F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+        "old": "    <div class=\"focusTop\"><h2>当前任务</h2><span class=\"badge done\" id=\"focusStatus\">已完成</span></div>",
+        "new": "    <div class=\"focusTop\"><h2>当前任务</h2><span class=\"badge\" id=\"focusStatus\">待验收</span></div>"
+      },
+      {
+        "file": "F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+        "old": "    <div class=\"focusId\" id=\"focusId\">MIG-PIXEL-001</div><div class=\"focusTitle\" id=\"focusTitle\">Pixel External Tool 一致性（本地已验收）</div>",
+        "new": "    <div class=\"focusId\" id=\"focusId\">CONTENT-QA-001</div><div class=\"focusTitle\" id=\"focusTitle\">建立游戏页面独特内容规则（标准与模板待验收）</div>"
+      },
+      {
+        "file": "F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+        "old": "    <div class=\"dlabel\">目标</div><p class=\"dcopy\" id=\"focusGoal\">统一 Pixel 的原站入口、来源/权限文案、FAQ/schema 和 External 标签；保留既有 URL/索引与直接链接边界。</p>",
+        "new": "    <div class=\"dlabel\">目标</div><p class=\"dcopy\" id=\"focusGoal\">把独有价值、controls/how-to/tips/mobile/source/FAQ 和 AI 草稿人类复核落到可复制的逐条证据流程。</p>"
+      },
+      {
+        "file": "F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+        "old": "    <div class=\"dlabel\">下一步</div><p class=\"dcopy\" id=\"focusNext\">LICENSE-GATE 材料补充计划已取消，无需提交材料。本轮仅完成取消与文件清理，不自动部署或开发下一项；按你的下一条明确指令继续。</p>",
+        "new": "    <div class=\"dlabel\">下一步</div><p class=\"dcopy\" id=\"focusNext\">请查看游戏内容标准与单页审核模板，并回复“CONTENT-QA-001 验收通过”。本轮只验收规范与模板，不代表三页已完成事实复审；验收前不开始下一项或部署。</p>"
+      },
+      {
+        "file": "F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+        "old": "    <div class=\"dlabel\">完成证据</div><p class=\"dcopy evidence-box\" id=\"focusEvidence\">v1.68：用户明确验收 MIG-PIXEL-001 的 EXTERNAL_TOOL_CONSISTENCY，新增第 29 条源验收；原 28 条及 v1.67 checks.json、42 项最终命令/14 组响应式/12 条交互/45 张截图的日期和边界保留。154 项源码/检查/配置与 18 个构建产物不变，本轮未重跑应用/浏览器/生产检查。Pixel 仍 DIRECT_LINK_ONLY；验收不授予 Square/Oval 权利或生产通过。用户要求先部署累计成果再下一步，LICENSE-GATE 恢复已阻塞，等待原始许可材料，未提交、推送或部署，CONTENT-QA-001 未开始。 v1.69 后续：用户取消 LICENSE-GATE 材料补充计划，专属文件已归档，此前等待材料安排不再执行；原验收/QA 保留，不要求再次验收，本轮未部署或开发下一项。</p>",
+        "new": "    <div class=\"dlabel\">完成证据</div><p class=\"dcopy evidence-box\" id=\"focusEvidence\">v1.70：按用户“继续进行开发”完成 CONTENT-QA-001 文档交付：独立价值、14 组实际字段核验、FAQ/移动/来源边界、AI 草稿人类复核与单页审核模板；不新增自动发布或事实认证代码。文档/引用/字段与看板离线 VM 已核对，原 154 项源码/检查/配置、25 份历史 JSON、173 个截图路径、18 个构建产物和 29 条源验收保留。原 QA 日期不刷新；未重跑应用 type/lint/tests/build/Browser/SEO/CWV。LICENSE-GATE 材料任务保持取消，UNKNOWN 不改写；未提交、推送、部署或开始 Week 5。</p>"
+      },
+      {
+        "file": "F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+        "old": "    <div class=\"acceptanceActions\"><button class=\"btn primary\" id=\"acceptBtn\" disabled>验收通过</button><button class=\"btn\" id=\"reviseBtn\" disabled>退回开发</button></div>",
+        "new": "    <div class=\"acceptanceActions\"><button class=\"btn primary\" id=\"acceptBtn\">验收通过</button><button class=\"btn\" id=\"reviseBtn\">退回开发</button></div>"
+      },
+      {
+        "file": "F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+        "old": "    <p class=\"gate-note\" id=\"gateNote\">Pixel 本地验收保持；材料补充计划已按用户要求取消，不重建待办或要求材料。</p>",
+        "new": "    <p class=\"gate-note\" id=\"gateNote\">等待用户人工验收；不会自动进入下一任务。</p>"
+      },
+      {
+        "file": "F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+        "old": "    <p class=\"quality-note\">v1.69：LICENSE-GATE 材料补充计划已按用户要求取消，3 份专属文件已移出活跃目录并归档，可恢复，不再催交。29 条验收和原 QA 保留；UNKNOWN 事实不改写，取消不代表许可/发布通过，本轮未部署或开始下一项。</p>",
+        "new": "    <p class=\"quality-note\">v1.70：CONTENT-QA-001 标准与模板待验收，14 组字段按证据核验，AI 草稿须有人类复核。本轮不改应用、不重测页面或发布；29 条验收与原 QA 保留。LICENSE-GATE 材料任务继续取消，不催件，不把 UNKNOWN 或原发布风险记作通过。</p>"
+      },
+      {
+        "file": "F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+        "old": "    <li>29 条源验收保持；LICENSE-GATE 材料补充计划已取消并归档，不再催交或重建。原 UNKNOWN 与其它未关闭风险不记作通过；本轮未部署或开始下一项。</li>",
+        "new": "    <li>29 条源验收保持；LICENSE-GATE 材料补充计划已取消并归档，不再催交或重建。当前仅 CONTENT-QA-001 标准待验收，UNKNOWN 与其它未关闭风险保留；未部署，Week 5 未开始。</li>"
+      },
+      {
+        "file": "F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+        "old": "版本 1.69 · 2026-09-03",
+        "new": "版本 1.70 · 2026-09-03"
+      },
+      {
+        "file": "F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+        "old": "const BUILTIN=",
+        "new": "// v1.70: the current user instruction opens only the content-standard task; prior cancellation/history remain intact.\nTASK_UPDATES[\"CONTENT-QA-001\"]={\"status\":\"待验收\",\"updatedAt\":\"2026-09-03T13:42:25.273Z\",\"scope\":\"CONTENT_STANDARD_ONLY\",\"localOnly\":true,\"request\":\"继续进行开发\",\"proposalRequired\":false,\"proposalReason\":\"仅文档与治理交付，不新增页面或改变布局、URL、索引、搜索意图及模块顺序。\",\"implementationStarted\":true,\"implementationCompleted\":true,\"userAcceptanceReceived\":false,\"focusTitle\":\"建立游戏页面独特内容规则（标准与模板待验收）\",\"focusGoal\":\"把独有价值、controls/how-to/tips/mobile/source/FAQ 和 AI 草稿人类复核落到可复制的逐条证据流程。\",\"deliverablePath\":\"docs/content/game-page-quality-standard.md\",\"templatePath\":\"docs/content/game-page-review-template.md\",\"evidence\":\"v1.70：按用户“继续进行开发”完成 CONTENT-QA-001 文档交付：独立价值、14 组实际字段核验、FAQ/移动/来源边界、AI 草稿人类复核与单页审核模板；不新增自动发布或事实认证代码。文档/引用/字段与看板离线 VM 已核对，原 154 项源码/检查/配置、25 份历史 JSON、173 个截图路径、18 个构建产物和 29 条源验收保留。原 QA 日期不刷新；未重跑应用 type/lint/tests/build/Browser/SEO/CWV。LICENSE-GATE 材料任务保持取消，UNKNOWN 不改写；未提交、推送、部署或开始 Week 5。\",\"evidencePath\":\"docs/quality/evidence/content-qa-001/checks.json\",\"readmePath\":\"docs/quality/evidence/content-qa-001/README.md\",\"acceptanceScope\":\"CONTENT_STANDARD_ONLY\",\"acceptanceNotBefore\":\"2026-09-03T13:42:25.273Z\",\"acceptanceNext\":\"请查看游戏内容标准与单页审核模板，并回复“CONTENT-QA-001 验收通过”。本轮只验收规范与模板，不代表三页已完成事实复审；验收前不开始下一项或部署。\",\"acceptancePrompt\":\"CONTENT-QA-001 验收通过\",\"releaseStatus\":\"未部署 / 未新增发布验证；原未关闭风险保留\"};\nQUALITY_SUPERVISOR.validation.contentQuality170={\"taskId\":\"CONTENT-QA-001\",\"recordedAt\":\"2026-09-03T13:42:25.273Z\",\"scope\":\"CONTENT_STANDARD_ONLY\",\"standardPath\":\"docs/content/game-page-quality-standard.md\",\"templatePath\":\"docs/content/game-page-review-template.md\",\"evidencePath\":\"docs/quality/evidence/content-qa-001/checks.json\",\"sourceAcceptanceCount\":29,\"sourceFilesPreserved\":154,\"historicalJsonPreserved\":25,\"screenshotPathsPreserved\":173,\"artifactsPreserved\":18,\"documentAndReferences\":\"通过\",\"boardJavaScriptAndOfflineVm\":\"通过\",\"boardVisual\":\"未验证 / 保留既有访问限制，不绕行\",\"applicationTypeLintTests\":\"未执行 / 本轮不改应用\",\"frameworkAndPlatformBuild\":\"未执行 / 保留原产物与日期\",\"applicationBrowserMobileSeoCwv\":\"未验证 / 本轮不重测\",\"cancelledLicenseTaskRetained\":true,\"licenseVerified\":false,\"userAcceptanceReceived\":false,\"deployed\":false,\"nextTaskStarted\":false};\nQUALITY_SUPERVISOR.currentWork={\"taskId\":\"CONTENT-QA-001\",\"status\":\"待验收\",\"requestedAt\":\"2026-09-03T13:42:25.273Z\",\"request\":\"继续进行开发\",\"scope\":\"CONTENT_STANDARD_ONLY\",\"instructionBoundary\":\"按取消之后的当前开发指令交付本项本地规范；旧发布顺序不作为恢复材料任务或本轮自动部署的指令。\",\"evidencePath\":\"docs/quality/evidence/content-qa-001/checks.json\",\"deployed\":false,\"nextTaskStarted\":false,\"cancelledMaterialTaskReopened\":false};\n\nconst BUILTIN="
+      },
+      {
+        "file": "F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+        "old": "let state=applySourceUpdates({...BUILTIN,...saved}), selectedWeek=3, selectedTask='MIG-PIXEL-001';",
+        "new": "let state=applySourceUpdates({...BUILTIN,...saved}), selectedWeek=3, selectedTask='CONTENT-QA-001';"
+      },
+      {
+        "file": "F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+        "old": "version:'1.69',exportedAt:",
+        "new": "version:'1.70',exportedAt:"
+      },
+      {
+        "file": "F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+        "old": "selectedWeek=3;selectedTask='MIG-PIXEL-001';renderAll()",
+        "new": "selectedWeek=3;selectedTask='CONTENT-QA-001';renderAll()"
+      }
+    ],
+    "currentWork": {
+      "taskId": "CONTENT-QA-001",
+      "status": "待验收",
+      "requestedAt": "2026-09-03T13:42:25.273Z",
+      "request": "继续进行开发",
+      "scope": "CONTENT_STANDARD_ONLY",
+      "instructionBoundary": "按取消之后的当前开发指令交付本项本地规范；旧发布顺序不作为恢复材料任务或本轮自动部署的指令。",
+      "evidencePath": "docs/quality/evidence/content-qa-001/checks.json",
+      "deployed": false,
+      "nextTaskStarted": false,
+      "cancelledMaterialTaskReopened": false
+    },
+    "sourceAcceptanceIds": [
+      "AUDIT-001",
+      "BASE-001",
+      "LEGAL-001",
+      "STRAT-001",
+      "BACKUP-001",
+      "GAME-DATA-001",
+      "PLAYER-001",
+      "ROUTE-001",
+      "COMP-001",
+      "META-001",
+      "HOME-IA-001",
+      "HOME-HERO-001",
+      "HOME-DISC-001",
+      "HOME-GALLERY-001",
+      "PERF-HOME-001",
+      "GAME-TPL-001",
+      "OP-11",
+      "AI-01",
+      "KW-02-SAMPLE",
+      "KW-02",
+      "PF-01",
+      "TERMS-001",
+      "ABOUT-001",
+      "EDITORIAL-001",
+      "GALLERY-001",
+      "LOCALE-001",
+      "MIG-SQUARE-001",
+      "MIG-OVAL-001",
+      "MIG-PIXEL-001"
+    ],
+    "oldTaskUpdatesUnchanged": true,
+    "oldQualityEvidenceUnchanged": true,
+    "all29SourceAcceptancesUnchanged": true,
+    "roadmapAndCssUnchanged": true,
+    "htmlDefaultAndResetFocus": "CONTENT-QA-001",
+    "realBrowserStorageModified": false,
+    "simulatedAcceptanceWasTestOnly": true
+  },
+  "preservedFileHashes": [
+    {
+      "path": "app/about-us/page.tsx",
+      "sha256": "bd812baed9b69e531d369be6e0be168dc5232d3729def0d7f5a747fbccbf1779",
+      "kind": "source"
+    },
+    {
+      "path": "app/admin/comments/page.tsx",
+      "sha256": "5da66215f6c126892b132af3f11937d2fba81dc9d3b86b680b207b0cd6680f99",
+      "kind": "source"
+    },
+    {
+      "path": "app/api/admin/comment-images/[...key]/route.ts",
+      "sha256": "818b0b4c81cd56f9455a3228adc95137268a90db6b82f1a2e1f6f8ec232f03a0",
+      "kind": "source"
+    },
+    {
+      "path": "app/api/admin/comments/route.ts",
+      "sha256": "63ddcb14964f633f199af6873497abb9091420dba4e889396ca7d2d775578bb2",
+      "kind": "source"
+    },
+    {
+      "path": "app/api/admin/comments/[id]/route.ts",
+      "sha256": "e471d00f054151ac6636c81fd9d21ce108b19c86875ee524f2e0b44f429c135b",
+      "kind": "source"
+    },
+    {
+      "path": "app/api/comment-images/[...key]/route.ts",
+      "sha256": "defb2f8ec7f4be7c19beb82663f781ae2e735cf19db127d603f5c82d8925d98a",
+      "kind": "source"
+    },
+    {
+      "path": "app/api/comments/route.ts",
+      "sha256": "4297d56bf81fb7182236ef0c880cd1039907dc345415e1bacddc39ae01ab2e7f",
+      "kind": "source"
+    },
+    {
+      "path": "app/api/comments/[id]/like/route.ts",
+      "sha256": "edf2b13178884db9af47debed1186655b55a96abe807e1dde8f4367381089a14",
+      "kind": "source"
+    },
+    {
+      "path": "app/blog/avatar-maker-without-signup/page.tsx",
+      "sha256": "27b767b9898a1cf54a8bd8d15949690a99c3bcf8fee0a510275d2c05880dce97",
+      "kind": "source"
+    },
+    {
+      "path": "app/blog/best-discord-avatar-style/page.tsx",
+      "sha256": "2e0807728e27e7b62e0be6aee9319079626b6d8f259fbf452afb3193f6040b9d",
+      "kind": "source"
+    },
+    {
+      "path": "app/blog/cute-profile-picture-ideas/page.tsx",
+      "sha256": "23d0d94e184f86457eec7bccce657e83a401d94fef36686008af683fbf9ed126",
+      "kind": "source"
+    },
+    {
+      "path": "app/blog/discord-avatar-size-guide/page.tsx",
+      "sha256": "3990a509c0f009f3007edf767e28983943e35ec03a9422483d7427972e3a7a24",
+      "kind": "source"
+    },
+    {
+      "path": "app/blog/how-to-make-a-cute-discord-profile-icon/page.tsx",
+      "sha256": "126709f27ed82ffa275ec56f8c19d3ef97bd972f3a6d7737eca02eb016fe4a38",
+      "kind": "source"
+    },
+    {
+      "path": "app/blog/page.tsx",
+      "sha256": "ae764e709b2e95b94978264e94f7c8339e18fbb40619e2b61003e73979b777e9",
+      "kind": "source"
+    },
+    {
+      "path": "app/blog/square-avatar-vs-round-avatar/page.tsx",
+      "sha256": "21831b3d94e787b7442827822de117fd9cb6854408e25ea55443bc5cafb3c82b",
+      "kind": "source"
+    },
+    {
+      "path": "app/blog/tiktok-profile-icon-ideas/page.tsx",
+      "sha256": "c480c6c80cc10800e1ff12710861712d4bde2aefe7145e7666d8352e0f2c29ad",
+      "kind": "source"
+    },
+    {
+      "path": "app/category/[slug]/page.tsx",
+      "sha256": "db5f8c1c1c4df37b7f8a0a726e540d1a0897fa14d84efd8a2f50a8b79aaba0e1",
+      "kind": "source"
+    },
+    {
+      "path": "app/contact/page.tsx",
+      "sha256": "43c774c71e326750845afe0168f4d66bbb1ee47367bcfc6015bb17592860c98e",
+      "kind": "source"
+    },
+    {
+      "path": "app/cute-square-avatar-generator/page.tsx",
+      "sha256": "fe22cddd887475ecc89983278ceeabc06678a344c8ea7aefb47a65eb7a893042",
+      "kind": "source"
+    },
+    {
+      "path": "app/editorial-policy/page.tsx",
+      "sha256": "c758e70ce143b58db1453877efcb6d82a9e89fd96d1bc473c73c6dcf4c81a529",
+      "kind": "source"
+    },
+    {
+      "path": "app/free-avatar-maker/page.tsx",
+      "sha256": "65b5cd3745e7aad2dd9bdb11a851fb8a7fa74fe6e7a2e3221474688c76b75aa5",
+      "kind": "source"
+    },
+    {
+      "path": "app/gallery/page.tsx",
+      "sha256": "d051f12b8e4c71a9b15a75efb59c3ffbb1f9904ec5d69577f9640ff47d479901",
+      "kind": "source"
+    },
+    {
+      "path": "app/games/page.tsx",
+      "sha256": "325b8221aec0d9ea69a2374faad321a0fa75dd7e8c0df05c59da4db93e46c44f",
+      "kind": "source"
+    },
+    {
+      "path": "app/games/[slug]/page.tsx",
+      "sha256": "0131595a7dc55e0b9227944e41f5cf54548213f5527cc62f034eb8a61c05aab4",
+      "kind": "source"
+    },
+    {
+      "path": "app/globals.css",
+      "sha256": "5b5e8d7253be79edbd479a01a53bf3f760d52482ced5f4c6edcd387975669867",
+      "kind": "source"
+    },
+    {
+      "path": "app/layout.tsx",
+      "sha256": "c9d72791c1167896c2ab3a72bb9e7eada5b909bbf8f540a6e64fb52bed4e77b5",
+      "kind": "source"
+    },
+    {
+      "path": "app/manifest.ts",
+      "sha256": "035fb0b64fd59984750a16cca5b4e7bd4e776d8ee7c9a608e339cabef2a8a179",
+      "kind": "source"
+    },
+    {
+      "path": "app/not-found.tsx",
+      "sha256": "1ae05e6e788c22dba45d7cbdce2a4b9271d584246a553bda51428c396991a351",
+      "kind": "source"
+    },
+    {
+      "path": "app/oval-face-icon-generator/page.tsx",
+      "sha256": "7047682caac9809799f475caece2ce110d82e769bee389ceedaba966167701cf",
+      "kind": "source"
+    },
+    {
+      "path": "app/page.tsx",
+      "sha256": "d10f79e2522ca3c3e21195e09df0f090b119af6452c265e48eb125639b2c46c1",
+      "kind": "source"
+    },
+    {
+      "path": "app/pixel-art-avatar-icon-generator/page.tsx",
+      "sha256": "6116dc65fae1b664512d2267263f242b5085765f4a5f0fbac3368c301d92496c",
+      "kind": "source"
+    },
+    {
+      "path": "app/pixel-square-face-maker/page.tsx",
+      "sha256": "b691a2359a6a6581eadc75fb1944a93a1718f85c4fff11ba6ebdfbad756603e5",
+      "kind": "source"
+    },
+    {
+      "path": "app/privacy-policy/page.tsx",
+      "sha256": "eba51fcadf3aa4e61506242d5d5fb1d9d4ac7d870626e7877670ae0984c7d1c4",
+      "kind": "source"
+    },
+    {
+      "path": "app/robots.ts",
+      "sha256": "dd47d2bd1355fb44791c0f5e481b06c98142639383a902cd6e976cb4f7583aa8",
+      "kind": "source"
+    },
+    {
+      "path": "app/sitemap.ts",
+      "sha256": "183aafaeb14f529f8c341c70aa9c3278082f670aeaa4f487271d6ff110e0db18",
+      "kind": "source"
+    },
+    {
+      "path": "app/square-avatar-generator/page.tsx",
+      "sha256": "a239bb17efb6eddce7e49f3214cef92017eed9f167c0879103855d91b4554a31",
+      "kind": "source"
+    },
+    {
+      "path": "app/square-face-icon-generator/page.tsx",
+      "sha256": "24e88b1057bfea65f350bb84205cc5fc89fec0cd06e4f6dea24719c7513ff731",
+      "kind": "source"
+    },
+    {
+      "path": "app/terms-of-service/page.tsx",
+      "sha256": "8121043e9a474a19a5c1c366ed80e03db93ec6bc8dc1ed9eda63ef60d85c83f5",
+      "kind": "source"
+    },
+    {
+      "path": "app/[locale]/page.tsx",
+      "sha256": "e47894775647c4a8630490b2e7ab0a72cc4fdcc2d0f253ce2ce724676adf7ece",
+      "kind": "source"
+    },
+    {
+      "path": "components/AdminComments.tsx",
+      "sha256": "a3a1dd2d1bc175a4862a49299b363fe50c9b006945fc6b20df97dc08d527af4d",
+      "kind": "source"
+    },
+    {
+      "path": "components/AvatarGenerator.tsx",
+      "sha256": "61e65dd817d517975ba89ca2ba7e7b182cf015bc296e4a993aa4733342fda74b",
+      "kind": "source"
+    },
+    {
+      "path": "components/CloudflareAnalytics.tsx",
+      "sha256": "54e33cdc6f229a708c86013649a283ed946be150f717b11eebc6ccdb793368c4",
+      "kind": "source"
+    },
+    {
+      "path": "components/CommentSection.tsx",
+      "sha256": "02db74c38bf07f57c92defb239866cd75bfeef561333de1db9acfc9d44ddfd21",
+      "kind": "source"
+    },
+    {
+      "path": "components/CuratedGalleryPreview.tsx",
+      "sha256": "0238422e69aa37737063f1600e11a82505b0b8f94bd813161eb8ea6985e78792",
+      "kind": "source"
+    },
+    {
+      "path": "components/DeferredThirdPartyScripts.tsx",
+      "sha256": "09ae2617d036e47be5874e366d0ced2fc1634d03b59ac9c2505f1938c7cfe7e2",
+      "kind": "source"
+    },
+    {
+      "path": "components/FlashGenerator.tsx",
+      "sha256": "c443323031b15428a502ff4fcad3653ffc424ef75db9335b76883576f45ac794",
+      "kind": "source"
+    },
+    {
+      "path": "components/game/AdSlotShell.tsx",
+      "sha256": "3c1aaa1ab799dddb7e7e0bb607a31c0cc9d77683c42554b7663bc4bdc4a28a27",
+      "kind": "source"
+    },
+    {
+      "path": "components/game/CategoryChip.tsx",
+      "sha256": "78e2ddcf2ce6b77899d3ab35f06f5d49a87f82f1015d8f4deb862dfe76ab0850",
+      "kind": "source"
+    },
+    {
+      "path": "components/game/EmptyState.tsx",
+      "sha256": "2ef1bad5737139a2cd9c1cf9d003b28a9f202a50fa9925072cea8e35cef549d2",
+      "kind": "source"
+    },
+    {
+      "path": "components/game/GameBreadcrumb.tsx",
+      "sha256": "933a23729f0c280559d64ac1376022520c3d700031a489935d1e1b30b604b474",
+      "kind": "source"
+    },
+    {
+      "path": "components/game/GameCard.tsx",
+      "sha256": "94af78fdd701884f8e69d2d3cdf919d2a0b730c685b6e5287130d85ef9b92edf",
+      "kind": "source"
+    },
+    {
+      "path": "components/game/GameControls.tsx",
+      "sha256": "2a738d34297ad718e59a678ea9572d8c6cc981180e083e8fca7cb03e21c1b4da",
+      "kind": "source"
+    },
+    {
+      "path": "components/game/GameDetailTemplate.tsx",
+      "sha256": "c643d800efd8bdbc6d439047b53c3aad6fae403ad59ed55b7c8349218c1ca43c",
+      "kind": "source"
+    },
+    {
+      "path": "components/game/GameFaq.tsx",
+      "sha256": "c680b9728a08c896095bb85fc688f6d451360142e0bb447763b8fed0a0a1139a",
+      "kind": "source"
+    },
+    {
+      "path": "components/game/GameGrid.tsx",
+      "sha256": "261672ac47c7cafeb3f2576caf6ba6240fa3c9b15472f55778b8ae3f45d631b5",
+      "kind": "source"
+    },
+    {
+      "path": "components/game/GameMeta.tsx",
+      "sha256": "d7c6e283401f295579cff65cd01ee761626d727098fbc6e983e8d18e47f807e9",
+      "kind": "source"
+    },
+    {
+      "path": "components/game/GamePlayer.tsx",
+      "sha256": "a568634e413cacc1ef816bd2835be4916dfc6094f9cc4d3a2ee3a3fd5d51b2da",
+      "kind": "source"
+    },
+    {
+      "path": "components/game/GameSourceRights.tsx",
+      "sha256": "ebc2ec19b91bf5dde44eae24ca75b6ee208a487c707a9862f694c6d88dbd2243",
+      "kind": "source"
+    },
+    {
+      "path": "components/game/README.md",
+      "sha256": "4c7ea3c7e616a686fbf08567f8b9e28082912a2dbcbfc7a73d3166867c172f89",
+      "kind": "source"
+    },
+    {
+      "path": "components/game/RelatedGames.tsx",
+      "sha256": "1fa094f28bd8b0855c7869596b9df55b0072a48a8db6d3db8c6558f954209aa7",
+      "kind": "source"
+    },
+    {
+      "path": "components/game-player/adapters/adapter-types.ts",
+      "sha256": "4e6c492777363116b8a450d5b7e822abdf99609e518f15a3fc682f2d6fd84df5",
+      "kind": "source"
+    },
+    {
+      "path": "components/game-player/adapters/ExternalLinkAdapter.tsx",
+      "sha256": "f7d4c98916a2a25785175af7ae6bf009a700f68271b8345322fd904c2431f45c",
+      "kind": "source"
+    },
+    {
+      "path": "components/game-player/adapters/Html5Adapter.tsx",
+      "sha256": "524f0c49fd8af608ddf86aed872fe1cd0af72839b30391206be8eae639e08325",
+      "kind": "source"
+    },
+    {
+      "path": "components/game-player/adapters/IframeAdapterFrame.tsx",
+      "sha256": "af31a35c493f607bacbfb548b386f604cbb98c7722a32cf580da11a7b7b593b6",
+      "kind": "source"
+    },
+    {
+      "path": "components/game-player/adapters/LocalIframeAdapter.tsx",
+      "sha256": "b73408e66cb4dec9fe5b8460960627c95a1a92c43282345562dbfd173b3f4d9f",
+      "kind": "source"
+    },
+    {
+      "path": "components/game-player/adapters/OfficialIframeAdapter.tsx",
+      "sha256": "0668f81f43684d59522799c55ecc4affe8fb24fdfc571af7e6ac8e56118cc23c",
+      "kind": "source"
+    },
+    {
+      "path": "components/game-player/adapters/RuffleAdapter.tsx",
+      "sha256": "5fcff6669f4ca75147728e8a73434cdef8abb2823325110d585ad46a1cfe8ada",
+      "kind": "source"
+    },
+    {
+      "path": "components/game-player/GamePlayer.tsx",
+      "sha256": "142cf22ac3a485c78285d920bbe84114f3931a38f0e9aec067bbf8ca2e562d5c",
+      "kind": "source"
+    },
+    {
+      "path": "components/GameSidebar.tsx",
+      "sha256": "fc0c33185e4852ae7024c1c3474c7976817a012bd96360721fc32d29399567da",
+      "kind": "source"
+    },
+    {
+      "path": "components/home/CoreGamePreview.tsx",
+      "sha256": "9a05388d53d969ef1ea1f4ea9a6273a0ebd1cd8ec6d1df43a1afd8da1c4c44a1",
+      "kind": "source"
+    },
+    {
+      "path": "components/home/HomeDiscoveryRegion.tsx",
+      "sha256": "8652a91eeeb4650230235422c661be58841a49475ce1bc446425c7e2ac697b04",
+      "kind": "source"
+    },
+    {
+      "path": "components/home/HomeHero.tsx",
+      "sha256": "d7c0c2c35b98735c002d4a9066b68615e73df77326cc42468eaee6607b442fd3",
+      "kind": "source"
+    },
+    {
+      "path": "components/home/HomeResourceLinks.tsx",
+      "sha256": "fd03f53ecc08510a86e3edd54864e132af9e70b363a7d5dee4c50d1eea207e23",
+      "kind": "source"
+    },
+    {
+      "path": "components/HomePage.tsx",
+      "sha256": "fd9f94372bd2cbc98ddcf88b4364183d860ad24dd5dbb5551790fca63e8a8c9c",
+      "kind": "source"
+    },
+    {
+      "path": "components/InstallPrompt.tsx",
+      "sha256": "fb4a9fd5a43625673f03b26b8d31284c955b4e970d9fbe80be41863228c02ac8",
+      "kind": "source"
+    },
+    {
+      "path": "components/ShareButtons.tsx",
+      "sha256": "5becc8e6cf2a779dd192222de56087f468b41243f60950d0290f45ff07a71a28",
+      "kind": "source"
+    },
+    {
+      "path": "components/SiteFooter.tsx",
+      "sha256": "0a8f7e7ca185853a8494ba94f8ecaa65e9ddd73ba3e43781c0efacfcdd3c2291",
+      "kind": "source"
+    },
+    {
+      "path": "components/SiteHeader.tsx",
+      "sha256": "8182d2e2a5012cfbb62ebadcc8cb581d088364d263f9eb11f9d217686df115a1",
+      "kind": "source"
+    },
+    {
+      "path": "lib/comment-store.ts",
+      "sha256": "734fa24cbf3cf6518f5026c93953628dca8c28935db6927d53650d4019865804",
+      "kind": "source"
+    },
+    {
+      "path": "lib/games/catalog.ts",
+      "sha256": "6cc0df85e3acf146b3cc18b63cc4785982607fc0e59142ce89f59d2d6ef0ac0d",
+      "kind": "source"
+    },
+    {
+      "path": "lib/games/game-player-model.ts",
+      "sha256": "42672e8d0917e9d7d6a1b28137e505ecd4d7b09ba40e3c971751b6d7f3fbe84c",
+      "kind": "source"
+    },
+    {
+      "path": "lib/games/game-schema.ts",
+      "sha256": "b3d036c8973bc9562b99b55058e042d9040605f6e04f008dc54378eb005e8df6",
+      "kind": "source"
+    },
+    {
+      "path": "lib/games/home-discovery.ts",
+      "sha256": "b172dd4a9e807754f59dfe5f9bb5b42fdc2d360bd89c54eab504f5577dac166e",
+      "kind": "source"
+    },
+    {
+      "path": "lib/games/routes.ts",
+      "sha256": "058434c725a09ae921c2c5f184396377873ad67603130f985fcfe39bcd97c5a6",
+      "kind": "source"
+    },
+    {
+      "path": "lib/locales.ts",
+      "sha256": "a96fefe1140236963e49b59ed632641794f1b39b5f5c3bd5df79adac876df8db",
+      "kind": "source"
+    },
+    {
+      "path": "lib/metadata.ts",
+      "sha256": "ed02bc92dbfe7e71c0988bef9cf8bbdabc34caef5a1a2ba67d40cf69d839a275",
+      "kind": "source"
+    },
+    {
+      "path": "lib/seo/canonical-origin.ts",
+      "sha256": "2d506dc08f622a898efd6eb57c9210018d2b8ba73ec8666a3bd4c9685e831fd9",
+      "kind": "source"
+    },
+    {
+      "path": "lib/seo/game-metadata.ts",
+      "sha256": "87e7f42b085e2714cd22bce3634ccf1272fa822fb70b77292c5831d0f38fe660",
+      "kind": "source"
+    },
+    {
+      "path": "lib/seo/game-structured-data.ts",
+      "sha256": "84193180e9b8827a2566d38585ce753b94ee30f4c9b5f6aee4fe22da3c875391",
+      "kind": "source"
+    },
+    {
+      "path": "data/ai-crawler-policy.json",
+      "sha256": "adea8bf57c056c93b319da9033654f573989948058ab04a7c74e4739c472487c",
+      "kind": "source"
+    },
+    {
+      "path": "data/curated-icon-ideas.ts",
+      "sha256": "b51d0f7b57249b1e3cfe0e16bede29688154814168a2c6271a7388ad10933dce",
+      "kind": "source"
+    },
+    {
+      "path": "data/game-categories.ts",
+      "sha256": "b0bbb1eccbc70bdc70323c05da94acc725df06d857c70eaba8860f5b3e701d8d",
+      "kind": "source"
+    },
+    {
+      "path": "data/game-license-registry.json",
+      "sha256": "fb0b94f56ffa3c7feca89ee136c73795a95d993de0ebe16d81ca8041da4a8924",
+      "kind": "source"
+    },
+    {
+      "path": "data/games/oval-face.ts",
+      "sha256": "03d3c9d884161baafd9f5baadf85bbb05567324cc8e7251f094ca0bbe4b872fe",
+      "kind": "source"
+    },
+    {
+      "path": "data/games/pixel-art-avatar.ts",
+      "sha256": "29d6d8696f5ad1d4ef59ee45080d1ae42723f38640c56c0cf0a685c7fc19c7b8",
+      "kind": "source"
+    },
+    {
+      "path": "data/games/README.md",
+      "sha256": "71272ce378d8adc438b34b6d60e58080fa32b8728fd9c513e6aad2001eac24ee",
+      "kind": "source"
+    },
+    {
+      "path": "data/games/square-face.ts",
+      "sha256": "5f70eb18ae8e87db1db4d2603c080e5a4b01d44ae2b57f7abcf9afbf26550d0e",
+      "kind": "source"
+    },
+    {
+      "path": "scripts/check-ai-crawler-policy.mjs",
+      "sha256": "76e030b11a653a01ed101e13c06460f29354f55d33c1e96aab4ace3f53be5042",
+      "kind": "source"
+    },
+    {
+      "path": "scripts/check-terms-rights.mjs",
+      "sha256": "62ab3d26bb2459fe9abe92a1c520e740cba77f01cec5324a7d19ddadfe6dba50",
+      "kind": "source"
+    },
+    {
+      "path": "scripts/cloudflare-login.cmd",
+      "sha256": "9285c7cf0105fa6087da2dbb9264265a5daed85475ea61a12b0310431e3c8b0f",
+      "kind": "source"
+    },
+    {
+      "path": "scripts/cloudflare-provision.cmd",
+      "sha256": "72b6efc1ad0cab89dc54d6d18cb6a6c3f2c1bbc7fa42444b9be968cc1cd22aeb",
+      "kind": "source"
+    },
+    {
+      "path": "scripts/cloudflare-set-secrets.cmd",
+      "sha256": "5964a356784cc9ea3beeb76b801fc04ae79762ff1c47ab1fecb9f5a0d35a8cd0",
+      "kind": "source"
+    },
+    {
+      "path": "scripts/patch-opennext-worker.mjs",
+      "sha256": "1f761820c8ec949e7a32f1435b82f14f9919d46bf965090741ab55add8b4068b",
+      "kind": "source"
+    },
+    {
+      "path": "scripts/post-deploy-check.mjs",
+      "sha256": "51b28a8e14558dfc69c71779ebe9ed28d195f2f671d5eda07977afe885bbee82",
+      "kind": "source"
+    },
+    {
+      "path": "scripts/README.md",
+      "sha256": "3ae51f90927e57bc4b8f4e331a6442fa2a461819fb92303f6909904bb63ed0dc",
+      "kind": "source"
+    },
+    {
+      "path": "scripts/robots-policy.mjs",
+      "sha256": "0d3f85f8568a4b17a53c2eaa82fd06460a14262160ba53131f29978c5f4416ed",
+      "kind": "source"
+    },
+    {
+      "path": "scripts/run-canonical-host-check.mjs",
+      "sha256": "99c282d9246c3a3c060c9b697d0c4a769e6b7622a63b97ab99899d41bc2edc4b",
+      "kind": "source"
+    },
+    {
+      "path": "scripts/run-game-component-check.mjs",
+      "sha256": "bf05d0f3119b094bc4674846c71bbc69482541921ba199ec693dce021ba86e62",
+      "kind": "source"
+    },
+    {
+      "path": "scripts/run-game-data-check.mjs",
+      "sha256": "985321918bfc7abdbea07a675b710d40fe8ddbbfa6d128e24e67cd90309f536b",
+      "kind": "source"
+    },
+    {
+      "path": "scripts/run-game-metadata-check.mjs",
+      "sha256": "a6a16a08338143f1ada4f8f446e89f2e08208c0896cf884a5d494c894931ccf8",
+      "kind": "source"
+    },
+    {
+      "path": "scripts/run-game-player-check.mjs",
+      "sha256": "59f17f0f2dacc0b596f572a9a1871e58f78623a267257e3f33e7f1eac7bd9f09",
+      "kind": "source"
+    },
+    {
+      "path": "scripts/run-game-route-check.mjs",
+      "sha256": "be951b8407d08aadf9e1b2b29dda30fe33ffb133af6cd8ee6e8c7897a95eac44",
+      "kind": "source"
+    },
+    {
+      "path": "scripts/run-game-template-check.mjs",
+      "sha256": "c7121e18a868db05d702639ff8448cbaad958c20117e91b71fb0ed71d98ced8d",
+      "kind": "source"
+    },
+    {
+      "path": "scripts/run-home-discovery-check.mjs",
+      "sha256": "70cb3221dedd42081b24c201902a3dce2ff46c31e54b8ee478384da4545b4196",
+      "kind": "source"
+    },
+    {
+      "path": "scripts/run-home-gallery-check.mjs",
+      "sha256": "e0bf58437b6de392dd98af862c97be25107432cec1a24df9a8d9d028b7ab738d",
+      "kind": "source"
+    },
+    {
+      "path": "scripts/run-home-hero-check.mjs",
+      "sha256": "40ad21661b97f27e306c2eaa8d130637ecbd9a31d5c72c8ef25c214fb3a276e0",
+      "kind": "source"
+    },
+    {
+      "path": "scripts/run-home-information-architecture-check.mjs",
+      "sha256": "6fc9c018915cb8cbdf68f23fde16239be0cb246bd6f92eab7000b243a98d9f66",
+      "kind": "source"
+    },
+    {
+      "path": "scripts/run-home-performance-check.mjs",
+      "sha256": "58c55d5a6be4d07961c9163167fb2b1394c2807d4a31b8522da4e79ff7d9d308",
+      "kind": "source"
+    },
+    {
+      "path": "scripts/seo-check.mjs",
+      "sha256": "a56453c56c8f55f4a308790e38a34aed19b667d1ba3514bd09eb18709db2ca9f",
+      "kind": "source"
+    },
+    {
+      "path": "scripts/start-local-preview.cmd",
+      "sha256": "edd040a98ac02704de22f632fb21f981976c70b88932461874e4631db1dbcfb1",
+      "kind": "source"
+    },
+    {
+      "path": "scripts/submit-indexnow.mjs",
+      "sha256": "1394eb5cfa2bb600af3bd3fbdf0f8c2eae9adf78b31d18d6f4cd57f3be0f4ae9",
+      "kind": "source"
+    },
+    {
+      "path": "scripts/validate-canonical-host.ts",
+      "sha256": "1c7d329c5a0d5ac1b06432381f0933cfe70e0f17f8b4081f5e9695d23a6d32aa",
+      "kind": "source"
+    },
+    {
+      "path": "scripts/validate-game-components.tsx",
+      "sha256": "3ba59b4e768241a57ec53da796c5cca2c35c6b69c95259f827166c0780a7b74d",
+      "kind": "source"
+    },
+    {
+      "path": "scripts/validate-game-data.ts",
+      "sha256": "7e6f204d5397830accd8e33534939146bcbdd934b3ec49d8653c113b412d73bd",
+      "kind": "source"
+    },
+    {
+      "path": "scripts/validate-game-metadata.ts",
+      "sha256": "72c8aa3f30b341d9eec53d55551ddd422c9271aca9b52d203469a8910b11b403",
+      "kind": "source"
+    },
+    {
+      "path": "scripts/validate-game-player.tsx",
+      "sha256": "370b6809735b2b1ccbd99003fea04ea0f06a9761950333d765a661b3157797eb",
+      "kind": "source"
+    },
+    {
+      "path": "scripts/validate-game-routes.ts",
+      "sha256": "bca62350b59f545437c2e5a8e834275dce7c5df330bb58d268befd12ab00803f",
+      "kind": "source"
+    },
+    {
+      "path": "scripts/validate-game-template.tsx",
+      "sha256": "5427f7fbd835530eaa34ef7fc514692b203f8f312e71624ed51df3dc14af6406",
+      "kind": "source"
+    },
+    {
+      "path": "scripts/validate-home-discovery.tsx",
+      "sha256": "f0236c66dc6e603595d39ba675293c5aba44add9a50cd71b7a2f7e461065d894",
+      "kind": "source"
+    },
+    {
+      "path": "scripts/validate-home-gallery.tsx",
+      "sha256": "9d551c13b6df1c9173c32a805b07abe6ba85bef830057db78bc4653d56aac19b",
+      "kind": "source"
+    },
+    {
+      "path": "scripts/validate-home-hero.tsx",
+      "sha256": "6d2f6dc8332a7ea2fed9776ae3e453857c6ee2f4adfd2528ce6663fab73c9e3c",
+      "kind": "source"
+    },
+    {
+      "path": "scripts/validate-home-information-architecture.tsx",
+      "sha256": "e3c0001100d69301d7007ba8fc3840779530fbdadae93bd784d48978138cfbc4",
+      "kind": "source"
+    },
+    {
+      "path": "scripts/validate-home-performance.tsx",
+      "sha256": "8aefc3b9227758e6f2b651f539b8385bb5275376b6d939f6c0e76f618a48d90d",
+      "kind": "source"
+    },
+    {
+      "path": "public/games/oval-face-cover.png",
+      "sha256": "0e914b27b602683442d57dfa232c88be1fdea5a2ed45bdabe0da72e3ff464073",
+      "kind": "source"
+    },
+    {
+      "path": "public/games/oval-face-icon.png",
+      "sha256": "a3cdaeff0397647bd1580980c60e2996e5aa499eab8e5f2e634557b1c5da0909",
+      "kind": "source"
+    },
+    {
+      "path": "public/games/oval-face.swf",
+      "sha256": "80e974d8ef4ad5e849e93464eaea1833620c269bac30601d960f5438c285e09b",
+      "kind": "source"
+    },
+    {
+      "path": "public/games/README.md",
+      "sha256": "e5ae6e267570980805a1f298d9a6f0b5cf842f934035ae8e6d2355e5b8a3cf0c",
+      "kind": "source"
+    },
+    {
+      "path": "public/games/square-face-cover.png",
+      "sha256": "15a5c93f79859441eef3032ce45e07abc2e91a7520a9aaef42158dd4fe00a535",
+      "kind": "source"
+    },
+    {
+      "path": "public/games/square-face.swf",
+      "sha256": "b1d074c95f15b7dcecdbc2405abf820ead985669bb12cd47247fc8ea7537bc1e",
+      "kind": "source"
+    },
+    {
+      "path": "package.json",
+      "sha256": "76d1b6b42ab81d1febbfd9235541e6c29b205e958b02bdeff850941cd55283c5",
+      "kind": "source"
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "bf7b778ff42d02d40a11190d56d969cb03ac183a0cf70dbd85c199dc79778c97",
+      "kind": "source"
+    },
+    {
+      "path": "next.config.mjs",
+      "sha256": "10f3416af7a0a92f59c4d283113624e9c286f645c6155e91c5a381d512feb9ee",
+      "kind": "source"
+    },
+    {
+      "path": "middleware.ts",
+      "sha256": "4ce3b9cd325b843f1f80bca6545c114ac84f3336434a719cbfd47577c7ab53d6",
+      "kind": "source"
+    },
+    {
+      "path": "tsconfig.json",
+      "sha256": "a749da922f5e6f1d93a68270185c1ed56e3e45c786d1de1ee59f9bdb7512d720",
+      "kind": "source"
+    },
+    {
+      "path": "scripts/check-about-rights.mjs",
+      "sha256": "5d1591d13e293168dda865890daecbd33048bfca16b569a4059a262afae94868",
+      "kind": "source"
+    },
+    {
+      "path": "scripts/check-editorial-rights.mjs",
+      "sha256": "1ec7268b707490f6b55d297b5bfb7a1b36f944da45ddcc8d6f561a52518a503b",
+      "kind": "source"
+    },
+    {
+      "path": "scripts/check-gallery-rights.mjs",
+      "sha256": "bd2ed64fb002334e4e3d72527ec28e87414877bd8777535b97ca102b4953996f",
+      "kind": "source"
+    },
+    {
+      "path": "scripts/check-locale-rights.mjs",
+      "sha256": "a37deaf5dde95c0f88bd37488c1acfce43c5f3024a6c87c3c3d56088453f21c3",
+      "kind": "source"
+    },
+    {
+      "path": "lib/games/square-homepage.ts",
+      "sha256": "ce7d111d8a4df65194394ed31468a43fac96c83da1f53c8761090f159efe3aa4",
+      "kind": "source"
+    },
+    {
+      "path": "scripts/check-square-homepage.mjs",
+      "sha256": "4b9bb6e3adf0e99fbe8d2cfe03e9c1808eae13492b935300fdb24420aa895c71",
+      "kind": "source"
+    },
+    {
+      "path": "lib/games/oval-legacy-page.ts",
+      "sha256": "29a465e18d5a0520e1e4db970f7fa5b7b23b6022f317f890d31c8ba22efa4f79",
+      "kind": "source"
+    },
+    {
+      "path": "scripts/check-oval-legacy-page.mjs",
+      "sha256": "3a546fbe49f1f2a66c6139481c838b58527f26ac4e1a97cf39cee213e601a56a",
+      "kind": "source"
+    },
+    {
+      "path": "lib/games/pixel-external-page.ts",
+      "sha256": "00ef4fb078b36124ca0ba8f21d1823ce12caad1886908f9765fe1dc9b27626df",
+      "kind": "source"
+    },
+    {
+      "path": "scripts/check-pixel-external-page.mjs",
+      "sha256": "d7e648d7b6d894c339d4ba9170de68dc36d3368b53f8df78d493338bdffaa8e0",
+      "kind": "source"
+    },
+    {
+      "path": "docs/quality/evidence/terms-001-rights-copy/checks.json",
+      "sha256": "5b0aaefeca88262d57203e5caa92ea3ac465f5c399361be4bf873c28c4dccf1d",
+      "kind": "historical-json"
+    },
+    {
+      "path": "docs/quality/evidence/perf-home-001/metrics.json",
+      "sha256": "06eb8a27312031aff0f530f12c5961c552c8def39b582cf96f5abe823ac7c905",
+      "kind": "historical-json"
+    },
+    {
+      "path": "docs/quality/evidence/mig-square-001/proposal-checks.json",
+      "sha256": "4f737e30de67ec8de4c70954fb7ab7c9cf9e9ecaf91c96ece597245848636ee6",
+      "kind": "historical-json"
+    },
+    {
+      "path": "docs/quality/evidence/mig-square-001/checks.json",
+      "sha256": "f3de4b6319696f228e95ad5fddc53f1ba9588d48237daeee2fb31f1d4000daa6",
+      "kind": "historical-json"
+    },
+    {
+      "path": "docs/quality/evidence/mig-square-001/acceptance-checks.json",
+      "sha256": "29fbf5eb482a1e1ebb56c1b34086bf05d2113518bfeb422bdb8a8b2148636b8c",
+      "kind": "historical-json"
+    },
+    {
+      "path": "docs/quality/evidence/gallery-001-rights-copy/checks.json",
+      "sha256": "a41646b12dffdc099bc9c1a84cf10667f6efc1753b1db5be2c437e3695bd86af",
+      "kind": "historical-json"
+    },
+    {
+      "path": "docs/quality/evidence/gallery-001-rights-copy/acceptance-checks.json",
+      "sha256": "eb8105300c659fdc668f06d64b820bac69fcca5a2011a1bc2da0dfa51c121143",
+      "kind": "historical-json"
+    },
+    {
+      "path": "docs/quality/evidence/gallery-001-rights-copy/proposal-checks.json",
+      "sha256": "3c00f1471ba2741fb27d44b1efecd823834443243e46754c1aeda8fea1a81a08",
+      "kind": "historical-json"
+    },
+    {
+      "path": "docs/quality/evidence/mig-oval-001/proposal-checks.json",
+      "sha256": "20e52eba57d40a3d407e73962d0f799f5e7f5415e6dc950454da99dbf890d350",
+      "kind": "historical-json"
+    },
+    {
+      "path": "docs/quality/evidence/mig-oval-001/checks.json",
+      "sha256": "47bfac00708ee560e90b915bbc7fd6c57e4fc9a7def201fa3a4c9ea8a2fd3231",
+      "kind": "historical-json"
+    },
+    {
+      "path": "docs/quality/evidence/mig-oval-001/acceptance-checks.json",
+      "sha256": "48d1db1998610c94e5bfc398b51ae31edf7751f251fd0b0e0cbbefff4faa6a6f",
+      "kind": "historical-json"
+    },
+    {
+      "path": "docs/quality/evidence/mig-pixel-001/proposal-checks.json",
+      "sha256": "45526d6726ccc0b4f1e837e77f2e0159d306f374f86e2b27ff69fdaf8c157d18",
+      "kind": "historical-json"
+    },
+    {
+      "path": "docs/quality/evidence/mig-pixel-001/checks.json",
+      "sha256": "bb9571f180ccc4dd2d4a7b29e1733582b363eb1c49c637051fcdb0edb984d512",
+      "kind": "historical-json"
+    },
+    {
+      "path": "docs/quality/evidence/about-001-rights-copy/checks.json",
+      "sha256": "9b5d2192b7ddac92a9b01c8f2368d3faaee116253166bb6c623c83bbf8e647e7",
+      "kind": "historical-json"
+    },
+    {
+      "path": "docs/quality/evidence/editorial-001-rights-copy/checks.json",
+      "sha256": "72f7ff3be63a9e3b14a41a3f651a336c57f7d74d59785fb9173cd2af36117d52",
+      "kind": "historical-json"
+    },
+    {
+      "path": "docs/quality/evidence/editorial-001-rights-copy/proposal-checks.json",
+      "sha256": "a30c3eb49860af11e4af1e998dff78d8b42970d909113ee64c7a728256d5beed",
+      "kind": "historical-json"
+    },
+    {
+      "path": "docs/quality/evidence/home-gallery-001/production-approved-ugc-probe.json",
+      "sha256": "37f3fa29f7f9b84721ae117bf85efb4ce79fe7d2015192e2ce0cd62d8981f93c",
+      "kind": "historical-json"
+    },
+    {
+      "path": "docs/quality/evidence/locale-001-rights-copy/acceptance-checks.json",
+      "sha256": "bfe4948dc8eae906a7f6435fbc0cbfc29ee725027f9599a2d49444c305cd9d63",
+      "kind": "historical-json"
+    },
+    {
+      "path": "docs/quality/evidence/locale-001-rights-copy/checks.json",
+      "sha256": "55b49e3506e3141ffd1ef5dd701136411dc06b0c351a10fe99caf1fd9eadfdfb",
+      "kind": "historical-json"
+    },
+    {
+      "path": "docs/archive/license-gate-cancelled-2026-09-03/checks.json",
+      "sha256": "4fbe84181fe0d7231944eeb3bf2b64b93b6aae6b557cdba1b9445c4d12eb44fb",
+      "kind": "historical-json"
+    },
+    {
+      "path": "docs/quality/evidence/about-001-rights-copy/proposal-checks.json",
+      "sha256": "dbb44b079bd622e93813761c939091e15a0b892a20d2272aaa1cfbd93a690362",
+      "kind": "historical-json"
+    },
+    {
+      "path": "docs/archive/license-gate-cancelled-2026-09-03/release-order-confirmation.json",
+      "sha256": "7481222829e0f28319a65406495fa334c58e535b5c9d038e2b9d9706000cce57",
+      "kind": "historical-json"
+    },
+    {
+      "path": "docs/quality/evidence/locale-001-rights-copy/mobile-revision-checks.json",
+      "sha256": "71421d8433f2e8fe3f05c0d62ee46584535e4ef1c378fef54f0ec2bd0b4fb31f",
+      "kind": "historical-json"
+    },
+    {
+      "path": "docs/quality/evidence/locale-001-rights-copy/proposal-checks.json",
+      "sha256": "0ec30303ae7c7fc9a3af588e0939017aa2175896e4ec1fef741741ccbfe82de4",
+      "kind": "historical-json"
+    },
+    {
+      "path": "docs/quality/evidence/mig-pixel-001/acceptance-checks.json",
+      "sha256": "7a5f9e7b3f58b823357c2e26a70cbab1771d8ef86cf2c83b23703c3bfe85dd70",
+      "kind": "historical-json"
+    },
+    {
+      "path": "docs/quality/evidence/home-hero-001/desktop-1440x1000.png",
+      "sha256": "2da19ba3939d749edf838dedf75e9663861d3fd5732ebb6b0dfc5d072bd0bcfc",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "docs/quality/evidence/home-hero-001/mobile-390x844.png",
+      "sha256": "0d214231531f2c70b2648021b249f728b9769ce4e146a9d0f908851c8486c7f7",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "docs/quality/evidence/home-gallery-001/implementation-mobile-390x1000.jpg",
+      "sha256": "d6f0034cbb4993d839abbb9e1a3fe931c640f1431fe9ec99044fe64641889972",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "docs/quality/evidence/home-gallery-001/baseline-desktop-1440x900.jpg",
+      "sha256": "a98e1e0225653fb688a2c84c68767dac5b4bde2d8b831be042b287775d0ad296",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "docs/quality/evidence/home-gallery-001/implementation-desktop-1440x900.jpg",
+      "sha256": "094c150950af01cf0e44d0d95ee2229ee9edf4c48fcc17ba92c84993448a237e",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "docs/quality/evidence/home-gallery-001/baseline-mobile-390x1000.jpg",
+      "sha256": "3b2ed55e2385edb560f01f8dc755c913d24c522018bd46ce4819531a602bde9a",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "docs/quality/evidence/home-disc-001/desktop-1440x900.png",
+      "sha256": "3b01c26f1563eb6e0e302dc2a6fc4084e26fb85e7e7ac0b3e8f316fb4423c1ad",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "docs/quality/evidence/home-disc-001/desktop-1600x960.png",
+      "sha256": "e66c29539c1be230ba76c8ce212c35c80da87bfaca43823321698b26cd75bcc3",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "docs/quality/evidence/home-disc-001/mobile-390x1000-bottom.png",
+      "sha256": "4693663434b26aa01f1a0a8a565ca2783b7e8174b306030a0a2a07bc3a05dcad",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "docs/quality/evidence/home-disc-001/mobile-390x1000.png",
+      "sha256": "26f6e71aec08acd3496e2f7fb60855bc30f00564a49996b554313609e3a76b78",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "docs/quality/evidence/mig-pixel-001/screenshots/sidebar-oval-390.jpg",
+      "sha256": "aa1e5b8420975d85cf3ad0e6f2c7dd4e997cb41a4f9ef448f8d800080f1ed7f0",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "docs/quality/evidence/mig-pixel-001/screenshots/sidebar-oval-390-focused.jpg",
+      "sha256": "bcdafcd8d7886fd7a1201f2d487e1a84542ddde6c7a4e7c29ab447023d3e299a",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "docs/quality/evidence/mig-pixel-001/screenshots/sidebar-oval-360.jpg",
+      "sha256": "bad1a2e9aeacaf225377b638031243efa14b451deff93bab0294996997650609",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "docs/quality/evidence/mig-pixel-001/screenshots/sidebar-oval-360-focused.jpg",
+      "sha256": "8fe5e63706067f75bdab4a02092869ed5ccaa3625452cec5e2b56906f04a51b4",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "docs/quality/evidence/mig-pixel-001/screenshots/sidebar-es-390.jpg",
+      "sha256": "9f19cecf35898f9ce5edf25d0571b1482665547fdcc32f2dcd2773e27790b6fb",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "docs/quality/evidence/mig-pixel-001/screenshots/sidebar-es-390-focused.jpg",
+      "sha256": "3e812adfcf2e91d0daf314679805d0599b0d0026193c37ec05297fad5884e78c",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "docs/quality/evidence/mig-pixel-001/screenshots/sidebar-es-360.jpg",
+      "sha256": "caa34bf6d1c155d4e505892e1d64f6f1b3b263059c1464c993d671a8c56f3786",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "docs/quality/evidence/mig-pixel-001/screenshots/sidebar-es-360-focused.jpg",
+      "sha256": "564efa5ae3cdbb81ef6998bf0ca282de7af9a2ded91299160369f228792e8722",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "docs/quality/evidence/mig-pixel-001/screenshots/sidebar-ar-390.jpg",
+      "sha256": "c7d405ff753a5e470850a0d8c62e7d0c1b00c081d1bc2cdbe375ccb88fdda95b",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "docs/quality/evidence/mig-pixel-001/screenshots/sidebar-ar-390-focused.jpg",
+      "sha256": "119f9a419092935c3dc18ddc87416b58632321dac91fb104262796bd57c2af92",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "docs/quality/evidence/mig-pixel-001/screenshots/sidebar-ar-360.jpg",
+      "sha256": "11cc4a5d35cb2e2d950bba1027e75ab0912f486f525dcddea7c08ab45bd2a52e",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "docs/quality/evidence/mig-pixel-001/screenshots/sidebar-ar-360-focused.jpg",
+      "sha256": "5ab53279c75310ad84292be608c42186ebe3053b19522d04947c5ee2f82d3ef2",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "docs/quality/evidence/mig-pixel-001/screenshots/pixel-mobile-open-anchor.jpg",
+      "sha256": "d1edd89b5a38948abb513a6801a51533d58df4bb048c4c17fc61c4661b17130f",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "docs/quality/evidence/mig-pixel-001/screenshots/pixel-hero-keyboard-focus.jpg",
+      "sha256": "e396a6dcb52c4854a8dd2326d2e25c2702c5a4e99248a02f01dfc3fb4c069320",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "docs/quality/evidence/mig-pixel-001/screenshots/pixel-faq-keyboard-open.jpg",
+      "sha256": "72ab6cf75319308a614a920154aa886a7b17e8cb40b409c89ee3bbe69d11bbff",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "docs/quality/evidence/mig-pixel-001/screenshots/pixel-adapter-keyboard-focus.jpg",
+      "sha256": "2379af9b44baf9e640dfc5ea727117d3beb4ed8620f2ebd41679eb316a7d437d",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "docs/quality/evidence/mig-pixel-001/screenshots/before-pixel-390.jpg",
+      "sha256": "501060360918926e2edb4306b62246e4d8401ef5ee6edaa755ec47a0423347a1",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "docs/quality/evidence/mig-pixel-001/screenshots/before-pixel-360.jpg",
+      "sha256": "920ad5da998c2abfefc8051b477f5776189f69df6e28d8c4e00fa9168b99fc59",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "docs/quality/evidence/mig-pixel-001/screenshots/before-pixel-1280.jpg",
+      "sha256": "5c34aae558c878938e1973d3237f5461f51cb543b4fd4c3d6abae788fa7da8f1",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "docs/quality/evidence/mig-pixel-001/screenshots/before-oval-390.jpg",
+      "sha256": "c33ba33ec1815604327f3da6bad9024ae7d348505236a7617416fe01df72a83a",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "docs/quality/evidence/mig-pixel-001/screenshots/before-oval-360.jpg",
+      "sha256": "81174ac59e34e9edbce8b0983868dc29f73fff5a021b9e2ee257a5fe5ccfb101",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "docs/quality/evidence/mig-pixel-001/screenshots/before-oval-1280.jpg",
+      "sha256": "70c1447beffd7669a162643ade88aa974d8fdabaa5a2e69308e36621a56538b7",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "docs/quality/evidence/mig-pixel-001/screenshots/before-home-390.jpg",
+      "sha256": "0e8a5d2c0125af35aad9fec3b2389b7cee40365bd63fc999ed466743bf4efbbf",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "docs/quality/evidence/mig-pixel-001/screenshots/before-home-1280.jpg",
+      "sha256": "f1e5bebca8f011802003bb292d922d6bd6435d35a788ff8f1ae8a81fc32cc9b6",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "docs/quality/evidence/mig-pixel-001/screenshots/before-es-390.jpg",
+      "sha256": "4880e423597db704be049c2794da834beef5975a728230bdc233d332374790db",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "docs/quality/evidence/mig-pixel-001/screenshots/before-es-360.jpg",
+      "sha256": "5ac0adf297646cd46dbd5facf7ad0809dc6983431e3c6d0d1bee0f443a1611ad",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "docs/quality/evidence/mig-pixel-001/screenshots/before-es-1280.jpg",
+      "sha256": "26ce2e321281bb479ce111d67cde34628eb2c03bb88d40a066c3f1bb8b25cbca",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "docs/quality/evidence/mig-pixel-001/screenshots/before-ar-390.jpg",
+      "sha256": "3e72e3c0b2b23ba1694dd6bff876c0dacb790ee65552f19c8d16e2f4e80a519c",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "docs/quality/evidence/mig-pixel-001/screenshots/before-ar-360.jpg",
+      "sha256": "3493bd9f145f15d403be8d251d1d515e0c53c6202c4b9469e06b559535a2d913",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "docs/quality/evidence/mig-pixel-001/screenshots/before-ar-1280.jpg",
+      "sha256": "18ae7ae0b9b4cd9332a7d91b3162187c0ca0faf8658acdb62242cf1ea0e235cb",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "docs/quality/evidence/mig-pixel-001/screenshots/after-pixel-390.jpg",
+      "sha256": "9f2dea0bf20de06cfffaf98bb60dc1c292446c70637f37b67fd82154403b349f",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "docs/quality/evidence/mig-pixel-001/screenshots/after-pixel-360.jpg",
+      "sha256": "937076dd8a92054b808980d4ffe2fe68ed77cb216ef04112cf7e254e8f4e260c",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "docs/quality/evidence/mig-pixel-001/screenshots/after-pixel-1280.jpg",
+      "sha256": "eff0c1d76198efe292d8c37bc656b367be7b68539813eaad7e40c86c6538c797",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "docs/quality/evidence/mig-pixel-001/screenshots/after-pixel-1280-stable.jpg",
+      "sha256": "5ff431c25396f4b8b97b8ca51eb789dc91bf8208602d61d7d71ac058e58f0e5d",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "docs/quality/evidence/mig-pixel-001/screenshots/after-oval-390.jpg",
+      "sha256": "b1a6304c9163af4791286593a31d47a2e60b76b4b2072386ad6f27925c06eb49",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "docs/quality/evidence/mig-pixel-001/screenshots/after-oval-360.jpg",
+      "sha256": "5786589881878f576f40c9ad285909ca16d904ca78ef78f56cb58e550e71f7af",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "docs/quality/evidence/mig-pixel-001/screenshots/after-oval-1280.jpg",
+      "sha256": "95c123f6ac0a2c613e49ddab6a41b13c37920e2955d9b2d51ad3dd1375da9bcc",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "docs/quality/evidence/mig-pixel-001/screenshots/after-home-390.jpg",
+      "sha256": "0e8a5d2c0125af35aad9fec3b2389b7cee40365bd63fc999ed466743bf4efbbf",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "docs/quality/evidence/mig-pixel-001/screenshots/after-home-1280.jpg",
+      "sha256": "f1e5bebca8f011802003bb292d922d6bd6435d35a788ff8f1ae8a81fc32cc9b6",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "docs/quality/evidence/mig-pixel-001/screenshots/after-es-390.jpg",
+      "sha256": "6ad13fb220c3ae816e7ba11542605d3f87328da637acf184e00988a07455c772",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "docs/quality/evidence/mig-pixel-001/screenshots/after-es-360.jpg",
+      "sha256": "3284d2effab554f8dc53956f861df4232463e988ed3185c5cea728a16955e0ab",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "docs/quality/evidence/mig-pixel-001/screenshots/after-es-1280.jpg",
+      "sha256": "1b52ae906c703f1ef55996de7c5a10e41b40f7730d076f67071a7743e5689fee",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "docs/quality/evidence/mig-pixel-001/screenshots/after-ar-390.jpg",
+      "sha256": "c06fcb8cd492c38a918fd904ae532f8010e5fae6564a5344c3a11354b7bdec81",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "docs/quality/evidence/mig-pixel-001/screenshots/after-ar-360.jpg",
+      "sha256": "ee2bfcc21d017411cfbb8d9001e85cbc2d0589699d85a314e60032c45446e05e",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "docs/quality/evidence/mig-pixel-001/screenshots/after-ar-1280.jpg",
+      "sha256": "70709abc985ceed93879d193115ad4938a17aa0e2e2fa3684b433028d478cdb7",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/locale-001-v1.57/before-es-desktop-1280x900.jpg",
+      "sha256": "6644d2ae869baf681b378ceed25c8eea3e34a526fc0478d29617c627e690418c",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/locale-001-v1.57/before-ar-mobile-390x844.jpg",
+      "sha256": "3e72e3c0b2b23ba1694dd6bff876c0dacb790ee65552f19c8d16e2f4e80a519c",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/locale-001-v1.57/before-ar-desktop-1280x900.jpg",
+      "sha256": "8b1933e675cb6813115127bdab1766c3d44426b694a931bccb3215b13f6b14c3",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/locale-001-v1.57/after-ar-desktop-1280x900.jpg",
+      "sha256": "9a3eae7c7d663e836d5469b33b73b4f6827ac463d7705a3b9836efb07c169208",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/locale-001-v1.57/after-es-desktop-1280x900.jpg",
+      "sha256": "1cbc83a3f454f93554c10f35403a46ff0f45439dabc3667b4aba7ce2c2db4d07",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/locale-001-v1.57/after-es-mobile-390x844.jpg",
+      "sha256": "4880e423597db704be049c2794da834beef5975a728230bdc233d332374790db",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/locale-001-v1.57/after-es-mobile-sidebar-clipping-390x844.jpg",
+      "sha256": "96dda5ae0c25dac12938dd24c43e6e249fd869b9e589a1d878166656e870a258",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/locale-001-v1.57/after-ar-mobile-390x844.jpg",
+      "sha256": "7bf8e7ee3875600e916c7a22e3c2c7e647206da8ff66c89b435a2e059b99b716",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/locale-001-v1.57/after-ar-mobile-sidebar-clipping-retry-390x844.jpg",
+      "sha256": "5e4b677c16c5bed13ca08b88a6e4782cb92b8b11273403b64a51d49c6108cf3b",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/locale-001-v1.57/after-root-desktop-idle-1280x900.jpg",
+      "sha256": "ec18b1021bdcd98b8106b5dc81e6238d991ce79001d0e2ed612b31d3dc373b71",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/locale-001-v1.57/after-root-desktop-ready-1280x900.jpg",
+      "sha256": "e25123b553fe99227796f5ef214768f5813adfa924cd0a34cc14bccdf3a7a217",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/locale-001-v1.57/after-root-mobile-idle-390x844.jpg",
+      "sha256": "0e8a5d2c0125af35aad9fec3b2389b7cee40365bd63fc999ed466743bf4efbbf",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/locale-001-v1.57/after-root-mobile-ready-390x844.jpg",
+      "sha256": "e83cf31569ea5c319c356a53732026fd8614b1e718698328f30b54d1f3b92995",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/locale-001-v1.57/after-root-desktop-idle-cover-recheck-1280x900.jpg",
+      "sha256": "f1e5bebca8f011802003bb292d922d6bd6435d35a788ff8f1ae8a81fc32cc9b6",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/locale-001-v1.58/recheck-2026-09-03/es-first-viewport-390x844.jpg",
+      "sha256": "4880e423597db704be049c2794da834beef5975a728230bdc233d332374790db",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/locale-001-v1.58/recheck-2026-09-03/es-sidebar-complete-390x844.jpg",
+      "sha256": "18682ca000046d95e6804ca3fa6e3ceeb2dc7d863e6879da7c95b51792d7ca71",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/locale-001-v1.58/recheck-2026-09-03/ar-sidebar-complete-390x844.jpg",
+      "sha256": "f4f5c181923589b03847196582a71b5fe29c305699989a49e83572567ea217f5",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/locale-001-v1.58/recheck-2026-09-03/ar-sidebar-complete-360x800.jpg",
+      "sha256": "7fe3b827cd64c36c2ed96bb34ce226fa0eae2e2d4c6e41dc466a55b1e18e51f4",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/locale-001-v1.58/recheck-2026-09-03/es-sidebar-complete-360x800.jpg",
+      "sha256": "73e062d71371fcabcb63f327a8163945a536e92a9f436a80314da7f6c3919039",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/locale-001-v1.58/recheck-2026-09-03/ar-desktop-complete-1280x900.jpg",
+      "sha256": "e83d7f374e567acb2a555ece0f7f8ac7b95f6efe206b82b9b2b2a634d812b785",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/locale-001-v1.58/recheck-2026-09-03/es-desktop-complete-1280x900.jpg",
+      "sha256": "e7b3a834846c87196218af8f8fcfb772d4a5634cde1d5e60f0cf92d24e25c40b",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/locale-001-v1.58/recheck-2026-09-03/root-desktop-idle-1280x900.jpg",
+      "sha256": "f1e5bebca8f011802003bb292d922d6bd6435d35a788ff8f1ae8a81fc32cc9b6",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/locale-001-v1.58/recheck-2026-09-03/root-desktop-ready-1280x900.jpg",
+      "sha256": "86a40402c8dec310b990ceed8569a4bff60620bf5769f32687e76143c7656947",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/locale-001-v1.58/after-ar-mobile-short-copy-390x844.jpg",
+      "sha256": "d02b443f4d07bd9762fa6439d79d9e7636633f2dc5e6da2992979d673ef38d4d",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/locale-001-v1.58/after-es-mobile-short-copy-390x844.jpg",
+      "sha256": "bfac1784d1ba55259cb5210de33c7e8bcfdb4d195f4017d5cad349b708bff408",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/locale-001-v1.58/after-es-mobile-short-copy-loaded-390x844.jpg",
+      "sha256": "d8b9b51eb80ca213c3af438818ed6f12d1dae318a37de9d4eaa74e15e722452f",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/locale-001-v1.58/before-es-mobile-long-copy-390x844.jpg",
+      "sha256": "36b019ad5fec645b07a8a980dc03fd6b3ff07b3937b0f7a5c78b42a593b93d83",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-square-001-v1.63/before-home-1280.png",
+      "sha256": "f1e5bebca8f011802003bb292d922d6bd6435d35a788ff8f1ae8a81fc32cc9b6",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-square-001-v1.63/before-home-390.png",
+      "sha256": "0e8a5d2c0125af35aad9fec3b2389b7cee40365bd63fc999ed466743bf4efbbf",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-square-001-v1.63/before-home-360.png",
+      "sha256": "3caf873422202f20355af1c57463be1368f70537559e71669d19b10b96fc90e1",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-square-001-v1.63/before-es-1280.png",
+      "sha256": "ea5c6aa81605f6281f0d583b4427d1dd21b3b14e98d8859870ad1dd91a78f719",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-square-001-v1.63/before-es-390.png",
+      "sha256": "4880e423597db704be049c2794da834beef5975a728230bdc233d332374790db",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-square-001-v1.63/before-es-360.png",
+      "sha256": "efe60b62cea7425fd0eb4fb5d492713ffc2245302f7c44639e45c684f73b0e27",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-square-001-v1.63/before-ar-1280.png",
+      "sha256": "b6a182c0d5ee26d6c6197ceab15d582d3f97360cddced0d49616af405b2385e3",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-square-001-v1.63/before-ar-390.png",
+      "sha256": "3e72e3c0b2b23ba1694dd6bff876c0dacb790ee65552f19c8d16e2f4e80a519c",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-square-001-v1.63/before-ar-360.png",
+      "sha256": "73d8afb3268c53655f1822dbd4dc1bb95f5f8e3feea392f46116f0218873b75c",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-square-001-v1.63/after-home-1280.jpg",
+      "sha256": "f1e5bebca8f011802003bb292d922d6bd6435d35a788ff8f1ae8a81fc32cc9b6",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-square-001-v1.63/after-home-390.jpg",
+      "sha256": "0e8a5d2c0125af35aad9fec3b2389b7cee40365bd63fc999ed466743bf4efbbf",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-square-001-v1.63/after-home-360.jpg",
+      "sha256": "3caf873422202f20355af1c57463be1368f70537559e71669d19b10b96fc90e1",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-square-001-v1.63/after-es-1280.jpg",
+      "sha256": "a6f54332c013eb365ddf4b19acef457b7cf7ba80057496c22ae6e3b997a9788a",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-square-001-v1.63/after-es-390.jpg",
+      "sha256": "4880e423597db704be049c2794da834beef5975a728230bdc233d332374790db",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-square-001-v1.63/after-es-360.jpg",
+      "sha256": "efe60b62cea7425fd0eb4fb5d492713ffc2245302f7c44639e45c684f73b0e27",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-square-001-v1.63/after-ar-1280.jpg",
+      "sha256": "b6a182c0d5ee26d6c6197ceab15d582d3f97360cddced0d49616af405b2385e3",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-square-001-v1.63/after-ar-390.jpg",
+      "sha256": "3e72e3c0b2b23ba1694dd6bff876c0dacb790ee65552f19c8d16e2f4e80a519c",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-square-001-v1.63/after-ar-360.jpg",
+      "sha256": "73d8afb3268c53655f1822dbd4dc1bb95f5f8e3feea392f46116f0218873b75c",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-square-001-v1.63/home-mobile-keyboard-ready.jpg",
+      "sha256": "e83cf31569ea5c319c356a53732026fd8614b1e718698328f30b54d1f3b92995",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-square-001-v1.63/home-mobile-faq-open.jpg",
+      "sha256": "b87d52c5860e68f368460bb7493e7d435413a4a50a9ede17248f41156b994aa4",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-square-001-v1.63/es-gallery-sidebar-390.jpg",
+      "sha256": "10435bff9722effb36b3b2b2e52ade493af0b8dbc78befc7f4867d2d8feb5b8c",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-square-001-v1.63/es-gallery-sidebar-360.jpg",
+      "sha256": "feb7ce3eb2260ce4097edae14f09dcafaf9c8d31fff512d2bf6384271d5e4254",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-square-001-v1.63/ar-gallery-sidebar-390.jpg",
+      "sha256": "02806ba3d5d071b5264fd7332228761f004a85d7e03691ba6bf69924f88264c2",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-square-001-v1.63/ar-gallery-sidebar-360.jpg",
+      "sha256": "27cbb7b4cc4c39a6c3ffb37df76269353b7cfb49552a971d273ae62bfdb581f9",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-square-001-v1.63/home-desktop-ready.jpg",
+      "sha256": "843ba38c5fd0715af8de271fb08fd07072f6be5562c7d6994d3ba3729597b185",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-oval-001-v1.65/before-oval-1280.jpg",
+      "sha256": "e1bea80cbf715630cf4b4b80272e3e498d539ee8fddfec39f63755f29f6dc1cc",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-oval-001-v1.65/before-oval-390.jpg",
+      "sha256": "c33ba33ec1815604327f3da6bad9024ae7d348505236a7617416fe01df72a83a",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-oval-001-v1.65/before-oval-360.jpg",
+      "sha256": "81174ac59e34e9edbce8b0983868dc29f73fff5a021b9e2ee257a5fe5ccfb101",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-oval-001-v1.65/before-home-1280.jpg",
+      "sha256": "f1e5bebca8f011802003bb292d922d6bd6435d35a788ff8f1ae8a81fc32cc9b6",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-oval-001-v1.65/before-home-390.jpg",
+      "sha256": "0e8a5d2c0125af35aad9fec3b2389b7cee40365bd63fc999ed466743bf4efbbf",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-oval-001-v1.65/before-es-390.jpg",
+      "sha256": "4880e423597db704be049c2794da834beef5975a728230bdc233d332374790db",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-oval-001-v1.65/before-ar-390.jpg",
+      "sha256": "3e72e3c0b2b23ba1694dd6bff876c0dacb790ee65552f19c8d16e2f4e80a519c",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-oval-001-v1.65/after-oval-1280.jpg",
+      "sha256": "c30e3e004a2ed352dd97588ed0cc0f0d1ca717b98ebb4fec89ffefe6f6b8b3fc",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-oval-001-v1.65/after-oval-390.jpg",
+      "sha256": "c33ba33ec1815604327f3da6bad9024ae7d348505236a7617416fe01df72a83a",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-oval-001-v1.65/after-oval-360.jpg",
+      "sha256": "81174ac59e34e9edbce8b0983868dc29f73fff5a021b9e2ee257a5fe5ccfb101",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-oval-001-v1.65/after-home-1280.jpg",
+      "sha256": "f1e5bebca8f011802003bb292d922d6bd6435d35a788ff8f1ae8a81fc32cc9b6",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-oval-001-v1.65/after-home-390.jpg",
+      "sha256": "0e8a5d2c0125af35aad9fec3b2389b7cee40365bd63fc999ed466743bf4efbbf",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-oval-001-v1.65/after-es-390.jpg",
+      "sha256": "4880e423597db704be049c2794da834beef5975a728230bdc233d332374790db",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-oval-001-v1.65/after-ar-390.jpg",
+      "sha256": "3e72e3c0b2b23ba1694dd6bff876c0dacb790ee65552f19c8d16e2f4e80a519c",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-oval-001-v1.65/oval-mobile-loading.jpg",
+      "sha256": "58368c1242147f21c82722b96c774bf7a0d2a4a391fea936698bacea22e01587",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-oval-001-v1.65/oval-mobile-ready.jpg",
+      "sha256": "e0b0db645d9afcce1abc33ead59d2638bdce0f130623a0b4f392d9c2d1906e11",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-oval-001-v1.65/oval-360-space-ready.jpg",
+      "sha256": "8193838110751e9347a4653db871156aae9a710fcfa14f18669654b951bfa8f2",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-oval-001-v1.65/oval-desktop-enter-ready.jpg",
+      "sha256": "a22d05ec7af1724ddddd5ef5e5dfdb626d4db4cb5d02bb1e292b605f67526aae",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-oval-001-v1.65/oval-desktop-game-ready.jpg",
+      "sha256": "a22d05ec7af1724ddddd5ef5e5dfdb626d4db4cb5d02bb1e292b605f67526aae",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-oval-001-v1.65/oval-mobile-game-and-controls.jpg",
+      "sha256": "e3d9312e3b35a24dcb1bc963784054bddf80b5255590cd7a8a7f2abf56c142a4",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-oval-001-v1.65/oval-desktop-full-game.jpg",
+      "sha256": "c85f5f0e6e7c1ae2ab7cde8b89b3f49a296f39490b14f78c39f687830788ff70",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-pixel-001-v1.67/before-pixel-1280.jpg",
+      "sha256": "5c34aae558c878938e1973d3237f5461f51cb543b4fd4c3d6abae788fa7da8f1",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-pixel-001-v1.67/before-pixel-390.jpg",
+      "sha256": "501060360918926e2edb4306b62246e4d8401ef5ee6edaa755ec47a0423347a1",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-pixel-001-v1.67/before-pixel-360.jpg",
+      "sha256": "920ad5da998c2abfefc8051b477f5776189f69df6e28d8c4e00fa9168b99fc59",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-pixel-001-v1.67/before-oval-1280.jpg",
+      "sha256": "70c1447beffd7669a162643ade88aa974d8fdabaa5a2e69308e36621a56538b7",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-pixel-001-v1.67/before-oval-390.jpg",
+      "sha256": "c33ba33ec1815604327f3da6bad9024ae7d348505236a7617416fe01df72a83a",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-pixel-001-v1.67/before-oval-360.jpg",
+      "sha256": "81174ac59e34e9edbce8b0983868dc29f73fff5a021b9e2ee257a5fe5ccfb101",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-pixel-001-v1.67/before-es-1280.jpg",
+      "sha256": "26ce2e321281bb479ce111d67cde34628eb2c03bb88d40a066c3f1bb8b25cbca",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-pixel-001-v1.67/before-es-390.jpg",
+      "sha256": "4880e423597db704be049c2794da834beef5975a728230bdc233d332374790db",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-pixel-001-v1.67/before-es-360.jpg",
+      "sha256": "5ac0adf297646cd46dbd5facf7ad0809dc6983431e3c6d0d1bee0f443a1611ad",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-pixel-001-v1.67/before-ar-1280.jpg",
+      "sha256": "18ae7ae0b9b4cd9332a7d91b3162187c0ca0faf8658acdb62242cf1ea0e235cb",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-pixel-001-v1.67/before-ar-390.jpg",
+      "sha256": "3e72e3c0b2b23ba1694dd6bff876c0dacb790ee65552f19c8d16e2f4e80a519c",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-pixel-001-v1.67/before-ar-360.jpg",
+      "sha256": "3493bd9f145f15d403be8d251d1d515e0c53c6202c4b9469e06b559535a2d913",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-pixel-001-v1.67/before-home-1280.jpg",
+      "sha256": "f1e5bebca8f011802003bb292d922d6bd6435d35a788ff8f1ae8a81fc32cc9b6",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-pixel-001-v1.67/before-home-390.jpg",
+      "sha256": "0e8a5d2c0125af35aad9fec3b2389b7cee40365bd63fc999ed466743bf4efbbf",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-pixel-001-v1.67/after-pixel-1280.jpg",
+      "sha256": "eff0c1d76198efe292d8c37bc656b367be7b68539813eaad7e40c86c6538c797",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-pixel-001-v1.67/after-pixel-390.jpg",
+      "sha256": "9f2dea0bf20de06cfffaf98bb60dc1c292446c70637f37b67fd82154403b349f",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-pixel-001-v1.67/after-pixel-360.jpg",
+      "sha256": "937076dd8a92054b808980d4ffe2fe68ed77cb216ef04112cf7e254e8f4e260c",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-pixel-001-v1.67/after-oval-1280.jpg",
+      "sha256": "95c123f6ac0a2c613e49ddab6a41b13c37920e2955d9b2d51ad3dd1375da9bcc",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-pixel-001-v1.67/after-oval-390.jpg",
+      "sha256": "b1a6304c9163af4791286593a31d47a2e60b76b4b2072386ad6f27925c06eb49",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-pixel-001-v1.67/after-oval-360.jpg",
+      "sha256": "5786589881878f576f40c9ad285909ca16d904ca78ef78f56cb58e550e71f7af",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-pixel-001-v1.67/after-es-1280.jpg",
+      "sha256": "1b52ae906c703f1ef55996de7c5a10e41b40f7730d076f67071a7743e5689fee",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-pixel-001-v1.67/after-es-390.jpg",
+      "sha256": "6ad13fb220c3ae816e7ba11542605d3f87328da637acf184e00988a07455c772",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-pixel-001-v1.67/after-es-360.jpg",
+      "sha256": "3284d2effab554f8dc53956f861df4232463e988ed3185c5cea728a16955e0ab",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-pixel-001-v1.67/after-ar-1280.jpg",
+      "sha256": "70709abc985ceed93879d193115ad4938a17aa0e2e2fa3684b433028d478cdb7",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-pixel-001-v1.67/after-ar-390.jpg",
+      "sha256": "c06fcb8cd492c38a918fd904ae532f8010e5fae6564a5344c3a11354b7bdec81",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-pixel-001-v1.67/after-ar-360.jpg",
+      "sha256": "ee2bfcc21d017411cfbb8d9001e85cbc2d0589699d85a314e60032c45446e05e",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-pixel-001-v1.67/after-home-1280.jpg",
+      "sha256": "f1e5bebca8f011802003bb292d922d6bd6435d35a788ff8f1ae8a81fc32cc9b6",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-pixel-001-v1.67/after-home-390.jpg",
+      "sha256": "0e8a5d2c0125af35aad9fec3b2389b7cee40365bd63fc999ed466743bf4efbbf",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-pixel-001-v1.67/after-pixel-1280-stable.jpg",
+      "sha256": "5ff431c25396f4b8b97b8ca51eb789dc91bf8208602d61d7d71ac058e58f0e5d",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-pixel-001-v1.67/pixel-hero-keyboard-focus.jpg",
+      "sha256": "e396a6dcb52c4854a8dd2326d2e25c2702c5a4e99248a02f01dfc3fb4c069320",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-pixel-001-v1.67/pixel-adapter-keyboard-focus.jpg",
+      "sha256": "2379af9b44baf9e640dfc5ea727117d3beb4ed8620f2ebd41679eb316a7d437d",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-pixel-001-v1.67/pixel-faq-keyboard-open.jpg",
+      "sha256": "72ab6cf75319308a614a920154aa886a7b17e8cb40b409c89ee3bbe69d11bbff",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-pixel-001-v1.67/pixel-mobile-open-anchor.jpg",
+      "sha256": "d1edd89b5a38948abb513a6801a51533d58df4bb048c4c17fc61c4661b17130f",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-pixel-001-v1.67/sidebar-oval-390.jpg",
+      "sha256": "aa1e5b8420975d85cf3ad0e6f2c7dd4e997cb41a4f9ef448f8d800080f1ed7f0",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-pixel-001-v1.67/sidebar-oval-360.jpg",
+      "sha256": "bad1a2e9aeacaf225377b638031243efa14b451deff93bab0294996997650609",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-pixel-001-v1.67/sidebar-es-390.jpg",
+      "sha256": "9f19cecf35898f9ce5edf25d0571b1482665547fdcc32f2dcd2773e27790b6fb",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-pixel-001-v1.67/sidebar-es-360.jpg",
+      "sha256": "caa34bf6d1c155d4e505892e1d64f6f1b3b263059c1464c993d671a8c56f3786",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-pixel-001-v1.67/sidebar-ar-390.jpg",
+      "sha256": "c7d405ff753a5e470850a0d8c62e7d0c1b00c081d1bc2cdbe375ccb88fdda95b",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-pixel-001-v1.67/sidebar-ar-360.jpg",
+      "sha256": "11cc4a5d35cb2e2d950bba1027e75ab0912f486f525dcddea7c08ab45bd2a52e",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-pixel-001-v1.67/sidebar-oval-390-focused.jpg",
+      "sha256": "bcdafcd8d7886fd7a1201f2d487e1a84542ddde6c7a4e7c29ab447023d3e299a",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-pixel-001-v1.67/sidebar-oval-360-focused.jpg",
+      "sha256": "8fe5e63706067f75bdab4a02092869ed5ccaa3625452cec5e2b56906f04a51b4",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-pixel-001-v1.67/sidebar-es-390-focused.jpg",
+      "sha256": "3e812adfcf2e91d0daf314679805d0599b0d0026193c37ec05297fad5884e78c",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-pixel-001-v1.67/sidebar-es-360-focused.jpg",
+      "sha256": "564efa5ae3cdbb81ef6998bf0ca282de7af9a2ded91299160369f228792e8722",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-pixel-001-v1.67/sidebar-ar-390-focused.jpg",
+      "sha256": "119f9a419092935c3dc18ddc87416b58632321dac91fb104262796bd57c2af92",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-pixel-001-v1.67/sidebar-ar-360-focused.jpg",
+      "sha256": "5ab53279c75310ad84292be608c42186ebe3053b19522d04947c5ee2f82d3ef2",
+      "kind": "screenshot-path"
+    },
+    {
+      "path": ".next/server/app/index.html",
+      "sha256": "a92d43293f79f939defb890ad04e671ee5ad00d7c8fd349d1663018a3e7a5350",
+      "kind": "artifact"
+    },
+    {
+      "path": ".next/server/app/es.html",
+      "sha256": "279b1db0a5b6ac07d0ca575243629ae52c45cb139f77ee647b9c2b781439db5d",
+      "kind": "artifact"
+    },
+    {
+      "path": ".next/server/app/vi.html",
+      "sha256": "d448113cc6cb43a165c635e12b21d1e8e65c72e096e47e13f9e157f8c79c2610",
+      "kind": "artifact"
+    },
+    {
+      "path": ".next/server/app/ja.html",
+      "sha256": "d655d4305683376d0b8dc40f375f220b793261ff391f69fce21567c6a343d169",
+      "kind": "artifact"
+    },
+    {
+      "path": ".next/server/app/th.html",
+      "sha256": "4e6326d76fc47f1a4eb71d7c069c55b1170eba6956bdaf82239e3e13a9f633f9",
+      "kind": "artifact"
+    },
+    {
+      "path": ".next/server/app/ar.html",
+      "sha256": "1defffe4d145b27a449300f57f6cafc44616b39383c65c8384d2ed7ec92881e5",
+      "kind": "artifact"
+    },
+    {
+      "path": ".next/server/app/ru.html",
+      "sha256": "d4e892489f209e6f68496b14a0139f4590bcb2c32b3778bb661373f613919196",
+      "kind": "artifact"
+    },
+    {
+      "path": ".next/server/app/id.html",
+      "sha256": "b1f40a83f8d493181f988eb1b8d47a44f8c45d1f3831e914644311fbfdd12bb9",
+      "kind": "artifact"
+    },
+    {
+      "path": ".next/server/app/gallery.html",
+      "sha256": "09dd4e8e5e70932f3213e802bf9ce695456fc714b260f4096a3a1509880057aa",
+      "kind": "artifact"
+    },
+    {
+      "path": ".next/server/app/editorial-policy.html",
+      "sha256": "5e6c0297d030e6fd2d576313b2d0a56d0a969638239a338949ef433d66b45fc8",
+      "kind": "artifact"
+    },
+    {
+      "path": ".next/server/app/about-us.html",
+      "sha256": "47e2252373d7d6de26ded81969843ffedca85309bbabcfc5cdf9acaa7b267228",
+      "kind": "artifact"
+    },
+    {
+      "path": ".next/server/app/terms-of-service.html",
+      "sha256": "412971c3ec444b40ec23fa277fe9e25da7f30a3751e8fdff78dd4b222573a3ad",
+      "kind": "artifact"
+    },
+    {
+      "path": ".next/server/app/robots.txt.body",
+      "sha256": "e114dfaaa714b7b9d2385907a7f1e915e30c606d049f11457f45a9f6549d554f",
+      "kind": "artifact"
+    },
+    {
+      "path": ".next/server/app/sitemap.xml.body",
+      "sha256": "3f1341c4b3d4e339fc5b231539157032ff42ecfc991e4bc2058903d372bb12a7",
+      "kind": "artifact"
+    },
+    {
+      "path": ".open-next/worker.js",
+      "sha256": "4e7c7cb3850c2ca12374d034118afc422ed5d95f46bfc3df3ff1dba2911807f3",
+      "kind": "artifact"
+    },
+    {
+      "path": ".next/server/app/oval-face-icon-generator.html",
+      "sha256": "1d00ff53c532a1336470e4fa1fee2a16614ca1ac1b7b0d94363da47e25606e02",
+      "kind": "artifact"
+    },
+    {
+      "path": ".next/server/app/pixel-art-avatar-icon-generator.html",
+      "sha256": "571175117686682a6d11313be288badbc99c7a6e5dcd2bbd513c7eee7c4699b2",
+      "kind": "artifact"
+    },
+    {
+      "path": ".next/BUILD_ID",
+      "sha256": "909b2031cea1a14ba2413baeed5cab908657f4ea003260379c323f4b47d41f82",
+      "kind": "artifact"
+    },
+    {
+      "path": "public/games/square-face.swf",
+      "sha256": "b1d074c95f15b7dcecdbc2405abf820ead985669bb12cd47247fc8ea7537bc1e",
+      "kind": "swf"
+    },
+    {
+      "path": "public/games/oval-face.swf",
+      "sha256": "80e974d8ef4ad5e849e93464eaea1833620c269bac30601d960f5438c285e09b",
+      "kind": "swf"
+    },
+    {
+      "path": "data/game-license-registry.json",
+      "sha256": "fb0b94f56ffa3c7feca89ee136c73795a95d993de0ebe16d81ca8041da4a8924",
+      "kind": "registry"
+    },
+    {
+      "path": "docs/archive/license-gate-cancelled-2026-09-03/swf-license-evidence-request.md",
+      "sha256": "d257345a56bbbe3eebb183e56bd42fc3988f49d09f4b9daaeb3cf546cdde4557",
+      "kind": "cancelled-archive"
+    },
+    {
+      "path": "docs/archive/license-gate-cancelled-2026-09-03/checks.json",
+      "sha256": "4fbe84181fe0d7231944eeb3bf2b64b93b6aae6b557cdba1b9445c4d12eb44fb",
+      "kind": "cancelled-archive"
+    },
+    {
+      "path": "docs/archive/license-gate-cancelled-2026-09-03/release-order-confirmation.json",
+      "sha256": "7481222829e0f28319a65406495fa334c58e535b5c9d038e2b9d9706000cce57",
+      "kind": "cancelled-archive"
+    }
+  ],
+  "originalEvidenceDateBoundary": "v1.67 application QA was recorded at 2026-09-03T06:46:38.555Z. No command, build, browser, screenshot or performance result from that evidence was rerun or relabeled as current application QA.",
+  "policySourcesReviewedAt": "2026-09-03",
+  "policySources": [
+    {
+      "title": "Creating helpful, reliable, people-first content",
+      "url": "https://developers.google.com/search/docs/fundamentals/creating-helpful-content",
+      "usedFor": "Unique value, real experience, no preferred word-count claim."
+    },
+    {
+      "title": "Spam policies for Google web search",
+      "url": "https://developers.google.com/search/docs/essentials/spam-policies",
+      "usedFor": "Do not generate low-value pages primarily to manipulate search; not a blanket AI-content ban."
+    },
+    {
+      "title": "General structured data guidelines",
+      "url": "https://developers.google.com/search/docs/appearance/structured-data/sd-policies",
+      "usedFor": "Visible-content correspondence and no guaranteed search appearance."
+    }
+  ],
+  "commands": [
+    {
+      "command": "node \"C:/Users/liu/AppData/Local/Temp/mysquarefaceicon-content-qa-v170-1fc57964925a4354a1ee2a2e73e447b3/verify.cjs\" preview",
+      "exitCode": 0,
+      "recordedAt": "2026-09-03T13:46:57.084Z",
+      "scope": "In-memory planned governance changes, new documents, fields, references and isolated board VM; not live UI."
+    },
+    {
+      "command": "node \"C:/Users/liu/AppData/Local/Temp/mysquarefaceicon-content-qa-v170-1fc57964925a4354a1ee2a2e73e447b3/verify.cjs\" final",
+      "exitCode": 0,
+      "recordedAt": "2026-09-03T13:47:13.574Z",
+      "scope": "Applied files and isolated VM, frozen hashes, current doc references; no app test/build/browser."
+    },
+    {
+      "command": "git diff --check",
+      "cwd": "D:\\LYXGIT\\mysquarefaceicon",
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": "warning: in the working copy of '.gitignore', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'AGENTS.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'CONTENT_PLAN.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'LAUNCH_CHECKLIST.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'PAGE_PLAN.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'PROJECT_BRIEF.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'SEO_LOG.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'SEO_RULES.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/about-us/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/blog/avatar-maker-without-signup/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/blog/cute-profile-picture-ideas/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/blog/discord-avatar-size-guide/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/blog/how-to-make-a-cute-discord-profile-icon/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/blog/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/blog/tiktok-profile-icon-ideas/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/contact/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/editorial-policy/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/gallery/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/globals.css', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/oval-face-icon-generator/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/pixel-art-avatar-icon-generator/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/privacy-policy/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/robots.ts', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/sitemap.ts', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/terms-of-service/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'components/FlashGenerator.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'components/GameSidebar.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'components/HomePage.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'components/SiteHeader.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'docs/legal/game-rights.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'docs/quality/installation-and-board-workflow.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'lib/locales.ts', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'package.json', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'public/games/README.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'scripts/README.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'scripts/post-deploy-check.mjs', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'scripts/seo-check.mjs', LF will be replaced by CRLF the next time Git touches it\n"
+    },
+    {
+      "command": "git diff --check -- 我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+      "cwd": "F:/LYXGIT/Liu-library",
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "diagnostics": [
+    {
+      "stage": "Initial offline preview helper",
+      "result": "FAIL",
+      "exitCode": 1,
+      "error": "SyntaxError: \"undefined\" is not valid JSON",
+      "cause": "The helper tried to JSON.parse an intentionally absent acceptance record.",
+      "resolution": "Handle undefined in the VM value reader. No website code, standard requirement or frozen golden was loosened; the complete preview and final checks subsequently passed."
+    }
+  ],
+  "cancelledTask": {
+    "id": "LICENSE-GATE",
+    "status": "已取消",
+    "active": false,
+    "requestMaterials": false,
+    "autoReopen": false,
+    "licenseVerified": false,
+    "archivedFiles": [
+      {
+        "from": "docs/legal/swf-license-evidence-request.md",
+        "to": "docs/archive/license-gate-cancelled-2026-09-03/swf-license-evidence-request.md",
+        "sha256": "d257345a56bbbe3eebb183e56bd42fc3988f49d09f4b9daaeb3cf546cdde4557",
+        "bytes": 11451
+      },
+      {
+        "from": "docs/quality/evidence/license-gate-2026-09-03/checks.json",
+        "to": "docs/archive/license-gate-cancelled-2026-09-03/checks.json",
+        "sha256": "4fbe84181fe0d7231944eeb3bf2b64b93b6aae6b557cdba1b9445c4d12eb44fb",
+        "bytes": 23447
+      },
+      {
+        "from": "docs/quality/evidence/license-gate-2026-09-03/release-order-confirmation.json",
+        "to": "docs/archive/license-gate-cancelled-2026-09-03/release-order-confirmation.json",
+        "sha256": "7481222829e0f28319a65406495fa334c58e535b5c9d038e2b9d9706000cce57",
+        "bytes": 15532
+      }
+    ],
+    "sourceActiveFilesRemainAbsent": true
+  },
+  "unverified": [
+    "actual board browser/visual: existing access restriction; no bypass",
+    "application type/lint/tests/Next/OpenNext/HTTP/SEO/browser/mobile/CWV not rerun for docs-only scope",
+    "no live preview liveness check",
+    "external generator internal functionality and human page fact-review not performed",
+    "no production deployment or verification"
+  ],
+  "unresolved": [
+    "Full Oval template migration remains deferred; local data binding remains accepted.",
+    "Existing Oval mobile player entry placement, About/Editorial narrow cards and Gallery spacing are not changed.",
+    "Historical 12 SEO should findings, KW-04, real-device/CWV, external editing/saving and full SWF controls/fullscreen remain outside this task.",
+    "Registry UNKNOWN facts are preserved without reopening the cancelled materials-request task.",
+    "Production version/host redirects/robots/SEO/ads/CMP and release verification remain open."
+  ],
+  "skillsApplied": [
+    {
+      "name": "website-quality-supervisor",
+      "effect": "Selected one board task, reconciled real GameRecord fields with rules, used proportional document/VM QA, kept manual acceptance and release boundaries."
+    }
+  ],
+  "rollback": "Reverse only the 20 recorded governance hunks and remove this task's newly created documents/evidence only after checking for later edits or references. Preserve user changes, application code, shared rules, all accepted tasks and all historical QA. Do not recreate the cancelled material-request task.",
+  "reproduction": {
+    "helperPath": "C:/Users/liu/AppData/Local/Temp/mysquarefaceicon-content-qa-v170-1fc57964925a4354a1ee2a2e73e447b3/verify.cjs",
+    "configurationPaths": [
+      "C:/Users/liu/AppData/Local/Temp/mysquarefaceicon-content-qa-v170-1fc57964925a4354a1ee2a2e73e447b3/baseline.json",
+      "C:/Users/liu/AppData/Local/Temp/mysquarefaceicon-content-qa-v170-1fc57964925a4354a1ee2a2e73e447b3/prepared.json"
+    ],
+    "note": "Current-session read-only helpers live in the local Temp directory. Durable review data are the test list, exact governance hunks, before/after document hashes and protected-file hashes in this record; they are not a newly installed runtime content gate."
+  },
+  "committed": false,
+  "pushed": false,
+  "deployed": false,
+  "productionSeoRun": false,
+  "nextTaskStarted": false,
+  "nextTaskId": "GAMES-INDEX-001"
+}

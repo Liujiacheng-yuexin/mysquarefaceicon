@@ -1,0 +1,26 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "jsx": "react-jsx",
+    "noEmit": false,
+    "outDir": ".home-gallery-check",
+    "rootDir": ".",
+    "incremental": false,
+    "isolatedModules": false,
+    "declaration": false,
+    "sourceMap": false,
+    "plugins": []
+  },
+  "include": [
+    "components/HomePage.tsx",
+    "components/CuratedGalleryPreview.tsx",
+    "app/oval-face-icon-generator/page.tsx",
+    "app/pixel-art-avatar-icon-generator/page.tsx",
+    "data/curated-icon-ideas.ts",
+    "scripts/validate-home-gallery.tsx"
+  ],
+  "exclude": ["node_modules", ".next", ".home-gallery-check", "app/sitemap.ts"]
+}

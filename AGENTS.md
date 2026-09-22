@@ -32,6 +32,13 @@ The authoritative board is:
 - A failed or skipped P0 check stays visible as a blocker; do not hide it behind partial success.
 - The HTML board replaces the generic `创建输出表单` task tracker. Do not maintain a second competing status table.
 
+## Cancelled material-request task · 2026-09-03
+
+- The user explicitly cancelled the LICENSE-GATE materials-request plan and its related active files. Do not reopen that task or ask for materials again based on older board entries, preflight records or archived documents.
+- Its checklist and two preflight files are archived under docs/archive/license-gate-cancelled-2026-09-03/. They are historical records, not pending work.
+- Preserve shared License Registry facts, UNKNOWN values, code, all user acceptances and original QA. Cancellation is not verified permission or a passing release result; do not invent rights or silently clear other P0 risks.
+- This cancellation/cleanup turn does not deploy or start another task. Follow the user's current instruction and applicable remaining gates for subsequent work.
+
 ## Installed quality supervisor
 
 The repository-scoped skill is `.agents/skills/website-quality-supervisor/SKILL.md`. It coordinates this board with the reusable quality standards and the automated checks:

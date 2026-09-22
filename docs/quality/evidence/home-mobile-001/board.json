@@ -1,0 +1,16 @@
+{
+  "tasks": 62,
+  "sourceAcceptanceKeys": 38,
+  "accepted": "已完成",
+  "mobile": "待验收",
+  "current": {
+    "taskId": "HOME-MOBILE-001",
+    "scope": "HOME_RESPONSIVE_SIMPLE_MAKER",
+    "status": "待验收",
+    "proposalConfirmed": true,
+    "implementationStarted": true,
+    "implementationCompleted": true,
+    "evidencePath": "docs/quality/evidence/home-mobile-001/README.md",
+    "wholeTaskCompleted": false
+  }
+}

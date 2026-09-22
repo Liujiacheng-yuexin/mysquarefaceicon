@@ -1,0 +1,109 @@
+{
+  "taskId": "RUFFLE-001",
+  "scope": "RUFFLE_RUNTIME_GOVERNANCE_IMPLEMENTATION",
+  "boardVersion": "1.91",
+  "recordedAt": "2026-09-08T01:36:02.2529973Z",
+  "userInstruction": "确认 RUFFLE-001 方案，进行开发",
+  "result": "通过（本地核心实施与 QA）/ 待用户验收 / 全站发布不通过",
+  "userAcceptanceReceived": false,
+  "implementation": {
+    "package": "@ruffle-rs/ruffle",
+    "exactVersion": "0.2.0-nightly.2026.5.12",
+    "licenseDeclaration": "(MIT OR Apache-2.0)",
+    "publicBasePath": "/ruffle/",
+    "entry": "/ruffle/ruffle.js",
+    "publicFiles": 5,
+    "publicBytes": 27512697,
+    "remoteFallbacks": 0,
+    "syncCopiedFiles": 0,
+    "swfFilesModified": false,
+    "visiblePageOrSeoChanged": false
+  },
+  "commands": [
+    {"command": "npm run ruffle:sync", "exitCode": 0, "result": "5 allowlisted files; 0 copied; no network"},
+    {"command": "npm run ruffle:check", "exitCode": 0, "result": "5 files / 27,512,697 bytes / 10 negative fixtures rejected"},
+    {"command": "npx tsc --noEmit", "exitCode": 0},
+    {"command": "npm run lint", "exitCode": 0, "result": "0 warnings / 0 errors"},
+    {"command": "npm run player:check", "exitCode": 0},
+    {"command": "npm run perf-home:check", "exitCode": 0},
+    {"command": "npm run components:check", "exitCode": 0},
+    {"command": "npm run game-template:check", "exitCode": 0, "note": "pre-existing React 18 fetchPriority SSR warning only"},
+    {"command": "npm run favorites:check", "exitCode": 0},
+    {"command": "npm run recent:check", "exitCode": 0},
+    {"command": "npm run related:check", "exitCode": 0},
+    {"command": "npm run square-home:check", "exitCode": 0},
+    {"command": "npm run oval-page:check", "exitCode": 0},
+    {"command": "npm run pixel-page:check", "exitCode": 0},
+    {"command": "npm run build", "exitCode": 1, "result": "compiled and type-checked; static worker exited 134 with NewSpace heap OOM"},
+    {"command": "$env:NODE_OPTIONS='--max-semi-space-size=64'; npm run build", "exitCode": 0, "result": "42/42 static pages"},
+    {"command": "$env:NODE_OPTIONS='--max-semi-space-size=64'; npm run cf:build", "exitCode": 0, "result": "OpenNext complete; patch-opennext-worker patched 1 chdir call"},
+    {"command": "node scripts/check-ruffle-runtime.mjs --base http://127.0.0.1:3100", "exitCode": 0, "result": "5 runtime plus 2 SWF HTTP responses"},
+    {"command": "node scripts/seo-check.mjs --base http://127.0.0.1:3100", "exitCode": 0, "result": "20 URLs / 0 mandatory / 12 existing should notices"},
+    {"command": "node scripts/check-ai-crawler-policy.mjs --base http://127.0.0.1:3100", "exitCode": 0},
+    {"command": "node scripts/check-oval-legacy-page.mjs --base http://127.0.0.1:3100", "exitCode": 0},
+    {"command": "node scripts/check-pixel-external-page.mjs --base http://127.0.0.1:3100", "exitCode": 0},
+    {"command": "node scripts/run-related-games-check.mjs --base http://127.0.0.1:3100", "exitCode": 0, "note": "passed after narrowing accepted Favorites-aware card count to anchor links"}
+  ],
+  "http": {
+    "base": "http://127.0.0.1:3100",
+    "runtime": [
+      {"path": "/ruffle/ruffle.js", "status": 200, "contentType": "application/javascript; charset=utf-8", "cacheControl": "public, max-age=0, must-revalidate", "bytes": 455299, "sha256": "0f320b07abc9a000a5e9d445eaec8df05d8607351bc3248ef5552f943ba5b7ea"},
+      {"path": "/ruffle/core.ruffle.549e09f5ab25b1ddd637.js", "status": 200, "contentType": "application/javascript; charset=utf-8", "cacheControl": "public, max-age=31536000, immutable", "bytes": 110264, "sha256": "b1c9f536332a91f3af74ce4dc954774383abc1df485ba1be331c44fba85eaa86"},
+      {"path": "/ruffle/core.ruffle.c736d9febaa371cbf8ce.js", "status": 200, "contentType": "application/javascript; charset=utf-8", "cacheControl": "public, max-age=31536000, immutable", "bytes": 102936, "sha256": "c568b9a9a9a1842eb0bb5fbef9468291c410dc56d535338da9fb81fa471b5803"},
+      {"path": "/ruffle/5ab714cfe6d10dcc7003.wasm", "status": 200, "contentType": "application/wasm", "cacheControl": "public, max-age=31536000, immutable", "bytes": 13878361, "sha256": "575a14c02e47dcf34d61a2de684783994f29a60046361cd950c37a9feb10df9a"},
+      {"path": "/ruffle/9e3e2a04bfe37ff3e3e9.wasm", "status": 200, "contentType": "application/wasm", "cacheControl": "public, max-age=31536000, immutable", "bytes": 12965837, "sha256": "6e2b664d1a5f4b9f0acaf51cc94caa2460d3920a5584611075a250475ffa0c25"}
+    ],
+    "swf": [
+      {"path": "/games/square-face.swf", "status": 200, "contentType": "application/x-shockwave-flash", "cacheControl": "public, max-age=0", "bytes": 542798, "sha256": "b1d074c95f15b7dcecdbc2405abf820ead985669bb12cd47247fc8ea7537bc1e"},
+      {"path": "/games/oval-face.swf", "status": 200, "contentType": "application/x-shockwave-flash", "cacheControl": "public, max-age=0", "bytes": 860395, "sha256": "80e974d8ef4ad5e849e93464eaea1833620c269bac30601d960f5438c285e09b"}
+    ]
+  },
+  "browser": {
+    "availability": "Browser plugin skill absent; repository Playwright unavailable; existing Computer Use in-app browser used as explicit fallback",
+    "desktop": {"viewport": "1280x900", "square": "idle to ready; reload ready; one same-origin runtime entry", "oval": "idle to ready; reload ready; one same-origin runtime entry", "consoleErrorsOrWarnings": 0, "horizontalOverflowPx": 0},
+    "mobile": [
+      {"viewport": "390x844", "squareStage": "330x287", "ovalStage": "320x255", "squareReady": true, "ovalReady": true, "horizontalOverflowPx": 0},
+      {"viewport": "360x800", "squareStage": "300x261", "ovalStage": "290x231", "squareReady": true, "ovalReady": true, "horizontalOverflowPx": 0}
+    ],
+    "screenshotsCaptured": ["Square 1280 idle", "Square 1280 ready", "Oval 1280 ready", "Oval 390 ready"],
+    "actualFailureRetryInjection": "未验证",
+    "fullscreen": "未验证; fullscreenElement was not established by the automation environment",
+    "realDevicesAndOtherEngines": "未验证"
+  },
+  "build": {
+    "nextBuildId": "G1nYEAOdJjKEMfPZ9gSgo",
+    "next": "通过 after command-local memory correction",
+    "openNextCloudflare": "通过 with existing Windows compatibility warning",
+    "openNextAssetsMatchManifest": true,
+    "productionDeployment": false
+  },
+  "seoInvariant": {
+    "urlsOrRoutesChanged": false,
+    "metadataH1CanonicalSchemaChanged": false,
+    "robotsIndexSitemapChanged": false,
+    "visibleCopyLayoutSearchIntentChanged": false,
+    "seoProdRun": false
+  },
+  "unverifiedOrBlocking": [
+    "actual failed runtime request plus click-to-Retry browser injection",
+    "real fullscreen",
+    "in-game authoring and save output",
+    "real devices and additional browser engines",
+    "field and production CWV",
+    "actual Square and Oval SWF rights remain UNKNOWN",
+    "remaining human factual, ad and CMP gates",
+    "production SEO and deployment"
+  ],
+  "board": {
+    "path": "F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+    "previousSha256": "cd21fab811c7aef4754a4c1de9fca74ac890dae6f5d51bbc7c38ee37c8712774",
+    "currentSha256": "730090e3ab2019d60199e20c5e9463b40b493d2cf24931c1c404d47ffc0f6d1c",
+    "status": "待验收",
+    "completedTasks": 24,
+    "totalTasks": 60,
+    "sourceAcceptanceKeys": 35,
+    "nextRequiredUserReply": "RUFFLE-001 验收通过"
+  },
+  "release": {"commitCreated": false, "pushed": false, "deployed": false, "seoProdRun": false, "result": "不通过 / 未部署"},
+  "rollback": "Restore prior exact package/lock/manifest/public runtime/adapter/headers/service-worker cache contract, rerun npm ci plus ruffle/Square/Oval/build checks, then verify production only after a separately authorized deployment."
+}

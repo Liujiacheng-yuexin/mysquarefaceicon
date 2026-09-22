@@ -1,0 +1,336 @@
+{
+  "schemaVersion": 1,
+  "taskId": "LOCALE-001",
+  "boardVersion": "1.59",
+  "recordedAt": "2026-09-03T00:19:11.712Z",
+  "localDate": "2026-09-03",
+  "timezone": "Asia/Shanghai",
+  "status": "本地已验收",
+  "acceptance": {
+    "result": "通过",
+    "acceptedAt": "2026-09-03T00:14:44Z",
+    "source": "用户明确回复“LOCALE-001 验收通过”",
+    "scope": "仅 LOCALE-001 已确认四处本地文案及 v1.58 手机单句修订，引用原实现/QA 证据；不授予实际许可或生产批准。本轮只登记验收，未改应用或重跑应用检查，不启动下一项、提交、推送或部署。"
+  },
+  "acceptanceTimeMeaning": "acceptedAt is the UTC registration time of the explicit user message, not a newly executed QA timestamp.",
+  "sourceInstruction": "LOCALE-001 验收通过",
+  "userAcceptanceReceived": true,
+  "environment": {
+    "cwd": "D:/LYXGIT/mysquarefaceicon",
+    "branch": "codex/game-platform-rebuild",
+    "head": "c6d30087c2c03a7c4eb8d5bfe6e055e9b8d40228",
+    "os": "Windows",
+    "shell": "PowerShell",
+    "node": "C:/nvm4w/nodejs/node.exe"
+  },
+  "scope": {
+    "kind": "acceptance governance only",
+    "acceptedWork": "Original four approved copy regions plus v1.58 approved shortening of the shared draft Gallery description",
+    "finalVisibleCopy": "Style examples; approved posts when available.",
+    "affectedUrls": [
+      "/es",
+      "/vi",
+      "/ja",
+      "/th",
+      "/ar",
+      "/ru",
+      "/id"
+    ],
+    "newUrlOrIndexChanges": false,
+    "indexBoundary": "noindex, follow; self canonical; no hreflang; not reviewed; excluded from sitemap",
+    "rootPlayerCssAndAcceptedPages": "unchanged",
+    "sourceRights": "UNKNOWN; no new rights evidence or permission granted"
+  },
+  "applicationChanged": false,
+  "applicationChecksRerun": false,
+  "notRunThisTurn": [
+    "type-check",
+    "lint",
+    "application/source/built regression tests",
+    "Next build",
+    "OpenNext platform build",
+    "HTTP smoke",
+    "seo:check",
+    "seo:prod",
+    "browser/mobile visual or interaction checks",
+    "CWV/performance",
+    "preview liveness or restart",
+    "commit/push/deploy/migration"
+  ],
+  "qaHistoricalSnapshot": {
+    "evidence": "docs/quality/evidence/locale-001-rights-copy/mobile-revision-checks.json",
+    "sha256": "71421d8433f2e8fe3f05c0d62ee46584535e4ef1c378fef54f0ec2bd0b4fb31f",
+    "recordedAt": "2026-09-02T23:32:04Z",
+    "boardVersion": "1.58",
+    "buildId": "Y8uf2WKGr_E9Pn2mjsax-",
+    "commands": 37,
+    "localFunctionAndVisual": "通过（原限定范围证据；本轮未重跑）",
+    "seo": {
+      "result": "有条件通过（原证据）",
+      "pages": 20,
+      "must": 0,
+      "should": 12,
+      "kw04": "未认证"
+    },
+    "browser": {
+      "drafts": [
+        "es",
+        "ar"
+      ],
+      "viewports": [
+        "1280x900",
+        "390x844",
+        "360x800"
+      ],
+      "mobileClientHeight": 35,
+      "mobileScrollHeight": 35,
+      "interactions": 14,
+      "consoleErrorWarningEntries": 0,
+      "screenshots": 9
+    },
+    "scopeExclusions": "No new CWV, all SWF internals/save/fullscreen, physical-device or additional browser-engine certification"
+  },
+  "historicalPendingFlags": "Original v1.56/v1.57/v1.58 pending flags remain unchanged and dated. SOURCE_ACCEPTANCE and locale001Acceptance record the newer explicit user decision; they do not rewrite QA.",
+  "previousMobileFailure": {
+    "evidence": "docs/quality/evidence/locale-001-rights-copy/checks.json",
+    "sha256": "55b49e3506e3141ffd1ef5dd701136411dc06b0c351a10fe99caf1fd9eadfdfb",
+    "boardVersion": "1.57",
+    "result": "不通过（历史）",
+    "cause": "390px description clipping; 35px visible / 53px content",
+    "preserved": true
+  },
+  "historicalEvidenceHashes": {
+    "docs/quality/evidence/about-001-rights-copy/checks.json": "9b5d2192b7ddac92a9b01c8f2368d3faaee116253166bb6c623c83bbf8e647e7",
+    "docs/quality/evidence/about-001-rights-copy/proposal-checks.json": "dbb44b079bd622e93813761c939091e15a0b892a20d2272aaa1cfbd93a690362",
+    "docs/quality/evidence/about-001-rights-copy/README.md": "5a11b0502a2a6efc90f556cd547806ec0b50eaa51f82a1b756ae240e46d38161",
+    "docs/quality/evidence/terms-001-rights-copy/checks.json": "5b0aaefeca88262d57203e5caa92ea3ac465f5c399361be4bf873c28c4dccf1d",
+    "docs/quality/evidence/terms-001-rights-copy/README.md": "9689d72a5b142b65b639cce43b4508d9eeac5a06d34c4efabe1a8716ba352929",
+    "docs/quality/evidence/pf-01-activation-response/README.md": "118652d153b0036190a6afea9c8688739410148ff27d06e0d1a59f670173399c",
+    "docs/quality/evidence/editorial-001-rights-copy/proposal-checks.json": "a30c3eb49860af11e4af1e998dff78d8b42970d909113ee64c7a728256d5beed",
+    "docs/quality/evidence/editorial-001-rights-copy/checks.json": "72f7ff3be63a9e3b14a41a3f651a336c57f7d74d59785fb9173cd2af36117d52",
+    "docs/quality/evidence/gallery-001-rights-copy/proposal-checks.json": "3c00f1471ba2741fb27d44b1efecd823834443243e46754c1aeda8fea1a81a08",
+    "docs/quality/evidence/gallery-001-rights-copy/checks.json": "a41646b12dffdc099bc9c1a84cf10667f6efc1753b1db5be2c437e3695bd86af",
+    "docs/quality/evidence/gallery-001-rights-copy/acceptance-checks.json": "eb8105300c659fdc668f06d64b820bac69fcca5a2011a1bc2da0dfa51c121143",
+    "docs/quality/evidence/gallery-001-rights-copy/README.md": "1034c852b108636c6e72a0fc124ca36ee8f39925141a76cd81ed564c8df075b9",
+    "docs/legal/gallery-rights-consistency-proposal.md": "530e3a7d8388bd35fde4478289df1b2c8e89f0b1fd381a28a44f7f78bb08b145",
+    "docs/quality/evidence/locale-001-rights-copy/proposal-checks.json": "0ec30303ae7c7fc9a3af588e0939017aa2175896e4ec1fef741741ccbfe82de4",
+    "docs/quality/evidence/locale-001-rights-copy/checks.json": "55b49e3506e3141ffd1ef5dd701136411dc06b0c351a10fe99caf1fd9eadfdfb",
+    "docs/quality/evidence/locale-001-rights-copy/mobile-revision-checks.json": "71421d8433f2e8fe3f05c0d62ee46584535e4ef1c378fef54f0ec2bd0b4fb31f"
+  },
+  "beforeGovernance": {
+    "recordedAt": "2026-09-03T00:13:59.892Z",
+    "documents": [
+      {
+        "path": "F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+        "sha256": "adff5c8567a9d6231488c517830ee319d175a31500218e37066f4a1a986d1972",
+        "normalized": "adff5c8567a9d6231488c517830ee319d175a31500218e37066f4a1a986d1972"
+      },
+      {
+        "path": "PAGE_PLAN.md",
+        "sha256": "c5f91c5dc128b990adbb4475889258413b8bb0f39f69caa918ab25f44743c2c9",
+        "normalized": "c5f91c5dc128b990adbb4475889258413b8bb0f39f69caa918ab25f44743c2c9"
+      },
+      {
+        "path": "LAUNCH_CHECKLIST.md",
+        "sha256": "10c82adc6a55f22f8a35bd85f307d6b7f6c16aa41b03c1e7eb1cde0b296642fe",
+        "normalized": "10c82adc6a55f22f8a35bd85f307d6b7f6c16aa41b03c1e7eb1cde0b296642fe"
+      },
+      {
+        "path": "SEO_LOG.md",
+        "sha256": "79ca9209bb5a4e71a924666a7753c44fb09cfa56ce5173b9c4e012711b5c5b19",
+        "normalized": "79ca9209bb5a4e71a924666a7753c44fb09cfa56ce5173b9c4e012711b5c5b19"
+      },
+      {
+        "path": "docs/legal/game-rights.md",
+        "sha256": "0af705bec9c1cd49c42bdad257ceddc5c6aa063a67a1713c03b1acea0a10e710",
+        "normalized": "0af705bec9c1cd49c42bdad257ceddc5c6aa063a67a1713c03b1acea0a10e710"
+      },
+      {
+        "path": "docs/legal/locale-rights-consistency-proposal.md",
+        "sha256": "f0e8a2df9c34381aa736efd974cd180a050788bf1ed5013a33b8c350b4911980",
+        "normalized": "f0e8a2df9c34381aa736efd974cd180a050788bf1ed5013a33b8c350b4911980"
+      },
+      {
+        "path": "docs/quality/evidence/release-2026-09-02/README.md",
+        "sha256": "dce11e693a27001549608d64ae4662801636d1c010fff28d56d4f3f756e01485",
+        "normalized": "dce11e693a27001549608d64ae4662801636d1c010fff28d56d4f3f756e01485"
+      },
+      {
+        "path": "docs/quality/evidence/locale-001-rights-copy/README.md",
+        "sha256": "99331558b1027e9ac77530275f3c20433791f4fb137fca8eee2c90c36a6ef2a1",
+        "normalized": "99331558b1027e9ac77530275f3c20433791f4fb137fca8eee2c90c36a6ef2a1"
+      }
+    ],
+    "boardFrozen": {
+      "acceptance": "b3ef1c27e5a139e95b6f20b5112f3fbc937af12d5c645f788e0604b52ac73ef5",
+      "weeks": "3c160b6e969ad15800197aa3aadca96b5d806cf0626e5da4e8f16e34e7919b00",
+      "css": "d4ef5c0d515fbb7228a9a0f8fdf3c4e91d407dadc57e07d2490811f7424f4d7c",
+      "validation": "2494ba81696ca820c47096e7873291198e7aa35d143d65eb065554caf9cd291f",
+      "locale": "587db6ed86089713f3eebf674137382b80ce20cadf190f2b5aec102476baebc1",
+      "localeHistory": "a23524a08cbc4eb3fcc0da62606e5ca33d42995a964304fb494fcec5c93289a7",
+      "gallery": "9268985a08079e38224517e3c78923de20cac44030fb64567b94a3c0ec71eb8a",
+      "taskUpdates": "3704f68170d5beb42f9afd43890fa63a414136796245953b99b439b567df1dfe"
+    },
+    "sourceAcceptances": 25
+  },
+  "governanceValidation": {
+    "status": "PASS",
+    "recordedAt": "2026-09-03T00:19:11.712Z",
+    "scope": "Acceptance governance only; no application QA executed",
+    "documents": [
+      {
+        "path": "F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+        "sha256": "1dac3f86df1ac60e9afe5121787a9166e419b059221dd7aa934c1108afd5c1b1",
+        "unrelatedContentsPreserved": true
+      },
+      {
+        "path": "PAGE_PLAN.md",
+        "sha256": "d8906b3f4df39f56c4dfa6bcad400fc1667f98335f181a4ac55059e95223eea3",
+        "unrelatedContentsPreserved": true
+      },
+      {
+        "path": "LAUNCH_CHECKLIST.md",
+        "sha256": "790de690413fad777f4f3936dbd2df4e3f263cdc075744d33c615c7c56a35f7d",
+        "unrelatedContentsPreserved": true
+      },
+      {
+        "path": "SEO_LOG.md",
+        "sha256": "0e46a3822dfb72772b3097751f3bae71dc8463d92cbd84b531c2e9a345d09cfe",
+        "unrelatedContentsPreserved": true
+      },
+      {
+        "path": "docs/legal/game-rights.md",
+        "sha256": "5279ef6388e755ebea933d3d6d434c71dc74976ffdd59ffa2b1a42f246501e6a",
+        "unrelatedContentsPreserved": true
+      },
+      {
+        "path": "docs/legal/locale-rights-consistency-proposal.md",
+        "sha256": "fbf02f2b9e6078f9719ed0d318a26af5873b9fe3bc9af7a3585b31b119f65536",
+        "unrelatedContentsPreserved": true
+      },
+      {
+        "path": "docs/quality/evidence/release-2026-09-02/README.md",
+        "sha256": "39adfddee8709d794dd1dc11a632b91d9fd813432c2f147c0e26a399996f41c5",
+        "unrelatedContentsPreserved": true
+      },
+      {
+        "path": "docs/quality/evidence/locale-001-rights-copy/README.md",
+        "sha256": "efa49792c9bd443f78d07d25dea4ab693e986d7df45b7a8b713de14a9d7f4cde",
+        "unrelatedContentsPreserved": true
+      }
+    ],
+    "board": {
+      "version": "1.59",
+      "task": "LOCALE-001",
+      "status": "已完成（本地已验收）",
+      "javascript": "PASS",
+      "staticDataParity": "PASS",
+      "exportVersion": "PASS",
+      "priorAcceptancesPreserved": 25,
+      "totalAcceptances": 26,
+      "qaHistoryUnchanged": true,
+      "releasePreflightSynchronized": true,
+      "cssWeeksOtherTaskStatesUnchanged": true,
+      "visual": "UNVERIFIED_ACCESS_RESTRICTION_PRESERVED"
+    },
+    "unchanged": {
+      "sourceFiles": 148,
+      "historicalEvidenceFiles": 16,
+      "screenshots": 27,
+      "buildArtifacts": 15,
+      "buildId": "Y8uf2WKGr_E9Pn2mjsax-"
+    },
+    "gitChecks": [
+      {
+        "cwd": "D:\\LYXGIT\\mysquarefaceicon",
+        "args": [
+          "branch",
+          "--show-current"
+        ],
+        "startedAt": "2026-09-03T00:19:11.414Z",
+        "completedAt": "2026-09-03T00:19:11.489Z",
+        "exitCode": 0,
+        "stdout": "codex/game-platform-rebuild\n",
+        "stderr": ""
+      },
+      {
+        "cwd": "D:\\LYXGIT\\mysquarefaceicon",
+        "args": [
+          "rev-parse",
+          "HEAD"
+        ],
+        "startedAt": "2026-09-03T00:19:11.489Z",
+        "completedAt": "2026-09-03T00:19:11.542Z",
+        "exitCode": 0,
+        "stdout": "c6d30087c2c03a7c4eb8d5bfe6e055e9b8d40228\n",
+        "stderr": ""
+      },
+      {
+        "cwd": "D:\\LYXGIT\\mysquarefaceicon",
+        "args": [
+          "diff",
+          "--check"
+        ],
+        "startedAt": "2026-09-03T00:19:11.542Z",
+        "completedAt": "2026-09-03T00:19:11.651Z",
+        "exitCode": 0,
+        "stdout": "",
+        "stderr": "warning: in the working copy of '.gitignore', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'LAUNCH_CHECKLIST.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'PAGE_PLAN.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'PROJECT_BRIEF.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'SEO_LOG.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'SEO_RULES.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/about-us/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/blog/avatar-maker-without-signup/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/blog/cute-profile-picture-ideas/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/blog/discord-avatar-size-guide/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/blog/how-to-make-a-cute-discord-profile-icon/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/blog/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/blog/tiktok-profile-icon-ideas/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/contact/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/editorial-policy/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/gallery/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/globals.css', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/oval-face-icon-generator/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/pixel-art-avatar-icon-generator/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/privacy-policy/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/robots.ts', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/sitemap.ts', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/terms-of-service/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'components/FlashGenerator.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'components/HomePage.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'components/SiteHeader.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'docs/legal/game-rights.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'docs/quality/installation-and-board-workflow.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'lib/locales.ts', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'package.json', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'public/games/README.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'scripts/README.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'scripts/post-deploy-check.mjs', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'scripts/seo-check.mjs', LF will be replaced by CRLF the next time Git touches it\n"
+      },
+      {
+        "cwd": "F:/LYXGIT/Liu-library",
+        "args": [
+          "diff",
+          "--check",
+          "--",
+          "F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html"
+        ],
+        "startedAt": "2026-09-03T00:19:11.651Z",
+        "completedAt": "2026-09-03T00:19:11.711Z",
+        "exitCode": 0,
+        "stdout": "",
+        "stderr": ""
+      }
+    ],
+    "applicationChecksRerun": false,
+    "previewLiveness": "NOT_CHECKED",
+    "production": "UNVERIFIED / NOT_DEPLOYED",
+    "release": "BLOCKED_BY_EXISTING_RIGHTS_AND_PRODUCTION_GATES"
+  },
+  "changedFiles": [
+    "F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+    "PAGE_PLAN.md",
+    "LAUNCH_CHECKLIST.md",
+    "SEO_LOG.md",
+    "docs/legal/game-rights.md",
+    "docs/legal/locale-rights-consistency-proposal.md",
+    "docs/quality/evidence/release-2026-09-02/README.md",
+    "docs/quality/evidence/locale-001-rights-copy/README.md",
+    "docs/quality/evidence/locale-001-rights-copy/acceptance-checks.json"
+  ],
+  "qualitySupervisorInfluence": "Register only the explicit local acceptance; preserve failed/pending historical QA and previous accepted work; leave release and next-task authorization separate.",
+  "unresolved": [
+    "Square/Oval exact source, rights holder and hosting/public-run/redistribution/generated-output permissions remain UNKNOWN. No license or permission has been granted by this copy change.",
+    "All 25 prior local acceptances remain unchanged. LOCALE-001 is awaiting user result acceptance, not completed.",
+    "Local SEO retains 12 should warnings (KW-03 x1, META-03 x7, META-04 x4); KW-04 and independent locale keyword/semantic review are not certified.",
+    "Existing Gallery heading/subtitle spacing and About/Editorial narrow-card advisories remain outside this one-sentence scope. Other pre-existing sidebar truncation remains unchanged.",
+    "Production release-version linkage, OP-11 one-hop canonical-host matrix, AI-01 robots, seo:prod and production browser evidence remain unverified; no deployment performed.",
+    "No fresh CWV measurements, real fullscreen, complete SWF internal controls/save audit, additional browser engines or physical-device coverage.",
+    "Authoritative board file visual remains unverified due to the prior access restriction; only static JS/data/export checks are performed, with no viewer/proxy bypass.",
+    "Existing OpenNext Windows warnings and GAME-TPL isolated React fetchPriority warning remain in raw logs."
+  ],
+  "release": {
+    "result": "不通过 / 未部署",
+    "production": "未验证",
+    "deployed": false,
+    "committed": false,
+    "pushed": false,
+    "seoProd": false,
+    "nextTaskStarted": false,
+    "migrationStarted": false,
+    "rights": "UNKNOWN",
+    "previewLiveness": "NOT_CHECKED; no current-service claim"
+  },
+  "rollback": "This turn changed only the listed governance records. If correction is requested, reverse only the v1.59 document/board additions and acceptance record; preserve application code, prior evidence and unrelated dirty-worktree changes. No online rollback is needed because no deployment occurred.",
+  "next": "等待用户下一步指示；不自动开始下一任务或部署。"
+}

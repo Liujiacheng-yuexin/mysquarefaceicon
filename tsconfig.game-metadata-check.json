@@ -1,0 +1,24 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noEmit": false,
+    "outDir": ".game-metadata-check",
+    "rootDir": ".",
+    "incremental": false,
+    "isolatedModules": false,
+    "declaration": false,
+    "sourceMap": false,
+    "plugins": []
+  },
+  "include": [
+    "data/games/**/*.ts",
+    "lib/games/catalog.ts",
+    "lib/games/game-schema.ts",
+    "lib/seo/game-metadata.ts",
+    "scripts/validate-game-metadata.ts"
+  ],
+  "exclude": ["node_modules", ".next", ".game-metadata-check", "app/sitemap.ts"]
+}

@@ -1,0 +1,82 @@
+{
+  "taskId": "GAMES-INDEX-001",
+  "recordedAt": "2026-09-04T01:45:18.852Z",
+  "acceptance": {
+    "result": "通过",
+    "scope": "LOCAL_DIRECTORY_NOINDEX",
+    "acceptedAt": "2026-09-04T01:41:36.956Z",
+    "source": "用户明确回复“GAMES-INDEX-001 验收通过”，并要求“现在进行下一项任务”",
+    "localOnly": true,
+    "note": "仅验收 v1.73 本地目录、导航及广告隔离；保留原检查/构建/浏览器日期和失败记录。不等于全站人类事实审核、权利、索引或生产验收通过；材料任务保持取消。",
+    "evidencePath": "docs/quality/evidence/games-index-001/acceptance-checks.json"
+  },
+  "status": "已完成（本地已验收）",
+  "scope": "LOCAL_DIRECTORY_NOINDEX",
+  "sourceAcceptanceCount": 31,
+  "previous30SourceAcceptancesPreserved": true,
+  "originalQa": {
+    "path": "docs/quality/evidence/games-index-001/checks.json",
+    "sha256": "365e09ef5dc5ab40e4f6c7997a0bf3bcbe9e5ebb7355e229f374bf912ea8d508",
+    "recordedAt": "2026-09-04T00:50:07.698Z",
+    "buildId": "0I9s24K1NYq3oZVWsWY5B",
+    "finalCommandCount": 45,
+    "historicalPendingFieldsPreserved": true,
+    "checksRerun": false
+  },
+  "preservation": {
+    "nonGovernanceRepositoryFiles": 390,
+    "v173SourceHistoryScreenshotArtifactLogs": 122,
+    "allMatched": true,
+    "baseline": {
+      "path": "C:/Users/liu/AppData/Local/Temp/mysquarefaceicon-category-v174-20260904/baseline.json",
+      "sha256": "87da5fe594c1b357d8b8ec9d26ae9fafc6957dda19c21d04f553adbf352372ba"
+    },
+    "verification": {
+      "path": "C:/Users/liu/AppData/Local/Temp/mysquarefaceicon-category-v174-20260904/verification.json",
+      "sha256": "c646eee081492c3dc894c50d4c8c86cd78069ebdf8c89e24a5bf30eddf9e3704"
+    },
+    "verifier": {
+      "path": "C:/Users/liu/AppData/Local/Temp/mysquarefaceicon-category-v174-20260904/verify.cjs",
+      "sha256": "089c8c9e3d9ec798c887cf8ae1af3c8c050842967a0b20265fd674bbac8cd9f3"
+    }
+  },
+  "board": {
+    "path": "F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+    "sha256": "4080577219283ede267da9dff71ff41d6e9013832e24f7efdcf17d904347591e",
+    "visual": "未验证；未绕过既有文件访问限制",
+    "sourceAcceptanceCount": 31,
+    "focus": "CATEGORY-001",
+    "status": "设计中 / 方案待确认"
+  },
+  "checks": {
+    "status": "通过（仅验收/方案治理与只读核验）",
+    "assertions": 127,
+    "detail": "../category-001/proposal-checks.json"
+  },
+  "next": {
+    "taskId": "CATEGORY-001",
+    "stage": "方案待确认",
+    "scope": "LOCAL_CATEGORY_SAMPLE_NOINDEX",
+    "proposal": "../../../product/category-pages-proposal.md",
+    "implemented": false
+  },
+  "humanFullSiteContentReview": "未验证；不从本次功能验收推定",
+  "notRun": [
+    "application type-check",
+    "application lint",
+    "application regressions",
+    "Next build",
+    "Cloudflare/OpenNext build",
+    "HTTP/SEO",
+    "browser/mobile",
+    "CWV/physical device",
+    "preview liveness",
+    "production/deployment"
+  ],
+  "release": "不通过 / 原 P0 与全站生产门禁未关闭",
+  "commitCreated": false,
+  "pushed": false,
+  "deployed": false,
+  "cancelledMaterialTaskReopened": false,
+  "rollback": "逆向本轮治理增量；保留 GAMES 应用成果与真实用户验收，不覆盖其它脏工作区改动。无线上回滚。"
+}

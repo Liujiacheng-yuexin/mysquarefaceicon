@@ -1,0 +1,184 @@
+{
+  "taskId": "ASSET-001",
+  "scope": "GAME_ASSET_STORAGE_PROPOSAL",
+  "boardVersion": "1.93",
+  "recordedAt": "2026-09-08T02:12:34.8213340Z",
+  "status": "设计中 / 方案待确认 / 未实施",
+  "result": "现状、R2 与迁移边界核对通过；方案待确认，应用和外部存储未实施；全站发布不通过",
+  "proposalPath": "docs/product/game-asset-storage-proposal.md",
+  "proposalSha256": "9af44fd2b1c4f35daa07c57bf724ad21e5b08483a4a306f708d4bbc75abe3fb6",
+  "proposalConfirmation": "确认 ASSET-001 方案，进行开发",
+  "dependency": {
+    "taskId": "GAME-DATA-001",
+    "satisfiedLocally": true
+  },
+  "currentInventory": {
+    "publicFiles": 39,
+    "publicBytes": 29367157,
+    "publicMiB": 28.01,
+    "ruffle": {
+      "files": 5,
+      "bytes": 27512697,
+      "percent": 93.69,
+      "decision": "EXCLUDED_RUNTIME"
+    },
+    "swf": {
+      "files": 2,
+      "bytes": 1403193,
+      "percent": 4.78,
+      "decision": "BLOCKED_RIGHTS_UNKNOWN"
+    },
+    "otherPublicBytes": 451267,
+    "openNextAssetFiles": 88,
+    "openNextAssetBytes": 30298977,
+    "openNextAssetMiB": 28.9
+  },
+  "currentGameData": {
+    "httpsImagesAllowed": true,
+    "projectCdnProvenanceExists": true,
+    "ruffleSwfSourcesRequireLocalRootPath": true,
+    "html5AndLocalIframeRequireLocalRootPath": true,
+    "sourceKinds": ["LOCAL_PROJECT_ASSET", "OFFICIAL_EXTERNAL_PAGE"],
+    "separateGameAssetManifestPresent": false,
+    "separateGameAssetCheckPresent": false
+  },
+  "cloudflareReadOnly": {
+    "wranglerVersion": "4.90.1",
+    "bucket": {
+      "name": "mysquarefaceicon",
+      "location": "APAC",
+      "objectCount": 2,
+      "sizeDisplay": "76.9 kB"
+    },
+    "customDomain": {
+      "host": "static.mysquarefaceicon.com",
+      "enabled": true,
+      "ownershipStatus": "active",
+      "sslStatus": "active",
+      "minimumTls": "1.0"
+    },
+    "cors": {
+      "configured": false,
+      "wranglerApiCode": 10059
+    },
+    "squareCover": {
+      "url": "https://static.mysquarefaceicon.com/squarefacegenerator/square-face-cover.png",
+      "status": 200,
+      "bytes": 76781,
+      "sha256": "15a5c93f79859441eef3032ce45e07abc2e91a7520a9aaef42158dd4fe00a535",
+      "matchesLocal": true,
+      "contentType": "image/png",
+      "cacheControl": "max-age=14400",
+      "corsHeader": null,
+      "cfCacheStatusOnFinalProbe": "HIT"
+    },
+    "mutationsPerformed": false
+  },
+  "preflight": [
+    {"command": "npm run games:check", "exitCode": 0},
+    {"command": "npm run player:check", "exitCode": 0},
+    {"command": "npm run ruffle:check", "exitCode": 0, "result": "5 files / 27,512,697 bytes / 10 negative fixtures rejected"},
+    {"command": "npm run perf-home:check", "exitCode": 0}
+  ],
+  "readOnlyCommandHistory": [
+    {
+      "command": "npx wrangler r2 bucket list --json",
+      "exitCode": 1,
+      "result": "--json is unsupported by the installed Wrangler command; not treated as a bucket-list pass"
+    },
+    {
+      "command": "npx wrangler r2 bucket list",
+      "exitCode": 0,
+      "result": "existing bucket inventory returned"
+    },
+    {
+      "command": "npx wrangler r2 bucket info mysquarefaceicon",
+      "exitCode": 0
+    },
+    {
+      "command": "npx wrangler r2 bucket domain list mysquarefaceicon",
+      "exitCode": 0
+    },
+    {
+      "command": "npx wrangler r2 bucket cors list mysquarefaceicon",
+      "exitCode": 1,
+      "result": "Cloudflare API code 10059: CORS configuration does not exist; preserved as a current-state gap"
+    },
+    {
+      "command": "curl.exe through configured proxy",
+      "exitCode": 7,
+      "result": "proxy 127.0.0.1 unavailable; not treated as an HTTP pass"
+    },
+    {
+      "command": "curl.exe --noproxy * HEAD with production Origin",
+      "exitCode": 0,
+      "result": "200, exact content length/type/cache; no CORS response header"
+    },
+    {
+      "command": "curl body piped to openssl",
+      "exitCode": 1,
+      "result": "openssl unavailable; not treated as a hash pass"
+    },
+    {
+      "command": "Node HTTPS in-memory body/hash probe",
+      "exitCode": 0,
+      "result": "remote body bytes and SHA-256 match local Square cover"
+    }
+  ],
+  "proposalDecisions": [
+    "reuse the existing mysquarefaceicon public-asset bucket and static custom domain after separate authorization",
+    "never reuse the moderated comment-image R2 buckets for immutable game packages",
+    "use content-addressed object keys and exact HTTP metadata",
+    "add a local manifest and fail-closed checker before any external migration",
+    "keep Ruffle under the accepted same-origin runtime contract",
+    "block Square and Oval SWF migration while rights remain UNKNOWN",
+    "keep Pixel as direct-link-only and never copy or hotlink its assets",
+    "keep the Square first-viewport cover app-static because of its historical LCP risk",
+    "require separate approval for R2 CORS, TLS, upload, URL cutover, deletion and deployment"
+  ],
+  "officialReferences": [
+    "https://developers.cloudflare.com/r2/buckets/public-buckets/",
+    "https://developers.cloudflare.com/r2/buckets/cors/",
+    "https://developers.cloudflare.com/cache/interaction-cloudflare-products/r2/",
+    "https://developers.cloudflare.com/api/resources/r2/"
+  ],
+  "seoInvariant": {
+    "urlsChanged": false,
+    "metadataOrH1Changed": false,
+    "canonicalOrSchemaChanged": false,
+    "robotsOrIndexChanged": false,
+    "sitemapChanged": false,
+    "visibleCopyOrSearchIntentChanged": false,
+    "seoLogEntryNeeded": false,
+    "reason": "proposal-only asset architecture work; no production SEO or page change",
+    "seoProdRun": false
+  },
+  "governance": {
+    "boardPreviousSha256": "8e72d2e72a95fac41f029f0a55b98f34742025d89dc62759b5345fc31e71bc49",
+    "boardCurrentSha256": "f0928871a5605fb3bce40c6a69203bd532ca63b5cb1d4746c11bcf4bb5ef60d6",
+    "completedTasks": 25,
+    "totalTasks": 60,
+    "sourceAcceptanceKeys": 36,
+    "implementationStarted": false,
+    "applicationCodeChanged": false,
+    "gameDataOrSchemaChanged": false,
+    "dependenciesChanged": false,
+    "localAssetsChanged": false,
+    "r2BucketDomainCorsTlsOrObjectsChanged": false,
+    "fullApplicationQaRerun": false,
+    "typeLintBuildsRerun": false,
+    "browserMobileCwvRerun": false,
+    "commitCreated": false,
+    "pushed": false,
+    "deployed": false,
+    "production": "未验证 / 未部署"
+  },
+  "retainedBoundaries": {
+    "squareOvalSwfChanged": false,
+    "rightsVerified": false,
+    "licenseMaterialTaskReopened": false,
+    "ruffleContractChanged": false,
+    "imageCwvMobileTasksStarted": false,
+    "nextRequiredUserReply": "确认 ASSET-001 方案，进行开发"
+  }
+}

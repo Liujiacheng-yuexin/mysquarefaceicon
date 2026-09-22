@@ -14,11 +14,15 @@ export default function PrivacyPolicyPage() {
     <main className="legal-page">
       <a className="back-link" href="/">Back to Square Face Generator</a>
       <h1>Privacy Policy</h1>
-      <p>Last updated: May 21, 2026</p>
+      <p>Last updated: September 7, 2026</p>
       <p>
         My Square Face Icon is designed as a browser-based classic Flash avatar
         maker page. The main game runs through Ruffle so visitors can play the
         SWF game in modern browsers without installing Adobe Flash Player.
+      </p>
+      <p>
+        This privacy policy explains what information is provided through public
+        comments, how moderation uses it, and which details are not shown publicly.
       </p>
       <h2>Privacy Policy: Information We Collect</h2>
       <p>
@@ -45,6 +49,18 @@ export default function PrivacyPolicyPage() {
         install prompt and to keep a simple visitor ID for comment likes. The
         visitor ID is used to reduce duplicate likes from the same browser and is
         not a login account.
+      </p>
+      <p>
+        This browser may also save the stable ID and start time of recently played
+        games to show Continue Playing. You can remove that history with Clear
+        history, and it does not sync across devices.
+      </p>
+      <p>
+        If you use Favorite or Save tool, this browser stores only stable game IDs
+        so it can show your saved games and tools on the Games page. Favorites do
+        not contain account or personal information and do not sync across devices.
+        Press the Favorited or Saved tool button again to remove an item, or clear
+        this site&apos;s stored data in your browser settings.
       </p>
       <p>
         Comment likes may store a hashed visitor identifier with the comment ID

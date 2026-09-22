@@ -1,0 +1,15 @@
+{
+  "weeks": 13,
+  "tasks": 61,
+  "sourceAcceptanceKeys": 37,
+  "current": {
+    "taskId": "HOME-CTR-001",
+    "scope": "HOME_METADATA_ONLY",
+    "status": "待验收",
+    "request": "请参考这个文档进行开发",
+    "implementationCompleted": true,
+    "wholeTaskCompleted": false,
+    "evidencePath": "docs/quality/evidence/home-ctr-001/README.md"
+  },
+  "task": "待验收"
+}

@@ -1,0 +1,84 @@
+{
+  "taskId": "IMG-001",
+  "scope": "GAME_IMAGE_PIPELINE_PROPOSAL",
+  "boardVersion": "1.96",
+  "recordedAt": "2026-09-08T04:43:09.8228925Z",
+  "request": "ASSET-001 验收通过，现在进行下一步开发",
+  "result": "现状与基线核对通过；方案待确认；应用和图片未实施；全站发布不通过",
+  "proposalPath": "docs/product/game-image-pipeline-proposal.md",
+  "proposalConfirmed": false,
+  "implementationStarted": false,
+  "inventory": {
+    "publicImageFiles": 29,
+    "publicImageBytes": 448379,
+    "formats": {"webp": 18, "png": 9, "svg": 1, "ico": 1, "avif": 0},
+    "gameDataImageRecords": 8,
+    "uniqueGameDataImageUrls": 6,
+    "missingDeclaredDimensions": ["square-face.THUMBNAIL.width", "square-face.THUMBNAIL.height"],
+    "verifiedSquareThumbnail": "512x512",
+    "legacyPlayerPreviews": [
+      {"gameId": "square-face", "path": "/games/square-face-cover.png", "dimensions": "970x844", "landscape16By9": false},
+      {"gameId": "oval-face", "path": "/games/oval-face-cover.png", "dimensions": "974x775", "landscape16By9": false}
+    ],
+    "sharedOpenGraph": {"path": "/og-image.svg", "dimensions": "1200x630", "format": "svg"}
+  },
+  "decisions": {
+    "coverRoleSplit": ["LANDSCAPE_COVER", "PLAYER_PREVIEW"],
+    "existingCoverMigration": "rename role only; preserve files, pixels, player geometry and loading priority",
+    "newBinaryAssets": false,
+    "imageConversionOrCropping": false,
+    "openGraphUrlChanged": false,
+    "r2Mutation": false,
+    "competitorAssets": "prohibited",
+    "seoAndLayoutFrozen": true
+  },
+  "preflight": [
+    {"command": "npm run assets:check", "exitCode": 0, "result": "10 asset references / 8 unique local files / 20 negative fixtures / 0 R2 objects"},
+    {"command": "npm run games:check", "exitCode": 0, "result": "3 records and current asset presence passed"},
+    {"command": "npm run components:check", "exitCode": 0, "result": "10 shared components and route consumers passed"},
+    {"command": "npm run metadata:check", "exitCode": 0, "result": "Game Data metadata and current OG records passed"},
+    {"command": "npm run perf-home:check", "exitCode": 0, "result": "local truthful LCP cover and click-to-load contract passed"}
+  ],
+  "notRunForProposal": [
+    "TypeScript, lint, Next build and OpenNext build",
+    "local production application HTTP and SEO checks",
+    "application browser desktop/mobile interaction and request inspection",
+    "field or production CWV",
+    "production SEO"
+  ],
+  "boardRender": {
+    "url": "http://127.0.0.1:43196/mysquarefaceicon_rebuild_dashboard.html",
+    "title": "MySquareFaceIcon 游戏站改造看板 · 12 周",
+    "pageNonBlank": true,
+    "frameworkOverlay": false,
+    "consoleErrorsOrWarnings": 0,
+    "overallProgress": "26 / 60",
+    "sourceAcceptanceKeys": 37,
+    "focusTask": "IMG-001",
+    "focusStatus": "设计中",
+    "acceptanceAndRevisionButtonsDisabled": true,
+    "interaction": "clicked the focus 查看详情 button and verified the IMG-001 proposal dialog, scope and confirmation gate",
+    "screenshot": "captured in the Codex in-app browser; not committed to the repository",
+    "temporaryServerStopped": true
+  },
+  "changes": {
+    "applicationCode": false,
+    "imageBinaries": false,
+    "dependencies": false,
+    "pageOrSeo": false,
+    "externalState": false
+  },
+  "board": {
+    "previousSha256": "629034e20f9a3ee825768d060ff94fd2035a3bb36a72f8b698ca497891ab06d3",
+    "completedTasks": 26,
+    "totalTasks": 60,
+    "sourceAcceptanceKeys": 37,
+    "nextRequiredUserReply": "确认 IMG-001 图片规范与优化管线方案，进行开发"
+  },
+  "release": {
+    "commitCreated": false,
+    "pushed": false,
+    "deployed": false,
+    "production": "未验证 / 未部署"
+  }
+}

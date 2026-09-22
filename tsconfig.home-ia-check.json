@@ -1,0 +1,29 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "jsx": "react-jsx",
+    "noEmit": false,
+    "outDir": ".home-ia-check",
+    "rootDir": ".",
+    "incremental": false,
+    "isolatedModules": false,
+    "declaration": false,
+    "sourceMap": false,
+    "plugins": []
+  },
+  "include": [
+    "components/home/**/*.tsx",
+    "components/game/CategoryChip.tsx",
+    "components/game/EmptyState.tsx",
+    "components/game/GameCard.tsx",
+    "components/game/GameGrid.tsx",
+    "data/game-categories.ts",
+    "data/games/**/*.ts",
+    "lib/games/**/*.ts",
+    "scripts/validate-home-information-architecture.tsx"
+  ],
+  "exclude": ["node_modules", ".next", ".home-ia-check", "app/sitemap.ts"]
+}

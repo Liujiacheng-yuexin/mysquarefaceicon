@@ -1,0 +1,19 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "noEmit": true,
+    "incremental": false,
+    "plugins": []
+  },
+  "include": [
+    "components/FlashGenerator.tsx",
+    "components/game-player/**/*.tsx",
+    "components/game-player/**/*.ts",
+    "app/pixel-art-avatar-icon-generator/page.tsx",
+    "lib/games/**/*.ts",
+    "data/games/**/*.ts",
+    ".next/types/**/*.ts",
+    "next-env.d.ts"
+  ],
+  "exclude": ["node_modules", "app/sitemap.ts"]
+}

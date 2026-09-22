@@ -1,4 +1,5 @@
-const CACHE_NAME = "msfi-v8";
+const CACHE_NAME = "msfi-v9-ruffle-2026-05-12";
+const RUFFLE_ENTRY = "/ruffle/ruffle.js";
 const CORE_ASSETS = [
   "/favicon.ico",
   "/favicon16.png",
@@ -39,6 +40,21 @@ self.addEventListener("fetch", (event) => {
 
   if (request.mode === "navigate" || request.destination === "document" || url.pathname.startsWith("/_next/")) {
     event.respondWith(fetch(request).catch(() => caches.match(request)));
+    return;
+  }
+
+  if (url.pathname === RUFFLE_ENTRY) {
+    event.respondWith(
+      fetch(request)
+        .then((response) => {
+          if (response.ok) {
+            const copy = response.clone();
+            caches.open(CACHE_NAME).then((cache) => cache.put(request, copy)).catch(() => undefined);
+          }
+          return response;
+        })
+        .catch(() => caches.match(request))
+    );
     return;
   }
 

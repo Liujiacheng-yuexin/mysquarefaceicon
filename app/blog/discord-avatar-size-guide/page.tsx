@@ -108,6 +108,7 @@ export default function DiscordAvatarSizeGuidePage() {
           <h2>Recommended Discord Avatar Working Size</h2>
           <p>
             A square source image is the best starting point for a Discord avatar. A 512 by 512 pixel PNG is a practical working size because it gives you enough room to design the icon before it is displayed at smaller sizes in the Discord interface.
+            Checking Discord avatar size at a small preview also helps confirm that the centered face remains clear after the interface scales it down.
           </p>
           <p>
             You do not need a complicated full-body illustration for a chat avatar. A centered face, readable eyes, and a simple mouth usually work better than fine details that disappear in member lists and message rows.

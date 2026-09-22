@@ -1,0 +1,1657 @@
+{
+  "schemaVersion": 1,
+  "boardVersion": "1.66",
+  "recordedAt": "2026-09-03T05:17:09.304Z",
+  "userInstruction": "确认验收，现在进行下一步开发",
+  "environment": {
+    "branch": "codex/game-platform-rebuild",
+    "head": "c6d30087c2c03a7c4eb8d5bfe6e055e9b8d40228",
+    "buildId": "U_kmLWP9KIdfcJUsHvBgL"
+  },
+  "sourceHashes": {
+    "app/about-us/page.tsx": "bd812baed9b69e531d369be6e0be168dc5232d3729def0d7f5a747fbccbf1779",
+    "app/admin/comments/page.tsx": "5da66215f6c126892b132af3f11937d2fba81dc9d3b86b680b207b0cd6680f99",
+    "app/api/admin/comment-images/[...key]/route.ts": "818b0b4c81cd56f9455a3228adc95137268a90db6b82f1a2e1f6f8ec232f03a0",
+    "app/api/admin/comments/route.ts": "63ddcb14964f633f199af6873497abb9091420dba4e889396ca7d2d775578bb2",
+    "app/api/admin/comments/[id]/route.ts": "e471d00f054151ac6636c81fd9d21ce108b19c86875ee524f2e0b44f429c135b",
+    "app/api/comment-images/[...key]/route.ts": "defb2f8ec7f4be7c19beb82663f781ae2e735cf19db127d603f5c82d8925d98a",
+    "app/api/comments/route.ts": "4297d56bf81fb7182236ef0c880cd1039907dc345415e1bacddc39ae01ab2e7f",
+    "app/api/comments/[id]/like/route.ts": "edf2b13178884db9af47debed1186655b55a96abe807e1dde8f4367381089a14",
+    "app/blog/avatar-maker-without-signup/page.tsx": "27b767b9898a1cf54a8bd8d15949690a99c3bcf8fee0a510275d2c05880dce97",
+    "app/blog/best-discord-avatar-style/page.tsx": "2e0807728e27e7b62e0be6aee9319079626b6d8f259fbf452afb3193f6040b9d",
+    "app/blog/cute-profile-picture-ideas/page.tsx": "23d0d94e184f86457eec7bccce657e83a401d94fef36686008af683fbf9ed126",
+    "app/blog/discord-avatar-size-guide/page.tsx": "3990a509c0f009f3007edf767e28983943e35ec03a9422483d7427972e3a7a24",
+    "app/blog/how-to-make-a-cute-discord-profile-icon/page.tsx": "126709f27ed82ffa275ec56f8c19d3ef97bd972f3a6d7737eca02eb016fe4a38",
+    "app/blog/page.tsx": "ae764e709b2e95b94978264e94f7c8339e18fbb40619e2b61003e73979b777e9",
+    "app/blog/square-avatar-vs-round-avatar/page.tsx": "21831b3d94e787b7442827822de117fd9cb6854408e25ea55443bc5cafb3c82b",
+    "app/blog/tiktok-profile-icon-ideas/page.tsx": "c480c6c80cc10800e1ff12710861712d4bde2aefe7145e7666d8352e0f2c29ad",
+    "app/category/[slug]/page.tsx": "db5f8c1c1c4df37b7f8a0a726e540d1a0897fa14d84efd8a2f50a8b79aaba0e1",
+    "app/contact/page.tsx": "43c774c71e326750845afe0168f4d66bbb1ee47367bcfc6015bb17592860c98e",
+    "app/cute-square-avatar-generator/page.tsx": "fe22cddd887475ecc89983278ceeabc06678a344c8ea7aefb47a65eb7a893042",
+    "app/editorial-policy/page.tsx": "c758e70ce143b58db1453877efcb6d82a9e89fd96d1bc473c73c6dcf4c81a529",
+    "app/free-avatar-maker/page.tsx": "65b5cd3745e7aad2dd9bdb11a851fb8a7fa74fe6e7a2e3221474688c76b75aa5",
+    "app/gallery/page.tsx": "d051f12b8e4c71a9b15a75efb59c3ffbb1f9904ec5d69577f9640ff47d479901",
+    "app/games/page.tsx": "325b8221aec0d9ea69a2374faad321a0fa75dd7e8c0df05c59da4db93e46c44f",
+    "app/games/[slug]/page.tsx": "0131595a7dc55e0b9227944e41f5cf54548213f5527cc62f034eb8a61c05aab4",
+    "app/globals.css": "5b5e8d7253be79edbd479a01a53bf3f760d52482ced5f4c6edcd387975669867",
+    "app/layout.tsx": "c9d72791c1167896c2ab3a72bb9e7eada5b909bbf8f540a6e64fb52bed4e77b5",
+    "app/manifest.ts": "035fb0b64fd59984750a16cca5b4e7bd4e776d8ee7c9a608e339cabef2a8a179",
+    "app/not-found.tsx": "1ae05e6e788c22dba45d7cbdce2a4b9271d584246a553bda51428c396991a351",
+    "app/oval-face-icon-generator/page.tsx": "7047682caac9809799f475caece2ce110d82e769bee389ceedaba966167701cf",
+    "app/page.tsx": "d10f79e2522ca3c3e21195e09df0f090b119af6452c265e48eb125639b2c46c1",
+    "app/pixel-art-avatar-icon-generator/page.tsx": "514139869fbd206326dc6d2e426d86c2b49f27c557b86868471de200fe94c50d",
+    "app/pixel-square-face-maker/page.tsx": "b691a2359a6a6581eadc75fb1944a93a1718f85c4fff11ba6ebdfbad756603e5",
+    "app/privacy-policy/page.tsx": "eba51fcadf3aa4e61506242d5d5fb1d9d4ac7d870626e7877670ae0984c7d1c4",
+    "app/robots.ts": "dd47d2bd1355fb44791c0f5e481b06c98142639383a902cd6e976cb4f7583aa8",
+    "app/sitemap.ts": "183aafaeb14f529f8c341c70aa9c3278082f670aeaa4f487271d6ff110e0db18",
+    "app/square-avatar-generator/page.tsx": "a239bb17efb6eddce7e49f3214cef92017eed9f167c0879103855d91b4554a31",
+    "app/square-face-icon-generator/page.tsx": "24e88b1057bfea65f350bb84205cc5fc89fec0cd06e4f6dea24719c7513ff731",
+    "app/terms-of-service/page.tsx": "8121043e9a474a19a5c1c366ed80e03db93ec6bc8dc1ed9eda63ef60d85c83f5",
+    "app/[locale]/page.tsx": "e47894775647c4a8630490b2e7ab0a72cc4fdcc2d0f253ce2ce724676adf7ece",
+    "components/AdminComments.tsx": "a3a1dd2d1bc175a4862a49299b363fe50c9b006945fc6b20df97dc08d527af4d",
+    "components/AvatarGenerator.tsx": "61e65dd817d517975ba89ca2ba7e7b182cf015bc296e4a993aa4733342fda74b",
+    "components/CloudflareAnalytics.tsx": "54e33cdc6f229a708c86013649a283ed946be150f717b11eebc6ccdb793368c4",
+    "components/CommentSection.tsx": "02db74c38bf07f57c92defb239866cd75bfeef561333de1db9acfc9d44ddfd21",
+    "components/CuratedGalleryPreview.tsx": "0238422e69aa37737063f1600e11a82505b0b8f94bd813161eb8ea6985e78792",
+    "components/DeferredThirdPartyScripts.tsx": "09ae2617d036e47be5874e366d0ced2fc1634d03b59ac9c2505f1938c7cfe7e2",
+    "components/FlashGenerator.tsx": "c443323031b15428a502ff4fcad3653ffc424ef75db9335b76883576f45ac794",
+    "components/game/AdSlotShell.tsx": "3c1aaa1ab799dddb7e7e0bb607a31c0cc9d77683c42554b7663bc4bdc4a28a27",
+    "components/game/CategoryChip.tsx": "78e2ddcf2ce6b77899d3ab35f06f5d49a87f82f1015d8f4deb862dfe76ab0850",
+    "components/game/EmptyState.tsx": "2ef1bad5737139a2cd9c1cf9d003b28a9f202a50fa9925072cea8e35cef549d2",
+    "components/game/GameBreadcrumb.tsx": "933a23729f0c280559d64ac1376022520c3d700031a489935d1e1b30b604b474",
+    "components/game/GameCard.tsx": "94af78fdd701884f8e69d2d3cdf919d2a0b730c685b6e5287130d85ef9b92edf",
+    "components/game/GameControls.tsx": "2a738d34297ad718e59a678ea9572d8c6cc981180e083e8fca7cb03e21c1b4da",
+    "components/game/GameDetailTemplate.tsx": "c643d800efd8bdbc6d439047b53c3aad6fae403ad59ed55b7c8349218c1ca43c",
+    "components/game/GameFaq.tsx": "c680b9728a08c896095bb85fc688f6d451360142e0bb447763b8fed0a0a1139a",
+    "components/game/GameGrid.tsx": "261672ac47c7cafeb3f2576caf6ba6240fa3c9b15472f55778b8ae3f45d631b5",
+    "components/game/GameMeta.tsx": "d7c6e283401f295579cff65cd01ee761626d727098fbc6e983e8d18e47f807e9",
+    "components/game/GamePlayer.tsx": "a568634e413cacc1ef816bd2835be4916dfc6094f9cc4d3a2ee3a3fd5d51b2da",
+    "components/game/GameSourceRights.tsx": "ebc2ec19b91bf5dde44eae24ca75b6ee208a487c707a9862f694c6d88dbd2243",
+    "components/game/README.md": "4c7ea3c7e616a686fbf08567f8b9e28082912a2dbcbfc7a73d3166867c172f89",
+    "components/game/RelatedGames.tsx": "1fa094f28bd8b0855c7869596b9df55b0072a48a8db6d3db8c6558f954209aa7",
+    "components/game-player/adapters/adapter-types.ts": "4e6c492777363116b8a450d5b7e822abdf99609e518f15a3fc682f2d6fd84df5",
+    "components/game-player/adapters/ExternalLinkAdapter.tsx": "f7d4c98916a2a25785175af7ae6bf009a700f68271b8345322fd904c2431f45c",
+    "components/game-player/adapters/Html5Adapter.tsx": "524f0c49fd8af608ddf86aed872fe1cd0af72839b30391206be8eae639e08325",
+    "components/game-player/adapters/IframeAdapterFrame.tsx": "af31a35c493f607bacbfb548b386f604cbb98c7722a32cf580da11a7b7b593b6",
+    "components/game-player/adapters/LocalIframeAdapter.tsx": "b73408e66cb4dec9fe5b8460960627c95a1a92c43282345562dbfd173b3f4d9f",
+    "components/game-player/adapters/OfficialIframeAdapter.tsx": "0668f81f43684d59522799c55ecc4affe8fb24fdfc571af7e6ac8e56118cc23c",
+    "components/game-player/adapters/RuffleAdapter.tsx": "5fcff6669f4ca75147728e8a73434cdef8abb2823325110d585ad46a1cfe8ada",
+    "components/game-player/GamePlayer.tsx": "142cf22ac3a485c78285d920bbe84114f3931a38f0e9aec067bbf8ca2e562d5c",
+    "components/GameSidebar.tsx": "1d6d43a434f91bface5858c3d648c3aeff90f8f0d930bfbdc9f2ae0ebd28bb70",
+    "components/home/CoreGamePreview.tsx": "9a05388d53d969ef1ea1f4ea9a6273a0ebd1cd8ec6d1df43a1afd8da1c4c44a1",
+    "components/home/HomeDiscoveryRegion.tsx": "8652a91eeeb4650230235422c661be58841a49475ce1bc446425c7e2ac697b04",
+    "components/home/HomeHero.tsx": "d7c0c2c35b98735c002d4a9066b68615e73df77326cc42468eaee6607b442fd3",
+    "components/home/HomeResourceLinks.tsx": "fd03f53ecc08510a86e3edd54864e132af9e70b363a7d5dee4c50d1eea207e23",
+    "components/HomePage.tsx": "fd9f94372bd2cbc98ddcf88b4364183d860ad24dd5dbb5551790fca63e8a8c9c",
+    "components/InstallPrompt.tsx": "fb4a9fd5a43625673f03b26b8d31284c955b4e970d9fbe80be41863228c02ac8",
+    "components/ShareButtons.tsx": "5becc8e6cf2a779dd192222de56087f468b41243f60950d0290f45ff07a71a28",
+    "components/SiteFooter.tsx": "0a8f7e7ca185853a8494ba94f8ecaa65e9ddd73ba3e43781c0efacfcdd3c2291",
+    "components/SiteHeader.tsx": "8182d2e2a5012cfbb62ebadcc8cb581d088364d263f9eb11f9d217686df115a1",
+    "lib/comment-store.ts": "734fa24cbf3cf6518f5026c93953628dca8c28935db6927d53650d4019865804",
+    "lib/games/catalog.ts": "6cc0df85e3acf146b3cc18b63cc4785982607fc0e59142ce89f59d2d6ef0ac0d",
+    "lib/games/game-player-model.ts": "42672e8d0917e9d7d6a1b28137e505ecd4d7b09ba40e3c971751b6d7f3fbe84c",
+    "lib/games/game-schema.ts": "b3d036c8973bc9562b99b55058e042d9040605f6e04f008dc54378eb005e8df6",
+    "lib/games/home-discovery.ts": "b172dd4a9e807754f59dfe5f9bb5b42fdc2d360bd89c54eab504f5577dac166e",
+    "lib/games/routes.ts": "058434c725a09ae921c2c5f184396377873ad67603130f985fcfe39bcd97c5a6",
+    "lib/locales.ts": "a96fefe1140236963e49b59ed632641794f1b39b5f5c3bd5df79adac876df8db",
+    "lib/metadata.ts": "ed02bc92dbfe7e71c0988bef9cf8bbdabc34caef5a1a2ba67d40cf69d839a275",
+    "lib/seo/canonical-origin.ts": "2d506dc08f622a898efd6eb57c9210018d2b8ba73ec8666a3bd4c9685e831fd9",
+    "lib/seo/game-metadata.ts": "87e7f42b085e2714cd22bce3634ccf1272fa822fb70b77292c5831d0f38fe660",
+    "lib/seo/game-structured-data.ts": "84193180e9b8827a2566d38585ce753b94ee30f4c9b5f6aee4fe22da3c875391",
+    "data/ai-crawler-policy.json": "adea8bf57c056c93b319da9033654f573989948058ab04a7c74e4739c472487c",
+    "data/curated-icon-ideas.ts": "b51d0f7b57249b1e3cfe0e16bede29688154814168a2c6271a7388ad10933dce",
+    "data/game-categories.ts": "b0bbb1eccbc70bdc70323c05da94acc725df06d857c70eaba8860f5b3e701d8d",
+    "data/game-license-registry.json": "fb0b94f56ffa3c7feca89ee136c73795a95d993de0ebe16d81ca8041da4a8924",
+    "data/games/oval-face.ts": "03d3c9d884161baafd9f5baadf85bbb05567324cc8e7251f094ca0bbe4b872fe",
+    "data/games/pixel-art-avatar.ts": "118d1b40325cb26d8ff19141f5af2ff1b451a3b89de0e6131836a37a0510fabb",
+    "data/games/README.md": "71272ce378d8adc438b34b6d60e58080fa32b8728fd9c513e6aad2001eac24ee",
+    "data/games/square-face.ts": "5f70eb18ae8e87db1db4d2603c080e5a4b01d44ae2b57f7abcf9afbf26550d0e",
+    "scripts/check-ai-crawler-policy.mjs": "76e030b11a653a01ed101e13c06460f29354f55d33c1e96aab4ace3f53be5042",
+    "scripts/check-terms-rights.mjs": "62ab3d26bb2459fe9abe92a1c520e740cba77f01cec5324a7d19ddadfe6dba50",
+    "scripts/cloudflare-login.cmd": "9285c7cf0105fa6087da2dbb9264265a5daed85475ea61a12b0310431e3c8b0f",
+    "scripts/cloudflare-provision.cmd": "72b6efc1ad0cab89dc54d6d18cb6a6c3f2c1bbc7fa42444b9be968cc1cd22aeb",
+    "scripts/cloudflare-set-secrets.cmd": "5964a356784cc9ea3beeb76b801fc04ae79762ff1c47ab1fecb9f5a0d35a8cd0",
+    "scripts/patch-opennext-worker.mjs": "1f761820c8ec949e7a32f1435b82f14f9919d46bf965090741ab55add8b4068b",
+    "scripts/post-deploy-check.mjs": "51b28a8e14558dfc69c71779ebe9ed28d195f2f671d5eda07977afe885bbee82",
+    "scripts/README.md": "d3b1bcaaf77d5380d2531cd0acfa0e71f5bb4cabb6e5c32afabf10192d8669f6",
+    "scripts/robots-policy.mjs": "0d3f85f8568a4b17a53c2eaa82fd06460a14262160ba53131f29978c5f4416ed",
+    "scripts/run-canonical-host-check.mjs": "99c282d9246c3a3c060c9b697d0c4a769e6b7622a63b97ab99899d41bc2edc4b",
+    "scripts/run-game-component-check.mjs": "bf05d0f3119b094bc4674846c71bbc69482541921ba199ec693dce021ba86e62",
+    "scripts/run-game-data-check.mjs": "985321918bfc7abdbea07a675b710d40fe8ddbbfa6d128e24e67cd90309f536b",
+    "scripts/run-game-metadata-check.mjs": "a6a16a08338143f1ada4f8f446e89f2e08208c0896cf884a5d494c894931ccf8",
+    "scripts/run-game-player-check.mjs": "59f17f0f2dacc0b596f572a9a1871e58f78623a267257e3f33e7f1eac7bd9f09",
+    "scripts/run-game-route-check.mjs": "be951b8407d08aadf9e1b2b29dda30fe33ffb133af6cd8ee6e8c7897a95eac44",
+    "scripts/run-game-template-check.mjs": "c7121e18a868db05d702639ff8448cbaad958c20117e91b71fb0ed71d98ced8d",
+    "scripts/run-home-discovery-check.mjs": "70cb3221dedd42081b24c201902a3dce2ff46c31e54b8ee478384da4545b4196",
+    "scripts/run-home-gallery-check.mjs": "e0bf58437b6de392dd98af862c97be25107432cec1a24df9a8d9d028b7ab738d",
+    "scripts/run-home-hero-check.mjs": "40ad21661b97f27e306c2eaa8d130637ecbd9a31d5c72c8ef25c214fb3a276e0",
+    "scripts/run-home-information-architecture-check.mjs": "6fc9c018915cb8cbdf68f23fde16239be0cb246bd6f92eab7000b243a98d9f66",
+    "scripts/run-home-performance-check.mjs": "58c55d5a6be4d07961c9163167fb2b1394c2807d4a31b8522da4e79ff7d9d308",
+    "scripts/seo-check.mjs": "a56453c56c8f55f4a308790e38a34aed19b667d1ba3514bd09eb18709db2ca9f",
+    "scripts/start-local-preview.cmd": "edd040a98ac02704de22f632fb21f981976c70b88932461874e4631db1dbcfb1",
+    "scripts/submit-indexnow.mjs": "1394eb5cfa2bb600af3bd3fbdf0f8c2eae9adf78b31d18d6f4cd57f3be0f4ae9",
+    "scripts/validate-canonical-host.ts": "1c7d329c5a0d5ac1b06432381f0933cfe70e0f17f8b4081f5e9695d23a6d32aa",
+    "scripts/validate-game-components.tsx": "3ba59b4e768241a57ec53da796c5cca2c35c6b69c95259f827166c0780a7b74d",
+    "scripts/validate-game-data.ts": "7e6f204d5397830accd8e33534939146bcbdd934b3ec49d8653c113b412d73bd",
+    "scripts/validate-game-metadata.ts": "72c8aa3f30b341d9eec53d55551ddd422c9271aca9b52d203469a8910b11b403",
+    "scripts/validate-game-player.tsx": "370b6809735b2b1ccbd99003fea04ea0f06a9761950333d765a661b3157797eb",
+    "scripts/validate-game-routes.ts": "bca62350b59f545437c2e5a8e834275dce7c5df330bb58d268befd12ab00803f",
+    "scripts/validate-game-template.tsx": "5427f7fbd835530eaa34ef7fc514692b203f8f312e71624ed51df3dc14af6406",
+    "scripts/validate-home-discovery.tsx": "f0236c66dc6e603595d39ba675293c5aba44add9a50cd71b7a2f7e461065d894",
+    "scripts/validate-home-gallery.tsx": "9d551c13b6df1c9173c32a805b07abe6ba85bef830057db78bc4653d56aac19b",
+    "scripts/validate-home-hero.tsx": "6d2f6dc8332a7ea2fed9776ae3e453857c6ee2f4adfd2528ce6663fab73c9e3c",
+    "scripts/validate-home-information-architecture.tsx": "e3c0001100d69301d7007ba8fc3840779530fbdadae93bd784d48978138cfbc4",
+    "scripts/validate-home-performance.tsx": "8aefc3b9227758e6f2b651f539b8385bb5275376b6d939f6c0e76f618a48d90d",
+    "public/games/oval-face-cover.png": "0e914b27b602683442d57dfa232c88be1fdea5a2ed45bdabe0da72e3ff464073",
+    "public/games/oval-face-icon.png": "a3cdaeff0397647bd1580980c60e2996e5aa499eab8e5f2e634557b1c5da0909",
+    "public/games/oval-face.swf": "80e974d8ef4ad5e849e93464eaea1833620c269bac30601d960f5438c285e09b",
+    "public/games/README.md": "e5ae6e267570980805a1f298d9a6f0b5cf842f934035ae8e6d2355e5b8a3cf0c",
+    "public/games/square-face-cover.png": "15a5c93f79859441eef3032ce45e07abc2e91a7520a9aaef42158dd4fe00a535",
+    "public/games/square-face.swf": "b1d074c95f15b7dcecdbc2405abf820ead985669bb12cd47247fc8ea7537bc1e",
+    "package.json": "2a1a50a8c790770b07f9d505ffa370711defa3203b38a021cafde8f25cf2150b",
+    "package-lock.json": "bf7b778ff42d02d40a11190d56d969cb03ac183a0cf70dbd85c199dc79778c97",
+    "next.config.mjs": "10f3416af7a0a92f59c4d283113624e9c286f645c6155e91c5a381d512feb9ee",
+    "middleware.ts": "4ce3b9cd325b843f1f80bca6545c114ac84f3336434a719cbfd47577c7ab53d6",
+    "tsconfig.json": "a749da922f5e6f1d93a68270185c1ed56e3e45c786d1de1ee59f9bdb7512d720",
+    "scripts/check-about-rights.mjs": "5d1591d13e293168dda865890daecbd33048bfca16b569a4059a262afae94868",
+    "scripts/check-editorial-rights.mjs": "1ec7268b707490f6b55d297b5bfb7a1b36f944da45ddcc8d6f561a52518a503b",
+    "scripts/check-gallery-rights.mjs": "bd2ed64fb002334e4e3d72527ec28e87414877bd8777535b97ca102b4953996f",
+    "scripts/check-locale-rights.mjs": "a845716dcda767b12eec927d9946ff025f060ca447acb24e19de9b615052e48c",
+    "lib/games/square-homepage.ts": "ce7d111d8a4df65194394ed31468a43fac96c83da1f53c8761090f159efe3aa4",
+    "scripts/check-square-homepage.mjs": "addae130ed0365a154ee58612d6bcc89771f5cb1c01c653acb746968c05680c8",
+    "lib/games/oval-legacy-page.ts": "29a465e18d5a0520e1e4db970f7fa5b7b23b6022f317f890d31c8ba22efa4f79",
+    "scripts/check-oval-legacy-page.mjs": "50d98aad3eb74313d5c5dd12f5c2e840a164dfa2dd7d791113166f1afe89291b"
+  },
+  "historicalEvidenceHashes": {
+    "docs/quality/evidence/about-001-rights-copy/checks.json": "9b5d2192b7ddac92a9b01c8f2368d3faaee116253166bb6c623c83bbf8e647e7",
+    "docs/quality/evidence/about-001-rights-copy/proposal-checks.json": "dbb44b079bd622e93813761c939091e15a0b892a20d2272aaa1cfbd93a690362",
+    "docs/quality/evidence/editorial-001-rights-copy/checks.json": "72f7ff3be63a9e3b14a41a3f651a336c57f7d74d59785fb9173cd2af36117d52",
+    "docs/quality/evidence/editorial-001-rights-copy/proposal-checks.json": "a30c3eb49860af11e4af1e998dff78d8b42970d909113ee64c7a728256d5beed",
+    "docs/quality/evidence/gallery-001-rights-copy/acceptance-checks.json": "eb8105300c659fdc668f06d64b820bac69fcca5a2011a1bc2da0dfa51c121143",
+    "docs/quality/evidence/gallery-001-rights-copy/checks.json": "a41646b12dffdc099bc9c1a84cf10667f6efc1753b1db5be2c437e3695bd86af",
+    "docs/quality/evidence/gallery-001-rights-copy/proposal-checks.json": "3c00f1471ba2741fb27d44b1efecd823834443243e46754c1aeda8fea1a81a08",
+    "docs/quality/evidence/home-gallery-001/production-approved-ugc-probe.json": "37f3fa29f7f9b84721ae117bf85efb4ce79fe7d2015192e2ce0cd62d8981f93c",
+    "docs/quality/evidence/license-gate-2026-09-03/checks.json": "4fbe84181fe0d7231944eeb3bf2b64b93b6aae6b557cdba1b9445c4d12eb44fb",
+    "docs/quality/evidence/license-gate-2026-09-03/release-order-confirmation.json": "7481222829e0f28319a65406495fa334c58e535b5c9d038e2b9d9706000cce57",
+    "docs/quality/evidence/locale-001-rights-copy/acceptance-checks.json": "bfe4948dc8eae906a7f6435fbc0cbfc29ee725027f9599a2d49444c305cd9d63",
+    "docs/quality/evidence/locale-001-rights-copy/checks.json": "55b49e3506e3141ffd1ef5dd701136411dc06b0c351a10fe99caf1fd9eadfdfb",
+    "docs/quality/evidence/locale-001-rights-copy/mobile-revision-checks.json": "71421d8433f2e8fe3f05c0d62ee46584535e4ef1c378fef54f0ec2bd0b4fb31f",
+    "docs/quality/evidence/locale-001-rights-copy/proposal-checks.json": "0ec30303ae7c7fc9a3af588e0939017aa2175896e4ec1fef741741ccbfe82de4",
+    "docs/quality/evidence/mig-oval-001/checks.json": "47bfac00708ee560e90b915bbc7fd6c57e4fc9a7def201fa3a4c9ea8a2fd3231",
+    "docs/quality/evidence/mig-oval-001/proposal-checks.json": "20e52eba57d40a3d407e73962d0f799f5e7f5415e6dc950454da99dbf890d350",
+    "docs/quality/evidence/mig-square-001/acceptance-checks.json": "29fbf5eb482a1e1ebb56c1b34086bf05d2113518bfeb422bdb8a8b2148636b8c",
+    "docs/quality/evidence/mig-square-001/checks.json": "f3de4b6319696f228e95ad5fddc53f1ba9588d48237daeee2fb31f1d4000daa6",
+    "docs/quality/evidence/mig-square-001/proposal-checks.json": "4f737e30de67ec8de4c70954fb7ab7c9cf9e9ecaf91c96ece597245848636ee6",
+    "docs/quality/evidence/perf-home-001/metrics.json": "06eb8a27312031aff0f530f12c5961c552c8def39b582cf96f5abe823ac7c905",
+    "docs/quality/evidence/terms-001-rights-copy/checks.json": "5b0aaefeca88262d57203e5caa92ea3ac465f5c399361be4bf873c28c4dccf1d"
+  },
+  "historicalJsonScope": "The 21 JSON files in docs/quality/evidence before this turn; original historical counts/date fields are not rewritten",
+  "screenshots": [
+    {
+      "name": "before-es-desktop-1280x900",
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/locale-001-v1.57/before-es-desktop-1280x900.jpg",
+      "bytes": 140055,
+      "sha256": "6644d2ae869baf681b378ceed25c8eea3e34a526fc0478d29617c627e690418c",
+      "recordedAt": "2026-09-02T14:31:31.214Z"
+    },
+    {
+      "name": "before-ar-mobile-390x844",
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/locale-001-v1.57/before-ar-mobile-390x844.jpg",
+      "bytes": 49721,
+      "sha256": "3e72e3c0b2b23ba1694dd6bff876c0dacb790ee65552f19c8d16e2f4e80a519c",
+      "recordedAt": "2026-09-02T14:31:55.220Z"
+    },
+    {
+      "name": "before-ar-desktop-1280x900",
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/locale-001-v1.57/before-ar-desktop-1280x900.jpg",
+      "bytes": 139909,
+      "sha256": "8b1933e675cb6813115127bdab1766c3d44426b694a931bccb3215b13f6b14c3",
+      "recordedAt": "2026-09-02T14:33:52.083Z"
+    },
+    {
+      "name": "after-ar-desktop-1280x900",
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/locale-001-v1.57/after-ar-desktop-1280x900.jpg",
+      "bytes": 140761,
+      "sha256": "9a3eae7c7d663e836d5469b33b73b4f6827ac463d7705a3b9836efb07c169208",
+      "recordedAt": "2026-09-02T14:51:50.771Z"
+    },
+    {
+      "name": "after-es-desktop-1280x900",
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/locale-001-v1.57/after-es-desktop-1280x900.jpg",
+      "bytes": 141164,
+      "sha256": "1cbc83a3f454f93554c10f35403a46ff0f45439dabc3667b4aba7ce2c2db4d07",
+      "recordedAt": "2026-09-02T14:54:03.835Z"
+    },
+    {
+      "name": "after-es-mobile-390x844",
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/locale-001-v1.57/after-es-mobile-390x844.jpg",
+      "bytes": 50282,
+      "sha256": "4880e423597db704be049c2794da834beef5975a728230bdc233d332374790db",
+      "recordedAt": "2026-09-02T14:54:35.006Z"
+    },
+    {
+      "name": "after-es-mobile-sidebar-clipping-390x844",
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/locale-001-v1.57/after-es-mobile-sidebar-clipping-390x844.jpg",
+      "bytes": 48331,
+      "sha256": "96dda5ae0c25dac12938dd24c43e6e249fd869b9e589a1d878166656e870a258",
+      "recordedAt": "2026-09-02T14:55:31.612Z"
+    },
+    {
+      "name": "after-ar-mobile-390x844",
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/locale-001-v1.57/after-ar-mobile-390x844.jpg",
+      "bytes": 56389,
+      "sha256": "7bf8e7ee3875600e916c7a22e3c2c7e647206da8ff66c89b435a2e059b99b716",
+      "recordedAt": "2026-09-02T14:57:06.327Z"
+    },
+    {
+      "name": "after-ar-mobile-sidebar-clipping-retry-390x844",
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/locale-001-v1.57/after-ar-mobile-sidebar-clipping-retry-390x844.jpg",
+      "bytes": 48072,
+      "sha256": "5e4b677c16c5bed13ca08b88a6e4782cb92b8b11273403b64a51d49c6108cf3b",
+      "recordedAt": "2026-09-02T14:57:39.352Z"
+    },
+    {
+      "name": "after-root-desktop-idle-1280x900",
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/locale-001-v1.57/after-root-desktop-idle-1280x900.jpg",
+      "bytes": 79120,
+      "sha256": "ec18b1021bdcd98b8106b5dc81e6238d991ce79001d0e2ed612b31d3dc373b71",
+      "recordedAt": "2026-09-02T14:58:41.271Z"
+    },
+    {
+      "name": "after-root-desktop-ready-1280x900",
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/locale-001-v1.57/after-root-desktop-ready-1280x900.jpg",
+      "bytes": 113570,
+      "sha256": "e25123b553fe99227796f5ef214768f5813adfa924cd0a34cc14bccdf3a7a217",
+      "recordedAt": "2026-09-02T14:59:47.267Z"
+    },
+    {
+      "name": "after-root-mobile-idle-390x844",
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/locale-001-v1.57/after-root-mobile-idle-390x844.jpg",
+      "bytes": 51788,
+      "sha256": "0e8a5d2c0125af35aad9fec3b2389b7cee40365bd63fc999ed466743bf4efbbf",
+      "recordedAt": "2026-09-02T15:00:23.935Z"
+    },
+    {
+      "name": "after-root-mobile-ready-390x844",
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/locale-001-v1.57/after-root-mobile-ready-390x844.jpg",
+      "bytes": 55100,
+      "sha256": "e83cf31569ea5c319c356a53732026fd8614b1e718698328f30b54d1f3b92995",
+      "recordedAt": "2026-09-02T15:01:19.937Z"
+    },
+    {
+      "name": "after-root-desktop-idle-cover-recheck-1280x900",
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/locale-001-v1.57/after-root-desktop-idle-cover-recheck-1280x900.jpg",
+      "bytes": 113440,
+      "sha256": "f1e5bebca8f011802003bb292d922d6bd6435d35a788ff8f1ae8a81fc32cc9b6",
+      "recordedAt": "2026-09-02T15:04:25.956Z"
+    },
+    {
+      "name": "es-first-viewport-390x844",
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/locale-001-v1.58/recheck-2026-09-03/es-first-viewport-390x844.jpg",
+      "bytes": 50282,
+      "sha256": "4880e423597db704be049c2794da834beef5975a728230bdc233d332374790db",
+      "recordedAt": "2026-09-02T16:20:59.587Z"
+    },
+    {
+      "name": "es-sidebar-complete-390x844",
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/locale-001-v1.58/recheck-2026-09-03/es-sidebar-complete-390x844.jpg",
+      "bytes": 47942,
+      "sha256": "18682ca000046d95e6804ca3fa6e3ceeb2dc7d863e6879da7c95b51792d7ca71",
+      "recordedAt": "2026-09-02T16:21:19.925Z"
+    },
+    {
+      "name": "ar-sidebar-complete-390x844",
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/locale-001-v1.58/recheck-2026-09-03/ar-sidebar-complete-390x844.jpg",
+      "bytes": 47653,
+      "sha256": "f4f5c181923589b03847196582a71b5fe29c305699989a49e83572567ea217f5",
+      "recordedAt": "2026-09-02T16:21:38.366Z"
+    },
+    {
+      "name": "ar-sidebar-complete-360x800",
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/locale-001-v1.58/recheck-2026-09-03/ar-sidebar-complete-360x800.jpg",
+      "bytes": 42494,
+      "sha256": "7fe3b827cd64c36c2ed96bb34ce226fa0eae2e2d4c6e41dc466a55b1e18e51f4",
+      "recordedAt": "2026-09-02T16:22:09.900Z"
+    },
+    {
+      "name": "es-sidebar-complete-360x800",
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/locale-001-v1.58/recheck-2026-09-03/es-sidebar-complete-360x800.jpg",
+      "bytes": 43035,
+      "sha256": "73e062d71371fcabcb63f327a8163945a536e92a9f436a80314da7f6c3919039",
+      "recordedAt": "2026-09-02T16:22:10.379Z"
+    },
+    {
+      "name": "ar-desktop-complete-1280x900",
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/locale-001-v1.58/recheck-2026-09-03/ar-desktop-complete-1280x900.jpg",
+      "bytes": 140172,
+      "sha256": "e83d7f374e567acb2a555ece0f7f8ac7b95f6efe206b82b9b2b2a634d812b785",
+      "recordedAt": "2026-09-02T16:22:54.985Z"
+    },
+    {
+      "name": "es-desktop-complete-1280x900",
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/locale-001-v1.58/recheck-2026-09-03/es-desktop-complete-1280x900.jpg",
+      "bytes": 140469,
+      "sha256": "e7b3a834846c87196218af8f8fcfb772d4a5634cde1d5e60f0cf92d24e25c40b",
+      "recordedAt": "2026-09-02T16:22:55.744Z"
+    },
+    {
+      "name": "root-desktop-idle-1280x900",
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/locale-001-v1.58/recheck-2026-09-03/root-desktop-idle-1280x900.jpg",
+      "bytes": 113440,
+      "sha256": "f1e5bebca8f011802003bb292d922d6bd6435d35a788ff8f1ae8a81fc32cc9b6",
+      "recordedAt": "2026-09-02T23:29:22.966Z"
+    },
+    {
+      "name": "root-desktop-ready-1280x900",
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/locale-001-v1.58/recheck-2026-09-03/root-desktop-ready-1280x900.jpg",
+      "bytes": 113566,
+      "sha256": "86a40402c8dec310b990ceed8569a4bff60620bf5769f32687e76143c7656947",
+      "recordedAt": "2026-09-02T23:29:26.589Z"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/locale-001-v1.58/after-ar-mobile-short-copy-390x844.jpg",
+      "sha256": "d02b443f4d07bd9762fa6439d79d9e7636633f2dc5e6da2992979d673ef38d4d",
+      "bytes": 46618,
+      "status": "Prior interrupted-segment screenshot; preserved, not final-build evidence"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/locale-001-v1.58/after-es-mobile-short-copy-390x844.jpg",
+      "sha256": "bfac1784d1ba55259cb5210de33c7e8bcfdb4d195f4017d5cad349b708bff408",
+      "bytes": 42321,
+      "status": "Prior interrupted-segment screenshot; preserved, not final-build evidence"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/locale-001-v1.58/after-es-mobile-short-copy-loaded-390x844.jpg",
+      "sha256": "d8b9b51eb80ca213c3af438818ed6f12d1dae318a37de9d4eaa74e15e722452f",
+      "bytes": 47913,
+      "status": "Prior interrupted-segment screenshot; preserved, not final-build evidence"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/locale-001-v1.58/before-es-mobile-long-copy-390x844.jpg",
+      "sha256": "36b019ad5fec645b07a8a980dc03fd6b3ff07b3937b0f7a5c78b42a593b93d83",
+      "bytes": 48308,
+      "status": "Prior interrupted-segment screenshot; preserved, not final-build evidence"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-square-001-v1.63/before-home-1280.png",
+      "bytes": 113440,
+      "sha256": "f1e5bebca8f011802003bb292d922d6bd6435d35a788ff8f1ae8a81fc32cc9b6"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-square-001-v1.63/before-home-390.png",
+      "bytes": 51788,
+      "sha256": "0e8a5d2c0125af35aad9fec3b2389b7cee40365bd63fc999ed466743bf4efbbf"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-square-001-v1.63/before-home-360.png",
+      "bytes": 49110,
+      "sha256": "3caf873422202f20355af1c57463be1368f70537559e71669d19b10b96fc90e1"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-square-001-v1.63/before-es-1280.png",
+      "bytes": 140324,
+      "sha256": "ea5c6aa81605f6281f0d583b4427d1dd21b3b14e98d8859870ad1dd91a78f719"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-square-001-v1.63/before-es-390.png",
+      "bytes": 50282,
+      "sha256": "4880e423597db704be049c2794da834beef5975a728230bdc233d332374790db"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-square-001-v1.63/before-es-360.png",
+      "bytes": 46166,
+      "sha256": "efe60b62cea7425fd0eb4fb5d492713ffc2245302f7c44639e45c684f73b0e27"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-square-001-v1.63/before-ar-1280.png",
+      "bytes": 140104,
+      "sha256": "b6a182c0d5ee26d6c6197ceab15d582d3f97360cddced0d49616af405b2385e3"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-square-001-v1.63/before-ar-390.png",
+      "bytes": 49721,
+      "sha256": "3e72e3c0b2b23ba1694dd6bff876c0dacb790ee65552f19c8d16e2f4e80a519c"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-square-001-v1.63/before-ar-360.png",
+      "bytes": 45831,
+      "sha256": "73d8afb3268c53655f1822dbd4dc1bb95f5f8e3feea392f46116f0218873b75c"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-square-001-v1.63/after-home-1280.jpg",
+      "bytes": 113440,
+      "sha256": "f1e5bebca8f011802003bb292d922d6bd6435d35a788ff8f1ae8a81fc32cc9b6"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-square-001-v1.63/after-home-390.jpg",
+      "bytes": 51788,
+      "sha256": "0e8a5d2c0125af35aad9fec3b2389b7cee40365bd63fc999ed466743bf4efbbf"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-square-001-v1.63/after-home-360.jpg",
+      "bytes": 49110,
+      "sha256": "3caf873422202f20355af1c57463be1368f70537559e71669d19b10b96fc90e1"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-square-001-v1.63/after-es-1280.jpg",
+      "bytes": 140387,
+      "sha256": "a6f54332c013eb365ddf4b19acef457b7cf7ba80057496c22ae6e3b997a9788a"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-square-001-v1.63/after-es-390.jpg",
+      "bytes": 50282,
+      "sha256": "4880e423597db704be049c2794da834beef5975a728230bdc233d332374790db"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-square-001-v1.63/after-es-360.jpg",
+      "bytes": 46166,
+      "sha256": "efe60b62cea7425fd0eb4fb5d492713ffc2245302f7c44639e45c684f73b0e27"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-square-001-v1.63/after-ar-1280.jpg",
+      "bytes": 140104,
+      "sha256": "b6a182c0d5ee26d6c6197ceab15d582d3f97360cddced0d49616af405b2385e3"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-square-001-v1.63/after-ar-390.jpg",
+      "bytes": 49721,
+      "sha256": "3e72e3c0b2b23ba1694dd6bff876c0dacb790ee65552f19c8d16e2f4e80a519c"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-square-001-v1.63/after-ar-360.jpg",
+      "bytes": 45831,
+      "sha256": "73d8afb3268c53655f1822dbd4dc1bb95f5f8e3feea392f46116f0218873b75c"
+    },
+    {
+      "label": "home-mobile-keyboard-ready",
+      "recordedAt": "2026-09-03T02:14:24.268Z",
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-square-001-v1.63/home-mobile-keyboard-ready.jpg",
+      "bytes": 55100,
+      "sha256": "e83cf31569ea5c319c356a53732026fd8614b1e718698328f30b54d1f3b92995"
+    },
+    {
+      "label": "home-mobile-faq-open",
+      "recordedAt": "2026-09-03T02:14:24.868Z",
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-square-001-v1.63/home-mobile-faq-open.jpg",
+      "bytes": 41016,
+      "sha256": "b87d52c5860e68f368460bb7493e7d435413a4a50a9ede17248f41156b994aa4"
+    },
+    {
+      "label": "es-gallery-sidebar-390",
+      "recordedAt": "2026-09-03T02:15:19.087Z",
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-square-001-v1.63/es-gallery-sidebar-390.jpg",
+      "bytes": 45763,
+      "sha256": "10435bff9722effb36b3b2b2e52ade493af0b8dbc78befc7f4867d2d8feb5b8c"
+    },
+    {
+      "label": "es-gallery-sidebar-360",
+      "recordedAt": "2026-09-03T02:15:19.514Z",
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-square-001-v1.63/es-gallery-sidebar-360.jpg",
+      "bytes": 43128,
+      "sha256": "feb7ce3eb2260ce4097edae14f09dcafaf9c8d31fff512d2bf6384271d5e4254"
+    },
+    {
+      "label": "ar-gallery-sidebar-390",
+      "recordedAt": "2026-09-03T02:15:23.768Z",
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-square-001-v1.63/ar-gallery-sidebar-390.jpg",
+      "bytes": 45734,
+      "sha256": "02806ba3d5d071b5264fd7332228761f004a85d7e03691ba6bf69924f88264c2"
+    },
+    {
+      "label": "ar-gallery-sidebar-360",
+      "recordedAt": "2026-09-03T02:15:24.247Z",
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-square-001-v1.63/ar-gallery-sidebar-360.jpg",
+      "bytes": 42788,
+      "sha256": "27cbb7b4cc4c39a6c3ffb37df76269353b7cfb49552a971d273ae62bfdb581f9"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-square-001-v1.63/home-desktop-ready.jpg",
+      "bytes": 120709,
+      "sha256": "843ba38c5fd0715af8de271fb08fd07072f6be5562c7d6994d3ba3729597b185",
+      "recordedAt": "2026-09-03T02:11:24.424Z"
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-oval-001-v1.65/before-oval-1280.jpg",
+      "bytes": 141456,
+      "sha256": "e1bea80cbf715630cf4b4b80272e3e498d539ee8fddfec39f63755f29f6dc1cc",
+      "label": "before-oval-1280",
+      "fullPage": false
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-oval-001-v1.65/before-oval-390.jpg",
+      "bytes": 48247,
+      "sha256": "c33ba33ec1815604327f3da6bad9024ae7d348505236a7617416fe01df72a83a",
+      "label": "before-oval-390",
+      "fullPage": false
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-oval-001-v1.65/before-oval-360.jpg",
+      "bytes": 44718,
+      "sha256": "81174ac59e34e9edbce8b0983868dc29f73fff5a021b9e2ee257a5fe5ccfb101",
+      "label": "before-oval-360",
+      "fullPage": false
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-oval-001-v1.65/before-home-1280.jpg",
+      "bytes": 113440,
+      "sha256": "f1e5bebca8f011802003bb292d922d6bd6435d35a788ff8f1ae8a81fc32cc9b6",
+      "label": "before-home-1280",
+      "fullPage": false
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-oval-001-v1.65/before-home-390.jpg",
+      "bytes": 51788,
+      "sha256": "0e8a5d2c0125af35aad9fec3b2389b7cee40365bd63fc999ed466743bf4efbbf",
+      "label": "before-home-390",
+      "fullPage": false
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-oval-001-v1.65/before-es-390.jpg",
+      "bytes": 50282,
+      "sha256": "4880e423597db704be049c2794da834beef5975a728230bdc233d332374790db",
+      "label": "before-es-390",
+      "fullPage": false
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-oval-001-v1.65/before-ar-390.jpg",
+      "bytes": 49721,
+      "sha256": "3e72e3c0b2b23ba1694dd6bff876c0dacb790ee65552f19c8d16e2f4e80a519c",
+      "label": "before-ar-390",
+      "fullPage": false
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-oval-001-v1.65/after-oval-1280.jpg",
+      "bytes": 141466,
+      "sha256": "c30e3e004a2ed352dd97588ed0cc0f0d1ca717b98ebb4fec89ffefe6f6b8b3fc",
+      "label": "after-oval-1280",
+      "fullPage": false
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-oval-001-v1.65/after-oval-390.jpg",
+      "bytes": 48247,
+      "sha256": "c33ba33ec1815604327f3da6bad9024ae7d348505236a7617416fe01df72a83a",
+      "label": "after-oval-390",
+      "fullPage": false
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-oval-001-v1.65/after-oval-360.jpg",
+      "bytes": 44718,
+      "sha256": "81174ac59e34e9edbce8b0983868dc29f73fff5a021b9e2ee257a5fe5ccfb101",
+      "label": "after-oval-360",
+      "fullPage": false
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-oval-001-v1.65/after-home-1280.jpg",
+      "bytes": 113440,
+      "sha256": "f1e5bebca8f011802003bb292d922d6bd6435d35a788ff8f1ae8a81fc32cc9b6",
+      "label": "after-home-1280",
+      "fullPage": false
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-oval-001-v1.65/after-home-390.jpg",
+      "bytes": 51788,
+      "sha256": "0e8a5d2c0125af35aad9fec3b2389b7cee40365bd63fc999ed466743bf4efbbf",
+      "label": "after-home-390",
+      "fullPage": false
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-oval-001-v1.65/after-es-390.jpg",
+      "bytes": 50282,
+      "sha256": "4880e423597db704be049c2794da834beef5975a728230bdc233d332374790db",
+      "label": "after-es-390",
+      "fullPage": false
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-oval-001-v1.65/after-ar-390.jpg",
+      "bytes": 49721,
+      "sha256": "3e72e3c0b2b23ba1694dd6bff876c0dacb790ee65552f19c8d16e2f4e80a519c",
+      "label": "after-ar-390",
+      "fullPage": false
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-oval-001-v1.65/oval-mobile-loading.jpg",
+      "bytes": 41436,
+      "sha256": "58368c1242147f21c82722b96c774bf7a0d2a4a391fea936698bacea22e01587",
+      "label": "oval-mobile-loading",
+      "fullPage": false
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-oval-001-v1.65/oval-mobile-ready.jpg",
+      "bytes": 51502,
+      "sha256": "e0b0db645d9afcce1abc33ead59d2638bdce0f130623a0b4f392d9c2d1906e11",
+      "label": "oval-mobile-ready",
+      "fullPage": false
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-oval-001-v1.65/oval-360-space-ready.jpg",
+      "bytes": 48016,
+      "sha256": "8193838110751e9347a4653db871156aae9a710fcfa14f18669654b951bfa8f2",
+      "label": "oval-360-space-ready",
+      "fullPage": false
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-oval-001-v1.65/oval-desktop-enter-ready.jpg",
+      "bytes": 99705,
+      "sha256": "a22d05ec7af1724ddddd5ef5e5dfdb626d4db4cb5d02bb1e292b605f67526aae",
+      "label": "oval-desktop-enter-ready",
+      "fullPage": false
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-oval-001-v1.65/oval-desktop-game-ready.jpg",
+      "bytes": 99705,
+      "sha256": "a22d05ec7af1724ddddd5ef5e5dfdb626d4db4cb5d02bb1e292b605f67526aae",
+      "label": "oval-desktop-game-ready",
+      "fullPage": false
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-oval-001-v1.65/oval-mobile-game-and-controls.jpg",
+      "bytes": 45298,
+      "sha256": "e3d9312e3b35a24dcb1bc963784054bddf80b5255590cd7a8a7f2abf56c142a4",
+      "label": "oval-mobile-game-and-controls",
+      "fullPage": false
+    },
+    {
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-oval-001-v1.65/oval-desktop-full-game.jpg",
+      "bytes": 117132,
+      "sha256": "c85f5f0e6e7c1ae2ab7cde8b89b3f49a296f39490b14f78c39f687830788ff70",
+      "label": "oval-desktop-full-game",
+      "fullPage": false
+    }
+  ],
+  "artifacts": [
+    {
+      "path": ".next/server/app/index.html",
+      "sha256": "0e93868cbdc4fed06abec3541ab08be6cd57be258a2ffa9fd86dc0a57c6dc9e7",
+      "bytes": 102044
+    },
+    {
+      "path": ".next/server/app/es.html",
+      "sha256": "218da3b2265118d7ca1983c26fcc36f87215ed6e7f1ab2a30f429b2876b5abcc",
+      "bytes": 91755
+    },
+    {
+      "path": ".next/server/app/vi.html",
+      "sha256": "e5415efddcaf4a00a84a1790a0e0375c4f0cb4e1a85db17b2c130c346a878cb8",
+      "bytes": 91773
+    },
+    {
+      "path": ".next/server/app/ja.html",
+      "sha256": "7523687f2fe4ac444cd41a6587d860282936d8c3bba491dd62120bd98b7d2589",
+      "bytes": 91761
+    },
+    {
+      "path": ".next/server/app/th.html",
+      "sha256": "d61f7627043dda4c09face32a828500011ff07908d2e03184f2f694bbac2d9ff",
+      "bytes": 91737
+    },
+    {
+      "path": ".next/server/app/ar.html",
+      "sha256": "02a23484dd11eca537def0bbf74c932a059f7e2eb15e39f77cac92b7005765d7",
+      "bytes": 91749
+    },
+    {
+      "path": ".next/server/app/ru.html",
+      "sha256": "887486df5d09e78d38e6c97950e327bc6a9e0da8cdaef5f2d02c41ceff1c334a",
+      "bytes": 91755
+    },
+    {
+      "path": ".next/server/app/id.html",
+      "sha256": "f9f3ff70a89509cb5961e7b485123f8000253057dadd1af6e019375588144e88",
+      "bytes": 91773
+    },
+    {
+      "path": ".next/server/app/gallery.html",
+      "sha256": "55d1050fd21fd75ea68bf93c8b8016636e34c99a2ed26f99aa95d0598b22c0b3",
+      "bytes": 52414
+    },
+    {
+      "path": ".next/server/app/editorial-policy.html",
+      "sha256": "90336658b2b0dd0d04fba4e160e9ee3944778fe44a3632ff13f488c296927028",
+      "bytes": 33201
+    },
+    {
+      "path": ".next/server/app/about-us.html",
+      "sha256": "2fe7102450d3b961f30a9e567d70705e92486f085253d07f5b2bbe9727bdfec4",
+      "bytes": 38196
+    },
+    {
+      "path": ".next/server/app/terms-of-service.html",
+      "sha256": "0e0736a91d205b63ea8f245772ebe29dba706fbbb3e3da636acbd19d8c1fee6a",
+      "bytes": 21778
+    },
+    {
+      "path": ".next/server/app/robots.txt.body",
+      "sha256": "e114dfaaa714b7b9d2385907a7f1e915e30c606d049f11457f45a9f6549d554f",
+      "bytes": 711
+    },
+    {
+      "path": ".next/server/app/sitemap.xml.body",
+      "sha256": "3f1341c4b3d4e339fc5b231539157032ff42ecfc991e4bc2058903d372bb12a7",
+      "bytes": 2770
+    },
+    {
+      "path": ".open-next/worker.js",
+      "sha256": "4e7c7cb3850c2ca12374d034118afc422ed5d95f46bfc3df3ff1dba2911807f3",
+      "bytes": 2234
+    },
+    {
+      "path": ".next/server/app/oval-face-icon-generator.html",
+      "sha256": "d1ddfe0491f9297428292111fec1733bcfcc1079875db4ef0e32786d232323c3",
+      "bytes": 96457
+    },
+    {
+      "path": ".next/server/app/pixel-art-avatar-icon-generator.html",
+      "sha256": "cbc938c5340b9a28e07543fccd82427c0095c69560c921f623eadd39c697f816",
+      "bytes": 101917
+    },
+    {
+      "path": ".next/BUILD_ID",
+      "sha256": "d15c3aba06f5217ba6e82da01721ec848da2cb9c6bc0e2caeb336f836cd6a3fe",
+      "bytes": 21
+    }
+  ],
+  "swfHashes": {
+    "public/games/square-face.swf": "b1d074c95f15b7dcecdbc2405abf820ead985669bb12cd47247fc8ea7537bc1e",
+    "public/games/oval-face.swf": "80e974d8ef4ad5e849e93464eaea1833620c269bac30601d960f5438c285e09b"
+  },
+  "applicationChanged": false,
+  "fullApplicationChecksRerun": false,
+  "browserQaRun": false,
+  "previewLivenessVerified": false,
+  "licenseGateWaived": false,
+  "rightsStatus": "Square/Oval UNKNOWN; Pixel existing RESTRICTED / DIRECT_LINK_ONLY unchanged",
+  "releaseDeferred": true,
+  "releaseResult": "不通过 / 用户暂缓 / 未部署",
+  "committed": false,
+  "pushed": false,
+  "deployed": false,
+  "seoProdRun": false,
+  "governanceValidation": {
+    "status": "PASS",
+    "mode": "final",
+    "recordedAt": "2026-09-03T05:27:13.968Z",
+    "scope": "Read-only preservation and board JavaScript/VM validation; not browser or full application QA",
+    "documents": [
+      {
+        "path": "PAGE_PLAN.md",
+        "sha256": "29d23169c7bbe4798f890fe9b9e0c9ca1dbfc188ab0b0b52817ab2be43c8a1c7",
+        "unchangedOutsideApprovedHunks": true
+      },
+      {
+        "path": "LAUNCH_CHECKLIST.md",
+        "sha256": "7bba3e40f70e47dd711b32f05eb6bc92c57fc6ff4c07195faab6d62fad98ef0b",
+        "unchangedOutsideApprovedHunks": true
+      },
+      {
+        "path": "SEO_LOG.md",
+        "sha256": "bbc11759948ec25cda489633c1ad48a90ed45c69b622abd887c6b0859212717e",
+        "unchangedOutsideApprovedHunks": true
+      },
+      {
+        "path": "docs/product/oval-local-data-binding-proposal.md",
+        "sha256": "6c6bc7fc05ab8a9cb7842f7ee7e1028365cd11cef52fd987e42a41b80f28d7c1",
+        "unchangedOutsideApprovedHunks": true
+      },
+      {
+        "path": "docs/quality/evidence/mig-oval-001/README.md",
+        "sha256": "77e76b8eff2286e96a685e44b520c20d9e940f2490bcf28186e41e1d9bd4dd2e",
+        "unchangedOutsideApprovedHunks": true
+      },
+      {
+        "path": "docs/quality/evidence/release-2026-09-02/README.md",
+        "sha256": "9a436ff4dd16f5ca8ab335e4527f2923d9f91f95799b1eff0579a194392a29e5",
+        "unchangedOutsideApprovedHunks": true
+      },
+      {
+        "path": "docs/legal/swf-license-evidence-request.md",
+        "sha256": "319611836aa12eb49ce182115ec96de0ff16a4f6838b024a42179d9395b09115",
+        "unchangedOutsideApprovedHunks": true
+      },
+      {
+        "path": "F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+        "sha256": "f85e65f6361f1bb467d563d350d36076f35c1d9d6b9a6ce85e6724f7d805b114",
+        "unchangedOutsideApprovedHunks": true
+      }
+    ],
+    "proposal": {
+      "path": "docs/product/pixel-external-tool-consistency-proposal.md",
+      "sha256": "eea75c3097c9d0c666554cfac550629168e1d715cdcd400d319a1d51621c6ca0"
+    },
+    "board": {
+      "version": "1.66",
+      "focus": "MIG-PIXEL-001",
+      "pixelStatus": "设计中 / 方案待确认",
+      "ovalStatus": "已延期（本地阶段已验收；完整模板迁移未完成）",
+      "templateMigrationCompleted": false,
+      "sourceAcceptances": 28,
+      "previous27AcceptancesPreserved": true,
+      "historicalQaUnchanged": true,
+      "cssAndRoadmapUnchanged": true,
+      "staticRuntimeParity": "PASS",
+      "javascript": "PASS",
+      "pendingProposalBlocksAcceptanceAndEarlyStatuses": "PASS",
+      "sourceAcceptancesSurviveResetAndStaleStorage": "PASS",
+      "fullOvalCompletionRejected": "PASS",
+      "exportVersionAndScopedAcceptance": "PASS",
+      "promptAndDetailConfirmationBoundary": "PASS",
+      "futureAcceptanceRequiresImplementedFixture": "PASS",
+      "nextContentTaskNotStarted": true,
+      "visual": "UNVERIFIED_ACCESS_RESTRICTION_PRESERVED",
+      "vmIsNotActualBrowserStorage": true
+    },
+    "preservation": {
+      "sourceFiles": 152,
+      "historicalJsonFiles": 21,
+      "historicalJsonScope": "Current docs/quality/evidence directory before this turn",
+      "screenshots": 73,
+      "buildArtifacts": 18,
+      "originalQa": {
+        "path": "docs/quality/evidence/mig-oval-001/checks.json",
+        "sha256": "47bfac00708ee560e90b915bbc7fd6c57e4fc9a7def201fa3a4c9ea8a2fd3231",
+        "recordedAt": "2026-09-03T04:54:59.118Z",
+        "result": "本地工程与交互通过；视觉有条件通过；待本地阶段人工验收",
+        "acceptancePrompt": "MIG-OVAL-001 本地数据绑定验收通过"
+      },
+      "governanceHunks": 36
+    },
+    "buildId": "U_kmLWP9KIdfcJUsHvBgL",
+    "applicationChanged": false,
+    "fullApplicationChecksRerun": false,
+    "browserQaRun": false,
+    "previewLivenessVerified": false,
+    "licenseGateWaived": false,
+    "releaseResult": "不通过 / 用户暂缓 / 未部署",
+    "committed": false,
+    "pushed": false,
+    "deployed": false,
+    "gitChecks": [
+      {
+        "cwd": "D:/LYXGIT/mysquarefaceicon",
+        "args": [
+          "branch",
+          "--show-current"
+        ],
+        "startedAt": "2026-09-03T05:27:13.968Z",
+        "finishedAt": "2026-09-03T05:27:14.027Z",
+        "timeoutMs": 15000,
+        "exitCode": 0,
+        "stdout": "codex/game-platform-rebuild\n",
+        "stderr": ""
+      },
+      {
+        "cwd": "D:/LYXGIT/mysquarefaceicon",
+        "args": [
+          "rev-parse",
+          "HEAD"
+        ],
+        "startedAt": "2026-09-03T05:27:14.027Z",
+        "finishedAt": "2026-09-03T05:27:14.085Z",
+        "timeoutMs": 15000,
+        "exitCode": 0,
+        "stdout": "c6d30087c2c03a7c4eb8d5bfe6e055e9b8d40228\n",
+        "stderr": ""
+      },
+      {
+        "cwd": "D:/LYXGIT/mysquarefaceicon",
+        "args": [
+          "diff",
+          "--check"
+        ],
+        "startedAt": "2026-09-03T05:27:14.085Z",
+        "finishedAt": "2026-09-03T05:27:14.158Z",
+        "timeoutMs": 15000,
+        "exitCode": 0,
+        "stdout": "",
+        "stderr": "warning: in the working copy of '.gitignore', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'LAUNCH_CHECKLIST.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'PAGE_PLAN.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'PROJECT_BRIEF.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'SEO_LOG.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'SEO_RULES.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/about-us/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/blog/avatar-maker-without-signup/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/blog/cute-profile-picture-ideas/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/blog/discord-avatar-size-guide/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/blog/how-to-make-a-cute-discord-profile-icon/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/blog/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/blog/tiktok-profile-icon-ideas/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/contact/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/editorial-policy/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/gallery/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/globals.css', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/oval-face-icon-generator/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/pixel-art-avatar-icon-generator/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/privacy-policy/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/robots.ts', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/sitemap.ts', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/terms-of-service/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'components/FlashGenerator.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'components/HomePage.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'components/SiteHeader.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'docs/legal/game-rights.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'docs/quality/installation-and-board-workflow.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'lib/locales.ts', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'package.json', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'public/games/README.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'scripts/README.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'scripts/post-deploy-check.mjs', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'scripts/seo-check.mjs', LF will be replaced by CRLF the next time Git touches it\n"
+      },
+      {
+        "cwd": "F:/LYXGIT/Liu-library",
+        "args": [
+          "diff",
+          "--check",
+          "--",
+          "F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html"
+        ],
+        "startedAt": "2026-09-03T05:27:14.158Z",
+        "finishedAt": "2026-09-03T05:27:14.223Z",
+        "timeoutMs": 15000,
+        "exitCode": 0,
+        "stdout": "",
+        "stderr": ""
+      }
+    ]
+  },
+  "governanceHarnessDiagnostics": [
+    {
+      "stage": "Governance patch preparation",
+      "error": "ReferenceError: isLocalBindingStage is not defined",
+      "cause": "Unescaped board template interpolation in the orchestration string; preparation stopped before file edits.",
+      "applicationChanged": false,
+      "at": "2026-09-03T05:22:16.500Z"
+    },
+    {
+      "stage": "Offline governance verifier",
+      "result": {
+        "chunk_id": "5df925",
+        "wall_time_seconds": 0.2625525,
+        "exit_code": 1,
+        "original_token_count": 275,
+        "output": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-mig-pixel-proposal-v166-0f2c1fab028e40119c204cc71fc4b5fe\\verify-governance.cjs:29\r\nfor(const s of [\"方案待确认，尚未实施\",t.confirmation,\"GameDetailTemplate\",\"DIRECT_LINK_ONLY\",\"未重跑 type/lint\",\"不提交、推送、部署\",\"KW-04\",\"Cross\"]).values()){\r\n                                                                                                                                 ^\r\n\r\nSyntaxError: Unexpected token '.'\r\n    at wrapSafe (node:internal/modules/cjs/loader:1662:18)\r\n    at Module._compile (node:internal/modules/cjs/loader:1704:20)\r\n    at Object..js (node:internal/modules/cjs/loader:1895:10)\r\n    at Module.load (node:internal/modules/cjs/loader:1465:32)\r\n    at Function._load (node:internal/modules/cjs/loader:1282:12)\r\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\r\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\r\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\r\n    at node:internal/main/run_main_module:36:49\r\n\r\nNode.js v22.16.0\r\n"
+      },
+      "cause": "Verifier for-of syntax typo, before any governance patch/application edits",
+      "applicationChanged": false
+    },
+    {
+      "stage": "Post-write document preservation",
+      "result": {
+        "chunk_id": "a917be",
+        "wall_time_seconds": 0.3042566,
+        "exit_code": 1,
+        "original_token_count": 321,
+        "output": "node:assert:95\r\n  throw new AssertionError(obj);\r\n  ^\r\n\r\nAssertionError [ERR_ASSERTION]: docs/quality/evidence/mig-oval-001/README.md unexpected document edit\r\n+ actual - expected\r\n\r\n+ '1244d0c5b70376e0ce13526104d68548131a9f28f6585e6ec42a9e08fa753793'\r\n- '77e76b8eff2286e96a685e44b520c20d9e940f2490bcf28186e41e1d9bd4dd2e'\r\n\r\n    at Object.<anonymous> (C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-mig-pixel-proposal-v166-0f2c1fab028e40119c204cc71fc4b5fe\\verify-governance.cjs:21:10)\r\n    at Module._compile (node:internal/modules/cjs/loader:1730:14)\r\n    at Object..js (node:internal/modules/cjs/loader:1895:10)\r\n    at Module.load (node:internal/modules/cjs/loader:1465:32)\r\n    at Function._load (node:internal/modules/cjs/loader:1282:12)\r\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\r\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\r\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\r\n    at node:internal/main/run_main_module:36:49 {\r\n  generatedMessage: false,\r\n  code: 'ERR_ASSERTION',\r\n  actual: '1244d0c5b70376e0ce13526104d68548131a9f28f6585e6ec42a9e08fa753793',\r\n  expected: '77e76b8eff2286e96a685e44b520c20d9e940f2490bcf28186e41e1d9bd4dd2e',\r\n  operator: 'strictEqual'\r\n}\r\n\r\nNode.js v22.16.0\r\n"
+      },
+      "applicationChanged": false
+    },
+    {
+      "stage": "Preserving original README final blank line",
+      "result": {
+        "chunk_id": "eef733",
+        "wall_time_seconds": 0.3392805,
+        "exit_code": 1,
+        "original_token_count": 321,
+        "output": "node:assert:95\r\n  throw new AssertionError(obj);\r\n  ^\r\n\r\nAssertionError [ERR_ASSERTION]: docs/quality/evidence/mig-oval-001/README.md unexpected document edit\r\n+ actual - expected\r\n\r\n+ '1244d0c5b70376e0ce13526104d68548131a9f28f6585e6ec42a9e08fa753793'\r\n- '77e76b8eff2286e96a685e44b520c20d9e940f2490bcf28186e41e1d9bd4dd2e'\r\n\r\n    at Object.<anonymous> (C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-mig-pixel-proposal-v166-0f2c1fab028e40119c204cc71fc4b5fe\\verify-governance.cjs:21:10)\r\n    at Module._compile (node:internal/modules/cjs/loader:1730:14)\r\n    at Object..js (node:internal/modules/cjs/loader:1895:10)\r\n    at Module.load (node:internal/modules/cjs/loader:1465:32)\r\n    at Function._load (node:internal/modules/cjs/loader:1282:12)\r\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\r\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\r\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\r\n    at node:internal/main/run_main_module:36:49 {\r\n  generatedMessage: false,\r\n  code: 'ERR_ASSERTION',\r\n  actual: '1244d0c5b70376e0ce13526104d68548131a9f28f6585e6ec42a9e08fa753793',\r\n  expected: '77e76b8eff2286e96a685e44b520c20d9e940f2490bcf28186e41e1d9bd4dd2e',\r\n  operator: 'strictEqual'\r\n}\r\n\r\nNode.js v22.16.0\r\n"
+      },
+      "cause": "Single empty added line was normalized away by patch application; content and all source/JSON/build hashes remained unchanged.",
+      "applicationChanged": false
+    }
+  ],
+  "rollback": {
+    "scope": "Only this turn's approved documentation/board patches and newly created proposal/evidence files; do not revert accepted application work or unrelated changes",
+    "patchHunks": [
+      {
+        "file": "F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+        "old": "    <div class=\"focusTop\"><h2>当前任务</h2><span class=\"badge\" id=\"focusStatus\">待验收</span></div>",
+        "new": "    <div class=\"focusTop\"><h2>当前任务</h2><span class=\"badge\" id=\"focusStatus\">设计中</span></div>"
+      },
+      {
+        "file": "F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+        "old": "    <div class=\"focusId\" id=\"focusId\">MIG-OVAL-001</div><div class=\"focusTitle\" id=\"focusTitle\">Oval 本地数据绑定阶段（完整模板迁移未完成）</div>",
+        "new": "    <div class=\"focusId\" id=\"focusId\">MIG-PIXEL-001</div><div class=\"focusTitle\" id=\"focusTitle\">Pixel External Tool 一致性（方案待确认）</div>"
+      },
+      {
+        "file": "F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+        "old": "    <div class=\"dlabel\">目标</div><p class=\"dcopy\" id=\"focusGoal\">保留 Oval 原 URL、布局、文案和兼容播放器，将页面输入集中到 Game Data；仅验收已确认的本地绑定阶段。</p>",
+        "new": "    <div class=\"dlabel\">目标</div><p class=\"dcopy\" id=\"focusGoal\">统一 Pixel 的原站入口、来源/权限文案、FAQ/schema 和 External 标签；保留既有 URL/索引与直接链接边界。</p>"
+      },
+      {
+        "file": "F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+        "old": "    <div class=\"dlabel\">下一步</div><p class=\"dcopy\" id=\"focusNext\">请验收 Oval 本地数据绑定；回复“MIG-OVAL-001 本地数据绑定验收通过”后再决定下一步。完整统一模板迁移仍需另行确认，不自动推进 Pixel 或发布。</p>",
+        "new": "    <div class=\"dlabel\">下一步</div><p class=\"dcopy\" id=\"focusNext\">请回复“确认 MIG-PIXEL-001 External Tool 一致性方案，进行开发”。确认前不改应用；完成实现与验证后再单独验收。</p>"
+      },
+      {
+        "file": "F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+        "old": "    <div class=\"dlabel\">完成证据</div><p class=\"dcopy evidence-box\" id=\"focusEvidence\">v1.65：已按明确确认实施 Oval 本地数据绑定；19 项播放器输入、3 How-to/6 Features/5 Tips/5 FAQ、既有页面文案和相关游戏入口读取 Record。仅 COVER/img 尺寸修正为真实 974×775，原 972 / 774 比例、972px 上限和页面输出契约保持。39 项最终代码/构建/运行时命令 exit 0；SEO 20 页 / 0 must / 12 既有 should；16 路 HTTP 与产物一致。7 组响应式前后内容/几何一致，点击/Enter/Space、重载、FAQ、帮助、Gallery、Square 双向链接通过，20 批控制台无 error/warn。窄屏首屏入口偏低是原有问题，本次未改布局；视觉有条件通过。143 项旧源码、23 份历史 JSON、52 张旧截图和 27 条验收保留，本项未验收。完整模板迁移未完成，UNKNOWN/P0 与发布暂缓不变；未提交、推送或部署。证据：docs/quality/evidence/mig-oval-001/README.md；docs/quality/evidence/mig-oval-001/checks.json。</p>",
+        "new": "    <div class=\"dlabel\">完成证据</div><p class=\"dcopy evidence-box\" id=\"focusEvidence\">v1.66：已核对 Pixel 原记录为 EXTERNAL_TOOL / EXTERNAL_LINK / DIRECT_LINK_ONLY，当前构建无 iframe，但 4 处 Embedded 旧文案、5 个重复原站入口、嵌套 WebApplication 和旧侧栏缺少 External 类型标签需要对齐。方案保留 URL/Title/H1/description/canonical/index、布局与权利，限定统一入口/FAQ/来源条款、移除嵌套 WebApplication、绑定 3/6/5/6 数据数组，并为 Oval/七草稿 Pixel 侧栏加标签。原站页面/条款与单次 HEAD 已只读核对；不代表外站交互、手机或商业授权通过。152 项源码、21 份当前目录历史 JSON、73 张截图及 18 份产物保持。方案待确认；未实施、未重跑完整应用 QA、未核实预览存活、未部署。</p>"
+      },
+      {
+        "file": "F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+        "old": "    <p class=\"gate-note\" id=\"gateNote\">仅等待已确认的本地数据绑定阶段验收；不等于完整模板迁移或发布通过。验收前不开始下一项。</p>",
+        "new": "    <p class=\"gate-note\" id=\"gateNote\">核心模块方案待用户明确确认；确认前不编码。</p>"
+      },
+      {
+        "file": "F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+        "old": "    <div class=\"acceptanceActions\"><button class=\"btn primary\" id=\"acceptBtn\">本地阶段验收通过</button><button class=\"btn\" id=\"reviseBtn\">退回开发</button></div>",
+        "new": "    <div class=\"acceptanceActions\"><button class=\"btn primary\" id=\"acceptBtn\" disabled>验收通过</button><button class=\"btn\" id=\"reviseBtn\" disabled>退回开发</button></div>"
+      },
+      {
+        "file": "F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+        "old": "    <p class=\"quality-note\">v1.65：Oval 本地数据绑定已实施，待本地阶段验收。39 项最终命令 exit 0；SEO 20 页 / 0 must / 12 should；7 组响应式对照及真实启动/重载/导航通过。窄屏入口偏低为既有视觉问题，未改布局。27 条验收、23 份历史 JSON 和 52 张旧截图保持；完整模板迁移未完成，UNKNOWN/P0 与发布暂缓保留，未部署。</p>",
+        "new": "    <p class=\"quality-note\">v1.66：Oval 本地数据绑定已获明确验收，28 条源验收；完整模板迁移仍延期。Pixel 仅方案待确认。本轮只读核对 152 项源码、21 份当前目录 JSON、73 张截图、18 份产物及原始 QA 日期；不把 v1.65 的 39 项命令 / 20 页 SEO 0 must / 12 should 当作新复测。UNKNOWN/P0、旧视觉与生产门禁保留，发布继续暂缓、未部署。</p>"
+      },
+      {
+        "file": "F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+        "old": "    <li>KW-02 全批次已本地验收；v1.65 新一轮本地 SEO 为 20 页、0 must / 12 should；12 条提醒、KW-04 与生产验证仍保留。</li>",
+        "new": "    <li>KW-02 全批次已本地验收；历史 v1.65 本地 SEO 为 20 页、0 must / 12 should；本轮未重测；12 条提醒、KW-04 与生产验证仍保留。</li>"
+      },
+      {
+        "file": "F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+        "old": "    <li>原 27 条本地验收保持；MIG-OVAL-001 仅本地数据绑定已实施、待验收，完整统一模板迁移未完成。Oval 360/390px 入口偏低为既有问题；许可 UNKNOWN 与生产 P0 未关闭，累计发布仍暂缓。</li>",
+        "new": "    <li>现 28 条本地验收，原 27 条与 v1.65 QA 保留；Oval 仅本地数据绑定已验收，完整模板迁移仍延期。Pixel 仅方案待确认；Oval 窄屏入口偏低、UNKNOWN/P0 与累计发布暂缓不变。</li>"
+      },
+      {
+        "file": "F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+        "old": "<footer class=\"footer\"><span>配套文档：mysquarefaceicon_game_platform_rebuild.md</span><span>看板状态仅本地保存 · 版本 1.65 · 2026-09-03</span></footer>",
+        "new": "<footer class=\"footer\"><span>配套文档：mysquarefaceicon_game_platform_rebuild.md</span><span>看板状态仅本地保存 · 版本 1.66 · 2026-09-03</span></footer>"
+      },
+      {
+        "file": "F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+        "old": "const BUILTIN=Object.fromEntries(WEEKS.flatMap(w=>w.tasks.map(t=>[t.id,t.status])));",
+        "new": "// v1.66: explicit Oval LOCAL_DATA_BINDING acceptance; Pixel proposal only, no application or release work.\nSOURCE_ACCEPTANCE[\"MIG-OVAL-001\"]={\"result\":\"通过\",\"scope\":\"LOCAL_DATA_BINDING\",\"acceptedAt\":\"2026-09-03T05:17:09.304Z\",\"source\":\"用户明确回复“确认验收，现在进行下一步开发”\",\"templateMigrationCompleted\":false,\"localOnly\":true,\"note\":\"只覆盖已确认并于 v1.65 实施的 Oval 本地数据绑定，保留原 QA 日期与视觉有条件通过边界；不代表完整模板迁移、真实许可或生产验收。下一项仅准备 Pixel 方案，确认前不编码。\",\"evidencePath\":\"docs/quality/evidence/mig-oval-001/acceptance-checks.json\"};\nQUALITY_SUPERVISOR.validation.migrationOvalAcceptance166={\"taskId\":\"MIG-OVAL-001\",\"boardVersion\":\"1.66\",\"recordedAt\":\"2026-09-03T05:17:09.304Z\",\"userInstruction\":\"确认验收，现在进行下一步开发\",\"result\":\"通过（用户明确本地阶段验收）\",\"accepted\":true,\"scope\":\"LOCAL_DATA_BINDING\",\"templateMigrationCompleted\":false,\"evidence\":\"docs/quality/evidence/mig-oval-001/acceptance-checks.json\",\"originalEvidence\":\"docs/quality/evidence/mig-oval-001/checks.json\",\"originalEvidenceSha256\":\"47bfac00708ee560e90b915bbc7fd6c57e4fc9a7def201fa3a4c9ea8a2fd3231\",\"originalQaRetained\":true,\"priorAcceptancesPreserved\":27,\"sourceAcceptances\":28,\"sourceFilesUnchanged\":152,\"historicalJsonFilesUnchanged\":21,\"historicalJsonScope\":\"Current docs/quality/evidence directory; immutable prior reported counts retained with their original scope/date\",\"screenshotsUnchanged\":73,\"buildArtifactsUnchanged\":18,\"applicationChanged\":false,\"fullApplicationChecksRerun\":false,\"previewLivenessVerified\":false,\"browserQaRun\":false,\"licenseGateWaived\":false,\"rightsStatus\":\"UNKNOWN\",\"releaseResult\":\"不通过 / 用户暂缓 / 未部署\",\"committed\":false,\"pushed\":false,\"deployed\":false,\"next\":\"MIG-PIXEL-001 方案待确认\"};\nQUALITY_SUPERVISOR.validation.migrationPixelProposal166={\"taskId\":\"MIG-PIXEL-001\",\"boardVersion\":\"1.66\",\"recordedAt\":\"2026-09-03T05:17:09.304Z\",\"result\":\"方案待确认 / 未实施\",\"proposalPath\":\"docs/product/pixel-external-tool-consistency-proposal.md\",\"evidence\":\"docs/quality/evidence/mig-pixel-001/proposal-checks.json\",\"proposalConfirmed\":false,\"implementationStarted\":false,\"readOnlySourceAndArtifactReview\":true,\"sourceFilesUnchanged\":152,\"historicalJsonFilesUnchanged\":21,\"screenshotsUnchanged\":73,\"buildArtifactsUnchanged\":18,\"sourceAcceptances\":28,\"currentRecord\":\"EXTERNAL_TOOL / EXTERNAL_LINK / DIRECT_LINK_ONLY\",\"currentBuilt\":{\"iframe\":0,\"originalSiteMainLinks\":5,\"staleEmbeddedRegions\":4,\"arrays\":[3,6,5,6],\"faqDataDifference\":1},\"thirdPartyHeaderProbe\":{\"responseDate\":\"Thu, 03 Sep 2026 05:07:28 GMT\",\"status\":200,\"xFrameOptions\":\"SAMEORIGIN\",\"csp\":\"frame-ancestors 'self';\",\"scope\":\"Read-only HEAD; not external interaction or mobile QA\"},\"applicationChanged\":false,\"fullApplicationChecksRerun\":false,\"browserQaRun\":false,\"previewLivenessVerified\":false,\"rightsStatus\":\"Square/Oval UNKNOWN; Pixel existing DIRECT_LINK_ONLY unchanged\",\"licenseGateWaived\":false,\"releaseResult\":\"不通过 / 用户暂缓 / 未部署\",\"boardVisual\":\"未验证；保留既有文件访问限制，不绕行\",\"committed\":false,\"pushed\":false,\"deployed\":false,\"confirmation\":\"确认 MIG-PIXEL-001 External Tool 一致性方案，进行开发\"};\nQUALITY_SUPERVISOR.validation.releasePreflight=\"不通过 / 本次发布仍由用户暂缓 / 未部署；v1.66 已登记 Oval LOCAL_DATA_BINDING 明确验收，28 条源验收，完整统一模板迁移仍未完成。当前只有 Pixel External Tool 一致性方案待确认，应用与构建保持不变；本轮未重跑 type/lint/回归/Next/OpenNext/本地 HTTP/SEO/Browser/CWV，也未核实预览存活。v1.65 的 39 项最终命令、16 路 HTTP、7 组响应式及 20 页 SEO 0 must / 12 should 保留原日期；旧窄屏入口偏低、UNKNOWN/P0、KW-04/should 与全部生产门禁仍开放。未提交、推送、部署、执行 seo:prod 或实施 Pixel。\";\nQUALITY_SUPERVISOR.releaseGate={\"id\":\"LICENSE-GATE\",\"title\":\"Square / Oval 许可核验暂缓 · P0 保留\",\"status\":\"已延期\",\"updatedAt\":\"2026-09-03T05:17:09.304Z\",\"source\":\"用户明确要求“暂时跳过该项任务吧，进行后续开发”；仅暂缓许可核验与累计发布，不构成许可或发布通过。\",\"goal\":\"保留 Square/Oval UNKNOWN 与完整发布门禁；Square 与 Oval 本地绑定已验收，Oval 完整模板迁移仍未完成；当前只准备 Pixel 一致性方案。\",\"next\":\"等待 Pixel External Tool 一致性方案确认；不恢复许可核验或部署。恢复发布及完整 Oval 模板迁移仍需原始材料与另行明确指示。\",\"gateNote\":\"质量监管 skill：28 条本地验收不关闭 UNKNOWN/P0 或生产门禁；Pixel 方案未确认，发布仍不通过 / 用户暂缓 / 未部署。\",\"evidence\":\"v1.66：Oval 本地数据绑定已获明确验收，28 条源验收；完整模板迁移仍延期。Pixel 仅方案待确认。本轮只读核对 152 项源码、21 份当前目录 JSON、73 张截图、18 份产物及原始 QA 日期；不把 v1.65 的 39 项命令 / 20 页 SEO 0 must / 12 should 当作新复测。UNKNOWN/P0、旧视觉与生产门禁保留，发布继续暂缓、未部署。\",\"evidencePath\":\"docs/quality/evidence/mig-oval-001/acceptance-checks.json\"};\nQUALITY_SUPERVISOR.blockers=[\"GALLERY-001 remains explicitly accepted locally in v1.55, with all 25 acceptances and original v1.54 QA dates preserved. Its production copy remains undeployed/unverified; LOCALE-001 does not reopen or modify the accepted Gallery page.\",\"EDITORIAL-001 is now explicitly accepted locally, alongside ABOUT-001 and TERMS-001; original QA dates and failures are preserved. Their production copy remains undeployed/unverified; existing narrow desktop-card advisory stays open.\",\"LICENSE-GATE and the accumulated release remain explicitly deferred, not passed or waived. Exact Square/Oval source/licensor/written permission and use scopes remain UNKNOWN. MIG-SQUARE-001 is locally accepted; MIG-OVAL-001 LOCAL_DATA_BINDING is explicitly accepted in v1.66, but its full unified-template migration remains incomplete/deferred. All 27 earlier acceptances and original v1.65 QA dates remain unchanged (28 source records now). Generic fail-closed policy and compatibility path remain unchanged. No commit, push or deployment.\",\"LOCALE-001 original four-region wording and v1.58 mobile sentence revision are explicitly accepted locally in v1.59. Prior QA dates, v1.57 clipping failure, 25 earlier acceptances and 16 historical evidence files are preserved; 26 acceptances in total. No application QA rerun, multilingual launch or deployment; actual rights and production gates remain open. v1.63 shared-page binding regression was freshly checked; the original LOCALE acceptance and its dated evidence were not rewritten. v1.64 adds only the explicit MIG-SQUARE-001 local acceptance (27 total); all previous 26 entries and dated QA remain unchanged.\",\"PF-01 accepted locally; production LCP/INP/CLS and fresh performance remeasurement remain unverified. Original trace measurements are preserved.\",\"AI-01 remains locally accepted; v1.65 local production-build robots HTTP freshly passed all 11 crawler decisions and private-path rules. Production robots still requires verification after authorized deployment.\",\"OP-11 source accepted; production one-hop canonical-host matrix still unverified\",\"No release-version linkage or production seo:prod/browser evidence. Fresh v1.65 local SEO is 20 pages / 0 must / 12 existing should; KW-04, Gallery heading/subtitle spacing, About/Editorial narrow-card advisories and board-file visual checks remain open. Fresh CWV/timing, real fullscreen/all SWF internal controls, physical devices and additional browser engines were not measured.\",\"Existing Oval mobile first-viewport player placement is unchanged: surface documentTop 805.828125px at 360x800 and 816.9375px at 390x844; activation controls require scrolling. The confirmed phase freezes layout; visual quality is conditional, not a claim that first-viewport requirements are met.\",\"v1.66 opens only the MIG-PIXEL-001 External Tool consistency proposal. Pixel and shared legacy-sidecard changes require explicit confirmation before implementation. This turn performs read-only source/artifact/external-source review and board governance, not new application, browser, mobile, performance or production QA.\"];\nTASK_UPDATES[\"MIG-OVAL-001\"]={\"status\":\"已延期\",\"updatedAt\":\"2026-09-03T05:17:09.304Z\",\"proposalStatus\":\"已确认\",\"proposalPath\":\"docs/product/oval-local-data-binding-proposal.md\",\"proposalConfirmed\":true,\"confirmation\":\"确认 MIG-OVAL-001 本地数据绑定方案，进行开发\",\"implementationStarted\":true,\"localImplementationCompleted\":true,\"userAcceptanceReceived\":true,\"localOnly\":true,\"stage\":\"LOCAL_DATA_BINDING_ACCEPTED\",\"acceptanceScope\":\"LOCAL_DATA_BINDING\",\"templateMigrationCompleted\":false,\"templateMigrationStatus\":\"完整统一模板迁移未实施，本地绑定阶段不代替整体目标\",\"focusTitle\":\"Oval 本地数据绑定阶段（完整模板迁移未完成）\",\"focusGoal\":\"保留 Oval 原 URL、布局、文案和兼容播放器，将页面输入集中到 Game Data；仅验收已确认的本地绑定阶段。\",\"acceptanceNext\":\"本地阶段已验收，完整模板迁移继续延期。用户已要求下一步，因此只准备 Pixel External Tool 方案，待确认后实施；发布仍暂缓。\",\"acceptanceGateNote\":\"本地阶段已获明确验收；完整模板迁移、许可和发布未通过。\",\"evidence\":\"v1.66：用户明确回复“确认验收，现在进行下一步开发”，仅验收 MIG-OVAL-001 的 LOCAL_DATA_BINDING 本地阶段；新增第 28 条源验收，原 27 条和 v1.65 原始 QA 保留。完整统一模板迁移仍未完成，保持已延期；既有窄屏入口偏低未修复。当前只准备 MIG-PIXEL-001 方案，未改应用、重跑完整 QA 或部署。 历史 v1.65 实施证据：v1.65：已按明确确认实施 Oval 本地数据绑定；19 项播放器输入、3 How-to/6 Features/5 Tips/5 FAQ、既有页面文案和相关游戏入口读取 Record。仅 COVER/img 尺寸修正为真实 974×775，原 972 / 774 比例、972px 上限和页面输出契约保持。39 项最终代码/构建/运行时命令 exit 0；SEO 20 页 / 0 must / 12 既有 should；16 路 HTTP 与产物一致。7 组响应式前后内容/几何一致，点击/Enter/Space、重载、FAQ、帮助、Gallery、Square 双向链接通过，20 批控制台无 error/warn。窄屏首屏入口偏低是原有问题，本次未改布局；视觉有条件通过。143 项旧源码、23 份历史 JSON、52 张旧截图和 27 条验收保留，本项未验收。完整模板迁移未完成，UNKNOWN/P0 与发布暂缓不变；未提交、推送或部署。证据：docs/quality/evidence/mig-oval-001/README.md；docs/quality/evidence/mig-oval-001/checks.json。\",\"acceptanceStatus\":\"本地数据绑定已验收；完整模板迁移未完成\",\"acceptancePrompt\":\"MIG-OVAL-001 本地数据绑定验收通过\",\"releaseStatus\":\"不通过 / 用户暂缓 / 未部署\",\"evidencePath\":\"docs/quality/evidence/mig-oval-001/acceptance-checks.json\",\"readmePath\":\"docs/quality/evidence/mig-oval-001/README.md\",\"acceptedAt\":\"2026-09-03T05:17:09.304Z\",\"implementationEvidencePath\":\"docs/quality/evidence/mig-oval-001/checks.json\"};\nTASK_UPDATES[\"MIG-PIXEL-001\"]={\"status\":\"设计中\",\"updatedAt\":\"2026-09-03T05:17:09.304Z\",\"proposalStatus\":\"待确认\",\"proposalPath\":\"docs/product/pixel-external-tool-consistency-proposal.md\",\"proposalConfirmed\":false,\"implementationStarted\":false,\"userAcceptanceReceived\":false,\"stage\":\"EXTERNAL_TOOL_CONSISTENCY_PROPOSAL\",\"localOnly\":true,\"scope\":\"EXTERNAL_TOOL_CONSISTENCY\",\"focusTitle\":\"Pixel External Tool 一致性（方案待确认）\",\"focusGoal\":\"统一 Pixel 的原站入口、来源/权限文案、FAQ/schema 和 External 标签；保留既有 URL/索引与直接链接边界。\",\"proposalNext\":\"请回复“确认 MIG-PIXEL-001 External Tool 一致性方案，进行开发”。确认前不改应用；完成实现与验证后再单独验收。\",\"proposalConfirmation\":\"确认 MIG-PIXEL-001 External Tool 一致性方案，进行开发\",\"evidence\":\"v1.66：已核对 Pixel 原记录为 EXTERNAL_TOOL / EXTERNAL_LINK / DIRECT_LINK_ONLY，当前构建无 iframe，但 4 处 Embedded 旧文案、5 个重复原站入口、嵌套 WebApplication 和旧侧栏缺少 External 类型标签需要对齐。方案保留 URL/Title/H1/description/canonical/index、布局与权利，限定统一入口/FAQ/来源条款、移除嵌套 WebApplication、绑定 3/6/5/6 数据数组，并为 Oval/七草稿 Pixel 侧栏加标签。原站页面/条款与单次 HEAD 已只读核对；不代表外站交互、手机或商业授权通过。152 项源码、21 份当前目录历史 JSON、73 张截图及 18 份产物保持。方案待确认；未实施、未重跑完整应用 QA、未核实预览存活、未部署。\",\"evidencePath\":\"docs/quality/evidence/mig-pixel-001/proposal-checks.json\",\"readmePath\":\"docs/quality/evidence/mig-pixel-001/README.md\",\"releaseStatus\":\"不通过 / 用户暂缓 / 未部署\"};\n\nconst BUILTIN=Object.fromEntries(WEEKS.flatMap(w=>w.tasks.map(t=>[t.id,t.status])));"
+      },
+      {
+        "file": "F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+        "old": "let state=applySourceUpdates({...BUILTIN,...saved}), selectedWeek=3, selectedTask='MIG-OVAL-001';",
+        "new": "let state=applySourceUpdates({...BUILTIN,...saved}), selectedWeek=3, selectedTask='MIG-PIXEL-001';"
+      },
+      {
+        "file": "F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+        "old": "function applySourceUpdates(target){Object.entries(TASK_UPDATES).forEach(([id,update])=>{if(isLocalBindingStage(id)){target[id]=localStageAccepted(id)?'已延期':acceptance[id]?.scope==='LOCAL_DATA_BINDING'&&acceptance[id]?.result==='退回'?'开发中':update.status}else if(target[id]!=='已完成')target[id]=update.status});return target}",
+        "new": "function isProposalPending(id){const update=TASK_UPDATES[id];return update?.proposalStatus==='待确认'&&update?.proposalConfirmed===false&&update?.implementationStarted===false}\nfunction applySourceUpdates(target){Object.entries(TASK_UPDATES).forEach(([id,update])=>{if(isProposalPending(id)){target[id]=update.status;if(!SOURCE_ACCEPTANCE[id])delete acceptance[id]}else if(isLocalBindingStage(id)){target[id]=localStageAccepted(id)?'已延期':acceptance[id]?.scope==='LOCAL_DATA_BINDING'&&acceptance[id]?.result==='退回'?'开发中':update.status}else if(target[id]!=='已完成')target[id]=update.status});return target}"
+      },
+      {
+        "file": "F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+        "old": "function renderRows(){const tasks=filtered();$('#rows').innerHTML=tasks.length?tasks.map(t=>`<article class=\"row ${t.id===selectedTask?'sel':''}\" data-id=\"${esc(t.id)}\"><input class=\"check\" type=\"checkbox\" ${['待验收','已完成'].includes(state[t.id])?'checked':''} ${state[t.id]==='已完成'?'disabled':''} aria-label=\"提交 ${esc(t.title)} 进行验收\" title=\"勾选只会进入待验收，不会直接完成\"><div class=\"title\">${esc(t.title)}<span class=\"id\">${esc(t.id)}</span></div><select class=\"status\">${STATUS.map(s=>`<option ${state[t.id]===s?'selected':''}>${s}</option>`).join('')}</select><div class=\"p ${pclass(t.priority)}\">${t.priority}</div><div class=\"accept\">${esc(t.acceptance)}</div><button class=\"arrow\" aria-label=\"查看详情\">›</button></article>`).join(''):'<div class=\"empty\">没有符合当前筛选的任务。</div>';",
+        "new": "function renderRows(){const tasks=filtered();$('#rows').innerHTML=tasks.length?tasks.map(t=>`<article class=\"row ${t.id===selectedTask?'sel':''}\" data-id=\"${esc(t.id)}\"><input class=\"check\" type=\"checkbox\" ${['待验收','已完成'].includes(state[t.id])?'checked':''} ${(state[t.id]==='已完成'||isProposalPending(t.id))?'disabled':''} aria-label=\"提交 ${esc(t.title)} 进行验收\" title=\"勾选只会进入待验收，不会直接完成\"><div class=\"title\">${esc(t.title)}<span class=\"id\">${esc(t.id)}</span></div><select class=\"status\">${STATUS.map(s=>`<option ${state[t.id]===s?'selected':''}>${s}</option>`).join('')}</select><div class=\"p ${pclass(t.priority)}\">${t.priority}</div><div class=\"accept\">${esc(t.acceptance)}</div><button class=\"arrow\" aria-label=\"查看详情\">›</button></article>`).join(''):'<div class=\"empty\">没有符合当前筛选的任务。</div>';"
+      },
+      {
+        "file": "F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+        "old": "   const previous=state[id],next=e.target.value;",
+        "new": "   const previous=state[id],next=e.target.value;\n   if(isProposalPending(id)&&['开发中','待验收','已完成'].includes(next)){e.target.value=previous;alert('当前方案尚未确认或实施；请先明确确认方案，不能提前提交或完成验收。');return}"
+      },
+      {
+        "file": "F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+        "old": "  row.querySelector('.check').addEventListener('change',e=>{state[id]=e.target.checked?'待验收':'开发中';save();renderAll()});",
+        "new": "  row.querySelector('.check').addEventListener('change',e=>{if(isProposalPending(id)){e.target.checked=false;alert('当前方案待确认，尚未实施，不能提交验收。');return}state[id]=e.target.checked?'待验收':'开发中';save();renderAll()});"
+      },
+      {
+        "file": "F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+        "old": " const update=TASK_UPDATES[t.id],record=acceptance[t.id],localStage=isLocalBindingStage(t.id),localAccepted=localStageAccepted(t.id),pending=state[t.id]==='待验收'&&!localAccepted;",
+        "new": " const update=TASK_UPDATES[t.id],record=acceptance[t.id],localStage=isLocalBindingStage(t.id),localAccepted=localStageAccepted(t.id),pending=state[t.id]==='待验收'&&!localAccepted&&!isProposalPending(t.id);"
+      },
+      {
+        "file": "F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+        "old": " $('#focusNext').textContent=releaseGate?releaseGate.next:localAccepted?'本地数据绑定阶段已验收；原完整统一模板迁移仍未完成并保留延期状态。后续开发或发布必须由用户另行明确指示。':localStage&&pending?update.acceptanceNext:nextText(state[t.id]);",
+        "new": " $('#focusNext').textContent=releaseGate?releaseGate.next:localAccepted?'本地数据绑定阶段已验收；原完整统一模板迁移仍未完成并保留延期状态。后续开发或发布必须由用户另行明确指示。':localStage&&pending?update.acceptanceNext:isProposalPending(t.id)?update.proposalNext:nextText(state[t.id]);"
+      },
+      {
+        "file": "F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+        "old": "当前确认范围：${isLocalBindingStage(t.id)?TASK_UPDATES[t.id].focusTitle+\"；仅本地阶段待验收，完整模板迁移未完成，不能自动开发下一项或发布。\":\"按原路线图与当前用户授权执行。\"}",
+        "new": "当前确认范围：${isLocalBindingStage(t.id)?TASK_UPDATES[t.id].focusTitle+(localStageAccepted(t.id)?\"；本地阶段已验收，完整模板迁移仍未完成。\":\"；仅本地阶段待验收，完整模板迁移未完成。\"):isProposalPending(t.id)?\"方案待确认，确认前不得编码。先读取 \"+TASK_UPDATES[t.id].proposalPath+\"；等待用户明确回复：\"+TASK_UPDATES[t.id].proposalConfirmation:\"按原路线图与当前用户授权执行。\"}"
+      },
+      {
+        "file": "F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+        "old": "B. 再实施当前任务。",
+        "new": "B. 新页面、首屏、URL/索引/搜索意图或核心顺序变更须先取得单页方案的明确确认；当前方案若为待确认，只准备方案，不开始编码。确认后再实施。"
+      },
+      {
+        "file": "F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+        "old": "function openDetail(t){selectedTask=t.id;const wi=weekIndexOf(t.id),w=WEEKS[wi],update=TASK_UPDATES[t.id];$('#detailTitle').textContent=`${t.id} · ${t.title}`;$('#detailBody').innerHTML=`<dt>周期</dt><dd>${w.label} · ${w.date}</dd><dt>状态</dt><dd>${state[t.id]}</dd><dt>优先级</dt><dd>${t.priority}</dd><dt>目标</dt><dd>${esc(t.goal)}</dd><dt>依赖</dt><dd>${esc(t.deps)}</dd><dt>交付物</dt><dd>${esc(t.deliverable)}</dd><dt>验收标准</dt><dd>${esc(t.acceptance)}</dd><dt>特别说明</dt><dd>${esc(t.notes)}</dd><dt>本轮范围</dt><dd>${esc(isLocalBindingStage(t.id)?TASK_UPDATES[t.id].focusTitle:\"按原路线图与当前用户授权执行\")}</dd><dt>最近更新</dt><dd>${esc(update?.updatedAt||'尚无')}</dd><dt>完成证据</dt><dd>${esc(update?.evidence||'尚未提交')}</dd>`;$('#promptText').value=makePrompt(t);$('#copyStatus').textContent='';$('#detailDlg').showModal()}",
+        "new": "function openDetail(t){selectedTask=t.id;const wi=weekIndexOf(t.id),w=WEEKS[wi],update=TASK_UPDATES[t.id];$('#detailTitle').textContent=`${t.id} · ${t.title}`;$('#detailBody').innerHTML=`<dt>周期</dt><dd>${w.label} · ${w.date}</dd><dt>状态</dt><dd>${state[t.id]}</dd><dt>优先级</dt><dd>${t.priority}</dd><dt>目标</dt><dd>${esc(t.goal)}</dd><dt>依赖</dt><dd>${esc(t.deps)}</dd><dt>交付物</dt><dd>${esc(t.deliverable)}</dd><dt>验收标准</dt><dd>${esc(t.acceptance)}</dd><dt>特别说明</dt><dd>${esc(t.notes)}</dd><dt>本轮范围</dt><dd>${esc(isLocalBindingStage(t.id)?TASK_UPDATES[t.id].focusTitle:isProposalPending(t.id)?\"方案待确认，确认前不编码；方案：\"+update.proposalPath:\"按原路线图与当前用户授权执行\")}</dd><dt>最近更新</dt><dd>${esc(update?.updatedAt||'尚无')}</dd><dt>完成证据</dt><dd>${esc(update?.evidence||'尚未提交')}</dd>`;$('#promptText').value=makePrompt(t);$('#copyStatus').textContent='';$('#detailDlg').showModal()}"
+      },
+      {
+        "file": "F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+        "old": "$('#acceptBtn').addEventListener('click',()=>{const id=selectedTask;if(state[id]!=='待验收')return;if(isLocalBindingStage(id)){if(!confirm('仅验收 '+id+' 的本地数据绑定阶段？完整统一模板迁移仍未完成，后续开发或发布需另行明确指示。'))return;state[id]='已延期';acceptance[id]={result:'通过',scope:'LOCAL_DATA_BINDING',acceptedAt:new Date().toISOString(),templateMigrationCompleted:false};save();renderAll();return}if(!confirm('确认你已逐条验收 '+id+'？下一任务仍需你另行明确指示。'))return;state[id]='已完成';acceptance[id]={result:'通过',acceptedAt:new Date().toISOString()};save();renderAll()});",
+        "new": "$('#acceptBtn').addEventListener('click',()=>{const id=selectedTask;if(state[id]!=='待验收'||isProposalPending(id))return;if(isLocalBindingStage(id)){if(!confirm('仅验收 '+id+' 的本地数据绑定阶段？完整统一模板迁移仍未完成，后续开发或发布需另行明确指示。'))return;state[id]='已延期';acceptance[id]={result:'通过',scope:'LOCAL_DATA_BINDING',acceptedAt:new Date().toISOString(),templateMigrationCompleted:false};save();renderAll();return}if(!confirm('确认你已逐条验收 '+id+'？下一任务仍需你另行明确指示。'))return;state[id]='已完成';acceptance[id]={result:'通过',acceptedAt:new Date().toISOString()};save();renderAll()});"
+      },
+      {
+        "file": "F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+        "old": "$('#reviseBtn').addEventListener('click',()=>{const id=selectedTask;if(state[id]!=='待验收')return;const reason=prompt('请填写 '+id+' 需要返工的原因（可留空）：','');if(reason===null)return;state[id]='开发中';acceptance[id]={result:'退回',...(isLocalBindingStage(id)?{scope:'LOCAL_DATA_BINDING'}:{}),reason:reason.trim(),returnedAt:new Date().toISOString()};save();renderAll()});",
+        "new": "$('#reviseBtn').addEventListener('click',()=>{const id=selectedTask;if(state[id]!=='待验收'||isProposalPending(id))return;const reason=prompt('请填写 '+id+' 需要返工的原因（可留空）：','');if(reason===null)return;state[id]='开发中';acceptance[id]={result:'退回',...(isLocalBindingStage(id)?{scope:'LOCAL_DATA_BINDING'}:{}),reason:reason.trim(),returnedAt:new Date().toISOString()};save();renderAll()});"
+      },
+      {
+        "file": "F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+        "old": "$('#exportBtn').addEventListener('click',()=>{const blob=new Blob([JSON.stringify({version:'1.65',exportedAt:new Date().toISOString(),state,taskUpdates:TASK_UPDATES,acceptance,qualitySupervisor:QUALITY_SUPERVISOR},null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='mysquarefaceicon-board-state.json';a.click();URL.revokeObjectURL(url)});",
+        "new": "$('#exportBtn').addEventListener('click',()=>{const blob=new Blob([JSON.stringify({version:'1.66',exportedAt:new Date().toISOString(),state,taskUpdates:TASK_UPDATES,acceptance,qualitySupervisor:QUALITY_SUPERVISOR},null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='mysquarefaceicon-board-state.json';a.click();URL.revokeObjectURL(url)});"
+      },
+      {
+        "file": "F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+        "old": "$('#resetBtn').addEventListener('click',()=>{if(confirm('恢复 HTML 内置任务状态？这会清除当前浏览器的看板修改与验收记录，但不会清除 HTML 内置的完成证据。')){localStorage.removeItem('mysquarefaceicon-rebuild-board-v1');localStorage.removeItem(ACCEPTANCE_KEY);acceptance={...SOURCE_ACCEPTANCE};state=applySourceUpdates({...BUILTIN});selectedWeek=3;selectedTask='MIG-OVAL-001';renderAll()}});",
+        "new": "$('#resetBtn').addEventListener('click',()=>{if(confirm('恢复 HTML 内置任务状态？这会清除当前浏览器的看板修改与验收记录，但不会清除 HTML 内置的完成证据。')){localStorage.removeItem('mysquarefaceicon-rebuild-board-v1');localStorage.removeItem(ACCEPTANCE_KEY);acceptance={...SOURCE_ACCEPTANCE};state=applySourceUpdates({...BUILTIN});selectedWeek=3;selectedTask='MIG-PIXEL-001';renderAll()}});"
+      },
+      {
+        "file": "PAGE_PLAN.md",
+        "old": "### 当前 v1.65 · Oval 本地数据绑定已实施，待验收",
+        "new": "### 历史 v1.65 · Oval 本地数据绑定已实施，待验收"
+      },
+      {
+        "file": "PAGE_PLAN.md",
+        "old": "## Homepage Modules",
+        "new": "### 当前 v1.66 · Oval 本地阶段已验收；Pixel 一致性方案待确认\n\n2026-09-03 用户明确回复“确认验收，现在进行下一步开发”。新增第 28 条源验收，scope=LOCAL_DATA_BINDING；原 27 条及 v1.65 原始 checks.json、失败记录、构建和浏览器日期不改写。Oval 完整统一模板迁移仍未完成，原任务保留已延期；本地验收不关闭既有窄屏入口偏低、真实权利或发布门禁。\n\n下一项 MIG-PIXEL-001 仅进入设计中 / 方案待确认。现码已是 External Tool 且无 iframe，但原页面有 4 处 Embedded 旧文案、5 个原站链接及嵌套 WebApplication；旧侧栏 Pixel 缺少明确类型标签。拟统一 Open Original Page、来源条款、FAQ/schema 与 3/6/5/6 数据数组；保留原 URL/Title/H1/description/canonical/index、布局和 DIRECT_LINK_ONLY。跨页仅拟为 Oval/七草稿的 Pixel 侧栏加 External 标签，不改其玩家、元数据、主文案或 CSS；英文首页不变。\n\n方案：docs/product/pixel-external-tool-consistency-proposal.md；等待“确认 MIG-PIXEL-001 External Tool 一致性方案，进行开发”后才能改应用。此次原站文本/条款和 HEAD 只读复核不代表外站游戏/手机功能或商业许可通过，Registry 历史日期不修改。\n\n本轮只做验收/方案治理与只读核对：152 项源码/检查/配置、当前 docs/quality/evidence 目录 21 份旧 JSON、73 张截图、18 个既有构建产物保持；该 JSON 数是本轮目录口径，不改写旧证据的历史计数。build ID 仍 U_kmLWP9KIdfcJUsHvBgL。未重跑 type/lint/完整回归/Next/OpenNext/本地 HTTP/SEO/Browser/移动/CWV，未核实预览存活。v1.65 的 39 项命令及 SEO 20 页 / 0 must / 12 should 仅保留原日期。\n\nLICENSE-GATE 与累计发布继续暂缓 / P0 未关闭，Square/Oval 权利 UNKNOWN；发布不通过 / 未部署。KW-04/12 should、原视觉提醒、看板文件视觉限制与所有生产验证仍开放，不绕行。未提交、推送、部署、seo:prod 或开始 CONTENT-QA-001。证据：docs/quality/evidence/mig-oval-001/acceptance-checks.json；docs/quality/evidence/mig-pixel-001/proposal-checks.json。回滚只逆向本轮治理/方案增量，不撤销已验收应用成果，无线上回滚。\n\n## Homepage Modules"
+      },
+      {
+        "file": "LAUNCH_CHECKLIST.md",
+        "old": "### 当前 v1.65 · Oval 本地数据绑定已实施，待验收",
+        "new": "### 历史 v1.65 · Oval 本地数据绑定已实施，待验收"
+      },
+      {
+        "file": "LAUNCH_CHECKLIST.md",
+        "old": "## 1. 自动检查",
+        "new": "### 当前 v1.66 · Oval 本地阶段已验收；Pixel 一致性方案待确认\n\n2026-09-03 用户明确回复“确认验收，现在进行下一步开发”。新增第 28 条源验收，scope=LOCAL_DATA_BINDING；原 27 条及 v1.65 原始 checks.json、失败记录、构建和浏览器日期不改写。Oval 完整统一模板迁移仍未完成，原任务保留已延期；本地验收不关闭既有窄屏入口偏低、真实权利或发布门禁。\n\n下一项 MIG-PIXEL-001 仅进入设计中 / 方案待确认。现码已是 External Tool 且无 iframe，但原页面有 4 处 Embedded 旧文案、5 个原站链接及嵌套 WebApplication；旧侧栏 Pixel 缺少明确类型标签。拟统一 Open Original Page、来源条款、FAQ/schema 与 3/6/5/6 数据数组；保留原 URL/Title/H1/description/canonical/index、布局和 DIRECT_LINK_ONLY。跨页仅拟为 Oval/七草稿的 Pixel 侧栏加 External 标签，不改其玩家、元数据、主文案或 CSS；英文首页不变。\n\n方案：docs/product/pixel-external-tool-consistency-proposal.md；等待“确认 MIG-PIXEL-001 External Tool 一致性方案，进行开发”后才能改应用。此次原站文本/条款和 HEAD 只读复核不代表外站游戏/手机功能或商业许可通过，Registry 历史日期不修改。\n\n本轮只做验收/方案治理与只读核对：152 项源码/检查/配置、当前 docs/quality/evidence 目录 21 份旧 JSON、73 张截图、18 个既有构建产物保持；该 JSON 数是本轮目录口径，不改写旧证据的历史计数。build ID 仍 U_kmLWP9KIdfcJUsHvBgL。未重跑 type/lint/完整回归/Next/OpenNext/本地 HTTP/SEO/Browser/移动/CWV，未核实预览存活。v1.65 的 39 项命令及 SEO 20 页 / 0 must / 12 should 仅保留原日期。\n\nLICENSE-GATE 与累计发布继续暂缓 / P0 未关闭，Square/Oval 权利 UNKNOWN；发布不通过 / 未部署。KW-04/12 should、原视觉提醒、看板文件视觉限制与所有生产验证仍开放，不绕行。未提交、推送、部署、seo:prod 或开始 CONTENT-QA-001。证据：docs/quality/evidence/mig-oval-001/acceptance-checks.json；docs/quality/evidence/mig-pixel-001/proposal-checks.json。回滚只逆向本轮治理/方案增量，不撤销已验收应用成果，无线上回滚。\n\n## 1. 自动检查"
+      },
+      {
+        "file": "LAUNCH_CHECKLIST.md",
+        "old": "| P0 / 用户暂缓 / 未关闭 | LICENSE-GATE | v1.65 Oval 本地数据绑定已实施、待验收；原 27 条验收保留，完整模板迁移未完成。许可仍 UNKNOWN，累计发布不通过 / 暂缓 / 未部署；既有窄屏入口偏低未修复。见 docs/legal/swf-license-evidence-request.md |",
+        "new": "| P0 / 用户暂缓 / 未关闭 | LICENSE-GATE | v1.66 Oval LOCAL_DATA_BINDING 已验收，共 28 条源验收；完整模板迁移仍延期。Pixel 仅方案待确认，本轮未改应用或重跑完整 QA。许可 UNKNOWN、窄屏入口偏低及所有生产门禁保留，累计发布不通过 / 暂缓 / 未部署 |"
+      },
+      {
+        "file": "docs/quality/evidence/mig-oval-001/README.md",
+        "old": "# MIG-OVAL-001 · 本地数据绑定实施与验收证据",
+        "new": "# MIG-OVAL-001 · 本地数据绑定实施与验收证据\n\n> 当前 v1.66 · 2026-09-03 · **本地数据绑定已获用户明确验收**；完整统一模板迁移仍延期、未完成。\n\n用户回复“确认验收，现在进行下一步开发”。本次验收仅覆盖 LOCAL_DATA_BINDING，新增第 28 条源验收，原 27 条不变；下方 v1.65 的“待验收”、检查与失败字段保留为历史，不代表当前仍等待本阶段验收。\n\n原 checks.json SHA-256：47bfac00708ee560e90b915bbc7fd6c57e4fc9a7def201fa3a4c9ea8a2fd3231。本轮只读确认 152 项源码、21 份当前目录旧 JSON、73 张截图、18 份产物保持，没有重跑应用检查、构建、本地 HTTP/SEO/浏览器/移动/CWV，也没有核实预览存活。原 39 项最终命令与视觉有条件通过维持原日期。\n\n已按下一步指令准备 Pixel External Tool 一致性方案，尚未确认或实施。Oval 既有窄屏入口偏低、UNKNOWN/P0 与全部生产门禁不关闭；未提交、推送或部署。当前验收证据：docs/quality/evidence/mig-oval-001/acceptance-checks.json；下一项方案：docs/product/pixel-external-tool-consistency-proposal.md。本轮回滚只涉及治理/方案增量，无应用或线上回滚。\n\n## 历史 v1.65 · 实施与 QA 原文\n"
+      },
+      {
+        "file": "docs/product/oval-local-data-binding-proposal.md",
+        "old": "> 当前 v1.65 · 2026-09-03 · 已收到明确方案确认；本地数据绑定已实施，待本地阶段人工验收。完整模板迁移仍未完成。",
+        "new": "> 当前 v1.66 · 2026-09-03 · 用户明确验收 LOCAL_DATA_BINDING；28 条源验收，完整模板迁移仍延期、未完成。原方案与 v1.65 QA 保留；本轮未改应用或重跑完整检查、未部署。当前证据：docs/quality/evidence/mig-oval-001/acceptance-checks.json；下一项 Pixel 仅方案待确认。\n>\n> 下方所有旧待确认/待验收文字均为原日期历史状态，不撤销此次本地阶段验收。\n>\n> 历史 v1.65 · 2026-09-03 · 已收到明确方案确认；本地数据绑定已实施，待本地阶段人工验收。完整模板迁移仍未完成。"
+      },
+      {
+        "file": "docs/quality/evidence/release-2026-09-02/README.md",
+        "old": "Current v1.65 (2026-09-03): release remains 不通过 / 用户暂缓 / 未部署. Only the explicitly confirmed MIG-OVAL-001 local data-binding phase is implemented and pending scoped user acceptance; templateMigrationCompleted=false. All 39 final commands exited 0, 16 HTTP/artifact paths and 7 responsive DOM/geometry comparisons passed, and real start/reload/keyboard/navigation were verified. Existing narrow-screen first-viewport player placement is unchanged and visual quality is conditional. Preserve all 27 source acceptances, 23 historical JSON files and 52 old screenshots. UNKNOWN/P0, production and unmeasured boundaries remain open; no commit, push, deployment, seo:prod or Pixel work. See docs/quality/evidence/mig-oval-001/README.md and checks.json.",
+        "new": "Current v1.66 (2026-09-03): the user explicitly accepted MIG-OVAL-001 LOCAL_DATA_BINDING and requested the next step. There are 28 source acceptances; all prior 27 and original v1.65 QA are preserved. Full Oval template migration remains incomplete/deferred. Only the MIG-PIXEL-001 External Tool consistency proposal is prepared; implementation requires explicit confirmation. Source/build files remain unchanged; full application QA and preview liveness were not rerun. Release stays 不通过 / 用户暂缓 / 未部署, with UNKNOWN/P0 and all production gates open. See docs/quality/evidence/mig-oval-001/acceptance-checks.json and docs/quality/evidence/mig-pixel-001/proposal-checks.json. No commit, push, deployment or seo:prod.\n\nHistorical v1.65 (2026-09-03): release remains 不通过 / 用户暂缓 / 未部署. Only the explicitly confirmed MIG-OVAL-001 local data-binding phase is implemented and pending scoped user acceptance; templateMigrationCompleted=false. All 39 final commands exited 0, 16 HTTP/artifact paths and 7 responsive DOM/geometry comparisons passed, and real start/reload/keyboard/navigation were verified. Existing narrow-screen first-viewport player placement is unchanged and visual quality is conditional. Preserve all 27 source acceptances, 23 historical JSON files and 52 old screenshots. UNKNOWN/P0, production and unmeasured boundaries remain open; no commit, push, deployment, seo:prod or Pixel work. See docs/quality/evidence/mig-oval-001/README.md and checks.json."
+      },
+      {
+        "file": "docs/legal/swf-license-evidence-request.md",
+        "old": "> 当前 v1.65 · 2026-09-03 · Oval 已确认的本地数据绑定已实施、待验收；27 条既有验收保持，完整模板迁移仍未完成。39 项最终本地命令通过不代表真实授权或发布通过。LICENSE-GATE 与累计发布继续暂缓，UNKNOWN/P0 未关闭；未提交、推送或部署。证据：docs/quality/evidence/mig-oval-001/checks.json。",
+        "new": "> 当前 v1.66 · 2026-09-03 · Oval LOCAL_DATA_BINDING 已获明确验收，共 28 条源验收；完整模板迁移仍延期。当前只准备 Pixel 一致性方案，未实施；152 项源码/旧产物保持，未重跑完整应用 QA。Square/Oval UNKNOWN 与 LICENSE-GATE/P0 及累计发布继续暂缓、不通过、未部署；不构成许可或发布通过。证据：docs/quality/evidence/mig-oval-001/acceptance-checks.json。\n>\n> 历史 v1.65 · 2026-09-03 · Oval 已确认的本地数据绑定已实施、待验收；27 条既有验收保持，完整模板迁移仍未完成。39 项最终本地命令通过不代表真实授权或发布通过。LICENSE-GATE 与累计发布继续暂缓，UNKNOWN/P0 未关闭；未提交、推送或部署。证据：docs/quality/evidence/mig-oval-001/checks.json。"
+      },
+      {
+        "file": "SEO_LOG.md",
+        "old": "| 2026-09-03 | Implemented explicitly confirmed MIG-OVAL-001 local data-binding stage | `/oval-face-icon-generator`; no new URL, index or intent change | One Record supplies 19 player inputs, existing content/FAQ/schema and related game hrefs; preserve compatibility and generic UNKNOWN rejection | 39 final commands exit 0, 16 local HTTP/artifact paths plus 4 boundary routes, robots 11 decisions; SEO 20 pages / 0 must / 12 existing should. 7 before/after DOM and geometry comparisons; cover metadata only corrected 972x774 to actual 974x775. Actual click/Enter/Space/reload/FAQ/help/Gallery/Square links pass | Board v1.65 local stage pending acceptance, templateMigrationCompleted=false; prior 27 acceptances, 23 historical JSON and 52 screenshots preserved. Existing mobile first-viewport player-start issue remains unchanged, visual conditionally passed; CWV/fullscreen/all SWF internals/other engines/KW-04/production/board visual unverified. No commit/push/deploy/seo:prod/Pixel. Original three failed checks retained; old goldens not refreshed. Evidence: mig-oval-001/README.md and checks.json |",
+        "new": "| 2026-09-03 | Implemented explicitly confirmed MIG-OVAL-001 local data-binding stage | `/oval-face-icon-generator`; no new URL, index or intent change | One Record supplies 19 player inputs, existing content/FAQ/schema and related game hrefs; preserve compatibility and generic UNKNOWN rejection | 39 final commands exit 0, 16 local HTTP/artifact paths plus 4 boundary routes, robots 11 decisions; SEO 20 pages / 0 must / 12 existing should. 7 before/after DOM and geometry comparisons; cover metadata only corrected 972x774 to actual 974x775. Actual click/Enter/Space/reload/FAQ/help/Gallery/Square links pass | Board v1.65 local stage pending acceptance, templateMigrationCompleted=false; prior 27 acceptances, 23 historical JSON and 52 screenshots preserved. Existing mobile first-viewport player-start issue remains unchanged, visual conditionally passed; CWV/fullscreen/all SWF internals/other engines/KW-04/production/board visual unverified. No commit/push/deploy/seo:prod/Pixel. Original three failed checks retained; old goldens not refreshed. Evidence: mig-oval-001/README.md and checks.json |\n| 2026-09-03 | Recorded explicit MIG-OVAL-001 local-stage acceptance and prepared MIG-PIXEL-001 External Tool consistency proposal | Governance/proposal only; no application, URL, index or production change | Preserve Pixel intent and direct-link-only boundary; preserve incomplete/deferred full Oval template migration | Read-only hashes: 152 source/check/config, 21 existing JSON files in current evidence directory, 73 screenshots, 18 artifacts unchanged; original v1.65 checks.json and QA dates retained. Current Pixel source/built review found four Embedded remnants, five repeated outbound links, nested WebApplication and missing legacy-sidecard External labels; official pages and one HEAD probe reviewed without external asset copies | Board v1.66: Oval LOCAL_DATA_BINDING explicitly accepted (28 total, prior 27 unchanged), Pixel design/proposal pending confirmation. No type/lint/full regression/build/local HTTP/SEO/browser/mobile/CWV rerun or preview-liveness claim. No production SEO result, rights waiver, commit/push/deploy/seo:prod or CONTENT-QA-001. Evidence: mig-oval-001/acceptance-checks.json; mig-pixel-001/proposal-checks.json |"
+      }
+    ],
+    "originalDocumentHashes": {
+      "PAGE_PLAN.md": "06b40428588c21f882fa21f70da780d2f4495035dd059b77eb95adcc3d15ed2d",
+      "LAUNCH_CHECKLIST.md": "d3d7dd632529654974c0aff96c7963b6a5e1c89569fae5e0c7a54395399a8ceb",
+      "SEO_LOG.md": "6831cc8f085641f14e4a9dafae045a687032b148eab01d3ad13566454bd49571",
+      "docs/product/oval-local-data-binding-proposal.md": "7860599c66669ec1763b7c367d2090e21105405113710878039299e08249dda8",
+      "docs/quality/evidence/mig-oval-001/README.md": "5b2b399c0257d004f179f575acdbb6979aa91fc60368ce3c9451ddba950238f6",
+      "docs/quality/evidence/release-2026-09-02/README.md": "e14ec8896e55d8c54717286fcc708e468bad8fa154ef6a96c6380888af3566a3",
+      "docs/legal/swf-license-evidence-request.md": "2c7ccfc0adbe0e73da7dcb729e4487a91f721e9a029d34801095a2afdf9242c0",
+      "F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html": "d6bbff10866c6434151dedf5ce27416862039f1ac208d63fcb3e30498b64c249"
+    },
+    "newFiles": [
+      "docs/product/pixel-external-tool-consistency-proposal.md",
+      "docs/quality/evidence/mig-oval-001/acceptance-checks.json",
+      "docs/quality/evidence/mig-pixel-001/proposal-checks.json",
+      "docs/quality/evidence/mig-pixel-001/README.md"
+    ],
+    "onlineRollbackRequired": false,
+    "temporaryReproductionDirectory": "C:/Users/liu/AppData/Local/Temp/mysquarefaceicon-mig-pixel-proposal-v166-0f2c1fab028e40119c204cc71fc4b5fe"
+  },
+  "taskId": "MIG-PIXEL-001",
+  "taskStatus": "设计中 / 方案待确认",
+  "proposalPath": "docs/product/pixel-external-tool-consistency-proposal.md",
+  "proposalConfirmed": false,
+  "implementationStarted": false,
+  "userAcceptanceReceived": false,
+  "confirmation": "确认 MIG-PIXEL-001 External Tool 一致性方案，进行开发",
+  "codeFindings": {
+    "arrays": {
+      "howToSteps": {
+        "pageCount": 3,
+        "recordCount": 3,
+        "equal": true,
+        "differences": []
+      },
+      "features": {
+        "pageCount": 6,
+        "recordCount": 6,
+        "equal": true,
+        "differences": []
+      },
+      "tips": {
+        "pageCount": 5,
+        "recordCount": 5,
+        "equal": true,
+        "differences": []
+      },
+      "faq": {
+        "pageCount": 6,
+        "recordCount": 6,
+        "equal": false,
+        "differences": [
+          {
+            "index": 3,
+            "page": {
+              "question": "Can a VPN, proxy, or network filter stop the generator from opening?",
+              "answer": "Yes. VPNs, proxy tools, privacy extensions, school networks, company networks, or DNS filters may block the external embedded page. Try turning off the proxy for this page, switching networks, or opening the original page directly."
+            },
+            "record": {
+              "question": "Can a VPN, proxy, or network filter stop the generator from opening?",
+              "answer": "Yes. VPNs, proxy tools, privacy extensions, school networks, company networks, or DNS filters may block the external page. Try turning off the proxy for this page, switching networks, or opening the original page directly."
+            }
+          }
+        ]
+      }
+    },
+    "record": {
+      "schemaVersion": "1.0",
+      "id": "pixel-art-avatar",
+      "name": "Pixel Art Avatar Icon Generator",
+      "slug": "pixel-art-avatar-icon-generator",
+      "pageType": "EXTERNAL_TOOL",
+      "type": "EXTERNAL_LINK",
+      "route": {
+        "path": "/pixel-art-avatar-icon-generator",
+        "canonical": "https://mysquarefaceicon.com/pixel-art-avatar-icon-generator",
+        "indexStatus": "INDEX",
+        "existingPublishedRoute": true
+      },
+      "source": {
+        "kind": "OFFICIAL_EXTERNAL_PAGE",
+        "providerName": "IconGenerators",
+        "originalUrl": "https://www.icongenerators.net/pixelavatar.html",
+        "localAssetPath": null,
+        "sha256": null,
+        "attribution": "Original generator by Eichi Zerona / えいちぜろな (@h071019) on icongenerators.net."
+      },
+      "license": {
+        "registryRecordId": "pixel-avatar-external",
+        "status": "RESTRICTED",
+        "releaseDecision": "DIRECT_LINK_ONLY",
+        "newPublicationAllowed": true,
+        "allowedDeliveryTypes": [
+          "EXTERNAL_LINK"
+        ]
+      },
+      "category": {
+        "primary": "pixel-avatars",
+        "secondary": [
+          "avatar-makers",
+          "character-creators"
+        ]
+      },
+      "tags": [
+        "pixel-art",
+        "chibi-avatar",
+        "external-tool",
+        "profile-icon",
+        "direct-link"
+      ],
+      "images": [
+        {
+          "role": "THUMBNAIL",
+          "src": "/game-face-samples/gamer.webp",
+          "alt": "Pixel-friendly gamer avatar preview",
+          "width": 512,
+          "height": 512,
+          "provenance": "PROJECT_ASSET"
+        },
+        {
+          "role": "OPEN_GRAPH",
+          "src": "/og-image.svg",
+          "alt": "Pixel Art Avatar Icon Generator external tool page",
+          "width": 1200,
+          "height": 630,
+          "provenance": "PROJECT_ASSET"
+        }
+      ],
+      "controls": [
+        {
+          "id": "open-original",
+          "label": "Open the original generator",
+          "description": "Use the page link to open the official icongenerators.net generator in a new browser tab.",
+          "inputMethods": [
+            "POINTER",
+            "TOUCH",
+            "KEYBOARD"
+          ]
+        },
+        {
+          "id": "external-controls",
+          "label": "Use the original tool controls",
+          "description": "Choose pixel character parts and save or copy the result using the controls on the original site.",
+          "inputMethods": [
+            "POINTER",
+            "TOUCH"
+          ]
+        }
+      ],
+      "howToPlay": [
+        {
+          "title": "Open the original generator",
+          "text": "Use the original-page button to open the icongenerators.net pixel avatar maker in a new tab."
+        },
+        {
+          "title": "Choose pixel character parts",
+          "text": "Use the generator controls to mix face details, hair, clothes, colors, and small accessories into a chibi pixel character."
+        },
+        {
+          "title": "Save or copy your result",
+          "text": "Follow the controls inside the original generator. If a browser blocks a feature, try a desktop browser or another network."
+        }
+      ],
+      "features": [
+        {
+          "title": "External original tool",
+          "text": "The generator is provided by icongenerators.net, with visible source credit and a direct link to the original page."
+        },
+        {
+          "title": "Pixel art avatar style",
+          "text": "The tool focuses on small chibi character icons with a retro pixel-art look."
+        },
+        {
+          "title": "Works beside our face games",
+          "text": "Use it as a pixel-avatar companion to Square Face Generator and Oval Face Icon Generator."
+        },
+        {
+          "title": "No local copy of assets",
+          "text": "This page does not copy the external site files, artwork, comments, or generator source."
+        },
+        {
+          "title": "Original page access",
+          "text": "The original site currently blocks iframe embedding, so the safest path is opening the generator directly."
+        },
+        {
+          "title": "Desktop recommended",
+          "text": "Avatar generators with detailed controls are usually easier to use on desktop or landscape tablet screens."
+        }
+      ],
+      "tips": [
+        "Use a desktop browser when editing detailed pixel parts",
+        "Open the original generator in a new tab for the most reliable experience",
+        "Try a simple color palette so the avatar stays readable at small sizes",
+        "Check the icon at profile-picture size before using it",
+        "Respect the original creator and link back when sharing the tool"
+      ],
+      "faq": [
+        {
+          "question": "What is Pixel Art Avatar Icon Generator?",
+          "answer": "Pixel Art Avatar Icon Generator is an external pixel-style chibi character icon maker from icongenerators.net."
+        },
+        {
+          "question": "Is this tool owned by My Square Face Icon?",
+          "answer": "No. This page links to the external generator with source attribution. The original tool and its assets remain on icongenerators.net."
+        },
+        {
+          "question": "Why does the embedded generator not load?",
+          "answer": "The original site currently sends browser security headers that allow the page to be framed only by itself. Use the Open Original Page button to launch it directly."
+        },
+        {
+          "question": "Can a VPN, proxy, or network filter stop the generator from opening?",
+          "answer": "Yes. VPNs, proxy tools, privacy extensions, school networks, company networks, or DNS filters may block the external page. Try turning off the proxy for this page, switching networks, or opening the original page directly."
+        },
+        {
+          "question": "Does this page copy the generator assets?",
+          "answer": "No. This site does not host or copy the original generator files, artwork, comments, or source code."
+        },
+        {
+          "question": "Can I use it on mobile?",
+          "answer": "It may work, but detailed avatar controls are usually easier on desktop or in landscape mode."
+        }
+      ],
+      "mobile": {
+        "support": "UNKNOWN",
+        "orientation": "LANDSCAPE_RECOMMENDED",
+        "verifiedAt": null,
+        "note": "The current page says the external tool may work on mobile and recommends desktop or landscape; the external mobile experience was not verified in GAME-DATA-001."
+      },
+      "fullscreen": {
+        "availability": "NOT_APPLICABLE",
+        "mode": "NONE",
+        "note": "This project provides a direct link and does not host or embed the external generator, so it exposes no local fullscreen control."
+      },
+      "player": {
+        "type": "EXTERNAL_LINK",
+        "url": "https://www.icongenerators.net/pixelavatar.html",
+        "ctaLabel": "Open Original Page",
+        "target": "_blank",
+        "rel": [
+          "noopener",
+          "noreferrer"
+        ],
+        "directLinkOnly": true
+      },
+      "status": "PUBLISHED",
+      "seo": {
+        "title": "Pixel Art Avatar Icon Generator - Open the Original Chibi Icon Maker",
+        "description": "Open the Pixel Art Avatar Icon Generator from icongenerators.net to create cute chibi pixel icons, with source credit, play tips, and browser guidance.",
+        "h1": "Pixel Art Avatar Icon Generator",
+        "canonical": "https://mysquarefaceicon.com/pixel-art-avatar-icon-generator",
+        "primaryKeyword": "pixel art avatar icon generator",
+        "secondaryKeywords": [
+          "chibi pixel icon maker",
+          "pixel avatar maker",
+          "icongenerators pixelavatar"
+        ],
+        "searchIntent": "Open the original icongenerators.net pixel avatar maker with source attribution and clear external boundaries",
+        "semanticCoverage": {
+          "topics": [
+            "pixel avatar creation",
+            "official source attribution",
+            "direct-link access",
+            "no-copy boundary",
+            "mobile guidance"
+          ],
+          "score": null,
+          "reviewedAt": null,
+          "note": "Topics mirror the current direct-link page; no semantic coverage score was measured in GAME-DATA-001."
+        },
+        "schemaTypes": [
+          "WebPage",
+          "WebApplication",
+          "FAQPage",
+          "BreadcrumbList"
+        ]
+      },
+      "content": {
+        "summary": "Open the original icongenerators.net pixel avatar maker with visible attribution, usage tips, and a direct-link-only boundary.",
+        "description": [
+          "Pixel Art Avatar Icon Generator is an external pixel-style chibi character icon maker from icongenerators.net.",
+          "This page links to the external generator with source attribution and does not host or copy the original generator files, artwork, comments, or source code."
+        ],
+        "sections": [
+          "external-tool",
+          "gallery-preview",
+          "what-is",
+          "how-to-use",
+          "features",
+          "tips",
+          "faq"
+        ]
+      },
+      "relatedGameIds": [
+        "square-face",
+        "oval-face"
+      ],
+      "measurements": {
+        "inboundLinkCount": null,
+        "qualityScore": null
+      },
+      "publication": {
+        "publishedAt": null,
+        "modifiedAt": null,
+        "timestampStatus": "UNKNOWN",
+        "note": "The route is already live, but exact public publication and modification timestamps were not verified for GAME-DATA-001."
+      },
+      "author": null
+    },
+    "sourcePageSha256": "514139869fbd206326dc6d2e426d86c2b49f27c557b86868471de200fe94c50d",
+    "builtPixelSha256": "cbc938c5340b9a28e07543fccd82427c0095c69560c921f623eadd39c697f816",
+    "built": {
+      "h1": 1,
+      "h2": 9,
+      "faq": 6,
+      "iframe": 0,
+      "externalLinks": [
+        {
+          "text": "Open Generator",
+          "attributes": " class=\"hero-primary-link\"  target=\"_blank\" rel=\"noopener noreferrer\""
+        },
+        {
+          "text": "Open Original",
+          "attributes": " class=\"hero-secondary-link\"  target=\"_blank\" rel=\"noopener noreferrer\""
+        },
+        {
+          "text": "Original Page",
+          "attributes": " class=\"tool-card-badge badge-link\"  target=\"_blank\" rel=\"noopener noreferrer\""
+        },
+        {
+          "text": "Open Original Page",
+          "attributes": " class=\"hero-primary-link\"  target=\"_blank\" rel=\"noopener noreferrer\""
+        },
+        {
+          "text": "the original page",
+          "attributes": "  target=\"_blank\" rel=\"noopener noreferrer\""
+        }
+      ],
+      "schemas": [
+        {
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "name": "Pixel Art Avatar Icon Generator",
+          "description": "Open the Pixel Art Avatar Icon Generator from icongenerators.net to create cute chibi pixel icons, with source credit, play tips, and browser guidance.",
+          "url": "https://mysquarefaceicon.com/pixel-art-avatar-icon-generator",
+          "mainEntity": {
+            "@type": "WebApplication",
+            "name": "Pixel Art Avatar Icon Generator",
+            "url": "https://www.icongenerators.net/pixelavatar.html",
+            "applicationCategory": "DesignApplication",
+            "operatingSystem": "Web browser",
+            "provider": {
+              "@type": "Organization",
+              "name": "icongenerators.net",
+              "url": "https://www.icongenerators.net/"
+            }
+          }
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What is Pixel Art Avatar Icon Generator?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Pixel Art Avatar Icon Generator is an external pixel-style chibi character icon maker from icongenerators.net."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is this tool owned by My Square Face Icon?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. This page links to the external generator with source attribution. The original tool and its assets remain on icongenerators.net."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Why does the embedded generator not load?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The original site currently sends browser security headers that allow the page to be framed only by itself. Use the Open Original Page button to launch it directly."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can a VPN, proxy, or network filter stop the generator from opening?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. VPNs, proxy tools, privacy extensions, school networks, company networks, or DNS filters may block the external embedded page. Try turning off the proxy for this page, switching networks, or opening the original page directly."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does this page copy the generator assets?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. This site does not host or copy the original generator files, artwork, comments, or source code."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I use it on mobile?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "It may work, but detailed avatar controls are usually easier on desktop or in landscape mode."
+              }
+            }
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Square Face Generator",
+              "item": "https://mysquarefaceicon.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Pixel Art Avatar Icon Generator",
+              "item": "https://mysquarefaceicon.com/pixel-art-avatar-icon-generator"
+            }
+          ]
+        }
+      ],
+      "wordCount": 869,
+      "exactPhraseOccurrences": 10,
+      "legacyEmbeddedPhrases": [
+        "Embedded external avatar maker",
+        "How to Use the Embedded Pixel Avatar Maker",
+        "Why does the embedded generator not load?",
+        "external embedded page"
+      ],
+      "termsLinkPresent": false
+    }
+  },
+  "externalSourceReview": {
+    "recordedAt": "2026-09-03T05:17:09.304Z",
+    "textReads": [
+      {
+        "url": "https://www.icongenerators.net/pixelavatar.html",
+        "observed": "Generator description, original creator attribution and link policy; tool output reported crawled 3 days ago",
+        "scope": "Text only; no images, scripts, data files, generator extraction or external interaction"
+      },
+      {
+        "url": "https://www.icongenerators.net/terms.html",
+        "observed": "Page links allowed; no unpermitted embedding/framing/mirroring/proxying/copying; tool output reported crawled yesterday",
+        "scope": "Paraphrased source review, not legal advice or a newly issued commercial license"
+      }
+    ],
+    "head": {
+      "command": [
+        "curl.exe",
+        "--head",
+        "--max-time",
+        "15",
+        "https://www.icongenerators.net/pixelavatar.html"
+      ],
+      "cwd": "D:/LYXGIT/mysquarefaceicon",
+      "exitCode": 0,
+      "timeoutSeconds": 15,
+      "responseStatus": 200,
+      "responseDate": "Thu, 03 Sep 2026 05:07:28 GMT",
+      "headers": {
+        "X-Frame-Options": "SAMEORIGIN",
+        "Content-Security-Policy": "frame-ancestors 'self';",
+        "Content-Type": "text/html",
+        "Content-Length": "23464"
+      },
+      "boundary": "One HEAD observation; no origin game rendering, browser mobile behavior, latency or permission verification for Square/Oval binaries"
+    }
+  },
+  "plannedApplicationFiles": [
+    "app/pixel-art-avatar-icon-generator/page.tsx",
+    "data/games/pixel-art-avatar.ts",
+    "lib/games/pixel-external-page.ts",
+    "components/GameSidebar.tsx"
+  ],
+  "plannedCheckFiles": [
+    "scripts/check-pixel-external-page.mjs",
+    "scripts/check-square-homepage.mjs",
+    "scripts/check-oval-legacy-page.mjs",
+    "scripts/check-locale-rights.mjs",
+    "package.json",
+    "scripts/README.md"
+  ],
+  "plannedAffectedUrls": [
+    "/pixel-art-avatar-icon-generator",
+    "/oval-face-icon-generator",
+    "/es",
+    "/vi",
+    "/ja",
+    "/th",
+    "/ar",
+    "/ru",
+    "/id"
+  ],
+  "currentApplicationChanges": [],
+  "crossPageException": "Only an explicit External tool label on the existing Pixel sidebar card on Oval and seven noindex drafts; no title/href/image/description/order/CSS/player changes on those pages",
+  "seoBoundary": "No URL, index, title/H1/description/canonical/sitemap changes. Planned exception: remove nested external WebApplication and align faq/schema copy. No fresh SEO or KW-04 completion claimed.",
+  "contentQaStarted": false
+}

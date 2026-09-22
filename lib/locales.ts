@@ -98,7 +98,7 @@ const englishFeatures: Card[] = [
   },
   {
     title: "Original Game Feel",
-    text: "The main tool keeps the familiar Flash avatar maker interaction by running the authorized SWF through Ruffle."
+    text: "The main tool runs a project-provided SWF through Ruffle. Source and usage permissions require separate verification."
   },
   {
     title: "Browser Friendly",

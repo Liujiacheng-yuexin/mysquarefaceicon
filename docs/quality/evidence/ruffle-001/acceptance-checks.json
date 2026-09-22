@@ -1,0 +1,101 @@
+{
+  "taskId": "RUFFLE-001",
+  "scope": "RUFFLE_RUNTIME_GOVERNANCE_IMPLEMENTATION",
+  "boardVersion": "1.92",
+  "recordedAt": "2026-09-08T01:48:57.9127898Z",
+  "userInstruction": "RUFFLE-001 验收通过",
+  "result": "通过（用户明确验收 v1.91 本地成果）",
+  "userAcceptanceReceived": true,
+  "wholeLocalTaskCompleted": true,
+  "sourceAcceptance": {
+    "result": "通过",
+    "scope": "RUFFLE_RUNTIME_GOVERNANCE_IMPLEMENTATION",
+    "acceptedAt": "2026-09-08T01:48:57.9127898Z",
+    "source": "用户明确回复“RUFFLE-001 验收通过”",
+    "localOnly": true,
+    "wholeTaskCompleted": true,
+    "implementationEvidencePath": "docs/quality/evidence/ruffle-001/checks.json",
+    "note": "仅验收 v1.91 本地 Ruffle 运行时治理实现；不代表 SWF 权利、索引、生产、广告/CMP 或发布通过。"
+  },
+  "acceptedFeatures": [
+    "exact @ruffle-rs/ruffle@0.2.0-nightly.2026.5.12 dependency",
+    "five-file allowlist manifest with offline sync and SHA-256 build gate",
+    "same-origin /ruffle/ browser entry with explicit publicPath and no CDN fallback",
+    "application/wasm content type and versioned cache behavior",
+    "service-worker network-first runtime entry without eager runtime or SWF prefetch",
+    "Square and Oval click-to-load and Reload regression evidence"
+  ],
+  "originalImplementationEvidence": {
+    "path": "docs/quality/evidence/ruffle-001/checks.json",
+    "sha256": "985c03b0fc953e988d0caf1ea1dfac2613e5005fc10ce4f6d57fe19ff31c21bf",
+    "readmePath": "docs/quality/evidence/ruffle-001/README.md",
+    "readmeSha256": "5a8f523654b82d348367b48034605f5b28ec6b91682013fa3727f048c555d0ef",
+    "proposalPath": "docs/product/ruffle-runtime-governance-proposal.md",
+    "proposalSha256": "6c9500a1eaf1089f41e10c5393cca61fc65307ede5f25c211a633eb13bef9b03",
+    "boardVersion": "1.91",
+    "recordedAt": "2026-09-08T01:36:02.2529973Z",
+    "buildId": "G1nYEAOdJjKEMfPZ9gSgo",
+    "note": "原实施 QA、首次 OOM、调用失败、修正、浏览器结论、未验证项与日期保持；本文件只登记后续用户验收。"
+  },
+  "applicationPreservation": {
+    "applicationCodeChangedInAcceptanceTurn": false,
+    "dependenciesOrRuntimeChangedInAcceptanceTurn": false,
+    "testsOrCheckersChangedInAcceptanceTurn": false,
+    "swfFilesChangedInAcceptanceTurn": false,
+    "routesMetadataContentOrIndexingChangedInAcceptanceTurn": false,
+    "buildArtifactsChangedInAcceptanceTurn": false,
+    "branch": "codex/game-platform-rebuild",
+    "head": "c6d30087c2c03a7c4eb8d5bfe6e055e9b8d40228"
+  },
+  "checksInAcceptanceTurn": {
+    "applicationQaRerun": false,
+    "buildsRerun": false,
+    "httpSeoRobotsRerun": false,
+    "browserMobileCwvRerun": false,
+    "productionChecksRerun": false,
+    "boardScriptSyntax": "通过",
+    "reason": "Acceptance-only governance update; preserve v1.91 evidence and do not claim new application or production QA."
+  },
+  "board": {
+    "path": "F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+    "previousSha256": "730090e3ab2019d60199e20c5e9463b40b493d2cf24931c1c404d47ffc0f6d1c",
+    "currentSha256": "8e72d2e72a95fac41f029f0a55b98f34742025d89dc62759b5345fc31e71bc49",
+    "version": "1.92",
+    "ruffleStatus": "已完成（本地已验收）",
+    "currentTask": "RUFFLE-001",
+    "completedTasks": 25,
+    "totalTasks": 60,
+    "uniqueSourceAcceptanceTaskKeys": 36,
+    "nextTask": "ASSET-001",
+    "nextTaskStatus": "未开始 / 等待用户明确下达"
+  },
+  "retainedUnverifiedOrBlocking": [
+    "actual runtime failure injection and Retry",
+    "fullscreen and SWF internal save operations",
+    "real devices and additional browser engines",
+    "field and production CWV",
+    "actual Square and Oval rights remain UNKNOWN",
+    "human factual review and remaining semantic-quality notices",
+    "whole-site ads and CMP gates",
+    "production canonical, robots, SEO and deployment evidence"
+  ],
+  "nextState": {
+    "ruffleCompleted": true,
+    "nextTaskId": "ASSET-001",
+    "nextTaskStarted": false,
+    "nextInstructionRequired": true
+  },
+  "release": {
+    "commitCreated": false,
+    "pushed": false,
+    "deployed": false,
+    "seoProdRun": false,
+    "productionVerified": false,
+    "result": "不通过 / 未部署"
+  },
+  "rollback": {
+    "application": "none; acceptance turn changed no application, dependency, runtime or build artifact",
+    "governance": "remove only the v1.92 RUFFLE acceptance entry and restore the v1.91 pending-acceptance board state; preserve implementation and original QA evidence",
+    "production": "not applicable because no deployment occurred"
+  }
+}

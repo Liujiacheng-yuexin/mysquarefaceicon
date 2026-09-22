@@ -1,0 +1,202 @@
+{
+  "app/category/[slug]/page.tsx": {
+    "beforeSha256": "00765e46360563750250645120e171f4d7e0858e9cb31fd07814cc96a6d03cc7",
+    "afterSha256": "14d32d29e5a23250a1fa37a1e273791ab62103c384fa3e5c57ad73a1e747e0ae",
+    "beforeSha256LF": "00765e46360563750250645120e171f4d7e0858e9cb31fd07814cc96a6d03cc7",
+    "afterSha256LF": "14d32d29e5a23250a1fa37a1e273791ab62103c384fa3e5c57ad73a1e747e0ae",
+    "edits": [
+      {
+        "offset": 38,
+        "before": "import Link from \"next/link\";\n",
+        "after": "",
+        "offsetLF": 38
+      },
+      {
+        "offset": 89,
+        "before": "",
+        "after": "import CategoryChip from \"@/components/game/CategoryChip\";\n",
+        "offsetLF": 89
+      },
+      {
+        "offset": 415,
+        "before": "  getCategoryStaticParams,\n  resolveCategoryRoute\n} from \"@/lib/games/routes\";\n",
+        "after": "  getDirectoryCategoryStaticParams as getCategoryStaticParams,\n  listDirectoryCategoryRoutes,\n  resolveDirectoryCategoryRoute as resolveCategoryRoute\n} from \"@/lib/games/categories\";\nimport { faceMakersContent } from \"@/lib/games/category-content\";\nimport { categoryPolicy } from \"@/lib/games/category-policy\";\nimport { buildCategorySampleMetadata, buildCategorySampleStructuredData } from \"@/lib/seo/category-sample\";\nimport { serializeGameStructuredData } from \"@/lib/seo/game-structured-data\";\n",
+        "offsetLF": 415
+      },
+      {
+        "offset": 1566,
+        "before": "",
+        "after": "  if (route.category.slug === faceMakersContent.slug) return buildCategorySampleMetadata(route);\n\n",
+        "offsetLF": 1566
+      },
+      {
+        "offset": 2261,
+        "before": "",
+        "after": "  const sample = category.slug === faceMakersContent.slug;\n  const otherCategories = sample\n    ? listDirectoryCategoryRoutes().filter(({ category: other }) => other.slug !== category.slug)\n    : [];\n",
+        "offsetLF": 2261
+      },
+      {
+        "offset": 2480,
+        "before": "",
+        "after": "      {sample ? buildCategorySampleStructuredData(route).map((schema) => (\n        <script key={String(schema[\"@type\"])} type=\"application/ld+json\"\n          dangerouslySetInnerHTML={{ __html: serializeGameStructuredData(schema) }} />\n      )) : null}\n",
+        "offsetLF": 2480
+      },
+      {
+        "offset": 2753,
+        "before": "      <main className=\"route-directory-shell\">\n",
+        "after": "      <main className=\"route-directory-shell\" data-ad-eligible={categoryPolicy.adEligible}>\n",
+        "offsetLF": 2753
+      },
+      {
+        "offset": 3028,
+        "before": "",
+        "after": "          reloadDocument\n",
+        "offsetLF": 3028
+      },
+      {
+        "offset": 3522,
+        "before": "              <h2 id=\"category-games-heading\">Available {category.name}</h2>\n",
+        "after": "              <h2 id=\"category-games-heading\">{sample ? faceMakersContent.entriesHeading : <>Available {category.name}</>}</h2>\n",
+        "offsetLF": 3522
+      },
+      {
+        "offset": 3769,
+        "before": "          <GameGrid games={games} ariaLabel={`Available ${category.name}`} />\n",
+        "after": "          <GameGrid games={games} ariaLabel={sample ? faceMakersContent.entriesHeading : `Available ${category.name}`} reloadDocument />\n",
+        "offsetLF": 3769
+      },
+      {
+        "offset": 3926,
+        "before": "",
+        "after": "        {sample ? (\n          <section className=\"route-directory-section\" aria-labelledby=\"category-choice-heading\">\n            <h2 id=\"category-choice-heading\">{faceMakersContent.choiceHeading}</h2>\n            {faceMakersContent.choiceParagraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}\n          </section>\n        ) : null}\n\n        {sample && otherCategories.length > 0 ? (\n          <section className=\"route-directory-section\" aria-labelledby=\"other-categories-heading\">\n            <h2 id=\"other-categories-heading\">{faceMakersContent.otherCategoriesHeading}</h2>\n            <p>{faceMakersContent.overlapNote}</p>\n            <div className=\"route-category-links\">\n              {otherCategories.map(({ category: other, games: entries }) => (\n                <CategoryChip key={other.slug} category={other} gameCount={entries.length} reloadDocument />\n              ))}\n            </div>\n          </section>\n        ) : null}\n\n",
+        "offsetLF": 3926
+      },
+      {
+        "offset": 5026,
+        "before": "          <Link href=\"/\">Return to Square Face Generator</Link>\n",
+        "after": "          <GameLink href=\"/\" reloadDocument>Return to Square Face Generator</GameLink>\n",
+        "offsetLF": 5026
+      }
+    ]
+  },
+  "components/DeferredThirdPartyScripts.tsx": {
+    "beforeSha256": "2a8204c7a63d175a2b3db9356557bb56a09ed24a415c1648c4a6e50a5361d538",
+    "afterSha256": "d660cbb3e2912dbbd9a0bb118e00237cb41aa81455fc0034be26f7fd17e261df",
+    "beforeSha256LF": "2a8204c7a63d175a2b3db9356557bb56a09ed24a415c1648c4a6e50a5361d538",
+    "afterSha256LF": "d660cbb3e2912dbbd9a0bb118e00237cb41aa81455fc0034be26f7fd17e261df",
+    "edits": [
+      {
+        "offset": 105,
+        "before": "",
+        "after": "import { canLoadAdsOutsideCategory, crossesCategoryBoundary } from \"../lib/games/category-policy\";\n",
+        "offsetLF": 105
+      },
+      {
+        "offset": 1140,
+        "before": "    // Directory links use document navigation. Fail safely if a future client-side link misses it.\n    if (crossesGamesDirectoryBoundary(documentPath.current, pathname)) {\n",
+        "after": "    // Collection links use document navigation; also guard a future missed client-side link.\n    if (crossesGamesDirectoryBoundary(documentPath.current, pathname)\n      || crossesCategoryBoundary(documentPath.current, pathname)) {\n",
+        "offsetLF": 1140
+      },
+      {
+        "offset": 1896,
+        "before": "      if (canLoadAdsOutsideGamesDirectory(documentPath.current, window.location.pathname)) {\n",
+        "after": "      if (canLoadAdsOutsideGamesDirectory(documentPath.current, window.location.pathname)\n        && canLoadAdsOutsideCategory(documentPath.current, window.location.pathname)) {\n",
+        "offsetLF": 1896
+      }
+    ]
+  },
+  "components/game/GameLink.tsx": {
+    "beforeSha256": "4707246ee064f8ba5ce3401cd555af88f4fb44bf0bc41178fe875c9ce205cbda",
+    "afterSha256": "0c260fc2424a48582bc75c209763c3de36860c9a953451ff302574c03297d7d3",
+    "beforeSha256LF": "4707246ee064f8ba5ce3401cd555af88f4fb44bf0bc41178fe875c9ce205cbda",
+    "afterSha256LF": "0c260fc2424a48582bc75c209763c3de36860c9a953451ff302574c03297d7d3",
+    "edits": [
+      {
+        "offset": 154,
+        "before": "",
+        "after": "import { isCategoryPath } from \"../../lib/games/category-policy\";\n",
+        "offsetLF": 154
+      },
+      {
+        "offset": 470,
+        "before": "  // A clean document prevents ads already loaded on another page from surviving into /games.\n  if (reloadDocument || isGamesDirectoryPath(href)) {\n",
+        "after": "  // A clean document prevents an existing ad runtime from surviving into a collection.\n  if (reloadDocument || isGamesDirectoryPath(href) || isCategoryPath(href)) {\n",
+        "offsetLF": 470
+      }
+    ]
+  },
+  "scripts/games-index-compat.mjs": {
+    "beforeSha256": "8ff759d48d6745ac451ef4a1ce0816a4f4437df66e8032a284788c36ac0ca50e",
+    "afterSha256": "fc9b87e8c900d32b3058d4a023ff2e58374e173ddd932671ac7079093062ead9",
+    "beforeSha256LF": "8ff759d48d6745ac451ef4a1ce0816a4f4437df66e8032a284788c36ac0ca50e",
+    "afterSha256LF": "fc9b87e8c900d32b3058d4a023ff2e58374e173ddd932671ac7079093062ead9",
+    "edits": [
+      {
+        "offset": 123,
+        "before": "",
+        "after": "import { beforeCategoryHomeNavigation, beforeCategorySampleSource } from \"./category-sample-compat.mjs\";\n",
+        "offsetLF": 123
+      },
+      {
+        "offset": 786,
+        "before": "",
+        "after": "  value = beforeCategorySampleSource(file, value);\n",
+        "offsetLF": 786
+      },
+      {
+        "offset": 1759,
+        "before": "",
+        "after": "  html = beforeCategoryHomeNavigation(html);\n",
+        "offsetLF": 1759
+      }
+    ]
+  },
+  "scripts/check-games-index.mjs": {
+    "beforeSha256": "e2d9dbc476d4e6f9aa996ec181a63d78a3cdcfe5387cc565084e43cd8d64370e",
+    "afterSha256": "df86ca15473cc373707d0451809baf3a81565a931a0536532b8da21c0e694282",
+    "beforeSha256LF": "e2d9dbc476d4e6f9aa996ec181a63d78a3cdcfe5387cc565084e43cd8d64370e",
+    "afterSha256LF": "df86ca15473cc373707d0451809baf3a81565a931a0536532b8da21c0e694282",
+    "edits": [
+      {
+        "offset": 12842,
+        "before": "for (const path of [\"/\", \"/games/example\", \"/games/square-face.swf\", \"/category/face-makers\", \"/gallery\"]) {\n",
+        "after": "for (const path of [\"/\", \"/games/example\", \"/games/square-face.swf\", \"/gallery\"]) {\n",
+        "offsetLF": 12842
+      },
+      {
+        "offset": 13127,
+        "before": "",
+        "after": "// CATEGORY-001 explicitly extends the real loader guard; the original /games predicate is unchanged.\nsame(policy.isGamesDirectoryPath(\"/category/face-makers\"), false);\nconst categoryLoader = scriptHarness(\"/category/face-makers\"); categoryLoader.wait();\nsame(categoryLoader.ads().length, 0, \"confirmed category follow-on blocks ads separately\");\n",
+        "offsetLF": 13127
+      }
+    ]
+  },
+  "package.json": {
+    "beforeSha256": "9052cf21592e8520a39c306773e15414377b96fa0835e1720002f9c0a685aa70",
+    "afterSha256": "5a4ee571c974dcd205cf0fdd5c50e719ff365922193c087b2fefca6074d71436",
+    "beforeSha256LF": "9052cf21592e8520a39c306773e15414377b96fa0835e1720002f9c0a685aa70",
+    "afterSha256LF": "5a4ee571c974dcd205cf0fdd5c50e719ff365922193c087b2fefca6074d71436",
+    "edits": [
+      {
+        "offset": 2142,
+        "before": "",
+        "after": "    \"category-sample:check\": \"node scripts/check-category-sample.mjs\",\n",
+        "offsetLF": 2142
+      }
+    ]
+  },
+  "scripts/README.md": {
+    "beforeSha256": "f8d1930c5445a230e8d378f3b13f94faede8036fac784cbb05a98b418dec69fe",
+    "afterSha256": "761b75b823033edfab51d2cb64bca22b9adf3e3c915acccb1884f6113507c917",
+    "beforeSha256LF": "f8d1930c5445a230e8d378f3b13f94faede8036fac784cbb05a98b418dec69fe",
+    "afterSha256LF": "761b75b823033edfab51d2cb64bca22b9adf3e3c915acccb1884f6113507c917",
+    "edits": [
+      {
+        "offset": 12895,
+        "before": "",
+        "after": "# CATEGORY-001 单页样例回归\n\n`npm run category-sample:check` 核对 Face Makers 样例、五分类真实数据/导航/广告边界和其余四页冻结契约；`-- --built` / `-- --base http://127.0.0.1:3100` 另验构建/当前 HTTP。真实浏览器及网络归属单独记录，不由源码守卫推断。\n\n`category-sample-compat.mjs` 仅逆向已确认的精确源码增量和首页五个分类链接新增的文档导航属性，再交给原 `games-index-compat.mjs` / 迁移 golden。旧 golden 未刷新，UNKNOWN/许可未放宽；缺失片段、额外修改或非预期链接必须失败。此兼容结果不是“源码完全未改”的声明。\n",
+        "offsetLF": 12895
+      }
+    ]
+  }
+}

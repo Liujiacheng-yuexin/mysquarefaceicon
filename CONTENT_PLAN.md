@@ -86,6 +86,15 @@
 - 真实 thumbnail/cover/OG 来源，不复制竞争站素材。
 - Related Games 与父级分类内链，不成为孤岛。
 
+## 游戏内容事实 QA 执行入口
+
+后续经授权的游戏内容创建、数据记录和 AI 草稿审核，先读 [游戏页面独特内容与事实 QA 标准](docs/content/game-page-quality-standard.md)，再复制 [单页审核记录模板](docs/content/game-page-review-template.md) 到当前任务证据目录。
+
+- 标准将现有规则映射到 14 组 GameRecord 字段和具体证据；不只检查非空，不用统一字数或替换游戏名证明独立价值。
+- 审核表逐条区分源码/一手记载/实际操作/未知，分别记录 Agent 自查与人类审核；没有完成人类审核不记 CT-06 通过。
+- 本轮 CONTENT-QA-001 只交付标准与模板，不修改既有页面或自动发布逻辑。规范成果与未来页面审核不是同一次验收；当前状态及证据只以权威 HTML 看板为准。
+- LICENSE-GATE 材料任务保持取消；标准只保留现有 Registry 的真实边界，不重新催件，不把 UNKNOWN 写成许可通过。
+
 ## 页面内容字段
 
 结构化或程序化内容使用 `RULES.md` 附录 D 的字段，包括 `semanticCoverage`、`inboundLinkCount`、`author`、`datePublished` 和真实 `dateModified`。不得重新引入 `primaryKeywordDensity` 发布门禁。

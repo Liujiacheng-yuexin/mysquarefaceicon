@@ -1,0 +1,13 @@
+{
+  "at": "2026-09-22T08:07:55.297Z",
+  "result": "passed",
+  "serviceWorkerControlled": true,
+  "initialRuntimeRequests": 0,
+  "download": {
+    "filename": "my-square-face-icon-512.png",
+    "width": 512,
+    "bytes": 19869
+  },
+  "pageErrors": [],
+  "console": []
+}

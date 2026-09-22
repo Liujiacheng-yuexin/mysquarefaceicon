@@ -1,0 +1,2641 @@
+{
+  "recordedAt": "2026-09-04T02:32:51.594Z",
+  "taskId": "CATEGORY-001",
+  "scope": "CATEGORY_SAMPLE",
+  "result": "有条件通过：本地样例实现与检查完成，待用户验收；全站发布不通过",
+  "userRequest": "确认 CATEGORY-001 单页样例方案，进行开发",
+  "userAcceptanceReceived": false,
+  "remainingPagesImplemented": false,
+  "wholeTaskCompleted": false,
+  "environment": {
+    "root": "D:/LYXGIT/mysquarefaceicon",
+    "branch": "codex/game-platform-rebuild",
+    "head": "c6d30087c2c03a7c4eb8d5bfe6e055e9b8d40228",
+    "dirtyWorktree": true,
+    "node": "v22.16.0",
+    "next": "14.2.35",
+    "react": "18.3.1",
+    "openNext": "1.3.0",
+    "preview": "http://127.0.0.1:3100/category/face-makers",
+    "buildId": "nTDZHFbpW4UvLAIaq4fWV",
+    "browser": "152.0.7977.65",
+    "playwright": "1.62.1",
+    "reason": "Browser plugin not available",
+    "networkInterceptionUsed": false,
+    "physicalDevice": false
+  },
+  "board": {
+    "path": "F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+    "sha256": "b0a86350896a160696393d41079bad354ae4d1380737b0d5dd8e6b7e9f7d20b1",
+    "version": "1.75",
+    "status": "待验收（单页样例；整项未完成）",
+    "sourceAcceptanceCount": 31,
+    "offlineAssertions": 87,
+    "visual": "未验证; no bypass of existing file URL access restriction"
+  },
+  "commands": [
+    {
+      "phase": "code-initial",
+      "name": "type",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.exe",
+        "node_modules/typescript/bin/tsc",
+        "--noEmit",
+        "--incremental",
+        "false"
+      ],
+      "timeout": 120000,
+      "startedAt": "2026-09-04T02:07:51.125Z",
+      "finishedAt": "2026-09-04T02:07:55.022Z",
+      "exitCode": 0,
+      "log": {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\logs\\code-initial-type.json",
+        "sha256": "252466b28e57396d25d87e36fefab8c3c53840cb6afa4b2248d98b1cbf1cde3d"
+      }
+    },
+    {
+      "phase": "code-initial",
+      "name": "lint",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.exe",
+        "node_modules/next/dist/bin/next",
+        "lint"
+      ],
+      "timeout": 120000,
+      "startedAt": "2026-09-04T02:07:55.024Z",
+      "finishedAt": "2026-09-04T02:07:57.725Z",
+      "exitCode": 0,
+      "log": {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\logs\\code-initial-lint.json",
+        "sha256": "12b30adb0b1cb0cacd6150606f61beaf41d9cf427c8d4a22d56358772e70a0ec"
+      }
+    },
+    {
+      "phase": "code-initial",
+      "name": "checker-lint",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.exe",
+        "node_modules/eslint/bin/eslint.js",
+        "scripts/check-games-index.mjs",
+        "scripts/check-category-sample.mjs",
+        "scripts/category-sample-compat.mjs",
+        "scripts/category-sample-test-utils.mjs",
+        "scripts/games-index-compat.mjs",
+        "scripts/check-locale-rights.mjs",
+        "scripts/check-square-homepage.mjs",
+        "scripts/check-oval-legacy-page.mjs",
+        "scripts/check-pixel-external-page.mjs",
+        "--max-warnings",
+        "0"
+      ],
+      "timeout": 60000,
+      "startedAt": "2026-09-04T02:07:57.726Z",
+      "finishedAt": "2026-09-04T02:07:59.623Z",
+      "exitCode": 0,
+      "log": {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\logs\\code-initial-checker-lint.json",
+        "sha256": "bd00f700c3c34fb9d92de0a9f126d6714f38c3796bf03af92d16b1098c5b6620"
+      }
+    },
+    {
+      "phase": "code-initial",
+      "name": "terms:check",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.exe",
+        "scripts/check-terms-rights.mjs"
+      ],
+      "timeout": 120000,
+      "startedAt": "2026-09-04T02:07:59.624Z",
+      "finishedAt": "2026-09-04T02:07:59.706Z",
+      "exitCode": 0,
+      "log": {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\logs\\code-initial-terms-check.json",
+        "sha256": "18fe727caf2fa549051982a4e79214f443c83b33e4cc4fdf0f41a0c98df28ee2"
+      }
+    },
+    {
+      "phase": "code-initial",
+      "name": "about:check",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.exe",
+        "scripts/check-about-rights.mjs"
+      ],
+      "timeout": 120000,
+      "startedAt": "2026-09-04T02:07:59.707Z",
+      "finishedAt": "2026-09-04T02:07:59.789Z",
+      "exitCode": 0,
+      "log": {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\logs\\code-initial-about-check.json",
+        "sha256": "14d9cf19e93c15576b62fb5b5394a150a062a6d63c3ca75fe86b26258d081d7d"
+      }
+    },
+    {
+      "phase": "code-initial",
+      "name": "editorial:check",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.exe",
+        "scripts/check-editorial-rights.mjs"
+      ],
+      "timeout": 120000,
+      "startedAt": "2026-09-04T02:07:59.790Z",
+      "finishedAt": "2026-09-04T02:07:59.870Z",
+      "exitCode": 0,
+      "log": {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\logs\\code-initial-editorial-check.json",
+        "sha256": "a628476d101c94997125c280facee7e57ecf36e262ac80e80670ef13d24b7ccc"
+      }
+    },
+    {
+      "phase": "code-initial",
+      "name": "gallery:check",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.exe",
+        "scripts/check-gallery-rights.mjs"
+      ],
+      "timeout": 120000,
+      "startedAt": "2026-09-04T02:07:59.871Z",
+      "finishedAt": "2026-09-04T02:08:00.417Z",
+      "exitCode": 0,
+      "log": {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\logs\\code-initial-gallery-check.json",
+        "sha256": "c0fde67448852ede66348a2265ec90ebbc0d933b044631739342204d1d2407e9"
+      }
+    },
+    {
+      "phase": "code-initial",
+      "name": "locale:check",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.exe",
+        "scripts/check-locale-rights.mjs"
+      ],
+      "timeout": 120000,
+      "startedAt": "2026-09-04T02:08:00.418Z",
+      "finishedAt": "2026-09-04T02:08:01.155Z",
+      "exitCode": 0,
+      "log": {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\logs\\code-initial-locale-check.json",
+        "sha256": "902466b4f238285ea04a8240deb19c40dcc2f3b5e9a7ba14661c27a92b079dda"
+      }
+    },
+    {
+      "phase": "code-initial",
+      "name": "square-home:check",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.exe",
+        "scripts/check-square-homepage.mjs"
+      ],
+      "timeout": 120000,
+      "startedAt": "2026-09-04T02:08:01.156Z",
+      "finishedAt": "2026-09-04T02:08:03.719Z",
+      "exitCode": 0,
+      "log": {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\logs\\code-initial-square-home-check.json",
+        "sha256": "db20325068eb0977d64966032ba7d41b9fe79c062258abd40761b42aadfad3e8"
+      }
+    },
+    {
+      "phase": "code-initial",
+      "name": "oval-page:check",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.exe",
+        "scripts/check-oval-legacy-page.mjs"
+      ],
+      "timeout": 120000,
+      "startedAt": "2026-09-04T02:08:03.720Z",
+      "finishedAt": "2026-09-04T02:08:06.271Z",
+      "exitCode": 0,
+      "log": {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\logs\\code-initial-oval-page-check.json",
+        "sha256": "f337a6f7f47b56a1d01cd30836f618cadf29e03bfad21921a3ca88dd87566144"
+      }
+    },
+    {
+      "phase": "code-initial",
+      "name": "pixel-page:check",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.exe",
+        "scripts/check-pixel-external-page.mjs"
+      ],
+      "timeout": 120000,
+      "startedAt": "2026-09-04T02:08:06.272Z",
+      "finishedAt": "2026-09-04T02:08:07.871Z",
+      "exitCode": 0,
+      "log": {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\logs\\code-initial-pixel-page-check.json",
+        "sha256": "d15fa10aea3eb05614b2ec69a12066cc621fd2bb4e4d59849d21acdfd1159218"
+      }
+    },
+    {
+      "phase": "code-initial",
+      "name": "games:check",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.exe",
+        "scripts/run-game-data-check.mjs"
+      ],
+      "timeout": 120000,
+      "startedAt": "2026-09-04T02:08:07.872Z",
+      "finishedAt": "2026-09-04T02:08:09.489Z",
+      "exitCode": 0,
+      "log": {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\logs\\code-initial-games-check.json",
+        "sha256": "219721ea63fb68668235d317cbc6be3e063b5655f6c1b37050d0ec81ae9326a5"
+      }
+    },
+    {
+      "phase": "code-initial",
+      "name": "player:check",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.exe",
+        "scripts/run-game-player-check.mjs"
+      ],
+      "timeout": 120000,
+      "startedAt": "2026-09-04T02:08:09.489Z",
+      "finishedAt": "2026-09-04T02:08:11.201Z",
+      "exitCode": 0,
+      "log": {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\logs\\code-initial-player-check.json",
+        "sha256": "47f4572ff6cc95f7f1ca1d94a08f4e63df0f9575ad2c144934c325410c71fd0c"
+      }
+    },
+    {
+      "phase": "code-initial",
+      "name": "routes:check",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.exe",
+        "scripts/run-game-route-check.mjs"
+      ],
+      "timeout": 120000,
+      "startedAt": "2026-09-04T02:08:11.203Z",
+      "finishedAt": "2026-09-04T02:08:14.735Z",
+      "exitCode": 0,
+      "log": {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\logs\\code-initial-routes-check.json",
+        "sha256": "4087614bff5dfb2d88c22b8350a18d4e2a07c69a730bb08960a33d091f614406"
+      }
+    },
+    {
+      "phase": "code-initial",
+      "name": "components:check",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.exe",
+        "scripts/run-game-component-check.mjs"
+      ],
+      "timeout": 120000,
+      "startedAt": "2026-09-04T02:08:14.736Z",
+      "finishedAt": "2026-09-04T02:08:17.470Z",
+      "exitCode": 0,
+      "log": {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\logs\\code-initial-components-check.json",
+        "sha256": "251f06008fc6fe2f94e223db1a8e90a9b0771629d28f6c8acf17daae9ebc1309"
+      }
+    },
+    {
+      "phase": "code-initial",
+      "name": "metadata:check",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.exe",
+        "scripts/run-game-metadata-check.mjs"
+      ],
+      "timeout": 120000,
+      "startedAt": "2026-09-04T02:08:17.471Z",
+      "finishedAt": "2026-09-04T02:08:18.723Z",
+      "exitCode": 0,
+      "log": {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\logs\\code-initial-metadata-check.json",
+        "sha256": "d101b89724360f5abcbf655479e0df730f9371666b2ccfb8b434f1d05104571b"
+      }
+    },
+    {
+      "phase": "code-initial",
+      "name": "home:check",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.exe",
+        "scripts/run-home-information-architecture-check.mjs"
+      ],
+      "timeout": 120000,
+      "startedAt": "2026-09-04T02:08:18.724Z",
+      "finishedAt": "2026-09-04T02:08:20.932Z",
+      "exitCode": 0,
+      "log": {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\logs\\code-initial-home-check.json",
+        "sha256": "e5ef8240ba44420da093bc68f9bb7508c433daf19d167f96872214ac8a4117fb"
+      }
+    },
+    {
+      "phase": "code-initial",
+      "name": "home-hero:check",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.exe",
+        "scripts/run-home-hero-check.mjs"
+      ],
+      "timeout": 120000,
+      "startedAt": "2026-09-04T02:08:20.933Z",
+      "finishedAt": "2026-09-04T02:08:22.949Z",
+      "exitCode": 0,
+      "log": {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\logs\\code-initial-home-hero-check.json",
+        "sha256": "82313b9173dd986f964a205c379e03c60b339ee83c72e23e7fc641b242f9f075"
+      }
+    },
+    {
+      "phase": "code-initial",
+      "name": "home-discovery:check",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.exe",
+        "scripts/run-home-discovery-check.mjs"
+      ],
+      "timeout": 120000,
+      "startedAt": "2026-09-04T02:08:22.950Z",
+      "finishedAt": "2026-09-04T02:08:24.874Z",
+      "exitCode": 0,
+      "log": {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\logs\\code-initial-home-discovery-check.json",
+        "sha256": "8666b499edce63a4017899537ed67228dfb35e20e18756eaa551a2f795be4d23"
+      }
+    },
+    {
+      "phase": "code-initial",
+      "name": "home-gallery:check",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.exe",
+        "scripts/run-home-gallery-check.mjs"
+      ],
+      "timeout": 120000,
+      "startedAt": "2026-09-04T02:08:24.875Z",
+      "finishedAt": "2026-09-04T02:08:28.402Z",
+      "exitCode": 0,
+      "log": {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\logs\\code-initial-home-gallery-check.json",
+        "sha256": "a6726a2db5db1efd19be48d58342ac8dcf2a8f382f9620403e3230874f3287b7"
+      }
+    },
+    {
+      "phase": "code-initial",
+      "name": "perf-home:check",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.exe",
+        "scripts/run-home-performance-check.mjs"
+      ],
+      "timeout": 120000,
+      "startedAt": "2026-09-04T02:08:28.402Z",
+      "finishedAt": "2026-09-04T02:08:30.542Z",
+      "exitCode": 0,
+      "log": {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\logs\\code-initial-perf-home-check.json",
+        "sha256": "babf4b697913978031f947c5a31133de2d95cf1e821e9a9c7f4d24fa0961795b"
+      }
+    },
+    {
+      "phase": "code-initial",
+      "name": "game-template:check",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.exe",
+        "scripts/run-game-template-check.mjs"
+      ],
+      "timeout": 120000,
+      "startedAt": "2026-09-04T02:08:30.543Z",
+      "finishedAt": "2026-09-04T02:08:33.335Z",
+      "exitCode": 0,
+      "log": {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\logs\\code-initial-game-template-check.json",
+        "sha256": "573aa0d596259458f69a9a42020ed39bdc8f8ee7a8b528bd2fb5f68fd4b0adc1"
+      },
+      "warning": "Warning: React does not recognize the `fetchPriority` prop on a DOM element. If you intentionally want it to appear in the DOM as a custom attribute, spell it as lowercase `fetchpriority` instead. If you accidentally passed it from a parent component, remove it from the DOM element.\n    at img\n    at button\n    at div\n    at div\n    at div\n    at G"
+    },
+    {
+      "phase": "code-initial",
+      "name": "canonical:check",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.exe",
+        "scripts/run-canonical-host-check.mjs"
+      ],
+      "timeout": 120000,
+      "startedAt": "2026-09-04T02:08:33.336Z",
+      "finishedAt": "2026-09-04T02:08:34.440Z",
+      "exitCode": 0,
+      "log": {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\logs\\code-initial-canonical-check.json",
+        "sha256": "93a1885438495e00d04bd6934dbbbf224737308edb762b13f6e2d21c6e9bb605"
+      }
+    },
+    {
+      "phase": "code-initial",
+      "name": "games-index:check",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.exe",
+        "scripts/check-games-index.mjs"
+      ],
+      "timeout": 120000,
+      "startedAt": "2026-09-04T02:08:34.442Z",
+      "finishedAt": "2026-09-04T02:08:35.515Z",
+      "exitCode": 0,
+      "log": {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\logs\\code-initial-games-index-check.json",
+        "sha256": "68800fb11ac2b676194fc67c5811ecc84a889ff0b1a65d79c751bc291992a20f"
+      }
+    },
+    {
+      "phase": "code-initial",
+      "name": "category-sample:check",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.exe",
+        "scripts/check-category-sample.mjs"
+      ],
+      "timeout": 120000,
+      "startedAt": "2026-09-04T02:08:35.516Z",
+      "finishedAt": "2026-09-04T02:08:37.105Z",
+      "exitCode": 0,
+      "log": {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\logs\\code-initial-category-sample-check.json",
+        "sha256": "e42aed9416ed846779e17d7009557a5b7bcb8d4e27accbee127ecd8c9d7b8552"
+      }
+    },
+    {
+      "phase": "build",
+      "name": "next-build",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.exe",
+        "node_modules/next/dist/bin/next",
+        "build"
+      ],
+      "timeout": 600000,
+      "startedAt": "2026-09-04T02:09:05.016Z",
+      "finishedAt": "2026-09-04T02:09:24.264Z",
+      "exitCode": 0,
+      "log": {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\logs\\build-next-build.json",
+        "sha256": "f5570900099f475c882c503b2547459d36a0fe1955180b75282586ce41adb6f5"
+      }
+    },
+    {
+      "phase": "build",
+      "name": "opennext-build",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.exe",
+        "node_modules/@opennextjs/cloudflare/dist/cli/index.js",
+        "build"
+      ],
+      "timeout": 600000,
+      "startedAt": "2026-09-04T02:09:24.267Z",
+      "finishedAt": "2026-09-04T02:10:07.871Z",
+      "exitCode": 0,
+      "log": {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\logs\\build-opennext-build.json",
+        "sha256": "4e2b7d1d7f9006de8b5a3a7c94079ec80b3530671a1211edf441f5908247d39b"
+      },
+      "warning": "WARN OpenNext is not fully compatible with Windows.\nWARN For optimal performance, it is recommended to use Windows Subsystem for Linux (WSL).\nWARN While OpenNext may function on Windows, it could encounter unpredictable failures during runtime."
+    },
+    {
+      "phase": "build",
+      "name": "opennext-patch",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.exe",
+        "scripts/patch-opennext-worker.mjs"
+      ],
+      "timeout": 60000,
+      "startedAt": "2026-09-04T02:10:07.872Z",
+      "finishedAt": "2026-09-04T02:10:08.398Z",
+      "exitCode": 0,
+      "log": {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\logs\\build-opennext-patch.json",
+        "sha256": "948e30f9f94119a90b1b61148fa733db66cbdd28cb3f4cc9add1165a3157df23"
+      }
+    },
+    {
+      "phase": "built",
+      "name": "terms-built",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.exe",
+        "scripts/check-terms-rights.mjs",
+        "--built"
+      ],
+      "timeout": 120000,
+      "startedAt": "2026-09-04T02:11:52.910Z",
+      "finishedAt": "2026-09-04T02:11:52.997Z",
+      "exitCode": 0,
+      "log": {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\logs\\built-terms-built.json",
+        "sha256": "5eb8a0a4ee81c266692e4af7382cfab531e36923c19c9de482f04ad24fe4cf59"
+      }
+    },
+    {
+      "phase": "built",
+      "name": "about-built",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.exe",
+        "scripts/check-about-rights.mjs",
+        "--built"
+      ],
+      "timeout": 120000,
+      "startedAt": "2026-09-04T02:11:52.999Z",
+      "finishedAt": "2026-09-04T02:11:53.086Z",
+      "exitCode": 0,
+      "log": {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\logs\\built-about-built.json",
+        "sha256": "6d98628546623d169bb7df0c70c3b0be102067d8285ff339c043fd6c4ba656b8"
+      }
+    },
+    {
+      "phase": "built",
+      "name": "editorial-built",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.exe",
+        "scripts/check-editorial-rights.mjs",
+        "--built"
+      ],
+      "timeout": 120000,
+      "startedAt": "2026-09-04T02:11:53.087Z",
+      "finishedAt": "2026-09-04T02:11:53.184Z",
+      "exitCode": 0,
+      "log": {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\logs\\built-editorial-built.json",
+        "sha256": "02282d27e5e2faa026d5ec53b5aa39426162a52a64940779cf789314e43609d5"
+      }
+    },
+    {
+      "phase": "built",
+      "name": "gallery-built",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.exe",
+        "scripts/check-gallery-rights.mjs",
+        "--built"
+      ],
+      "timeout": 120000,
+      "startedAt": "2026-09-04T02:11:53.185Z",
+      "finishedAt": "2026-09-04T02:11:53.799Z",
+      "exitCode": 0,
+      "log": {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\logs\\built-gallery-built.json",
+        "sha256": "e5636d2df8db07735939043549faf06e2fc17d0905f478dfcf3a7cd1f670e5ae"
+      }
+    },
+    {
+      "phase": "built",
+      "name": "locale-built",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.exe",
+        "scripts/check-locale-rights.mjs",
+        "--built"
+      ],
+      "timeout": 120000,
+      "startedAt": "2026-09-04T02:11:53.800Z",
+      "finishedAt": "2026-09-04T02:11:54.597Z",
+      "exitCode": 0,
+      "log": {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\logs\\built-locale-built.json",
+        "sha256": "f6fbbda71aba9cce8015c36f0e755176abd3d765adca57530de4835174066b9f"
+      }
+    },
+    {
+      "phase": "built",
+      "name": "oval-page-built",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.exe",
+        "scripts/check-oval-legacy-page.mjs",
+        "--built"
+      ],
+      "timeout": 120000,
+      "startedAt": "2026-09-04T02:11:54.599Z",
+      "finishedAt": "2026-09-04T02:11:57.139Z",
+      "exitCode": 0,
+      "log": {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\logs\\built-oval-page-built.json",
+        "sha256": "08b6951ea7fb27af1889214c39c920d3b68c7886e7490ae1ba598243e12bae66"
+      }
+    },
+    {
+      "phase": "built",
+      "name": "pixel-page-built",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.exe",
+        "scripts/check-pixel-external-page.mjs",
+        "--built"
+      ],
+      "timeout": 120000,
+      "startedAt": "2026-09-04T02:11:57.140Z",
+      "finishedAt": "2026-09-04T02:11:58.840Z",
+      "exitCode": 0,
+      "log": {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\logs\\built-pixel-page-built.json",
+        "sha256": "d2526d8ebdfa8341e668f32844975bbba8a3146043b3e6b6513f518a3c78877f"
+      }
+    },
+    {
+      "phase": "built",
+      "name": "games-index-built",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.exe",
+        "scripts/check-games-index.mjs",
+        "--built"
+      ],
+      "timeout": 120000,
+      "startedAt": "2026-09-04T02:11:58.841Z",
+      "finishedAt": "2026-09-04T02:11:59.903Z",
+      "exitCode": 0,
+      "log": {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\logs\\built-games-index-built.json",
+        "sha256": "bdac490753d04a5ecc248415491198160bb43a4efeb443cff62ea9a73a9a4d26"
+      }
+    },
+    {
+      "phase": "built",
+      "name": "category-sample-built",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.exe",
+        "scripts/check-category-sample.mjs",
+        "--built"
+      ],
+      "timeout": 120000,
+      "startedAt": "2026-09-04T02:11:59.904Z",
+      "finishedAt": "2026-09-04T02:12:01.447Z",
+      "exitCode": 0,
+      "log": {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\logs\\built-category-sample-built.json",
+        "sha256": "e5ba8667778e898b15cd5428a0e39dfe1a11799151b76a32ccf2e2edb204c06e"
+      }
+    },
+    {
+      "phase": "http",
+      "name": "terms-http",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.exe",
+        "scripts/check-terms-rights.mjs",
+        "--base",
+        "http://127.0.0.1:3100"
+      ],
+      "timeout": 120000,
+      "startedAt": "2026-09-04T02:12:01.516Z",
+      "finishedAt": "2026-09-04T02:12:01.773Z",
+      "exitCode": 0,
+      "log": {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\logs\\http-terms-http.json",
+        "sha256": "38693d1c935f892a13ce456ffac5a9a59df7718bfd7088297372146a8aacc5ba"
+      }
+    },
+    {
+      "phase": "http",
+      "name": "about-http",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.exe",
+        "scripts/check-about-rights.mjs",
+        "--base",
+        "http://127.0.0.1:3100"
+      ],
+      "timeout": 120000,
+      "startedAt": "2026-09-04T02:12:01.776Z",
+      "finishedAt": "2026-09-04T02:12:01.906Z",
+      "exitCode": 0,
+      "log": {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\logs\\http-about-http.json",
+        "sha256": "37e22182008e2d3a05df38c21ada8ef96302db2e0d8d19c32796703ba548f1c1"
+      }
+    },
+    {
+      "phase": "http",
+      "name": "editorial-http",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.exe",
+        "scripts/check-editorial-rights.mjs",
+        "--base",
+        "http://127.0.0.1:3100"
+      ],
+      "timeout": 120000,
+      "startedAt": "2026-09-04T02:12:01.907Z",
+      "finishedAt": "2026-09-04T02:12:02.037Z",
+      "exitCode": 0,
+      "log": {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\logs\\http-editorial-http.json",
+        "sha256": "c63d1b2d015608c64af595f3ecf36e41b6e021926ab76aa332609f9b450b61ed"
+      }
+    },
+    {
+      "phase": "http",
+      "name": "gallery-http",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.exe",
+        "scripts/check-gallery-rights.mjs",
+        "--base",
+        "http://127.0.0.1:3100"
+      ],
+      "timeout": 120000,
+      "startedAt": "2026-09-04T02:12:02.038Z",
+      "finishedAt": "2026-09-04T02:12:02.654Z",
+      "exitCode": 0,
+      "log": {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\logs\\http-gallery-http.json",
+        "sha256": "b465fecb0b36f78aee2a3c4015f3c7f2654a580f5cb6768e58a8a586a51215f4"
+      }
+    },
+    {
+      "phase": "http",
+      "name": "locale-http",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.exe",
+        "scripts/check-locale-rights.mjs",
+        "--base",
+        "http://127.0.0.1:3100"
+      ],
+      "timeout": 120000,
+      "startedAt": "2026-09-04T02:12:02.655Z",
+      "finishedAt": "2026-09-04T02:12:03.649Z",
+      "exitCode": 0,
+      "log": {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\logs\\http-locale-http.json",
+        "sha256": "4063c99ae6ab1bcd0e88d2702d7d8d62f3c5c365496af96434a6c7358c7eb789"
+      }
+    },
+    {
+      "phase": "http",
+      "name": "oval-page-http",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.exe",
+        "scripts/check-oval-legacy-page.mjs",
+        "--base",
+        "http://127.0.0.1:3100"
+      ],
+      "timeout": 120000,
+      "startedAt": "2026-09-04T02:12:03.650Z",
+      "finishedAt": "2026-09-04T02:12:06.912Z",
+      "exitCode": 0,
+      "log": {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\logs\\http-oval-page-http.json",
+        "sha256": "821ba7a31b63e982e11c06031e219700e9cbe8ace0e1b0eef94715a5d8f6728c"
+      }
+    },
+    {
+      "phase": "http",
+      "name": "pixel-page-http",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.exe",
+        "scripts/check-pixel-external-page.mjs",
+        "--base",
+        "http://127.0.0.1:3100"
+      ],
+      "timeout": 120000,
+      "startedAt": "2026-09-04T02:12:06.913Z",
+      "finishedAt": "2026-09-04T02:12:09.093Z",
+      "exitCode": 0,
+      "log": {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\logs\\http-pixel-page-http.json",
+        "sha256": "d2cbcd77f7842f48eab4ab367eb9d09dfa21170640858057ca03982443b3dcb6"
+      }
+    },
+    {
+      "phase": "http",
+      "name": "games-index-http",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.exe",
+        "scripts/check-games-index.mjs",
+        "--base",
+        "http://127.0.0.1:3100"
+      ],
+      "timeout": 120000,
+      "startedAt": "2026-09-04T02:12:09.094Z",
+      "finishedAt": "2026-09-04T02:12:10.253Z",
+      "exitCode": 0,
+      "log": {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\logs\\http-games-index-http.json",
+        "sha256": "83641c37a2b7810f90c8e75a27f508fa2114e9e4182223167da26c038d91d623"
+      }
+    },
+    {
+      "phase": "http",
+      "name": "category-sample-http",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.exe",
+        "scripts/check-category-sample.mjs",
+        "--base",
+        "http://127.0.0.1:3100"
+      ],
+      "timeout": 120000,
+      "startedAt": "2026-09-04T02:12:10.256Z",
+      "finishedAt": "2026-09-04T02:12:12.187Z",
+      "exitCode": 0,
+      "log": {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\logs\\http-category-sample-http.json",
+        "sha256": "aafa0c1cb53f36da51d8f8644014c52fde227b875e1a578110662e119ab0d2eb"
+      }
+    },
+    {
+      "phase": "http",
+      "name": "robots",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.exe",
+        "scripts/check-ai-crawler-policy.mjs",
+        "--base",
+        "http://127.0.0.1:3100"
+      ],
+      "timeout": 120000,
+      "startedAt": "2026-09-04T02:12:12.188Z",
+      "finishedAt": "2026-09-04T02:12:12.297Z",
+      "exitCode": 0,
+      "log": {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\logs\\http-robots.json",
+        "sha256": "7b5201cfe7846f9fc9c92092ba921f4a0f3713465b6096c4dabfcf2cc291eef8"
+      }
+    },
+    {
+      "phase": "http",
+      "name": "seo",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.exe",
+        "scripts/seo-check.mjs",
+        "--base",
+        "http://127.0.0.1:3100"
+      ],
+      "timeout": 180000,
+      "startedAt": "2026-09-04T02:12:12.298Z",
+      "finishedAt": "2026-09-04T02:12:12.569Z",
+      "exitCode": 0,
+      "log": {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\logs\\http-seo.json",
+        "sha256": "b143df84fa363e2d57a461014744176c1e73d13e3696a55872b71565f38e6753"
+      },
+      "warning": "正在检查 20 个 URL …\n正在探测 8 个站内链接目标 …"
+    }
+  ],
+  "checks": {
+    "category": {
+      "source": {
+        "assertions": 581,
+        "negativeFixtures": 80
+      },
+      "built": {
+        "assertions": 587,
+        "negativeFixtures": 90
+      },
+      "http": {
+        "assertions": 598,
+        "negativeFixtures": 90
+      }
+    },
+    "nextAndPlatform": "PASS; no deployment",
+    "staticRoutes": 42,
+    "seo": {
+      "pages": 20,
+      "must": 0,
+      "should": 12,
+      "semanticKW04": "未验证"
+    },
+    "gitDiffCheck": {
+      "exitCode": 0,
+      "warningCount": 40
+    }
+  },
+  "browser": {
+    "viewportCases": [
+      {
+        "slug": "face-makers",
+        "width": 1280,
+        "height": 900,
+        "consoleWarningsErrors": 0,
+        "overflow": false,
+        "nonBlank": true,
+        "frameworkOverlay": false,
+        "firstCardBottom": 707.546875
+      },
+      {
+        "slug": "avatar-makers",
+        "width": 1280,
+        "height": 900,
+        "consoleWarningsErrors": 0,
+        "overflow": false,
+        "nonBlank": true,
+        "frameworkOverlay": false,
+        "firstCardBottom": 677.09375
+      },
+      {
+        "slug": "pixel-avatars",
+        "width": 1280,
+        "height": 900,
+        "consoleWarningsErrors": 0,
+        "overflow": false,
+        "nonBlank": true,
+        "frameworkOverlay": false,
+        "firstCardBottom": 707.546875
+      },
+      {
+        "slug": "retro-flash",
+        "width": 1280,
+        "height": 900,
+        "consoleWarningsErrors": 0,
+        "overflow": false,
+        "nonBlank": true,
+        "frameworkOverlay": false,
+        "firstCardBottom": 707.546875
+      },
+      {
+        "slug": "character-creators",
+        "width": 1280,
+        "height": 900,
+        "consoleWarningsErrors": 0,
+        "overflow": false,
+        "nonBlank": true,
+        "frameworkOverlay": false,
+        "firstCardBottom": 707.546875
+      },
+      {
+        "slug": "face-makers",
+        "width": 390,
+        "height": 844,
+        "consoleWarningsErrors": 0,
+        "overflow": false,
+        "nonBlank": true,
+        "frameworkOverlay": false,
+        "firstCardBottom": 650.8125
+      },
+      {
+        "slug": "avatar-makers",
+        "width": 390,
+        "height": 844,
+        "consoleWarningsErrors": 0,
+        "overflow": false,
+        "nonBlank": true,
+        "frameworkOverlay": false,
+        "firstCardBottom": 650.8125
+      },
+      {
+        "slug": "pixel-avatars",
+        "width": 390,
+        "height": 844,
+        "consoleWarningsErrors": 0,
+        "overflow": false,
+        "nonBlank": true,
+        "frameworkOverlay": false,
+        "firstCardBottom": 696.140625
+      },
+      {
+        "slug": "retro-flash",
+        "width": 390,
+        "height": 844,
+        "consoleWarningsErrors": 0,
+        "overflow": false,
+        "nonBlank": true,
+        "frameworkOverlay": false,
+        "firstCardBottom": 650.8125
+      },
+      {
+        "slug": "character-creators",
+        "width": 390,
+        "height": 844,
+        "consoleWarningsErrors": 0,
+        "overflow": false,
+        "nonBlank": true,
+        "frameworkOverlay": false,
+        "firstCardBottom": 696.140625
+      },
+      {
+        "slug": "face-makers",
+        "width": 360,
+        "height": 800,
+        "consoleWarningsErrors": 0,
+        "overflow": false,
+        "nonBlank": true,
+        "frameworkOverlay": false,
+        "firstCardBottom": 673.140625
+      },
+      {
+        "slug": "avatar-makers",
+        "width": 360,
+        "height": 800,
+        "consoleWarningsErrors": 0,
+        "overflow": false,
+        "nonBlank": true,
+        "frameworkOverlay": false,
+        "firstCardBottom": 673.140625
+      },
+      {
+        "slug": "pixel-avatars",
+        "width": 360,
+        "height": 800,
+        "consoleWarningsErrors": 0,
+        "overflow": false,
+        "nonBlank": true,
+        "frameworkOverlay": false,
+        "firstCardBottom": 696.140625
+      },
+      {
+        "slug": "retro-flash",
+        "width": 360,
+        "height": 800,
+        "consoleWarningsErrors": 0,
+        "overflow": false,
+        "nonBlank": true,
+        "frameworkOverlay": false,
+        "firstCardBottom": 673.140625
+      },
+      {
+        "slug": "character-creators",
+        "width": 360,
+        "height": 800,
+        "consoleWarningsErrors": 0,
+        "overflow": false,
+        "nonBlank": true,
+        "frameworkOverlay": false,
+        "firstCardBottom": 752.078125
+      }
+    ],
+    "comparison": {
+      "recordedAt": "2026-09-04T02:15:13.236Z",
+      "result": "PASS",
+      "cases": 15,
+      "otherPageExactScreenshotPairs": 12,
+      "results": [
+        {
+          "slug": "face-makers",
+          "width": 1280,
+          "result": "PASS",
+          "otherPagePixelIdentical": false,
+          "cardGeometryUnchanged": true,
+          "firstCardBottom": 707.546875,
+          "beforeScreenshotSha256": "752d262696cb9ff993566361ccb0d00dfbc5b15fcdbaa1642faad97cc99a50bb",
+          "afterScreenshotSha256": "11812261442919e4762ff5de9324798410c1df49a737be8f01a914813192b930"
+        },
+        {
+          "slug": "avatar-makers",
+          "width": 1280,
+          "result": "PASS",
+          "otherPagePixelIdentical": true,
+          "cardGeometryUnchanged": true,
+          "firstCardBottom": 677.09375,
+          "beforeScreenshotSha256": "9c6bfd39583514e38482617ef8e11364f4ce4e1665f6d5382fd4956be3feca39",
+          "afterScreenshotSha256": "9c6bfd39583514e38482617ef8e11364f4ce4e1665f6d5382fd4956be3feca39"
+        },
+        {
+          "slug": "pixel-avatars",
+          "width": 1280,
+          "result": "PASS",
+          "otherPagePixelIdentical": true,
+          "cardGeometryUnchanged": true,
+          "firstCardBottom": 707.546875,
+          "beforeScreenshotSha256": "e85a34fc412b6dee6c15a11215fae784568c2dcad3957a2d574458d4f25250e5",
+          "afterScreenshotSha256": "e85a34fc412b6dee6c15a11215fae784568c2dcad3957a2d574458d4f25250e5"
+        },
+        {
+          "slug": "retro-flash",
+          "width": 1280,
+          "result": "PASS",
+          "otherPagePixelIdentical": true,
+          "cardGeometryUnchanged": true,
+          "firstCardBottom": 707.546875,
+          "beforeScreenshotSha256": "6658749c959c376afb0461d30981f21db7b536c8d0371500e96cc1dfa7a52c09",
+          "afterScreenshotSha256": "6658749c959c376afb0461d30981f21db7b536c8d0371500e96cc1dfa7a52c09"
+        },
+        {
+          "slug": "character-creators",
+          "width": 1280,
+          "result": "PASS",
+          "otherPagePixelIdentical": true,
+          "cardGeometryUnchanged": true,
+          "firstCardBottom": 707.546875,
+          "beforeScreenshotSha256": "f9b9f85237fc5611ac81ae9c682ba5239561a890e089d036bc9d23be0e9c6f64",
+          "afterScreenshotSha256": "f9b9f85237fc5611ac81ae9c682ba5239561a890e089d036bc9d23be0e9c6f64"
+        },
+        {
+          "slug": "face-makers",
+          "width": 390,
+          "result": "PASS",
+          "otherPagePixelIdentical": false,
+          "cardGeometryUnchanged": true,
+          "firstCardBottom": 650.8125,
+          "beforeScreenshotSha256": "15cea4e32a48f430333d3b7f476e6a76ee03374ad8a5b09c1f3369cf2ce3b411",
+          "afterScreenshotSha256": "0e36df393c2b6988a0a8d945ae01ac33173908a578813f731b9236cc6748efa8"
+        },
+        {
+          "slug": "avatar-makers",
+          "width": 390,
+          "result": "PASS",
+          "otherPagePixelIdentical": true,
+          "cardGeometryUnchanged": true,
+          "firstCardBottom": 650.8125,
+          "beforeScreenshotSha256": "09966daac25fea1cfabaf675f003ad5a5a967f00348731fadb4b32e387c7563e",
+          "afterScreenshotSha256": "09966daac25fea1cfabaf675f003ad5a5a967f00348731fadb4b32e387c7563e"
+        },
+        {
+          "slug": "pixel-avatars",
+          "width": 390,
+          "result": "PASS",
+          "otherPagePixelIdentical": true,
+          "cardGeometryUnchanged": true,
+          "firstCardBottom": 696.140625,
+          "beforeScreenshotSha256": "dce88464670d685f56160ad7c91eace6c803219ed1315946befdcbf4360bc681",
+          "afterScreenshotSha256": "dce88464670d685f56160ad7c91eace6c803219ed1315946befdcbf4360bc681"
+        },
+        {
+          "slug": "retro-flash",
+          "width": 390,
+          "result": "PASS",
+          "otherPagePixelIdentical": true,
+          "cardGeometryUnchanged": true,
+          "firstCardBottom": 650.8125,
+          "beforeScreenshotSha256": "4c660f67a512d23d86be4a24bd4365c3840aee600f3ec500e4c9a163cba0ab59",
+          "afterScreenshotSha256": "4c660f67a512d23d86be4a24bd4365c3840aee600f3ec500e4c9a163cba0ab59"
+        },
+        {
+          "slug": "character-creators",
+          "width": 390,
+          "result": "PASS",
+          "otherPagePixelIdentical": true,
+          "cardGeometryUnchanged": true,
+          "firstCardBottom": 696.140625,
+          "beforeScreenshotSha256": "8b0f9d7d01da031b4dbdb250a9398cb1c6dce57478dad5e9688fb0eaa2120457",
+          "afterScreenshotSha256": "8b0f9d7d01da031b4dbdb250a9398cb1c6dce57478dad5e9688fb0eaa2120457"
+        },
+        {
+          "slug": "face-makers",
+          "width": 360,
+          "result": "PASS",
+          "otherPagePixelIdentical": false,
+          "cardGeometryUnchanged": true,
+          "firstCardBottom": 673.140625,
+          "beforeScreenshotSha256": "6e55947d24a2245c8dd141f56fbc5d4e67c07e97e04ffa5dc7f3498d66d7881b",
+          "afterScreenshotSha256": "464b44181444b59d928f9123a79fe0f1c241873214ef06bfe331587a007c35ff"
+        },
+        {
+          "slug": "avatar-makers",
+          "width": 360,
+          "result": "PASS",
+          "otherPagePixelIdentical": true,
+          "cardGeometryUnchanged": true,
+          "firstCardBottom": 673.140625,
+          "beforeScreenshotSha256": "a9f83c9b0097d67f36e3d768ea2c14946a24fd56115dbe0ce3ae42d892f6c03c",
+          "afterScreenshotSha256": "a9f83c9b0097d67f36e3d768ea2c14946a24fd56115dbe0ce3ae42d892f6c03c"
+        },
+        {
+          "slug": "pixel-avatars",
+          "width": 360,
+          "result": "PASS",
+          "otherPagePixelIdentical": true,
+          "cardGeometryUnchanged": true,
+          "firstCardBottom": 696.140625,
+          "beforeScreenshotSha256": "127a41da1c12788e314981d300efa2fe3c312113b8ebe6c4502790c33ce8e73c",
+          "afterScreenshotSha256": "127a41da1c12788e314981d300efa2fe3c312113b8ebe6c4502790c33ce8e73c"
+        },
+        {
+          "slug": "retro-flash",
+          "width": 360,
+          "result": "PASS",
+          "otherPagePixelIdentical": true,
+          "cardGeometryUnchanged": true,
+          "firstCardBottom": 673.140625,
+          "beforeScreenshotSha256": "4b3f991aa9d2c67bc5b16834b83061c8ae8cd0e5e5f40c1dcb6b313bd65af9ba",
+          "afterScreenshotSha256": "4b3f991aa9d2c67bc5b16834b83061c8ae8cd0e5e5f40c1dcb6b313bd65af9ba"
+        },
+        {
+          "slug": "character-creators",
+          "width": 360,
+          "result": "PASS",
+          "otherPagePixelIdentical": true,
+          "cardGeometryUnchanged": true,
+          "firstCardBottom": 752.078125,
+          "beforeScreenshotSha256": "2d664c05d535d5b0a85f8d4fa71849464d9e5411df6421eeb7debd5c1ce483e2",
+          "afterScreenshotSha256": "2d664c05d535d5b0a85f8d4fa71849464d9e5411df6421eeb7debd5c1ce483e2"
+        }
+      ]
+    },
+    "mainFlowCount": 45,
+    "mainFlows": [
+      {
+        "flow": "already-loaded home ads to category clean document",
+        "width": 1280,
+        "sourceAdScripts": 1,
+        "newDocument": true
+      },
+      {
+        "flow": "category/home back-forward-back",
+        "width": 1280
+      },
+      {
+        "flow": "sample exit and browser back",
+        "width": 1280,
+        "selector": "main [data-game-id=\"oval-face\"]",
+        "target": "/oval-face-icon-generator"
+      },
+      {
+        "flow": "sample exit and browser back",
+        "width": 1280,
+        "selector": "main [data-category-slug=\"avatar-makers\"]",
+        "target": "/category/avatar-makers"
+      },
+      {
+        "flow": "sample exit and browser back",
+        "width": 1280,
+        "selector": "main [data-category-slug=\"pixel-avatars\"]",
+        "target": "/category/pixel-avatars"
+      },
+      {
+        "flow": "sample exit and browser back",
+        "width": 1280,
+        "selector": "main [data-category-slug=\"retro-flash\"]",
+        "target": "/category/retro-flash"
+      },
+      {
+        "flow": "sample exit and browser back",
+        "width": 1280,
+        "selector": "main [data-category-slug=\"character-creators\"]",
+        "target": "/category/character-creators"
+      },
+      {
+        "flow": "sample exit and browser back",
+        "width": 1280,
+        "selector": "main .route-return-links a[href=\"/games\"]",
+        "target": "/games"
+      },
+      {
+        "flow": "sample exit and browser back",
+        "width": 1280,
+        "selector": "main .route-return-links a[href=\"/\"]",
+        "target": "/"
+      },
+      {
+        "flow": "directory-category-breadcrumb-directory",
+        "width": 1280
+      },
+      {
+        "flow": "shared menu to directory",
+        "width": 1280
+      },
+      {
+        "flow": "Tab visible focus and Enter first card",
+        "width": 1280,
+        "focus": {
+          "id": "square-face",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "boxShadow": "none",
+          "bottom": 707.546875,
+          "top": 517.546875,
+          "width": 523
+        }
+      },
+      {
+        "flow": "hydrated 404 and directory return",
+        "width": 1280,
+        "pathname": "/category"
+      },
+      {
+        "flow": "hydrated 404 and directory return",
+        "width": 1280,
+        "pathname": "/category/unknown"
+      },
+      {
+        "flow": "hydrated 404 and directory return",
+        "width": 1280,
+        "pathname": "/category/face-makers/extra"
+      },
+      {
+        "flow": "already-loaded home ads to category clean document",
+        "width": 390,
+        "sourceAdScripts": 1,
+        "newDocument": true
+      },
+      {
+        "flow": "category/home back-forward-back",
+        "width": 390
+      },
+      {
+        "flow": "sample exit and browser back",
+        "width": 390,
+        "selector": "main [data-game-id=\"oval-face\"]",
+        "target": "/oval-face-icon-generator"
+      },
+      {
+        "flow": "sample exit and browser back",
+        "width": 390,
+        "selector": "main [data-category-slug=\"avatar-makers\"]",
+        "target": "/category/avatar-makers"
+      },
+      {
+        "flow": "sample exit and browser back",
+        "width": 390,
+        "selector": "main [data-category-slug=\"pixel-avatars\"]",
+        "target": "/category/pixel-avatars"
+      },
+      {
+        "flow": "sample exit and browser back",
+        "width": 390,
+        "selector": "main [data-category-slug=\"retro-flash\"]",
+        "target": "/category/retro-flash"
+      },
+      {
+        "flow": "sample exit and browser back",
+        "width": 390,
+        "selector": "main [data-category-slug=\"character-creators\"]",
+        "target": "/category/character-creators"
+      },
+      {
+        "flow": "sample exit and browser back",
+        "width": 390,
+        "selector": "main .route-return-links a[href=\"/games\"]",
+        "target": "/games"
+      },
+      {
+        "flow": "sample exit and browser back",
+        "width": 390,
+        "selector": "main .route-return-links a[href=\"/\"]",
+        "target": "/"
+      },
+      {
+        "flow": "directory-category-breadcrumb-directory",
+        "width": 390
+      },
+      {
+        "flow": "shared menu to directory",
+        "width": 390
+      },
+      {
+        "flow": "Tab visible focus and Enter first card",
+        "width": 390,
+        "focus": {
+          "id": "square-face",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "boxShadow": "none",
+          "bottom": 650.8125,
+          "top": 445.890625,
+          "width": 326
+        }
+      },
+      {
+        "flow": "hydrated 404 and directory return",
+        "width": 390,
+        "pathname": "/category"
+      },
+      {
+        "flow": "hydrated 404 and directory return",
+        "width": 390,
+        "pathname": "/category/unknown"
+      },
+      {
+        "flow": "hydrated 404 and directory return",
+        "width": 390,
+        "pathname": "/category/face-makers/extra"
+      },
+      {
+        "flow": "already-loaded home ads to category clean document",
+        "width": 360,
+        "sourceAdScripts": 1,
+        "newDocument": true
+      },
+      {
+        "flow": "category/home back-forward-back",
+        "width": 360
+      },
+      {
+        "flow": "sample exit and browser back",
+        "width": 360,
+        "selector": "main [data-game-id=\"oval-face\"]",
+        "target": "/oval-face-icon-generator"
+      },
+      {
+        "flow": "sample exit and browser back",
+        "width": 360,
+        "selector": "main [data-category-slug=\"avatar-makers\"]",
+        "target": "/category/avatar-makers"
+      },
+      {
+        "flow": "sample exit and browser back",
+        "width": 360,
+        "selector": "main [data-category-slug=\"pixel-avatars\"]",
+        "target": "/category/pixel-avatars"
+      },
+      {
+        "flow": "sample exit and browser back",
+        "width": 360,
+        "selector": "main [data-category-slug=\"retro-flash\"]",
+        "target": "/category/retro-flash"
+      },
+      {
+        "flow": "sample exit and browser back",
+        "width": 360,
+        "selector": "main [data-category-slug=\"character-creators\"]",
+        "target": "/category/character-creators"
+      },
+      {
+        "flow": "sample exit and browser back",
+        "width": 360,
+        "selector": "main .route-return-links a[href=\"/games\"]",
+        "target": "/games"
+      },
+      {
+        "flow": "sample exit and browser back",
+        "width": 360,
+        "selector": "main .route-return-links a[href=\"/\"]",
+        "target": "/"
+      },
+      {
+        "flow": "directory-category-breadcrumb-directory",
+        "width": 360
+      },
+      {
+        "flow": "shared menu to directory",
+        "width": 360
+      },
+      {
+        "flow": "Tab visible focus and Enter first card",
+        "width": 360,
+        "focus": {
+          "id": "square-face",
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "boxShadow": "none",
+          "bottom": 673.140625,
+          "top": 445.890625,
+          "width": 296
+        }
+      },
+      {
+        "flow": "hydrated 404 and directory return",
+        "width": 360,
+        "pathname": "/category"
+      },
+      {
+        "flow": "hydrated 404 and directory return",
+        "width": 360,
+        "pathname": "/category/unknown"
+      },
+      {
+        "flow": "hydrated 404 and directory return",
+        "width": 360,
+        "pathname": "/category/face-makers/extra"
+      }
+    ],
+    "mainNetworkRequests": [
+      {
+        "at": "2026-09-04T02:17:25.172Z",
+        "width": 1280,
+        "url": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9616934112105331",
+        "documentUrl": "http://127.0.0.1:3100/",
+        "type": "script"
+      },
+      {
+        "at": "2026-09-04T02:17:29.404Z",
+        "width": 390,
+        "url": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9616934112105331",
+        "documentUrl": "http://127.0.0.1:3100/",
+        "type": "script"
+      },
+      {
+        "at": "2026-09-04T02:17:33.422Z",
+        "width": 360,
+        "url": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9616934112105331",
+        "documentUrl": "http://127.0.0.1:3100/",
+        "type": "script"
+      }
+    ],
+    "mainConsoleEvents": [
+      {
+        "width": 1280,
+        "url": "http://127.0.0.1:3100/category",
+        "type": "error",
+        "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "location": {
+          "url": "http://127.0.0.1:3100/category",
+          "line": 0,
+          "column": 0,
+          "lineNumber": 0,
+          "columnNumber": 0
+        }
+      },
+      {
+        "width": 1280,
+        "url": "http://127.0.0.1:3100/category/unknown",
+        "type": "error",
+        "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "location": {
+          "url": "http://127.0.0.1:3100/category/unknown",
+          "line": 0,
+          "column": 0,
+          "lineNumber": 0,
+          "columnNumber": 0
+        }
+      },
+      {
+        "width": 1280,
+        "url": "http://127.0.0.1:3100/category/face-makers/extra",
+        "type": "error",
+        "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "location": {
+          "url": "http://127.0.0.1:3100/category/face-makers/extra",
+          "line": 0,
+          "column": 0,
+          "lineNumber": 0,
+          "columnNumber": 0
+        }
+      },
+      {
+        "width": 390,
+        "url": "http://127.0.0.1:3100/category",
+        "type": "error",
+        "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "location": {
+          "url": "http://127.0.0.1:3100/category",
+          "line": 0,
+          "column": 0,
+          "lineNumber": 0,
+          "columnNumber": 0
+        }
+      },
+      {
+        "width": 390,
+        "url": "http://127.0.0.1:3100/category/unknown",
+        "type": "error",
+        "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "location": {
+          "url": "http://127.0.0.1:3100/category/unknown",
+          "line": 0,
+          "column": 0,
+          "lineNumber": 0,
+          "columnNumber": 0
+        }
+      },
+      {
+        "width": 390,
+        "url": "http://127.0.0.1:3100/category/face-makers/extra",
+        "type": "error",
+        "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "location": {
+          "url": "http://127.0.0.1:3100/category/face-makers/extra",
+          "line": 0,
+          "column": 0,
+          "lineNumber": 0,
+          "columnNumber": 0
+        }
+      },
+      {
+        "width": 360,
+        "url": "http://127.0.0.1:3100/category",
+        "type": "error",
+        "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "location": {
+          "url": "http://127.0.0.1:3100/category",
+          "line": 0,
+          "column": 0,
+          "lineNumber": 0,
+          "columnNumber": 0
+        }
+      },
+      {
+        "width": 360,
+        "url": "http://127.0.0.1:3100/category/unknown",
+        "type": "error",
+        "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "location": {
+          "url": "http://127.0.0.1:3100/category/unknown",
+          "line": 0,
+          "column": 0,
+          "lineNumber": 0,
+          "columnNumber": 0
+        }
+      },
+      {
+        "width": 360,
+        "url": "http://127.0.0.1:3100/category/face-makers/extra",
+        "type": "error",
+        "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "location": {
+          "url": "http://127.0.0.1:3100/category/face-makers/extra",
+          "line": 0,
+          "column": 0,
+          "lineNumber": 0,
+          "columnNumber": 0
+        }
+      }
+    ],
+    "mainPageErrors": [],
+    "mainSourceAdProof": "script insertion only; separate full-load proof below",
+    "loadedSourceAdProof": {
+      "recordedAt": "2026-09-04T02:19:34.573Z",
+      "result": "PASS",
+      "source": {
+        "doc": "498fa8b2-2d2e-45b3-9793-e6775b828334",
+        "path": "/",
+        "adScriptLoadEvent": true,
+        "adsbygooglePresent": true,
+        "adScripts": 1
+      },
+      "category": {
+        "doc": "5809a4f0-6185-430e-9080-fa990df6f98d",
+        "path": "/category/face-makers",
+        "adsbygooglePresent": false,
+        "adScripts": 0,
+        "adFrames": 0
+      },
+      "requests": [
+        {
+          "url": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9616934112105331",
+          "documentUrl": "http://127.0.0.1:3100/"
+        }
+      ],
+      "responses": [
+        {
+          "status": 200,
+          "url": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9616934112105331",
+          "documentUrl": "http://127.0.0.1:3100/"
+        }
+      ],
+      "errors": [],
+      "networkIntercepted": false
+    },
+    "supplement": {
+      "recordedAt": "2026-09-04T02:18:41.398Z",
+      "result": "PASS",
+      "results": [
+        {
+          "flow": "complete text no clamps or clipping",
+          "width": 1280,
+          "elements": 20
+        },
+        {
+          "flow": "404 fallback client Home link enforces new document",
+          "width": 1280,
+          "missing": "/category"
+        },
+        {
+          "flow": "404 fallback client Home link enforces new document",
+          "width": 1280,
+          "missing": "/category/unknown"
+        },
+        {
+          "flow": "404 fallback client Home link enforces new document",
+          "width": 1280,
+          "missing": "/category/face-makers/extra"
+        },
+        {
+          "flow": "complete text no clamps or clipping",
+          "width": 390,
+          "elements": 20
+        },
+        {
+          "flow": "404 fallback client Home link enforces new document",
+          "width": 390,
+          "missing": "/category"
+        },
+        {
+          "flow": "404 fallback client Home link enforces new document",
+          "width": 390,
+          "missing": "/category/unknown"
+        },
+        {
+          "flow": "404 fallback client Home link enforces new document",
+          "width": 390,
+          "missing": "/category/face-makers/extra"
+        },
+        {
+          "flow": "complete text no clamps or clipping",
+          "width": 360,
+          "elements": 20
+        },
+        {
+          "flow": "404 fallback client Home link enforces new document",
+          "width": 360,
+          "missing": "/category"
+        },
+        {
+          "flow": "404 fallback client Home link enforces new document",
+          "width": 360,
+          "missing": "/category/unknown"
+        },
+        {
+          "flow": "404 fallback client Home link enforces new document",
+          "width": 360,
+          "missing": "/category/face-makers/extra"
+        }
+      ],
+      "errors": []
+    },
+    "categoryAdRequests": 0,
+    "categoryPlayerRequests": 0,
+    "idle": {
+      "result": "9 completed positive cases across two overall FAIL runs; not one clean batch",
+      "cases": [
+        {
+          "pathname": "/category/face-makers",
+          "actualDelayAfterLoadMs": 12500,
+          "adScripts": 0,
+          "adFrames": 0,
+          "source": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\browser-flows-load-retry-failure.json",
+          "sourceSha256": "0d5cbf8433557eba7e2d39cf25c872eb62cabaa914e017c2b6c9eb3aceae6408",
+          "sourceOverallResult": "FAIL: page.waitForLoadState: Timeout 45000ms exceeded.",
+          "result": "PASS for completed case only; parent run stays FAIL"
+        },
+        {
+          "pathname": "/category/avatar-makers",
+          "actualDelayAfterLoadMs": 12500,
+          "adScripts": 0,
+          "adFrames": 0,
+          "source": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\browser-flows-initial-failure.json",
+          "sourceSha256": "2641644d6e7b609f613ab7c4a39fac286d4236044a5a740fd41e3296eb1a0cc8",
+          "sourceOverallResult": "FAIL: page.waitForLoadState: Timeout 30000ms exceeded.",
+          "result": "PASS for completed case only; parent run stays FAIL"
+        },
+        {
+          "pathname": "/category/pixel-avatars",
+          "actualDelayAfterLoadMs": 12500,
+          "adScripts": 0,
+          "adFrames": 0,
+          "source": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\browser-flows-initial-failure.json",
+          "sourceSha256": "2641644d6e7b609f613ab7c4a39fac286d4236044a5a740fd41e3296eb1a0cc8",
+          "sourceOverallResult": "FAIL: page.waitForLoadState: Timeout 30000ms exceeded.",
+          "result": "PASS for completed case only; parent run stays FAIL"
+        },
+        {
+          "pathname": "/category/retro-flash",
+          "actualDelayAfterLoadMs": 12500,
+          "adScripts": 0,
+          "adFrames": 0,
+          "source": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\browser-flows-initial-failure.json",
+          "sourceSha256": "2641644d6e7b609f613ab7c4a39fac286d4236044a5a740fd41e3296eb1a0cc8",
+          "sourceOverallResult": "FAIL: page.waitForLoadState: Timeout 30000ms exceeded.",
+          "result": "PASS for completed case only; parent run stays FAIL"
+        },
+        {
+          "pathname": "/category/character-creators",
+          "actualDelayAfterLoadMs": 12500,
+          "adScripts": 0,
+          "adFrames": 0,
+          "source": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\browser-flows-initial-failure.json",
+          "sourceSha256": "2641644d6e7b609f613ab7c4a39fac286d4236044a5a740fd41e3296eb1a0cc8",
+          "sourceOverallResult": "FAIL: page.waitForLoadState: Timeout 30000ms exceeded.",
+          "result": "PASS for completed case only; parent run stays FAIL"
+        },
+        {
+          "pathname": "/category",
+          "actualDelayAfterLoadMs": 12500,
+          "adScripts": 0,
+          "adFrames": 0,
+          "source": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\browser-flows-initial-failure.json",
+          "sourceSha256": "2641644d6e7b609f613ab7c4a39fac286d4236044a5a740fd41e3296eb1a0cc8",
+          "sourceOverallResult": "FAIL: page.waitForLoadState: Timeout 30000ms exceeded.",
+          "result": "PASS for completed case only; parent run stays FAIL"
+        },
+        {
+          "pathname": "/category/unknown",
+          "actualDelayAfterLoadMs": 12500,
+          "adScripts": 0,
+          "adFrames": 0,
+          "source": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\browser-flows-initial-failure.json",
+          "sourceSha256": "2641644d6e7b609f613ab7c4a39fac286d4236044a5a740fd41e3296eb1a0cc8",
+          "sourceOverallResult": "FAIL: page.waitForLoadState: Timeout 30000ms exceeded.",
+          "result": "PASS for completed case only; parent run stays FAIL"
+        },
+        {
+          "pathname": "/category/face-makers/extra",
+          "actualDelayAfterLoadMs": 12500,
+          "adScripts": 0,
+          "adFrames": 0,
+          "source": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\browser-flows-initial-failure.json",
+          "sourceSha256": "2641644d6e7b609f613ab7c4a39fac286d4236044a5a740fd41e3296eb1a0cc8",
+          "sourceOverallResult": "FAIL: page.waitForLoadState: Timeout 30000ms exceeded.",
+          "result": "PASS for completed case only; parent run stays FAIL"
+        },
+        {
+          "pathname": "/games",
+          "actualDelayAfterLoadMs": 12500,
+          "adScripts": 0,
+          "adFrames": 0,
+          "source": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\browser-flows-initial-failure.json",
+          "sourceSha256": "2641644d6e7b609f613ab7c4a39fac286d4236044a5a740fd41e3296eb1a0cc8",
+          "sourceOverallResult": "FAIL: page.waitForLoadState: Timeout 30000ms exceeded.",
+          "result": "PASS for completed case only; parent run stays FAIL"
+        }
+      ]
+    },
+    "screenshots": [
+      {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\before-face-makers-1280.png",
+        "sha256": "752d262696cb9ff993566361ccb0d00dfbc5b15fcdbaa1642faad97cc99a50bb",
+        "slug": "face-makers",
+        "width": 1280,
+        "height": 900,
+        "phase": "before"
+      },
+      {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\before-avatar-makers-1280.png",
+        "sha256": "9c6bfd39583514e38482617ef8e11364f4ce4e1665f6d5382fd4956be3feca39",
+        "slug": "avatar-makers",
+        "width": 1280,
+        "height": 900,
+        "phase": "before"
+      },
+      {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\before-pixel-avatars-1280.png",
+        "sha256": "e85a34fc412b6dee6c15a11215fae784568c2dcad3957a2d574458d4f25250e5",
+        "slug": "pixel-avatars",
+        "width": 1280,
+        "height": 900,
+        "phase": "before"
+      },
+      {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\before-retro-flash-1280.png",
+        "sha256": "6658749c959c376afb0461d30981f21db7b536c8d0371500e96cc1dfa7a52c09",
+        "slug": "retro-flash",
+        "width": 1280,
+        "height": 900,
+        "phase": "before"
+      },
+      {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\before-character-creators-1280.png",
+        "sha256": "f9b9f85237fc5611ac81ae9c682ba5239561a890e089d036bc9d23be0e9c6f64",
+        "slug": "character-creators",
+        "width": 1280,
+        "height": 900,
+        "phase": "before"
+      },
+      {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\before-face-makers-390.png",
+        "sha256": "15cea4e32a48f430333d3b7f476e6a76ee03374ad8a5b09c1f3369cf2ce3b411",
+        "slug": "face-makers",
+        "width": 390,
+        "height": 844,
+        "phase": "before"
+      },
+      {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\before-avatar-makers-390.png",
+        "sha256": "09966daac25fea1cfabaf675f003ad5a5a967f00348731fadb4b32e387c7563e",
+        "slug": "avatar-makers",
+        "width": 390,
+        "height": 844,
+        "phase": "before"
+      },
+      {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\before-pixel-avatars-390.png",
+        "sha256": "dce88464670d685f56160ad7c91eace6c803219ed1315946befdcbf4360bc681",
+        "slug": "pixel-avatars",
+        "width": 390,
+        "height": 844,
+        "phase": "before"
+      },
+      {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\before-retro-flash-390.png",
+        "sha256": "4c660f67a512d23d86be4a24bd4365c3840aee600f3ec500e4c9a163cba0ab59",
+        "slug": "retro-flash",
+        "width": 390,
+        "height": 844,
+        "phase": "before"
+      },
+      {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\before-character-creators-390.png",
+        "sha256": "8b0f9d7d01da031b4dbdb250a9398cb1c6dce57478dad5e9688fb0eaa2120457",
+        "slug": "character-creators",
+        "width": 390,
+        "height": 844,
+        "phase": "before"
+      },
+      {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\before-face-makers-360.png",
+        "sha256": "6e55947d24a2245c8dd141f56fbc5d4e67c07e97e04ffa5dc7f3498d66d7881b",
+        "slug": "face-makers",
+        "width": 360,
+        "height": 800,
+        "phase": "before"
+      },
+      {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\before-avatar-makers-360.png",
+        "sha256": "a9f83c9b0097d67f36e3d768ea2c14946a24fd56115dbe0ce3ae42d892f6c03c",
+        "slug": "avatar-makers",
+        "width": 360,
+        "height": 800,
+        "phase": "before"
+      },
+      {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\before-pixel-avatars-360.png",
+        "sha256": "127a41da1c12788e314981d300efa2fe3c312113b8ebe6c4502790c33ce8e73c",
+        "slug": "pixel-avatars",
+        "width": 360,
+        "height": 800,
+        "phase": "before"
+      },
+      {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\before-retro-flash-360.png",
+        "sha256": "4b3f991aa9d2c67bc5b16834b83061c8ae8cd0e5e5f40c1dcb6b313bd65af9ba",
+        "slug": "retro-flash",
+        "width": 360,
+        "height": 800,
+        "phase": "before"
+      },
+      {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\before-character-creators-360.png",
+        "sha256": "2d664c05d535d5b0a85f8d4fa71849464d9e5411df6421eeb7debd5c1ce483e2",
+        "slug": "character-creators",
+        "width": 360,
+        "height": 800,
+        "phase": "before"
+      },
+      {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\after-face-makers-1280.png",
+        "sha256": "11812261442919e4762ff5de9324798410c1df49a737be8f01a914813192b930",
+        "slug": "face-makers",
+        "width": 1280,
+        "height": 900,
+        "phase": "after"
+      },
+      {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\after-avatar-makers-1280.png",
+        "sha256": "9c6bfd39583514e38482617ef8e11364f4ce4e1665f6d5382fd4956be3feca39",
+        "slug": "avatar-makers",
+        "width": 1280,
+        "height": 900,
+        "phase": "after"
+      },
+      {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\after-pixel-avatars-1280.png",
+        "sha256": "e85a34fc412b6dee6c15a11215fae784568c2dcad3957a2d574458d4f25250e5",
+        "slug": "pixel-avatars",
+        "width": 1280,
+        "height": 900,
+        "phase": "after"
+      },
+      {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\after-retro-flash-1280.png",
+        "sha256": "6658749c959c376afb0461d30981f21db7b536c8d0371500e96cc1dfa7a52c09",
+        "slug": "retro-flash",
+        "width": 1280,
+        "height": 900,
+        "phase": "after"
+      },
+      {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\after-character-creators-1280.png",
+        "sha256": "f9b9f85237fc5611ac81ae9c682ba5239561a890e089d036bc9d23be0e9c6f64",
+        "slug": "character-creators",
+        "width": 1280,
+        "height": 900,
+        "phase": "after"
+      },
+      {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\after-face-makers-390.png",
+        "sha256": "0e36df393c2b6988a0a8d945ae01ac33173908a578813f731b9236cc6748efa8",
+        "slug": "face-makers",
+        "width": 390,
+        "height": 844,
+        "phase": "after"
+      },
+      {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\after-avatar-makers-390.png",
+        "sha256": "09966daac25fea1cfabaf675f003ad5a5a967f00348731fadb4b32e387c7563e",
+        "slug": "avatar-makers",
+        "width": 390,
+        "height": 844,
+        "phase": "after"
+      },
+      {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\after-pixel-avatars-390.png",
+        "sha256": "dce88464670d685f56160ad7c91eace6c803219ed1315946befdcbf4360bc681",
+        "slug": "pixel-avatars",
+        "width": 390,
+        "height": 844,
+        "phase": "after"
+      },
+      {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\after-retro-flash-390.png",
+        "sha256": "4c660f67a512d23d86be4a24bd4365c3840aee600f3ec500e4c9a163cba0ab59",
+        "slug": "retro-flash",
+        "width": 390,
+        "height": 844,
+        "phase": "after"
+      },
+      {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\after-character-creators-390.png",
+        "sha256": "8b0f9d7d01da031b4dbdb250a9398cb1c6dce57478dad5e9688fb0eaa2120457",
+        "slug": "character-creators",
+        "width": 390,
+        "height": 844,
+        "phase": "after"
+      },
+      {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\after-face-makers-360.png",
+        "sha256": "464b44181444b59d928f9123a79fe0f1c241873214ef06bfe331587a007c35ff",
+        "slug": "face-makers",
+        "width": 360,
+        "height": 800,
+        "phase": "after"
+      },
+      {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\after-avatar-makers-360.png",
+        "sha256": "a9f83c9b0097d67f36e3d768ea2c14946a24fd56115dbe0ce3ae42d892f6c03c",
+        "slug": "avatar-makers",
+        "width": 360,
+        "height": 800,
+        "phase": "after"
+      },
+      {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\after-pixel-avatars-360.png",
+        "sha256": "127a41da1c12788e314981d300efa2fe3c312113b8ebe6c4502790c33ce8e73c",
+        "slug": "pixel-avatars",
+        "width": 360,
+        "height": 800,
+        "phase": "after"
+      },
+      {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\after-retro-flash-360.png",
+        "sha256": "4b3f991aa9d2c67bc5b16834b83061c8ae8cd0e5e5f40c1dcb6b313bd65af9ba",
+        "slug": "retro-flash",
+        "width": 360,
+        "height": 800,
+        "phase": "after"
+      },
+      {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\after-character-creators-360.png",
+        "sha256": "2d664c05d535d5b0a85f8d4fa71849464d9e5411df6421eeb7debd5c1ce483e2",
+        "slug": "character-creators",
+        "width": 360,
+        "height": 800,
+        "phase": "after"
+      },
+      {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\menu-1280.png",
+        "sha256": "2a734dc869fa4a959b824b294315c24930447ff3e0905e08171ba806886f185d",
+        "phase": "interaction"
+      },
+      {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\keyboard-focus-1280.png",
+        "sha256": "f2431ed58ae6be5ae0822961dbbd59a31cc49910e528488be5c2afd926baa730",
+        "phase": "interaction"
+      },
+      {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\menu-390.png",
+        "sha256": "99b79e8403ff5d43fdb29f9010088696d541fd89faf66ece4eeea17d60fa1881",
+        "phase": "interaction"
+      },
+      {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\keyboard-focus-390.png",
+        "sha256": "6400926a6aa962c13b20cc77e6b14fa7d8c09c194bdb54cf81610954df7f3667",
+        "phase": "interaction"
+      },
+      {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\menu-360.png",
+        "sha256": "05f21ef3348e6718f3c0979847541d7ae5aae8d1d7f6b31bc326ac159f1f4bde",
+        "phase": "interaction"
+      },
+      {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\keyboard-focus-360.png",
+        "sha256": "a4a0712edfc783a97878ddb4a80d8159cbb7241c3fc403391df9cae348ec7513",
+        "phase": "interaction"
+      }
+    ],
+    "agentVisuallyReviewed": [
+      "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\after-face-makers-1280.png",
+      "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\after-face-makers-360.png",
+      "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\keyboard-focus-360.png",
+      "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\menu-390.png"
+    ]
+  },
+  "preserved": {
+    "baseline": {
+      "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\baseline.json",
+      "sha256": "bdf7c4d73f0457e3926d3a2d43063f191ad3936d444e1fdfc7ebb4aa4f07f19f",
+      "capturedAt": "2026-09-04T01:52:37.572Z",
+      "existingFiles": 398
+    },
+    "unmodifiedExistingFileCount": 387,
+    "unmodifiedExistingManifestSha256": "0478af8d3f1c836a5f0675f6d223530a9c6eb4034920a937b5f6b615b5021767",
+    "runtimeAssetFrozenFileCount": 141,
+    "historicalJson": [
+      {
+        "path": "docs/archive/license-gate-cancelled-2026-09-03/checks.json",
+        "sha256": "4fbe84181fe0d7231944eeb3bf2b64b93b6aae6b557cdba1b9445c4d12eb44fb"
+      },
+      {
+        "path": "docs/archive/license-gate-cancelled-2026-09-03/release-order-confirmation.json",
+        "sha256": "7481222829e0f28319a65406495fa334c58e535b5c9d038e2b9d9706000cce57"
+      },
+      {
+        "path": "docs/quality/evidence/about-001-rights-copy/checks.json",
+        "sha256": "9b5d2192b7ddac92a9b01c8f2368d3faaee116253166bb6c623c83bbf8e647e7"
+      },
+      {
+        "path": "docs/quality/evidence/about-001-rights-copy/proposal-checks.json",
+        "sha256": "dbb44b079bd622e93813761c939091e15a0b892a20d2272aaa1cfbd93a690362"
+      },
+      {
+        "path": "docs/quality/evidence/category-001/proposal-checks.json",
+        "sha256": "f7cbcf62f6890a5bd68e588aa222654e75e064ac993d0957925b59676abd72cf"
+      },
+      {
+        "path": "docs/quality/evidence/content-qa-001/acceptance-checks.json",
+        "sha256": "102cecc66d9d9ae8fed6d3c4dfde9521b5cfeb10341ab8e3b53330967c189201"
+      },
+      {
+        "path": "docs/quality/evidence/content-qa-001/checks.json",
+        "sha256": "40371180bbf00e36a69038596644f3c4701e7c869b00548cd29c80a167ccb641"
+      },
+      {
+        "path": "docs/quality/evidence/editorial-001-rights-copy/checks.json",
+        "sha256": "72f7ff3be63a9e3b14a41a3f651a336c57f7d74d59785fb9173cd2af36117d52"
+      },
+      {
+        "path": "docs/quality/evidence/editorial-001-rights-copy/proposal-checks.json",
+        "sha256": "a30c3eb49860af11e4af1e998dff78d8b42970d909113ee64c7a728256d5beed"
+      },
+      {
+        "path": "docs/quality/evidence/gallery-001-rights-copy/acceptance-checks.json",
+        "sha256": "eb8105300c659fdc668f06d64b820bac69fcca5a2011a1bc2da0dfa51c121143"
+      },
+      {
+        "path": "docs/quality/evidence/gallery-001-rights-copy/checks.json",
+        "sha256": "a41646b12dffdc099bc9c1a84cf10667f6efc1753b1db5be2c437e3695bd86af"
+      },
+      {
+        "path": "docs/quality/evidence/gallery-001-rights-copy/proposal-checks.json",
+        "sha256": "3c00f1471ba2741fb27d44b1efecd823834443243e46754c1aeda8fea1a81a08"
+      },
+      {
+        "path": "docs/quality/evidence/games-index-001/acceptance-checks.json",
+        "sha256": "a3c0d0932f4bcdb70819133d94c45e1976e3bee69f5ef25cae03e185d6ecdb27"
+      },
+      {
+        "path": "docs/quality/evidence/games-index-001/board-checks.json",
+        "sha256": "4311645d850f7144df9c4181ce77282f538ff835af03a43c3e0628701b05eaa2"
+      },
+      {
+        "path": "docs/quality/evidence/games-index-001/checks.json",
+        "sha256": "365e09ef5dc5ab40e4f6c7997a0bf3bcbe9e5ebb7355e229f374bf912ea8d508"
+      },
+      {
+        "path": "docs/quality/evidence/games-index-001/interruption-checks.json",
+        "sha256": "b5e31ce1a481bf89b56b965d3a91487b78ca93232c01da7f9d68ca25c2905594"
+      },
+      {
+        "path": "docs/quality/evidence/games-index-001/proposal-checks.json",
+        "sha256": "864180ac6ea02eb4d5e4c6e41b883dba60a6d3dc66ce4c0884449f2235b64fb4"
+      },
+      {
+        "path": "docs/quality/evidence/home-gallery-001/production-approved-ugc-probe.json",
+        "sha256": "37f3fa29f7f9b84721ae117bf85efb4ce79fe7d2015192e2ce0cd62d8981f93c"
+      },
+      {
+        "path": "docs/quality/evidence/locale-001-rights-copy/acceptance-checks.json",
+        "sha256": "bfe4948dc8eae906a7f6435fbc0cbfc29ee725027f9599a2d49444c305cd9d63"
+      },
+      {
+        "path": "docs/quality/evidence/locale-001-rights-copy/checks.json",
+        "sha256": "55b49e3506e3141ffd1ef5dd701136411dc06b0c351a10fe99caf1fd9eadfdfb"
+      },
+      {
+        "path": "docs/quality/evidence/locale-001-rights-copy/mobile-revision-checks.json",
+        "sha256": "71421d8433f2e8fe3f05c0d62ee46584535e4ef1c378fef54f0ec2bd0b4fb31f"
+      },
+      {
+        "path": "docs/quality/evidence/locale-001-rights-copy/proposal-checks.json",
+        "sha256": "0ec30303ae7c7fc9a3af588e0939017aa2175896e4ec1fef741741ccbfe82de4"
+      },
+      {
+        "path": "docs/quality/evidence/mig-oval-001/acceptance-checks.json",
+        "sha256": "48d1db1998610c94e5bfc398b51ae31edf7751f251fd0b0e0cbbefff4faa6a6f"
+      },
+      {
+        "path": "docs/quality/evidence/mig-oval-001/checks.json",
+        "sha256": "47bfac00708ee560e90b915bbc7fd6c57e4fc9a7def201fa3a4c9ea8a2fd3231"
+      },
+      {
+        "path": "docs/quality/evidence/mig-oval-001/proposal-checks.json",
+        "sha256": "20e52eba57d40a3d407e73962d0f799f5e7f5415e6dc950454da99dbf890d350"
+      },
+      {
+        "path": "docs/quality/evidence/mig-pixel-001/acceptance-checks.json",
+        "sha256": "7a5f9e7b3f58b823357c2e26a70cbab1771d8ef86cf2c83b23703c3bfe85dd70"
+      },
+      {
+        "path": "docs/quality/evidence/mig-pixel-001/checks.json",
+        "sha256": "bb9571f180ccc4dd2d4a7b29e1733582b363eb1c49c637051fcdb0edb984d512"
+      },
+      {
+        "path": "docs/quality/evidence/mig-pixel-001/proposal-checks.json",
+        "sha256": "45526d6726ccc0b4f1e837e77f2e0159d306f374f86e2b27ff69fdaf8c157d18"
+      },
+      {
+        "path": "docs/quality/evidence/mig-square-001/acceptance-checks.json",
+        "sha256": "29fbf5eb482a1e1ebb56c1b34086bf05d2113518bfeb422bdb8a8b2148636b8c"
+      },
+      {
+        "path": "docs/quality/evidence/mig-square-001/checks.json",
+        "sha256": "f3de4b6319696f228e95ad5fddc53f1ba9588d48237daeee2fb31f1d4000daa6"
+      },
+      {
+        "path": "docs/quality/evidence/mig-square-001/proposal-checks.json",
+        "sha256": "4f737e30de67ec8de4c70954fb7ab7c9cf9e9ecaf91c96ece597245848636ee6"
+      },
+      {
+        "path": "docs/quality/evidence/perf-home-001/metrics.json",
+        "sha256": "06eb8a27312031aff0f530f12c5961c552c8def39b582cf96f5abe823ac7c905"
+      },
+      {
+        "path": "docs/quality/evidence/terms-001-rights-copy/checks.json",
+        "sha256": "5b0aaefeca88262d57203e5caa92ea3ac465f5c399361be4bf873c28c4dccf1d"
+      },
+      {
+        "path": "docs/baseline/evidence/lighthouse-desktop-2026-08-31.json",
+        "sha256": "60613861913e9d558d9e9567f3c38e091c9b5ad50f87b45aa3dbf7076a91c924"
+      },
+      {
+        "path": "docs/baseline/evidence/lighthouse-mobile-2026-08-31.json",
+        "sha256": "5781efc12d42c72f5a57bb4f6ef411a72484c697d81d28d654c80ff49a3f7641"
+      }
+    ],
+    "priorArtifacts": [
+      {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-games-index-v173-20260904\\code-results.json",
+        "sha256": "7230b16abf7fbcc791d726e6116b54a97d7d79d1b441624ca53294c430ec8ec8"
+      },
+      {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-games-index-v173-20260904\\code-final-results.json",
+        "sha256": "4e45888a2b2bd0740971b1536c1f8fe76ef3f65aae84de76843d7396e7990e98"
+      },
+      {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-games-index-v173-20260904\\build-results.json",
+        "sha256": "6fd718821a4bfe044c6a4e8e21c20c911d668e90fb22537322d1a75528136723"
+      },
+      {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-games-index-v173-20260904\\built-results.json",
+        "sha256": "24c842a8788ea2fd2ab63c86eee3d2c9939cc14c3378631d143a1bd3db978d34"
+      },
+      {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-games-index-v173-20260904\\http-results.json",
+        "sha256": "856a507049157d038ab8b9f8103b5a69b747d80ae3ad236fd05189a818c36a0c"
+      },
+      {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-games-index-v173-20260904\\browser-results.json",
+        "sha256": "2257e0c45c518b59dd0cfa8c0338cde055700930bfb0977df0bdda7832eac71f"
+      },
+      {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-games-index-v173-20260904\\navigation-network-results.json",
+        "sha256": "1ddc311769300ce506aa2ac3b7b98c69d67a7e38c9e9918dd65a580526b51144"
+      },
+      {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-games-index-v173-20260904\\http-boundary-followup.json",
+        "sha256": "cec47c6167dd636d7a99cdbc6586fbd3b2cce3f2d83c19844530e788534852f5"
+      }
+    ],
+    "priorScreenshots": [
+      {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-games-index-v173-20260904\\directory-1280.png",
+        "sha256": "9df505929891c09610c787aa3a2430b249803074270775168ac6cb67796c3553"
+      },
+      {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-games-index-v173-20260904\\directory-1280-full.png",
+        "sha256": "3fbc7f98bbca96e3545ff991e1ea89eb29df0c4a5ee2f57779d3534769e834c7"
+      },
+      {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-games-index-v173-20260904\\directory-1280-focus.png",
+        "sha256": "716499db614ead65d06b061fc0b1d8377180597e87a19d88e310a39e1bd67c84"
+      },
+      {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-games-index-v173-20260904\\menu-1280.png",
+        "sha256": "49f7dbcc6c3e0d03a0a313836b55761f155e644cbc8b96a2fcd90898df589cc1"
+      },
+      {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-games-index-v173-20260904\\directory-390.png",
+        "sha256": "6318dd80a0043c743ab979e5313330dc932625643f4e29a9312324ed01cddef1"
+      },
+      {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-games-index-v173-20260904\\directory-390-full.png",
+        "sha256": "30e08e10e22d3c9e28bb10e009787c2e638f117d6cd55f72f151b1cfab02ee2c"
+      },
+      {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-games-index-v173-20260904\\directory-390-focus.png",
+        "sha256": "cf98f3547c4fd5af72b259a94ed6dc145206127b4025eb6665b1d8f483a753d4"
+      },
+      {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-games-index-v173-20260904\\menu-390.png",
+        "sha256": "2c92976fd69d65314e543021db4309a564799f12b8176055c3c010e503994231"
+      },
+      {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-games-index-v173-20260904\\directory-360.png",
+        "sha256": "6decab735200c8f16e7ac85106c28b6d25812610970426ea0363cfa9fa86323d"
+      },
+      {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-games-index-v173-20260904\\directory-360-full.png",
+        "sha256": "1357a4e614e7ec3488bb607c9d46bff59c2c0ed980dd39102ff0b2d7fd330e92"
+      },
+      {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-games-index-v173-20260904\\directory-360-focus.png",
+        "sha256": "9558145f34ed06a8161a2799980870b9cbbd8186f0abcc8ced525f979ed82db7"
+      },
+      {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-games-index-v173-20260904\\menu-360.png",
+        "sha256": "5bbfc6348d3eded3dbbdc713be616a04c56b4cba6665acffabee42c65743a0fa"
+      },
+      {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-games-index-v173-20260904\\directory-from-ad-home.png",
+        "sha256": "dc4769d76480acffd3cb56e8f019bbab91197a0815c2f9d17af3c21e3803c5ac"
+      },
+      {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-games-index-v173-20260904\\not-found-1280.png",
+        "sha256": "c2891eb0a498fb340aaf56476bef4296c4db5342ff50a8dc8d7505105f2e0c71"
+      },
+      {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-games-index-v173-20260904\\not-found-390.png",
+        "sha256": "957238a465396857887bad8084f0f88d88cfd8372eacc0fca969477d225616fa"
+      }
+    ],
+    "missingTracked": [
+      "components/FlashGeneratorRuntime.tsx",
+      "components/GalleryPreview.tsx"
+    ],
+    "sourceAcceptanceCountBefore": 31,
+    "sourceAcceptanceCountAfter": 31,
+    "originalRoadmapUnchanged": true,
+    "registryUnknownUnchanged": true,
+    "wholeOvalMigrationStillDeferred": true,
+    "cancelledMaterialTaskReopened": false
+  },
+  "sourceFiles": [
+    {
+      "path": "app/category/[slug]/page.tsx",
+      "sha256": "14d32d29e5a23250a1fa37a1e273791ab62103c384fa3e5c57ad73a1e747e0ae",
+      "change": "modified",
+      "beforeSha256": "00765e46360563750250645120e171f4d7e0858e9cb31fd07814cc96a6d03cc7"
+    },
+    {
+      "path": "components/DeferredThirdPartyScripts.tsx",
+      "sha256": "d660cbb3e2912dbbd9a0bb118e00237cb41aa81455fc0034be26f7fd17e261df",
+      "change": "modified",
+      "beforeSha256": "2a8204c7a63d175a2b3db9356557bb56a09ed24a415c1648c4a6e50a5361d538"
+    },
+    {
+      "path": "components/game/GameLink.tsx",
+      "sha256": "0c260fc2424a48582bc75c209763c3de36860c9a953451ff302574c03297d7d3",
+      "change": "modified",
+      "beforeSha256": "4707246ee064f8ba5ce3401cd555af88f4fb44bf0bc41178fe875c9ce205cbda"
+    },
+    {
+      "path": "scripts/games-index-compat.mjs",
+      "sha256": "fc9b87e8c900d32b3058d4a023ff2e58374e173ddd932671ac7079093062ead9",
+      "change": "modified",
+      "beforeSha256": "8ff759d48d6745ac451ef4a1ce0816a4f4437df66e8032a284788c36ac0ca50e"
+    },
+    {
+      "path": "scripts/check-games-index.mjs",
+      "sha256": "df86ca15473cc373707d0451809baf3a81565a931a0536532b8da21c0e694282",
+      "change": "modified",
+      "beforeSha256": "e2d9dbc476d4e6f9aa996ec181a63d78a3cdcfe5387cc565084e43cd8d64370e"
+    },
+    {
+      "path": "package.json",
+      "sha256": "5a4ee571c974dcd205cf0fdd5c50e719ff365922193c087b2fefca6074d71436",
+      "change": "modified",
+      "beforeSha256": "9052cf21592e8520a39c306773e15414377b96fa0835e1720002f9c0a685aa70"
+    },
+    {
+      "path": "scripts/README.md",
+      "sha256": "761b75b823033edfab51d2cb64bca22b9adf3e3c915acccb1884f6113507c917",
+      "change": "modified",
+      "beforeSha256": "f8d1930c5445a230e8d378f3b13f94faede8036fac784cbb05a98b418dec69fe"
+    },
+    {
+      "path": "PAGE_PLAN.md",
+      "sha256": "d5827eb8bcca935773df2301d830a20a39cc33c875b700681b11c2e5b670c3cd",
+      "change": "modified",
+      "beforeSha256": "2fb9f4e2cc8d763a4384672cb49973cb390c55a76440c71c2f0edd79ed22ea79"
+    },
+    {
+      "path": "LAUNCH_CHECKLIST.md",
+      "sha256": "19451ae1e174be57691cd150bf33b4acffc8d186895928925ce1bee54d8cc332",
+      "change": "modified",
+      "beforeSha256": "134d5437f8884e5fb1fe08ab4e049032383f1f06a9e5f00763e16847729e7960"
+    },
+    {
+      "path": "SEO_LOG.md",
+      "sha256": "30a9331efc409130f8c6de639e3f481ddeb4c0c10090b08e0010443f4afaecdc",
+      "change": "modified",
+      "beforeSha256": "ccacdcac740eea4681931f678f699973030660ccc1d5e8e15a8d2fd8734d4861"
+    },
+    {
+      "path": "docs/product/category-pages-proposal.md",
+      "sha256": "81d066cd94e918c8880b536c98e14694b7b4fe2d11593fb8b8a26a83815c9757",
+      "change": "modified",
+      "beforeSha256": "22df67e56453d007d3b7278a4f6615e0a3c90df8fa5c0c705c83b16cff3808ab"
+    },
+    {
+      "path": "docs/quality/evidence/category-001/README.md",
+      "sha256": "ebd22ef8d330ce2b0d98e92dfd27b153bc5525593746684fbd451f26eb3ed84d",
+      "change": "new"
+    },
+    {
+      "path": "docs/quality/evidence/category-001/content-review.md",
+      "sha256": "5d9e8bf3b4736781a1b6061abe88c37a16144fcbc7098d1c8ddcdf746612aa6f",
+      "change": "new"
+    },
+    {
+      "path": "lib/games/categories.ts",
+      "sha256": "94213ee06bcfc6d621c2e0f4e260c6a91e0e161048730813fced1ee0320d52a4",
+      "change": "new"
+    },
+    {
+      "path": "lib/games/category-content.ts",
+      "sha256": "a5005bd17bcc5b81541ad97b0cebc9653f04e3086ef55dbcd5145a9c7bc01db6",
+      "change": "new"
+    },
+    {
+      "path": "lib/games/category-policy.ts",
+      "sha256": "7e21cea3f2fee12e29f8aca9cbe5b47c2316963572278aae9b8f531ccb4c7454",
+      "change": "new"
+    },
+    {
+      "path": "lib/seo/category-sample.ts",
+      "sha256": "480e51f9faaf60b3260b54f7bdd539bf8574fd24f2fc06440d62ecadbb8d190e",
+      "change": "new"
+    },
+    {
+      "path": "scripts/category-sample-compat.mjs",
+      "sha256": "a1048c0f3a6ee281bb8001ccb0e59027f4a4b107bc3fd39fedc0ae9b1fbe2eb0",
+      "change": "new"
+    },
+    {
+      "path": "scripts/category-sample-test-utils.mjs",
+      "sha256": "a5ed8f340980c011f8e8e42cf960d5dd6a0483aa332d150b39b5a346bd18b472",
+      "change": "new"
+    },
+    {
+      "path": "scripts/check-category-sample.mjs",
+      "sha256": "185f0b96c011da03f9e028b17e03fce8a56d2128a3cf5dee1c4b2cde02ae5f01",
+      "change": "new"
+    },
+    {
+      "path": "scripts/fixtures/category-sample-approved-source-delta.json",
+      "sha256": "2d121f1f37eb1366d8259febab3e7df801c0f2fe74f976f06294c0ec09c4964f",
+      "change": "new"
+    },
+    {
+      "path": "scripts/fixtures/category-sample-baseline.json",
+      "sha256": "850a3175bfdbf7fff5e7af50730be85ca88b572194dac7da9ff21fae497cadda",
+      "change": "new"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\after-browser.json",
+      "sha256": "8ce8991944f0624757de807c2d2b1faa08f5d12788b327099d4024d9b87de9df"
+    },
+    {
+      "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\baseline-navigation-failure.json",
+      "sha256": "9b2d1066b8d8fcf9412e5457ac1bf8a9d8479f2f2cfcb3824d9e03290e39fb39"
+    },
+    {
+      "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\before-browser.json",
+      "sha256": "14055d5e6ea73b10043f85bd0afbb3cfd527eb723cdfa838bf61251354a7ae73"
+    },
+    {
+      "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\board-prepared.json",
+      "sha256": "97c96dea63d1256007cde1087de922a3a8c34c56db6949a6ce1d5153976c6a36"
+    },
+    {
+      "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\board-verification.json",
+      "sha256": "e8d1b89d34423c1f9b74ed0e0688b13eb920357ca272c423ab6420fc34165894"
+    },
+    {
+      "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\browser-baseline.cjs",
+      "sha256": "06cc32863bf0185d1c3eebab05f949691df1d2a85a033483367ff98082d8e747"
+    },
+    {
+      "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\browser-comparison.json",
+      "sha256": "fcac3bffe5ad57d7eb17b683b0969b96ebcff4b11bc53666d2c0d675dfa027e9"
+    },
+    {
+      "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\browser-flows-initial-failure.json",
+      "sha256": "2641644d6e7b609f613ab7c4a39fac286d4236044a5a740fd41e3296eb1a0cc8"
+    },
+    {
+      "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\browser-flows-initial.cjs",
+      "sha256": "07622a90179757b0a716833aabf4e26e086887d694191fea8eaeb6e9c760c00b"
+    },
+    {
+      "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\browser-flows-load-retry-failure.json",
+      "sha256": "0d5cbf8433557eba7e2d39cf25c872eb62cabaa914e017c2b6c9eb3aceae6408"
+    },
+    {
+      "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\browser-flows-reporter-failure.json",
+      "sha256": "ccc40e7530f53535fa25773d1e3dd8e3655618850f112be2d91416dae7081b08"
+    },
+    {
+      "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\browser-flows.cjs",
+      "sha256": "13a0d62da2ccb5b1d96c2a6de267a0e042aef79e7b9956f1b68904880cdc0804"
+    },
+    {
+      "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\browser-flows.json",
+      "sha256": "b249ff82ff1e7bd13fc991831590a2bbbfd19e35f00c6070e99d70580dc0fe33"
+    },
+    {
+      "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\browser-supplement.cjs",
+      "sha256": "57cac5b1db9ca7464d1cf6ad04fa3d888be259d51ef7369ca051bd0ee3b31e03"
+    },
+    {
+      "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\browser-supplement.json",
+      "sha256": "81b827b2db2ef6fac0b334eb412be5b2865a6281f4661af087a241119281dd11"
+    },
+    {
+      "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\build-results.json",
+      "sha256": "79f12458dbd80a8c083adbea593e72b447afb422ad197f52d0a6b9738b542728"
+    },
+    {
+      "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\built-results.json",
+      "sha256": "8bf8a786714abcde2f3a90abbd990a3917bead15f1b50f08cbe0f7457000c9ed"
+    },
+    {
+      "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\capture.cjs",
+      "sha256": "e98ed4933a50911ae6bfc76e2378ee4be66d6709d880bd81692858838d5982ee"
+    },
+    {
+      "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\code-initial-results.json",
+      "sha256": "13c138018da43e5df23183c0397eaa2f8fd4589f1ed950ca69ee16b636791193"
+    },
+    {
+      "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\compare-browser.cjs",
+      "sha256": "fb4b1dec65e78f447a0ea9eb134aa57d0089f266d0f3bf3804dcd8f301785e28"
+    },
+    {
+      "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\diagnose-load.cjs",
+      "sha256": "e8f03a32c50c88ea96647fec171bb69d5972b6be0966ebeb4f27cc3cda8da0a5"
+    },
+    {
+      "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\generate-fixtures.mjs",
+      "sha256": "d4a1fb31a1eec40d365e478b6a6fe1604715d94dd3430e0e5c6b3b4bd476de47"
+    },
+    {
+      "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\http-results.json",
+      "sha256": "bf53f3f67c25e9578e4f965063bdcaf28575b83d7cdead680acf3f929db258ae"
+    },
+    {
+      "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\load-diagnostic.json",
+      "sha256": "9a342414798e15f2c21b4f888d1a73c4e0b65658745343037613432748f5b686"
+    },
+    {
+      "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\loaded-ads-boundary.cjs",
+      "sha256": "a0de085de0badfb7ebbdc57c6ca21b028a72e534f63411d2705f2f937b2c0b2d"
+    },
+    {
+      "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\loaded-ads-boundary.json",
+      "sha256": "6487d25751fb8608576db31f9f8b40ef43febd58ab9603f350f417ef4f9926e4"
+    },
+    {
+      "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\run-qa.cjs",
+      "sha256": "6226d7c0fd33cf3cb51419675978fe2e53c30307be8ba05eab01baae114399f8"
+    },
+    {
+      "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\update-board.cjs",
+      "sha256": "26b209d4d9872544deea0e511ba8e312f5eafa8097fa731099b1c87f02701803"
+    },
+    {
+      "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\verify-board.cjs",
+      "sha256": "fba354cdbcf62aeae281624f82b02ea471a94dda7f8611ac30a8fbf7ee605f6e"
+    },
+    {
+      "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\write-evidence.cjs",
+      "sha256": "7ba5a61750aaeaebca385b3042c294fc08819a07ba581a18954e4222b4e68ec8"
+    }
+  ],
+  "failures": [
+    {
+      "phase": "baseline browser",
+      "result": "FAIL",
+      "file": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\baseline-navigation-failure.json",
+      "resolution": "use DOM/content/paint identity for screenshots; no application mutation"
+    },
+    {
+      "phase": "fixture generator",
+      "result": "FAIL",
+      "error": "Windows absolute ESM path unsupported; subsequent check ENOENT before fixture existed",
+      "resolution": "correct file URL; generate exact pre-task baselines and rerun successfully"
+    },
+    {
+      "phase": "long idle batch 1/2",
+      "result": "FAIL preserved",
+      "files": [
+        "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\browser-flows-initial-failure.json",
+        "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\browser-flows-load-retry-failure.json"
+      ],
+      "resolution": "completed cases mapped individually, all nine covered; no claim of a fully stable batch",
+      "cause": "not established; independent later load diagnosis completed and saw GA collect ERR_ABORTED, insufficient to attribute earlier timeouts"
+    },
+    {
+      "phase": "interaction report",
+      "result": "FAIL preserved",
+      "file": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-v175-20260904\\browser-flows-reporter-failure.json",
+      "resolution": "fix temporary reporter string URL method mistake; all 45 flows rerun PASS"
+    },
+    {
+      "phase": "board patch",
+      "result": "patch rejected before write",
+      "resolution": "sort hunks by original file order; apply and verify 87 offline assertions"
+    }
+  ],
+  "contentReview": {
+    "path": "docs/quality/evidence/category-001/content-review.md",
+    "agent": "completed in scoped evidence",
+    "human": "未完成",
+    "qualityScore": "未验证"
+  },
+  "notVerified": [
+    "human factual/style review and user acceptance",
+    "KW-04 top-results semantic review",
+    "current CWV and physical devices/other engines",
+    "full SWF internal controls/save/fullscreen or external generator behavior",
+    "production deployment/version/SEO/ads/CMP",
+    "real authoritative board visual"
+  ],
+  "release": "不通过 / original P0 and production gates remain",
+  "commitCreated": false,
+  "pushed": false,
+  "deployed": false,
+  "rollback": "Only exact CATEGORY-001 deltas/new files/governance increments; preserve all prior user work and acceptances, no whole-repo reset."
+}

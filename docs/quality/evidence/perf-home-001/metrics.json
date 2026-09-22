@@ -1,0 +1,44 @@
+{
+  "taskId": "PERF-HOME-001",
+  "recordedAt": "2026-09-01",
+  "environment": {
+    "url": "http://localhost:3000/",
+    "framework": "Next.js 14.2.35 development server",
+    "lighthouseMode": "mobile form factor with simulated throttling",
+    "productionEvidence": false
+  },
+  "before": {
+    "coverUrl": "https://static.mysquarefaceicon.com/squarefacegenerator/square-face-cover.png",
+    "performanceScore": 57,
+    "fcpMs": 2200,
+    "lcpMs": 14200,
+    "tbtMs": 550,
+    "cls": 0.011,
+    "speedIndexMs": 3700,
+    "initialRequestCount": 23,
+    "forbiddenInitialRequestCount": 0
+  },
+  "after": {
+    "coverUrl": "/games/square-face-cover.png",
+    "coverSha256": "15A5C93F79859441EEF3032CE45E07ABC2E91A7520A9AAEF42158DD4FE00A535",
+    "performanceScore": 75,
+    "fcpMs": 2200,
+    "lcpMs": 3500,
+    "tbtMs": 550,
+    "cls": 0.011,
+    "speedIndexMs": 2200,
+    "initialRequestCount": 23,
+    "forbiddenInitialRequestCount": 0
+  },
+  "taskAcceptance": {
+    "initialRuffleWasmSwfAbsent": true,
+    "reservedGeometryStable": true,
+    "clsAtOrBelowPointOne": true,
+    "runtimeStartsOnlyAfterPlay": true
+  },
+  "unverified": [
+    "INP",
+    "production Core Web Vitals",
+    "production-equivalent build and local production SEO checks"
+  ]
+}

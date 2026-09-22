@@ -1,0 +1,156 @@
+{
+  "app/category/[slug]/page.tsx": {
+    "beforeSha256": "14d32d29e5a23250a1fa37a1e273791ab62103c384fa3e5c57ad73a1e747e0ae",
+    "afterSha256": "358074712a967ae9442d670cbb3fb4d5aa5aa09b7f6cf89a29c6cb8457c8926d",
+    "beforeSha256LF": "14d32d29e5a23250a1fa37a1e273791ab62103c384fa3e5c57ad73a1e747e0ae",
+    "afterSha256LF": "358074712a967ae9442d670cbb3fb4d5aa5aa09b7f6cf89a29c6cb8457c8926d",
+    "edits": [
+      {
+        "offset": 726,
+        "before": "",
+        "after": "import { resolveRemainingCategoryContent } from \"@/lib/games/category-remaining-content\";\n",
+        "offsetLF": 726
+      },
+      {
+        "offset": 1656,
+        "before": "  if (route.category.slug === faceMakersContent.slug) return buildCategorySampleMetadata(route);\n\n  const canonical = `https://mysquarefaceicon.com/category/${route.category.slug}`;\n  return {\n    title: {\n      absolute: `${route.category.name} | My Square Face Icon`\n    },\n    description: route.category.description,\n    alternates: {\n      canonical\n    },\n    robots: {\n      index: false,\n      follow: true,\n      googleBot: {\n        index: false,\n        follow: true\n      }\n    }\n  };\n",
+        "after": "  return buildCategorySampleMetadata(route);\n",
+        "offsetLF": 1656
+      },
+      {
+        "offset": 1958,
+        "before": "  const otherCategories = sample\n    ? listDirectoryCategoryRoutes().filter(({ category: other }) => other.slug !== category.slug)\n    : [];\n",
+        "after": "  const allCategories = listDirectoryCategoryRoutes();\n  const otherCategories = allCategories.filter(({ category: other }) => other.slug !== category.slug);\n  const remaining = sample ? undefined : resolveRemainingCategoryContent(route, allCategories);\n",
+        "offsetLF": 1958
+      },
+      {
+        "offset": 2231,
+        "before": "      {sample ? buildCategorySampleStructuredData(route).map((schema) => (\n",
+        "after": "      {buildCategorySampleStructuredData(route).map((schema) => (\n",
+        "offsetLF": 2231
+      },
+      {
+        "offset": 2457,
+        "before": "      )) : null}\n",
+        "after": "      ))}\n",
+        "offsetLF": 2457
+      },
+      {
+        "offset": 3257,
+        "before": "              <h2 id=\"category-games-heading\">{sample ? faceMakersContent.entriesHeading : <>Available {category.name}</>}</h2>\n",
+        "after": "              <h2 id=\"category-games-heading\">{sample ? faceMakersContent.entriesHeading : remaining?.entriesHeading ?? <>Available {category.name}</>}</h2>\n",
+        "offsetLF": 3257
+      },
+      {
+        "offset": 3533,
+        "before": "          <GameGrid games={games} ariaLabel={sample ? faceMakersContent.entriesHeading : `Available ${category.name}`} reloadDocument />\n",
+        "after": "          <GameGrid games={games} ariaLabel={sample ? faceMakersContent.entriesHeading : remaining?.entriesHeading ?? `Available ${category.name}`} reloadDocument />\n",
+        "offsetLF": 3533
+      },
+      {
+        "offset": 4046,
+        "before": "",
+        "after": "        ) : remaining && remaining.paragraphs.length > 0 ? (\n          <section className=\"route-directory-section\" aria-labelledby=\"category-choice-heading\">\n            <h2 id=\"category-choice-heading\">{remaining.choiceHeading}</h2>\n            {remaining.paragraphs.map((paragraph) => (\n              <p key={paragraph.id}>\n                {paragraph.parts.map((part, index) => typeof part === \"string\" ? part : (\n                  <GameLink key={`${paragraph.id}-${index}`} href={part.href} reloadDocument>{part.text}</GameLink>\n                ))}\n              </p>\n            ))}\n          </section>\n",
+        "offsetLF": 4046
+      },
+      {
+        "offset": 4674,
+        "before": "        {sample && otherCategories.length > 0 ? (\n",
+        "after": "        {(sample || remaining) && otherCategories.length > 0 ? (\n",
+        "offsetLF": 4674
+      }
+    ]
+  },
+  "scripts/category-sample-compat.mjs": {
+    "beforeSha256": "a1048c0f3a6ee281bb8001ccb0e59027f4a4b107bc3fd39fedc0ae9b1fbe2eb0",
+    "afterSha256": "204f369b0ae41754126461dafd4a4b29ee25c4d62d6f152d0d90b11a3f904f46",
+    "beforeSha256LF": "a1048c0f3a6ee281bb8001ccb0e59027f4a4b107bc3fd39fedc0ae9b1fbe2eb0",
+    "afterSha256LF": "204f369b0ae41754126461dafd4a4b29ee25c4d62d6f152d0d90b11a3f904f46",
+    "edits": [
+      {
+        "offset": 123,
+        "before": "",
+        "after": "import { beforeCategoryRemainingSource } from \"./category-remaining-compat.mjs\";\n",
+        "offsetLF": 123
+      },
+      {
+        "offset": 628,
+        "before": "",
+        "after": "  value = beforeCategoryRemainingSource(file, value);\n",
+        "offsetLF": 628
+      }
+    ]
+  },
+  "scripts/check-category-sample.mjs": {
+    "beforeSha256": "185f0b96c011da03f9e028b17e03fce8a56d2128a3cf5dee1c4b2cde02ae5f01",
+    "afterSha256": "32d380d645a2e517c95edf507c10fb4cca8539b28d1068905685155ac199b117",
+    "beforeSha256LF": "185f0b96c011da03f9e028b17e03fce8a56d2128a3cf5dee1c4b2cde02ae5f01",
+    "afterSha256LF": "32d380d645a2e517c95edf507c10fb4cca8539b28d1068905685155ac199b117",
+    "edits": [
+      {
+        "offset": 285,
+        "before": "",
+        "after": "import { beforeCategoryRemainingMarkup, beforeCategoryRemainingMetadata } from \"./category-remaining-compat.mjs\";\n",
+        "offsetLF": 285
+      },
+      {
+        "offset": 5247,
+        "before": "",
+        "after": "  html = beforeCategoryRemainingMarkup(html, slug);\n",
+        "offsetLF": 5247
+      },
+      {
+        "offset": 8400,
+        "before": "function restoreOtherCategoryMarkup(html, entries) {\n",
+        "after": "function restoreOtherCategoryMarkup(html, entries, slug) {\n  html = beforeCategoryRemainingMarkup(html, slug);\n",
+        "offsetLF": 8400
+      },
+      {
+        "offset": 9310,
+        "before": "  if (slug !== \"face-makers\") same(sha(JSON.stringify(metadata)), golden.categories[slug].metadataSha256, \"other category metadata frozen\");\n",
+        "after": "  if (slug !== \"face-makers\") same(sha(JSON.stringify(beforeCategoryRemainingMetadata(metadata, slug))), golden.categories[slug].metadataSha256, \"other category metadata frozen after exact approved batch inverse\");\n",
+        "offsetLF": 9310
+      },
+      {
+        "offset": 9672,
+        "before": "  if (slug !== \"face-makers\") same(sha(restoreOtherCategoryMarkup(html, routes.find(r => r.category.slug === slug).games.length)), golden.categories[slug].ssrSha256, \"other category exact original SSR after bounded attribute reversal\");\n",
+        "after": "  if (slug !== \"face-makers\") same(sha(restoreOtherCategoryMarkup(html, routes.find(r => r.category.slug === slug).games.length, slug)), golden.categories[slug].ssrSha256, \"other category exact original SSR after bounded batch/attribute reversal\");\n",
+        "offsetLF": 9672
+      },
+      {
+        "offset": 10928,
+        "before": "  rejects(() => assert.equal(sha(restoreOtherCategoryMarkup(html.replace(\"Current collection\", \"New collection\"), expectedCounts[slugs.indexOf(slug)])), golden.categories[slug].ssrSha256), \"other category text drift must not hide behind inverse\");\n",
+        "after": "  rejects(() => assert.equal(sha(restoreOtherCategoryMarkup(html.replace(\"Current collection\", \"New collection\"), expectedCounts[slugs.indexOf(slug)], slug)), golden.categories[slug].ssrSha256), \"other category text drift must not hide behind inverse\");\n",
+        "offsetLF": 10928
+      }
+    ]
+  },
+  "package.json": {
+    "beforeSha256": "5a4ee571c974dcd205cf0fdd5c50e719ff365922193c087b2fefca6074d71436",
+    "afterSha256": "7ffd72f3b5ec5e853869d8238da1ea11ce9ae4c84348725509a9ee10e7c756c5",
+    "beforeSha256LF": "5a4ee571c974dcd205cf0fdd5c50e719ff365922193c087b2fefca6074d71436",
+    "afterSha256LF": "7ffd72f3b5ec5e853869d8238da1ea11ce9ae4c84348725509a9ee10e7c756c5",
+    "edits": [
+      {
+        "offset": 2213,
+        "before": "",
+        "after": "    \"category-remaining:check\": \"node scripts/check-category-remaining.mjs\",\n",
+        "offsetLF": 2213
+      }
+    ]
+  },
+  "scripts/README.md": {
+    "beforeSha256": "761b75b823033edfab51d2cb64bca22b9adf3e3c915acccb1884f6113507c917",
+    "afterSha256": "33e2a7efc167a8eed4fd1dd72ee67fb78d7012e7c6bb059468e0158d99e8adf8",
+    "beforeSha256LF": "761b75b823033edfab51d2cb64bca22b9adf3e3c915acccb1884f6113507c917",
+    "afterSha256LF": "33e2a7efc167a8eed4fd1dd72ee67fb78d7012e7c6bb059468e0158d99e8adf8",
+    "edits": [
+      {
+        "offset": 13251,
+        "before": "",
+        "after": "\n## CATEGORY-001 已确认剩余四页批量回归\n\n`npm run category-remaining:check` 检查四页精确拟稿、真实记录依赖/缺失省略、卡片/分类导航、metadata/schema 和 Face Makers 完整 SSR/metadata 冻结；`-- --built` 与 `-- --base http://127.0.0.1:3100` 分别核对原始构建和单一 loopback HTTP。浏览器、水合、按文档归属的真实广告网络与桌面/手机另行验证。\n\n原 sample 检查仍保留四页改造前的黄金值和全部反例；仅经 `category-remaining-compat.mjs` 验证并逆向本批已确认的精确说明/分类区块、schema 和 H2/aria-label 后比较旧 SSR，OG/Twitter 单独精确验证后还原旧 metadata。原源码兼容链前置批次增量逆向，未改动的源码不接受任意归一化；新增批次检查同时验证真实输出，不能以“还原旧值”代替测试新功能。\n\n五页仍 noindex/follow、不进 sitemap、分类无广告，不更改 Registry/UNKNOWN 或既有权限判定。Pixel/Character 同一条记录的独立 SEO 价值、人类审核、CWV/真机、外站内部功能与发布状态不由这些测试宣称通过。\n",
+        "offsetLF": 13251
+      }
+    ]
+  }
+}

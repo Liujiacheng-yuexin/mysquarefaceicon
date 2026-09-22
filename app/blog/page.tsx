@@ -38,6 +38,7 @@ export default function BlogIndexPage() {
         <h1>Square Face Icon Guides</h1>
         <p className="lead">
           This blog collects practical guides for creating profile icons with a square face generator. Each guide links back to the tool, related resources, and the next useful step instead of acting as a disconnected article.
+          Use these square face icon guides to choose a workflow, platform-safe crop, or visual direction before opening the generator.
         </p>
 
         <section>

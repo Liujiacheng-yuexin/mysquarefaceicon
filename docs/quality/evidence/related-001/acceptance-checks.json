@@ -1,0 +1,114 @@
+{
+  "taskId": "RELATED-001",
+  "scope": "RELATED_OVAL_SAMPLE",
+  "boardVersion": "1.81",
+  "recordedAt": "2026-09-07T01:22:25.550Z",
+  "result": "通过（用户本地样例验收登记）；RELATED-001 整项未完成；生产未验证 / 未部署",
+  "sourceAcceptance": {
+    "result": "通过",
+    "scope": "RELATED_OVAL_SAMPLE",
+    "acceptedAt": "2026-09-07T01:21:02.778Z",
+    "source": "用户明确回复“RELATED-001 Oval 单页样例验收通过”",
+    "localOnly": true,
+    "samplePath": "/oval-face-icon-generator",
+    "wholeTaskCompleted": false,
+    "batchIntegrationStarted": false,
+    "note": "仅验收 v1.80 的服务端选择器与 Oval FAQ 后游戏/指南分组；不代表其它入口、实际权利、索引、全站质量或生产验收。"
+  },
+  "implementationEvidence": {
+    "path": "docs/quality/evidence/related-001/checks.json",
+    "sha256": "e3eb03f2dda884b910c0e03d77fd07131505bd41264b5f1c51d049e0f2a98605",
+    "modifiedInAcceptanceTurn": false,
+    "statusAtCapture": "待验收",
+    "result": "v1.80 local implementation and QA evidence retained"
+  },
+  "historicalProposalEvidence": {
+    "path": "docs/quality/evidence/related-001/proposal-checks.json",
+    "sha256": "ec36952d8e710a651d4804561f3bdf1860ec71bb471d666f517dd14d50617792",
+    "modifiedInAcceptanceTurn": false
+  },
+  "applicationPreservation": {
+    "applicationCodeChanged": false,
+    "testsOrCheckersChanged": false,
+    "gameDataChanged": false,
+    "cssChanged": false,
+    "routesOrMetadataChanged": false,
+    "indexingOrSitemapChanged": false,
+    "buildArtifactsChanged": false,
+    "selectorPath": "lib/recommendations/related-games.ts",
+    "selectorSha256": "f897da450dffbc2dc028115995294cbf413d1b830e3bd640bb01ce201c6083a4",
+    "ovalPagePath": "app/oval-face-icon-generator/page.tsx",
+    "ovalPageSha256": "dcabb4e17228e253afe758d299a67ec7c514011272a39eb11575e25963ab4ae6",
+    "buildId": "jNeY9E9kpEdOXfB1UZQaz",
+    "branch": "codex/game-platform-rebuild",
+    "head": "c6d30087c2c03a7c4eb8d5bfe6e055e9b8d40228"
+  },
+  "checksInAcceptanceTurn": {
+    "applicationTypeLintTestsBuildsRerun": false,
+    "httpSeoBrowserMobileRerun": false,
+    "productionChecksRerun": false,
+    "reason": "Acceptance-only governance update; preserve v1.80 evidence dates and do not claim new application QA.",
+    "governanceChecks": [
+      "JSON parsing",
+      "source acceptance scope and timestamp",
+      "board JavaScript syntax and state",
+      "21/60 completed count unchanged",
+      "33 source acceptance task keys",
+      "RELATED-001 wholeTaskCompleted=false",
+      "RECENT-001 and FAV-001 remain unstarted",
+      "pre-existing evidence and application file hashes unchanged",
+      "git diff --check"
+    ]
+  },
+  "governanceResults": {
+    "boardSourceAndVm": "27/27 PASS",
+    "repositoryPreservation": "11/11 PASS",
+    "acceptanceJsonParse": "PASS",
+    "gitDiffCheck": "PASS; only pre-existing line-ending warnings were emitted",
+    "applicationQaRerun": false,
+    "browserVisualRerun": false
+  },
+  "board": {
+    "path": "F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+    "previousSha256": "e409387ab92fa9c53e4d3375fd367ab2209b537b19d130472f876d4fbb6ede0d",
+    "currentSha256": "4e659aa595e62240a0a4056e95ccee904b338283777c874fcb81cb76f5ee0c1d",
+    "version": "1.81",
+    "currentTask": "RELATED-001",
+    "currentStatus": "设计中（Oval 样例已验收；其它入口未开始）",
+    "completedTasks": 21,
+    "totalTasks": 60,
+    "sourceAcceptanceKeyCount": 33,
+    "realBrowserVisual": "未验证；沿用本地文件访问边界，不使用替代副本绕过"
+  },
+  "nextState": {
+    "wholeTaskCompleted": false,
+    "batchProposalStarted": false,
+    "batchIntegrationStarted": false,
+    "recentStarted": false,
+    "favoriteStarted": false,
+    "nextInstructionRequired": true,
+    "note": "等待用户另行要求下一步；如扩展 RELATED 到其它入口，先提交新的页面范围、SEO 与交互方案。"
+  },
+  "unresolved": [
+    "RELATED-001 other-surface scope and user confirmation",
+    "actual Square and Oval rights remain UNKNOWN",
+    "human content review and KW-04",
+    "real devices, other browser engines, internal SWF behavior and field CWV",
+    "whole-site ads and CMP gates",
+    "production canonical, robots, SEO, performance and deployment evidence",
+    "real authoritative-board visual rendering"
+  ],
+  "release": {
+    "commitCreated": false,
+    "pushed": false,
+    "deployed": false,
+    "seoProdRun": false,
+    "productionVerified": false,
+    "result": "不通过 / 未部署"
+  },
+  "rollback": {
+    "application": "none for this acceptance-only turn",
+    "governance": "remove only v1.81 acceptance entries and restore v1.80 pending-acceptance board/docs; preserve application and historical evidence",
+    "production": "not applicable because no deployment occurred"
+  }
+}

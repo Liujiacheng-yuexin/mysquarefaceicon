@@ -1,0 +1,10 @@
+{
+  "name": "architecture",
+  "command": "node scripts/run-home-information-architecture-check.mjs",
+  "startedAt": "2026-09-22T08:04:06.378Z",
+  "finishedAt": "2026-09-22T08:04:09.001Z",
+  "exitCode": 0,
+  "signal": null,
+  "stdout": "HOME-IA-001 validation passed\n- Square remains the core section and discovery precedes Gallery and long-form content\n- Related contains only Oval and Pixel published Game Data; Pixel remains External Tool\n- five real category routes render; empty Continue/New modules do not render\n- Guide, Gallery, and Blog links are isolated in the post-FAQ Resources section\n- the mobile core Play button remains centered in resting and hover states\n",
+  "stderr": ""
+}

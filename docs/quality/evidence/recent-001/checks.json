@@ -1,0 +1,171 @@
+{
+  "taskId": "RECENT-001",
+  "scope": "RECENTLY_PLAYED_IMPLEMENTATION",
+  "boardVersion": "1.86",
+  "recordedAt": "2026-09-07T07:24:12.4747720Z",
+  "userInstruction": "确认 RECENT-001 方案，进行开发",
+  "status": "待验收",
+  "result": "有条件通过（本地实现、工程检查与 1280 CSS px 实际交互通过；精确 390/360 移动视觉与 seeded-history CLS 未验证）",
+  "proposal": {
+    "path": "docs/product/recently-played-proposal.md",
+    "sha256": "1b21f75e8cb10453ff9de792f571002e65c047803771978e27e5cb39fd31fab8",
+    "confirmed": true,
+    "confirmation": "确认 RECENT-001 方案，进行开发"
+  },
+  "implementationContract": {
+    "storageKey": "msfi-recently-played-v1",
+    "version": 1,
+    "storedFields": ["gameId", "startedAt"],
+    "storeLimit": 8,
+    "displayLimit": 4,
+    "recordTrigger": "first validated playable idle-to-Play activation per mounted player",
+    "dedupeAndOrdering": "same game refreshes timestamp and moves newest-first",
+    "reloadCreatesRecord": false,
+    "retryCreatesRecord": false,
+    "pageViewCreatesRecord": false,
+    "externalLinkCreatesRecord": false,
+    "sameTabSync": "msfi:recently-played-change",
+    "crossTabSync": "native storage event for the exact key",
+    "clearScope": "only msfi-recently-played-v1",
+    "accountOrCloudSync": false,
+    "networkWrite": false,
+    "emptyOrInvalidBehavior": "render nothing and reserve no module height"
+  },
+  "candidateResolution": {
+    "included": [
+      {"gameId": "square-face", "href": "/", "type": "RUFFLE_SWF"},
+      {"gameId": "oval-face", "href": "/oval-face-icon-generator", "type": "RUFFLE_SWF"}
+    ],
+    "excluded": [
+      {"gameId": "pixel-art-avatar", "href": "/pixel-art-avatar-icon-generator", "type": "EXTERNAL_LINK"}
+    ]
+  },
+  "surfaces": {
+    "homepage": "inside the existing discovery region before Related Avatar Games",
+    "gamesDirectory": "after the hero and before On-site Games",
+    "privacyPolicy": "visible September 7, 2026 date and stable game ID/start-time disclosure",
+    "serverRendering": "no Continue Playing output before valid browser-local history"
+  },
+  "automatedChecks": [
+    {"command": "npm run recent:check", "result": "通过", "finalRerun": true},
+    {"command": "npx tsc --noEmit", "result": "通过", "finalRerun": true},
+    {"command": "npm run lint", "result": "通过", "warnings": 0, "errors": 0, "finalRerun": true},
+    {"command": "npm run cf:build", "result": "通过", "nextPages": 42, "openNextWorkerEmitted": true, "buildId": "Q4ukIJY87jlNStoksFbdV", "note": "Windows compatibility warning retained"},
+    {"suite": "source and SSR regression", "result": "通过", "checks": ["player", "routes", "components", "metadata", "games", "home", "home-hero", "home-discovery", "home-gallery", "perf-home", "game-template", "games-index", "category-sample", "category-remaining", "related", "terms", "about", "editorial", "gallery", "pixel", "square", "oval", "locale"], "note": "game-template retains only the pre-existing React fetchPriority SSR warning"},
+    {"suite": "final-build local HTTP", "result": "通过", "checks": ["canonical", "seo", "robots", "games-index built/http", "oval built/http", "locale built/http"]},
+    {"suite": "same-turn earlier-build local HTTP", "result": "通过", "checks": ["pixel built/http", "rights pages built/http", "categories built/http", "related built/http"]},
+    {"command": "npm run seo:check", "result": "通过（mandatory）", "urls": 20, "mandatory": 0, "existingShould": 12, "shouldBreakdown": {"KW-03": 1, "META-03": 7, "META-04": 4}},
+    {"command": "npm run robots:check", "result": "通过", "blocked": 6, "allowed": 5},
+    {"suite": "authoritative board inline script and state model", "result": "通过", "syntax": true, "taskStatus": "待验收", "stage": "IMPLEMENTED_PENDING_ACCEPTANCE", "completedTasks": 22, "totalTasks": 60, "sourceAcceptanceKeys": 33, "favoriteStarted": false, "deployed": false, "exportVersion": "1.86"},
+    {"url": "http://localhost:3000/", "result": "通过", "httpStatus": 200}
+  ],
+  "browserChecks": {
+    "environment": "in-app browser against local production build",
+    "actualCssWidth": 1280,
+    "documentClientWidth": 1265,
+    "documentScrollWidth": 1265,
+    "horizontalOverflow": 0,
+    "passed": [
+      "empty history hides the entire module",
+      "Square Play updates the same page immediately",
+      "refresh persists valid history",
+      "Clear hides the module, announces success and focuses Related Avatar Games",
+      "idle Reload Game does not create a record",
+      "Play after refresh creates the Square record",
+      "Oval Start Game creates the Oval record",
+      "games directory shows newest-first Oval then Square",
+      "replaying Square reorders to Square then Oval",
+      "second games-directory tab updates through the storage event",
+      "Pixel EXTERNAL_LINK visit does not create a record",
+      "Square Continue link navigates to root",
+      "Privacy date and disclosure each render once",
+      "tested tabs have zero console warnings and zero console errors"
+    ],
+    "clearButtonCssPixels": {"width": 142.03, "height": 44},
+    "desktopFullPageVisual": "通过（grouping and hierarchy readable）",
+    "exact390x844Visual": "未验证",
+    "exact360x800Visual": "未验证",
+    "mobileBlocker": "viewport.set did not change the actual CSS width, including in a newly created tab; it remained 1280",
+    "seededHistoryCls": "未验证",
+    "realDevice": "未验证",
+    "otherBrowsers": "未验证"
+  },
+  "discoveredAndFixed": [
+    {
+      "issue": "idle Reload Game created a recently played record because Play and Reload shared one callback",
+      "fix": "separate activateOrReload (Play recording) from reload (never recording) and wire GameControls onReload explicitly",
+      "verification": "source assertion, dedicated check and browser empty-history Reload retest passed"
+    }
+  ],
+  "developmentFailureLog": [
+    "initial RECENT fixture lacked the updated canonical",
+    "isolated CSS module check could not resolve the module; implementation was returned to scoped global CSS",
+    "initial placement assertion was too brittle",
+    "home discovery all-empty guard drifted and was restored",
+    "frozen checks needed strict reversible RECENT compatibility",
+    "README baseline and double-inverse compatibility were corrected",
+    "category compatibility chain needed the RECENT inverse before older transforms",
+    "concurrent related built/http checks raced on .related-games-check; serial rerun passed",
+    "C drive ENOSPC required repository-local temporary and npm-cache directories",
+    "npm run start argument forwarding failed in the current PowerShell/npm environment; npm run start works",
+    "browser testing exposed the idle Reload recording bug",
+    "one source assertion initially targeted the wrong callback; corrected and rerun"
+  ],
+  "seoInvariant": {
+    "urlsChanged": false,
+    "titleOrDescriptionChanged": false,
+    "h1Changed": false,
+    "canonicalChanged": false,
+    "socialMetadataChanged": false,
+    "schemaChanged": false,
+    "robotsOrIndexChanged": false,
+    "sitemapChanged": false,
+    "searchIntentChanged": false,
+    "seoProdRun": false
+  },
+  "sourceHashesSha256": {
+    "lib/recently-played.ts": "76ded478a93e62988cf5dd01147a4b1d84e9a50645d3a343a59cf1f76a3f22f6",
+    "lib/games/recently-played.ts": "b4f429d61f32fa06224cab012f6dd5073c0ab8c13f96674b7e97ce908a99d300",
+    "components/game/RecentlyPlayed.tsx": "110671be591af757b7114ad322048d5f607d8367fe0dd67ebcd1244931334b07",
+    "components/game-player/GamePlayer.tsx": "965107b002be63d29e8e70cfbcb573c6a19ac2c20ee26cc6eba52206ffcf16fb",
+    "components/game/GameControls.tsx": "d5bc71a4710e7ed171ef88d11a36be82a1e1eebe4c171130a9740a453ca6d0f0",
+    "components/FlashGenerator.tsx": "76c5140008653dfd8bf2e34c461d250ab25517fa4b189a03bd93a65416ef3f16",
+    "lib/games/square-homepage.ts": "319e298ea362613100410b5400f56765baf996aabb08abd03420d88cb862b6db",
+    "lib/games/oval-legacy-page.ts": "39748eaa373f0f997237e86d3b96ace408d30ca3d00875836c2cec8cb699593c",
+    "components/home/HomeDiscoveryRegion.tsx": "ee9cd5542b9573db6c16f443e7aa0fe209d479fe7da58887b7077cfed34204b2",
+    "app/games/page.tsx": "14de6c9dc2e3eab53eaffb264c225e929ac99f9828d1fd2ad583c81c207a7409",
+    "app/privacy-policy/page.tsx": "fce773f0aa2d14a915cde7a9efacd1369b3834eb8fb7d7100fcc6a02cfb4c1f4",
+    "app/globals.css": "ba915d64081b80d6f166983c090f155f9434267b0ef844ed3074932c0a2993c6",
+    "scripts/validate-recently-played.tsx": "2462bce38a26952e95c9e078c8ac8c5ab4134ab2ff968c0686360c55c177f33a",
+    "scripts/run-recently-played-check.mjs": "b5e2bf5befd425b8c4bc14466b779a9f7f1b7b2599e7cec2019b5be45406011a",
+    "scripts/recently-played-compat.mjs": "2f262bd1d674f1674e7283dc78819851e3590dd68ea0259e87d99b8458132676",
+    "scripts/games-index-compat.mjs": "ae10af65ad02f916dfce54eea5ca8a89ae202e0f64477f2d1dc56a4c80425510",
+    "scripts/check-square-homepage.mjs": "e042365fbbc450db03788800fab6416eacb5a93c097cb8c8cf74d9d0716da378",
+    "scripts/check-oval-legacy-page.mjs": "d19297fc1594791af5308eb87392be798bf28dd48201265455a02f964a92fe64",
+    "scripts/check-locale-rights.mjs": "a1806d6a6c48ef796acfb6ebe0e6f0bb0e1e9be7651653fbf8abc5282f5fb9ab",
+    "scripts/related-games-compat.mjs": "ffe69dd858724ee617b253e46d06c6c96fa63dbdebc72772634fa703cb5d5dee",
+    "tsconfig.recently-played-check.json": "22d18cadeff8c729a9fafbf218c7ce12d1e8f82f5876ddbe50f437c12005b373",
+    "package.json": "56bb4a5cd9743882b38f1d51a3683829fc8cafb95f6ba223402294e6062c94cd",
+    "scripts/README.md": "fcef3c53881348b5eb979c4ba7baf48a54a438fc5d1ae44910faa586471f6d81",
+    "docs/product/recently-played-proposal.md": "1b21f75e8cb10453ff9de792f571002e65c047803771978e27e5cb39fd31fab8",
+    "PAGE_PLAN.md": "866da96af7518f25333312e4216fe029f68cf92589a0008aff221e670e5080a5",
+    "LAUNCH_CHECKLIST.md": "7676927508c23b4011fc61bce97271f6e84568ef0c9e0834ae7d015e06892ffc",
+    "SEO_LOG.md": "0ffd1d389c555fce8dcd14084c1bb7fed73211dd815af6f1be6dc208e5de59bb",
+    "docs/quality/evidence/recent-001/README.md": "f07e476bf3126dbf2ac89a5a9f293ad2dd2c8268dba7d14a673f74b6df670f6e",
+    "authoritativeBoard": "6108606df56adc7528453bb1b40d881519743ac109226d9d3f82ec0d32080d14"
+  },
+  "governance": {
+    "completedTasks": 22,
+    "totalTasks": 60,
+    "sourceAcceptanceKeys": 33,
+    "userAcceptanceReceived": false,
+    "favoriteStarted": false,
+    "commitCreated": false,
+    "pushed": false,
+    "deployed": false,
+    "production": "未验证 / 未部署",
+    "releaseStatus": "不通过：Square/Oval 权利 UNKNOWN 与原 P0/人工/广告/CMP/CWV/生产门禁仍开放",
+    "nextRequiredUserReply": "RECENT-001 验收通过"
+  },
+  "evidenceReadme": "docs/quality/evidence/recent-001/README.md"
+}

@@ -1,0 +1,281 @@
+{
+  "description": "Exact inverse of historical IMG-001 implementation patches and confirmed HOME-MOBILE-001 source delta. Used only by legacy tests; no golden hashes replaced.",
+  "files": {
+    "lib/games/game-schema.ts": {
+      "edits": [
+        {
+          "after": "export type InputMethod = \"POINTER\" | \"TOUCH\" | \"KEYBOARD\";\nexport type GameImageRole = \"THUMBNAIL\" | \"LANDSCAPE_COVER\" | \"PLAYER_PREVIEW\" | \"OPEN_GRAPH\";\nexport type GameImageProvenance = \"PROJECT_ASSET\" | \"PROJECT_CDN\";",
+          "before": "export type InputMethod = \"POINTER\" | \"TOUCH\" | \"KEYBOARD\";"
+        },
+        {
+          "after": "export type GameImage = {\n  readonly role: GameImageRole;\n  readonly src: string;\n  readonly alt: string;\n  readonly width: number;\n  readonly height: number;\n  readonly provenance: GameImageProvenance;\n};",
+          "before": "export type GameImage = {\n  readonly role: \"THUMBNAIL\" | \"COVER\" | \"OPEN_GRAPH\";\n  readonly src: string;\n  readonly alt: string;\n  readonly width: number | null;\n  readonly height: number | null;\n  readonly provenance: \"PROJECT_ASSET\" | \"PROJECT_CDN\";\n};"
+        },
+        {
+          "after": "const slugPattern = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;\nconst sha256Pattern = /^[A-F0-9]{64}$/;\nconst hexColorPattern = /^#[A-Fa-f0-9]{6}$/;\nconst gameImageRoles = new Set<GameImageRole>([\n  \"THUMBNAIL\",\n  \"LANDSCAPE_COVER\",\n  \"PLAYER_PREVIEW\",\n  \"OPEN_GRAPH\"\n]);\nconst gameImageProvenances = new Set<GameImageProvenance>([\"PROJECT_ASSET\", \"PROJECT_CDN\"]);",
+          "before": "const slugPattern = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;\nconst sha256Pattern = /^[A-F0-9]{64}$/;\nconst hexColorPattern = /^#[A-Fa-f0-9]{6}$/;"
+        },
+        {
+          "after": "}\n\nfunction isSafeRootPath(value: string) {\n  return value.startsWith(\"/\") && !value.startsWith(\"//\") && !/[?#\\\\\\u0000-\\u0020]/.test(value);\n}",
+          "before": "}"
+        },
+        {
+          "after": "      for (const key of [\"role\", \"src\", \"alt\", \"provenance\"]) requireText(image, key, path, errors);\n      if (hasText(image.role)) {\n        if (!gameImageRoles.has(image.role as GameImageRole)) {\n          errors.push(`${path}.role is not a supported Game Image role.`);\n        }\n        if (roles.has(image.role)) errors.push(`game.images contains duplicate role ${image.role}.`);\n        roles.add(image.role);\n      }\n      if (hasText(image.provenance) && !gameImageProvenances.has(image.provenance as GameImageProvenance)) {\n        errors.push(`${path}.provenance must be PROJECT_ASSET or PROJECT_CDN.`);\n      }\n      if (hasText(image.src)) {\n        if (image.provenance === \"PROJECT_ASSET\" && !isSafeRootPath(image.src)) {\n          errors.push(`${path}.src must be a safe root-relative path for PROJECT_ASSET.`);\n        } else if (image.provenance === \"PROJECT_CDN\" && !isHttpsUrl(image.src)) {\n          errors.push(`${path}.src must be an HTTPS URL for PROJECT_CDN.`);\n        } else if (image.provenance !== \"PROJECT_ASSET\" && image.provenance !== \"PROJECT_CDN\") {\n          if (!isSafeRootPath(image.src) && !isHttpsUrl(image.src)) {\n            errors.push(`${path}.src must be a safe root-relative path or HTTPS URL.`);\n          }\n        }\n      }\n      for (const dimension of [\"width\", \"height\"] as const) {\n        const dimensionValue = image[dimension];\n        if (typeof dimensionValue !== \"number\" || !Number.isSafeInteger(dimensionValue) || dimensionValue <= 0) {\n          errors.push(`${path}.${dimension} must be a positive safe integer.`);\n        }\n      }\n      if (\n        typeof image.width === \"number\" && Number.isSafeInteger(image.width) && image.width > 0 &&\n        typeof image.height === \"number\" && Number.isSafeInteger(image.height) && image.height > 0\n      ) {\n        if (image.role === \"THUMBNAIL\" && image.width !== image.height) {\n          errors.push(`${path} THUMBNAIL must use an exact 1:1 ratio.`);\n        }\n        if (image.role === \"LANDSCAPE_COVER\" && image.width * 9 !== image.height * 16) {\n          errors.push(`${path} LANDSCAPE_COVER must use an exact 16:9 ratio.`);\n        }\n        if (image.role === \"OPEN_GRAPH\" && (image.width !== 1200 || image.height !== 630)) {\n          errors.push(`${path} OPEN_GRAPH must be exactly 1200x630.`);\n        }\n      }\n    });\n\n    for (const requiredRole of [\"THUMBNAIL\", \"OPEN_GRAPH\"] as const) {\n      if (!roles.has(requiredRole)) errors.push(`game.images must contain exactly one ${requiredRole} image.`);\n    }\n    if (value.pageType === \"GAME\" && !roles.has(\"PLAYER_PREVIEW\")) {\n      errors.push(\"GAME records must contain exactly one PLAYER_PREVIEW image.\");\n    }\n    if (value.pageType === \"EXTERNAL_TOOL\" && roles.has(\"PLAYER_PREVIEW\")) {\n      errors.push(\"EXTERNAL_TOOL records must not contain a PLAYER_PREVIEW image.\");\n    }\n  }",
+          "before": "      for (const key of [\"role\", \"src\", \"alt\", \"provenance\"]) requireText(image, key, path, errors);\n      if (hasText(image.role)) {\n        if (roles.has(image.role)) errors.push(`game.images contains duplicate role ${image.role}.`);\n        roles.add(image.role);\n      }\n      if (hasText(image.src) && !image.src.startsWith(\"/\") && !isHttpsUrl(image.src)) {\n        errors.push(`${path}.src must be a root-relative path or HTTPS URL.`);\n      }\n      for (const dimension of [\"width\", \"height\"] as const) {\n        const dimensionValue = image[dimension];\n        if (dimensionValue !== null && (typeof dimensionValue !== \"number\" || dimensionValue <= 0)) {\n          errors.push(`${path}.${dimension} must be null or a positive number.`);\n        }\n      }\n    });\n  }"
+        }
+      ],
+      "afterSha256": "d88c308a7143442256f0ef8e32db7c62caedce32043759f6d4828175152b864d",
+      "beforeSha256": "b3d036c8973bc9562b99b55058e042d9040605f6e04f008dc54378eb005e8df6"
+    },
+    "data/games/square-face.ts": {
+      "edits": [
+        {
+          "after": "      src: \"/square-face-icon.png\",\n      alt: \"Square Face Generator preview\",\n      width: 512,\n      height: 512,",
+          "before": "      src: \"/square-face-icon.png\",\n      alt: \"Square Face Generator preview\",\n      width: null,\n      height: null,"
+        },
+        {
+          "after": "      role: \"PLAYER_PREVIEW\",",
+          "before": "      role: \"COVER\","
+        },
+        {
+          "after": "Square Face Generator - Free Online Avatar & Icon Maker",
+          "before": "Square Face Generator - Classic Flash Avatar & Icon Maker"
+        },
+        {
+          "after": "Create a square face icon online for free. Customize your avatar in your browser, then save in-game or take a screenshot. No signup or Flash plugin needed.",
+          "before": "Play Square Face Generator online and create retro square face icons for avatars, Discord PFPs, GitHub profiles, favicons, and more. Free, no signup, no Flash plugin required."
+        }
+      ],
+      "afterSha256": "0fccce76b35cc65700a85142cc94fdaef7d5a892504cc74d36c37e8e9a90bcdf",
+      "beforeSha256": "5f70eb18ae8e87db1db4d2603c080e5a4b01d44ae2b57f7abcf9afbf26550d0e"
+    },
+    "data/games/oval-face.ts": {
+      "edits": [
+        {
+          "after": "      role: \"PLAYER_PREVIEW\",",
+          "before": "      role: \"COVER\","
+        }
+      ],
+      "afterSha256": "94ff3d98419c74d0e35e274bb2848e4cd749ad20c6ee2ac0e3fa8bcb276f69bb",
+      "beforeSha256": "03d3c9d884161baafd9f5baadf85bbb05567324cc8e7251f094ca0bbe4b872fe"
+    },
+    "lib/games/game-player-model.ts": {
+      "edits": [
+        {
+          "after": "} from \"./game-schema\";\nimport { getGamePlayerPreview } from \"./game-images\";",
+          "before": "} from \"./game-schema\";"
+        },
+        {
+          "after": "function pickCover(game: GameRecord): PlayerCover | null {\n  const image = getGamePlayerPreview(game);\n  if (!image) return null;\n\n  return {\n    src: image.src,\n    width: image.width,\n    height: image.height\n  };\n}",
+          "before": "function pickCover(game: GameRecord): PlayerCover | null {\n  const image = game.images.find((candidate) => candidate.role === \"COVER\") ?? game.images[0];\n  if (!image) return null;\n\n  return {\n    src: image.src,\n    width: image.width ?? 1200,\n    height: image.height ?? 675\n  };\n}"
+        }
+      ],
+      "afterSha256": "26b6695fba8b6a5956d499ecfa2f61c0747b39cafd2d216ed23ba1879adabe78",
+      "beforeSha256": "42672e8d0917e9d7d6a1b28137e505ecd4d7b09ba40e3c971751b6d7f3fbe84c"
+    },
+    "lib/games/square-homepage.ts": {
+      "edits": [
+        {
+          "after": "import { validateGameRecord, type GameHomepageContent, type GameRecord, type NonEmptyReadonlyArray } from \"./game-schema\";\nimport { getGamePageH1 } from \"../seo/game-metadata\";\nimport { getGamePlayerPreview, getGameThumbnail } from \"./game-images\";",
+          "before": "import { validateGameRecord, type GameHomepageContent, type GameRecord, type NonEmptyReadonlyArray } from \"./game-schema\";\nimport { getGamePageH1 } from \"../seo/game-metadata\";"
+        },
+        {
+          "after": "function isDimension(value: number): value is number {",
+          "before": "function isDimension(value: number | null): value is number {"
+        },
+        {
+          "after": "  const cover = getGamePlayerPreview(game);\n  const artwork = getGameThumbnail(game);",
+          "before": "  const cover = game.images.find((image) => image.role === \"COVER\");\n  const artwork = game.images.find((image) => image.role === \"THUMBNAIL\");"
+        }
+      ],
+      "afterSha256": "4ad6c56b6fe124a1cbf83365873e9abac269be6a6ca4b0e05498e6cda7f91e3c",
+      "beforeSha256": "319e298ea362613100410b5400f56765baf996aabb08abd03420d88cb862b6db"
+    },
+    "lib/games/oval-legacy-page.ts": {
+      "edits": [
+        {
+          "after": "import { gameCatalog } from \"./catalog\";\nimport { validateGameRecord, type GameLegacyPageContent, type GameRecord, type NonEmptyReadonlyArray } from \"./game-schema\";\nimport { getGamePlayerPreview } from \"./game-images\";",
+          "before": "import { gameCatalog } from \"./catalog\";\nimport { validateGameRecord, type GameLegacyPageContent, type GameRecord, type NonEmptyReadonlyArray } from \"./game-schema\";"
+        },
+        {
+          "after": "function isDimension(value: number): value is number {",
+          "before": "function isDimension(value: number | null): value is number {"
+        },
+        {
+          "after": "  const cover = getGamePlayerPreview(game);",
+          "before": "  const cover = game.images.find((image) => image.role === \"COVER\");"
+        }
+      ],
+      "afterSha256": "1a39d7bed439c5b28244113ef967fcb2f4a32cca8ff6638ae07999141ae7ebb1",
+      "beforeSha256": "39748eaa373f0f997237e86d3b96ace408d30ca3d00875836c2cec8cb699593c"
+    },
+    "lib/games/recently-played.ts": {
+      "edits": [
+        {
+          "after": "import type { RecentlyPlayedCandidate } from \"../recently-played\";\nimport { getGameImage } from \"./game-images\";",
+          "before": "import type { RecentlyPlayedCandidate } from \"../recently-played\";"
+        },
+        {
+          "after": "    const thumbnail = getGameImage(game, \"THUMBNAIL\");",
+          "before": "    const thumbnail = game.images.find((image) => image.role === \"THUMBNAIL\");"
+        },
+        {
+          "after": "          width: thumbnail.width,\n          height: thumbnail.height",
+          "before": "          width: thumbnail.width ?? 512,\n          height: thumbnail.height ?? 512"
+        }
+      ],
+      "afterSha256": "96bfdf41c8c16c5bfe405f87c3497318315b82bb911988308db02ab60d162937",
+      "beforeSha256": "b4f429d61f32fa06224cab012f6dd5073c0ab8c13f96674b7e97ce908a99d300"
+    },
+    "components/game/GameCard.tsx": {
+      "edits": [
+        {
+          "after": "import type { GameRecord } from \"../../lib/games/game-schema\";\nimport { getGameImage } from \"../../lib/games/game-images\";",
+          "before": "import type { GameRecord } from \"../../lib/games/game-schema\";"
+        },
+        {
+          "after": "  const thumbnail = getGameImage(game, \"THUMBNAIL\");",
+          "before": "  const thumbnail = game.images.find((image) => image.role === \"THUMBNAIL\");"
+        },
+        {
+          "after": "                width={thumbnail.width}\n                height={thumbnail.height}\n                sizes=\"(max-width: 430px) 96px, 88px\"\n                loading=\"lazy\"",
+          "before": "                width={thumbnail.width ?? 512}\n                height={thumbnail.height ?? 512}\n                sizes=\"(max-width: 430px) 96px, 88px\""
+        },
+        {
+          "after": "              width={thumbnail.width}\n              height={thumbnail.height}\n              sizes=\"(max-width: 430px) 88px, (max-width: 760px) 96px, (max-width: 1100px) 140px, 180px\"\n              loading=\"lazy\"",
+          "before": "              width={thumbnail.width ?? 512}\n              height={thumbnail.height ?? 512}\n              sizes=\"(max-width: 430px) 88px, (max-width: 760px) 96px, (max-width: 1100px) 140px, 180px\""
+        }
+      ],
+      "afterSha256": "a86efc4aac29608812b92b9114160ed170089daaa799e0186973455d2ea08352",
+      "beforeSha256": "aa705eb806afbf29da36ae0173c31cf935ea8a822e0d0830bf3c5ab221005aab"
+    },
+    "components/game/RecentlyPlayed.tsx": {
+      "edits": [
+        {
+          "after": "            width={candidate.image.width}\n            height={candidate.image.height}\n            sizes=\"(max-width: 430px) 82px, (max-width: 760px) 96px, 112px\"\n            loading=\"lazy\"",
+          "before": "            width={candidate.image.width}\n            height={candidate.image.height}\n            sizes=\"(max-width: 430px) 82px, (max-width: 760px) 96px, 112px\""
+        }
+      ],
+      "afterSha256": "983033efe2af816b729685e7e0d72f6a77a8c1d6f51fdb92c4700631b4357976",
+      "beforeSha256": "c631107c4b107cea1f15762d76d2b72a922df4e767e762c495d61692fc6b126d"
+    },
+    "components/GameSidebar.tsx": {
+      "edits": [
+        {
+          "after": "              <Image src={item.imageSrc} alt={item.imageAlt} width={84} height={84} sizes=\"56px\" loading=\"lazy\" />",
+          "before": "              <Image src={item.imageSrc} alt={item.imageAlt} width={84} height={84} sizes=\"56px\" />"
+        }
+      ],
+      "afterSha256": "7cfcc5822671fc8a6ede5706fed103c9110d750c26774500c2a45353a4d9c4b2",
+      "beforeSha256": "fc0c33185e4852ae7024c1c3474c7976817a012bd96360721fc32d29399567da"
+    },
+    "lib/seo/game-metadata.ts": {
+      "edits": [
+        {
+          "after": "import type { GameRecord } from \"../games/game-schema\";\nimport { getGameOpenGraphImage } from \"../games/game-images\";",
+          "before": "import type { GameRecord } from \"../games/game-schema\";"
+        },
+        {
+          "after": "    if (!Number.isSafeInteger(image.width) || !Number.isSafeInteger(image.height)) {\n      errors.push(`${game.id}.OPEN_GRAPH width and height are required for stable metadata.`);\n    }",
+          "before": "    if (image.width === null || image.height === null) {\n      errors.push(`${game.id}.OPEN_GRAPH width and height are required for stable metadata.`);\n    }"
+        },
+        {
+          "after": "  const openGraphImage = getGameOpenGraphImage(game);",
+          "before": "  const openGraphImage = game.images.find((image) => image.role === \"OPEN_GRAPH\");\n  if (!openGraphImage || openGraphImage.width === null || openGraphImage.height === null) {\n    throw new Error(`Invalid game metadata for ${game.id}: OPEN_GRAPH image is incomplete.`);\n  }"
+        }
+      ],
+      "afterSha256": "d58fc63ffd57ce74ae9d47bae6a7b1eb72b7c31fcdd2cd9662aca8511fd5dbcc",
+      "beforeSha256": "87e7f42b085e2714cd22bce3634ccf1272fa822fb70b77292c5831d0f38fe660"
+    },
+    "package.json": {
+      "edits": [
+        {
+          "after": "    \"assets:check\": \"node scripts/run-game-asset-check.mjs\",\n    \"images:check\": \"node scripts/run-game-image-check.mjs\",",
+          "before": "    \"assets:check\": \"node scripts/run-game-asset-check.mjs\","
+        }
+      ],
+      "afterSha256": "db1f5e3701e4700e116ce18aa0dd88336d2b2c9ebf6b4c297652a5ad33af7087",
+      "beforeSha256": "dab0103b7b11a30b9e58cfd7b8db82bcf65d50d4e21f499970452512cde28f55"
+    },
+    "components/home/HomeHero.tsx": {
+      "afterSha256": "d4041b63bd359c658fe37a37e22bfe01157156e2758ef2a99bbb13c1270d60d7",
+      "beforeSha256": "7807a674d0c9315de0f25a33bc2bcc77f2c36e2682057810cec829e6e8cb99bb",
+      "edits": [
+        {
+          "after": ", useState, useSyncExternalStore } from \"react\";\nimport AvatarGenerator from \"../AvatarGenerator\";\nimport type { FlashGeneratorHandle } from \"../FlashGenerator\";\nimport type { GameHomepageContent } from \"../../lib/games/game-schema\";\nimport type { SquareHomepagePlayerProps } from \"../../lib/games/square-homepage\";\nimport CoreGamePreview from \"./CoreGamePreview\";\nimport FavoriteToggle from \"../game/FavoriteToggle\";\n\ntype HomeHeroProps = {\n  readonly h1: string;\n  readonly copy: GameHomepageContent[\"hero\"];\n  readonly player: SquareHomepagePlayerProps;\n};\n\nconst corePreviewId = \"home-core-game-preview\";\nconst simpleMakerId = \"home-simple-maker\";\nconst mobileQuery = \"(max-width: 760px)\";\ntype MakerMode = \"classic\" | \"simple\";\n\nfunction subscribeToViewport(onChange: () => void) {\n  const query = window.matchMedia(mobileQuery);\n  query.addEventListener(\"change\", onChange);\n  return () => query.removeEventListener(\"change\", onChange);\n}\n\nfunction getMobileSnapshot() {\n  return window.matchMedia(mobileQuery).matches;\n}\n\nfunction getServerSnapshot() { return null; }\n\nexport default function HomeHero({\n  h1,\n  copy,\n  player\n}: HomeHeroProps) {\n  const isMobile = useSyncExternalStore<boolean | null>(subscribeToViewport, getMobileSnapshot, getServerSnapshot);\n  const [chosenMode, setChosenMode] = useState<MakerMode | null>(null);\n  // CSS supplies the same responsive default before hydration, without flashing\n  // the classic player on phones. An explicit choice survives viewport changes.\n  const mode = chosenMode ?? (isMobile === null ? \"auto\" : isMobile ? \"simple\" : \"classic\");\n  const playerRef = useRef<FlashGeneratorHandle | null>(null);\n  const handleHeroPlay = useCallback(() => {\n    playerRef.current?.activateOrReload();\n  }, []);\n\n  return (\n    <section className=\"game-station home-hero\" id=\"game-player\" data-home-section=\"hero\" data-maker-mode={mode}>\n      <span className=\"anchor-target\" id=\"maker\" aria-hidden=\"true\" />\n      <div className=\"home-hero-grid\">\n        <div className=\"home-hero-copy\">\n          <p className=\"eyebrow home-classic-copy\">{copy.eyebrow}</p>\n          <p className=\"eyebrow home-simple-copy\">Free online avatar maker</p>\n          <h1>{h1}</h1>\n          <p className=\"hero-text home-classic-copy\">{copy.intro}</p>\n          <p className=\"hero-text home-simple-copy\">Make a simple square avatar and download a PNG. No signup needed.</p>\n          <div className=\"home-hero-actions\" aria-label=\"Game actions\">\n            <button\n              className=\"home-hero-play\"\n              type=\"button\"\n              aria-controls={corePreviewId}\n              onClick={handleHeroPlay}\n              data-home-hero-play\n            >\n              <Play aria-hidden=\"true\" size={24} />\n              {player.startLabel}\n            </button>\n            <FavoriteToggle\n              gameId={player.gameId}\n              gameName=\"Square Face Generator\"\n              pageType=\"GAME\"\n              variant=\"detail\"\n              showViewLink\n            />\n          </div>\n        </div>\n\n        <div className=\"home-maker\">\n          <div className=\"home-maker-switch\" role=\"group\" aria-label=\"Choose an editor\">\n            <button type=\"button\" aria-pressed={mode === \"classic\" || mode === \"auto\"} aria-controls=\"home-classic-maker\" onClick={() => setChosenMode(\"classic\")} data-maker-choice=\"classic\">Classic game</button>\n            <button type=\"button\" aria-pressed={mode === \"simple\"} aria-controls={simpleMakerId} onClick={() => setChosenMode(\"simple\")} data-maker-choice=\"simple\">Simple maker</button>\n          </div>\n          <div className=\"home-classic-panel\" id=\"home-classic-maker\" hidden={mode === \"simple\"}>\n            <p className=\"home-maker-note\">Classic game artwork and controls. Press Play to start.</p>\n            <CoreGamePreview\n              ref={playerRef}\n              previewId={corePreviewId}\n              cardLabel={copy.cardLabel}\n              {...player}\n            />\n          </div>\n          <div className=\"home-simple-panel\" id={simpleMakerId} hidden={mode === \"classic\"}>\n            <p className=\"home-maker-note\">Simple illustrated avatars, with a different look from the classic game.</p>\n            <AvatarGenerator compact />\n          </div>\n        </div",
+          "before": " } from \"react\";\nimport type { FlashGeneratorHandle } from \"../FlashGenerator\";\nimport type { GameHomepageContent } from \"../../lib/games/game-schema\";\nimport type { SquareHomepagePlayerProps } from \"../../lib/games/square-homepage\";\nimport CoreGamePreview from \"./CoreGamePreview\";\nimport FavoriteToggle from \"../game/FavoriteToggle\";\n\ntype HomeHeroProps = {\n  readonly h1: string;\n  readonly copy: GameHomepageContent[\"hero\"];\n  readonly player: SquareHomepagePlayerProps;\n};\n\nconst corePreviewId = \"home-core-game-preview\";\n\nexport default function HomeHero({\n  h1,\n  copy,\n  player\n}: HomeHeroProps) {\n  const playerRef = useRef<FlashGeneratorHandle | null>(null);\n  const handleHeroPlay = useCallback(() => {\n    playerRef.current?.activateOrReload();\n  }, []);\n\n  return (\n    <section className=\"game-station home-hero\" id=\"game-player\" data-home-section=\"hero\">\n      <span className=\"anchor-target\" id=\"maker\" aria-hidden=\"true\" />\n      <div className=\"home-hero-grid\">\n        <div className=\"home-hero-copy\">\n          <p className=\"eyebrow\">{copy.eyebrow}</p>\n          <h1>{h1}</h1>\n          <p className=\"hero-text\">{copy.intro}</p>\n          <div className=\"home-hero-actions\" aria-label=\"Game actions\">\n            <button\n              className=\"home-hero-play\"\n              type=\"button\"\n              aria-controls={corePreviewId}\n              onClick={handleHeroPlay}\n              data-home-hero-play\n            >\n              <Play aria-hidden=\"true\" size={24} />\n              {player.startLabel}\n            </button>\n            <FavoriteToggle\n              gameId={player.gameId}\n              gameName=\"Square Face Generator\"\n              pageType=\"GAME\"\n              variant=\"detail\"\n              showViewLink\n            />\n          </div>\n        </div>\n\n        <CoreGamePreview\n          ref={playerRef}\n          previewId={corePreviewId}\n          cardLabel={copy.cardLabel}\n          {...player}\n        /"
+        }
+      ]
+    },
+    "app/globals.css": {
+      "afterSha256": "7a31b6b3f7a219dc4372b575bbab96ae0786291d503848d0ee51131d89454434",
+      "beforeSha256": "8f5dc4b40b46eae03375a4ea3607913a0b2ff6cb702da302dcb223b87f967e3c",
+      "edits": [
+        {
+          "after": ".home-maker {\n  min-width: 0;\n}\n\n.home-maker-switch {\n  display: grid;\n  grid-template-columns: repeat(2, minmax(0, 1fr));\n  gap: 6px;\n  padding: 5px;\n  border: 1px solid var(--border);\n  border-radius: 10px;\n  background: #fffdf8;\n}\n\n.home-maker-switch button,\n.simple-maker-sizes button {\n  min-height: 44px;\n  border: 1px solid transparent;\n  border-radius: 7px;\n  background: transparent;\n  color: #5d5047;\n  font: inherit;\n  font-weight: 800;\n  cursor: pointer;\n}\n\n.home-maker-switch button[aria-pressed=\"true\"],\n.simple-maker-sizes button[aria-pressed=\"true\"] {\n  border-color: #08795e;\n  background: #e3f8ed;\n  color: #06543f;\n}\n\n.home-maker-note {\n  margin: 12px 0;\n  color: #5d5047;\n  font-size: 14px;\n  line-height: 1.45;\n}\n\n.home-hero .home-simple-copy,\n.home-hero[data-maker-mode=\"auto\"] .home-simple-panel,\n.home-hero[data-maker-mode=\"simple\"] .home-classic-copy,\n.home-hero[data-maker-mode=\"simple\"] .home-hero-actions {\n  display: none;\n}\n\n.home-hero[data-maker-mode=\"simple\"] .home-simple-copy {\n  display: block;\n}\n\n.simple-maker {\n  padding: 16px;\n  border: 1px solid var(--border);\n  border-radius: 10px;\n  background: #fffdf8;\n}\n\n.simple-maker-top {\n  display: grid;\n  grid-template-columns: minmax(110px, 200px) minmax(140px, 1fr);\n  align-items: start;\n  gap: 16px;\n}\n\n.simple-maker-export {\n  display: grid;\n  min-width: 0;\n  gap: 8px;\n}\n\n.simple-maker-sizes {\n  display: grid;\n  grid-template-columns: repeat(3, minmax(0, 1fr));\n  gap: 2px;\n}\n\n.simple-maker-export .tool-button {\n  min-height: 44px;\n  width: 100%;\n  padding: 10px 6px;\n  font-size: 14px;\n  gap: 5px;\n}\n\n.simple-maker-export .tool-button:disabled {\n  opacity: 0.6;\n  cursor: wait;\n}\n\n.simple-maker-reset {\n  display: inline-flex;\n  min-height: 44px;\n  align-items: center;\n  justify-content: center;\n  gap: 6px;\n  border: 1px solid var(--border);\n  border-radius: 7px;\n  background: white;\n  color: #5d5047;\n  font: inherit;\n  cursor: pointer;\n}\n\n.simple-maker-status {\n  min-height: 36px;\n  margin: 12px 0;\n  color: #526255;\n  font-size: 13px;\n  line-height: 1.4;\n}\n\n.simple-maker-status[data-export-error=\"true\"] {\n  color: #a12b18;\n}\n\n.simple-maker-options {\n  display: grid;\n  grid-template-columns: repeat(3, minmax(0, 1fr));\n  gap: 10px;\n}\n\n.simple-maker-options label {\n  display: grid;\n  min-width: 0;\n  gap: 6px;\n  color: #3f3028;\n  font-size: 14px;\n  font-weight: 800;\n}\n\n.simple-maker-options select {\n  width: 100%;\n  min-width: 0;\n  min-height: 44px;\n  padding: 6px;\n  border: 1px solid #a99889;\n  border-radius: 7px;\n  background: white;\n  color: #3f3028;\n  font: inherit;\n  font-size: 16px;\n  text-transform: capitalize;\n}\n\n.simple-maker-colors {\n  display: grid;\n  grid-template-columns: repeat(2, minmax(0, 1fr));\n  gap: 16px;\n  margin-top: 18px;\n}\n\n.simple-maker .color-control {\n  min-width: 0;\n}\n\n.simple-maker .color-control label {\n  margin-bottom: 8px;\n  gap: 4px;\n}\n\n.simple-maker .color-control input,\n.simple-maker .swatch {\n  width: 44px;\n  height: 44px;\n  flex: 0 0 44px;\n}\n\n.simple-maker .swatch-row {\n  gap: 6px;\n}\n\n.home-maker :is(button, select, input):focus-visible {\n  outline: 3px solid #08795e;\n  outline-offset: 3px;\n}\n\n@media (max-width: 760px) {\n  .home-hero[data-maker-mode=\"auto\"] .home-classic-panel,\n  .home-hero[data-maker-mode=\"auto\"] .home-classic-copy,\n  .home-hero[data-maker-mode=\"auto\"] .home-hero-actions {\n    display: none;\n  }\n\n  .home-hero[data-maker-mode=\"auto\"] .home-simple-panel,\n  .home-hero[data-maker-mode=\"auto\"] .home-simple-copy {\n    display: block;\n  }\n\n  .home-hero[data-maker-mode=\"auto\"] [data-maker-choice=\"classic\"] {\n    border-color: transparent;\n    background: transparent;\n    color: #5d5047;\n  }\n\n  .home-hero[data-maker-mode=\"auto\"] [data-maker-choice=\"simple\"] {\n    border-color: #08795e;\n    background: #e3f8ed;\n    color: #06543f;\n  }\n\n  .home-hero[data-maker-mode=\"simple\"] .home-hero-copy h1,\n  .home-hero[data-maker-mode=\"auto\"] .home-hero-copy h1 {\n    font-size: 36px;\n    line-height: 1.05;\n  }\n\n  .simple-maker {\n    padding: 12px;\n  }\n\n  .simple-maker-top {\n    grid-template-columns: minmax(100px, 1fr) minmax(140px, 1fr);\n    gap: 10px;\n  }\n}\n",
+          "before": ""
+        }
+      ]
+    },
+    "components/AvatarGenerator.tsx": {
+      "afterSha256": "1eb53c8bd7c73657977c7512bc7d276ce3297238e38aff81bdf3ce1aee9e62aa",
+      "beforeSha256": "61e65dd817d517975ba89ca2ba7e7b182cf015bc296e4a993aa4733342fda74b",
+      "edits": [
+        {
+          "after": "aria-pressed={option === value}\n            className={option === value ? \"segment is-active\" : \"segment\"}\n            key={option}\n            onClick={() => onChange(option)}\n            type=\"button\"\n          >\n            {option}\n          </button>\n        ))}\n      </div>\n    </fieldset>\n  );\n}\n\ntype ColorControlProps = {\n  label: string;\n  value: string;\n  presets: string[];\n  onChange: (value: string) => void;\n};\n\nfunction ColorControl({ label, value, presets, onChange }: ColorControlProps) {\n  return (\n    <div className=\"color-control\">\n      <label>\n        <span>{label}</span>\n        <input\n          aria-label={`${label} color`}\n          type=\"color\"\n          value={value}\n          onChange={(event) => onChange(event.target.value)}\n        />\n      </label>\n      <div className=\"swatch-row\" aria-label={`${label} color presets`}>\n        {presets.map((preset) => (\n          <button\n            aria-label={`Use ${preset} for ${label}`}\n            aria-pressed={preset.toLowerCase() === value.toLowerCase()}\n            className={preset.toLowerCase() === value.toLowerCase() ? \"swatch is-active\" : \"swatch\"}\n            key={preset}\n            onClick={() => onChange(preset)}\n            style={{ backgroundColor: preset }}\n            type=\"button\"\n          />\n        ))}\n      </div>\n    </div>\n  );\n}\n\nexport default function AvatarGenerator({ compact = false }: { compact?: boolean }) {\n  const canvasRef = useRef<HTMLCanvasElement | null>(null);\n  const [config, setConfig] = useState<AvatarConfig>(defaultConfig);\n  const [exportSize, setExportSize] = useState<ExportSize>(512);\n  const [previewUrl, setPreviewUrl] = useState(\"\");\n  const [status, setStatus] = useState(\"Ready to customize.\");\n  const [canvasReady, setCanvasReady] = useState(false);\n  const [exportError, setExportError] = useState(false);\n\n  useEffect(() => {\n    const canvas = canvasRef.current;\n    try {\n      const ctx = canvas?.getContext(\"2d\");\n      if (!canvas || !ctx) throw new Error(\"Canvas unavailable\");\n      drawAvatar(ctx, config);\n      if (!compact) setPreviewUrl(canvas.toDataURL(\"image/png\"));\n      setCanvasReady(true);\n    } catch {\n      setCanvasReady(false);\n      setExportError(true);\n      setStatus(\"The preview could not be drawn. Try reloading or switching to the classic game.\");\n    }\n  }, [config, compact]);\n\n  function updateConfig<T extends keyof AvatarConfig>(key: T, value: AvatarConfig[T]) {\n    setConfig((current) => ({ ...current, [key]: value }));\n    setExportError(false);\n    setStatus(\"Preview updated. Your next download will use these settings.\");\n  }\n\n  function applyPreset(preset: AvatarConfig, presetName: string) {\n    setConfig(preset);\n    setStatus(`${presetName} preset applied.`);\n  }\n\n  function randomizeAvatar() {\n    setConfig(makeRandomConfig());\n    setStatus(\"Random square face generated.\");\n  }\n\n  function resetAvatar() {\n    setConfig(defaultConfig);\n    setStatus(\"Default square face restored.\");\n  }\n\n  function createExportCanvas(size: ExportSize) {\n    const source = canvasRef.current;\n    if (!source) throw new Error(\"Canvas unavailable\");\n\n    const output = document.createElement(\"canvas\");\n    output.width = size;\n    output.height = size;\n    const ctx = output.getContext(\"2d\");\n    if (!ctx) throw new Error(\"Export unavailable\");\n\n    ctx.imageSmoothingEnabled = false;\n    ctx.drawImage(source, 0, 0, size, size);\n    return output;\n  }\n\n  function downloadAvatar() {\n    try {\n      const canvas = createExportCanvas(exportSize);\n      const dataUrl = canvas.toDataURL(\"image/png\");\n      if (!dataUrl.startsWith(\"data:image/png;base64,\")) throw new Error(\"PNG export unavailable\");\n      const link = document.createElement(\"a\");\n      link.download = `my-square-face-icon-${exportSize}.png`;\n      link.href = dataUrl;\n      document.body.appendChild(link);\n      try { link.click(); } finally { link.remove(); }\n      setExportError(false);\n      setStatus(`PNG download requested (${exportSize} × ${exportSize}). Check your downloads.`);\n    } catch {\n      setExportError(true);\n      setStatus(\"PNG export failed. Your settings are kept. Try Download PNG again, or take a screenshot of the preview.\");\n    }\n  }\n\n  async function copyAvatarCaption() {\n    const caption = `I made a cute ${exportSize}x${exportSize} square face icon with My Square Face Icon.`;\n\n    try {\n      await navigator.clipboard.writeText(caption);\n      setStatus(\"Caption copied for sharing.\");\n    } catch {\n      window.prompt(\"Copy this caption\", caption);\n      setStatus(\"Caption ready to copy.\");\n    }\n  }\n\n  const previewStyle = previewUrl ? { backgroundImage: `url(${previewUrl})` } : undefined;\n\n  if (compact) {\n    return (\n      <div className=\"simple-maker\" aria-label=\"Simple avatar editor\">\n        <noscript><p>Enable JavaScript to customize an avatar and download a PNG.</p></noscript>\n        <div className=\"simple-maker-top\">\n          <div className=\"canvas-frame\">\n            <canvas aria-label=\"Simple square avatar preview\" height={512} width={512} ref={canvasRef} role=\"img\">Your browser needs Canvas support to show the avatar preview.</canvas>\n          </div>\n          <div className=\"simple-maker-export\">\n            <fieldset className=\"control-group\">\n              <legend>PNG size</legend>\n              <div className=\"simple-maker-sizes\">\n                {exportSizes.map(size => <button type=\"button\" key={size} aria-label={`${size} pixel PNG`} aria-pressed={size === exportSize} onClick={() => setExportSize(size)}>{size}</button>)}\n              </div>\n            </fieldset>\n            <button className=\"tool-button primary\" type=\"button\" disabled={!canvasReady} onClick={downloadAvatar}><Download size={18} aria-hidden=\"true\" />Download PNG</button>\n            <button className=\"simple-maker-reset\" type=\"button\" onClick={() => { resetAvatar(); setExportError(false); }}><RotateCcw size={16} aria-hidden=\"true\" />Reset</button>\n          </div>\n        </div>\n        <p className=\"simple-maker-status\" role=\"status\" data-export-error={exportError}>{status}</p>\n        <div className=\"simple-maker-options\">\n          <label htmlFor=\"simple-maker-face\">Face<select id=\"simple-maker-face\" value={config.face} onChange={event => updateConfig(\"face\", event.target.value as FaceStyle)}>{faceOptions.map(value => <option value={value} key={value}>{value}</option>)}</select></label>\n          <label htmlFor=\"simple-maker-hair\">Hair<select id=\"simple-maker-hair\" value={config.hair} onChange={event => updateConfig(\"hair\", event.target.value as HairStyle)}>{hairOptions.map(value => <option value={value} key={value}>{value}</option>)}</select></label>\n          <label htmlFor=\"simple-maker-eyes\">Eyes<select id=\"simple-maker-eyes\" value={config.eyes} onChange={event => updateConfig(\"eyes\", event.target.value as EyeStyle)}>{eyeOptions.map(value => <option value={value} key={value}>{value}</option>)}</select></label>\n        </div>\n        <div className=\"simple-maker-colors\">\n          <ColorControl label=\"Skin\" value={config.skinColor} presets={skinPalette} onChange={value => updateConfig(\"skinColor\", value)} />\n          <ColorControl label=\"Hair\" value={config.hairColor} presets={hairPalette} onChange={value => updateConfig(\"hairColor\", value)} />\n          <ColorControl label=\"Background\" value={config.backgroundColor} presets={backgroundPalette} onChange={value => updateConfig(\"backgroundColor\", value)} />\n          <ColorControl label=\"Accent\" value={config.accentColor} presets={accentPalette} onChange={value => updateConfig(\"accentColor\", value)} />\n        </div>\n      </div>\n    );\n  }",
+          "before": "className={option === value ? \"segment is-active\" : \"segment\"}\n            key={option}\n            onClick={() => onChange(option)}\n            type=\"button\"\n          >\n            {option}\n          </button>\n        ))}\n      </div>\n    </fieldset>\n  );\n}\n\ntype ColorControlProps = {\n  label: string;\n  value: string;\n  presets: string[];\n  onChange: (value: string) => void;\n};\n\nfunction ColorControl({ label, value, presets, onChange }: ColorControlProps) {\n  return (\n    <div className=\"color-control\">\n      <label>\n        <span>{label}</span>\n        <input\n          aria-label={`${label} color`}\n          type=\"color\"\n          value={value}\n          onChange={(event) => onChange(event.target.value)}\n        />\n      </label>\n      <div className=\"swatch-row\" aria-label={`${label} color presets`}>\n        {presets.map((preset) => (\n          <button\n            aria-label={`Use ${preset} for ${label}`}\n            className={preset.toLowerCase() === value.toLowerCase() ? \"swatch is-active\" : \"swatch\"}\n            key={preset}\n            onClick={() => onChange(preset)}\n            style={{ backgroundColor: preset }}\n            type=\"button\"\n          />\n        ))}\n      </div>\n    </div>\n  );\n}\n\nexport default function AvatarGenerator() {\n  const canvasRef = useRef<HTMLCanvasElement | null>(null);\n  const [config, setConfig] = useState<AvatarConfig>(defaultConfig);\n  const [exportSize, setExportSize] = useState<ExportSize>(512);\n  const [previewUrl, setPreviewUrl] = useState(\"\");\n  const [status, setStatus] = useState(\"Ready to customize.\");\n\n  useEffect(() => {\n    const canvas = canvasRef.current;\n    const ctx = canvas?.getContext(\"2d\");\n    if (!canvas || !ctx) return;\n\n    drawAvatar(ctx, config);\n    setPreviewUrl(canvas.toDataURL(\"image/png\"));\n  }, [config]);\n\n  function updateConfig<T extends keyof AvatarConfig>(key: T, value: AvatarConfig[T]) {\n    setConfig((current) => ({ ...current, [key]: value }));\n  }\n\n  function applyPreset(preset: AvatarConfig, presetName: string) {\n    setConfig(preset);\n    setStatus(`${presetName} preset applied.`);\n  }\n\n  function randomizeAvatar() {\n    setConfig(makeRandomConfig());\n    setStatus(\"Random square face generated.\");\n  }\n\n  function resetAvatar() {\n    setConfig(defaultConfig);\n    setStatus(\"Default square face restored.\");\n  }\n\n  function createExportCanvas(size: ExportSize) {\n    const source = canvasRef.current;\n    if (!source) return null;\n\n    const output = document.createElement(\"canvas\");\n    output.width = size;\n    output.height = size;\n    const ctx = output.getContext(\"2d\");\n    if (!ctx) return null;\n\n    ctx.imageSmoothingEnabled = false;\n    ctx.drawImage(source, 0, 0, size, size);\n    return output;\n  }\n\n  function downloadAvatar() {\n    const canvas = createExportCanvas(exportSize);\n    if (!canvas) return;\n\n    const link = document.createElement(\"a\");\n    link.download = `my-square-face-icon-${exportSize}.png`;\n    link.href = canvas.toDataURL(\"image/png\");\n    link.click();\n    setStatus(`Downloaded ${exportSize}x${exportSize} PNG.`);\n  }\n\n  async function copyAvatarCaption() {\n    const caption = `I made a cute ${exportSize}x${exportSize} square face icon with My Square Face Icon.`;\n\n    try {\n      await navigator.clipboard.writeText(caption);\n      setStatus(\"Caption copied for sharing.\");\n    } catch {\n      window.prompt(\"Copy this caption\", caption);\n      setStatus(\"Caption ready to copy.\");\n    }\n  }\n\n  const previewStyle = previewUrl ? { backgroundImage: `url(${previewUrl})` } : undefined;"
+        }
+      ]
+    },
+    "scripts/validate-home-hero.tsx": {
+      "edits": [
+        {
+          "after": "const cover = squareFaceGame.images.find((image) => image.role === \"PLAYER_PREVIEW\");",
+          "before": "const cover = squareFaceGame.images.find((image) => image.role === \"COVER\");"
+        }
+      ],
+      "afterSha256": "790be81db6bed2a4890536181e8ecaffb6cbe34a8d79e5ca7c1240bc4e16e356",
+      "beforeSha256": "6d2f6dc8332a7ea2fed9776ae3e453857c6ee2f4adfd2528ce6663fab73c9e3c"
+    },
+    "scripts/validate-home-performance.tsx": {
+      "edits": [
+        {
+          "after": "const cover = squareFaceGame.images.find((image) => image.role === \"PLAYER_PREVIEW\");",
+          "before": "const cover = squareFaceGame.images.find((image) => image.role === \"COVER\");"
+        }
+      ],
+      "afterSha256": "ad049d05b0446c581835221b903b05d45319f5530e92bd6f4cc38df00a13296d",
+      "beforeSha256": "8aefc3b9227758e6f2b651f539b8385bb5275376b6d939f6c0e76f618a48d90d"
+    },
+    "scripts/validate-game-template.tsx": {
+      "edits": [
+        {
+          "after": "      ...(!isExternal ? [{\n        role: \"PLAYER_PREVIEW\" as const,\n        src: \"/games/square-face-cover.png\",\n        alt: \"Template avatar maker player preview\",\n        width: 970,\n        height: 844,\n        provenance: \"PROJECT_ASSET\" as const\n      }] : []),",
+          "before": "      {\n        role: \"COVER\",\n        src: \"/games/square-face-cover.png\",\n        alt: \"Template avatar maker cover\",\n        width: 970,\n        height: 844,\n        provenance: \"PROJECT_ASSET\"\n      },"
+        }
+      ],
+      "afterSha256": "159935a4349e6a0e3492a6d382445dc9f65b6da116f445f2151c41b08663027e",
+      "beforeSha256": "73d6f5fedec483212e78909169465458f1ccd53506b73f6a5fb0273e5a44e24c"
+    },
+    "scripts/validate-home-discovery.tsx": {
+      "afterSha256": "b296a89590bc9c87b4d0037450d79a6a4ba0ec3ab24e84a03395d03ec182d1f4",
+      "beforeSha256": "ac88bc4afc2d3d2cc022f5d05beacf1cd37e1f3a44995454e2634cba420f302d",
+      "edits": [
+        {
+          "after": "assert.match(gameCardSource, /getGameImage\\(game, \"THUMBNAIL\"\\)/);",
+          "before": "assert.match(gameCardSource, /image\\.role === \"THUMBNAIL\"/);"
+        }
+      ]
+    },
+    "scripts/check-pixel-external-page.mjs": {
+      "afterSha256": "c3983b57dabd45b38455a54a71d760fa562e34f33e1c1a5881e26a2738a86c36",
+      "beforeSha256": "2dd5825fe3b1a0abc5025f87e9efde69147a184ca3c6ce3079e06b4081dcfe14",
+      "edits": [
+        {
+          "after": "ImageMobileSource } from \"./image-mobile-legacy-compat.mjs\";\nimport { beforeGamesIndexNavigation, beforeGamesIndexSource } from \"./games-index-compat.mjs\";\nimport { beforeRelatedRemainingMarkup, beforeRelatedRemainingSource } from \"./related-remaining-compat.mjs\";\n\nconst root = resolve(dirname(fileURLToPath(import.meta.url)), \"..\");\nconst require = createRequire(import.meta.url);\nconst ts = require(\"typescript\"), React = require(\"react\");\nconst { renderToStaticMarkup } = require(\"react-dom/server\");\nconst sha = value => createHash(\"sha256\").update(value).digest(\"hex\");\nconst plain = value => JSON.parse(JSON.stringify(value));\nconst read = file => beforeImageMobileSource(file, readFileSync(resolve(root, file), \"utf8\").replace(/\\r\\n/g, \"\\n\")",
+          "before": "GamesIndexNavigation, beforeGamesIndexSource } from \"./games-index-compat.mjs\";\nimport { beforeRelatedRemainingMarkup, beforeRelatedRemainingSource } from \"./related-remaining-compat.mjs\";\n\nconst root = resolve(dirname(fileURLToPath(import.meta.url)), \"..\");\nconst require = createRequire(import.meta.url);\nconst ts = require(\"typescript\"), React = require(\"react\");\nconst { renderToStaticMarkup } = require(\"react-dom/server\");\nconst sha = value => createHash(\"sha256\").update(value).digest(\"hex\");\nconst plain = value => JSON.parse(JSON.stringify(value));\nconst read = file => readFileSync(resolve(root, file), \"utf8\").replace(/\\r\\n/g, \"\\n\""
+        }
+      ]
+    }
+  }
+}

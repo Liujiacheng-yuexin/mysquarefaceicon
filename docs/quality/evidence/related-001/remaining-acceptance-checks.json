@@ -1,0 +1,154 @@
+{
+  "taskId": "RELATED-001",
+  "scope": "RELATED_REMAINING_SURFACES",
+  "boardVersion": "1.84",
+  "recordedAt": "2026-09-07T03:59:16.847Z",
+  "userInstruction": "RELATED-001 剩余入口验收通过",
+  "result": "通过（用户明确验收剩余入口；结合既有 Oval 样例，RELATED-001 本地范围整项完成）",
+  "userAcceptanceReceived": true,
+  "wholeLocalTaskCompleted": true,
+  "sourceAcceptance": {
+    "result": "通过",
+    "scope": "RELATED_REMAINING_SURFACES",
+    "acceptedAt": "2026-09-07T03:59:16.847Z",
+    "source": "用户明确回复“RELATED-001 剩余入口验收通过”",
+    "localOnly": true,
+    "wholeTaskCompleted": true,
+    "implementationEvidencePath": "docs/quality/evidence/related-001/remaining-surfaces-checks.json",
+    "sampleAcceptance": {
+      "result": "通过",
+      "scope": "RELATED_OVAL_SAMPLE",
+      "acceptedAt": "2026-09-07T01:21:02.778Z",
+      "source": "用户明确回复“RELATED-001 Oval 单页样例验收通过”",
+      "localOnly": true,
+      "samplePath": "/oval-face-icon-generator",
+      "wholeTaskCompleted": false,
+      "evidencePath": "docs/quality/evidence/related-001/acceptance-checks.json"
+    },
+    "note": "两个独立验收范围共同关闭 RELATED-001 本地任务；不代表真实权利、人工事实审核、索引、生产或发布通过，不自动开始 RECENT-001/FAV-001。"
+  },
+  "acceptedSurfaces": [
+    {
+      "path": "/oval-face-icon-generator",
+      "stage": "RELATED_OVAL_SAMPLE",
+      "acceptedAt": "2026-09-07T01:21:02.778Z"
+    },
+    {
+      "path": "/",
+      "stage": "RELATED_REMAINING_SURFACES",
+      "selection": ["oval-face", "pixel-art-avatar"]
+    },
+    {
+      "path": "/pixel-art-avatar-icon-generator",
+      "stage": "RELATED_REMAINING_SURFACES",
+      "selection": ["square-face", "oval-face"]
+    },
+    {
+      "path": "future /games/[slug]",
+      "stage": "RELATED_REMAINING_SURFACES",
+      "component": "components/game/RelatedGames.tsx"
+    }
+  ],
+  "originalImplementationEvidence": {
+    "path": "docs/quality/evidence/related-001/remaining-surfaces-checks.json",
+    "sha256": "fa3ee2e9281f30deea15941fa52bc97304ccae378e4d042f3725f005c70a00c6",
+    "boardVersion": "1.83",
+    "recordedAt": "2026-09-07T03:33:04.895Z",
+    "originalResult": "本地任务通过；浏览器有条件通过；待用户验收；全站发布不通过",
+    "note": "原实现 QA、失败、浏览器计数与未验证项保持；本文件单独登记后续用户验收，不改写历史结果。"
+  },
+  "applicationPreservation": {
+    "applicationCodeChangedInAcceptanceTurn": false,
+    "testsOrCheckersChangedInAcceptanceTurn": false,
+    "gameDataChangedInAcceptanceTurn": false,
+    "cssChangedInAcceptanceTurn": false,
+    "routesOrMetadataChangedInAcceptanceTurn": false,
+    "indexingOrSitemapChangedInAcceptanceTurn": false,
+    "buildArtifactsChangedInAcceptanceTurn": false,
+    "branch": "codex/game-platform-rebuild",
+    "head": "c6d30087c2c03a7c4eb8d5bfe6e055e9b8d40228",
+    "buildId": "IsVmGe2YdXHdvXYb3w5Yu",
+    "preservedHashes": {
+      "lib/recommendations/related-games.ts": "f897da450dffbc2dc028115995294cbf413d1b830e3bd640bb01ce201c6083a4",
+      "lib/games/home-discovery.ts": "9db8d4e6db534274e6bdb05fcfff6c2191d6395270c02b4de25c4424ec73a007",
+      "components/game/RelatedGames.tsx": "0d0f82928e4ed89a33adad7deb87e569d246c0311314bdd4468db009f78cef39",
+      "components/game/GameDetailTemplate.tsx": "fc810e5de24498107c5081a154177a875b24e97451c45a9f753e4745805a01e9",
+      "components/home/HomeDiscoveryRegion.tsx": "c7fb2ac8ea2e54ae2f4000217128434016b2875b846e9c830efb6e9d2df0dec0",
+      "app/pixel-art-avatar-icon-generator/page.tsx": "586c30c4807991934096fcdf753bf5c09b3953369d0ea18d7fefcfed95570dbd"
+    }
+  },
+  "checksInAcceptanceTurn": {
+    "applicationTypeLintTestsBuildsRerun": false,
+    "httpSeoBrowserMobileRerun": false,
+    "productionChecksRerun": false,
+    "previewLivenessChecked": false,
+    "reason": "Acceptance-only governance update; preserve v1.83 evidence dates and do not claim new application QA.",
+    "governanceChecks": [
+      "acceptance JSON parsing",
+      "board JavaScript syntax",
+      "board task and acceptance-chain evaluation",
+      "22/60 completed count",
+      "33 unique source acceptance task keys",
+      "RELATED-001 wholeTaskCompleted=true",
+      "RECENT-001 and FAV-001 remain unstarted",
+      "implementation evidence and runtime hashes unchanged",
+      "targeted git diff --check"
+    ]
+  },
+  "governanceResults": {
+    "boardSourceAndVm": "PASS",
+    "repositoryPreservation": "PASS; implementation evidence and six runtime hashes unchanged",
+    "acceptanceJsonParse": "PASS",
+    "gitDiffCheck": "PASS; only existing LF-to-CRLF notices were emitted",
+    "applicationQaRerun": false,
+    "browserVisualRerun": false
+  },
+  "board": {
+    "path": "F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+    "previousSha256": "cdf9406ddea757c0b92e7b4a95f3f156e2737e6de4b93eccc7b6f70cbeb9811a",
+    "currentSha256": "26a968cd31c4c3f990c301236d1903111581c0312587fd068bce5e85651aca09",
+    "version": "1.84",
+    "currentTask": "RELATED-001",
+    "currentStatus": "已完成（本地整项已验收）",
+    "completedTasks": 22,
+    "totalTasks": 60,
+    "uniqueSourceAcceptanceTaskKeys": 33,
+    "acceptanceScopes": ["RELATED_OVAL_SAMPLE", "RELATED_REMAINING_SURFACES"],
+    "realBrowserVisual": "未验证；本轮不以替代副本或源脚本校验冒充真实看板视觉"
+  },
+  "governanceFiles": {
+    "PAGE_PLAN.md": "18af1b3688bf174b0963f998dbcf4e0dd52f84adecf89e76a202c86f146cf2ec",
+    "LAUNCH_CHECKLIST.md": "45d5df9db610725383f5f4a7d3bfbf6c4c83fd57d367512fc2c33d341da2e0e2",
+    "SEO_LOG.md": "1dd36286e110310868807c13143176e54b763fddd6c331c9ef0cb2694b4743f6",
+    "docs/quality/evidence/related-001/README.md": "eeee3193256eb4a016c3532f07dd2c2a747c20773b0a99e25fd2f77fcfc2d00b",
+    "docs/quality/evidence/related-001/remaining-surfaces-README.md": "744f4b01bdcfa8ea13008170055cf6616bd9fee70977880346c4f53958f4f502"
+  },
+  "nextState": {
+    "relatedWholeTaskCompleted": true,
+    "recentStarted": false,
+    "favoriteStarted": false,
+    "nextInstructionRequired": true,
+    "note": "等待用户明确指定下一任务；本轮不自动提交、推送或部署。"
+  },
+  "unresolved": [
+    "actual Square and Oval rights remain UNKNOWN",
+    "human content review and KW-04",
+    "real devices, other browser engines, internal SWF behavior and field CWV",
+    "whole-site ads and CMP gates",
+    "production canonical, robots, SEO, performance and deployment evidence",
+    "real authoritative-board visual rendering"
+  ],
+  "release": {
+    "commitCreated": false,
+    "pushed": false,
+    "deployed": false,
+    "seoProdRun": false,
+    "productionVerified": false,
+    "result": "不通过 / 未部署"
+  },
+  "rollback": {
+    "application": "none for this acceptance-only turn",
+    "governance": "remove only the v1.84 acceptance entries and restore the v1.83 pending-acceptance board/docs; preserve application code, both original QA evidence sets and the Oval sample acceptance",
+    "production": "not applicable because no deployment occurred"
+  }
+}

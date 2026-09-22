@@ -1,0 +1,2438 @@
+{
+  "task": "ABOUT-001",
+  "recordedAt": "2026-09-02T07:00:24Z",
+  "boardVersion": "1.48",
+  "status": "LOCAL_ACCEPTED_PRODUCTION_UNVERIFIED",
+  "taskStatus": "已完成（本地已验收）",
+  "localMandatoryResult": "通过",
+  "visualResult": "有条件通过（既有桌面窄列换行提醒；无溢出或截断）",
+  "releaseResult": "不通过 / 未部署",
+  "userProposalConfirmation": {
+    "text": "确认 ABOUT-001 权利与示例来源声明修正方案",
+    "recordedAt": "2026-09-02T07:00:24Z"
+  },
+  "userAcceptance": "ACCEPTED_LOCAL_SCOPE",
+  "acceptedAt": "2026-09-02T07:50:25Z",
+  "acceptanceSource": "用户明确回复“ABOUT-001 验收通过”",
+  "acceptanceFollowUp": {
+    "recordedAt": "2026-09-02T07:50:25Z",
+    "boardVersion": "1.48",
+    "userRequest": "ABOUT-001 验收通过",
+    "status": "ACCEPTED_LOCAL_SCOPE",
+    "taskStatus": "已完成（本地已验收）",
+    "source": "用户明确回复“ABOUT-001 验收通过”",
+    "scope": "Acceptance-only governance of the seven approved About text regions and the existing v1.47 QA. This does not grant third-party rights, certify whole-site cleanup, authorize deployment, or start another task.",
+    "originalImplementationRecordedAt": "2026-09-02T07:00:24Z",
+    "originalImplementationBoardVersion": "1.47",
+    "applicationChanged": false,
+    "checkerOrPackageChanged": false,
+    "buildArtifactsChanged": false,
+    "applicationChecksRerun": false,
+    "frameworkOrPlatformBuildRerun": false,
+    "httpSeoBrowserMobilePerformanceRerun": false,
+    "previewRestarted": false,
+    "previewLivenessRechecked": false,
+    "nextTaskStarted": false,
+    "committed": false,
+    "pushed": false,
+    "deployed": false,
+    "seoProdRun": false,
+    "migrationStarted": false,
+    "onlineRollbackPerformed": false,
+    "previousSourceAcceptanceCount": 22,
+    "newSourceAcceptanceCount": 23,
+    "sourcePreservation": {
+      "checkedAt": "2026-09-02T07:44:03.433Z",
+      "checkedPaths": 145,
+      "mismatches": [],
+      "result": "PASS",
+      "baseline": "v1.47 source.currentHashes"
+    },
+    "preservedHistoricalEvidenceSha256": {
+      "commands": "5560640aac2b6c920e9577903a2a67f07ac2f1d9a42a4d8e46f041803d7c4652",
+      "browser": "078a9ec73061b4f97527c5c085391133b5e446819083b0d85d2260700e2423b9",
+      "source": "960550bbd57f7fdb30a5c77f61e3c4d505452fad5898ee31bf5492b249ef31c8",
+      "originalGovernance": "273a886a0f25bd6531369a056412a572d1bfd2881b01dd2dc562afbe64047f67",
+      "proposal": "dbb44b079bd622e93813761c939091e15a0b892a20d2272aaa1cfbd93a690362"
+    },
+    "historicalEvidenceNote": "The original commands, raw outputs/exit codes, browser records, source inventory and v1.47 governanceValidation remain unchanged with their original timestamps. The top-level changedFiles remains the historical implementation inventory.",
+    "localMandatoryResult": "通过（沿用 v1.47 原日期结果，本轮未重跑）",
+    "visualResult": "有条件通过（沿用 v1.47 既有桌面窄列换行提醒；本轮未重测）",
+    "productionResult": "未验证 / 未部署",
+    "releaseResult": "不通过",
+    "boardVisual": "未验证（保留既有本地文件策略限制，不绕行）",
+    "changedFiles": [
+      "docs/legal/about-rights-consistency-proposal.md",
+      "docs/legal/game-rights.md",
+      "docs/quality/evidence/about-001-rights-copy/README.md",
+      "docs/quality/evidence/about-001-rights-copy/checks.json",
+      "docs/quality/evidence/release-2026-09-02/README.md",
+      "LAUNCH_CHECKLIST.md",
+      "PAGE_PLAN.md",
+      "SEO_LOG.md",
+      "F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html"
+    ],
+    "next": "ABOUT-001 本地验收已记录。等待用户下一步指示；不自动启动下一发布阻断项、MIG-SQUARE-001、提交、推送或部署。",
+    "rollback": "If this acceptance record needs correction, revert only the v1.48 governance additions; preserve source, previous acceptances and original evidence. No online rollback is needed because no deployment occurred.",
+    "governanceValidation": {
+      "status": "PASS",
+      "startedAt": "2026-09-02T07:56:56.593Z",
+      "recordedAt": "2026-09-02T07:56:56.917Z",
+      "exitCode": 0,
+      "phase": "INITIAL_VALIDATION",
+      "boardVersion": "1.48",
+      "boardSyntax": "PASS",
+      "staticDataFocusExportParity": "PASS",
+      "taskStatus": "已完成（本地已验收）",
+      "sourceAcceptances": 23,
+      "previousAcceptances": "22_UNCHANGED",
+      "aboutAcceptance": "EXPLICIT_USER_LOCAL_SCOPE",
+      "sourceHashesChecked": 145,
+      "sourceHashes": "PASS",
+      "originalCommandsAndDates": "25_RECORDS_UNCHANGED",
+      "originalBrowserEvidence": "UNCHANGED_NOT_RETESTED",
+      "originalGovernanceEvidence": "UNCHANGED",
+      "immutableProposalEvidence": "UNCHANGED",
+      "termsAndPf01Evidence": "UNCHANGED",
+      "cssAndRoadmap": "UNCHANGED",
+      "taskUpdates": "ONLY_ABOUT_ACCEPTANCE_APPEND",
+      "documentsAndWhitespace": "PASS",
+      "governanceFiles": 9,
+      "applicationChanged": false,
+      "applicationRetested": false,
+      "previewRestarted": false,
+      "previewLivenessRechecked": false,
+      "nextTaskStarted": false,
+      "deployment": false,
+      "migrationStarted": false,
+      "releaseResult": "不通过 / 未部署",
+      "boardVisual": "UNVERIFIED_PRIOR_LOCAL_FILE_RESTRICTION",
+      "protectedEvidenceHashes": {
+        "commands": "5560640aac2b6c920e9577903a2a67f07ac2f1d9a42a4d8e46f041803d7c4652",
+        "browser": "078a9ec73061b4f97527c5c085391133b5e446819083b0d85d2260700e2423b9",
+        "source": "960550bbd57f7fdb30a5c77f61e3c4d505452fad5898ee31bf5492b249ef31c8",
+        "originalGovernance": "273a886a0f25bd6531369a056412a572d1bfd2881b01dd2dc562afbe64047f67",
+        "proposal": "dbb44b079bd622e93813761c939091e15a0b892a20d2272aaa1cfbd93a690362"
+      },
+      "gitChecks": [
+        {
+          "name": "head",
+          "command": "git rev-parse HEAD",
+          "startedAt": "2026-09-02T07:56:56.617Z",
+          "finishedAt": "2026-09-02T07:56:56.690Z",
+          "exitCode": 0,
+          "timedOut": false,
+          "stdout": "c6d30087c2c03a7c4eb8d5bfe6e055e9b8d40228\n",
+          "stderr": ""
+        },
+        {
+          "name": "branch",
+          "command": "git branch --show-current",
+          "startedAt": "2026-09-02T07:56:56.690Z",
+          "finishedAt": "2026-09-02T07:56:56.751Z",
+          "exitCode": 0,
+          "timedOut": false,
+          "stdout": "codex/game-platform-rebuild\n",
+          "stderr": ""
+        },
+        {
+          "name": "project",
+          "command": "git diff --check",
+          "startedAt": "2026-09-02T07:56:56.751Z",
+          "finishedAt": "2026-09-02T07:56:56.841Z",
+          "exitCode": 0,
+          "timedOut": false,
+          "stdout": "",
+          "stderr": "warning: in the working copy of '.gitignore', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'LAUNCH_CHECKLIST.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'PAGE_PLAN.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'PROJECT_BRIEF.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'SEO_LOG.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'SEO_RULES.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/about-us/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/blog/avatar-maker-without-signup/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/blog/cute-profile-picture-ideas/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/blog/discord-avatar-size-guide/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/blog/how-to-make-a-cute-discord-profile-icon/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/blog/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/blog/tiktok-profile-icon-ideas/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/contact/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/editorial-policy/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/gallery/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/globals.css', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/oval-face-icon-generator/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/pixel-art-avatar-icon-generator/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/privacy-policy/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/robots.ts', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/sitemap.ts', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/terms-of-service/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'components/FlashGenerator.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'components/HomePage.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'components/SiteHeader.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'docs/legal/game-rights.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'docs/quality/installation-and-board-workflow.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'package.json', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'public/games/README.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'scripts/README.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'scripts/post-deploy-check.mjs', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'scripts/seo-check.mjs', LF will be replaced by CRLF the next time Git touches it\n"
+        },
+        {
+          "name": "board",
+          "command": "git -C F:/LYXGIT/Liu-library diff --check -- F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+          "startedAt": "2026-09-02T07:56:56.841Z",
+          "finishedAt": "2026-09-02T07:56:56.917Z",
+          "exitCode": 0,
+          "timedOut": false,
+          "stdout": "",
+          "stderr": ""
+        }
+      ]
+    }
+  },
+  "url": "/about-us",
+  "localPreview": "http://127.0.0.1:3100/about-us",
+  "branch": "codex/game-platform-rebuild",
+  "head": "c6d30087c2c03a7c4eb8d5bfe6e055e9b8d40228",
+  "scope": {
+    "sourcePath": "app/about-us/page.tsx",
+    "regions": 7,
+    "metadataExceptions": [
+      "description",
+      "twitter.description"
+    ],
+    "addedChecker": "scripts/check-about-rights.mjs",
+    "packageCommand": "about:check",
+    "newRuntimeDependencies": 0,
+    "otherPagesChanged": false,
+    "layoutChanged": false,
+    "indexOrUrlChanged": false,
+    "sourceEscaping": "Only raw-source deviation from confirmed preview: site's is represented as site&apos;s for JSX lint. Visible text is unchanged."
+  },
+  "source": {
+    "baselineSha256": "7306e479af68c8035283da556f9cec215028d9afcd2b066141663829dede7198",
+    "sourceSha256": "bd812baed9b69e531d369be6e0be168dc5232d3729def0d7f5a747fbccbf1779",
+    "renderEquivalentProposedSourceSha256": "aa3d12179b517b6ca01fe7147fc5e5dafe11ba316cca981811f6b2600c07bedb",
+    "frozenRegionSha256": "1fa66ad37bc918b8f99b2fd907e8b2c0e32db8435d71a6c1badca8c3cf689e27",
+    "approvedEdits": [
+      {
+        "id": "metadata-description",
+        "label": "metadata.description",
+        "old": "Learn about My Square Face Icon, a free browser-based square face generator focused on cute profile icons, privacy, and original avatar resources.",
+        "new": "Learn about My Square Face Icon, its browser-based avatar tools, curated examples, community gallery, privacy practices, and unverified game-file rights.",
+        "sourceLine": 10
+      },
+      {
+        "id": "twitter-description",
+        "label": "metadata.twitter.description",
+        "old": "Learn why My Square Face Icon exists and how the site approaches free avatar tools, privacy, and original content.",
+        "new": "Learn how My Square Face Icon handles avatar tools, curated examples, community submissions, privacy, and unverified game-file rights.",
+        "sourceLine": 26
+      },
+      {
+        "id": "gallery-heading",
+        "label": "What We Provide / third card H3",
+        "old": "Original gallery ideas",
+        "new": "Avatar inspiration",
+        "sourceLine": 104
+      },
+      {
+        "id": "gallery-paragraph",
+        "label": "What We Provide / third card paragraph",
+        "old": "Gallery examples are created for this site as inspiration. They are not copied from competitors, user comments, or third-party art packs.",
+        "new": "The homepage shows site-curated icon examples. The gallery includes simple style examples and approved community submissions when available. Selection or moderation does not establish authorship or grant image-use permissions.",
+        "sourceLine": 105
+      },
+      {
+        "id": "rights-heading",
+        "label": "Rights section H2",
+        "old": "Originality and Rights",
+        "new": "Game Files and Image Rights",
+        "sourceLine": 111
+      },
+      {
+        "id": "rights-paragraph",
+        "label": "Rights section / first paragraph",
+        "old": "The site does not copy competitor page text, screenshots, image libraries, comments, or downloadable assets. The main tool uses the square face game file that was provided for this project, while new examples and support content are written specifically for My Square Face Icon.",
+        "new": "Square and Oval run third-party Flash (SWF) files through Ruffle. We have not verified the original source, rights holder, or permissions for the exact files used here, including hosting, public use, redistribution, and use of generated images. The site's availability and examples do not establish authorization or grant third-party rights.",
+        "sourceLine": 113
+      },
+      {
+        "id": "gallery-link-description",
+        "label": "Next Product Direction / Browse the gallery paragraph",
+        "old": "See original square face icon ideas for style inspiration.",
+        "new": "Browse style ideas and approved community submissions when available.",
+        "sourceLine": 144
+      }
+    ],
+    "proposalEvidence": "docs/quality/evidence/about-001-rights-copy/proposal-checks.json",
+    "proposalEvidenceSha256": "dbb44b079bd622e93813761c939091e15a0b892a20d2272aaa1cfbd93a690362",
+    "proposalEvidenceUnchanged": true,
+    "beforeHashes": {
+      "app/about-us/page.tsx": "7306e479af68c8035283da556f9cec215028d9afcd2b066141663829dede7198",
+      "app/admin/comments/page.tsx": "5da66215f6c126892b132af3f11937d2fba81dc9d3b86b680b207b0cd6680f99",
+      "app/api/admin/comment-images/[...key]/route.ts": "818b0b4c81cd56f9455a3228adc95137268a90db6b82f1a2e1f6f8ec232f03a0",
+      "app/api/admin/comments/route.ts": "63ddcb14964f633f199af6873497abb9091420dba4e889396ca7d2d775578bb2",
+      "app/api/admin/comments/[id]/route.ts": "e471d00f054151ac6636c81fd9d21ce108b19c86875ee524f2e0b44f429c135b",
+      "app/api/comment-images/[...key]/route.ts": "defb2f8ec7f4be7c19beb82663f781ae2e735cf19db127d603f5c82d8925d98a",
+      "app/api/comments/route.ts": "4297d56bf81fb7182236ef0c880cd1039907dc345415e1bacddc39ae01ab2e7f",
+      "app/api/comments/[id]/like/route.ts": "edf2b13178884db9af47debed1186655b55a96abe807e1dde8f4367381089a14",
+      "app/blog/avatar-maker-without-signup/page.tsx": "27b767b9898a1cf54a8bd8d15949690a99c3bcf8fee0a510275d2c05880dce97",
+      "app/blog/best-discord-avatar-style/page.tsx": "2e0807728e27e7b62e0be6aee9319079626b6d8f259fbf452afb3193f6040b9d",
+      "app/blog/cute-profile-picture-ideas/page.tsx": "23d0d94e184f86457eec7bccce657e83a401d94fef36686008af683fbf9ed126",
+      "app/blog/discord-avatar-size-guide/page.tsx": "3990a509c0f009f3007edf767e28983943e35ec03a9422483d7427972e3a7a24",
+      "app/blog/how-to-make-a-cute-discord-profile-icon/page.tsx": "126709f27ed82ffa275ec56f8c19d3ef97bd972f3a6d7737eca02eb016fe4a38",
+      "app/blog/page.tsx": "ae764e709b2e95b94978264e94f7c8339e18fbb40619e2b61003e73979b777e9",
+      "app/blog/square-avatar-vs-round-avatar/page.tsx": "21831b3d94e787b7442827822de117fd9cb6854408e25ea55443bc5cafb3c82b",
+      "app/blog/tiktok-profile-icon-ideas/page.tsx": "c480c6c80cc10800e1ff12710861712d4bde2aefe7145e7666d8352e0f2c29ad",
+      "app/category/[slug]/page.tsx": "db5f8c1c1c4df37b7f8a0a726e540d1a0897fa14d84efd8a2f50a8b79aaba0e1",
+      "app/contact/page.tsx": "43c774c71e326750845afe0168f4d66bbb1ee47367bcfc6015bb17592860c98e",
+      "app/cute-square-avatar-generator/page.tsx": "fe22cddd887475ecc89983278ceeabc06678a344c8ea7aefb47a65eb7a893042",
+      "app/editorial-policy/page.tsx": "baf2318af979f8561c81d6b5ec08910d29c42034a09da1d59fe7fe98d468b84a",
+      "app/free-avatar-maker/page.tsx": "65b5cd3745e7aad2dd9bdb11a851fb8a7fa74fe6e7a2e3221474688c76b75aa5",
+      "app/gallery/page.tsx": "352e649d9ff6592e62f74aa91f7f3cf3cb0e7b48d4671d553d4eb0106c6dd12e",
+      "app/games/page.tsx": "325b8221aec0d9ea69a2374faad321a0fa75dd7e8c0df05c59da4db93e46c44f",
+      "app/games/[slug]/page.tsx": "0131595a7dc55e0b9227944e41f5cf54548213f5527cc62f034eb8a61c05aab4",
+      "app/globals.css": "5b5e8d7253be79edbd479a01a53bf3f760d52482ced5f4c6edcd387975669867",
+      "app/layout.tsx": "c9d72791c1167896c2ab3a72bb9e7eada5b909bbf8f540a6e64fb52bed4e77b5",
+      "app/manifest.ts": "035fb0b64fd59984750a16cca5b4e7bd4e776d8ee7c9a608e339cabef2a8a179",
+      "app/not-found.tsx": "1ae05e6e788c22dba45d7cbdce2a4b9271d584246a553bda51428c396991a351",
+      "app/oval-face-icon-generator/page.tsx": "4b0263e9b0fbba1824e32bcec8b324e45aeae0c373f50375a7ba8fe8f9fd0e54",
+      "app/page.tsx": "d10f79e2522ca3c3e21195e09df0f090b119af6452c265e48eb125639b2c46c1",
+      "app/pixel-art-avatar-icon-generator/page.tsx": "514139869fbd206326dc6d2e426d86c2b49f27c557b86868471de200fe94c50d",
+      "app/pixel-square-face-maker/page.tsx": "b691a2359a6a6581eadc75fb1944a93a1718f85c4fff11ba6ebdfbad756603e5",
+      "app/privacy-policy/page.tsx": "eba51fcadf3aa4e61506242d5d5fb1d9d4ac7d870626e7877670ae0984c7d1c4",
+      "app/robots.ts": "dd47d2bd1355fb44791c0f5e481b06c98142639383a902cd6e976cb4f7583aa8",
+      "app/sitemap.ts": "183aafaeb14f529f8c341c70aa9c3278082f670aeaa4f487271d6ff110e0db18",
+      "app/square-avatar-generator/page.tsx": "a239bb17efb6eddce7e49f3214cef92017eed9f167c0879103855d91b4554a31",
+      "app/square-face-icon-generator/page.tsx": "24e88b1057bfea65f350bb84205cc5fc89fec0cd06e4f6dea24719c7513ff731",
+      "app/terms-of-service/page.tsx": "8121043e9a474a19a5c1c366ed80e03db93ec6bc8dc1ed9eda63ef60d85c83f5",
+      "app/[locale]/page.tsx": "e47894775647c4a8630490b2e7ab0a72cc4fdcc2d0f253ce2ce724676adf7ece",
+      "components/AdminComments.tsx": "a3a1dd2d1bc175a4862a49299b363fe50c9b006945fc6b20df97dc08d527af4d",
+      "components/AvatarGenerator.tsx": "61e65dd817d517975ba89ca2ba7e7b182cf015bc296e4a993aa4733342fda74b",
+      "components/CloudflareAnalytics.tsx": "54e33cdc6f229a708c86013649a283ed946be150f717b11eebc6ccdb793368c4",
+      "components/CommentSection.tsx": "02db74c38bf07f57c92defb239866cd75bfeef561333de1db9acfc9d44ddfd21",
+      "components/CuratedGalleryPreview.tsx": "0238422e69aa37737063f1600e11a82505b0b8f94bd813161eb8ea6985e78792",
+      "components/DeferredThirdPartyScripts.tsx": "09ae2617d036e47be5874e366d0ced2fc1634d03b59ac9c2505f1938c7cfe7e2",
+      "components/FlashGenerator.tsx": "c443323031b15428a502ff4fcad3653ffc424ef75db9335b76883576f45ac794",
+      "components/game/AdSlotShell.tsx": "3c1aaa1ab799dddb7e7e0bb607a31c0cc9d77683c42554b7663bc4bdc4a28a27",
+      "components/game/CategoryChip.tsx": "78e2ddcf2ce6b77899d3ab35f06f5d49a87f82f1015d8f4deb862dfe76ab0850",
+      "components/game/EmptyState.tsx": "2ef1bad5737139a2cd9c1cf9d003b28a9f202a50fa9925072cea8e35cef549d2",
+      "components/game/GameBreadcrumb.tsx": "933a23729f0c280559d64ac1376022520c3d700031a489935d1e1b30b604b474",
+      "components/game/GameCard.tsx": "94af78fdd701884f8e69d2d3cdf919d2a0b730c685b6e5287130d85ef9b92edf",
+      "components/game/GameControls.tsx": "2a738d34297ad718e59a678ea9572d8c6cc981180e083e8fca7cb03e21c1b4da",
+      "components/game/GameDetailTemplate.tsx": "c643d800efd8bdbc6d439047b53c3aad6fae403ad59ed55b7c8349218c1ca43c",
+      "components/game/GameFaq.tsx": "c680b9728a08c896095bb85fc688f6d451360142e0bb447763b8fed0a0a1139a",
+      "components/game/GameGrid.tsx": "261672ac47c7cafeb3f2576caf6ba6240fa3c9b15472f55778b8ae3f45d631b5",
+      "components/game/GameMeta.tsx": "d7c6e283401f295579cff65cd01ee761626d727098fbc6e983e8d18e47f807e9",
+      "components/game/GamePlayer.tsx": "a568634e413cacc1ef816bd2835be4916dfc6094f9cc4d3a2ee3a3fd5d51b2da",
+      "components/game/GameSourceRights.tsx": "ebc2ec19b91bf5dde44eae24ca75b6ee208a487c707a9862f694c6d88dbd2243",
+      "components/game/README.md": "4c7ea3c7e616a686fbf08567f8b9e28082912a2dbcbfc7a73d3166867c172f89",
+      "components/game/RelatedGames.tsx": "1fa094f28bd8b0855c7869596b9df55b0072a48a8db6d3db8c6558f954209aa7",
+      "components/game-player/adapters/adapter-types.ts": "4e6c492777363116b8a450d5b7e822abdf99609e518f15a3fc682f2d6fd84df5",
+      "components/game-player/adapters/ExternalLinkAdapter.tsx": "f7d4c98916a2a25785175af7ae6bf009a700f68271b8345322fd904c2431f45c",
+      "components/game-player/adapters/Html5Adapter.tsx": "524f0c49fd8af608ddf86aed872fe1cd0af72839b30391206be8eae639e08325",
+      "components/game-player/adapters/IframeAdapterFrame.tsx": "af31a35c493f607bacbfb548b386f604cbb98c7722a32cf580da11a7b7b593b6",
+      "components/game-player/adapters/LocalIframeAdapter.tsx": "b73408e66cb4dec9fe5b8460960627c95a1a92c43282345562dbfd173b3f4d9f",
+      "components/game-player/adapters/OfficialIframeAdapter.tsx": "0668f81f43684d59522799c55ecc4affe8fb24fdfc571af7e6ac8e56118cc23c",
+      "components/game-player/adapters/RuffleAdapter.tsx": "5fcff6669f4ca75147728e8a73434cdef8abb2823325110d585ad46a1cfe8ada",
+      "components/game-player/GamePlayer.tsx": "142cf22ac3a485c78285d920bbe84114f3931a38f0e9aec067bbf8ca2e562d5c",
+      "components/GameSidebar.tsx": "1d6d43a434f91bface5858c3d648c3aeff90f8f0d930bfbdc9f2ae0ebd28bb70",
+      "components/home/CoreGamePreview.tsx": "9a05388d53d969ef1ea1f4ea9a6273a0ebd1cd8ec6d1df43a1afd8da1c4c44a1",
+      "components/home/HomeDiscoveryRegion.tsx": "8652a91eeeb4650230235422c661be58841a49475ce1bc446425c7e2ac697b04",
+      "components/home/HomeHero.tsx": "0f336bfa249d291f9ef1fde2e558400e2c1d7fcb9e1e5c4991f92daef50d1547",
+      "components/home/HomeResourceLinks.tsx": "fd03f53ecc08510a86e3edd54864e132af9e70b363a7d5dee4c50d1eea207e23",
+      "components/HomePage.tsx": "6f112888eca633682594d9ecc717566142a3a78547fb48146c73351147b6d93b",
+      "components/InstallPrompt.tsx": "fb4a9fd5a43625673f03b26b8d31284c955b4e970d9fbe80be41863228c02ac8",
+      "components/ShareButtons.tsx": "5becc8e6cf2a779dd192222de56087f468b41243f60950d0290f45ff07a71a28",
+      "components/SiteFooter.tsx": "0a8f7e7ca185853a8494ba94f8ecaa65e9ddd73ba3e43781c0efacfcdd3c2291",
+      "components/SiteHeader.tsx": "8182d2e2a5012cfbb62ebadcc8cb581d088364d263f9eb11f9d217686df115a1",
+      "lib/comment-store.ts": "734fa24cbf3cf6518f5026c93953628dca8c28935db6927d53650d4019865804",
+      "lib/games/catalog.ts": "6cc0df85e3acf146b3cc18b63cc4785982607fc0e59142ce89f59d2d6ef0ac0d",
+      "lib/games/game-player-model.ts": "42672e8d0917e9d7d6a1b28137e505ecd4d7b09ba40e3c971751b6d7f3fbe84c",
+      "lib/games/game-schema.ts": "a57eae1f63dff2698c45c6b98d70cd811f513b274fb26182bb20d9059803d235",
+      "lib/games/home-discovery.ts": "b172dd4a9e807754f59dfe5f9bb5b42fdc2d360bd89c54eab504f5577dac166e",
+      "lib/games/routes.ts": "058434c725a09ae921c2c5f184396377873ad67603130f985fcfe39bcd97c5a6",
+      "lib/locales.ts": "937e6c91f0cd3c67bdb9a5a1e865fe9c9829495d5d119ad464a4feaaf7ea3d36",
+      "lib/metadata.ts": "ed02bc92dbfe7e71c0988bef9cf8bbdabc34caef5a1a2ba67d40cf69d839a275",
+      "lib/seo/canonical-origin.ts": "2d506dc08f622a898efd6eb57c9210018d2b8ba73ec8666a3bd4c9685e831fd9",
+      "lib/seo/game-metadata.ts": "87e7f42b085e2714cd22bce3634ccf1272fa822fb70b77292c5831d0f38fe660",
+      "lib/seo/game-structured-data.ts": "84193180e9b8827a2566d38585ce753b94ee30f4c9b5f6aee4fe22da3c875391",
+      "data/ai-crawler-policy.json": "adea8bf57c056c93b319da9033654f573989948058ab04a7c74e4739c472487c",
+      "data/curated-icon-ideas.ts": "b51d0f7b57249b1e3cfe0e16bede29688154814168a2c6271a7388ad10933dce",
+      "data/game-categories.ts": "b0bbb1eccbc70bdc70323c05da94acc725df06d857c70eaba8860f5b3e701d8d",
+      "data/game-license-registry.json": "fb0b94f56ffa3c7feca89ee136c73795a95d993de0ebe16d81ca8041da4a8924",
+      "data/games/oval-face.ts": "ee2ded5bf3d11fb4572b4861f5c39164a37d5e7a3d91f404130510c453331f74",
+      "data/games/pixel-art-avatar.ts": "118d1b40325cb26d8ff19141f5af2ff1b451a3b89de0e6131836a37a0510fabb",
+      "data/games/README.md": "71272ce378d8adc438b34b6d60e58080fa32b8728fd9c513e6aad2001eac24ee",
+      "data/games/square-face.ts": "4be5084d160f2d09b87fb4392ef3e43bbc8675edcfd1f94970e2b2e05ba2b304",
+      "scripts/check-ai-crawler-policy.mjs": "76e030b11a653a01ed101e13c06460f29354f55d33c1e96aab4ace3f53be5042",
+      "scripts/check-terms-rights.mjs": "62ab3d26bb2459fe9abe92a1c520e740cba77f01cec5324a7d19ddadfe6dba50",
+      "scripts/cloudflare-login.cmd": "9285c7cf0105fa6087da2dbb9264265a5daed85475ea61a12b0310431e3c8b0f",
+      "scripts/cloudflare-provision.cmd": "72b6efc1ad0cab89dc54d6d18cb6a6c3f2c1bbc7fa42444b9be968cc1cd22aeb",
+      "scripts/cloudflare-set-secrets.cmd": "5964a356784cc9ea3beeb76b801fc04ae79762ff1c47ab1fecb9f5a0d35a8cd0",
+      "scripts/patch-opennext-worker.mjs": "1f761820c8ec949e7a32f1435b82f14f9919d46bf965090741ab55add8b4068b",
+      "scripts/post-deploy-check.mjs": "51b28a8e14558dfc69c71779ebe9ed28d195f2f671d5eda07977afe885bbee82",
+      "scripts/README.md": "f7832fb2d400fd019c77b41b4f6d893e6488709b632a94a7641299a7b70555e5",
+      "scripts/robots-policy.mjs": "0d3f85f8568a4b17a53c2eaa82fd06460a14262160ba53131f29978c5f4416ed",
+      "scripts/run-canonical-host-check.mjs": "99c282d9246c3a3c060c9b697d0c4a769e6b7622a63b97ab99899d41bc2edc4b",
+      "scripts/run-game-component-check.mjs": "bf05d0f3119b094bc4674846c71bbc69482541921ba199ec693dce021ba86e62",
+      "scripts/run-game-data-check.mjs": "985321918bfc7abdbea07a675b710d40fe8ddbbfa6d128e24e67cd90309f536b",
+      "scripts/run-game-metadata-check.mjs": "a6a16a08338143f1ada4f8f446e89f2e08208c0896cf884a5d494c894931ccf8",
+      "scripts/run-game-player-check.mjs": "59f17f0f2dacc0b596f572a9a1871e58f78623a267257e3f33e7f1eac7bd9f09",
+      "scripts/run-game-route-check.mjs": "be951b8407d08aadf9e1b2b29dda30fe33ffb133af6cd8ee6e8c7897a95eac44",
+      "scripts/run-game-template-check.mjs": "c7121e18a868db05d702639ff8448cbaad958c20117e91b71fb0ed71d98ced8d",
+      "scripts/run-home-discovery-check.mjs": "70cb3221dedd42081b24c201902a3dce2ff46c31e54b8ee478384da4545b4196",
+      "scripts/run-home-gallery-check.mjs": "e0bf58437b6de392dd98af862c97be25107432cec1a24df9a8d9d028b7ab738d",
+      "scripts/run-home-hero-check.mjs": "40ad21661b97f27e306c2eaa8d130637ecbd9a31d5c72c8ef25c214fb3a276e0",
+      "scripts/run-home-information-architecture-check.mjs": "6fc9c018915cb8cbdf68f23fde16239be0cb246bd6f92eab7000b243a98d9f66",
+      "scripts/run-home-performance-check.mjs": "58c55d5a6be4d07961c9163167fb2b1394c2807d4a31b8522da4e79ff7d9d308",
+      "scripts/seo-check.mjs": "a56453c56c8f55f4a308790e38a34aed19b667d1ba3514bd09eb18709db2ca9f",
+      "scripts/start-local-preview.cmd": "edd040a98ac02704de22f632fb21f981976c70b88932461874e4631db1dbcfb1",
+      "scripts/submit-indexnow.mjs": "1394eb5cfa2bb600af3bd3fbdf0f8c2eae9adf78b31d18d6f4cd57f3be0f4ae9",
+      "scripts/validate-canonical-host.ts": "1c7d329c5a0d5ac1b06432381f0933cfe70e0f17f8b4081f5e9695d23a6d32aa",
+      "scripts/validate-game-components.tsx": "3ba59b4e768241a57ec53da796c5cca2c35c6b69c95259f827166c0780a7b74d",
+      "scripts/validate-game-data.ts": "7e6f204d5397830accd8e33534939146bcbdd934b3ec49d8653c113b412d73bd",
+      "scripts/validate-game-metadata.ts": "e7a6f47384a1e305a8a2b1ed3ebd0d5243831191119d34e3a56481fd0ca4e55d",
+      "scripts/validate-game-player.tsx": "370b6809735b2b1ccbd99003fea04ea0f06a9761950333d765a661b3157797eb",
+      "scripts/validate-game-routes.ts": "bca62350b59f545437c2e5a8e834275dce7c5df330bb58d268befd12ab00803f",
+      "scripts/validate-game-template.tsx": "5427f7fbd835530eaa34ef7fc514692b203f8f312e71624ed51df3dc14af6406",
+      "scripts/validate-home-discovery.tsx": "f0236c66dc6e603595d39ba675293c5aba44add9a50cd71b7a2f7e461065d894",
+      "scripts/validate-home-gallery.tsx": "9d551c13b6df1c9173c32a805b07abe6ba85bef830057db78bc4653d56aac19b",
+      "scripts/validate-home-hero.tsx": "f80f6aaa538c53f02b1bc90007cabcbe7fe1ee3bfd1513fcb60ade5ff0f56f70",
+      "scripts/validate-home-information-architecture.tsx": "e3c0001100d69301d7007ba8fc3840779530fbdadae93bd784d48978138cfbc4",
+      "scripts/validate-home-performance.tsx": "ab1f4951e3c77a9806c355717dcfb20977d36fcac2be1edd9090e7811a5c2916",
+      "public/games/oval-face-cover.png": "0e914b27b602683442d57dfa232c88be1fdea5a2ed45bdabe0da72e3ff464073",
+      "public/games/oval-face-icon.png": "a3cdaeff0397647bd1580980c60e2996e5aa499eab8e5f2e634557b1c5da0909",
+      "public/games/oval-face.swf": "80e974d8ef4ad5e849e93464eaea1833620c269bac30601d960f5438c285e09b",
+      "public/games/README.md": "e5ae6e267570980805a1f298d9a6f0b5cf842f934035ae8e6d2355e5b8a3cf0c",
+      "public/games/square-face-cover.png": "15a5c93f79859441eef3032ce45e07abc2e91a7520a9aaef42158dd4fe00a535",
+      "public/games/square-face.swf": "b1d074c95f15b7dcecdbc2405abf820ead985669bb12cd47247fc8ea7537bc1e",
+      "package.json": "c33794391ed5e436f48459e5035b5befa1fdd5e6e3e268f0ff1b45835b682428",
+      "package-lock.json": "bf7b778ff42d02d40a11190d56d969cb03ac183a0cf70dbd85c199dc79778c97",
+      "next.config.mjs": "10f3416af7a0a92f59c4d283113624e9c286f645c6155e91c5a381d512feb9ee",
+      "middleware.ts": "4ce3b9cd325b843f1f80bca6545c114ac84f3336434a719cbfd47577c7ab53d6",
+      "tsconfig.json": "a749da922f5e6f1d93a68270185c1ed56e3e45c786d1de1ee59f9bdb7512d720"
+    },
+    "currentHashes": {
+      "app/about-us/page.tsx": "bd812baed9b69e531d369be6e0be168dc5232d3729def0d7f5a747fbccbf1779",
+      "app/admin/comments/page.tsx": "5da66215f6c126892b132af3f11937d2fba81dc9d3b86b680b207b0cd6680f99",
+      "app/api/admin/comment-images/[...key]/route.ts": "818b0b4c81cd56f9455a3228adc95137268a90db6b82f1a2e1f6f8ec232f03a0",
+      "app/api/admin/comments/route.ts": "63ddcb14964f633f199af6873497abb9091420dba4e889396ca7d2d775578bb2",
+      "app/api/admin/comments/[id]/route.ts": "e471d00f054151ac6636c81fd9d21ce108b19c86875ee524f2e0b44f429c135b",
+      "app/api/comment-images/[...key]/route.ts": "defb2f8ec7f4be7c19beb82663f781ae2e735cf19db127d603f5c82d8925d98a",
+      "app/api/comments/route.ts": "4297d56bf81fb7182236ef0c880cd1039907dc345415e1bacddc39ae01ab2e7f",
+      "app/api/comments/[id]/like/route.ts": "edf2b13178884db9af47debed1186655b55a96abe807e1dde8f4367381089a14",
+      "app/blog/avatar-maker-without-signup/page.tsx": "27b767b9898a1cf54a8bd8d15949690a99c3bcf8fee0a510275d2c05880dce97",
+      "app/blog/best-discord-avatar-style/page.tsx": "2e0807728e27e7b62e0be6aee9319079626b6d8f259fbf452afb3193f6040b9d",
+      "app/blog/cute-profile-picture-ideas/page.tsx": "23d0d94e184f86457eec7bccce657e83a401d94fef36686008af683fbf9ed126",
+      "app/blog/discord-avatar-size-guide/page.tsx": "3990a509c0f009f3007edf767e28983943e35ec03a9422483d7427972e3a7a24",
+      "app/blog/how-to-make-a-cute-discord-profile-icon/page.tsx": "126709f27ed82ffa275ec56f8c19d3ef97bd972f3a6d7737eca02eb016fe4a38",
+      "app/blog/page.tsx": "ae764e709b2e95b94978264e94f7c8339e18fbb40619e2b61003e73979b777e9",
+      "app/blog/square-avatar-vs-round-avatar/page.tsx": "21831b3d94e787b7442827822de117fd9cb6854408e25ea55443bc5cafb3c82b",
+      "app/blog/tiktok-profile-icon-ideas/page.tsx": "c480c6c80cc10800e1ff12710861712d4bde2aefe7145e7666d8352e0f2c29ad",
+      "app/category/[slug]/page.tsx": "db5f8c1c1c4df37b7f8a0a726e540d1a0897fa14d84efd8a2f50a8b79aaba0e1",
+      "app/contact/page.tsx": "43c774c71e326750845afe0168f4d66bbb1ee47367bcfc6015bb17592860c98e",
+      "app/cute-square-avatar-generator/page.tsx": "fe22cddd887475ecc89983278ceeabc06678a344c8ea7aefb47a65eb7a893042",
+      "app/editorial-policy/page.tsx": "baf2318af979f8561c81d6b5ec08910d29c42034a09da1d59fe7fe98d468b84a",
+      "app/free-avatar-maker/page.tsx": "65b5cd3745e7aad2dd9bdb11a851fb8a7fa74fe6e7a2e3221474688c76b75aa5",
+      "app/gallery/page.tsx": "352e649d9ff6592e62f74aa91f7f3cf3cb0e7b48d4671d553d4eb0106c6dd12e",
+      "app/games/page.tsx": "325b8221aec0d9ea69a2374faad321a0fa75dd7e8c0df05c59da4db93e46c44f",
+      "app/games/[slug]/page.tsx": "0131595a7dc55e0b9227944e41f5cf54548213f5527cc62f034eb8a61c05aab4",
+      "app/globals.css": "5b5e8d7253be79edbd479a01a53bf3f760d52482ced5f4c6edcd387975669867",
+      "app/layout.tsx": "c9d72791c1167896c2ab3a72bb9e7eada5b909bbf8f540a6e64fb52bed4e77b5",
+      "app/manifest.ts": "035fb0b64fd59984750a16cca5b4e7bd4e776d8ee7c9a608e339cabef2a8a179",
+      "app/not-found.tsx": "1ae05e6e788c22dba45d7cbdce2a4b9271d584246a553bda51428c396991a351",
+      "app/oval-face-icon-generator/page.tsx": "4b0263e9b0fbba1824e32bcec8b324e45aeae0c373f50375a7ba8fe8f9fd0e54",
+      "app/page.tsx": "d10f79e2522ca3c3e21195e09df0f090b119af6452c265e48eb125639b2c46c1",
+      "app/pixel-art-avatar-icon-generator/page.tsx": "514139869fbd206326dc6d2e426d86c2b49f27c557b86868471de200fe94c50d",
+      "app/pixel-square-face-maker/page.tsx": "b691a2359a6a6581eadc75fb1944a93a1718f85c4fff11ba6ebdfbad756603e5",
+      "app/privacy-policy/page.tsx": "eba51fcadf3aa4e61506242d5d5fb1d9d4ac7d870626e7877670ae0984c7d1c4",
+      "app/robots.ts": "dd47d2bd1355fb44791c0f5e481b06c98142639383a902cd6e976cb4f7583aa8",
+      "app/sitemap.ts": "183aafaeb14f529f8c341c70aa9c3278082f670aeaa4f487271d6ff110e0db18",
+      "app/square-avatar-generator/page.tsx": "a239bb17efb6eddce7e49f3214cef92017eed9f167c0879103855d91b4554a31",
+      "app/square-face-icon-generator/page.tsx": "24e88b1057bfea65f350bb84205cc5fc89fec0cd06e4f6dea24719c7513ff731",
+      "app/terms-of-service/page.tsx": "8121043e9a474a19a5c1c366ed80e03db93ec6bc8dc1ed9eda63ef60d85c83f5",
+      "app/[locale]/page.tsx": "e47894775647c4a8630490b2e7ab0a72cc4fdcc2d0f253ce2ce724676adf7ece",
+      "components/AdminComments.tsx": "a3a1dd2d1bc175a4862a49299b363fe50c9b006945fc6b20df97dc08d527af4d",
+      "components/AvatarGenerator.tsx": "61e65dd817d517975ba89ca2ba7e7b182cf015bc296e4a993aa4733342fda74b",
+      "components/CloudflareAnalytics.tsx": "54e33cdc6f229a708c86013649a283ed946be150f717b11eebc6ccdb793368c4",
+      "components/CommentSection.tsx": "02db74c38bf07f57c92defb239866cd75bfeef561333de1db9acfc9d44ddfd21",
+      "components/CuratedGalleryPreview.tsx": "0238422e69aa37737063f1600e11a82505b0b8f94bd813161eb8ea6985e78792",
+      "components/DeferredThirdPartyScripts.tsx": "09ae2617d036e47be5874e366d0ced2fc1634d03b59ac9c2505f1938c7cfe7e2",
+      "components/FlashGenerator.tsx": "c443323031b15428a502ff4fcad3653ffc424ef75db9335b76883576f45ac794",
+      "components/game/AdSlotShell.tsx": "3c1aaa1ab799dddb7e7e0bb607a31c0cc9d77683c42554b7663bc4bdc4a28a27",
+      "components/game/CategoryChip.tsx": "78e2ddcf2ce6b77899d3ab35f06f5d49a87f82f1015d8f4deb862dfe76ab0850",
+      "components/game/EmptyState.tsx": "2ef1bad5737139a2cd9c1cf9d003b28a9f202a50fa9925072cea8e35cef549d2",
+      "components/game/GameBreadcrumb.tsx": "933a23729f0c280559d64ac1376022520c3d700031a489935d1e1b30b604b474",
+      "components/game/GameCard.tsx": "94af78fdd701884f8e69d2d3cdf919d2a0b730c685b6e5287130d85ef9b92edf",
+      "components/game/GameControls.tsx": "2a738d34297ad718e59a678ea9572d8c6cc981180e083e8fca7cb03e21c1b4da",
+      "components/game/GameDetailTemplate.tsx": "c643d800efd8bdbc6d439047b53c3aad6fae403ad59ed55b7c8349218c1ca43c",
+      "components/game/GameFaq.tsx": "c680b9728a08c896095bb85fc688f6d451360142e0bb447763b8fed0a0a1139a",
+      "components/game/GameGrid.tsx": "261672ac47c7cafeb3f2576caf6ba6240fa3c9b15472f55778b8ae3f45d631b5",
+      "components/game/GameMeta.tsx": "d7c6e283401f295579cff65cd01ee761626d727098fbc6e983e8d18e47f807e9",
+      "components/game/GamePlayer.tsx": "a568634e413cacc1ef816bd2835be4916dfc6094f9cc4d3a2ee3a3fd5d51b2da",
+      "components/game/GameSourceRights.tsx": "ebc2ec19b91bf5dde44eae24ca75b6ee208a487c707a9862f694c6d88dbd2243",
+      "components/game/README.md": "4c7ea3c7e616a686fbf08567f8b9e28082912a2dbcbfc7a73d3166867c172f89",
+      "components/game/RelatedGames.tsx": "1fa094f28bd8b0855c7869596b9df55b0072a48a8db6d3db8c6558f954209aa7",
+      "components/game-player/adapters/adapter-types.ts": "4e6c492777363116b8a450d5b7e822abdf99609e518f15a3fc682f2d6fd84df5",
+      "components/game-player/adapters/ExternalLinkAdapter.tsx": "f7d4c98916a2a25785175af7ae6bf009a700f68271b8345322fd904c2431f45c",
+      "components/game-player/adapters/Html5Adapter.tsx": "524f0c49fd8af608ddf86aed872fe1cd0af72839b30391206be8eae639e08325",
+      "components/game-player/adapters/IframeAdapterFrame.tsx": "af31a35c493f607bacbfb548b386f604cbb98c7722a32cf580da11a7b7b593b6",
+      "components/game-player/adapters/LocalIframeAdapter.tsx": "b73408e66cb4dec9fe5b8460960627c95a1a92c43282345562dbfd173b3f4d9f",
+      "components/game-player/adapters/OfficialIframeAdapter.tsx": "0668f81f43684d59522799c55ecc4affe8fb24fdfc571af7e6ac8e56118cc23c",
+      "components/game-player/adapters/RuffleAdapter.tsx": "5fcff6669f4ca75147728e8a73434cdef8abb2823325110d585ad46a1cfe8ada",
+      "components/game-player/GamePlayer.tsx": "142cf22ac3a485c78285d920bbe84114f3931a38f0e9aec067bbf8ca2e562d5c",
+      "components/GameSidebar.tsx": "1d6d43a434f91bface5858c3d648c3aeff90f8f0d930bfbdc9f2ae0ebd28bb70",
+      "components/home/CoreGamePreview.tsx": "9a05388d53d969ef1ea1f4ea9a6273a0ebd1cd8ec6d1df43a1afd8da1c4c44a1",
+      "components/home/HomeDiscoveryRegion.tsx": "8652a91eeeb4650230235422c661be58841a49475ce1bc446425c7e2ac697b04",
+      "components/home/HomeHero.tsx": "0f336bfa249d291f9ef1fde2e558400e2c1d7fcb9e1e5c4991f92daef50d1547",
+      "components/home/HomeResourceLinks.tsx": "fd03f53ecc08510a86e3edd54864e132af9e70b363a7d5dee4c50d1eea207e23",
+      "components/HomePage.tsx": "6f112888eca633682594d9ecc717566142a3a78547fb48146c73351147b6d93b",
+      "components/InstallPrompt.tsx": "fb4a9fd5a43625673f03b26b8d31284c955b4e970d9fbe80be41863228c02ac8",
+      "components/ShareButtons.tsx": "5becc8e6cf2a779dd192222de56087f468b41243f60950d0290f45ff07a71a28",
+      "components/SiteFooter.tsx": "0a8f7e7ca185853a8494ba94f8ecaa65e9ddd73ba3e43781c0efacfcdd3c2291",
+      "components/SiteHeader.tsx": "8182d2e2a5012cfbb62ebadcc8cb581d088364d263f9eb11f9d217686df115a1",
+      "lib/comment-store.ts": "734fa24cbf3cf6518f5026c93953628dca8c28935db6927d53650d4019865804",
+      "lib/games/catalog.ts": "6cc0df85e3acf146b3cc18b63cc4785982607fc0e59142ce89f59d2d6ef0ac0d",
+      "lib/games/game-player-model.ts": "42672e8d0917e9d7d6a1b28137e505ecd4d7b09ba40e3c971751b6d7f3fbe84c",
+      "lib/games/game-schema.ts": "a57eae1f63dff2698c45c6b98d70cd811f513b274fb26182bb20d9059803d235",
+      "lib/games/home-discovery.ts": "b172dd4a9e807754f59dfe5f9bb5b42fdc2d360bd89c54eab504f5577dac166e",
+      "lib/games/routes.ts": "058434c725a09ae921c2c5f184396377873ad67603130f985fcfe39bcd97c5a6",
+      "lib/locales.ts": "937e6c91f0cd3c67bdb9a5a1e865fe9c9829495d5d119ad464a4feaaf7ea3d36",
+      "lib/metadata.ts": "ed02bc92dbfe7e71c0988bef9cf8bbdabc34caef5a1a2ba67d40cf69d839a275",
+      "lib/seo/canonical-origin.ts": "2d506dc08f622a898efd6eb57c9210018d2b8ba73ec8666a3bd4c9685e831fd9",
+      "lib/seo/game-metadata.ts": "87e7f42b085e2714cd22bce3634ccf1272fa822fb70b77292c5831d0f38fe660",
+      "lib/seo/game-structured-data.ts": "84193180e9b8827a2566d38585ce753b94ee30f4c9b5f6aee4fe22da3c875391",
+      "data/ai-crawler-policy.json": "adea8bf57c056c93b319da9033654f573989948058ab04a7c74e4739c472487c",
+      "data/curated-icon-ideas.ts": "b51d0f7b57249b1e3cfe0e16bede29688154814168a2c6271a7388ad10933dce",
+      "data/game-categories.ts": "b0bbb1eccbc70bdc70323c05da94acc725df06d857c70eaba8860f5b3e701d8d",
+      "data/game-license-registry.json": "fb0b94f56ffa3c7feca89ee136c73795a95d993de0ebe16d81ca8041da4a8924",
+      "data/games/oval-face.ts": "ee2ded5bf3d11fb4572b4861f5c39164a37d5e7a3d91f404130510c453331f74",
+      "data/games/pixel-art-avatar.ts": "118d1b40325cb26d8ff19141f5af2ff1b451a3b89de0e6131836a37a0510fabb",
+      "data/games/README.md": "71272ce378d8adc438b34b6d60e58080fa32b8728fd9c513e6aad2001eac24ee",
+      "data/games/square-face.ts": "4be5084d160f2d09b87fb4392ef3e43bbc8675edcfd1f94970e2b2e05ba2b304",
+      "scripts/check-ai-crawler-policy.mjs": "76e030b11a653a01ed101e13c06460f29354f55d33c1e96aab4ace3f53be5042",
+      "scripts/check-terms-rights.mjs": "62ab3d26bb2459fe9abe92a1c520e740cba77f01cec5324a7d19ddadfe6dba50",
+      "scripts/cloudflare-login.cmd": "9285c7cf0105fa6087da2dbb9264265a5daed85475ea61a12b0310431e3c8b0f",
+      "scripts/cloudflare-provision.cmd": "72b6efc1ad0cab89dc54d6d18cb6a6c3f2c1bbc7fa42444b9be968cc1cd22aeb",
+      "scripts/cloudflare-set-secrets.cmd": "5964a356784cc9ea3beeb76b801fc04ae79762ff1c47ab1fecb9f5a0d35a8cd0",
+      "scripts/patch-opennext-worker.mjs": "1f761820c8ec949e7a32f1435b82f14f9919d46bf965090741ab55add8b4068b",
+      "scripts/post-deploy-check.mjs": "51b28a8e14558dfc69c71779ebe9ed28d195f2f671d5eda07977afe885bbee82",
+      "scripts/README.md": "c7fb3f2e257b4cd31dc95951083a00717af37b2a93c117c65cd02b2b0aa0bf28",
+      "scripts/robots-policy.mjs": "0d3f85f8568a4b17a53c2eaa82fd06460a14262160ba53131f29978c5f4416ed",
+      "scripts/run-canonical-host-check.mjs": "99c282d9246c3a3c060c9b697d0c4a769e6b7622a63b97ab99899d41bc2edc4b",
+      "scripts/run-game-component-check.mjs": "bf05d0f3119b094bc4674846c71bbc69482541921ba199ec693dce021ba86e62",
+      "scripts/run-game-data-check.mjs": "985321918bfc7abdbea07a675b710d40fe8ddbbfa6d128e24e67cd90309f536b",
+      "scripts/run-game-metadata-check.mjs": "a6a16a08338143f1ada4f8f446e89f2e08208c0896cf884a5d494c894931ccf8",
+      "scripts/run-game-player-check.mjs": "59f17f0f2dacc0b596f572a9a1871e58f78623a267257e3f33e7f1eac7bd9f09",
+      "scripts/run-game-route-check.mjs": "be951b8407d08aadf9e1b2b29dda30fe33ffb133af6cd8ee6e8c7897a95eac44",
+      "scripts/run-game-template-check.mjs": "c7121e18a868db05d702639ff8448cbaad958c20117e91b71fb0ed71d98ced8d",
+      "scripts/run-home-discovery-check.mjs": "70cb3221dedd42081b24c201902a3dce2ff46c31e54b8ee478384da4545b4196",
+      "scripts/run-home-gallery-check.mjs": "e0bf58437b6de392dd98af862c97be25107432cec1a24df9a8d9d028b7ab738d",
+      "scripts/run-home-hero-check.mjs": "40ad21661b97f27e306c2eaa8d130637ecbd9a31d5c72c8ef25c214fb3a276e0",
+      "scripts/run-home-information-architecture-check.mjs": "6fc9c018915cb8cbdf68f23fde16239be0cb246bd6f92eab7000b243a98d9f66",
+      "scripts/run-home-performance-check.mjs": "58c55d5a6be4d07961c9163167fb2b1394c2807d4a31b8522da4e79ff7d9d308",
+      "scripts/seo-check.mjs": "a56453c56c8f55f4a308790e38a34aed19b667d1ba3514bd09eb18709db2ca9f",
+      "scripts/start-local-preview.cmd": "edd040a98ac02704de22f632fb21f981976c70b88932461874e4631db1dbcfb1",
+      "scripts/submit-indexnow.mjs": "1394eb5cfa2bb600af3bd3fbdf0f8c2eae9adf78b31d18d6f4cd57f3be0f4ae9",
+      "scripts/validate-canonical-host.ts": "1c7d329c5a0d5ac1b06432381f0933cfe70e0f17f8b4081f5e9695d23a6d32aa",
+      "scripts/validate-game-components.tsx": "3ba59b4e768241a57ec53da796c5cca2c35c6b69c95259f827166c0780a7b74d",
+      "scripts/validate-game-data.ts": "7e6f204d5397830accd8e33534939146bcbdd934b3ec49d8653c113b412d73bd",
+      "scripts/validate-game-metadata.ts": "e7a6f47384a1e305a8a2b1ed3ebd0d5243831191119d34e3a56481fd0ca4e55d",
+      "scripts/validate-game-player.tsx": "370b6809735b2b1ccbd99003fea04ea0f06a9761950333d765a661b3157797eb",
+      "scripts/validate-game-routes.ts": "bca62350b59f545437c2e5a8e834275dce7c5df330bb58d268befd12ab00803f",
+      "scripts/validate-game-template.tsx": "5427f7fbd835530eaa34ef7fc514692b203f8f312e71624ed51df3dc14af6406",
+      "scripts/validate-home-discovery.tsx": "f0236c66dc6e603595d39ba675293c5aba44add9a50cd71b7a2f7e461065d894",
+      "scripts/validate-home-gallery.tsx": "9d551c13b6df1c9173c32a805b07abe6ba85bef830057db78bc4653d56aac19b",
+      "scripts/validate-home-hero.tsx": "f80f6aaa538c53f02b1bc90007cabcbe7fe1ee3bfd1513fcb60ade5ff0f56f70",
+      "scripts/validate-home-information-architecture.tsx": "e3c0001100d69301d7007ba8fc3840779530fbdadae93bd784d48978138cfbc4",
+      "scripts/validate-home-performance.tsx": "ab1f4951e3c77a9806c355717dcfb20977d36fcac2be1edd9090e7811a5c2916",
+      "public/games/oval-face-cover.png": "0e914b27b602683442d57dfa232c88be1fdea5a2ed45bdabe0da72e3ff464073",
+      "public/games/oval-face-icon.png": "a3cdaeff0397647bd1580980c60e2996e5aa499eab8e5f2e634557b1c5da0909",
+      "public/games/oval-face.swf": "80e974d8ef4ad5e849e93464eaea1833620c269bac30601d960f5438c285e09b",
+      "public/games/README.md": "e5ae6e267570980805a1f298d9a6f0b5cf842f934035ae8e6d2355e5b8a3cf0c",
+      "public/games/square-face-cover.png": "15a5c93f79859441eef3032ce45e07abc2e91a7520a9aaef42158dd4fe00a535",
+      "public/games/square-face.swf": "b1d074c95f15b7dcecdbc2405abf820ead985669bb12cd47247fc8ea7537bc1e",
+      "package.json": "bdf24b2a42ad58b039caf6ea0812d562bbf786b0202be725f1c32c44bed0278a",
+      "package-lock.json": "bf7b778ff42d02d40a11190d56d969cb03ac183a0cf70dbd85c199dc79778c97",
+      "next.config.mjs": "10f3416af7a0a92f59c4d283113624e9c286f645c6155e91c5a381d512feb9ee",
+      "middleware.ts": "4ce3b9cd325b843f1f80bca6545c114ac84f3336434a719cbfd47577c7ab53d6",
+      "tsconfig.json": "a749da922f5e6f1d93a68270185c1ed56e3e45c786d1de1ee59f9bdb7512d720",
+      "scripts/check-about-rights.mjs": "5d1591d13e293168dda865890daecbd33048bfca16b569a4059a262afae94868"
+    },
+    "changedExistingPaths": [
+      "app/about-us/page.tsx",
+      "package.json",
+      "scripts/README.md"
+    ],
+    "unchangedExistingPathCount": 141,
+    "newPaths": [
+      "scripts/check-about-rights.mjs"
+    ],
+    "priorTermsProtectedCount": 107,
+    "priorTermsProtectedChanged": [
+      "app/about-us/page.tsx",
+      "package.json"
+    ],
+    "preservedPriorAcceptanceCount": 22
+  },
+  "commands": [
+    {
+      "name": "type",
+      "command": "node node_modules/typescript/bin/tsc --noEmit",
+      "startedAt": "2026-09-02T06:55:04.806Z",
+      "finishedAt": "2026-09-02T06:55:14.715Z",
+      "durationMs": 9908,
+      "timeoutMs": 120000,
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "error": null,
+      "stdoutPath": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-about-001-LLGhoq\\type.stdout.log",
+      "stderrPath": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-about-001-LLGhoq\\type.stderr.log",
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "name": "lint",
+      "command": "node C:\\nvm4w\\nodejs\\node_modules\\npm\\bin\\npm-cli.js run lint -- --max-warnings 0",
+      "startedAt": "2026-09-02T06:55:14.715Z",
+      "finishedAt": "2026-09-02T06:55:55.615Z",
+      "durationMs": 40900,
+      "timeoutMs": 120000,
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "error": null,
+      "stdoutPath": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-about-001-LLGhoq\\lint.stdout.log",
+      "stderrPath": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-about-001-LLGhoq\\lint.stderr.log",
+      "stdout": "\n> mysquarefaceicon@0.1.0 lint\n> next lint --max-warnings 0\n\n✔ No ESLint warnings or errors\n",
+      "stderr": ""
+    },
+    {
+      "name": "about-checker-lint",
+      "command": "node node_modules/eslint/bin/eslint.js scripts/check-about-rights.mjs --max-warnings 0",
+      "startedAt": "2026-09-02T06:55:55.615Z",
+      "finishedAt": "2026-09-02T06:55:58.702Z",
+      "durationMs": 3087,
+      "timeoutMs": 60000,
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "error": null,
+      "stdoutPath": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-about-001-LLGhoq\\about-checker-lint.stdout.log",
+      "stderrPath": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-about-001-LLGhoq\\about-checker-lint.stderr.log",
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "name": "about-source",
+      "command": "node C:\\nvm4w\\nodejs\\node_modules\\npm\\bin\\npm-cli.js run about:check",
+      "startedAt": "2026-09-02T06:55:58.702Z",
+      "finishedAt": "2026-09-02T06:55:59.006Z",
+      "durationMs": 304,
+      "timeoutMs": 30000,
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "error": null,
+      "stdoutPath": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-about-001-LLGhoq\\about-source.stdout.log",
+      "stderrPath": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-about-001-LLGhoq\\about-source.stderr.log",
+      "stdout": "\n> mysquarefaceicon@0.1.0 about:check\n> node scripts/check-about-rights.mjs\n\nABOUT-001 source passed: seven exact approved regions, frozen remaining source/metadata/schema, 1 H1 / 5 H2 / 7 H3 / 16 paragraphs, KW-02 count 3, eight main links.\nFail-closed source negative fixtures: 14 rejected.\nSource checks do not verify raw HTTP, browser/mobile, actual licenses or production release.\n",
+      "stderr": ""
+    },
+    {
+      "name": "terms-source",
+      "command": "node C:\\nvm4w\\nodejs\\node_modules\\npm\\bin\\npm-cli.js run terms:check",
+      "startedAt": "2026-09-02T06:55:59.006Z",
+      "finishedAt": "2026-09-02T06:55:59.309Z",
+      "durationMs": 303,
+      "timeoutMs": 30000,
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "error": null,
+      "stdoutPath": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-about-001-LLGhoq\\terms-source.stdout.log",
+      "stderrPath": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-about-001-LLGhoq\\terms-source.stderr.log",
+      "stdout": "\n> mysquarefaceicon@0.1.0 terms:check\n> node scripts/check-terms-rights.mjs\n\nTERMS-001 source passed: exact approved copy/date, 1 H1, 7 H2s, 8 paragraphs, KW-02 count 3, two links, frozen remaining source.\nFail-closed negative fixtures: 6 rejected (rights, keyword, link, date and metadata regressions).\nRaw HTTP, browser, actual licenses and production release are NOT verified by a source-only run.\n",
+      "stderr": ""
+    },
+    {
+      "name": "canonical",
+      "command": "node C:\\nvm4w\\nodejs\\node_modules\\npm\\bin\\npm-cli.js run canonical:check",
+      "startedAt": "2026-09-02T06:55:59.310Z",
+      "finishedAt": "2026-09-02T06:56:01.027Z",
+      "durationMs": 1717,
+      "timeoutMs": 90000,
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "error": null,
+      "stdoutPath": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-about-001-LLGhoq\\canonical.stdout.log",
+      "stderrPath": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-about-001-LLGhoq\\canonical.stderr.log",
+      "stdout": "\n> mysquarefaceicon@0.1.0 canonical:check\n> node scripts/run-canonical-host-check.mjs\n\nOP-11 canonical-host validation passed\n- HTTP apex, HTTP www, and HTTPS www normalize to the HTTPS apex with status 308\n- paths, queries, and method-preserving redirect semantics are retained\n- HTTPS apex, localhost, preview, and unrelated hosts pass through without redirects\n",
+      "stderr": ""
+    },
+    {
+      "name": "games",
+      "command": "node C:\\nvm4w\\nodejs\\node_modules\\npm\\bin\\npm-cli.js run games:check",
+      "startedAt": "2026-09-02T06:56:01.027Z",
+      "finishedAt": "2026-09-02T06:56:02.457Z",
+      "durationMs": 1430,
+      "timeoutMs": 120000,
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "error": null,
+      "stdoutPath": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-about-001-LLGhoq\\games.stdout.log",
+      "stderrPath": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-about-001-LLGhoq\\games.stderr.log",
+      "stdout": "\n> mysquarefaceicon@0.1.0 games:check\n> node scripts/run-game-data-check.mjs\n\nGAME-DATA-001 validation passed\n- 3 current records validated\n- IDs, slugs, routes, canonicals, relations, and query lookups are unique/valid\n- license status and delivery gates match data/game-license-registry.json\n- local SWF checksums, player sources, and project image files are present\n- external tool remains direct-link-only with no local generator asset path\n",
+      "stderr": ""
+    },
+    {
+      "name": "player",
+      "command": "node C:\\nvm4w\\nodejs\\node_modules\\npm\\bin\\npm-cli.js run player:check",
+      "startedAt": "2026-09-02T06:56:02.457Z",
+      "finishedAt": "2026-09-02T06:56:04.545Z",
+      "durationMs": 2088,
+      "timeoutMs": 120000,
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "error": null,
+      "stdoutPath": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-about-001-LLGhoq\\player.stdout.log",
+      "stderrPath": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-about-001-LLGhoq\\player.stderr.log",
+      "stdout": "\n> mysquarefaceicon@0.1.0 player:check\n> node scripts/run-game-player-check.mjs\n\nPLAYER-001 validation passed\n- all five delivery adapters have valid fixtures and exhaustive capabilities\n- unknown and DIRECT_LINK_ONLY mismatches fail closed\n- ExternalLinkAdapter renders a safe new-tab link and no iframe\n- RuffleAdapter remains conditionally dynamic for click-to-load delivery\n- GamePlayer validates URLs and release policy before runtime adapter dispatch\n- first activation paints loading before the dynamic adapter mounts\n- Ruffle reloads reuse one initialized release\n",
+      "stderr": ""
+    },
+    {
+      "name": "routes",
+      "command": "node C:\\nvm4w\\nodejs\\node_modules\\npm\\bin\\npm-cli.js run routes:check",
+      "startedAt": "2026-09-02T06:56:04.546Z",
+      "finishedAt": "2026-09-02T06:56:07.990Z",
+      "durationMs": 3444,
+      "timeoutMs": 120000,
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "error": null,
+      "stdoutPath": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-about-001-LLGhoq\\routes.stdout.log",
+      "stderrPath": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-about-001-LLGhoq\\routes.stderr.log",
+      "stdout": "\n> mysquarefaceicon@0.1.0 routes:check\n> node scripts/run-game-route-check.mjs\n\nROUTE-001 validation passed\n- three frozen legacy paths resolve without duplicate /games aliases\n- future /games/[slug] routes require exact paths, published status, and release permission\n- five allowlisted categories resolve from real published records; unknown categories fail closed\n- new route families retain explicit noindex and 404 guards\n",
+      "stderr": ""
+    },
+    {
+      "name": "components",
+      "command": "node C:\\nvm4w\\nodejs\\node_modules\\npm\\bin\\npm-cli.js run components:check",
+      "startedAt": "2026-09-02T06:56:07.990Z",
+      "finishedAt": "2026-09-02T06:56:11.992Z",
+      "durationMs": 4002,
+      "timeoutMs": 120000,
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "error": null,
+      "stdoutPath": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-about-001-LLGhoq\\components.stdout.log",
+      "stderrPath": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-about-001-LLGhoq\\components.stderr.log",
+      "stdout": "\n> mysquarefaceicon@0.1.0 components:check\n> node scripts/run-game-component-check.mjs\n\nCOMP-001 validation passed\n- all ten required shared components exist under components/game\n- cards, grids, categories, breadcrumbs, metadata, related records, empty state, and ad shell render from typed data\n- GameControls preserves playable and external-tool capability boundaries\n- route pages consume shared components without duplicate card markup\n- noindex directory/category scaffolds and the 404 boundary do not import AdSlotShell\n",
+      "stderr": ""
+    },
+    {
+      "name": "metadata",
+      "command": "node C:\\nvm4w\\nodejs\\node_modules\\npm\\bin\\npm-cli.js run metadata:check",
+      "startedAt": "2026-09-02T06:56:11.992Z",
+      "finishedAt": "2026-09-02T06:56:13.411Z",
+      "durationMs": 1419,
+      "timeoutMs": 120000,
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "error": null,
+      "stdoutPath": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-about-001-LLGhoq\\metadata.stdout.log",
+      "stderrPath": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-about-001-LLGhoq\\metadata.stderr.log",
+      "stdout": "\n> mysquarefaceicon@0.1.0 metadata:check\n> node scripts/run-game-metadata-check.mjs\n\nMETA-001 validation passed\n- Square, Oval, Pixel, and future game routes use the shared Game Data metadata builder\n- title, description, canonical, OG, Twitter, and one H1 resolve from validated records or the shared detail template\n- frozen legacy canonicals and current index states remain unchanged\n- missing required SEO fields and duplicate index metadata fail closed\n",
+      "stderr": ""
+    },
+    {
+      "name": "home",
+      "command": "node C:\\nvm4w\\nodejs\\node_modules\\npm\\bin\\npm-cli.js run home:check",
+      "startedAt": "2026-09-02T06:56:13.411Z",
+      "finishedAt": "2026-09-02T06:56:16.059Z",
+      "durationMs": 2648,
+      "timeoutMs": 120000,
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "error": null,
+      "stdoutPath": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-about-001-LLGhoq\\home.stdout.log",
+      "stderrPath": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-about-001-LLGhoq\\home.stderr.log",
+      "stdout": "\n> mysquarefaceicon@0.1.0 home:check\n> node scripts/run-home-information-architecture-check.mjs\n\nHOME-IA-001 validation passed\n- Square remains the core section and discovery precedes Gallery and long-form content\n- Featured contains only Oval and Pixel published Game Data; Pixel remains External Tool\n- five real category routes render; empty Continue/New modules do not render\n- Guide, Gallery, and Blog links are isolated in the post-FAQ Resources section\n- the mobile core Play button remains centered in resting and hover states\n",
+      "stderr": ""
+    },
+    {
+      "name": "home-hero",
+      "command": "node C:\\nvm4w\\nodejs\\node_modules\\npm\\bin\\npm-cli.js run home-hero:check",
+      "startedAt": "2026-09-02T06:56:16.059Z",
+      "finishedAt": "2026-09-02T06:56:18.261Z",
+      "durationMs": 2202,
+      "timeoutMs": 120000,
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "error": null,
+      "stdoutPath": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-about-001-LLGhoq\\home-hero.stdout.log",
+      "stderrPath": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-about-001-LLGhoq\\home-hero.stderr.log",
+      "stdout": "\n> mysquarefaceicon@0.1.0 home-hero:check\n> node scripts/run-home-hero-check.mjs\n\nHOME-HERO-001 validation passed\n- exact H1/value copy, one core preview, and both Play entry points are present\n- the desktop Hero uses the accepted split layout and mobile hides the duplicate CTA\n- initial HTML contains no Ruffle/WASM/SWF and the heavy adapter remains conditional\n- the external Hero Play action controls the same GamePlayer instance directly\n",
+      "stderr": ""
+    },
+    {
+      "name": "home-discovery",
+      "command": "node C:\\nvm4w\\nodejs\\node_modules\\npm\\bin\\npm-cli.js run home-discovery:check",
+      "startedAt": "2026-09-02T06:56:18.261Z",
+      "finishedAt": "2026-09-02T06:56:20.217Z",
+      "durationMs": 1956,
+      "timeoutMs": 120000,
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "error": null,
+      "stdoutPath": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-about-001-LLGhoq\\home-discovery.stdout.log",
+      "stderrPath": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-about-001-LLGhoq\\home-discovery.stderr.log",
+      "stdout": "\n> mysquarefaceicon@0.1.0 home-discovery:check\n> node scripts/run-home-discovery-check.mjs\n\nHOME-DISC-001 validation passed\n- Featured preserves Square's published relation order and removes duplicates\n- New requires a valid VERIFIED publication timestamp and is absent for current UNKNOWN data\n- cards use real Game Data thumbnails; Pixel remains an onsite External Tool details link\n- five non-empty categories render with truthful counts; all-empty discovery renders nothing\n- desktop media cards and the compact two-column mobile category layout are present\n",
+      "stderr": ""
+    },
+    {
+      "name": "home-gallery",
+      "command": "node C:\\nvm4w\\nodejs\\node_modules\\npm\\bin\\npm-cli.js run home-gallery:check",
+      "startedAt": "2026-09-02T06:56:20.217Z",
+      "finishedAt": "2026-09-02T06:56:23.715Z",
+      "durationMs": 3498,
+      "timeoutMs": 120000,
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "error": null,
+      "stdoutPath": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-about-001-LLGhoq\\home-gallery.stdout.log",
+      "stderrPath": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-about-001-LLGhoq\\home-gallery.stderr.log",
+      "stdout": "\n> mysquarefaceicon@0.1.0 home-gallery:check\n> node scripts/run-home-gallery-check.mjs\n\nHOME-GALLERY-001 validation passed\n- exact curated title, copy, trust note, six-item order, and ordinary /gallery link passed\n- semantic figures, explicit 512x512 dimensions, lazy loading, and responsive 3x2 CSS passed\n- hardcoded likes, Heart UI, community-title claims, and the old mandatory-like component are absent\n- Home uses the editorial variant; Oval and Pixel use the bounded compact variant\n- the real /gallery CommentSection remains in place\n",
+      "stderr": ""
+    },
+    {
+      "name": "perf-home",
+      "command": "node C:\\nvm4w\\nodejs\\node_modules\\npm\\bin\\npm-cli.js run perf-home:check",
+      "startedAt": "2026-09-02T06:56:23.715Z",
+      "finishedAt": "2026-09-02T06:56:25.824Z",
+      "durationMs": 2109,
+      "timeoutMs": 120000,
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "error": null,
+      "stdoutPath": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-about-001-LLGhoq\\perf-home.stdout.log",
+      "stderrPath": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-about-001-LLGhoq\\perf-home.stderr.log",
+      "stdout": "\n> mysquarefaceicon@0.1.0 perf-home:check\n> node scripts/run-home-performance-check.mjs\n\nPERF-HOME-001 validation passed\n- the LCP cover is a byte-verified local project asset with truthful intrinsic dimensions\n- initial HTML contains no Ruffle runtime, WASM, or SWF request\n- Ruffle remains conditional on activation and preview/loading/runtime share one reserved surface\n- the loading response is committed before the dynamic adapter mounts after a paint opportunity\n- the service-worker install list does not prefetch Ruffle or SWF assets\n",
+      "stderr": ""
+    },
+    {
+      "name": "game-template",
+      "command": "node C:\\nvm4w\\nodejs\\node_modules\\npm\\bin\\npm-cli.js run game-template:check",
+      "startedAt": "2026-09-02T06:56:25.824Z",
+      "finishedAt": "2026-09-02T06:56:28.583Z",
+      "durationMs": 2759,
+      "timeoutMs": 120000,
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "error": null,
+      "stdoutPath": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-about-001-LLGhoq\\game-template.stdout.log",
+      "stderrPath": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-about-001-LLGhoq\\game-template.stderr.log",
+      "stdout": "\n> mysquarefaceicon@0.1.0 game-template:check\n> node scripts/run-game-template-check.mjs\n\nGAME-TPL-001 validation passed\n- five delivery types render through the shared Player-first detail template\n- module order, conditional sections, FAQ DOM, factual rights, and internal navigation are present\n- External Tool structured data stays WebPage-only; playable records use conservative VideoGame data\n- initial template markup contains no Ruffle runtime, WASM, or SWF request URL\n- future route keeps resolver, true-404 boundary, and force-noindex metadata gate\n",
+      "stderr": "Warning: React does not recognize the `fetchPriority` prop on a DOM element. If you intentionally want it to appear in the DOM as a custom attribute, spell it as lowercase `fetchpriority` instead. If you accidentally passed it from a parent component, remove it from the DOM element.\n    at img\n    at button\n    at div\n    at div\n    at div\n    at GamePlayer (D:\\LYXGIT\\mysquarefaceicon\\.game-template-check\\components\\game-player\\GamePlayer.js:80:66)\n    at section\n    at main\n    at GameDetailTemplate (D:\\LYXGIT\\mysquarefaceicon\\.game-template-check\\components\\game\\GameDetailTemplate.js:32:31)\n"
+    },
+    {
+      "name": "next-build",
+      "command": "node C:\\nvm4w\\nodejs\\node_modules\\npm\\bin\\npm-cli.js run build",
+      "startedAt": "2026-09-02T06:45:33.988Z",
+      "finishedAt": "2026-09-02T06:46:01.220Z",
+      "durationMs": 27232,
+      "timeoutMs": 300000,
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "error": null,
+      "stdoutPath": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-about-001-rx0NKM\\next-build.stdout.log",
+      "stderrPath": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-about-001-rx0NKM\\next-build.stderr.log",
+      "stdout": "\n> mysquarefaceicon@0.1.0 build\n> next build\n\n  ▲ Next.js 14.2.35\n\n   Creating an optimized production build ...\n ✓ Compiled successfully\n   Linting and checking validity of types ...\n   Collecting page data ...\n   Generating static pages (0/42) ...\n   Generating static pages (10/42) \r\n   Generating static pages (20/42) \r\n   Generating static pages (31/42) \r\n ✓ Generating static pages (42/42)\n   Finalizing page optimization ...\n   Collecting build traces ...\n\nRoute (app)                                        Size     First Load JS\n┌ ○ /                                              2.38 kB         109 kB\n├ ○ /_not-found                                    185 B          87.5 kB\n├ ● /[locale]                                      2.38 kB         109 kB\n├   ├ /es\n├   ├ /vi\n├   ├ /ja\n├   └ [+4 more paths]\n├ ○ /about-us                                      185 B          87.5 kB\n├ ○ /admin/comments                                2.46 kB        94.9 kB\n├ ƒ /api/admin/comment-images/[...key]             0 B                0 B\n├ ƒ /api/admin/comments                            0 B                0 B\n├ ƒ /api/admin/comments/[id]                       0 B                0 B\n├ ƒ /api/comment-images/[...key]                   0 B                0 B\n├ ƒ /api/comments                                  0 B                0 B\n├ ƒ /api/comments/[id]/like                        0 B                0 B\n├ ○ /blog                                          186 B          87.5 kB\n├ ○ /blog/avatar-maker-without-signup              185 B          87.5 kB\n├ ○ /blog/best-discord-avatar-style                185 B          87.5 kB\n├ ○ /blog/cute-profile-picture-ideas               185 B          87.5 kB\n├ ○ /blog/discord-avatar-size-guide                185 B          87.5 kB\n├ ○ /blog/how-to-make-a-cute-discord-profile-icon  185 B          87.5 kB\n├ ○ /blog/square-avatar-vs-round-avatar            185 B          87.5 kB\n├ ○ /blog/tiktok-profile-icon-ideas                185 B          87.5 kB\n├ ● /category/[slug]                               188 B           101 kB\n├   ├ /category/face-makers\n├   ├ /category/avatar-makers\n├   ├ /category/pixel-avatars\n├   └ [+2 more paths]\n├ ○ /contact                                       185 B          87.5 kB\n├ ○ /cute-square-avatar-generator                  185 B          87.5 kB\n├ ○ /editorial-policy                              185 B          87.5 kB\n├ ○ /free-avatar-maker                             185 B          87.5 kB\n├ ○ /gallery                                       4.26 kB        96.7 kB\n├ ○ /games                                         188 B           101 kB\n├ ● /games/[slug]                                  194 B           107 kB\n├ ○ /manifest.webmanifest                          0 B                0 B\n├ ○ /oval-face-icon-generator                      1.86 kB         100 kB\n├ ○ /pixel-art-avatar-icon-generator               186 B          98.5 kB\n├ ○ /pixel-square-face-maker                       185 B          87.5 kB\n├ ○ /privacy-policy                                185 B          87.5 kB\n├ ○ /robots.txt                                    0 B                0 B\n├ ○ /sitemap.xml                                   0 B                0 B\n├ ○ /square-avatar-generator                       185 B          87.5 kB\n├ ○ /square-face-icon-generator                    185 B          87.5 kB\n└ ○ /terms-of-service                              185 B          87.5 kB\n+ First Load JS shared by all                      87.3 kB\n  ├ chunks/117-afe62c434925fd13.js                 31.7 kB\n  ├ chunks/fd9d1056-fc216cdb7d7cbbdc.js            53.6 kB\n  └ other shared chunks (total)                    1.92 kB\n\n\nƒ Middleware                                       26.8 kB\n\n○  (Static)   prerendered as static content\n●  (SSG)      prerendered as static HTML (uses getStaticProps)\nƒ  (Dynamic)  server-rendered on demand\n\n",
+      "stderr": ""
+    },
+    {
+      "name": "cloudflare-build",
+      "command": "node C:\\nvm4w\\nodejs\\node_modules\\npm\\bin\\npm-cli.js run cf:build",
+      "startedAt": "2026-09-02T06:46:01.220Z",
+      "finishedAt": "2026-09-02T06:47:05.528Z",
+      "durationMs": 64308,
+      "timeoutMs": 360000,
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "error": null,
+      "stdoutPath": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-about-001-rx0NKM\\cloudflare-build.stdout.log",
+      "stderrPath": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-about-001-rx0NKM\\cloudflare-build.stderr.log",
+      "stdout": "\n> mysquarefaceicon@0.1.0 cf:build\n> opennextjs-cloudflare build && node scripts/patch-opennext-worker.mjs\n\n\n┌─────────────────────────────┐\n│ OpenNext — Cloudflare build │\n└─────────────────────────────┘\n\nApp directory: D:\\LYXGIT\\mysquarefaceicon\nNext.js version : 14.2.35\n@opennextjs/cloudflare version: 1.3.0\n@opennextjs/aws version: 3.6.5\n\n┌─────────────────────────────────┐\n│ OpenNext — Building Next.js app │\n└─────────────────────────────────┘\n\n\n> mysquarefaceicon@0.1.0 build\n> next build\n\n  ▲ Next.js 14.2.35\n\n   Creating an optimized production build ...\n ✓ Compiled successfully\n   Linting and checking validity of types ...\n   Collecting page data ...\n   Generating static pages (0/42) ...\n   Generating static pages (10/42) \r\n   Generating static pages (20/42) \r\n   Generating static pages (31/42) \r\n ✓ Generating static pages (42/42)\n   Finalizing page optimization ...\n   Collecting build traces ...\n\nRoute (app)                                        Size     First Load JS\n┌ ○ /                                              2.38 kB         109 kB\n├ ○ /_not-found                                    185 B          87.5 kB\n├ ● /[locale]                                      2.38 kB         109 kB\n├   ├ /es\n├   ├ /vi\n├   ├ /ja\n├   └ [+4 more paths]\n├ ○ /about-us                                      185 B          87.5 kB\n├ ○ /admin/comments                                2.46 kB        94.9 kB\n├ ƒ /api/admin/comment-images/[...key]             0 B                0 B\n├ ƒ /api/admin/comments                            0 B                0 B\n├ ƒ /api/admin/comments/[id]                       0 B                0 B\n├ ƒ /api/comment-images/[...key]                   0 B                0 B\n├ ƒ /api/comments                                  0 B                0 B\n├ ƒ /api/comments/[id]/like                        0 B                0 B\n├ ○ /blog                                          185 B          87.5 kB\n├ ○ /blog/avatar-maker-without-signup              185 B          87.5 kB\n├ ○ /blog/best-discord-avatar-style                183 B          87.5 kB\n├ ○ /blog/cute-profile-picture-ideas               185 B          87.5 kB\n├ ○ /blog/discord-avatar-size-guide                184 B          87.5 kB\n├ ○ /blog/how-to-make-a-cute-discord-profile-icon  185 B          87.5 kB\n├ ○ /blog/square-avatar-vs-round-avatar            185 B          87.5 kB\n├ ○ /blog/tiktok-profile-icon-ideas                185 B          87.5 kB\n├ ● /category/[slug]                               188 B           101 kB\n├   ├ /category/face-makers\n├   ├ /category/avatar-makers\n├   ├ /category/pixel-avatars\n├   └ [+2 more paths]\n├ ○ /contact                                       185 B          87.5 kB\n├ ○ /cute-square-avatar-generator                  185 B          87.5 kB\n├ ○ /editorial-policy                              185 B          87.5 kB\n├ ○ /free-avatar-maker                             185 B          87.5 kB\n├ ○ /gallery                                       4.26 kB        96.7 kB\n├ ○ /games                                         188 B           101 kB\n├ ● /games/[slug]                                  194 B           107 kB\n├ ○ /manifest.webmanifest                          0 B                0 B\n├ ○ /oval-face-icon-generator                      1.86 kB         100 kB\n├ ○ /pixel-art-avatar-icon-generator               186 B          98.5 kB\n├ ○ /pixel-square-face-maker                       185 B          87.5 kB\n├ ○ /privacy-policy                                185 B          87.5 kB\n├ ○ /robots.txt                                    0 B                0 B\n├ ○ /sitemap.xml                                   0 B                0 B\n├ ○ /square-avatar-generator                       184 B          87.5 kB\n├ ○ /square-face-icon-generator                    185 B          87.5 kB\n└ ○ /terms-of-service                              185 B          87.5 kB\n+ First Load JS shared by all                      87.3 kB\n  ├ chunks/117-afe62c434925fd13.js                 31.7 kB\n  ├ chunks/fd9d1056-fc216cdb7d7cbbdc.js            53.6 kB\n  └ other shared chunks (total)                    1.92 kB\n\n\nƒ Middleware                                       26.8 kB\n\n○  (Static)   prerendered as static content\n●  (SSG)      prerendered as static HTML (uses getStaticProps)\nƒ  (Dynamic)  server-rendered on demand\n\n\n┌──────────────────────────────┐\n│ OpenNext — Generating bundle │\n└──────────────────────────────┘\n\nBundling middleware function...\nBundling static assets...\nBundling cache assets...\nBuilding server function: default...\nApplying code patches: 2.057s\n# copyPackageTemplateFiles\n\u001b[35m⚙️ Bundling the OpenNext server...\n\u001b[0m\n\u001b[35mWorker saved in `.open-next\\worker.js` 🚀\n\u001b[0m\nOpenNext build complete.\nPatched 1 OpenNext chdir call(s) in D:\\LYXGIT\\mysquarefaceicon\\.open-next\\server-functions\\default\\handler.mjs\n",
+      "stderr": "WARN OpenNext is not fully compatible with Windows.\nWARN For optimal performance, it is recommended to use Windows Subsystem for Linux (WSL).\nWARN While OpenNext may function on Windows, it could encounter unpredictable failures during runtime.\n"
+    },
+    {
+      "name": "about-built-final",
+      "command": "node C:\\nvm4w\\nodejs\\node_modules\\npm\\bin\\npm-cli.js run about:check -- --built",
+      "startedAt": "2026-09-02T06:48:19.272Z",
+      "finishedAt": "2026-09-02T06:48:19.629Z",
+      "durationMs": 358,
+      "timeoutMs": 30000,
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "error": null,
+      "stdoutPath": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-about-001-rx0NKM\\about-built-final.stdout.log",
+      "stderrPath": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-about-001-rx0NKM\\about-built-final.stderr.log",
+      "stdout": "\n> mysquarefaceicon@0.1.0 about:check\n> node scripts/check-about-rights.mjs --built\n\nABOUT-001 source passed: seven exact approved regions, frozen remaining source/metadata/schema, 1 H1 / 5 H2 / 7 H3 / 16 paragraphs, KW-02 count 3, eight main links.\nFail-closed source negative fixtures: 14 rejected.\nABOUT-001 built HTML passed: source/render parity, both descriptions, frozen title/canonical/OG/Twitter/schema, no noindex; 6 raw negative fixtures rejected.\nOffline artifacts do not verify HTTP, browser interactions or deployment.\n",
+      "stderr": ""
+    },
+    {
+      "name": "terms-built",
+      "command": "node C:\\nvm4w\\nodejs\\node_modules\\npm\\bin\\npm-cli.js run terms:check -- --built",
+      "startedAt": "2026-09-02T06:48:19.630Z",
+      "finishedAt": "2026-09-02T06:48:19.956Z",
+      "durationMs": 326,
+      "timeoutMs": 30000,
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "error": null,
+      "stdoutPath": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-about-001-rx0NKM\\terms-built.stdout.log",
+      "stderrPath": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-about-001-rx0NKM\\terms-built.stderr.log",
+      "stdout": "\n> mysquarefaceicon@0.1.0 terms:check\n> node scripts/check-terms-rights.mjs --built\n\nTERMS-001 source passed: exact approved copy/date, 1 H1, 7 H2s, 8 paragraphs, KW-02 count 3, two links, frozen remaining source.\nFail-closed negative fixtures: 6 rejected (rights, keyword, link, date and metadata regressions).\nTERMS-001 built HTML passed: exact copy, title/description/canonical, no noindex, source/render parity; 2 raw negative fixtures rejected.\nThis is an offline build-artifact check. HTTP status/headers, browser interactions and production release remain NOT verified.\n",
+      "stderr": ""
+    },
+    {
+      "name": "about-http",
+      "command": "node C:\\nvm4w\\nodejs\\node_modules\\npm\\bin\\npm-cli.js run about:check -- --base http://127.0.0.1:3100",
+      "startedAt": "2026-09-02T06:48:53.767Z",
+      "finishedAt": "2026-09-02T06:48:54.522Z",
+      "durationMs": 754,
+      "timeoutMs": 30000,
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "error": null,
+      "stdoutPath": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-about-001-rx0NKM\\about-http.stdout.log",
+      "stderrPath": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-about-001-rx0NKM\\about-http.stderr.log",
+      "stdout": "\n> mysquarefaceicon@0.1.0 about:check\n> node scripts/check-about-rights.mjs --base http://127.0.0.1:3100\n\nABOUT-001 source passed: seven exact approved regions, frozen remaining source/metadata/schema, 1 H1 / 5 H2 / 7 H3 / 16 paragraphs, KW-02 count 3, eight main links.\nFail-closed source negative fixtures: 14 rejected.\nABOUT-001 local production HTTP passed: http://127.0.0.1:3100/about-us; HTTP 200, exact copy, metadata/schema/index and source/render parity; 6 raw negative fixtures rejected.\n",
+      "stderr": ""
+    },
+    {
+      "name": "terms-http",
+      "command": "node C:\\nvm4w\\nodejs\\node_modules\\npm\\bin\\npm-cli.js run terms:check -- --base http://127.0.0.1:3100",
+      "startedAt": "2026-09-02T06:48:54.523Z",
+      "finishedAt": "2026-09-02T06:48:55.032Z",
+      "durationMs": 509,
+      "timeoutMs": 30000,
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "error": null,
+      "stdoutPath": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-about-001-rx0NKM\\terms-http.stdout.log",
+      "stderrPath": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-about-001-rx0NKM\\terms-http.stderr.log",
+      "stdout": "\n> mysquarefaceicon@0.1.0 terms:check\n> node scripts/check-terms-rights.mjs --base http://127.0.0.1:3100\n\nTERMS-001 source passed: exact approved copy/date, 1 H1, 7 H2s, 8 paragraphs, KW-02 count 3, two links, frozen remaining source.\nFail-closed negative fixtures: 6 rejected (rights, keyword, link, date and metadata regressions).\nTERMS-001 raw local production passed: http://127.0.0.1:3100/terms-of-service; HTTP 200, exact copy, title/description/canonical, no noindex, source/render parity; 2 raw negative fixtures rejected.\n",
+      "stderr": ""
+    },
+    {
+      "name": "robots-http",
+      "command": "node scripts/check-ai-crawler-policy.mjs --base http://127.0.0.1:3100",
+      "startedAt": "2026-09-02T06:48:55.033Z",
+      "finishedAt": "2026-09-02T06:48:55.247Z",
+      "durationMs": 214,
+      "timeoutMs": 30000,
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "error": null,
+      "stdoutPath": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-about-001-rx0NKM\\robots-http.stdout.log",
+      "stderrPath": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-about-001-rx0NKM\\robots-http.stderr.log",
+      "stdout": "AI-01 crawler policy passed at http://127.0.0.1:3100/robots.txt.\nExplicit decisions: 6 blocked, 5 public-search/user retrieval allowed.\n",
+      "stderr": ""
+    },
+    {
+      "name": "seo-full",
+      "command": "node C:\\nvm4w\\nodejs\\node_modules\\npm\\bin\\npm-cli.js run seo:check -- --base http://127.0.0.1:3100 --json",
+      "startedAt": "2026-09-02T06:48:55.247Z",
+      "finishedAt": "2026-09-02T06:48:56.240Z",
+      "durationMs": 993,
+      "timeoutMs": 180000,
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "error": null,
+      "stdoutPath": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-about-001-rx0NKM\\seo-full.stdout.log",
+      "stderrPath": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-about-001-rx0NKM\\seo-full.stderr.log",
+      "stdout": "\n> mysquarefaceicon@0.1.0 seo:check\n> node scripts/seo-check.mjs --base http://localhost:3000 --base http://127.0.0.1:3100 --json\n\n{\n  \"base\": \"http://127.0.0.1:3100\",\n  \"checkedUrls\": 20,\n  \"specVersion\": \"2026-08-31\",\n  \"summary\": {\n    \"must\": 0,\n    \"should\": 12\n  },\n  \"findings\": [\n    {\n      \"rule\": \"META-03\",\n      \"level\": \"应该\",\n      \"url\": \"https://mysquarefaceicon.com/free-avatar-maker\",\n      \"message\": \"title 66 字符，超过建议上限 60\"\n    },\n    {\n      \"rule\": \"META-04\",\n      \"level\": \"应该\",\n      \"url\": \"https://mysquarefaceicon.com/free-avatar-maker\",\n      \"message\": \"description 175 字符，超过建议上限 160\"\n    },\n    {\n      \"rule\": \"META-03\",\n      \"level\": \"应该\",\n      \"url\": \"https://mysquarefaceicon.com/square-avatar-generator\",\n      \"message\": \"title 68 字符，超过建议上限 60\"\n    },\n    {\n      \"rule\": \"META-03\",\n      \"level\": \"应该\",\n      \"url\": \"https://mysquarefaceicon.com/oval-face-icon-generator\",\n      \"message\": \"title 68 字符，超过建议上限 60\"\n    },\n    {\n      \"rule\": \"META-03\",\n      \"level\": \"应该\",\n      \"url\": \"https://mysquarefaceicon.com/pixel-art-avatar-icon-generator\",\n      \"message\": \"title 68 字符，超过建议上限 60\"\n    },\n    {\n      \"rule\": \"META-04\",\n      \"level\": \"应该\",\n      \"url\": \"https://mysquarefaceicon.com/\",\n      \"message\": \"description 175 字符，超过建议上限 160\"\n    },\n    {\n      \"rule\": \"META-03\",\n      \"level\": \"应该\",\n      \"url\": \"https://mysquarefaceicon.com/gallery\",\n      \"message\": \"title 68 字符，超过建议上限 60\"\n    },\n    {\n      \"rule\": \"META-03\",\n      \"level\": \"应该\",\n      \"url\": \"https://mysquarefaceicon.com/blog/best-discord-avatar-style\",\n      \"message\": \"title 71 字符，超过建议上限 60\"\n    },\n    {\n      \"rule\": \"META-03\",\n      \"level\": \"应该\",\n      \"url\": \"https://mysquarefaceicon.com/blog/how-to-make-a-cute-discord-profile-icon\",\n      \"message\": \"title 61 字符，超过建议上限 60\"\n    },\n    {\n      \"rule\": \"KW-03\",\n      \"level\": \"应该\",\n      \"url\": \"https://mysquarefaceicon.com/blog/how-to-make-a-cute-discord-profile-icon\",\n      \"message\": \"密度 0.49% < 0.5%（命中 3 次 / 609 词）\"\n    },\n    {\n      \"rule\": \"META-04\",\n      \"level\": \"应该\",\n      \"url\": \"https://mysquarefaceicon.com/terms-of-service\",\n      \"message\": \"description 仅 76 字符，短于建议下限 110\"\n    },\n    {\n      \"rule\": \"META-04\",\n      \"level\": \"应该\",\n      \"url\": \"https://mysquarefaceicon.com/privacy-policy\",\n      \"message\": \"description 仅 83 字符，短于建议下限 110\"\n    }\n  ]\n}\n",
+      "stderr": "正在检查 20 个 URL …\n正在探测 7 个站内链接目标 …\n"
+    }
+  ],
+  "failedAttemptsResolved": [
+    {
+      "type": "red test on original source",
+      "startedAt": "2026-09-02T06:40:48.156Z",
+      "finishedAt": "2026-09-02T06:40:48.230Z",
+      "exitCode": 1,
+      "timedOut": false,
+      "stdout": "",
+      "stderr": "ABOUT-001 check failed: metadata-description must appear exactly once\n\n0 !== 1\n\n",
+      "resolution": "Expected exit 1 established that old About copy does not satisfy the new confirmed source gate."
+    },
+    {
+      "type": "first full lint",
+      "name": "lint",
+      "command": "node C:\\nvm4w\\nodejs\\node_modules\\npm\\bin\\npm-cli.js run lint -- --max-warnings 0",
+      "startedAt": "2026-09-02T06:43:16.380Z",
+      "finishedAt": "2026-09-02T06:43:52.316Z",
+      "durationMs": 35936,
+      "timeoutMs": 120000,
+      "exitCode": 1,
+      "signal": null,
+      "timedOut": false,
+      "error": null,
+      "stdoutPath": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-about-001-rx0NKM\\lint.stdout.log",
+      "stderrPath": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-about-001-rx0NKM\\lint.stderr.log",
+      "stdout": "\n> mysquarefaceicon@0.1.0 lint\n> next lint --max-warnings 0\n\n",
+      "stderr": "\n./app/about-us/page.tsx\n113:266  Error: `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`.  react/no-unescaped-entities\n\ninfo  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/basic-features/eslint#disabling-rules\n",
+      "resolution": "Replaced the single raw JSX apostrophe with &apos; inside the approved paragraph; final type/lint and both builds pass."
+    },
+    {
+      "type": "first built HTML negative fixture",
+      "kind": "running",
+      "name": "about-built",
+      "startedAt": "2026-09-02T06:47:05.528Z",
+      "timeoutMs": 30000,
+      "resolution": "The fixture changed the header Gallery href instead of the frozen main link. Scoped the fixture to the unique main gallery-card anchor; unchanged application HTML and all 6 raw negative cases then pass."
+    }
+  ],
+  "sourceNegativeCases": 14,
+  "rawHtmlNegativeCases": 6,
+  "termsSourceNegativeCases": 6,
+  "termsRawNegativeCases": 2,
+  "localProduction": {
+    "recordedAt": "2026-09-02T06:53:47.237Z",
+    "buildId": "QAzQpeJrYWF2m8Ey8itpk",
+    "servedArtifactParity": [
+      {
+        "url": "/about-us",
+        "status": 200,
+        "contentType": "text/html; charset=utf-8",
+        "xRobotsTag": null,
+        "bytes": 38196,
+        "sha256": "4ad9899711755f9285317121bf14b0bba59cfeba56e48d5478c1b71fbde2a1f0",
+        "artifactPath": ".next/server/app/about-us.html"
+      },
+      {
+        "url": "/terms-of-service",
+        "status": 200,
+        "contentType": "text/html; charset=utf-8",
+        "xRobotsTag": null,
+        "bytes": 21778,
+        "sha256": "1a4007d31ef3968f804495c8d27c64f0a4151bb976f259b1b11b2d3145fff8d3",
+        "artifactPath": ".next/server/app/terms-of-service.html"
+      },
+      {
+        "url": "/robots.txt",
+        "status": 200,
+        "contentType": "text/plain",
+        "xRobotsTag": null,
+        "bytes": 711,
+        "sha256": "e114dfaaa714b7b9d2385907a7f1e915e30c606d049f11457f45a9f6549d554f",
+        "artifactPath": ".next/server/app/robots.txt.body"
+      },
+      {
+        "url": "/sitemap.xml",
+        "status": 200,
+        "contentType": "application/xml",
+        "xRobotsTag": null,
+        "bytes": 2770,
+        "sha256": "3f1341c4b3d4e339fc5b231539157032ff42ecfc991e4bc2058903d372bb12a7",
+        "artifactPath": ".next/server/app/sitemap.xml.body"
+      }
+    ],
+    "sitemap": {
+      "urls": [
+        "https://mysquarefaceicon.com",
+        "https://mysquarefaceicon.com/about-us",
+        "https://mysquarefaceicon.com/contact",
+        "https://mysquarefaceicon.com/editorial-policy",
+        "https://mysquarefaceicon.com/free-avatar-maker",
+        "https://mysquarefaceicon.com/oval-face-icon-generator",
+        "https://mysquarefaceicon.com/pixel-art-avatar-icon-generator",
+        "https://mysquarefaceicon.com/square-avatar-generator",
+        "https://mysquarefaceicon.com/gallery",
+        "https://mysquarefaceicon.com/square-face-icon-generator",
+        "https://mysquarefaceicon.com/blog",
+        "https://mysquarefaceicon.com/blog/avatar-maker-without-signup",
+        "https://mysquarefaceicon.com/blog/cute-profile-picture-ideas",
+        "https://mysquarefaceicon.com/blog/best-discord-avatar-style",
+        "https://mysquarefaceicon.com/blog/how-to-make-a-cute-discord-profile-icon",
+        "https://mysquarefaceicon.com/blog/discord-avatar-size-guide",
+        "https://mysquarefaceicon.com/blog/tiktok-profile-icon-ideas",
+        "https://mysquarefaceicon.com/blog/square-avatar-vs-round-avatar",
+        "https://mysquarefaceicon.com/privacy-policy",
+        "https://mysquarefaceicon.com/terms-of-service"
+      ],
+      "count": 20,
+      "uniqueCount": 20,
+      "lastmodCount": 0,
+      "noScaffoldRoutes": true
+    },
+    "workerSha256": "4e7c7cb3850c2ca12374d034118afc422ed5d95f46bfc3df3ff1dba2911807f3",
+    "server": {
+      "pid": 30888,
+      "executable": "C:/nvm4w/nodejs/node.exe",
+      "command": "node_modules/next/dist/bin/next start -H 127.0.0.1 -p 3100",
+      "createdAt": "2026-09-02T06:48:22.502488Z",
+      "stdout": "C:/Users/liu/AppData/Local/Temp/mysquarefaceicon-about-001-rx0NKM/server.stdout.log",
+      "stderr": "C:/Users/liu/AppData/Local/Temp/mysquarefaceicon-about-001-rx0NKM/server.stderr.log",
+      "stderrAtLastRead": "",
+      "previousOwnedServerStopped": {
+        "pid": 17016,
+        "identityValidated": true,
+        "portAbsentBeforeRestart": true
+      }
+    }
+  },
+  "seo": {
+    "base": "http://127.0.0.1:3100",
+    "checkedUrls": 20,
+    "specVersion": "2026-08-31",
+    "summary": {
+      "must": 0,
+      "should": 12
+    },
+    "findings": [
+      {
+        "rule": "META-03",
+        "level": "应该",
+        "url": "https://mysquarefaceicon.com/free-avatar-maker",
+        "message": "title 66 字符，超过建议上限 60"
+      },
+      {
+        "rule": "META-04",
+        "level": "应该",
+        "url": "https://mysquarefaceicon.com/free-avatar-maker",
+        "message": "description 175 字符，超过建议上限 160"
+      },
+      {
+        "rule": "META-03",
+        "level": "应该",
+        "url": "https://mysquarefaceicon.com/square-avatar-generator",
+        "message": "title 68 字符，超过建议上限 60"
+      },
+      {
+        "rule": "META-03",
+        "level": "应该",
+        "url": "https://mysquarefaceicon.com/oval-face-icon-generator",
+        "message": "title 68 字符，超过建议上限 60"
+      },
+      {
+        "rule": "META-03",
+        "level": "应该",
+        "url": "https://mysquarefaceicon.com/pixel-art-avatar-icon-generator",
+        "message": "title 68 字符，超过建议上限 60"
+      },
+      {
+        "rule": "META-04",
+        "level": "应该",
+        "url": "https://mysquarefaceicon.com/",
+        "message": "description 175 字符，超过建议上限 160"
+      },
+      {
+        "rule": "META-03",
+        "level": "应该",
+        "url": "https://mysquarefaceicon.com/gallery",
+        "message": "title 68 字符，超过建议上限 60"
+      },
+      {
+        "rule": "META-03",
+        "level": "应该",
+        "url": "https://mysquarefaceicon.com/blog/best-discord-avatar-style",
+        "message": "title 71 字符，超过建议上限 60"
+      },
+      {
+        "rule": "META-03",
+        "level": "应该",
+        "url": "https://mysquarefaceicon.com/blog/how-to-make-a-cute-discord-profile-icon",
+        "message": "title 61 字符，超过建议上限 60"
+      },
+      {
+        "rule": "KW-03",
+        "level": "应该",
+        "url": "https://mysquarefaceicon.com/blog/how-to-make-a-cute-discord-profile-icon",
+        "message": "密度 0.49% < 0.5%（命中 3 次 / 609 词）"
+      },
+      {
+        "rule": "META-04",
+        "level": "应该",
+        "url": "https://mysquarefaceicon.com/terms-of-service",
+        "message": "description 仅 76 字符，短于建议下限 110"
+      },
+      {
+        "rule": "META-04",
+        "level": "应该",
+        "url": "https://mysquarefaceicon.com/privacy-policy",
+        "message": "description 仅 83 字符，短于建议下限 110"
+      }
+    ],
+    "ruleCounts": {
+      "META-03": 7,
+      "META-04": 4,
+      "KW-03": 1
+    },
+    "priorSummary": {
+      "must": 0,
+      "should": 12
+    },
+    "newFindings": 0,
+    "aboutDescriptionLength": 153,
+    "twitterDescriptionLength": 134,
+    "kw04": "NOT_REAUDITED; phrase count is not semantic/SERP coverage",
+    "productionSeo": "NOT_RUN"
+  },
+  "browser": {
+    "classification": "Available",
+    "surface": "existing in-app Browser binding",
+    "fallbackUsed": false,
+    "viewportReset": true,
+    "recordedAt": "2026-09-02T06:53:46.045Z",
+    "assertions": {
+      "desktopIdentity": true,
+      "mobileIdentity": true,
+      "meaningfulContent": true,
+      "headingStructure": true,
+      "paragraphParity": true,
+      "kw02Count3": true,
+      "noHiddenMainText": true,
+      "noHorizontalOverflow": true,
+      "noFrameworkOverlay": true,
+      "cleanConsole": true,
+      "canonical": true,
+      "metadataParity": true,
+      "schemaParity": true,
+      "mainHrefSequence": true,
+      "mobileHrefParity": true,
+      "keyboardFocus": true,
+      "keyboardDestinations": true,
+      "allNavigationDestinations": true
+    },
+    "desktop": {
+      "recordedAt": "2026-09-02T06:49:50.906Z",
+      "url": "http://127.0.0.1:3100/about-us",
+      "title": "About My Square Face Icon | My Square Face Icon",
+      "snapshot": "- banner:\n  - link \"My Square Face Icon home\":\n    - /url: /\n    - generic: Square Face Generator\n  - navigation \"Primary navigation\":\n    - generic \"Game\":\n      - text: Game\n    - link \"Free Avatar Maker\":\n      - /url: /free-avatar-maker\n    - link \"Gallery\":\n      - /url: /gallery\n    - link \"Icon Guide\":\n      - /url: /square-face-icon-generator\n    - link \"Blog\":\n      - /url: /blog\n    - link \"About\":\n      - /url: /about-us\n    - link \"Contact\":\n      - /url: /contact\n    - link \"Start Creating\":\n      - /url: /#maker\n- main:\n  - link \"Back to the generator\":\n    - /url: /#maker\n  - paragraph: About the project\n  - heading \"About My Square Face Icon\" [level=1]\n  - paragraph: My Square Face Icon is a free browser tool site for people who want a cute square profile icon without signing up, installing software, or opening a full design app. The project centers on a square face generator experience and supports it with practical guides, examples, and privacy-aware community features.\n  - 'heading \"About My Square Face Icon: Why This Site Exists\" [level=2]'\n  - paragraph: \"A good profile picture should be quick to make and easy to recognize at small sizes. Many users only need a playful avatar for Discord, TikTok, YouTube, forums, game profiles, classroom projects, or small communities. My Square Face Icon keeps that workflow simple: open the generator, create a face, and save or share the result when the tool supports it.\"\n  - paragraph: This page also explains what visitors should know about My Square Face Icon before using the generator, gallery, guides, or community features.\n  - paragraph: The site is designed as a focused tool first, not a large social network. Pages are added only when they support the generator, answer a real search intent, or help visitors make better avatar choices.\n  - heading \"What We Provide\" [level=2]\n  - article:\n    - heading \"Free square face generator\" [level=3]\n    - paragraph: The main page keeps the avatar tool visible in the first viewport so visitors can start creating without hunting through a landing page.\n  - article:\n    - heading \"Helpful avatar guides\" [level=3]\n    - paragraph: Support pages explain icon readability, cute avatar style, platform crops, and practical profile image workflows.\n  - article:\n    - heading \"Avatar inspiration\" [level=3]\n    - paragraph: The homepage shows site-curated icon examples. The gallery includes simple style examples and approved community submissions when available. Selection or moderation does not establish authorship or grant image-use permissions.\n  - heading \"Game Files and Image Rights\" [level=2]\n  - paragraph: Square and Oval run third-party Flash (SWF) files through Ruffle. We have not verified the original source, rights holder, or permissions for the exact files used here, including hosting, public use, redistribution, and use of generated images. The site's availability and examples do not establish authorization or grant third-party rights.\n  - paragraph: If the product expands into more avatar makers, each new URL should contain a real usable tool or a clearly useful guide. We avoid publishing thin pages that exist only to target a keyword.\n  - heading \"Privacy and Community\" [level=2]\n  - paragraph: The generator experience runs in the browser. Public comments are moderated before publishing, and email addresses submitted with comments are not displayed publicly. Optional image uploads are intended for sharing avatar creations, not for collecting personal documents or sensitive information.\n  - paragraph:\n    - text: You can read the full details in the\n    - link \"Privacy Policy\":\n      - /url: /privacy-policy\n    - text: and\n    - link \"Terms of Service\":\n      - /url: /terms-of-service\n    - text: . Content standards, AI assistance, and page quality rules are documented in the\n    - link \"Editorial Policy\":\n      - /url: /editorial-policy\n    - text: .\n  - heading \"Next Product Direction\" [level=2]\n  - link \"Use the generator Start with the core square face generator experience.\":\n    - /url: /#maker\n    - heading \"Use the generator\" [level=3]\n    - paragraph: Start with the core square face generator experience.\n  - link \"Free avatar maker guide Learn how to use the site as a simple free avatar maker.\":\n    - /url: /free-avatar-maker\n    - heading \"Free avatar maker guide\" [level=3]\n    - paragraph: Learn how to use the site as a simple free avatar maker.\n  - link \"Browse the gallery Browse style ideas and approved community submissions when available.\":\n    - /url: /gallery\n    - heading \"Browse the gallery\" [level=3]\n    - paragraph: Browse style ideas and approved community submissions when available.\n  - link \"Contact the project Send generator feedback, privacy questions, or correction requests.\":\n    - /url: /contact\n    - heading \"Contact the project\" [level=3]\n    - paragraph: Send generator feedback, privacy questions, or correction requests.\n- contentinfo:\n  - paragraph: © 2026 My Square Face Icon.\n  - paragraph: Create cute square face icons online with a free browser-based generator.\n  - generic \"Footer navigation\":\n    - heading \"Quick Links\" [level=3]\n    - link \"Square Face Generator\":\n      - /url: /#maker\n    - link \"Oval Face Icon Generator\":\n      - /url: /oval-face-icon-generator\n    - link \"Pixel Art Avatar Icon Generator\":\n      - /url: /pixel-art-avatar-icon-generator\n    - link \"Free Avatar Maker\":\n      - /url: /free-avatar-maker\n    - link \"Square Avatar Generator\":\n      - /url: /square-avatar-generator\n    - link \"Gallery\":\n      - /url: /gallery\n    - link \"Icon Guide\":\n      - /url: /square-face-icon-generator\n    - heading \"Resources\" [level=3]\n    - link \"Blog\":\n      - /url: /blog\n    - link \"Avatar Maker Without Signup\":\n      - /url: /blog/avatar-maker-without-signup\n    - link \"Cute Profile Picture Ideas\":\n      - /url: /blog/cute-profile-picture-ideas\n    - link \"Discord Avatar Style\":\n      - /url: /blog/best-discord-avatar-style\n    - link \"Discord Icon Guide\":\n      - /url: /blog/how-to-make-a-cute-discord-profile-icon\n    - link \"Discord Avatar Size\":\n      - /url: /blog/discord-avatar-size-guide\n    - link \"Pixel Square Face Maker\":\n      - /url: /pixel-square-face-maker\n    - heading \"Legal\" [level=3]\n    - link \"About Us\":\n      - /url: /about-us\n    - link \"Contact\":\n      - /url: /contact\n    - link \"Editorial Policy\":\n      - /url: /editorial-policy\n    - link \"Privacy Policy\":\n      - /url: /privacy-policy\n    - link \"Terms of Service\":\n      - /url: /terms-of-service",
+      "dom": {
+        "canonical": "https://mysquarefaceicon.com/about-us",
+        "focus": {
+          "tag": "BODY",
+          "text": "{\"@context\":\"https://schema.org\",\"@type\":\"AboutPage\",\"name\":\"About My Square Face Icon\",\"description"
+        },
+        "frameworkOverlay": false,
+        "headings": {
+          "h1": [
+            "About My Square Face Icon"
+          ],
+          "h2": [
+            "About My Square Face Icon: Why This Site Exists",
+            "What We Provide",
+            "Game Files and Image Rights",
+            "Privacy and Community",
+            "Next Product Direction"
+          ],
+          "h3": [
+            "Free square face generator",
+            "Helpful avatar guides",
+            "Avatar inspiration",
+            "Use the generator",
+            "Free avatar maker guide",
+            "Browse the gallery",
+            "Contact the project"
+          ]
+        },
+        "hiddenText": [],
+        "links": [
+          {
+            "href": "/#maker",
+            "text": "Back to the generator"
+          },
+          {
+            "href": "/privacy-policy",
+            "text": "Privacy Policy"
+          },
+          {
+            "href": "/terms-of-service",
+            "text": "Terms of Service"
+          },
+          {
+            "href": "/editorial-policy",
+            "text": "Editorial Policy"
+          },
+          {
+            "href": "/#maker",
+            "text": "Use the generatorStart with the core square face generator experience."
+          },
+          {
+            "href": "/free-avatar-maker",
+            "text": "Free avatar maker guideLearn how to use the site as a simple free avatar maker."
+          },
+          {
+            "href": "/gallery",
+            "text": "Browse the galleryBrowse style ideas and approved community submissions when available."
+          },
+          {
+            "href": "/contact",
+            "text": "Contact the projectSend generator feedback, privacy questions, or correction requests."
+          }
+        ],
+        "mainText": "Back to the generator ABOUT THE PROJECT About My Square Face Icon My Square Face Icon is a free browser tool site for people who want a cute square profile icon without signing up, installing software, or opening a full design app. The project centers on a square face generator experience and supports it with practical guides, examples, and privacy-aware community features. About My Square Face Icon: Why This Site Exists A good profile picture should be quick to make and easy to recognize at small sizes. Many users only need a playful avatar for Discord, TikTok, YouTube, forums, game profiles, classroom projects, or small communities. My Square Face Icon keeps that workflow simple: open the generator, create a face, and save or share the result when the tool supports it. This page also explains what visitors should know about My Square Face Icon before using the generator, gallery, guides, or community features. The site is designed as a focused tool first, not a large social network. Pages are added only when they support the generator, answer a real search intent, or help visitors make better avatar choices. What We Provide Free square face generator The main page keeps the avatar tool visible in the first viewport so visitors can start creating without hunting through a landing page. Helpful avatar guides Support pages explain icon readability, cute avatar style, platform crops, and practical profile image workflows. Avatar inspiration The homepage shows site-curated icon examples. The gallery includes simple style examples and approved community submissions when available. Selection or moderation does not establish authorship or grant image-use permissions. Game Files and Image Rights Square and Oval run third-party Flash (SWF) files through Ruffle. We have not verified the original source, rights holder, or permissions for the exact files used here, including hosting, public use, redistribution, and use of generated images. The site's availability and examples do not establish authorization or grant third-party rights. If the product expands into more avatar makers, each new URL should contain a real usable tool or a clearly useful guide. We avoid publishing thin pages that exist only to target a keyword. Privacy and Community The generator experience runs in the browser. Public comments are moderated before publishing, and email addresses submitted with comments are not displayed publicly. Optional image uploads are intended for sharing avatar creations, not for collecting personal documents or sensitive information. You can read the full details in the Privacy Policy and Terms of Service. Content standards, AI assistance, and page quality rules are documented in the Editorial Policy. Next Product Direction Use the generator Start with the core square face generator experience. Free avatar maker guide Learn how to use the site as a simple free avatar maker. Browse the gallery Browse style ideas and approved community submissions when available. Contact the project Send generator feedback, privacy questions, or correction requests.",
+        "metadata": [
+          {
+            "content": "width=device-width, initial-scale=1",
+            "name": "viewport"
+          },
+          {
+            "content": "#20b8aa",
+            "name": "theme-color"
+          },
+          {
+            "content": "Learn about My Square Face Icon, its browser-based avatar tools, curated examples, community gallery, privacy practices, and unverified game-file rights.",
+            "name": "description"
+          },
+          {
+            "content": "My Square Face Icon",
+            "name": "application-name"
+          },
+          {
+            "content": "My Square Face Icon",
+            "name": "author"
+          },
+          {
+            "content": "About My Square Face Icon",
+            "name": "og:title"
+          },
+          {
+            "content": "A practical, privacy-aware avatar tool site for making cute square face icons in the browser.",
+            "name": "og:description"
+          },
+          {
+            "content": "https://mysquarefaceicon.com/about-us",
+            "name": "og:url"
+          },
+          {
+            "content": "https://mysquarefaceicon.com/og-image.svg",
+            "name": "og:image"
+          },
+          {
+            "content": "website",
+            "name": "og:type"
+          },
+          {
+            "content": "summary_large_image",
+            "name": "twitter:card"
+          },
+          {
+            "content": "About My Square Face Icon",
+            "name": "twitter:title"
+          },
+          {
+            "content": "Learn how My Square Face Icon handles avatar tools, curated examples, community submissions, privacy, and unverified game-file rights.",
+            "name": "twitter:description"
+          },
+          {
+            "content": "https://mysquarefaceicon.com/og-image.svg",
+            "name": "twitter:image"
+          }
+        ],
+        "overflow": [],
+        "paragraphs": [
+          "About the project",
+          "My Square Face Icon is a free browser tool site for people who want a cute square profile icon without signing up, installing software, or opening a full design app. The project centers on a square face generator experience and supports it with practical guides, examples, and privacy-aware community features.",
+          "A good profile picture should be quick to make and easy to recognize at small sizes. Many users only need a playful avatar for Discord, TikTok, YouTube, forums, game profiles, classroom projects, or small communities. My Square Face Icon keeps that workflow simple: open the generator, create a face, and save or share the result when the tool supports it.",
+          "This page also explains what visitors should know about My Square Face Icon before using the generator, gallery, guides, or community features.",
+          "The site is designed as a focused tool first, not a large social network. Pages are added only when they support the generator, answer a real search intent, or help visitors make better avatar choices.",
+          "The main page keeps the avatar tool visible in the first viewport so visitors can start creating without hunting through a landing page.",
+          "Support pages explain icon readability, cute avatar style, platform crops, and practical profile image workflows.",
+          "The homepage shows site-curated icon examples. The gallery includes simple style examples and approved community submissions when available. Selection or moderation does not establish authorship or grant image-use permissions.",
+          "Square and Oval run third-party Flash (SWF) files through Ruffle. We have not verified the original source, rights holder, or permissions for the exact files used here, including hosting, public use, redistribution, and use of generated images. The site's availability and examples do not establish authorization or grant third-party rights.",
+          "If the product expands into more avatar makers, each new URL should contain a real usable tool or a clearly useful guide. We avoid publishing thin pages that exist only to target a keyword.",
+          "The generator experience runs in the browser. Public comments are moderated before publishing, and email addresses submitted with comments are not displayed publicly. Optional image uploads are intended for sharing avatar creations, not for collecting personal documents or sensitive information.",
+          "You can read the full details in the Privacy Policy and Terms of Service. Content standards, AI assistance, and page quality rules are documented in the Editorial Policy.",
+          "Start with the core square face generator experience.",
+          "Learn how to use the site as a simple free avatar maker.",
+          "Browse style ideas and approved community submissions when available.",
+          "Send generator feedback, privacy questions, or correction requests."
+        ],
+        "schemas": [
+          {
+            "@context": "https://schema.org",
+            "@type": "AboutPage",
+            "description": "About page for My Square Face Icon, a free browser-based square face generator and avatar resource site.",
+            "mainEntity": {
+              "@type": "Organization",
+              "logo": "https://mysquarefaceicon.com/favicon512.png",
+              "name": "My Square Face Icon",
+              "url": "https://mysquarefaceicon.com"
+            },
+            "name": "About My Square Face Icon",
+            "url": "https://mysquarefaceicon.com/about-us"
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "item": "https://mysquarefaceicon.com",
+                "name": "Home",
+                "position": 1
+              },
+              {
+                "@type": "ListItem",
+                "item": "https://mysquarefaceicon.com/about-us",
+                "name": "About Us",
+                "position": 2
+              }
+            ]
+          }
+        ],
+        "title": "About My Square Face Icon | My Square Face Icon",
+        "viewport": {
+          "clientWidth": 1265,
+          "height": 900,
+          "scrollHeight": 2676,
+          "scrollWidth": 1265,
+          "width": 1280
+        }
+      },
+      "logs": []
+    },
+    "mobile": {
+      "recordedAt": "2026-09-02T06:50:21.330Z",
+      "url": "http://127.0.0.1:3100/about-us",
+      "title": "About My Square Face Icon | My Square Face Icon",
+      "snapshot": "- banner:\n  - link \"My Square Face Icon home\":\n    - /url: /\n    - generic: Square Face Generator\n  - link \"Start\":\n    - /url: /#maker\n  - generic \"Open navigation menu\":\n    - text: Menu\n- main:\n  - link \"Back to the generator\":\n    - /url: /#maker\n  - paragraph: About the project\n  - heading \"About My Square Face Icon\" [level=1]\n  - paragraph: My Square Face Icon is a free browser tool site for people who want a cute square profile icon without signing up, installing software, or opening a full design app. The project centers on a square face generator experience and supports it with practical guides, examples, and privacy-aware community features.\n  - 'heading \"About My Square Face Icon: Why This Site Exists\" [level=2]'\n  - paragraph: \"A good profile picture should be quick to make and easy to recognize at small sizes. Many users only need a playful avatar for Discord, TikTok, YouTube, forums, game profiles, classroom projects, or small communities. My Square Face Icon keeps that workflow simple: open the generator, create a face, and save or share the result when the tool supports it.\"\n  - paragraph: This page also explains what visitors should know about My Square Face Icon before using the generator, gallery, guides, or community features.\n  - paragraph: The site is designed as a focused tool first, not a large social network. Pages are added only when they support the generator, answer a real search intent, or help visitors make better avatar choices.\n  - heading \"What We Provide\" [level=2]\n  - article:\n    - heading \"Free square face generator\" [level=3]\n    - paragraph: The main page keeps the avatar tool visible in the first viewport so visitors can start creating without hunting through a landing page.\n  - article:\n    - heading \"Helpful avatar guides\" [level=3]\n    - paragraph: Support pages explain icon readability, cute avatar style, platform crops, and practical profile image workflows.\n  - article:\n    - heading \"Avatar inspiration\" [level=3]\n    - paragraph: The homepage shows site-curated icon examples. The gallery includes simple style examples and approved community submissions when available. Selection or moderation does not establish authorship or grant image-use permissions.\n  - heading \"Game Files and Image Rights\" [level=2]\n  - paragraph: Square and Oval run third-party Flash (SWF) files through Ruffle. We have not verified the original source, rights holder, or permissions for the exact files used here, including hosting, public use, redistribution, and use of generated images. The site's availability and examples do not establish authorization or grant third-party rights.\n  - paragraph: If the product expands into more avatar makers, each new URL should contain a real usable tool or a clearly useful guide. We avoid publishing thin pages that exist only to target a keyword.\n  - heading \"Privacy and Community\" [level=2]\n  - paragraph: The generator experience runs in the browser. Public comments are moderated before publishing, and email addresses submitted with comments are not displayed publicly. Optional image uploads are intended for sharing avatar creations, not for collecting personal documents or sensitive information.\n  - paragraph:\n    - text: You can read the full details in the\n    - link \"Privacy Policy\":\n      - /url: /privacy-policy\n    - text: and\n    - link \"Terms of Service\":\n      - /url: /terms-of-service\n    - text: . Content standards, AI assistance, and page quality rules are documented in the\n    - link \"Editorial Policy\":\n      - /url: /editorial-policy\n    - text: .\n  - heading \"Next Product Direction\" [level=2]\n  - link \"Use the generator Start with the core square face generator experience.\":\n    - /url: /#maker\n    - heading \"Use the generator\" [level=3]\n    - paragraph: Start with the core square face generator experience.\n  - link \"Free avatar maker guide Learn how to use the site as a simple free avatar maker.\":\n    - /url: /free-avatar-maker\n    - heading \"Free avatar maker guide\" [level=3]\n    - paragraph: Learn how to use the site as a simple free avatar maker.\n  - link \"Browse the gallery Browse style ideas and approved community submissions when available.\":\n    - /url: /gallery\n    - heading \"Browse the gallery\" [level=3]\n    - paragraph: Browse style ideas and approved community submissions when available.\n  - link \"Contact the project Send generator feedback, privacy questions, or correction requests.\":\n    - /url: /contact\n    - heading \"Contact the project\" [level=3]\n    - paragraph: Send generator feedback, privacy questions, or correction requests.\n- contentinfo:\n  - paragraph: © 2026 My Square Face Icon.\n  - paragraph: Create cute square face icons online with a free browser-based generator.\n  - generic \"Footer navigation\":\n    - heading \"Quick Links\" [level=3]\n    - link \"Square Face Generator\":\n      - /url: /#maker\n    - link \"Oval Face Icon Generator\":\n      - /url: /oval-face-icon-generator\n    - link \"Pixel Art Avatar Icon Generator\":\n      - /url: /pixel-art-avatar-icon-generator\n    - link \"Free Avatar Maker\":\n      - /url: /free-avatar-maker\n    - link \"Square Avatar Generator\":\n      - /url: /square-avatar-generator\n    - link \"Gallery\":\n      - /url: /gallery\n    - link \"Icon Guide\":\n      - /url: /square-face-icon-generator\n    - heading \"Resources\" [level=3]\n    - link \"Blog\":\n      - /url: /blog\n    - link \"Avatar Maker Without Signup\":\n      - /url: /blog/avatar-maker-without-signup\n    - link \"Cute Profile Picture Ideas\":\n      - /url: /blog/cute-profile-picture-ideas\n    - link \"Discord Avatar Style\":\n      - /url: /blog/best-discord-avatar-style\n    - link \"Discord Icon Guide\":\n      - /url: /blog/how-to-make-a-cute-discord-profile-icon\n    - link \"Discord Avatar Size\":\n      - /url: /blog/discord-avatar-size-guide\n    - link \"Pixel Square Face Maker\":\n      - /url: /pixel-square-face-maker\n    - heading \"Legal\" [level=3]\n    - link \"About Us\":\n      - /url: /about-us\n    - link \"Contact\":\n      - /url: /contact\n    - link \"Editorial Policy\":\n      - /url: /editorial-policy\n    - link \"Privacy Policy\":\n      - /url: /privacy-policy\n    - link \"Terms of Service\":\n      - /url: /terms-of-service\n- alert",
+      "dom": {
+        "canonical": "https://mysquarefaceicon.com/about-us",
+        "focus": {
+          "tag": "BODY",
+          "text": "{\"@context\":\"https://schema.org\",\"@type\":\"AboutPage\",\"name\":\"About My Square Face Icon\",\"description"
+        },
+        "frameworkOverlay": false,
+        "headings": {
+          "h1": [
+            "About My Square Face Icon"
+          ],
+          "h2": [
+            "About My Square Face Icon: Why This Site Exists",
+            "What We Provide",
+            "Game Files and Image Rights",
+            "Privacy and Community",
+            "Next Product Direction"
+          ],
+          "h3": [
+            "Free square face generator",
+            "Helpful avatar guides",
+            "Avatar inspiration",
+            "Use the generator",
+            "Free avatar maker guide",
+            "Browse the gallery",
+            "Contact the project"
+          ]
+        },
+        "hiddenText": [],
+        "links": [
+          {
+            "href": "/#maker",
+            "text": "Back to the generator"
+          },
+          {
+            "href": "/privacy-policy",
+            "text": "Privacy Policy"
+          },
+          {
+            "href": "/terms-of-service",
+            "text": "Terms of Service"
+          },
+          {
+            "href": "/editorial-policy",
+            "text": "Editorial Policy"
+          },
+          {
+            "href": "/#maker",
+            "text": "Use the generatorStart with the core square face generator experience."
+          },
+          {
+            "href": "/free-avatar-maker",
+            "text": "Free avatar maker guideLearn how to use the site as a simple free avatar maker."
+          },
+          {
+            "href": "/gallery",
+            "text": "Browse the galleryBrowse style ideas and approved community submissions when available."
+          },
+          {
+            "href": "/contact",
+            "text": "Contact the projectSend generator feedback, privacy questions, or correction requests."
+          }
+        ],
+        "mainText": "Back to the generator ABOUT THE PROJECT About My Square Face Icon My Square Face Icon is a free browser tool site for people who want a cute square profile icon without signing up, installing software, or opening a full design app. The project centers on a square face generator experience and supports it with practical guides, examples, and privacy-aware community features. About My Square Face Icon: Why This Site Exists A good profile picture should be quick to make and easy to recognize at small sizes. Many users only need a playful avatar for Discord, TikTok, YouTube, forums, game profiles, classroom projects, or small communities. My Square Face Icon keeps that workflow simple: open the generator, create a face, and save or share the result when the tool supports it. This page also explains what visitors should know about My Square Face Icon before using the generator, gallery, guides, or community features. The site is designed as a focused tool first, not a large social network. Pages are added only when they support the generator, answer a real search intent, or help visitors make better avatar choices. What We Provide Free square face generator The main page keeps the avatar tool visible in the first viewport so visitors can start creating without hunting through a landing page. Helpful avatar guides Support pages explain icon readability, cute avatar style, platform crops, and practical profile image workflows. Avatar inspiration The homepage shows site-curated icon examples. The gallery includes simple style examples and approved community submissions when available. Selection or moderation does not establish authorship or grant image-use permissions. Game Files and Image Rights Square and Oval run third-party Flash (SWF) files through Ruffle. We have not verified the original source, rights holder, or permissions for the exact files used here, including hosting, public use, redistribution, and use of generated images. The site's availability and examples do not establish authorization or grant third-party rights. If the product expands into more avatar makers, each new URL should contain a real usable tool or a clearly useful guide. We avoid publishing thin pages that exist only to target a keyword. Privacy and Community The generator experience runs in the browser. Public comments are moderated before publishing, and email addresses submitted with comments are not displayed publicly. Optional image uploads are intended for sharing avatar creations, not for collecting personal documents or sensitive information. You can read the full details in the Privacy Policy and Terms of Service. Content standards, AI assistance, and page quality rules are documented in the Editorial Policy. Next Product Direction Use the generator Start with the core square face generator experience. Free avatar maker guide Learn how to use the site as a simple free avatar maker. Browse the gallery Browse style ideas and approved community submissions when available. Contact the project Send generator feedback, privacy questions, or correction requests.",
+        "metadata": [
+          {
+            "content": "width=device-width, initial-scale=1",
+            "name": "viewport"
+          },
+          {
+            "content": "#20b8aa",
+            "name": "theme-color"
+          },
+          {
+            "content": "Learn about My Square Face Icon, its browser-based avatar tools, curated examples, community gallery, privacy practices, and unverified game-file rights.",
+            "name": "description"
+          },
+          {
+            "content": "My Square Face Icon",
+            "name": "application-name"
+          },
+          {
+            "content": "My Square Face Icon",
+            "name": "author"
+          },
+          {
+            "content": "About My Square Face Icon",
+            "name": "og:title"
+          },
+          {
+            "content": "A practical, privacy-aware avatar tool site for making cute square face icons in the browser.",
+            "name": "og:description"
+          },
+          {
+            "content": "https://mysquarefaceicon.com/about-us",
+            "name": "og:url"
+          },
+          {
+            "content": "https://mysquarefaceicon.com/og-image.svg",
+            "name": "og:image"
+          },
+          {
+            "content": "website",
+            "name": "og:type"
+          },
+          {
+            "content": "summary_large_image",
+            "name": "twitter:card"
+          },
+          {
+            "content": "About My Square Face Icon",
+            "name": "twitter:title"
+          },
+          {
+            "content": "Learn how My Square Face Icon handles avatar tools, curated examples, community submissions, privacy, and unverified game-file rights.",
+            "name": "twitter:description"
+          },
+          {
+            "content": "https://mysquarefaceicon.com/og-image.svg",
+            "name": "twitter:image"
+          }
+        ],
+        "overflow": [],
+        "paragraphs": [
+          "About the project",
+          "My Square Face Icon is a free browser tool site for people who want a cute square profile icon without signing up, installing software, or opening a full design app. The project centers on a square face generator experience and supports it with practical guides, examples, and privacy-aware community features.",
+          "A good profile picture should be quick to make and easy to recognize at small sizes. Many users only need a playful avatar for Discord, TikTok, YouTube, forums, game profiles, classroom projects, or small communities. My Square Face Icon keeps that workflow simple: open the generator, create a face, and save or share the result when the tool supports it.",
+          "This page also explains what visitors should know about My Square Face Icon before using the generator, gallery, guides, or community features.",
+          "The site is designed as a focused tool first, not a large social network. Pages are added only when they support the generator, answer a real search intent, or help visitors make better avatar choices.",
+          "The main page keeps the avatar tool visible in the first viewport so visitors can start creating without hunting through a landing page.",
+          "Support pages explain icon readability, cute avatar style, platform crops, and practical profile image workflows.",
+          "The homepage shows site-curated icon examples. The gallery includes simple style examples and approved community submissions when available. Selection or moderation does not establish authorship or grant image-use permissions.",
+          "Square and Oval run third-party Flash (SWF) files through Ruffle. We have not verified the original source, rights holder, or permissions for the exact files used here, including hosting, public use, redistribution, and use of generated images. The site's availability and examples do not establish authorization or grant third-party rights.",
+          "If the product expands into more avatar makers, each new URL should contain a real usable tool or a clearly useful guide. We avoid publishing thin pages that exist only to target a keyword.",
+          "The generator experience runs in the browser. Public comments are moderated before publishing, and email addresses submitted with comments are not displayed publicly. Optional image uploads are intended for sharing avatar creations, not for collecting personal documents or sensitive information.",
+          "You can read the full details in the Privacy Policy and Terms of Service. Content standards, AI assistance, and page quality rules are documented in the Editorial Policy.",
+          "Start with the core square face generator experience.",
+          "Learn how to use the site as a simple free avatar maker.",
+          "Browse style ideas and approved community submissions when available.",
+          "Send generator feedback, privacy questions, or correction requests."
+        ],
+        "schemas": [
+          {
+            "@context": "https://schema.org",
+            "@type": "AboutPage",
+            "description": "About page for My Square Face Icon, a free browser-based square face generator and avatar resource site.",
+            "mainEntity": {
+              "@type": "Organization",
+              "logo": "https://mysquarefaceicon.com/favicon512.png",
+              "name": "My Square Face Icon",
+              "url": "https://mysquarefaceicon.com"
+            },
+            "name": "About My Square Face Icon",
+            "url": "https://mysquarefaceicon.com/about-us"
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "item": "https://mysquarefaceicon.com",
+                "name": "Home",
+                "position": 1
+              },
+              {
+                "@type": "ListItem",
+                "item": "https://mysquarefaceicon.com/about-us",
+                "name": "About Us",
+                "position": 2
+              }
+            ]
+          }
+        ],
+        "title": "About My Square Face Icon | My Square Face Icon",
+        "viewport": {
+          "clientWidth": 375,
+          "height": 844,
+          "scrollHeight": 4299,
+          "scrollWidth": 375,
+          "width": 390
+        }
+      },
+      "logs": []
+    },
+    "navigation": [
+      {
+        "action": "Mobile: About main Terms of Service link",
+        "recordedAt": "2026-09-02T06:51:08.270Z",
+        "url": "http://127.0.0.1:3100/terms-of-service",
+        "title": "Terms of Service | My Square Face Icon",
+        "logs": [],
+        "snapshotEvidence": [
+          "  - heading \"Terms of Service\" [level=1]",
+          "  - heading \"Third-Party Game Files\" [level=2]"
+        ]
+      },
+      {
+        "action": "Mobile: browser Back to About",
+        "recordedAt": "2026-09-02T06:51:08.349Z",
+        "url": "http://127.0.0.1:3100/about-us",
+        "title": "About My Square Face Icon | My Square Face Icon",
+        "logs": [],
+        "snapshotEvidence": [
+          "  - heading \"About My Square Face Icon\" [level=1]",
+          "  - heading \"Game Files and Image Rights\" [level=2]"
+        ]
+      },
+      {
+        "action": "Mobile: About gallery card",
+        "recordedAt": "2026-09-02T06:51:08.497Z",
+        "url": "http://127.0.0.1:3100/gallery",
+        "title": "Square Face Icon Gallery - Community Creations | My Square Face Icon",
+        "logs": [],
+        "snapshotEvidence": [
+          "  - heading \"Square Face Icon Gallery\" [level=1]",
+          "  - paragraph: No approved comments yet. Share the first screenshot after your comment is reviewed."
+        ]
+      },
+      {
+        "action": "Mobile: browser Back from Gallery",
+        "recordedAt": "2026-09-02T06:51:08.572Z",
+        "url": "http://127.0.0.1:3100/about-us",
+        "title": "About My Square Face Icon | My Square Face Icon",
+        "logs": [],
+        "snapshotEvidence": [
+          "  - heading \"About My Square Face Icon\" [level=1]",
+          "  - heading \"Game Files and Image Rights\" [level=2]"
+        ]
+      },
+      {
+        "action": "Mobile: Back to the generator",
+        "recordedAt": "2026-09-02T06:51:08.819Z",
+        "url": "http://127.0.0.1:3100/#maker",
+        "title": "Square Face Generator - Classic Flash Avatar & Icon Maker",
+        "logs": [],
+        "snapshotEvidence": [
+          "  - heading \"Square Face Generator\" [level=1]"
+        ]
+      },
+      {
+        "action": "Mobile: browser Back from homepage",
+        "recordedAt": "2026-09-02T06:51:08.917Z",
+        "url": "http://127.0.0.1:3100/about-us",
+        "title": "About My Square Face Icon | My Square Face Icon",
+        "logs": [],
+        "snapshotEvidence": [
+          "  - heading \"About My Square Face Icon\" [level=1]",
+          "  - heading \"Game Files and Image Rights\" [level=2]"
+        ]
+      },
+      {
+        "action": "Mobile keyboard Enter: Terms of Service",
+        "recordedAt": "2026-09-02T06:52:04.911Z",
+        "url": "http://127.0.0.1:3100/terms-of-service",
+        "title": "Terms of Service | My Square Face Icon",
+        "logs": [],
+        "snapshotEvidence": [
+          "  - heading \"Terms of Service\" [level=1]",
+          "  - heading \"Third-Party Game Files\" [level=2]"
+        ]
+      },
+      {
+        "action": "Mobile keyboard: browser Back from Terms",
+        "recordedAt": "2026-09-02T06:52:04.967Z",
+        "url": "http://127.0.0.1:3100/about-us",
+        "title": "About My Square Face Icon | My Square Face Icon",
+        "logs": [],
+        "snapshotEvidence": [
+          "  - heading \"About My Square Face Icon\" [level=1]",
+          "  - heading \"Game Files and Image Rights\" [level=2]"
+        ]
+      },
+      {
+        "action": "Mobile keyboard Enter: gallery",
+        "recordedAt": "2026-09-02T06:52:05.227Z",
+        "url": "http://127.0.0.1:3100/gallery",
+        "title": "Square Face Icon Gallery - Community Creations | My Square Face Icon",
+        "logs": [],
+        "snapshotEvidence": [
+          "  - heading \"Square Face Icon Gallery\" [level=1]",
+          "  - paragraph: No approved comments yet. Share the first screenshot after your comment is reviewed."
+        ]
+      },
+      {
+        "action": "Mobile keyboard: browser Back from gallery",
+        "recordedAt": "2026-09-02T06:52:05.305Z",
+        "url": "http://127.0.0.1:3100/about-us",
+        "title": "About My Square Face Icon | My Square Face Icon",
+        "logs": [],
+        "snapshotEvidence": [
+          "  - heading \"About My Square Face Icon\" [level=1]",
+          "  - heading \"Game Files and Image Rights\" [level=2]"
+        ]
+      },
+      {
+        "action": "Desktop: About main Terms of Service link",
+        "recordedAt": "2026-09-02T06:52:05.508Z",
+        "url": "http://127.0.0.1:3100/terms-of-service",
+        "title": "Terms of Service | My Square Face Icon",
+        "logs": [],
+        "snapshotEvidence": [
+          "  - heading \"Terms of Service\" [level=1]",
+          "  - heading \"Third-Party Game Files\" [level=2]"
+        ]
+      },
+      {
+        "action": "Desktop: browser Back to About",
+        "recordedAt": "2026-09-02T06:52:05.573Z",
+        "url": "http://127.0.0.1:3100/about-us",
+        "title": "About My Square Face Icon | My Square Face Icon",
+        "logs": [],
+        "snapshotEvidence": [
+          "  - heading \"About My Square Face Icon\" [level=1]",
+          "  - heading \"Game Files and Image Rights\" [level=2]"
+        ]
+      },
+      {
+        "action": "Desktop: About gallery card",
+        "recordedAt": "2026-09-02T06:52:05.755Z",
+        "url": "http://127.0.0.1:3100/gallery",
+        "title": "Square Face Icon Gallery - Community Creations | My Square Face Icon",
+        "logs": [],
+        "snapshotEvidence": [
+          "  - heading \"Square Face Icon Gallery\" [level=1]",
+          "  - paragraph: No approved comments yet. Share the first screenshot after your comment is reviewed."
+        ]
+      },
+      {
+        "action": "Desktop: browser Back from Gallery",
+        "recordedAt": "2026-09-02T06:52:05.842Z",
+        "url": "http://127.0.0.1:3100/about-us",
+        "title": "About My Square Face Icon | My Square Face Icon",
+        "logs": [],
+        "snapshotEvidence": [
+          "  - heading \"About My Square Face Icon\" [level=1]",
+          "  - heading \"Game Files and Image Rights\" [level=2]"
+        ]
+      },
+      {
+        "action": "Desktop keyboard Enter: Back to the generator",
+        "recordedAt": "2026-09-02T06:52:06.175Z",
+        "url": "http://127.0.0.1:3100/#maker",
+        "title": "Square Face Generator - Classic Flash Avatar & Icon Maker",
+        "logs": [],
+        "snapshotEvidence": [
+          "  - heading \"Square Face Generator\" [level=1]"
+        ]
+      },
+      {
+        "action": "Desktop: browser Back from homepage",
+        "recordedAt": "2026-09-02T06:52:06.328Z",
+        "url": "http://127.0.0.1:3100/about-us",
+        "title": "About My Square Face Icon | My Square Face Icon",
+        "logs": [],
+        "snapshotEvidence": [
+          "  - heading \"About My Square Face Icon\" [level=1]",
+          "  - heading \"Game Files and Image Rights\" [level=2]"
+        ]
+      }
+    ],
+    "keyboard": [
+      {
+        "action": "Mobile Tab",
+        "recordedAt": "2026-09-02T06:52:04.775Z",
+        "focus": {
+          "bounds": {
+            "height": 42,
+            "width": 148.546875,
+            "x": 22,
+            "y": 12
+          },
+          "boxShadow": "none",
+          "focusVisible": true,
+          "href": "/",
+          "inMain": false,
+          "outlineStyle": "auto",
+          "outlineWidth": "1px",
+          "tag": "A",
+          "text": "Square Face Generator"
+        }
+      },
+      {
+        "action": "Mobile Tab",
+        "recordedAt": "2026-09-02T06:52:04.788Z",
+        "focus": {
+          "bounds": {
+            "height": 44,
+            "width": 62.953125,
+            "x": 182.546875,
+            "y": 11
+          },
+          "boxShadow": "rgb(199, 90, 8) 0px 4px 0px 0px",
+          "focusVisible": true,
+          "href": "/#maker",
+          "inMain": false,
+          "outlineStyle": "auto",
+          "outlineWidth": "1px",
+          "tag": "A",
+          "text": "Start"
+        }
+      },
+      {
+        "action": "Mobile Tab",
+        "recordedAt": "2026-09-02T06:52:04.803Z",
+        "focus": {
+          "bounds": {
+            "height": 43.59375,
+            "width": 95.5,
+            "x": 257.5,
+            "y": 11.203125
+          },
+          "boxShadow": "none",
+          "focusVisible": true,
+          "href": null,
+          "inMain": false,
+          "outlineStyle": "auto",
+          "outlineWidth": "1px",
+          "tag": "SUMMARY",
+          "text": "Menu"
+        }
+      },
+      {
+        "action": "Mobile Tab",
+        "recordedAt": "2026-09-02T06:52:04.816Z",
+        "focus": {
+          "bounds": {
+            "height": 40,
+            "width": 186.1875,
+            "x": 16,
+            "y": 108
+          },
+          "boxShadow": "none",
+          "focusVisible": true,
+          "href": "/#maker",
+          "inMain": true,
+          "outlineStyle": "auto",
+          "outlineWidth": "1px",
+          "tag": "A",
+          "text": "Back to the generator"
+        }
+      },
+      {
+        "action": "Mobile Tab",
+        "recordedAt": "2026-09-02T06:52:04.828Z",
+        "focus": {
+          "bounds": {
+            "height": 45.59375,
+            "width": 318.25,
+            "x": 16,
+            "y": 399.28125
+          },
+          "boxShadow": "none",
+          "focusVisible": true,
+          "href": "/privacy-policy",
+          "inMain": true,
+          "outlineStyle": "auto",
+          "outlineWidth": "1px",
+          "tag": "A",
+          "text": "Privacy Policy"
+        }
+      },
+      {
+        "action": "Mobile Tab",
+        "recordedAt": "2026-09-02T06:52:04.842Z",
+        "focus": {
+          "bounds": {
+            "height": 20,
+            "width": 124.703125,
+            "x": 98.734375,
+            "y": 424.875
+          },
+          "boxShadow": "none",
+          "focusVisible": true,
+          "href": "/terms-of-service",
+          "inMain": true,
+          "outlineStyle": "auto",
+          "outlineWidth": "1px",
+          "tag": "A",
+          "text": "Terms of Service"
+        }
+      },
+      {
+        "action": "Mobile Tab",
+        "recordedAt": "2026-09-02T06:52:05.031Z",
+        "focus": {
+          "bounds": {
+            "height": 42,
+            "width": 148.546875,
+            "x": 22,
+            "y": 12
+          },
+          "boxShadow": "none",
+          "focusVisible": true,
+          "href": "/",
+          "inMain": false,
+          "outlineStyle": "auto",
+          "outlineWidth": "1px",
+          "tag": "A",
+          "text": "Square Face Generator"
+        }
+      },
+      {
+        "action": "Mobile Tab",
+        "recordedAt": "2026-09-02T06:52:05.043Z",
+        "focus": {
+          "bounds": {
+            "height": 44,
+            "width": 62.953125,
+            "x": 182.546875,
+            "y": 11
+          },
+          "boxShadow": "rgb(199, 90, 8) 0px 4px 0px 0px",
+          "focusVisible": true,
+          "href": "/#maker",
+          "inMain": false,
+          "outlineStyle": "auto",
+          "outlineWidth": "1px",
+          "tag": "A",
+          "text": "Start"
+        }
+      },
+      {
+        "action": "Mobile Tab",
+        "recordedAt": "2026-09-02T06:52:05.057Z",
+        "focus": {
+          "bounds": {
+            "height": 43.59375,
+            "width": 95.5,
+            "x": 257.5,
+            "y": 11.203125
+          },
+          "boxShadow": "none",
+          "focusVisible": true,
+          "href": null,
+          "inMain": false,
+          "outlineStyle": "auto",
+          "outlineWidth": "1px",
+          "tag": "SUMMARY",
+          "text": "Menu"
+        }
+      },
+      {
+        "action": "Mobile Tab",
+        "recordedAt": "2026-09-02T06:52:05.071Z",
+        "focus": {
+          "bounds": {
+            "height": 40,
+            "width": 186.1875,
+            "x": 16,
+            "y": 108
+          },
+          "boxShadow": "none",
+          "focusVisible": true,
+          "href": "/#maker",
+          "inMain": true,
+          "outlineStyle": "auto",
+          "outlineWidth": "1px",
+          "tag": "A",
+          "text": "Back to the generator"
+        }
+      },
+      {
+        "action": "Mobile Tab",
+        "recordedAt": "2026-09-02T06:52:05.083Z",
+        "focus": {
+          "bounds": {
+            "height": 45.59375,
+            "width": 318.25,
+            "x": 16,
+            "y": 399.28125
+          },
+          "boxShadow": "none",
+          "focusVisible": true,
+          "href": "/privacy-policy",
+          "inMain": true,
+          "outlineStyle": "auto",
+          "outlineWidth": "1px",
+          "tag": "A",
+          "text": "Privacy Policy"
+        }
+      },
+      {
+        "action": "Mobile Tab",
+        "recordedAt": "2026-09-02T06:52:05.097Z",
+        "focus": {
+          "bounds": {
+            "height": 20,
+            "width": 124.703125,
+            "x": 98.734375,
+            "y": 424.875
+          },
+          "boxShadow": "none",
+          "focusVisible": true,
+          "href": "/terms-of-service",
+          "inMain": true,
+          "outlineStyle": "auto",
+          "outlineWidth": "1px",
+          "tag": "A",
+          "text": "Terms of Service"
+        }
+      },
+      {
+        "action": "Mobile Tab",
+        "recordedAt": "2026-09-02T06:52:05.110Z",
+        "focus": {
+          "bounds": {
+            "height": 20,
+            "width": 111.296875,
+            "x": 236.5625,
+            "y": 476.0625
+          },
+          "boxShadow": "none",
+          "focusVisible": true,
+          "href": "/editorial-policy",
+          "inMain": true,
+          "outlineStyle": "auto",
+          "outlineWidth": "1px",
+          "tag": "A",
+          "text": "Editorial Policy"
+        }
+      },
+      {
+        "action": "Mobile Tab",
+        "recordedAt": "2026-09-02T06:52:05.123Z",
+        "focus": {
+          "bounds": {
+            "height": 130.78125,
+            "width": 343,
+            "x": 16,
+            "y": 567.5625
+          },
+          "boxShadow": "rgba(90, 54, 20, 0.12) 0px 18px 44px 0px",
+          "focusVisible": true,
+          "href": "/#maker",
+          "inMain": true,
+          "outlineStyle": "auto",
+          "outlineWidth": "1px",
+          "tag": "A",
+          "text": "Use the generatorStart with the core square face generator experience."
+        }
+      },
+      {
+        "action": "Mobile Tab",
+        "recordedAt": "2026-09-02T06:52:05.137Z",
+        "focus": {
+          "bounds": {
+            "height": 130.78125,
+            "width": 343,
+            "x": 16,
+            "y": 712.34375
+          },
+          "boxShadow": "rgba(90, 54, 20, 0.12) 0px 18px 44px 0px",
+          "focusVisible": true,
+          "href": "/free-avatar-maker",
+          "inMain": true,
+          "outlineStyle": "auto",
+          "outlineWidth": "1px",
+          "tag": "A",
+          "text": "Free avatar maker guideLearn how to use the site as a simple free avatar maker."
+        }
+      },
+      {
+        "action": "Mobile Tab",
+        "recordedAt": "2026-09-02T06:52:05.153Z",
+        "focus": {
+          "bounds": {
+            "height": 156.375,
+            "width": 343,
+            "x": 16,
+            "y": 344.125
+          },
+          "boxShadow": "rgba(90, 54, 20, 0.12) 0px 18px 44px 0px",
+          "focusVisible": true,
+          "href": "/gallery",
+          "inMain": true,
+          "outlineStyle": "auto",
+          "outlineWidth": "1px",
+          "tag": "A",
+          "text": "Browse the galleryBrowse style ideas and approved community submissions when available."
+        }
+      },
+      {
+        "action": "Desktop Tab",
+        "recordedAt": "2026-09-02T06:52:05.989Z",
+        "focus": {
+          "bounds": {
+            "height": 42,
+            "width": 336.1875,
+            "x": 31,
+            "y": 30.59375
+          },
+          "boxShadow": "none",
+          "focusVisible": true,
+          "href": "/",
+          "inMain": false,
+          "outlineStyle": "auto",
+          "outlineWidth": "1px",
+          "tag": "A",
+          "text": "Square Face Generator"
+        }
+      },
+      {
+        "action": "Desktop Tab",
+        "recordedAt": "2026-09-02T06:52:06.015Z",
+        "focus": {
+          "bounds": {
+            "height": 40,
+            "width": 109.609375,
+            "x": 385.1875,
+            "y": 31.59375
+          },
+          "boxShadow": "none",
+          "focusVisible": true,
+          "href": null,
+          "inMain": false,
+          "outlineStyle": "auto",
+          "outlineWidth": "1px",
+          "tag": "SUMMARY",
+          "text": "Game"
+        }
+      },
+      {
+        "action": "Desktop Tab",
+        "recordedAt": "2026-09-02T06:52:06.029Z",
+        "focus": {
+          "bounds": {
+            "height": 64,
+            "width": 151.109375,
+            "x": 502.796875,
+            "y": 19.59375
+          },
+          "boxShadow": "none",
+          "focusVisible": true,
+          "href": "/free-avatar-maker",
+          "inMain": false,
+          "outlineStyle": "auto",
+          "outlineWidth": "1px",
+          "tag": "A",
+          "text": "Free Avatar Maker"
+        }
+      },
+      {
+        "action": "Desktop Tab",
+        "recordedAt": "2026-09-02T06:52:06.043Z",
+        "focus": {
+          "bounds": {
+            "height": 40,
+            "width": 75.375,
+            "x": 661.90625,
+            "y": 31.59375
+          },
+          "boxShadow": "none",
+          "focusVisible": true,
+          "href": "/gallery",
+          "inMain": false,
+          "outlineStyle": "auto",
+          "outlineWidth": "1px",
+          "tag": "A",
+          "text": "Gallery"
+        }
+      },
+      {
+        "action": "Desktop Tab",
+        "recordedAt": "2026-09-02T06:52:06.056Z",
+        "focus": {
+          "bounds": {
+            "height": 64,
+            "width": 97.84375,
+            "x": 745.28125,
+            "y": 19.59375
+          },
+          "boxShadow": "none",
+          "focusVisible": true,
+          "href": "/square-face-icon-generator",
+          "inMain": false,
+          "outlineStyle": "auto",
+          "outlineWidth": "1px",
+          "tag": "A",
+          "text": "Icon Guide"
+        }
+      },
+      {
+        "action": "Desktop Tab",
+        "recordedAt": "2026-09-02T06:52:06.071Z",
+        "focus": {
+          "bounds": {
+            "height": 40,
+            "width": 56.53125,
+            "x": 851.125,
+            "y": 31.59375
+          },
+          "boxShadow": "none",
+          "focusVisible": true,
+          "href": "/blog",
+          "inMain": false,
+          "outlineStyle": "auto",
+          "outlineWidth": "1px",
+          "tag": "A",
+          "text": "Blog"
+        }
+      },
+      {
+        "action": "Desktop Tab",
+        "recordedAt": "2026-09-02T06:52:06.086Z",
+        "focus": {
+          "bounds": {
+            "height": 40,
+            "width": 69.0625,
+            "x": 915.65625,
+            "y": 31.59375
+          },
+          "boxShadow": "none",
+          "focusVisible": true,
+          "href": "/about-us",
+          "inMain": false,
+          "outlineStyle": "auto",
+          "outlineWidth": "1px",
+          "tag": "A",
+          "text": "About"
+        }
+      },
+      {
+        "action": "Desktop Tab",
+        "recordedAt": "2026-09-02T06:52:06.101Z",
+        "focus": {
+          "bounds": {
+            "height": 40,
+            "width": 80.515625,
+            "x": 992.71875,
+            "y": 31.59375
+          },
+          "boxShadow": "none",
+          "focusVisible": true,
+          "href": "/contact",
+          "inMain": false,
+          "outlineStyle": "auto",
+          "outlineWidth": "1px",
+          "tag": "A",
+          "text": "Contact"
+        }
+      },
+      {
+        "action": "Desktop Tab",
+        "recordedAt": "2026-09-02T06:52:06.118Z",
+        "focus": {
+          "bounds": {
+            "height": 77.1875,
+            "width": 146.765625,
+            "x": 1087.234375,
+            "y": 13
+          },
+          "boxShadow": "rgb(199, 90, 8) 0px 5px 0px 0px",
+          "focusVisible": true,
+          "href": "/#maker",
+          "inMain": false,
+          "outlineStyle": "auto",
+          "outlineWidth": "1px",
+          "tag": "A",
+          "text": "Start Creating"
+        }
+      },
+      {
+        "action": "Desktop Tab",
+        "recordedAt": "2026-09-02T06:52:06.135Z",
+        "focus": {
+          "bounds": {
+            "height": 40,
+            "width": 186.1875,
+            "x": 142.5,
+            "y": 145.1875
+          },
+          "boxShadow": "none",
+          "focusVisible": true,
+          "href": "/#maker",
+          "inMain": true,
+          "outlineStyle": "auto",
+          "outlineWidth": "1px",
+          "tag": "A",
+          "text": "Back to the generator"
+        }
+      }
+    ],
+    "screenshots": [
+      {
+        "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/about-001/desktop-1280x900.png",
+        "bytes": 118255,
+        "sha256": "f87a2f4483c035eb273a5e83efb3aad11db3114999c718a48bd21a3fe9720039"
+      },
+      {
+        "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/about-001/desktop-full.png",
+        "bytes": 344205,
+        "sha256": "f93aa320d695c56c1905adb328b99500d07b31d2948800bc0f7fa6fa6ceb13c2"
+      },
+      {
+        "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/about-001/mobile-390x844.png",
+        "bytes": 57502,
+        "sha256": "39774dd40fe868449a4969714043d107213eba691b33661a98fee969f967227c"
+      },
+      {
+        "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/about-001/mobile-full.png",
+        "bytes": 307201,
+        "sha256": "d87c2ce888a48256557cfb3493f528d972eeba940704759c46d914a0264d6175"
+      },
+      {
+        "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/about-001/mobile-terms-focus.png",
+        "bytes": 55086,
+        "sha256": "f8cd01cb17ed7f3aa0e81f08beedc18420d8e466ec3b726bbdac1fe4accf328f"
+      },
+      {
+        "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/about-001/mobile-gallery-focus.png",
+        "bytes": 40277,
+        "sha256": "ee47121ef7f51d3d90785cd53f6cf8692903f208dea1b8fbafee13f616a36150"
+      },
+      {
+        "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/about-001/desktop-rights.png",
+        "bytes": 111865,
+        "sha256": "9022ef7e1ced8a21695cd331dd0f37520f8b76f9a0d72defec268133efc968ba"
+      },
+      {
+        "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/about-001/mobile-rights.png",
+        "bytes": 64333,
+        "sha256": "04ad8bf848ea1ba51d6f5819ca46fc1546966c46a8f5840a5bce2354847bec5e"
+      }
+    ],
+    "inspectedScreenshots": 8,
+    "finalUrl": "http://127.0.0.1:3100/about-us",
+    "visualAdvisory": "Existing desktop feature-grid uses narrow columns; the longer confirmed card wraps into more lines. Text is not clipped and there is no overflow. CSS/layout is frozen by approval and was not changed."
+  },
+  "rules": {
+    "checked": [
+      "CT-03",
+      "CT-04",
+      "TR-07",
+      "TR-10",
+      "KW-01",
+      "KW-02",
+      "KW-13",
+      "KW-16",
+      "META-01",
+      "META-02",
+      "META-05",
+      "META-06",
+      "IDX-01",
+      "IDX-02",
+      "IDX-03",
+      "IDX-04",
+      "IDX-05",
+      "IDX-06",
+      "IDX-07",
+      "LINK-08",
+      "PF-05",
+      "AY-03",
+      "OP-05",
+      "OP-09",
+      "OP-10"
+    ],
+    "scope": "Approved copy consistency, source/HTML/browser parity, local automated SEO/robots, keyboard/mobile and builds; not a fresh whole-site legal/privacy/semantic or production audit."
+  },
+  "warnings": [
+    "Existing GAME-TPL React fetchPriority SSR compatibility warning; unchanged.",
+    "OpenNext 1.3.0 Windows compatibility warning; build exits 0.",
+    "Existing Git LF-to-CRLF notices; no whitespace failure.",
+    "Existing desktop feature-card columns are narrow; longer approved copy wraps more. Frozen CSS/layout deliberately unchanged."
+  ],
+  "unresolved": [
+    "Square/Oval exact source, rights holder, hosting/public-run/redistribution/generated-output permissions remain UNKNOWN; no new license materials.",
+    "Other source rights-copy candidates including lib/locales.ts authorized field remain separately scoped; no whole-production text-cleanup claim.",
+    "12 should reminders and KW-04 remain open.",
+    "Production OP-11/AI-01/PF-01/Terms/About, version linkage and seo:prod remain unverified.",
+    "Real devices, cross-browser, full SWF interactions, field CWV, ads/CMP and full accessibility audit are outside this copy task.",
+    "Board visual remains unverified under the earlier local-file restriction; no alternate access route was used."
+  ],
+  "production": {
+    "committed": false,
+    "pushed": false,
+    "deployed": false,
+    "seoProdRun": false,
+    "newProductionVersion": null,
+    "licenseGate": "UNKNOWN_UNCHANGED",
+    "migrationStarted": false,
+    "onlineRollbackPerformed": false
+  },
+  "rollback": "Revert only these seven About source text regions, the about:check addition and checker/docs increments if explicitly requested. Keep earlier user changes and acceptance records; restoring unsupported claims reopens the content gate. Do not reset the dirty worktree. No online rollback is needed because nothing was deployed.",
+  "changedFiles": [
+    "app/about-us/page.tsx",
+    "scripts/check-about-rights.mjs",
+    "package.json",
+    "scripts/README.md",
+    "docs/legal/about-rights-consistency-proposal.md",
+    "docs/legal/game-rights.md",
+    "docs/quality/evidence/about-001-rights-copy/README.md",
+    "docs/quality/evidence/about-001-rights-copy/checks.json",
+    "docs/quality/evidence/release-2026-09-02/README.md",
+    "LAUNCH_CHECKLIST.md",
+    "PAGE_PLAN.md",
+    "SEO_LOG.md",
+    "F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html"
+  ],
+  "governanceValidation": {
+    "status": "PASS",
+    "recordedAt": "2026-09-02T07:09:01.429Z",
+    "exitCode": 0,
+    "boardVersion": "1.47",
+    "boardSyntax": "PASS",
+    "staticDataFocusExportParity": "PASS",
+    "taskStatus": "待验收",
+    "priorAcceptances": 22,
+    "aboutAcceptanceAbsent": true,
+    "termsAndPf01Evidence": "UNCHANGED",
+    "cssAndRoadmap": "UNCHANGED",
+    "taskUpdates": "ONLY_ABOUT_IMPLEMENTATION_APPEND",
+    "sourceHashesChecked": 145,
+    "sourceHashes": "PASS",
+    "immutableProposalEvidence": "UNCHANGED",
+    "browserAgainstConfirmedHeadingsMetadataSchema": "PASS",
+    "screenshotsVerified": 8,
+    "requiredCommands": 25,
+    "requiredCommandsAllExitZero": true,
+    "documentsAndWhitespace": "PASS",
+    "deployment": false,
+    "migrationStarted": false,
+    "boardVisual": "UNVERIFIED_PRIOR_LOCAL_FILE_RESTRICTION",
+    "diffChecks": [
+      {
+        "name": "project",
+        "command": "git diff --check",
+        "exitCode": 0,
+        "timedOut": false,
+        "stdout": "",
+        "stderr": "warning: in the working copy of '.gitignore', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'LAUNCH_CHECKLIST.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'PAGE_PLAN.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'PROJECT_BRIEF.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'SEO_LOG.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'SEO_RULES.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/about-us/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/blog/avatar-maker-without-signup/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/blog/cute-profile-picture-ideas/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/blog/discord-avatar-size-guide/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/blog/how-to-make-a-cute-discord-profile-icon/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/blog/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/blog/tiktok-profile-icon-ideas/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/contact/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/editorial-policy/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/gallery/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/globals.css', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/oval-face-icon-generator/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/pixel-art-avatar-icon-generator/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/privacy-policy/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/robots.ts', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/sitemap.ts', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/terms-of-service/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'components/FlashGenerator.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'components/HomePage.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'components/SiteHeader.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'docs/legal/game-rights.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'docs/quality/installation-and-board-workflow.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'package.json', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'public/games/README.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'scripts/README.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'scripts/post-deploy-check.mjs', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'scripts/seo-check.mjs', LF will be replaced by CRLF the next time Git touches it\n"
+      },
+      {
+        "name": "board",
+        "command": "git -C F:/LYXGIT/Liu-library diff --check -- F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+        "exitCode": 0,
+        "timedOut": false,
+        "stdout": "",
+        "stderr": ""
+      }
+    ],
+    "harnessNote": "An initial inline Windows verification command exceeded the OS command-length limit (206) before execution. The same assertions and input were placed in task-owned temporary files with apply_patch and successfully rerun via the same command tool."
+  }
+}

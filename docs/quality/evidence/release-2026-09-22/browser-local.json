@@ -1,0 +1,171 @@
+{
+  "startedAt": "2026-09-22T08:55:58.807Z",
+  "base": "http://127.0.0.1:3000/",
+  "browser": "Installed Chrome, headless Playwright; Browser plugin not available",
+  "viewports": [
+    {
+      "width": 360,
+      "height": 800,
+      "mode": "simple",
+      "client": 360,
+      "scroll": 360,
+      "initialRuntimeRequests": 0,
+      "pageErrors": []
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "mode": "simple",
+      "client": 390,
+      "scroll": 390,
+      "initialRuntimeRequests": 0,
+      "pageErrors": []
+    },
+    {
+      "width": 430,
+      "height": 932,
+      "mode": "simple",
+      "client": 430,
+      "scroll": 430,
+      "initialRuntimeRequests": 0,
+      "pageErrors": []
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "mode": "classic",
+      "client": 768,
+      "scroll": 768,
+      "initialRuntimeRequests": 0,
+      "pageErrors": []
+    },
+    {
+      "width": 1024,
+      "height": 900,
+      "mode": "classic",
+      "client": 1024,
+      "scroll": 1024,
+      "initialRuntimeRequests": 0,
+      "pageErrors": []
+    },
+    {
+      "width": 1440,
+      "height": 1000,
+      "mode": "classic",
+      "client": 1440,
+      "scroll": 1440,
+      "initialRuntimeRequests": 0,
+      "pageErrors": []
+    }
+  ],
+  "flows": [
+    "Face/Hair/Eyes/Skin/Background update pixels; settings survive Classic/Simple switch and viewport resize; actual 512/256/128 PNG downloads decode with varied pixels; export error preserves settings and retry succeeds; Reset restores initial pixels.",
+    {
+      "classicGame": "real local Ruffle reaches ready only after Play",
+      "runtimeRequests": 4
+    },
+    "Keyboard Enter changes mode; Tab reaches size controls; Enter selects 256; focus outline visible.",
+    "Pre-hydration responsive CSS shows Simple maker on mobile; noscript guidance is visible; no runtime loads."
+  ],
+  "screenshots": [
+    "C:\\Users\\liu\\.codex\\visualizations\\2026\\09\\22\\01a0c7fc-cf2d-7472-bf03-0a65e4cae11b\\release-local\\viewport-360.png",
+    "C:\\Users\\liu\\.codex\\visualizations\\2026\\09\\22\\01a0c7fc-cf2d-7472-bf03-0a65e4cae11b\\release-local\\viewport-390.png",
+    "C:\\Users\\liu\\.codex\\visualizations\\2026\\09\\22\\01a0c7fc-cf2d-7472-bf03-0a65e4cae11b\\release-local\\viewport-430.png",
+    "C:\\Users\\liu\\.codex\\visualizations\\2026\\09\\22\\01a0c7fc-cf2d-7472-bf03-0a65e4cae11b\\release-local\\viewport-768.png",
+    "C:\\Users\\liu\\.codex\\visualizations\\2026\\09\\22\\01a0c7fc-cf2d-7472-bf03-0a65e4cae11b\\release-local\\viewport-1024.png",
+    "C:\\Users\\liu\\.codex\\visualizations\\2026\\09\\22\\01a0c7fc-cf2d-7472-bf03-0a65e4cae11b\\release-local\\viewport-1440.png",
+    "C:\\Users\\liu\\.codex\\visualizations\\2026\\09\\22\\01a0c7fc-cf2d-7472-bf03-0a65e4cae11b\\release-local\\desktop-simple-edited.png",
+    "C:\\Users\\liu\\.codex\\visualizations\\2026\\09\\22\\01a0c7fc-cf2d-7472-bf03-0a65e4cae11b\\release-local\\export-error.png"
+  ],
+  "downloads": [
+    {
+      "size": 512,
+      "path": "C:\\Users\\liu\\.codex\\visualizations\\2026\\09\\22\\01a0c7fc-cf2d-7472-bf03-0a65e4cae11b\\release-local\\verified-avatar-512.png",
+      "bytes": 24036,
+      "sha256": "df01840e2a82cb886bdc89eee338ad88fc1cb3896f3fce4528e0ae89c1f6177a",
+      "width": 512,
+      "height": 512,
+      "colors": 749
+    },
+    {
+      "size": 256,
+      "path": "C:\\Users\\liu\\.codex\\visualizations\\2026\\09\\22\\01a0c7fc-cf2d-7472-bf03-0a65e4cae11b\\release-local\\verified-avatar-256.png",
+      "bytes": 8625,
+      "sha256": "a799859f8473cb7707477f90d9d931b87a36f8e739c9ff6ade47547f66a2399e",
+      "width": 256,
+      "height": 256,
+      "colors": 369
+    },
+    {
+      "size": 128,
+      "path": "C:\\Users\\liu\\.codex\\visualizations\\2026\\09\\22\\01a0c7fc-cf2d-7472-bf03-0a65e4cae11b\\release-local\\verified-avatar-128.png",
+      "bytes": 3387,
+      "sha256": "e4dae72217a71ec4c4ea91e956bf183507e088b4c1c3103dad6655c3b1de744a",
+      "width": 128,
+      "height": 128,
+      "colors": 155
+    },
+    {
+      "size": 512,
+      "path": "C:\\Users\\liu\\.codex\\visualizations\\2026\\09\\22\\01a0c7fc-cf2d-7472-bf03-0a65e4cae11b\\release-local\\verified-avatar-512.png",
+      "bytes": 24036,
+      "sha256": "df01840e2a82cb886bdc89eee338ad88fc1cb3896f3fce4528e0ae89c1f6177a",
+      "width": 512,
+      "height": 512,
+      "colors": 749
+    }
+  ],
+  "errors": [],
+  "consoleLogs": [
+    {
+      "width": 360,
+      "type": "warning",
+      "text": "Service Worker registration blocked by Playwright",
+      "url": ""
+    },
+    {
+      "width": 390,
+      "type": "warning",
+      "text": "Service Worker registration blocked by Playwright",
+      "url": ""
+    },
+    {
+      "width": 430,
+      "type": "warning",
+      "text": "Service Worker registration blocked by Playwright",
+      "url": ""
+    },
+    {
+      "width": 768,
+      "type": "warning",
+      "text": "Service Worker registration blocked by Playwright",
+      "url": ""
+    },
+    {
+      "width": 1024,
+      "type": "warning",
+      "text": "Service Worker registration blocked by Playwright",
+      "url": ""
+    },
+    {
+      "width": 1440,
+      "type": "warning",
+      "text": "Service Worker registration blocked by Playwright",
+      "url": ""
+    },
+    {
+      "width": 390,
+      "type": "warning",
+      "text": "Service Worker registration blocked by Playwright",
+      "url": ""
+    },
+    {
+      "width": 1440,
+      "type": "warning",
+      "text": "Service Worker registration blocked by Playwright",
+      "url": ""
+    }
+  ],
+  "result": "passed",
+  "finishedAt": "2026-09-22T08:56:46.691Z"
+}

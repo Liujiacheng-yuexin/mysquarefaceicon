@@ -1,0 +1,214 @@
+{
+  "taskId": "RELATED-001",
+  "scope": "RELATED_REMAINING_SURFACES",
+  "boardVersion": "1.83",
+  "recordedAt": "2026-09-07T03:33:04.895Z",
+  "request": "确认 RELATED-001 剩余入口方案，进行开发",
+  "proposalPath": "docs/product/related-games-remaining-surfaces-proposal.md",
+  "proposalConfirmed": true,
+  "result": {
+    "localTask": "通过（限定于已确认本地范围）",
+    "browser": "有条件通过（功能与布局通过；首轮 Pixel 历史导航后 console 计数为 1/2/0，诊断复跑定位到第三方 Google Ads 本地源 403，复跑计数为 1/0/0）",
+    "production": "未验证 / 未部署",
+    "release": "不通过（既有 P0、UNKNOWN、人工与生产门禁未关闭）",
+    "acceptance": "待用户验收"
+  },
+  "implementation": {
+    "homepage": {
+      "path": "/",
+      "selection": [
+        { "id": "oval-face", "sharedCategories": 3, "sharedTags": 3 },
+        { "id": "pixel-art-avatar", "sharedCategories": 1, "sharedTags": 1 }
+      ],
+      "visibleHeading": "Related Avatar Games",
+      "dataModule": "related",
+      "linkTargetsAndOrderPreserved": true
+    },
+    "pixel": {
+      "path": "/pixel-art-avatar-icon-generator",
+      "selection": [
+        { "id": "square-face", "sharedCategories": 1, "sharedTags": 1 },
+        { "id": "oval-face", "sharedCategories": 1, "sharedTags": 0 }
+      ],
+      "relatedHeading": "Related Avatar Games",
+      "guideHeading": "Pixel Avatar Guide",
+      "guideHref": "/pixel-square-face-maker",
+      "existingTitlesDescriptionsHrefsAndOrderPreserved": true
+    },
+    "futureTemplate": {
+      "surface": "future /games/[slug]",
+      "component": "components/game/RelatedGames.tsx",
+      "selector": "selectRelatedGames",
+      "explicitFixtureCandidatesSupported": true,
+      "productionEligibilityRelaxed": false,
+      "emptyResultRendersNothing": true
+    },
+    "legacyRelatedGameIds": "schema/data compatibility retained; no longer sorts these three surfaces",
+    "qualityPopularity": "DISABLED_NO_VERIFIED_DATA"
+  },
+  "frozenBoundaries": {
+    "newRoutes": false,
+    "metadataChanged": false,
+    "h1Changed": false,
+    "canonicalChanged": false,
+    "schemaChanged": false,
+    "robotsOrIndexChanged": false,
+    "sitemapChanged": false,
+    "playerChanged": false,
+    "cssChangedByThisTask": false,
+    "ovalAcceptedSampleChanged": false,
+    "gamesOrCategoryPagesChanged": false,
+    "localePagesChanged": false,
+    "recentOrFavoriteStarted": false
+  },
+  "checks": {
+    "focused": [
+      { "command": "npm run related:check", "exitCode": 0, "note": "72 algorithm, boundary, immutability and source assertions" },
+      { "command": "npm run home-discovery:check", "exitCode": 0 },
+      { "command": "npm run game-template:check", "exitCode": 0, "note": "pre-existing React 18 fetchPriority SSR warning retained" },
+      { "command": "npm run pixel-page:check", "exitCode": 0 }
+    ],
+    "typeLintBuild": [
+      { "command": "npx tsc --noEmit", "exitCode": 0 },
+      { "command": "npm run lint", "exitCode": 0, "note": "0 warnings / 0 errors" },
+      { "command": "npm run build", "exitCode": 0, "note": "Next 14.2.35; 42 static-generation steps; root 2.24 kB, Pixel 186 B" },
+      { "command": "npm run cf:build", "exitCode": 0, "note": "OpenNext worker emitted; documented Windows compatibility warning retained" }
+    ],
+    "regression": {
+      "passed": [
+        "canonical",
+        "terms",
+        "about",
+        "editorial",
+        "gallery",
+        "locale",
+        "square-home",
+        "oval-page",
+        "pixel-page",
+        "game-data",
+        "player",
+        "routes",
+        "components",
+        "metadata",
+        "home-ia",
+        "home-hero",
+        "home-discovery",
+        "home-gallery",
+        "home-performance",
+        "game-template",
+        "games-index",
+        "category-sample",
+        "category-remaining",
+        "related"
+      ],
+      "historicalGoldensRegenerated": false,
+      "compatibility": "scripts/related-remaining-compat.mjs reverses only exact approved deltas before prior goldens run"
+    },
+    "builtArtifacts": {
+      "buildId": "IsVmGe2YdXHdvXYb3w5Yu",
+      "relatedBuiltMode": "PASS",
+      "pixelBuiltMode": "PASS",
+      "ovalBuiltMode": "PASS",
+      "gamesIndexBuiltMode": "PASS",
+      "categorySampleBuiltMode": "PASS",
+      "categoryRemainingBuiltMode": "PASS",
+      "localeBuiltMode": "PASS",
+      "rightsBuiltModes": "PASS",
+      "squareBuiltArgument": "not supported by its checker; real-component SSR source mode plus root HTTP/browser evidence used"
+    },
+    "loopback": {
+      "base": "http://127.0.0.1:3000",
+      "server": "Next production build; left running for user acceptance",
+      "related": "PASS for Oval, root and Pixel exact groups/order/text/type/internal links and build parity",
+      "legacyAndDirectoryChecks": "PASS",
+      "rightsAndLocaleChecks": "PASS",
+      "seo": "PASS: 20 URLs, 0 mandatory failures, 12 pre-existing should-level notices",
+      "robots": "PASS: 6 blocked and 5 public-search/user-retrieval decisions"
+    }
+  },
+  "browser": {
+    "engine": "Google Chrome via cached Playwright 1.62.1",
+    "dependencyInstalled": false,
+    "browserPluginAvailable": false,
+    "routes": ["/", "/pixel-art-avatar-icon-generator"],
+    "viewports": ["1280x900", "390x844", "360x800"],
+    "scenarioCount": 6,
+    "passed": [
+      "HTTP 200 and non-empty main",
+      "exact heading, text, IDs, page types, hrefs and order",
+      "keyboard focus plus Enter navigation",
+      "pointer navigation and browser Back",
+      "0 horizontal overflow and no target clipping",
+      "0 page errors",
+      "0 initial console issues",
+      "0 initial Ruffle, WASM or SWF requests"
+    ],
+    "observedCondition": "All six initial feature loads were clean. After keyboard/pointer navigation and browser Back, the first Pixel batch recorded console issue counts 1/2/0 at 1280/390/360. A diagnostic rerun identified a googleads.g.doubleclick.net 403 at 1280 and recorded 0/0 at 390/360. No project route, recommendation, player or page error occurred.",
+    "screenshots": {
+      "remaining-root-1280x900.png": "7761accb10a113deaae5847eb6e289377ae44c3391980b1fb45743235e4e66cf",
+      "remaining-root-390x844.png": "aae64a1b330ddc18f7426c43fe01336ed0246c93208571d06088f570f221153b",
+      "remaining-root-360x800.png": "790f968fcfa3ba3efdfd6e435f794602c0126205e2a5b6c964f5381f327a2354",
+      "remaining-pixel-related-1280x900.png": "27373a86a0472b6dafc5af43fe4926bb553642d5df53b5e883a23572110d8358",
+      "remaining-pixel-related-390x844.png": "e9d8a59230f00911e9ccea87493842862e5660543504c23c1aeee6d5fd63008f",
+      "remaining-pixel-related-360x800.png": "2fb55b6b204f36d508e2f6a4724510ed999081af7f6285b95b14a30f6c15b2f2",
+      "remaining-pixel-guide-1280x900.png": "ea5888fa7fa3f652683a2fe421b966c575ca74c671743335a3ceab9b9dcd081c",
+      "remaining-pixel-guide-390x844.png": "af68ca1ae0f08d83610d3b401774b34157fb788aedf11e6c96a7af47c3133776",
+      "remaining-pixel-guide-360x800.png": "009ca16f048a85fe14753e78277c051fd87eac7f5c4f1822782a2651d78a5774"
+    },
+    "visualReview": "PASS for current task: readable grouping, preserved card treatment, no clipping, overlap or unintended horizontal scroll"
+  },
+  "initialFailuresPreserved": [
+    "Background Start-Process preview launch was rejected before execution; direct Next CLI in the active channel succeeded.",
+    "npm argument forwarding stripped preview/check flags in this PowerShell/npm environment; direct node/Next CLI invocation was used.",
+    "Initial historical Square/Oval/Locale frozen checks rejected the approved new source/markup until the exact new compatibility inverse was added; all source/built/HTTP reruns then passed without golden refresh.",
+    "First browser script used viewportSize with browser.newPage, leaving Chrome at 1280px and producing a false clipping assertion; corrected to Playwright's viewport option and reran all six scenarios.",
+    "A combined offscreen Pixel screenshot clip was outside the rendered image; element screenshots replaced it and all nine durable captures passed hash and visual review."
+  ],
+  "sourceHashes": {
+    "lib/recommendations/related-games.ts": "f897da450dffbc2dc028115995294cbf413d1b830e3bd640bb01ce201c6083a4",
+    "lib/games/home-discovery.ts": "9db8d4e6db534274e6bdb05fcfff6c2191d6395270c02b4de25c4424ec73a007",
+    "components/home/HomeDiscoveryRegion.tsx": "c7fb2ac8ea2e54ae2f4000217128434016b2875b846e9c830efb6e9d2df0dec0",
+    "components/game/RelatedGames.tsx": "0d0f82928e4ed89a33adad7deb87e569d246c0311314bdd4468db009f78cef39",
+    "components/game/GameDetailTemplate.tsx": "fc810e5de24498107c5081a154177a875b24e97451c45a9f753e4745805a01e9",
+    "app/pixel-art-avatar-icon-generator/page.tsx": "586c30c4807991934096fcdf753bf5c09b3953369d0ea18d7fefcfed95570dbd"
+  },
+  "board": {
+    "path": "F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+    "previousSha256": "e9a5ebe61e4d3359a52c66c5c40ad696c43d79e0190459e11f5fbe29ebf29412",
+    "currentSha256": "cdf9406ddea757c0b92e7b4a95f3f156e2737e6de4b93eccc7b6f70cbeb9811a",
+    "sourceAndVm": "PASS",
+    "inlineScripts": 1,
+    "totalTasks": 60,
+    "completedTasks": 21,
+    "sourceAcceptanceKeyCount": 33,
+    "relatedState": "待验收",
+    "preservedSourceAcceptanceScope": "RELATED_OVAL_SAMPLE",
+    "currentAcceptanceScope": "RELATED_REMAINING_SURFACES",
+    "decisionStateMatrix": {
+      "default": "待验收",
+      "freshAcceptedCache": "已完成",
+      "freshReturnedCache": "开发中",
+      "staleAcceptedCache": "待验收 with Oval sample record restored"
+    },
+    "recentAndFavorite": "未开始",
+    "exportVersion": "1.83",
+    "visual": "未验证；未绕过既有本地文件访问边界"
+  },
+  "unverified": [
+    "production deployment and seo:prod",
+    "real mobile hardware and non-Chrome browsers",
+    "fresh field Core Web Vitals",
+    "external generator availability and behavior",
+    "human factual review and actual Square/Oval license permission",
+    "authoritative board visual rendering"
+  ],
+  "release": {
+    "commitCreated": false,
+    "pushed": false,
+    "deployed": false,
+    "productionVerified": false,
+    "result": "不通过 / 未部署"
+  },
+  "acceptanceInstruction": "RELATED-001 剩余入口验收通过",
+  "rollback": "Revert only the remaining-surface runtime, tests, exact compatibility layer and v1.83 governance entries; preserve the accepted Oval sample, all earlier accepted work and user changes. No production rollback is needed because nothing was deployed."
+}

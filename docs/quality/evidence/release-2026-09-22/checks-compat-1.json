@@ -1,0 +1,56 @@
+[
+  {
+    "name": "locale:check",
+    "exitCode": 0,
+    "stdout": "\n> mysquarefaceicon@0.1.0 locale:check\n> node scripts/check-locale-rights.mjs\n\nMIG-OVAL-001 isolated discovery guard: 7 negative fixtures rejected; original eight SSR hashes and all existing fixtures retained.\nMIG-PIXEL-001 isolated discovery guard: 8 negative fixtures rejected; only exact confirmed data/side-label differences reversed, no golden refresh.\nLOCALE-001 source passed: four confirmed copy regions plus MIG-SQUARE data binding, other source frozen; 8 unchanged isolated HomePage/GameSidebar SSR and metadata contracts.\nFail-closed source negative fixtures: 19 rejected. Player/Hero/discovery/gallery/resource/install components use explicit isolated stubs, not browser proof.\nThis check does not prove actual SWF/image permissions, browser hydration/mobile behavior, current CWV, or production deployment.\n",
+    "stderr": ""
+  },
+  {
+    "name": "square-home:check",
+    "exitCode": 0,
+    "stdout": "\n> mysquarefaceicon@0.1.0 square-home:check\n> node scripts/check-square-homepage.mjs\n\nMIG-SQUARE-001 passed: 19 explicit player props; 8 original full real-component SSR contracts with only the verified MIG-PIXEL sidebar label reversed; 56 content-binding and 38 end-to-end prop-forwarding cases.\nFail-closed malformed-record fixtures: 150 rejected; optional schema, 11 frozen source files, two SWF hashes, and unchanged UNKNOWN generic-model rejection verified.\nSSR allows only the pre-existing React 18 fetchPriority warning; interaction, fresh CWV, actual licensing, and deployment require separate evidence.\n",
+    "stderr": ""
+  },
+  {
+    "name": "oval-page:check",
+    "exitCode": 0,
+    "stdout": "\n> mysquarefaceicon@0.1.0 oval-page:check\n> node scripts/check-oval-legacy-page.mjs\n\nMIG-OVAL-001 source passed: 19 explicit player inputs and end-to-end forwarding cases; 75 text bindings, 2 sidebar image bindings, 3 resolved related href bindings.\nFull real-component SSR/metadata/three schemas preserved except the two verified cover dimensions and exact MIG-PIXEL sidebar label; 250 malformed records rejected, 26 related exclusions verified.\n22 frozen sources and three binary hashes unchanged; optional schema and UNKNOWN generic-model rejection preserved.\nExisting React 18 fetchPriority SSR warning only. This local binding phase is not full template migration, rights approval, browser/CWV verification or deployment.\n",
+    "stderr": ""
+  },
+  {
+    "name": "pixel-page:check",
+    "exitCode": 1,
+    "stdout": "\n> mysquarefaceicon@0.1.0 pixel-page:check\n> node scripts/check-pixel-external-page.mjs\n\n",
+    "stderr": "MIG-PIXEL-001 check failed: AssertionError [ERR_ASSERTION]: scripts/validate-game-template.tsx: unexpected RELATED-001 remaining-surface change\n+ actual - expected\n\n+ '159935a4349e6a0e3492a6d382445dc9f65b6da116f445f2151c41b08663027e'\n- '73d6f5fedec483212e78909169465458f1ccd53506b73f6a5fb0273e5a44e24c'\n\n    at beforeRelatedRemainingSource (file:///D:/LYXGIT/mysquarefaceicon/scripts/related-remaining-compat.mjs:177:10)\n    at beforeRelatedGamesSource (file:///D:/LYXGIT/mysquarefaceicon/scripts/related-games-compat.mjs:26:11)\n    at beforeCategoryRemainingSource (file:///D:/LYXGIT/mysquarefaceicon/scripts/category-remaining-compat.mjs:14:11)\n    at beforeCategorySampleSource (file:///D:/LYXGIT/mysquarefaceicon/scripts/category-sample-compat.mjs:12:11)\n    at beforeGamesIndexSource (file:///D:/LYXGIT/mysquarefaceicon/scripts/games-index-compat.mjs:16:11)\n    at main (file:///D:/LYXGIT/mysquarefaceicon/scripts/check-pixel-external-page.mjs:1102:78)\n    at file:///D:/LYXGIT/mysquarefaceicon/scripts/check-pixel-external-page.mjs:1167:15\n    at ModuleJob.run (node:internal/modules/esm/module_job:274:25)\n    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:26)\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5)\n"
+  },
+  {
+    "name": "home-discovery:check",
+    "exitCode": 0,
+    "stdout": "\n> mysquarefaceicon@0.1.0 home-discovery:check\n> node scripts/run-home-discovery-check.mjs\n\nHOME-DISC-001 validation passed\n- Related uses the shared Category + Tags selector and ignores legacy relatedGameIds order\n- New requires a valid VERIFIED publication timestamp and is absent for current UNKNOWN data\n- cards use real Game Data thumbnails; Pixel remains an onsite External Tool details link\n- five non-empty categories render with truthful counts; all-empty discovery renders nothing\n- desktop media cards and the compact two-column mobile category layout are present\n",
+    "stderr": ""
+  },
+  {
+    "name": "games-index:check",
+    "exitCode": 0,
+    "stdout": "\n> mysquarefaceicon@0.1.0 games-index:check\n> node scripts/check-games-index.mjs\n\n{\"task\":\"GAMES-INDEX-001\",\"result\":\"PASS\",\"assertions\":338,\"negativeFixtures\":60,\"mode\":\"source/SSR/loader\",\"browser\":\"separate evidence required\"}\n",
+    "stderr": ""
+  },
+  {
+    "name": "category-sample:check",
+    "exitCode": 0,
+    "stdout": "\n> mysquarefaceicon@0.1.0 category-sample:check\n> node scripts/check-category-sample.mjs\n\n{\"task\":\"CATEGORY-001\",\"scope\":\"CATEGORY_SAMPLE\",\"result\":\"PASS\",\"assertions\":581,\"negativeFixtures\":80,\"mode\":\"source/SSR/loader\",\"humanReview\":\"not completed\",\"browser\":\"separate evidence required\"}\n",
+    "stderr": ""
+  },
+  {
+    "name": "category-remaining:check",
+    "exitCode": 1,
+    "stdout": "\n> mysquarefaceicon@0.1.0 category-remaining:check\n> node scripts/check-category-remaining.mjs\n\n",
+    "stderr": "node:internal/modules/run_main:123\r\n    triggerUncaughtException(\r\n    ^\r\n\r\nAssertionError [ERR_ASSERTION]: scripts/validate-game-template.tsx: unexpected RELATED-001 remaining-surface change\r\n+ actual - expected\r\n\r\n+ '159935a4349e6a0e3492a6d382445dc9f65b6da116f445f2151c41b08663027e'\r\n- '73d6f5fedec483212e78909169465458f1ccd53506b73f6a5fb0273e5a44e24c'\r\n\r\n    at beforeRelatedRemainingSource (file:///D:/LYXGIT/mysquarefaceicon/scripts/related-remaining-compat.mjs:177:10)\r\n    at beforeRelatedGamesSource (file:///D:/LYXGIT/mysquarefaceicon/scripts/related-games-compat.mjs:26:11)\r\n    at file:///D:/LYXGIT/mysquarefaceicon/scripts/check-category-remaining.mjs:219:79\r\n    at ModuleJob.run (node:internal/modules/esm/module_job:274:25)\r\n    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:26)\r\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5) {\r\n  generatedMessage: false,\r\n  code: 'ERR_ASSERTION',\r\n  actual: '159935a4349e6a0e3492a6d382445dc9f65b6da116f445f2151c41b08663027e',\r\n  expected: '73d6f5fedec483212e78909169465458f1ccd53506b73f6a5fb0273e5a44e24c',\r\n  operator: 'strictEqual'\r\n}\r\n\r\nNode.js v22.16.0\r\n"
+  },
+  {
+    "name": "favorites:check",
+    "exitCode": 0,
+    "stdout": "\n> mysquarefaceicon@0.1.0 favorites:check\n> node scripts/run-favorites-check.mjs\n\nFAV-001 validation passed\n- versioned local parsing, newest-first order, 50-item limit and fail-closed storage pass\n- all three published Game Data records are eligible, including labeled Pixel External\n- card buttons are link siblings; detail actions preserve primary CTA order and /games visibility\n- empty SSR, focus target, privacy disclosure and no-network boundary match the confirmed scope\nFAV-001 compatibility validation passed\n- exact pre-FAV source hashes remain available to immutable historical checks\n- binary inputs remain byte-identical and only favorite wrappers/controls are removed from legacy SSR\n",
+    "stderr": ""
+  }
+]

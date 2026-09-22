@@ -10,7 +10,7 @@ const pageUrl = "https://mysquarefaceicon.com/gallery";
 export const metadata: Metadata = {
   title: "Square Face Icon Gallery - Community Creations",
   description:
-    "Browse the Square Face Icon Gallery for approved community creations, user screenshots, ratings, and original avatar style ideas.",
+    "Explore the Square Face Icon Gallery for simple avatar style examples and approved community submissions when available. Check source and reuse permissions.",
   alternates: {
     canonical: pageUrl
   },
@@ -19,14 +19,14 @@ export const metadata: Metadata = {
     url: pageUrl,
     title: "Square Face Icon Gallery - Community Creations",
     description:
-      "Approved square face icon community creations, screenshots, ratings, and original avatar style ideas.",
+      "Simple square face icon style examples, plus approved community submissions when available. Source and reuse permissions require separate verification.",
     images: ["/og-image.svg"]
   },
   twitter: {
     card: "summary_large_image",
     title: "Square Face Icon Gallery - Community Creations",
     description:
-      "Browse approved square face avatar creations and ideas before making your own icon.",
+      "Browse simple avatar style examples and approved community submissions when available. Check source and reuse permissions before using an image.",
     images: ["/og-image.svg"]
   }
 };
@@ -121,7 +121,7 @@ export default function GalleryPage() {
     "@type": "CollectionPage",
     name: "Square Face Icon Gallery",
     description:
-      "Approved community square face icon creations plus original style ideas for profile avatars and social media icons.",
+      "Simple square face icon style examples and approved community submissions when available; selection or moderation does not establish authorship or image-use rights.",
     url: pageUrl,
     isPartOf: {
       "@type": "WebSite",
@@ -156,12 +156,13 @@ export default function GalleryPage() {
       <SiteHeader />
       <main className="resource-page">
         <a className="back-link" href="/#maker">Make your own icon</a>
-        <p className="eyebrow">Original avatar ideas</p>
+        <p className="eyebrow">Avatar style ideas</p>
         <h1>Square Face Icon Gallery</h1>
         <p className="lead">
-          This gallery collects approved community submissions from My Square Face Icon along with original style ideas.
-          Use it to browse screenshots, ratings, expressions, colors, and profile-picture readability before making your
-          own avatar in the generator.
+          This gallery pairs simple style illustrations with approved community submissions when available.
+          The eight sample faces in the examples section are illustrations, not game screenshots.
+          Use them to compare expression, contrast, and small-size readability.
+          Display or moderation does not verify authorship or grant image-use rights; check permissions for the specific image.
         </p>
 
         <section>
@@ -175,6 +176,9 @@ export default function GalleryPage() {
 
         <section>
           <h2>Browse Square Face Icon Gallery Examples</h2>
+          <p>
+            Use this square face icon gallery to compare expression, contrast, and small-size readability before you make a new design.
+          </p>
           <div className="gallery-showcase-grid">
             {examples.map((example) => (
               <article className="gallery-card" key={example.title}>

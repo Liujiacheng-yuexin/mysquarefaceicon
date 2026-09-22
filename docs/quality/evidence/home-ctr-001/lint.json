@@ -1,0 +1,10 @@
+{
+  "name": "lint",
+  "command": "node node_modules/next/dist/bin/next lint",
+  "startedAt": "2026-09-22T07:25:34.565Z",
+  "finishedAt": "2026-09-22T07:26:12.680Z",
+  "exitCode": 0,
+  "signal": null,
+  "stdout": "✔ No ESLint warnings or errors\n",
+  "stderr": ""
+}

@@ -1,0 +1,171 @@
+{
+  "taskId": "CATEGORY-001",
+  "scope": "CATEGORY_REMAINING_PAGES",
+  "boardVersion": "1.79",
+  "recordedAt": "2026-09-04T05:00:52.410Z",
+  "userInstruction": "CATEGORY-001 剩余四页验收通过，现在进行下一步开发",
+  "result": "通过（用户明确验收 CATEGORY 本地剩余四页；结合既有样例，本地整项完成）",
+  "userAcceptanceReceived": true,
+  "wholeLocalTaskCompleted": true,
+  "sourceAcceptance": {
+    "result": "通过",
+    "scope": "CATEGORY_REMAINING_PAGES",
+    "acceptedAt": "2026-09-04T04:52:28.359Z",
+    "source": "用户明确回复“CATEGORY-001 剩余四页验收通过”，并要求现在进行下一步开发",
+    "localOnly": true,
+    "remainingPagesImplemented": true,
+    "wholeTaskCompleted": true,
+    "sampleAcceptance": {
+      "result": "通过",
+      "scope": "CATEGORY_SAMPLE",
+      "acceptedAt": "2026-09-04T02:44:00.162Z",
+      "source": "用户明确回复“CATEGORY-001 单页样例验收通过”",
+      "localOnly": true,
+      "samplePath": "/category/face-makers",
+      "remainingPagesImplemented": false,
+      "wholeTaskCompleted": false,
+      "evidencePath": "docs/quality/evidence/category-001/acceptance-checks.json",
+      "note": "仅验收 v1.75 Face Makers 单页样例及已确认共享分类数据/导航/广告边界；不代表剩余四页、完整 CATEGORY-001、全站事实审核、权利、索引或生产验收。原 QA/失败日期和 P0/UNKNOWN/取消状态保留。"
+    },
+    "evidencePath": "docs/quality/evidence/category-001/remaining-acceptance-checks.json",
+    "implementationEvidencePath": "docs/quality/evidence/category-001/remaining-checks.json",
+    "note": "本次结合既有 Face Makers 样例验收，完成 CATEGORY-001 本地分类范围；五页维持 noindex，不代表人类事实审核、独立搜索价值、实际权利或生产批准。原 QA 日期/失败保持；下一项只准备 RELATED-001 待确认方案。"
+  },
+  "acceptedRemainingPages": [
+    {
+      "path": "/category/avatar-makers",
+      "entries": 3
+    },
+    {
+      "path": "/category/pixel-avatars",
+      "entries": 1
+    },
+    {
+      "path": "/category/retro-flash",
+      "entries": 2
+    },
+    {
+      "path": "/category/character-creators",
+      "entries": 1
+    }
+  ],
+  "acceptedSamplePath": "/category/face-makers",
+  "originalImplementationEvidence": {
+    "path": "docs/quality/evidence/category-001/remaining-checks.json",
+    "sha256": "7749c999cf86bdd575b47fd309c5d4b84cd94a3b5662befc8975607bae9aebc6",
+    "boardVersion": "1.78",
+    "recordedAt": "2026-09-04T04:02:28.230Z",
+    "originalResult": "通过（已确认四页的本地实现与限定最终 QA）；等待用户验收",
+    "originalBrowserStability": "有条件通过：首轮 GA 连接关闭整体 FAIL 保留，最终同脚本独立 9 路批次通过",
+    "note": "原时点 userAcceptanceReceived=false 与待验收记录保持；本文件单独登记后续验收，不改写历史 QA 或首次失败。"
+  },
+  "board": {
+    "path": "F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+    "sha256": "307d913a5ee675a7f0e382123413cbe72c7d4e97ea04021500bd70eed900c8a8",
+    "version": "1.79",
+    "currentTask": "RELATED-001",
+    "currentStatus": "设计中",
+    "completedTasks": 21,
+    "totalTasks": 60,
+    "uniqueSourceAcceptanceTaskKeys": 32,
+    "realBrowserVisual": "未验证；未绕过既有访问限制",
+    "realBrowserStorageModified": false
+  },
+  "governanceVerification": {
+    "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-related-proposal-v179-20260904\\verification.json",
+    "sha256": "fef94fe27643ece901cfb1057245314effbabe20aa59fccacc0177a1f7d9e23d",
+    "recordedAt": "2026-09-04T04:55:55.391Z",
+    "result": "PASS",
+    "assertions": 208,
+    "fullChecksPath": "docs/quality/evidence/related-001/proposal-checks.json"
+  },
+  "preservation": {
+    "result": "通过（只读 SHA-256 与治理状态核验，不是网站 QA）",
+    "baseline": {
+      "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-related-proposal-v179-20260904\\baseline.json",
+      "sha256": "89a7c840b7aab6b96b9a168cdfc9ba8f3eed75fb3898a62b2f91b13010e0951c"
+    },
+    "unchangedNonGovernanceFiles": 416,
+    "originalHistoricalJsonUnchanged": 40,
+    "priorArtifactsUnchanged": 141,
+    "currentBuildFilesUnchanged": 47,
+    "originalDeletedFilesRemainDeleted": [
+      "components/FlashGeneratorRuntime.tsx",
+      "components/GalleryPreview.tsx"
+    ],
+    "changedGovernanceFiles": [
+      {
+        "path": "PAGE_PLAN.md",
+        "sha256": "c61eacbfbcfe6364513ff6f886979d54241e87120ae754ec04d9d8b988311f93"
+      },
+      {
+        "path": "LAUNCH_CHECKLIST.md",
+        "sha256": "590ca503508817950dc326d457c0217d9cd0b4a6a88d81ed9ed0559316e3b9b6"
+      },
+      {
+        "path": "SEO_LOG.md",
+        "sha256": "3aad275c8a1cbe4aad6272473e51d88e64a6b12924cef9d978a2464efd34d5f6"
+      },
+      {
+        "path": "docs/quality/evidence/category-001/README.md",
+        "sha256": "35d167111ade75afdadfce0378b6866f702ec5f8786b0b8ad0169c4629d5656e"
+      },
+      {
+        "path": "docs/quality/evidence/category-001/remaining-README.md",
+        "sha256": "ae801981eed5076929a64e5a29eec2d523515184f9e2dc868364392a5a9531e0"
+      },
+      {
+        "path": "docs/product/category-remaining-pages-proposal.md",
+        "sha256": "458411066904095a3f109e7eecbee418de269a1090ba467c22722a63dfb093a1"
+      }
+    ],
+    "headUnchanged": "c6d30087c2c03a7c4eb8d5bfe6e055e9b8d40228",
+    "branchUnchanged": "codex/game-platform-rebuild",
+    "buildIdUnchanged": "NbeJOq_fH0nAhjitrZ8be",
+    "priorCategorySampleAcceptancePreservedVerbatim": true,
+    "otherSourceAcceptanceEntriesPreserved": 31,
+    "oldQualityValidationAndFailuresPreserved": true,
+    "originalTaskListPreserved": true
+  },
+  "boundaries": {
+    "websiteSourceChanged": false,
+    "applicationChecksRepeated": false,
+    "notRun": [
+      "应用类型检查",
+      "lint",
+      "应用单元/回归测试",
+      "Next.js 构建",
+      "OpenNext/Cloudflare 构建",
+      "本地 HTTP 与 SEO 检查",
+      "桌面/移动端网站浏览器与交互测试",
+      "CWV/性能测量",
+      "预览服务存活检查",
+      "生产验证"
+    ],
+    "committed": false,
+    "pushed": false,
+    "deployed": false,
+    "productionAcceptance": false,
+    "releaseResult": "不通过；已有 P0 与生产门禁保持",
+    "humanContentReviewGranted": false,
+    "rightsVerified": false,
+    "unknownRightsPreserved": true,
+    "licenseMaterialsRequestRemainsCancelled": true,
+    "allFiveCategoriesRemainNoindex": true,
+    "urlMetadataSchemaRobotsSitemapUnchanged": true,
+    "fullOvalMigrationRemainsDeferred": true,
+    "recentlyPlayedAndFavoritesNotStarted": true
+  },
+  "nextTask": {
+    "id": "RELATED-001",
+    "scope": "RELATED_OVAL_SAMPLE_PROPOSAL",
+    "status": "方案待确认",
+    "proposal": {
+      "path": "docs/product/related-games-oval-sample-proposal.md",
+      "sha256": "9c86ae9991e44840a02f9b79c34b3754fc7cfffd0eeb64ddd19aa48baa403ae6"
+    },
+    "implementationStarted": false,
+    "confirmationRequired": "确认 RELATED-001 算法与 Oval 单页方案，进行开发"
+  },
+  "rollback": "本轮无应用或线上变更，不需要网站回滚。后续若调整方案，只回退本轮 RELATED 治理/方案增量，保留用户已明确的 CATEGORY 本地验收与全部历史证据；不得整仓回退或覆盖其它脏工作区变更。"
+}

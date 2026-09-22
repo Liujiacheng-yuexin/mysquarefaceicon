@@ -108,6 +108,7 @@ export default function DiscordProfileIconGuidePage() {
           <h2>How to Make a Cute Discord Profile Icon for Small Sizes</h2>
           <p>
             Discord profile icons often appear as small circles in server member lists, chat messages, direct messages, and notifications. That means your avatar should be recognizable even when it is much smaller than the original file.
+            When learning how to make a cute Discord profile icon, test the eyes, mouth, and hair shape at a small preview before adding minor accessories.
           </p>
           <p>
             Start with a square image because it gives you a predictable source file. Keep important details near the center so they survive circular cropping. Avoid putting the most important detail in a corner, because that area may be visually reduced when the platform displays the avatar.

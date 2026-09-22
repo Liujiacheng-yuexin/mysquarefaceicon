@@ -1,0 +1,585 @@
+{
+  "taskId": "RELATED-001",
+  "scope": "RELATED_OVAL_SAMPLE_PROPOSAL",
+  "boardVersion": "1.79",
+  "recordedAt": "2026-09-04T05:00:52.410Z",
+  "result": "通过（方案与治理检查）；方案待确认，未实施",
+  "status": "设计中",
+  "proposalConfirmed": false,
+  "implementationStarted": false,
+  "implementationCompleted": false,
+  "userAcceptanceReceived": false,
+  "wholeTaskCompleted": false,
+  "proposal": {
+    "path": "docs/product/related-games-oval-sample-proposal.md",
+    "sha256": "9c86ae9991e44840a02f9b79c34b3754fc7cfffd0eeb64ddd19aa48baa403ae6"
+  },
+  "categoryAcceptance": {
+    "path": "docs/quality/evidence/category-001/remaining-acceptance-checks.json",
+    "sha256": "c657d4c3925a175d0594321c42772d16afbfd452d4d1c06f720f3105570e6c31",
+    "acceptedAt": "2026-09-04T04:52:28.359Z",
+    "localOnly": true
+  },
+  "board": {
+    "path": "F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+    "sha256": "307d913a5ee675a7f0e382123413cbe72c7d4e97ea04021500bd70eed900c8a8",
+    "version": "1.79",
+    "currentTask": "RELATED-001",
+    "currentStatus": "设计中",
+    "completedTasks": 21,
+    "totalTasks": 60,
+    "uniqueSourceAcceptanceTaskKeys": 32,
+    "realBrowserVisual": "未验证；未绕过既有访问限制",
+    "realBrowserStorageModified": false
+  },
+  "plannedAffectedUrl": "/oval-face-icon-generator",
+  "actualWebsiteUrlsChanged": [],
+  "scopeDecisions": {
+    "ranking": [
+      "shared valid category count descending",
+      "shared normalized exact tag count descending",
+      "stable game ID lexical order"
+    ],
+    "qualityPopularityEnabled": false,
+    "qualityNullIsNotZero": true,
+    "candidateTypeScope": [
+      "PUBLISHED GAME",
+      "PUBLISHED EXTERNAL_TOOL"
+    ],
+    "eligibility": "复用既有发布/身份/站内路由限制；异常形状、自身、冲突 ID/路径、未发布、无相关性均不推荐，不新增权利例外。",
+    "proposedOvalGameCards": [
+      "square-face",
+      "pixel-art-avatar"
+    ],
+    "currentActualCandidateCount": 2,
+    "padToFourOrEight": false,
+    "preserveThreeGuideCardsInSeparateGroup": true,
+    "noHomeFeaturedOrOtherPageBatchIntegration": true,
+    "oldGoldenTestsRemainFrozen": true,
+    "requiresExplicitConfirmationBeforeCode": true
+  },
+  "currentDataReadOnlyEvidence": {
+    "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-related-proposal-v179-20260904\\facts.json",
+    "sha256": "a3fe67447d3b2db381277d1ec494c813ecc06f18ba961c402aa4af4118c87636",
+    "recordedAt": "2026-09-04T04:50:32.091Z",
+    "result": "PASS - read-only current-data evaluation and proposal arithmetic only",
+    "implementationStarted": false,
+    "inventory": [
+      {
+        "id": "square-face",
+        "name": "Square Face Generator",
+        "path": "/",
+        "pageType": "GAME",
+        "type": "RUFFLE_SWF",
+        "status": "PUBLISHED",
+        "categories": [
+          "face-makers",
+          "avatar-makers",
+          "retro-flash"
+        ],
+        "tags": [
+          "square-face",
+          "avatar-maker",
+          "flash-game",
+          "profile-icon",
+          "ruffle"
+        ],
+        "qualityScore": null,
+        "popularityFieldPresent": false,
+        "manualRelatedIds": [
+          "oval-face",
+          "pixel-art-avatar"
+        ]
+      },
+      {
+        "id": "oval-face",
+        "name": "Oval Face Icon Generator",
+        "path": "/oval-face-icon-generator",
+        "pageType": "GAME",
+        "type": "RUFFLE_SWF",
+        "status": "PUBLISHED",
+        "categories": [
+          "face-makers",
+          "avatar-makers",
+          "retro-flash"
+        ],
+        "tags": [
+          "oval-face",
+          "avatar-maker",
+          "flash-game",
+          "rounded-icon",
+          "ruffle"
+        ],
+        "qualityScore": null,
+        "popularityFieldPresent": false,
+        "manualRelatedIds": [
+          "square-face",
+          "pixel-art-avatar"
+        ]
+      },
+      {
+        "id": "pixel-art-avatar",
+        "name": "Pixel Art Avatar Icon Generator",
+        "path": "/pixel-art-avatar-icon-generator",
+        "pageType": "EXTERNAL_TOOL",
+        "type": "EXTERNAL_LINK",
+        "status": "PUBLISHED",
+        "categories": [
+          "pixel-avatars",
+          "avatar-makers",
+          "character-creators"
+        ],
+        "tags": [
+          "pixel-art",
+          "chibi-avatar",
+          "external-tool",
+          "profile-icon",
+          "direct-link"
+        ],
+        "qualityScore": null,
+        "popularityFieldPresent": false,
+        "manualRelatedIds": [
+          "square-face",
+          "oval-face"
+        ]
+      }
+    ],
+    "overlaps": [
+      {
+        "currentId": "square-face",
+        "proposedOrder": [
+          {
+            "id": "oval-face",
+            "sharedCategories": [
+              "face-makers",
+              "avatar-makers",
+              "retro-flash"
+            ],
+            "sharedTags": [
+              "avatar-maker",
+              "flash-game",
+              "ruffle"
+            ]
+          },
+          {
+            "id": "pixel-art-avatar",
+            "sharedCategories": [
+              "avatar-makers"
+            ],
+            "sharedTags": [
+              "profile-icon"
+            ]
+          }
+        ]
+      },
+      {
+        "currentId": "oval-face",
+        "proposedOrder": [
+          {
+            "id": "square-face",
+            "sharedCategories": [
+              "face-makers",
+              "avatar-makers",
+              "retro-flash"
+            ],
+            "sharedTags": [
+              "avatar-maker",
+              "flash-game",
+              "ruffle"
+            ]
+          },
+          {
+            "id": "pixel-art-avatar",
+            "sharedCategories": [
+              "avatar-makers"
+            ],
+            "sharedTags": []
+          }
+        ]
+      },
+      {
+        "currentId": "pixel-art-avatar",
+        "proposedOrder": [
+          {
+            "id": "square-face",
+            "sharedCategories": [
+              "avatar-makers"
+            ],
+            "sharedTags": [
+              "profile-icon"
+            ]
+          },
+          {
+            "id": "oval-face",
+            "sharedCategories": [
+              "avatar-makers"
+            ],
+            "sharedTags": []
+          }
+        ]
+      }
+    ],
+    "currentOval": {
+      "sidebarGames": [
+        {
+          "title": "Square Face Generator",
+          "text": "Play the original square-shaped classic Flash avatar maker.",
+          "href": "/",
+          "imageSrc": "/square-face-icon.png",
+          "imageAlt": "Square Face Generator preview"
+        },
+        {
+          "title": "Pixel Art Avatar Icon Generator",
+          "text": "Open a chibi pixel avatar maker with source credit.",
+          "href": "/pixel-art-avatar-icon-generator",
+          "imageSrc": "/game-face-samples/gamer.webp",
+          "imageAlt": "Pixel art avatar icon generator preview"
+        }
+      ],
+      "relatedCards": [
+        {
+          "title": "Square Face Generator",
+          "text": "Play the square-shaped version of the classic face icon maker.",
+          "href": "/",
+          "gameId": "square-face"
+        }
+      ],
+      "heading": "Related Avatar Games and Tools"
+    },
+    "notVerified": [
+      "recommendation runtime does not exist yet",
+      "browser or production",
+      "quality/popularity evidence",
+      "future sample layout"
+    ]
+  },
+  "governanceVerification": {
+    "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-related-proposal-v179-20260904\\verification.json",
+    "sha256": "fef94fe27643ece901cfb1057245314effbabe20aa59fccacc0177a1f7d9e23d",
+    "recordedAt": "2026-09-04T04:55:55.391Z",
+    "result": "PASS",
+    "assertions": 208,
+    "checks": [
+      "416 original non-governance files unchanged",
+      "40 history JSON 141 prior artifacts 47 current build files unchanged",
+      "prior deletion components/FlashGeneratorRuntime.tsx",
+      "prior deletion components/GalleryPreview.tsx",
+      "only exact doc banner PAGE_PLAN.md",
+      "only exact doc banner LAUNCH_CHECKLIST.md",
+      "only exact doc banner SEO_LOG.md",
+      "only exact doc banner docs/quality/evidence/category-001/README.md",
+      "only exact doc banner docs/quality/evidence/category-001/remaining-README.md",
+      "only exact doc banner docs/product/category-remaining-pages-proposal.md",
+      "same build no rebuild",
+      "board JS parses",
+      "board CSS preserved",
+      "exact board governance delta",
+      "original 60 tasks",
+      "32 unique acceptance task keys no inflated counter",
+      "prior acceptance AUDIT-001",
+      "prior acceptance BASE-001",
+      "prior acceptance LEGAL-001",
+      "prior acceptance STRAT-001",
+      "prior acceptance BACKUP-001",
+      "prior acceptance GAME-DATA-001",
+      "prior acceptance PLAYER-001",
+      "prior acceptance ROUTE-001",
+      "prior acceptance COMP-001",
+      "prior acceptance META-001",
+      "prior acceptance HOME-IA-001",
+      "prior acceptance HOME-HERO-001",
+      "prior acceptance HOME-DISC-001",
+      "prior acceptance HOME-GALLERY-001",
+      "prior acceptance PERF-HOME-001",
+      "prior acceptance GAME-TPL-001",
+      "prior acceptance OP-11",
+      "prior acceptance AI-01",
+      "prior acceptance KW-02-SAMPLE",
+      "prior acceptance KW-02",
+      "prior acceptance PF-01",
+      "prior acceptance TERMS-001",
+      "prior acceptance ABOUT-001",
+      "prior acceptance EDITORIAL-001",
+      "prior acceptance GALLERY-001",
+      "prior acceptance LOCALE-001",
+      "prior acceptance MIG-SQUARE-001",
+      "prior acceptance MIG-OVAL-001",
+      "prior acceptance MIG-PIXEL-001",
+      "prior acceptance CONTENT-QA-001",
+      "prior acceptance GAMES-INDEX-001",
+      "new explicit user batch acceptance",
+      "original sample nested verbatim",
+      "only category acceptance fields",
+      "related proposal only",
+      "other task fields AUDIT-001",
+      "other task fields BASE-001",
+      "other task fields LEGAL-001",
+      "other task fields STRAT-001",
+      "other task fields BACKUP-001",
+      "other task fields GAME-DATA-001",
+      "other task fields PLAYER-001",
+      "other task fields ROUTE-001",
+      "other task fields COMP-001",
+      "other task fields META-001",
+      "other task fields HOME-IA-001",
+      "other task fields HOME-HERO-001",
+      "other task fields HOME-DISC-001",
+      "other task fields HOME-GALLERY-001",
+      "other task fields PERF-HOME-001",
+      "other task fields GAME-TPL-001",
+      "other task fields MIG-SQUARE-001",
+      "other task fields MIG-OVAL-001",
+      "other task fields MIG-PIXEL-001",
+      "other task fields CONTENT-QA-001",
+      "other task fields GAMES-INDEX-001",
+      "old P0 UNKNOWN cancellation and QA unchanged",
+      "proposal current work",
+      "next focus",
+      "week five",
+      "category local whole done",
+      "related design only",
+      "week progress",
+      "overall progress",
+      "full Oval remains deferred",
+      "recent and fav unstarted",
+      "pending proposal",
+      "no premature acceptance",
+      "button scope",
+      "static dynamic focusId",
+      "static dynamic focusStatus",
+      "static dynamic focusTitle",
+      "static dynamic focusGoal",
+      "static dynamic focusNext",
+      "static dynamic focusEvidence",
+      "static dynamic gateNote",
+      "static dynamic cycleValue",
+      "static dynamic cyclePct",
+      "static dynamic overallValue",
+      "static dynamic overallPct",
+      "source user acceptance overrides cached 待验收undefined",
+      "new authoritative acceptance not stale cache",
+      "cache cannot implement proposal 待验收undefined",
+      "no invented related acceptance",
+      "source user acceptance overrides cached 待验收通过",
+      "new authoritative acceptance not stale cache",
+      "cache cannot implement proposal 待验收通过",
+      "no invented related acceptance",
+      "source user acceptance overrides cached 待验收退回",
+      "new authoritative acceptance not stale cache",
+      "cache cannot implement proposal 待验收退回",
+      "no invented related acceptance",
+      "source user acceptance overrides cached 已完成undefined",
+      "new authoritative acceptance not stale cache",
+      "cache cannot implement proposal 已完成undefined",
+      "no invented related acceptance",
+      "source user acceptance overrides cached 已完成通过",
+      "new authoritative acceptance not stale cache",
+      "cache cannot implement proposal 已完成通过",
+      "no invented related acceptance",
+      "source user acceptance overrides cached 已完成退回",
+      "new authoritative acceptance not stale cache",
+      "cache cannot implement proposal 已完成退回",
+      "no invented related acceptance",
+      "source user acceptance overrides cached 开发中undefined",
+      "new authoritative acceptance not stale cache",
+      "cache cannot implement proposal 开发中undefined",
+      "no invented related acceptance",
+      "source user acceptance overrides cached 开发中通过",
+      "new authoritative acceptance not stale cache",
+      "cache cannot implement proposal 开发中通过",
+      "no invented related acceptance",
+      "source user acceptance overrides cached 开发中退回",
+      "new authoritative acceptance not stale cache",
+      "cache cannot implement proposal 开发中退回",
+      "no invented related acceptance",
+      "source user acceptance overrides cached 已阻塞undefined",
+      "new authoritative acceptance not stale cache",
+      "cache cannot implement proposal 已阻塞undefined",
+      "no invented related acceptance",
+      "source user acceptance overrides cached 已阻塞通过",
+      "new authoritative acceptance not stale cache",
+      "cache cannot implement proposal 已阻塞通过",
+      "no invented related acceptance",
+      "source user acceptance overrides cached 已阻塞退回",
+      "new authoritative acceptance not stale cache",
+      "cache cannot implement proposal 已阻塞退回",
+      "no invented related acceptance",
+      "malformed cache safe {",
+      "malformed cache safe null",
+      "malformed cache safe []",
+      "dropdown pending gate 开发中",
+      "dropdown pending gate 待验收",
+      "dropdown pending gate 已完成",
+      "dropdown pending gate 未开始",
+      "checkbox gate",
+      "forced pending still disabled",
+      "handlers prevent bypass",
+      "no implicit proposal confirmation",
+      "prompt updated CATEGORY-001",
+      "no repeat category acceptance CATEGORY-001",
+      "prompt updated GAMES-INDEX-001",
+      "no repeat category acceptance GAMES-INDEX-001",
+      "prompt updated HOME-DISC-001",
+      "no repeat category acceptance HOME-DISC-001",
+      "prompt updated CONTENT-QA-001",
+      "no repeat category acceptance CONTENT-QA-001",
+      "related proposal prompt",
+      "detail plan",
+      "export version",
+      "export old plus new exact",
+      "export proposal pending",
+      "reset focus",
+      "reset cannot lose user acceptance",
+      "reset does not implement",
+      "reset confirmation gate",
+      "three actual records",
+      "no invented quality/popularity",
+      "one original Oval related game card",
+      "proposal boundary 方案待确认，未实施",
+      "proposal boundary 不启用 quality/popularity",
+      "proposal boundary 不凑 4–8 条",
+      "proposal boundary UNKNOWN",
+      "proposal boundary LICENSE-GATE",
+      "proposal boundary 共同分类数量降序",
+      "proposal boundary 共同标签数量降序",
+      "proposal boundary 输入数组次序",
+      "proposal boundary 全部排除",
+      "proposal boundary Avatar guides and inspiration",
+      "proposal boundary View access details",
+      "proposal boundary 旧 golden",
+      "proposal boundary 不自动改成算法推荐",
+      "proposal boundary 不是完整 Oval 模板迁移",
+      "proposal boundary 确认 RELATED-001 算法与 Oval 单页方案，进行开发",
+      "doc link docs/product/related-games-oval-sample-proposal.md ../quality/evidence/related-001/proposal-checks.json",
+      "doc link PAGE_PLAN.md docs/quality/evidence/category-001/remaining-acceptance-checks.json",
+      "doc link PAGE_PLAN.md docs/product/related-games-oval-sample-proposal.md",
+      "doc link LAUNCH_CHECKLIST.md docs/quality/evidence/category-001/remaining-acceptance-checks.json",
+      "doc link LAUNCH_CHECKLIST.md docs/product/related-games-oval-sample-proposal.md",
+      "doc link SEO_LOG.md docs/quality/evidence/category-001/remaining-acceptance-checks.json",
+      "doc link SEO_LOG.md docs/product/related-games-oval-sample-proposal.md",
+      "doc link SEO_LOG.md docs/quality/evidence/related-001/proposal-checks.json",
+      "doc link docs/quality/evidence/category-001/README.md remaining-acceptance-checks.json",
+      "doc link docs/quality/evidence/category-001/README.md ../../../product/related-games-oval-sample-proposal.md",
+      "doc link docs/quality/evidence/category-001/remaining-README.md remaining-acceptance-checks.json",
+      "doc link docs/quality/evidence/category-001/remaining-README.md ../../../product/related-games-oval-sample-proposal.md",
+      "doc link docs/product/category-remaining-pages-proposal.md ../quality/evidence/category-001/remaining-acceptance-checks.json",
+      "doc link docs/product/category-remaining-pages-proposal.md related-games-oval-sample-proposal.md",
+      "whitespace check",
+      "no commit",
+      "branch unchanged",
+      "only new plan and two own evidence files"
+    ],
+    "boardVisual": "未验证；不绕过既有文件访问限制",
+    "realBrowserStorageModified": false
+  },
+  "diagnosticFailure": {
+    "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-related-proposal-v179-20260904\\diagnostic-failures.json",
+    "sha256": "fd431d04bd54f3b6a5b9d9f1f15c50c0d4b1bc0dc5a1ac104d6c29ab8bca495c",
+    "events": [
+      {
+        "date": "2026-09-04",
+        "command": "node facts.mjs",
+        "exitCode": 1,
+        "error": "ERR_UNSUPPORTED_ESM_URL_SCHEME: Windows absolute ESM import used D:/ instead of file:///D:/",
+        "correction": "Fixed only the temporary read-only diagnostic module import. No app code changed or result file written before failure.",
+        "result": "Initial failure preserved; subsequent run recorded separately."
+      }
+    ],
+    "note": "仅临时只读诊断脚本初次 Windows ESM 路径失败；修正 file URL 后单独记录成功。不是网站测试失败或新算法测试。"
+  },
+  "preservation": {
+    "result": "通过（只读 SHA-256 与治理状态核验，不是网站 QA）",
+    "baseline": {
+      "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-related-proposal-v179-20260904\\baseline.json",
+      "sha256": "89a7c840b7aab6b96b9a168cdfc9ba8f3eed75fb3898a62b2f91b13010e0951c"
+    },
+    "unchangedNonGovernanceFiles": 416,
+    "originalHistoricalJsonUnchanged": 40,
+    "priorArtifactsUnchanged": 141,
+    "currentBuildFilesUnchanged": 47,
+    "originalDeletedFilesRemainDeleted": [
+      "components/FlashGeneratorRuntime.tsx",
+      "components/GalleryPreview.tsx"
+    ],
+    "changedGovernanceFiles": [
+      {
+        "path": "PAGE_PLAN.md",
+        "sha256": "c61eacbfbcfe6364513ff6f886979d54241e87120ae754ec04d9d8b988311f93"
+      },
+      {
+        "path": "LAUNCH_CHECKLIST.md",
+        "sha256": "590ca503508817950dc326d457c0217d9cd0b4a6a88d81ed9ed0559316e3b9b6"
+      },
+      {
+        "path": "SEO_LOG.md",
+        "sha256": "3aad275c8a1cbe4aad6272473e51d88e64a6b12924cef9d978a2464efd34d5f6"
+      },
+      {
+        "path": "docs/quality/evidence/category-001/README.md",
+        "sha256": "35d167111ade75afdadfce0378b6866f702ec5f8786b0b8ad0169c4629d5656e"
+      },
+      {
+        "path": "docs/quality/evidence/category-001/remaining-README.md",
+        "sha256": "ae801981eed5076929a64e5a29eec2d523515184f9e2dc868364392a5a9531e0"
+      },
+      {
+        "path": "docs/product/category-remaining-pages-proposal.md",
+        "sha256": "458411066904095a3f109e7eecbee418de269a1090ba467c22722a63dfb093a1"
+      }
+    ],
+    "headUnchanged": "c6d30087c2c03a7c4eb8d5bfe6e055e9b8d40228",
+    "branchUnchanged": "codex/game-platform-rebuild",
+    "buildIdUnchanged": "NbeJOq_fH0nAhjitrZ8be",
+    "priorCategorySampleAcceptancePreservedVerbatim": true,
+    "otherSourceAcceptanceEntriesPreserved": 31,
+    "oldQualityValidationAndFailuresPreserved": true,
+    "originalTaskListPreserved": true
+  },
+  "boundaries": {
+    "websiteSourceChanged": false,
+    "applicationChecksRepeated": false,
+    "notRun": [
+      "应用类型检查",
+      "lint",
+      "应用单元/回归测试",
+      "Next.js 构建",
+      "OpenNext/Cloudflare 构建",
+      "本地 HTTP 与 SEO 检查",
+      "桌面/移动端网站浏览器与交互测试",
+      "CWV/性能测量",
+      "预览服务存活检查",
+      "生产验证"
+    ],
+    "committed": false,
+    "pushed": false,
+    "deployed": false,
+    "productionAcceptance": false,
+    "releaseResult": "不通过；已有 P0 与生产门禁保持",
+    "humanContentReviewGranted": false,
+    "rightsVerified": false,
+    "unknownRightsPreserved": true,
+    "licenseMaterialsRequestRemainsCancelled": true,
+    "allFiveCategoriesRemainNoindex": true,
+    "urlMetadataSchemaRobotsSitemapUnchanged": true,
+    "fullOvalMigrationRemainsDeferred": true,
+    "recentlyPlayedAndFavoritesNotStarted": true
+  },
+  "currentTurnChangedFiles": [
+    "PAGE_PLAN.md",
+    "LAUNCH_CHECKLIST.md",
+    "SEO_LOG.md",
+    "docs/quality/evidence/category-001/README.md",
+    "docs/quality/evidence/category-001/remaining-README.md",
+    "docs/product/category-remaining-pages-proposal.md",
+    "docs/product/related-games-oval-sample-proposal.md",
+    "docs/quality/evidence/category-001/remaining-acceptance-checks.json",
+    "docs/quality/evidence/related-001/proposal-checks.json",
+    "F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html"
+  ],
+  "unchangedProductionEvidence": {
+    "path": "docs/quality/evidence/category-001/remaining-checks.json",
+    "sha256": "7749c999cf86bdd575b47fd309c5d4b84cd94a3b5662befc8975607bae9aebc6"
+  },
+  "userDecisionNeeded": "确认 RELATED-001 算法与 Oval 单页方案，进行开发",
+  "rollback": "本轮无应用或线上变更，不需要网站回滚。后续若调整方案，只回退本轮 RELATED 治理/方案增量，保留用户已明确的 CATEGORY 本地验收与全部历史证据；不得整仓回退或覆盖其它脏工作区变更。"
+}

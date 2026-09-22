@@ -1,0 +1,178 @@
+{
+  "taskId": "FAV-001",
+  "scope": "FAVORITES_PROPOSAL",
+  "boardVersion": "1.88",
+  "recordedAt": "2026-09-07T08:36:43.3953653Z",
+  "userInstruction": "确认验收，现在进行下一步开发",
+  "result": "通过（现状核对与方案治理）；方案待用户确认；应用未实施；全站发布不通过",
+  "proposal": {
+    "path": "docs/product/favorites-local-storage-proposal.md",
+    "sha256": "2e48d27541a921ae093a7d0e674fd5e965c3f50692816ebd26d878d1baa1f680",
+    "status": "待确认",
+    "confirmationRequired": "确认 FAV-001 方案，进行开发"
+  },
+  "currentFacts": {
+    "favoritesImplementationExists": false,
+    "publishedGameRecords": 3,
+    "publishedOnSiteGames": ["square-face", "oval-face"],
+    "publishedExternalTools": ["pixel-art-avatar"],
+    "sharedGameCardSurfaces": ["homepage discovery", "/games", "five category pages", "future detail RelatedGames"],
+    "independentCardSurfaces": ["Recently Played", "Oval legacy Related", "Pixel legacy Related"],
+    "currentDetailSurfaces": ["/", "/oval-face-icon-generator", "/pixel-art-avatar-icon-generator"],
+    "futureDetailTemplate": "components/game/GameDetailTemplate.tsx",
+    "gameCardRootIsCurrentlyLink": true,
+    "nestedButtonWouldBeInvalid": true,
+    "privacyDisclosesFavorites": false,
+    "recentStorageKeyAlreadyExists": "msfi-recently-played-v1"
+  },
+  "plannedContract": {
+    "storageKey": "msfi-favorites-v1",
+    "version": 1,
+    "storedFields": ["gameIds"],
+    "storeLimit": 50,
+    "ordering": "most recently favorited first",
+    "storedPersonalData": false,
+    "storedTimestamp": false,
+    "networkWrite": false,
+    "accountOrCloudSync": false,
+    "sameTabSync": "project custom change event",
+    "crossTabSync": "native storage event for the exact key",
+    "storageFailureBlocksNavigationOrPlay": false,
+    "invalidStorageBehavior": "fail closed to sanitized valid IDs or empty state",
+    "recentStorageChanged": false,
+    "externalToolBehavior": "Pixel can be saved as a tool but must remain labeled External tool / Save tool"
+  },
+  "plannedSurfaces": {
+    "cards": [
+      "shared GameCard/GameGrid",
+      "Recently Played cards",
+      "Oval legacy Related cards",
+      "Pixel legacy Related cards"
+    ],
+    "detailActions": [
+      "/ Square hero",
+      "/oval-face-icon-generator hero actions",
+      "/pixel-art-avatar-icon-generator external hero actions",
+      "future /games/[slug] GameDetailTemplate heading"
+    ],
+    "favoritesView": {
+      "path": "/games",
+      "position": "after Recently Played and before On-site avatar games",
+      "emptyBehavior": "no heading, cards, empty state or reserved module height",
+      "newRoute": false
+    }
+  },
+  "interactionPlan": {
+    "cardStructure": "non-interactive wrapper with primary link and Favorite button as siblings",
+    "button": "native button with aria-pressed and fixed visible label",
+    "minimumHitTargetCssPx": 44,
+    "keyboard": ["Tab", "Enter", "Space"],
+    "liveAnnouncements": true,
+    "removeFocusRecovery": "next saved toggle, or On-site avatar games heading when the final favorite is removed",
+    "serverSnapshot": "not favorited",
+    "clientState": "useSyncExternalStore",
+    "fixedGeometry": true
+  },
+  "seoAndPrivacyPlan": {
+    "newUrl": false,
+    "metadataChanged": false,
+    "h1Changed": false,
+    "canonicalChanged": false,
+    "schemaChanged": false,
+    "robotsOrIndexChanged": false,
+    "sitemapChanged": false,
+    "searchIntentChanged": false,
+    "favoritesEnterServerSchema": false,
+    "favoritesAffectStaticInternalLinkCounts": false,
+    "favoritesAffectRelatedOrPopularity": false,
+    "privacyUpdatePlanned": true,
+    "privacyVisibleDatePlanned": "September 7, 2026"
+  },
+  "preflight": [
+    {"command": "npm run components:check", "exitCode": 0, "result": "PASS"},
+    {"command": "npm run recent:check", "exitCode": 0, "result": "PASS"},
+    {"command": "npm run home:check", "exitCode": 0, "result": "PASS"},
+    {"command": "npm run games-index:check", "exitCode": 0, "result": "PASS", "assertions": 328, "negativeFixtures": 60},
+    {"command": "npm run category-sample:check", "exitCode": 0, "result": "PASS", "assertions": 581, "negativeFixtures": 80},
+    {"command": "npm run category-remaining:check", "exitCode": 0, "result": "PASS", "assertions": 380, "negativeFixtures": 162},
+    {"command": "npm run game-template:check", "exitCode": 0, "result": "PASS", "warning": "pre-existing React fetchPriority SSR warning retained"},
+    {"command": "npm run oval-page:check", "exitCode": 0, "result": "PASS"},
+    {"command": "npm run pixel-page:check", "exitCode": 0, "result": "PASS"},
+    {"command": "npm run related:check", "exitCode": 0, "result": "PASS", "assertions": 72}
+  ],
+  "notRunInProposalTurn": [
+    "npx tsc --noEmit",
+    "npm run lint",
+    "npm run build",
+    "npm run cf:build",
+    "built HTML and loopback HTTP checks",
+    "npm run seo:check",
+    "npm run robots:check",
+    "browser desktop/mobile/keyboard checks",
+    "CLS/CWV",
+    "npm run seo:prod"
+  ],
+  "applicationPreservation": {
+    "applicationCodeChangedInProposalTurn": false,
+    "testsOrCheckersChangedInProposalTurn": false,
+    "gameDataChangedInProposalTurn": false,
+    "routesOrMetadataChangedInProposalTurn": false,
+    "cssChangedInProposalTurn": false,
+    "buildArtifactsChangedInProposalTurn": false,
+    "branch": "codex/game-platform-rebuild",
+    "head": "c6d30087c2c03a7c4eb8d5bfe6e055e9b8d40228"
+  },
+  "baselineHashesSha256": {
+    "components/game/GameCard.tsx": "e405ecff0e4a26ef3ed686ef5ac7c06d5c622312d17a010bdcae6e495c66edcd",
+    "components/game/GameGrid.tsx": "ae5a454723185b9c2b34f2129c00e1e3cc3d6336567034d9b4f7798767b71f6c",
+    "components/game/RecentlyPlayed.tsx": "110671be591af757b7114ad322048d5f607d8367fe0dd67ebcd1244931334b07",
+    "components/game/GameDetailTemplate.tsx": "fc810e5de24498107c5081a154177a875b24e97451c45a9f753e4745805a01e9",
+    "components/home/HomeHero.tsx": "d7c0c2c35b98735c002d4a9066b68615e73df77326cc42468eaee6607b442fd3",
+    "app/games/page.tsx": "14de6c9dc2e3eab53eaffb264c225e929ac99f9828d1fd2ad583c81c207a7409",
+    "app/category/[slug]/page.tsx": "358074712a967ae9442d670cbb3fb4d5aa5aa09b7f6cf89a29c6cb8457c8926d",
+    "app/oval-face-icon-generator/page.tsx": "dcabb4e17228e253afe758d299a67ec7c514011272a39eb11575e25963ab4ae6",
+    "app/pixel-art-avatar-icon-generator/page.tsx": "586c30c4807991934096fcdf753bf5c09b3953369d0ea18d7fefcfed95570dbd",
+    "app/privacy-policy/page.tsx": "fce773f0aa2d14a915cde7a9efacd1369b3834eb8fb7d7100fcc6a02cfb4c1f4",
+    "lib/recently-played.ts": "76ded478a93e62988cf5dd01147a4b1d84e9a50645d3a343a59cf1f76a3f22f6",
+    "lib/games/catalog.ts": "6cc0df85e3acf146b3cc18b63cc4785982607fc0e59142ce89f59d2d6ef0ac0d",
+    "package.json": "56bb4a5cd9743882b38f1d51a3683829fc8cafb95f6ba223402294e6062c94cd",
+    "RECENT-001 acceptance": "a658d31a72d6881b1ddd520a2422067a8ed4912e8c9a33a5eff1f4469a10e483"
+  },
+  "governanceHashesSha256": {
+    "PAGE_PLAN.md": "92136c789a0d0634c91cdb50c8f80939d2602d0382e3fdb03f5da0e76df5ea4d",
+    "LAUNCH_CHECKLIST.md": "80005aa6e35b77f8e9ac214bee05e6c65437999efce99112de4facc1803fd917",
+    "SEO_LOG.md": "acd112b778e501c9d1574308da3c31727af0147dc2adbd22f0517e75c226903b",
+    "authoritativeBoard": "f527afe21ababd1255a87d80d6630bed78eba9ba3048895f6957b7913fdda3c7"
+  },
+  "board": {
+    "path": "F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+    "previousVersion": "1.87",
+    "previousSha256": "526dfc68f31e5bbf487ae05451a9c1a5d93c6e65b928d76f2dc45c40155d8dc2",
+    "version": "1.88",
+    "currentTask": "FAV-001",
+    "currentStatus": "设计中 / 方案待确认 / 未实施",
+    "completedTasks": 23,
+    "totalTasks": 60,
+    "uniqueSourceAcceptanceTaskKeys": 34,
+    "favoriteStarted": false,
+    "deployed": false
+  },
+  "unresolved": [
+    "proposal confirmation",
+    "exact 390x844 and 360x800 responsive visual checks",
+    "seeded-state CLS and field CWV",
+    "actual Square and Oval rights remain UNKNOWN",
+    "human factual review and remaining semantic-quality notices",
+    "whole-site ads and CMP gates",
+    "production canonical, robots, SEO and deployment evidence"
+  ],
+  "release": {
+    "commitCreated": false,
+    "pushed": false,
+    "deployed": false,
+    "seoProdRun": false,
+    "productionVerified": false,
+    "result": "不通过 / 未部署"
+  },
+  "nextRequiredUserReply": "确认 FAV-001 方案，进行开发"
+}

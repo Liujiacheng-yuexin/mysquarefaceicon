@@ -1,0 +1,404 @@
+{
+  "taskId": "RELATED-001",
+  "scope": "RELATED_OVAL_SAMPLE",
+  "boardVersion": "1.80",
+  "recordedAt": "2026-09-05T04:25:18.903Z",
+  "result": "通过（本地限定 QA）；待用户验收；全站发布不通过 / 未部署",
+  "status": "待验收",
+  "proposal": {
+    "path": "docs/product/related-games-oval-sample-proposal.md",
+    "status": "已确认 / 已实施",
+    "confirmationSource": "用户在已收到 v1.79 方案后明确要求“继续任务”，按当前 RELATED-001 方案继续实施",
+    "confirmedAt": "2026-09-05T03:45:22.322Z",
+    "sha256": "5a459a8dd2e7d965df37422187b9c64b84a06585a2e98e2753619fa0eb973025"
+  },
+  "implementation": {
+    "started": true,
+    "completed": true,
+    "userAcceptanceReceived": false,
+    "wholeTaskCompleted": false,
+    "batchIntegrationStarted": false,
+    "affectedUrls": [
+      "/oval-face-icon-generator"
+    ],
+    "unaffectedSurfaces": [
+      "/",
+      "/pixel-art-avatar-icon-generator",
+      "/games",
+      "/category/[slug]",
+      "components/game/RelatedGames",
+      "draft locale routes"
+    ],
+    "unchangedContracts": [
+      "Oval URL",
+      "title and description",
+      "H1",
+      "canonical",
+      "Open Graph and Twitter metadata",
+      "structured data",
+      "robots and index state",
+      "sitemap membership",
+      "first-viewport player and click-to-load behavior",
+      "game records and License Registry",
+      "CSS"
+    ]
+  },
+  "algorithm": {
+    "selector": "selectRelatedGames",
+    "path": "lib/recommendations/related-games.ts",
+    "ranking": [
+      "shared valid category count descending",
+      "shared normalized exact tag count descending",
+      "stable game ID lexical order"
+    ],
+    "eligibility": "validated PUBLISHED GAME or EXTERNAL_TOOL records passing existing directory identity, route and release gates",
+    "exclusions": [
+      "self by ID or route",
+      "no category and no tag overlap",
+      "invalid record",
+      "non-PUBLISHED status",
+      "blocked future route",
+      "fake legacy identity",
+      "every record in a duplicate ID conflict",
+      "every record in a duplicate route conflict"
+    ],
+    "limits": {
+      "default": 4,
+      "maximum": 8,
+      "zero": "empty result",
+      "invalid": "RangeError",
+      "filler": false
+    },
+    "qualityPopularity": "DISABLED_NO_VERIFIED_DATA",
+    "realOvalOrder": [
+      {
+        "id": "square-face",
+        "pageType": "GAME",
+        "sharedCategories": 3,
+        "sharedTags": 3,
+        "href": "/"
+      },
+      {
+        "id": "pixel-art-avatar",
+        "pageType": "EXTERNAL_TOOL",
+        "sharedCategories": 1,
+        "sharedTags": 0,
+        "href": "/pixel-art-avatar-icon-generator"
+      }
+    ]
+  },
+  "renderedSample": {
+    "location": "after FAQ and before footer",
+    "gameToolGroup": {
+      "heading": "Related Avatar Games and Tools",
+      "count": 2,
+      "ids": [
+        "square-face",
+        "pixel-art-avatar"
+      ],
+      "externalToolMarked": true,
+      "externalDestinationBoundary": "onsite access-details page"
+    },
+    "guideGroup": {
+      "heading": "Avatar guides and inspiration",
+      "count": 3,
+      "titles": [
+        "Square Face Icon Guide",
+        "Free Avatar Maker",
+        "Community Gallery"
+      ],
+      "originalOrderCopyAndHrefsPreserved": true
+    }
+  },
+  "verification": {
+    "typecheck": {
+      "command": "node node_modules/typescript/bin/tsc --noEmit",
+      "exitCode": 0,
+      "result": "PASS"
+    },
+    "lint": {
+      "command": "npm run lint",
+      "exitCode": 0,
+      "warnings": 0,
+      "errors": 0,
+      "result": "PASS"
+    },
+    "relatedSource": {
+      "command": "npm run related:check",
+      "exitCode": 0,
+      "coreAssertions": 53,
+      "result": "PASS"
+    },
+    "relatedBuilt": {
+      "command": "node scripts/run-related-games-check.mjs --built",
+      "exitCode": 0,
+      "coreAssertions": 53,
+      "renderedContract": "PASS",
+      "result": "PASS"
+    },
+    "relatedHttp": {
+      "command": "node scripts/run-related-games-check.mjs --base http://127.0.0.1:3000",
+      "exitCode": 0,
+      "coreAssertions": 53,
+      "renderedContract": "PASS",
+      "result": "PASS"
+    },
+    "ovalRegression": {
+      "commands": [
+        "npm run oval-page:check",
+        "node scripts/check-oval-legacy-page.mjs --built",
+        "node scripts/check-oval-legacy-page.mjs --base http://127.0.0.1:3000"
+      ],
+      "exitCodes": [
+        0,
+        0,
+        0
+      ],
+      "textBindings": 75,
+      "explicitPlayerCases": 19,
+      "malformedRejected": 250,
+      "relatedExclusions": 26,
+      "rawHtmlNegativeFixturesPerRenderedMode": 14,
+      "result": "PASS",
+      "advisory": "existing React 18 fetchPriority SSR warning retained"
+    },
+    "sharedRegression": {
+      "commands": [
+        "npm run games:check",
+        "npm run player:check",
+        "npm run routes:check",
+        "npm run components:check",
+        "npm run metadata:check",
+        "npm run game-template:check",
+        "npm run home:check",
+        "npm run home-hero:check",
+        "npm run home-discovery:check",
+        "npm run home-gallery:check",
+        "npm run perf-home:check",
+        "npm run games-index:check",
+        "npm run category-sample:check",
+        "npm run category-remaining:check",
+        "npm run square-home:check",
+        "npm run pixel-page:check",
+        "npm run locale:check",
+        "npm run terms:check",
+        "npm run about:check",
+        "npm run editorial:check",
+        "npm run gallery:check",
+        "npm run canonical:check",
+        "npm run robots:check"
+      ],
+      "allExitCodes": 0,
+      "gamesIndex": {
+        "assertions": 321,
+        "negativeFixtures": 60
+      },
+      "categorySample": {
+        "assertions": 581,
+        "negativeFixtures": 80,
+        "humanReview": "not completed"
+      },
+      "categoryRemaining": {
+        "assertions": 380,
+        "negativeFixtures": 162,
+        "humanReview": "not completed",
+        "indexing": "noindex remains"
+      },
+      "robots": {
+        "blocked": 6,
+        "publicSearchOrUserRetrievalAllowed": 5
+      },
+      "result": "PASS"
+    },
+    "nextBuild": {
+      "command": "npm run build",
+      "exitCode": 0,
+      "routes": 42,
+      "buildIdAfterFinalPlatformBuild": "jNeY9E9kpEdOXfB1UZQaz",
+      "result": "PASS"
+    },
+    "openNextBuild": {
+      "command": "npm run cf:build",
+      "exitCode": 0,
+      "workerPath": ".open-next/worker.js",
+      "workerSha256": "4e7c7cb3850c2ca12374d034118afc422ed5d95f46bfc3df3ff1dba2911807f3",
+      "patchApplied": true,
+      "result": "PASS",
+      "advisory": "Windows compatibility warning retained"
+    },
+    "seo": {
+      "command": "npm run seo:check",
+      "base": "http://localhost:3000",
+      "exitCode": 0,
+      "pages": 20,
+      "must": 0,
+      "should": 12,
+      "shouldBreakdown": {
+        "KW-03": 1,
+        "META-03": 7,
+        "META-04": 4
+      },
+      "KW-04": "manual and not verified",
+      "result": "PASS_WITH_EXISTING_ADVISORIES"
+    },
+    "browser": {
+      "recordedAt": "2026-09-05T04:09:58.051Z",
+      "automation": "Playwright 1.62.1 with installed Google Chrome, headless",
+      "fallbackReason": "Browser plugin and browser skill absent; no dependency installed",
+      "viewports": [
+        {
+          "width": 1280,
+          "height": 900
+        },
+        {
+          "width": 390,
+          "height": 844
+        },
+        {
+          "width": 360,
+          "height": 800
+        }
+      ],
+      "cardsPerViewport": 5,
+      "interactions": 9,
+      "consoleIssues": 0,
+      "pageErrors": 0,
+      "horizontalOverflow": 0,
+      "cardClipping": 0,
+      "initialRuffleWasmSwfRequests": 0,
+      "screenshots": [
+        {
+          "path": "docs/quality/evidence/related-001/screenshots/desktop-1280-related-focused.png",
+          "sha256": "01f9bfbbd6097864a8c18d4717e325eeb2b7207d28b9dcd44d6672832603d88a"
+        },
+        {
+          "path": "docs/quality/evidence/related-001/screenshots/mobile-390-related-focused.png",
+          "sha256": "c9a97e06c072a3cd5cc1135120407ee384f01c8014076ff7f2610f9215243781"
+        },
+        {
+          "path": "docs/quality/evidence/related-001/screenshots/mobile-360-related-focused.png",
+          "sha256": "eaf28cb827ac81e6f4cffbdeed7dd52fd518edd9cc166ce2e63c426a2aa4d336"
+        }
+      ],
+      "manualScreenshotReview": "PASS",
+      "result": "PASS"
+    },
+    "board": {
+      "path": "F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+      "sha256": "e409387ab92fa9c53e4d3375fd367ab2209b537b19d130472f876d4fbb6ede0d",
+      "sourceVmAssertions": 21,
+      "scriptSyntax": "PASS",
+      "cssPreserved": true,
+      "roadmapPreserved": true,
+      "currentTask": "RELATED-001",
+      "currentStatus": "待验收",
+      "completedTasks": 21,
+      "totalTasks": 60,
+      "sourceAcceptanceKeyCount": 32,
+      "recentAndFavorite": "未开始",
+      "userAcceptanceReceived": false,
+      "realBrowserVisual": "未验证；沿用真实本地文件访问限制，不以替代传输绕过",
+      "result": "PASS_SOURCE_AND_VM_ONLY"
+    },
+    "preservation": {
+      "baselineFiles": 1738,
+      "preExistingEvidenceFiles": 120,
+      "preExistingEvidenceChanged": 0,
+      "unexpectedChanged": 0,
+      "unexpectedAdded": 0,
+      "branch": "codex/game-platform-rebuild",
+      "head": "c6d30087c2c03a7c4eb8d5bfe6e055e9b8d40228",
+      "generatedCacheChange": "tsconfig.tsbuildinfo changed only as a result of the full typecheck",
+      "result": "PASS"
+    },
+    "gitDiffCheck": {
+      "command": "git diff --check",
+      "exitCode": 0,
+      "result": "PASS",
+      "advisory": "existing LF-to-CRLF working-copy notices retained"
+    }
+  },
+  "initialFailuresPreserved": [
+    {
+      "stage": "RELATED TypeScript fixture",
+      "failure": "optional fixture type was not narrowed",
+      "correction": "test-only requireGame helper",
+      "rerun": "PASS"
+    },
+    {
+      "stage": "duplicate route negative fixture",
+      "failure": "one record was independently invalid and did not form a valid conflict",
+      "correction": "two individually valid records sharing the same route",
+      "rerun": "PASS"
+    },
+    {
+      "stage": "legacy Oval golden",
+      "failure": "old handwritten related-card regex rejected the approved new grouping",
+      "correction": "exact reversible RELATED delta before legacy comparison",
+      "rerun": "PASS"
+    },
+    {
+      "stage": "compatibility scope",
+      "failure": "dynamic href, package, README, checker hashes and Buffer handling were initially incomplete",
+      "correction": "whitelisted exact inverse transformations; unknown values pass through unchanged",
+      "rerun": "PASS"
+    },
+    {
+      "stage": "temporary diagnostics",
+      "failure": "one PowerShell hash expression had escaping errors and one screenshot glob incorrectly used LiteralPath",
+      "correction": "unambiguous enumeration",
+      "rerun": "PASS"
+    },
+    {
+      "stage": "local preview start",
+      "failure": "background Start-Process command was rejected before execution",
+      "correction": "foreground unified execution channel",
+      "rerun": "PASS"
+    }
+  ],
+  "fileHashes": {
+    "lib/recommendations/related-games.ts": "f897da450dffbc2dc028115995294cbf413d1b830e3bd640bb01ce201c6083a4",
+    "app/oval-face-icon-generator/page.tsx": "dcabb4e17228e253afe758d299a67ec7c514011272a39eb11575e25963ab4ae6",
+    "scripts/validate-related-games.ts": "f1f90f7e1c1ee07f0d86b78c9b8a2cc15374b1417e0df6d9be4adddbee748b3c",
+    "scripts/run-related-games-check.mjs": "ff90d575fd7601b197e1ddafa6e81f9998d53442c5d03a7882bd348d65a44dd3",
+    "scripts/related-games-compat.mjs": "ea5d10d4e39e2fa53044fd0fcaaf6a7d647bc588e248b6a438a73b29349bd89f",
+    "scripts/fixtures/related-games-approved-delta.json": "78ae5954f794708b14d930893a0c7f5c25f61008b36775018e4ce8ea6e3f7e19",
+    "tsconfig.related-games-check.json": "42928d1a396e8b285d3e6840f7a448fb8928419fbef43216040e864296c7746b",
+    "package.json": "fb680047b7f00a24ed1ffd928191e6c0eb63657a83a24094e013d0dab1a0a694",
+    "scripts/README.md": "fa14a69f2a8d5a05faf66f429371a2b6af3f50841de0a8425f45441b92fa19b4"
+  },
+  "historicalEvidence": {
+    "proposalChecksPath": "docs/quality/evidence/related-001/proposal-checks.json",
+    "proposalChecksSha256": "ec36952d8e710a651d4804561f3bdf1860ec71bb471d666f517dd14d50617792",
+    "modified": false
+  },
+  "unresolved": [
+    "user acceptance of the Oval sample",
+    "batch integration proposal for any other surface",
+    "human content and factual review",
+    "real devices and non-Chrome engines",
+    "internal SWF gameplay and fullscreen",
+    "field Core Web Vitals",
+    "KW-04 manual semantic coverage",
+    "Square and Oval exact source, rights-holder and permissions remain UNKNOWN",
+    "existing 12 SEO should advisories",
+    "whole-site ads and CMP gates",
+    "production canonical, robots, SEO, performance and deployment evidence",
+    "real authoritative-board visual rendering"
+  ],
+  "release": {
+    "commitCreated": false,
+    "pushed": false,
+    "deployed": false,
+    "seoProdRun": false,
+    "productionVerified": false,
+    "result": "不通过 / 未部署"
+  },
+  "rollback": {
+    "application": "remove the bounded selector/Oval integration and RELATED check/compat files only; preserve all pre-existing work",
+    "governance": "remove only v1.80 additions while retaining v1.79 proposal evidence and every prior acceptance",
+    "production": "not applicable because no deployment occurred",
+    "dataMigration": "none"
+  },
+  "nextGate": "Await explicit user reply: RELATED-001 Oval 单页样例验收通过"
+}

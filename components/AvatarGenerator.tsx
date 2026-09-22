@@ -430,6 +430,7 @@ function OptionGroup<T extends string>({ label, options, value, onChange }: Opti
       <div className="segmented-list">
         {options.map((option) => (
           <button
+            aria-pressed={option === value}
             className={option === value ? "segment is-active" : "segment"}
             key={option}
             onClick={() => onChange(option)}
@@ -466,6 +467,7 @@ function ColorControl({ label, value, presets, onChange }: ColorControlProps) {
         {presets.map((preset) => (
           <button
             aria-label={`Use ${preset} for ${label}`}
+            aria-pressed={preset.toLowerCase() === value.toLowerCase()}
             className={preset.toLowerCase() === value.toLowerCase() ? "swatch is-active" : "swatch"}
             key={preset}
             onClick={() => onChange(preset)}
@@ -478,24 +480,34 @@ function ColorControl({ label, value, presets, onChange }: ColorControlProps) {
   );
 }
 
-export default function AvatarGenerator() {
+export default function AvatarGenerator({ compact = false }: { compact?: boolean }) {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
   const [config, setConfig] = useState<AvatarConfig>(defaultConfig);
   const [exportSize, setExportSize] = useState<ExportSize>(512);
   const [previewUrl, setPreviewUrl] = useState("");
   const [status, setStatus] = useState("Ready to customize.");
+  const [canvasReady, setCanvasReady] = useState(false);
+  const [exportError, setExportError] = useState(false);
 
   useEffect(() => {
     const canvas = canvasRef.current;
-    const ctx = canvas?.getContext("2d");
-    if (!canvas || !ctx) return;
-
-    drawAvatar(ctx, config);
-    setPreviewUrl(canvas.toDataURL("image/png"));
-  }, [config]);
+    try {
+      const ctx = canvas?.getContext("2d");
+      if (!canvas || !ctx) throw new Error("Canvas unavailable");
+      drawAvatar(ctx, config);
+      if (!compact) setPreviewUrl(canvas.toDataURL("image/png"));
+      setCanvasReady(true);
+    } catch {
+      setCanvasReady(false);
+      setExportError(true);
+      setStatus("The preview could not be drawn. Try reloading or switching to the classic game.");
+    }
+  }, [config, compact]);
 
   function updateConfig<T extends keyof AvatarConfig>(key: T, value: AvatarConfig[T]) {
     setConfig((current) => ({ ...current, [key]: value }));
+    setExportError(false);
+    setStatus("Preview updated. Your next download will use these settings.");
   }
 
   function applyPreset(preset: AvatarConfig, presetName: string) {
@@ -515,13 +527,13 @@ export default function AvatarGenerator() {
 
   function createExportCanvas(size: ExportSize) {
     const source = canvasRef.current;
-    if (!source) return null;
+    if (!source) throw new Error("Canvas unavailable");
 
     const output = document.createElement("canvas");
     output.width = size;
     output.height = size;
     const ctx = output.getContext("2d");
-    if (!ctx) return null;
+    if (!ctx) throw new Error("Export unavailable");
 
     ctx.imageSmoothingEnabled = false;
     ctx.drawImage(source, 0, 0, size, size);
@@ -529,14 +541,21 @@ export default function AvatarGenerator() {
   }
 
   function downloadAvatar() {
-    const canvas = createExportCanvas(exportSize);
-    if (!canvas) return;
-
-    const link = document.createElement("a");
-    link.download = `my-square-face-icon-${exportSize}.png`;
-    link.href = canvas.toDataURL("image/png");
-    link.click();
-    setStatus(`Downloaded ${exportSize}x${exportSize} PNG.`);
+    try {
+      const canvas = createExportCanvas(exportSize);
+      const dataUrl = canvas.toDataURL("image/png");
+      if (!dataUrl.startsWith("data:image/png;base64,")) throw new Error("PNG export unavailable");
+      const link = document.createElement("a");
+      link.download = `my-square-face-icon-${exportSize}.png`;
+      link.href = dataUrl;
+      document.body.appendChild(link);
+      try { link.click(); } finally { link.remove(); }
+      setExportError(false);
+      setStatus(`PNG download requested (${exportSize} × ${exportSize}). Check your downloads.`);
+    } catch {
+      setExportError(true);
+      setStatus("PNG export failed. Your settings are kept. Try Download PNG again, or take a screenshot of the preview.");
+    }
   }
 
   async function copyAvatarCaption() {
@@ -552,6 +571,41 @@ export default function AvatarGenerator() {
   }
 
   const previewStyle = previewUrl ? { backgroundImage: `url(${previewUrl})` } : undefined;
+
+  if (compact) {
+    return (
+      <div className="simple-maker" aria-label="Simple avatar editor">
+        <noscript><p>Enable JavaScript to customize an avatar and download a PNG.</p></noscript>
+        <div className="simple-maker-top">
+          <div className="canvas-frame">
+            <canvas aria-label="Simple square avatar preview" height={512} width={512} ref={canvasRef} role="img">Your browser needs Canvas support to show the avatar preview.</canvas>
+          </div>
+          <div className="simple-maker-export">
+            <fieldset className="control-group">
+              <legend>PNG size</legend>
+              <div className="simple-maker-sizes">
+                {exportSizes.map(size => <button type="button" key={size} aria-label={`${size} pixel PNG`} aria-pressed={size === exportSize} onClick={() => setExportSize(size)}>{size}</button>)}
+              </div>
+            </fieldset>
+            <button className="tool-button primary" type="button" disabled={!canvasReady} onClick={downloadAvatar}><Download size={18} aria-hidden="true" />Download PNG</button>
+            <button className="simple-maker-reset" type="button" onClick={() => { resetAvatar(); setExportError(false); }}><RotateCcw size={16} aria-hidden="true" />Reset</button>
+          </div>
+        </div>
+        <p className="simple-maker-status" role="status" data-export-error={exportError}>{status}</p>
+        <div className="simple-maker-options">
+          <label htmlFor="simple-maker-face">Face<select id="simple-maker-face" value={config.face} onChange={event => updateConfig("face", event.target.value as FaceStyle)}>{faceOptions.map(value => <option value={value} key={value}>{value}</option>)}</select></label>
+          <label htmlFor="simple-maker-hair">Hair<select id="simple-maker-hair" value={config.hair} onChange={event => updateConfig("hair", event.target.value as HairStyle)}>{hairOptions.map(value => <option value={value} key={value}>{value}</option>)}</select></label>
+          <label htmlFor="simple-maker-eyes">Eyes<select id="simple-maker-eyes" value={config.eyes} onChange={event => updateConfig("eyes", event.target.value as EyeStyle)}>{eyeOptions.map(value => <option value={value} key={value}>{value}</option>)}</select></label>
+        </div>
+        <div className="simple-maker-colors">
+          <ColorControl label="Skin" value={config.skinColor} presets={skinPalette} onChange={value => updateConfig("skinColor", value)} />
+          <ColorControl label="Hair" value={config.hairColor} presets={hairPalette} onChange={value => updateConfig("hairColor", value)} />
+          <ColorControl label="Background" value={config.backgroundColor} presets={backgroundPalette} onChange={value => updateConfig("backgroundColor", value)} />
+          <ColorControl label="Accent" value={config.accentColor} presets={accentPalette} onChange={value => updateConfig("accentColor", value)} />
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="generator-shell" aria-label="Square face icon generator">

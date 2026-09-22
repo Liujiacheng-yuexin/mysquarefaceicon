@@ -1,0 +1,29 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "jsx": "react-jsx",
+    "noEmit": false,
+    "outDir": ".home-performance-check",
+    "rootDir": ".",
+    "incremental": false,
+    "isolatedModules": false,
+    "declaration": false,
+    "sourceMap": false,
+    "plugins": []
+  },
+  "include": [
+    "components/FlashGenerator.tsx",
+    "components/game/GameControls.tsx",
+    "components/game-player/**/*.ts",
+    "components/game-player/**/*.tsx",
+    "components/home/CoreGamePreview.tsx",
+    "components/home/HomeHero.tsx",
+    "data/games/square-face.ts",
+    "lib/games/**/*.ts",
+    "scripts/validate-home-performance.tsx"
+  ],
+  "exclude": ["node_modules", ".next", ".home-performance-check", "app/sitemap.ts"]
+}

@@ -1,0 +1,10 @@
+{
+  "name": "performance",
+  "command": "node scripts/run-home-performance-check.mjs",
+  "startedAt": "2026-09-22T08:04:03.957Z",
+  "finishedAt": "2026-09-22T08:04:06.306Z",
+  "exitCode": 0,
+  "signal": null,
+  "stdout": "PERF-HOME-001 validation passed\n- the LCP cover is a byte-verified local project asset with truthful intrinsic dimensions\n- initial HTML contains no Ruffle runtime, WASM, or SWF request\n- Ruffle remains conditional on activation and preview/loading/runtime share one reserved surface\n- the loading response is committed before the dynamic adapter mounts after a paint opportunity\n- the service-worker install list does not prefetch Ruffle or SWF assets\n",
+  "stderr": ""
+}

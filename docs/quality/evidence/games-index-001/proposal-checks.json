@@ -1,0 +1,1328 @@
+{
+  "taskId": "GAMES-INDEX-001",
+  "boardVersion": "1.71",
+  "recordedAt": "2026-09-03T14:14:26.356Z",
+  "request": "CONTENT-QA-001 验收通过，现在进行下一步开发",
+  "scope": "PROPOSAL_ONLY",
+  "proposalPath": "docs/product/games-index-directory-proposal.md",
+  "proposalConfirmed": false,
+  "implementationStarted": false,
+  "implementationCompleted": false,
+  "userAcceptanceReceived": false,
+  "sourceAcceptanceCount": 30,
+  "result": "通过（仅文档、源码事实核对与离线看板门禁）",
+  "localOnly": true,
+  "cancelledMaterialTaskReopened": false,
+  "committed": false,
+  "pushed": false,
+  "deployed": false,
+  "verifiedAt": "2026-09-03T14:19:09.352Z",
+  "requiredDecision": "确认 GAMES-INDEX-001 目录页方案，进行开发",
+  "proposalStatus": "待确认",
+  "environment": {
+    "root": "D:/LYXGIT/mysquarefaceicon",
+    "branch": "codex/game-platform-rebuild",
+    "head": "c6d30087c2c03a7c4eb8d5bfe6e055e9b8d40228",
+    "node": "v22.16.0",
+    "platform": "win32",
+    "buildId": "h1IC4O9PXVmRzgZw2n74n"
+  },
+  "currentWebsiteUrlsChanged": [],
+  "proposedScope": {
+    "path": "/games",
+    "canonical": "https://mysquarefaceicon.com/games",
+    "indexStatus": "noindex, follow",
+    "sitemapIncluded": false,
+    "visualDirection": "Existing UI incremental improvement; no new visual style, generated assets or core module reorder",
+    "features": [
+      "Real published record groups and category counts",
+      "Directory entry/return navigation",
+      "Directory-specific social metadata and visible CollectionPage/Breadcrumb schema",
+      "Directory-only ad isolation with separate analytics policy and cross-navigation testing"
+    ],
+    "excluded": [
+      "New games",
+      "Category page redesign/index changes",
+      "Favorites/Recently Played/Related/search",
+      "GameRecord/SWF/License Registry changes",
+      "Commit/push/deploy"
+    ],
+    "unresolvedDesignChoice": "Explicit approval required; Featured duplication omitted with only 3 records, Square stays first as catalog order, not popularity"
+  },
+  "catalog": [
+    {
+      "id": "square-face",
+      "path": "/",
+      "pageType": "GAME"
+    },
+    {
+      "id": "oval-face",
+      "path": "/oval-face-icon-generator",
+      "pageType": "GAME"
+    },
+    {
+      "id": "pixel-art-avatar",
+      "path": "/pixel-art-avatar-icon-generator",
+      "pageType": "EXTERNAL_TOOL"
+    }
+  ],
+  "categories": [
+    {
+      "slug": "face-makers",
+      "count": 2
+    },
+    {
+      "slug": "avatar-makers",
+      "count": 3
+    },
+    {
+      "slug": "pixel-avatars",
+      "count": 1
+    },
+    {
+      "slug": "retro-flash",
+      "count": 2
+    },
+    {
+      "slug": "character-creators",
+      "count": 1
+    }
+  ],
+  "sourceOnlyAdvertisingFinding": {
+    "paths": [
+      "app/layout.tsx",
+      "components/DeferredThirdPartyScripts.tsx"
+    ],
+    "observation": "Global AdSense loader schedules after load + 12 seconds or interaction, without route eligibility",
+    "runtimeNetworkVerified": false,
+    "adFillVerified": false,
+    "fixed": false,
+    "proposal": "Isolate /games from ad loading, including entry from already-loaded documents and browser navigation; preserve separate Analytics policy. Do not claim side effects are cleared by removing script tags."
+  },
+  "contentAcceptanceEvidencePath": "docs/quality/evidence/content-qa-001/acceptance-checks.json",
+  "checks": [
+    {
+      "name": "cancelled_active_file_absent:docs/legal/swf-license-evidence-request.md",
+      "result": "PASS"
+    },
+    {
+      "name": "cancelled_active_file_absent:docs/quality/evidence/license-gate-2026-09-03/checks.json",
+      "result": "PASS"
+    },
+    {
+      "name": "cancelled_active_file_absent:docs/quality/evidence/license-gate-2026-09-03/release-order-confirmation.json",
+      "result": "PASS"
+    },
+    {
+      "name": "all_protected_hashes_match",
+      "result": "PASS",
+      "detail": {
+        "count": 380
+      }
+    },
+    {
+      "name": "build_id_unchanged",
+      "result": "PASS"
+    },
+    {
+      "name": "bounded_after:PAGE_PLAN.md",
+      "result": "PASS"
+    },
+    {
+      "name": "unique_reverse_hunk:PAGE_PLAN.md",
+      "result": "PASS"
+    },
+    {
+      "name": "unique_reverse_hunk:PAGE_PLAN.md",
+      "result": "PASS"
+    },
+    {
+      "name": "reverse_roundtrip:PAGE_PLAN.md",
+      "result": "PASS"
+    },
+    {
+      "name": "bounded_after:LAUNCH_CHECKLIST.md",
+      "result": "PASS"
+    },
+    {
+      "name": "unique_reverse_hunk:LAUNCH_CHECKLIST.md",
+      "result": "PASS"
+    },
+    {
+      "name": "unique_reverse_hunk:LAUNCH_CHECKLIST.md",
+      "result": "PASS"
+    },
+    {
+      "name": "reverse_roundtrip:LAUNCH_CHECKLIST.md",
+      "result": "PASS"
+    },
+    {
+      "name": "bounded_after:docs/quality/evidence/content-qa-001/README.md",
+      "result": "PASS"
+    },
+    {
+      "name": "unique_reverse_hunk:docs/quality/evidence/content-qa-001/README.md",
+      "result": "PASS"
+    },
+    {
+      "name": "reverse_roundtrip:docs/quality/evidence/content-qa-001/README.md",
+      "result": "PASS"
+    },
+    {
+      "name": "bounded_after:SEO_LOG.md",
+      "result": "PASS"
+    },
+    {
+      "name": "unique_reverse_hunk:SEO_LOG.md",
+      "result": "PASS"
+    },
+    {
+      "name": "reverse_roundtrip:SEO_LOG.md",
+      "result": "PASS"
+    },
+    {
+      "name": "bounded_after:F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+      "result": "PASS"
+    },
+    {
+      "name": "unique_reverse_hunk:F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+      "result": "PASS"
+    },
+    {
+      "name": "unique_reverse_hunk:F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+      "result": "PASS"
+    },
+    {
+      "name": "unique_reverse_hunk:F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+      "result": "PASS"
+    },
+    {
+      "name": "unique_reverse_hunk:F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+      "result": "PASS"
+    },
+    {
+      "name": "unique_reverse_hunk:F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+      "result": "PASS"
+    },
+    {
+      "name": "unique_reverse_hunk:F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+      "result": "PASS"
+    },
+    {
+      "name": "unique_reverse_hunk:F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+      "result": "PASS"
+    },
+    {
+      "name": "unique_reverse_hunk:F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+      "result": "PASS"
+    },
+    {
+      "name": "unique_reverse_hunk:F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+      "result": "PASS"
+    },
+    {
+      "name": "unique_reverse_hunk:F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+      "result": "PASS"
+    },
+    {
+      "name": "unique_reverse_hunk:F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+      "result": "PASS"
+    },
+    {
+      "name": "unique_reverse_hunk:F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+      "result": "PASS"
+    },
+    {
+      "name": "unique_reverse_hunk:F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+      "result": "PASS"
+    },
+    {
+      "name": "unique_reverse_hunk:F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+      "result": "PASS"
+    },
+    {
+      "name": "unique_reverse_hunk:F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+      "result": "PASS"
+    },
+    {
+      "name": "reverse_roundtrip:F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+      "result": "PASS"
+    },
+    {
+      "name": "board_javascript_compiles",
+      "result": "PASS"
+    },
+    {
+      "name": "board_styles_preserved",
+      "result": "PASS"
+    },
+    {
+      "name": "roadmap_preserved",
+      "result": "PASS"
+    },
+    {
+      "name": "source_acceptance_count_30",
+      "result": "PASS"
+    },
+    {
+      "name": "prior_source_acceptance:AUDIT-001",
+      "result": "PASS"
+    },
+    {
+      "name": "prior_source_acceptance:BASE-001",
+      "result": "PASS"
+    },
+    {
+      "name": "prior_source_acceptance:LEGAL-001",
+      "result": "PASS"
+    },
+    {
+      "name": "prior_source_acceptance:STRAT-001",
+      "result": "PASS"
+    },
+    {
+      "name": "prior_source_acceptance:BACKUP-001",
+      "result": "PASS"
+    },
+    {
+      "name": "prior_source_acceptance:GAME-DATA-001",
+      "result": "PASS"
+    },
+    {
+      "name": "prior_source_acceptance:PLAYER-001",
+      "result": "PASS"
+    },
+    {
+      "name": "prior_source_acceptance:ROUTE-001",
+      "result": "PASS"
+    },
+    {
+      "name": "prior_source_acceptance:COMP-001",
+      "result": "PASS"
+    },
+    {
+      "name": "prior_source_acceptance:META-001",
+      "result": "PASS"
+    },
+    {
+      "name": "prior_source_acceptance:HOME-IA-001",
+      "result": "PASS"
+    },
+    {
+      "name": "prior_source_acceptance:HOME-HERO-001",
+      "result": "PASS"
+    },
+    {
+      "name": "prior_source_acceptance:HOME-DISC-001",
+      "result": "PASS"
+    },
+    {
+      "name": "prior_source_acceptance:HOME-GALLERY-001",
+      "result": "PASS"
+    },
+    {
+      "name": "prior_source_acceptance:PERF-HOME-001",
+      "result": "PASS"
+    },
+    {
+      "name": "prior_source_acceptance:GAME-TPL-001",
+      "result": "PASS"
+    },
+    {
+      "name": "prior_source_acceptance:OP-11",
+      "result": "PASS"
+    },
+    {
+      "name": "prior_source_acceptance:AI-01",
+      "result": "PASS"
+    },
+    {
+      "name": "prior_source_acceptance:KW-02-SAMPLE",
+      "result": "PASS"
+    },
+    {
+      "name": "prior_source_acceptance:KW-02",
+      "result": "PASS"
+    },
+    {
+      "name": "prior_source_acceptance:PF-01",
+      "result": "PASS"
+    },
+    {
+      "name": "prior_source_acceptance:TERMS-001",
+      "result": "PASS"
+    },
+    {
+      "name": "prior_source_acceptance:ABOUT-001",
+      "result": "PASS"
+    },
+    {
+      "name": "prior_source_acceptance:EDITORIAL-001",
+      "result": "PASS"
+    },
+    {
+      "name": "prior_source_acceptance:GALLERY-001",
+      "result": "PASS"
+    },
+    {
+      "name": "prior_source_acceptance:LOCALE-001",
+      "result": "PASS"
+    },
+    {
+      "name": "prior_source_acceptance:MIG-SQUARE-001",
+      "result": "PASS"
+    },
+    {
+      "name": "prior_source_acceptance:MIG-OVAL-001",
+      "result": "PASS"
+    },
+    {
+      "name": "prior_source_acceptance:MIG-PIXEL-001",
+      "result": "PASS"
+    },
+    {
+      "name": "explicit_content_acceptance_exact",
+      "result": "PASS"
+    },
+    {
+      "name": "no_directory_acceptance_forged",
+      "result": "PASS"
+    },
+    {
+      "name": "accepted_content_update_exact",
+      "result": "PASS"
+    },
+    {
+      "name": "directory_proposal_update_exact",
+      "result": "PASS"
+    },
+    {
+      "name": "all_other_task_updates_preserved",
+      "result": "PASS"
+    },
+    {
+      "name": "old_quality_and_cancellation_records_preserved",
+      "result": "PASS"
+    },
+    {
+      "name": "current_request_scope_exact",
+      "result": "PASS"
+    },
+    {
+      "name": "proposal_validation_scope_exact",
+      "result": "PASS"
+    },
+    {
+      "name": "cancelled_gate_inactive",
+      "result": "PASS"
+    },
+    {
+      "name": "no_materials_request",
+      "result": "PASS"
+    },
+    {
+      "name": "default_directory_focus",
+      "result": "PASS"
+    },
+    {
+      "name": "default_week_five",
+      "result": "PASS"
+    },
+    {
+      "name": "directory_proposal_not_implemented",
+      "result": "PASS"
+    },
+    {
+      "name": "content_source_acceptance_applied",
+      "result": "PASS"
+    },
+    {
+      "name": "all_source_acceptances_loaded",
+      "result": "PASS"
+    },
+    {
+      "name": "other_week_five_tasks_not_started",
+      "result": "PASS"
+    },
+    {
+      "name": "static_focus_exists:focusStatus",
+      "result": "PASS"
+    },
+    {
+      "name": "static_dynamic_focus:focusStatus",
+      "result": "PASS"
+    },
+    {
+      "name": "static_focus_exists:focusId",
+      "result": "PASS"
+    },
+    {
+      "name": "static_dynamic_focus:focusId",
+      "result": "PASS"
+    },
+    {
+      "name": "static_focus_exists:focusTitle",
+      "result": "PASS"
+    },
+    {
+      "name": "static_dynamic_focus:focusTitle",
+      "result": "PASS"
+    },
+    {
+      "name": "static_focus_exists:focusGoal",
+      "result": "PASS"
+    },
+    {
+      "name": "static_dynamic_focus:focusGoal",
+      "result": "PASS"
+    },
+    {
+      "name": "static_focus_exists:focusNext",
+      "result": "PASS"
+    },
+    {
+      "name": "static_dynamic_focus:focusNext",
+      "result": "PASS"
+    },
+    {
+      "name": "static_focus_exists:focusEvidence",
+      "result": "PASS"
+    },
+    {
+      "name": "static_dynamic_focus:focusEvidence",
+      "result": "PASS"
+    },
+    {
+      "name": "static_focus_exists:gateNote",
+      "result": "PASS"
+    },
+    {
+      "name": "static_dynamic_focus:gateNote",
+      "result": "PASS"
+    },
+    {
+      "name": "unconfirmed_proposal_actions_disabled",
+      "result": "PASS"
+    },
+    {
+      "name": "proposal_cannot_be_accepted_by_button",
+      "result": "PASS"
+    },
+    {
+      "name": "detail_links_proposal",
+      "result": "PASS"
+    },
+    {
+      "name": "prompt_enforces_confirmation",
+      "result": "PASS"
+    },
+    {
+      "name": "accepted_content_prompt_does_not_request_reacceptance",
+      "result": "PASS"
+    },
+    {
+      "name": "accepted_content_detail_gate",
+      "result": "PASS"
+    },
+    {
+      "name": "cancelled_gate_does_not_hijack_template",
+      "result": "PASS"
+    },
+    {
+      "name": "oval_full_migration_still_deferred",
+      "result": "PASS"
+    },
+    {
+      "name": "pixel_prompt_preserves_cancellation",
+      "result": "PASS"
+    },
+    {
+      "name": "directory_row_visible",
+      "result": "PASS"
+    },
+    {
+      "name": "status_handler_exercised",
+      "result": "PASS"
+    },
+    {
+      "name": "proposal_status_gate:开发中",
+      "result": "PASS"
+    },
+    {
+      "name": "proposal_status_gate:待验收",
+      "result": "PASS"
+    },
+    {
+      "name": "proposal_status_gate:已完成",
+      "result": "PASS"
+    },
+    {
+      "name": "checkbox_handler_exercised",
+      "result": "PASS"
+    },
+    {
+      "name": "proposal_checkbox_cannot_complete",
+      "result": "PASS"
+    },
+    {
+      "name": "stale_proposal_state:cached_completed",
+      "result": "PASS"
+    },
+    {
+      "name": "content_acceptance_wins:cached_completed",
+      "result": "PASS"
+    },
+    {
+      "name": "stale_directory_acceptance_removed:cached_completed",
+      "result": "PASS"
+    },
+    {
+      "name": "pixel_acceptance_preserved:cached_completed",
+      "result": "PASS"
+    },
+    {
+      "name": "stale_proposal_state:cached_developing",
+      "result": "PASS"
+    },
+    {
+      "name": "content_acceptance_wins:cached_developing",
+      "result": "PASS"
+    },
+    {
+      "name": "stale_directory_acceptance_removed:cached_developing",
+      "result": "PASS"
+    },
+    {
+      "name": "pixel_acceptance_preserved:cached_developing",
+      "result": "PASS"
+    },
+    {
+      "name": "stale_proposal_state:cached_review",
+      "result": "PASS"
+    },
+    {
+      "name": "content_acceptance_wins:cached_review",
+      "result": "PASS"
+    },
+    {
+      "name": "stale_directory_acceptance_removed:cached_review",
+      "result": "PASS"
+    },
+    {
+      "name": "pixel_acceptance_preserved:cached_review",
+      "result": "PASS"
+    },
+    {
+      "name": "stale_proposal_state:stale_content_pending",
+      "result": "PASS"
+    },
+    {
+      "name": "content_acceptance_wins:stale_content_pending",
+      "result": "PASS"
+    },
+    {
+      "name": "stale_directory_acceptance_removed:stale_content_pending",
+      "result": "PASS"
+    },
+    {
+      "name": "pixel_acceptance_preserved:stale_content_pending",
+      "result": "PASS"
+    },
+    {
+      "name": "stale_proposal_state:cached_content_return",
+      "result": "PASS"
+    },
+    {
+      "name": "content_acceptance_wins:cached_content_return",
+      "result": "PASS"
+    },
+    {
+      "name": "stale_directory_acceptance_removed:cached_content_return",
+      "result": "PASS"
+    },
+    {
+      "name": "pixel_acceptance_preserved:cached_content_return",
+      "result": "PASS"
+    },
+    {
+      "name": "stale_proposal_state:cancelled_gate_cache",
+      "result": "PASS"
+    },
+    {
+      "name": "content_acceptance_wins:cancelled_gate_cache",
+      "result": "PASS"
+    },
+    {
+      "name": "stale_directory_acceptance_removed:cancelled_gate_cache",
+      "result": "PASS"
+    },
+    {
+      "name": "pixel_acceptance_preserved:cancelled_gate_cache",
+      "result": "PASS"
+    },
+    {
+      "name": "malformed_cache_safe",
+      "result": "PASS"
+    },
+    {
+      "name": "reset_restores_current_focus",
+      "result": "PASS"
+    },
+    {
+      "name": "reset_restores_week_five",
+      "result": "PASS"
+    },
+    {
+      "name": "reset_keeps_30_source_acceptances",
+      "result": "PASS"
+    },
+    {
+      "name": "export_version_171",
+      "result": "PASS"
+    },
+    {
+      "name": "export_keeps_30_acceptances",
+      "result": "PASS"
+    },
+    {
+      "name": "export_proposal_pending",
+      "result": "PASS"
+    },
+    {
+      "name": "export_gate_cancelled",
+      "result": "PASS"
+    },
+    {
+      "name": "weekly_report_current_task",
+      "result": "PASS"
+    },
+    {
+      "name": "real_source_proposal_not_implemented",
+      "result": "PASS"
+    },
+    {
+      "name": "three_published_legacy_paths",
+      "result": "PASS"
+    },
+    {
+      "name": "two_on_site_one_external",
+      "result": "PASS"
+    },
+    {
+      "name": "actual_overlapping_category_counts",
+      "result": "PASS"
+    },
+    {
+      "name": "no_new_game_added",
+      "result": "PASS"
+    },
+    {
+      "name": "license_facts_preserved",
+      "result": "PASS"
+    },
+    {
+      "name": "existing_directory_noindex_canonical_source",
+      "result": "PASS"
+    },
+    {
+      "name": "advertising_source_finding_not_runtime_validation",
+      "result": "PASS"
+    },
+    {
+      "name": "proposal_boundary:方案待确认",
+      "result": "PASS"
+    },
+    {
+      "name": "proposal_boundary:尚未实施",
+      "result": "PASS"
+    },
+    {
+      "name": "proposal_boundary:noindex, follow",
+      "result": "PASS"
+    },
+    {
+      "name": "proposal_boundary:View source and access details",
+      "result": "PASS"
+    },
+    {
+      "name": "proposal_boundary:2 entries",
+      "result": "PASS"
+    },
+    {
+      "name": "proposal_boundary:1 entry",
+      "result": "PASS"
+    },
+    {
+      "name": "proposal_boundary:不再重复铺 Featured",
+      "result": "PASS"
+    },
+    {
+      "name": "proposal_boundary:adEligible: false",
+      "result": "PASS"
+    },
+    {
+      "name": "proposal_boundary:12 秒",
+      "result": "PASS"
+    },
+    {
+      "name": "proposal_boundary:整页导航",
+      "result": "PASS"
+    },
+    {
+      "name": "proposal_boundary:不是 Google",
+      "result": "PASS"
+    },
+    {
+      "name": "proposal_boundary:KW-04",
+      "result": "PASS"
+    },
+    {
+      "name": "proposal_boundary:LICENSE-GATE",
+      "result": "PASS"
+    },
+    {
+      "name": "proposal_boundary:不催件",
+      "result": "PASS"
+    },
+    {
+      "name": "proposal_boundary:确认 GAMES-INDEX-001 目录页方案，进行开发",
+      "result": "PASS"
+    },
+    {
+      "name": "local_document_link:docs/product/games-index-directory-proposal.md -> ../../app/games/page.tsx",
+      "result": "PASS"
+    },
+    {
+      "name": "local_document_link:docs/product/games-index-directory-proposal.md -> ../../lib/games/routes.ts",
+      "result": "PASS"
+    },
+    {
+      "name": "local_document_link:docs/product/games-index-directory-proposal.md -> ../content/game-page-quality-standard.md",
+      "result": "PASS"
+    },
+    {
+      "name": "local_document_link:docs/product/games-index-directory-proposal.md -> ../../app/layout.tsx",
+      "result": "PASS"
+    },
+    {
+      "name": "local_document_link:docs/product/games-index-directory-proposal.md -> ../../components/DeferredThirdPartyScripts.tsx",
+      "result": "PASS"
+    },
+    {
+      "name": "local_document_link:PAGE_PLAN.md -> docs/quality/evidence/content-qa-001/acceptance-checks.json",
+      "result": "PASS"
+    },
+    {
+      "name": "local_document_link:PAGE_PLAN.md -> docs/product/games-index-directory-proposal.md",
+      "result": "PASS"
+    },
+    {
+      "name": "local_document_link:LAUNCH_CHECKLIST.md -> docs/quality/evidence/content-qa-001/acceptance-checks.json",
+      "result": "PASS"
+    },
+    {
+      "name": "local_document_link:LAUNCH_CHECKLIST.md -> docs/product/games-index-directory-proposal.md",
+      "result": "PASS"
+    },
+    {
+      "name": "local_document_link:LAUNCH_CHECKLIST.md -> RULES.md",
+      "result": "PASS"
+    },
+    {
+      "name": "local_document_link:LAUNCH_CHECKLIST.md -> QUALITY_STANDARD.md",
+      "result": "PASS"
+    },
+    {
+      "name": "local_document_link:docs/quality/evidence/content-qa-001/README.md -> checks.json",
+      "result": "PASS"
+    },
+    {
+      "name": "local_document_link:docs/quality/evidence/content-qa-001/README.md -> acceptance-checks.json",
+      "result": "PASS"
+    },
+    {
+      "name": "local_document_link:docs/quality/evidence/content-qa-001/README.md -> ../../../product/games-index-directory-proposal.md",
+      "result": "PASS"
+    },
+    {
+      "name": "local_document_link:docs/quality/evidence/content-qa-001/README.md -> ../../../content/game-page-quality-standard.md",
+      "result": "PASS"
+    },
+    {
+      "name": "local_document_link:docs/quality/evidence/content-qa-001/README.md -> ../../../content/game-page-review-template.md",
+      "result": "PASS"
+    },
+    {
+      "name": "acceptance_evidence_matches_source",
+      "result": "PASS"
+    },
+    {
+      "name": "original_QA_hash_in_acceptance",
+      "result": "PASS"
+    },
+    {
+      "name": "proposal_evidence_does_not_claim_implementation",
+      "result": "PASS"
+    },
+    {
+      "name": "head_unchanged",
+      "result": "PASS"
+    },
+    {
+      "name": "branch_unchanged",
+      "result": "PASS"
+    },
+    {
+      "name": "git_diff_check:D:/LYXGIT/mysquarefaceicon",
+      "result": "PASS",
+      "detail": {
+        "exitCode": 0
+      }
+    },
+    {
+      "name": "git_diff_check:F:/LYXGIT/Liu-library",
+      "result": "PASS",
+      "detail": {
+        "exitCode": 0
+      }
+    }
+  ],
+  "counts": {
+    "assertions": 194,
+    "sourceAcceptances": 30,
+    "priorAcceptancesPreserved": 29,
+    "staleCacheFixtures": 6,
+    "localDocumentLinks": 16,
+    "externalPrimarySources": 2,
+    "source": 154,
+    "historical-json": 26,
+    "screenshot-path": 173,
+    "artifact": 18,
+    "swf": 2,
+    "registry": 1,
+    "cancelled-archive": 3,
+    "accepted-standard": 1,
+    "accepted-template": 1,
+    "content-plan": 1
+  },
+  "governance": {
+    "authority": "F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+    "sourceAcceptanceCount": 30,
+    "previousAcceptancesPreserved": 29,
+    "sourceAcceptance": {
+      "result": "通过",
+      "scope": "CONTENT_STANDARD_ONLY",
+      "acceptedAt": "2026-09-03T14:14:26.356Z",
+      "source": "用户明确回复“CONTENT-QA-001 验收通过”，并要求“现在进行下一步开发”",
+      "localOnly": true,
+      "note": "仅验收 v1.70 的游戏内容标准与审核模板；不等于三页事实复审、自动内容门禁、实际许可或生产通过。原 QA 日期及 29 条既有验收保留。按当前指令只准备 GAMES-INDEX-001 目录方案，确认前不编码或部署。",
+      "evidencePath": "docs/quality/evidence/content-qa-001/acceptance-checks.json"
+    },
+    "proposalOnlyUpdate": {
+      "status": "设计中",
+      "updatedAt": "2026-09-03T14:14:26.356Z",
+      "scope": "LOCAL_DIRECTORY_NOINDEX",
+      "stage": "PROPOSAL_PENDING",
+      "localOnly": true,
+      "request": "CONTENT-QA-001 验收通过，现在进行下一步开发",
+      "proposalRequired": true,
+      "proposalStatus": "待确认",
+      "proposalPath": "docs/product/games-index-directory-proposal.md",
+      "proposalConfirmed": false,
+      "proposalConfirmation": "确认 GAMES-INDEX-001 目录页方案，进行开发",
+      "proposalNext": "请阅读 docs/product/games-index-directory-proposal.md，并回复“确认 GAMES-INDEX-001 目录页方案，进行开发”。本次只准备方案：沿用现有目录样式，2 个本站条目 + 1 个 External Tool，保持 noindex；确认前不编码，不开始分类/收藏等任务或部署。",
+      "implementationStarted": false,
+      "implementationCompleted": false,
+      "userAcceptanceReceived": false,
+      "focusTitle": "完善 /games 游戏目录（方案待确认）",
+      "focusGoal": "把现有 3 条记录组织成可往返的目录入口；明确本站/External、真实数量和广告边界，保留 URL 与 noindex，不扩展游戏或其他发现功能。",
+      "evidence": "v1.71：CONTENT-QA-001 已按用户明确回复验收，源验收增至 30 条；GAMES-INDEX-001 仅完成现有代码核对与目录方案，尚未实施。方案包含真实分组与分类计数、目录往返入口、独立分享 metadata/schema、noindex 保持及目录广告隔离；未虚构可玩性、热度或权利。文档/链接与看板离线 VM 验证见 docs/quality/evidence/games-index-001/proposal-checks.json。应用、历史 QA 与构建产物保留；本轮未重跑应用 type/lint/tests/build/浏览器/SEO/CWV 或部署；LICENSE-GATE 材料任务继续取消。",
+      "evidencePath": "docs/quality/evidence/games-index-001/proposal-checks.json",
+      "proposalEvidencePath": "docs/quality/evidence/games-index-001/proposal-checks.json",
+      "acceptanceScope": "LOCAL_DIRECTORY_NOINDEX",
+      "releaseStatus": "不通过 / 未部署；原未关闭 P0 与本轮未验证项保留"
+    },
+    "currentWork": {
+      "taskId": "GAMES-INDEX-001",
+      "status": "设计中 / 方案待确认",
+      "requestedAt": "2026-09-03T14:14:26.356Z",
+      "request": "CONTENT-QA-001 验收通过，现在进行下一步开发",
+      "scope": "PROPOSAL_ONLY",
+      "instructionBoundary": "用户验收 CONTENT-QA-001 并要求下一项；仅准备本地目录方案，明确确认前不编码。取消的材料任务不恢复，不把旧部署顺序作为当前自动部署指令。",
+      "proposalPath": "docs/product/games-index-directory-proposal.md",
+      "evidencePath": "docs/quality/evidence/games-index-001/proposal-checks.json",
+      "deployed": false,
+      "implementationStarted": false,
+      "otherTasksStarted": false,
+      "cancelledMaterialTaskReopened": false
+    },
+    "changedExistingFiles": [
+      {
+        "path": "PAGE_PLAN.md",
+        "beforeSha256": "86bb25ac1257b26ffd8e4a2e282f57237c884caa87efa516d8c24cd95bd8a05e",
+        "afterSha256": "497d76b38f47b76cb81159ef2af68d06ba0664c972db4a2d74118286708b21ec"
+      },
+      {
+        "path": "LAUNCH_CHECKLIST.md",
+        "beforeSha256": "e9bb1b10d3a7db3fb5dbec97735c60425f9beec6a7edcc7cf4f2be88548c126a",
+        "afterSha256": "106f3267975be771f22f6c1a39970b7c8ff3874c9e0761b73b2c4d3b376bc080"
+      },
+      {
+        "path": "docs/quality/evidence/content-qa-001/README.md",
+        "beforeSha256": "ff0bd0b26d33ab3844db86b5bf58b8c17a2a613f751bca86dd03b65604494be6",
+        "afterSha256": "21d0aa3528cb0ce2a8a7d8f9349ffa93e2480e30667edb09750052e15467180c"
+      },
+      {
+        "path": "SEO_LOG.md",
+        "beforeSha256": "806cffad004914a4fb69c7b308305d1775070e9c3df67f4fbea8781b9110ab8e",
+        "afterSha256": "8d7d14e9d2502309029eb4c4e28e00096cd2222a59ffb4624ad5b51b1650645a"
+      },
+      {
+        "path": "F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+        "beforeSha256": "5b110595601271710571bbf3bb95b466385c5e0cf73c439e09587c824f40e9e4",
+        "afterSha256": "2f83efba79019fea4fef160210eca6ec340bb33fb0951e01ab9cc9e89fa520eb"
+      }
+    ],
+    "exactHunks": [
+      {
+        "file": "PAGE_PLAN.md",
+        "old": "# PAGE_PLAN.md",
+        "new": "# PAGE_PLAN.md\n\n> 当前 v1.71 · 2026-09-03：用户明确验收 CONTENT-QA-001，新增第 30 条源验收；规范与模板通过不等于三页事实复审或发布通过。验收证据：[acceptance-checks.json](docs/quality/evidence/content-qa-001/acceptance-checks.json)。\n> 下一项 GAMES-INDEX-001 仅准备 [目录页方案](docs/product/games-index-directory-proposal.md)，待明确确认；沿用现有布局、3 条真实记录和 noindex，提出目录导航/metadata/广告边界改进。尚未修改网站代码或部署；其它任务不启动，LICENSE-GATE 材料任务保持取消，UNKNOWN 与原风险保留。"
+      },
+      {
+        "file": "PAGE_PLAN.md",
+        "old": "> 当前 v1.70 · 2026-09-03：",
+        "new": "> v1.70 历史标准交付记录（当时待验收）· 2026-09-03："
+      },
+      {
+        "file": "LAUNCH_CHECKLIST.md",
+        "old": "# LAUNCH_CHECKLIST.md · v2.1 证据清单",
+        "new": "# LAUNCH_CHECKLIST.md · v2.1 证据清单\n\n> 当前 v1.71 · 2026-09-03：用户明确验收 CONTENT-QA-001，新增第 30 条源验收；规范与模板通过不等于三页事实复审或发布通过。验收证据：[acceptance-checks.json](docs/quality/evidence/content-qa-001/acceptance-checks.json)。\n> 下一项 GAMES-INDEX-001 仅准备 [目录页方案](docs/product/games-index-directory-proposal.md)，待明确确认；沿用现有布局、3 条真实记录和 noindex，提出目录导航/metadata/广告边界改进。尚未修改网站代码或部署；其它任务不启动，LICENSE-GATE 材料任务保持取消，UNKNOWN 与原风险保留。"
+      },
+      {
+        "file": "LAUNCH_CHECKLIST.md",
+        "old": "> 当前 v1.70 · 2026-09-03：",
+        "new": "> v1.70 历史标准交付记录（当时待验收）· 2026-09-03："
+      },
+      {
+        "file": "docs/quality/evidence/content-qa-001/README.md",
+        "old": "# CONTENT-QA-001 · 游戏内容事实核验标准",
+        "new": "# CONTENT-QA-001 · 游戏内容事实核验标准\n\n> v1.71 · 2026-09-03 用户明确回复“CONTENT-QA-001 验收通过”，已登记第 30 条源验收。仅验收标准与模板，原 [checks.json](checks.json) 不改写；新增 [验收记录](acceptance-checks.json)。\n> 用户同时要求下一项，当前只准备 [GAMES-INDEX-001 目录方案](../../../product/games-index-directory-proposal.md)，确认前不编码或部署。以下为 v1.70 原始交付记录，其中“当前/待验收/不启动 Week 5”仅指当时，不撤销本次明确验收。"
+      },
+      {
+        "file": "SEO_LOG.md",
+        "old": "| 2026-09-03 | Established CONTENT-QA-001 game-content fact-review standard and reusable single-page worksheet | Local standards/governance only; no website URL, UI, index or production SEO change | CT-01/02/03/05/06, FAQ evidence, actual GameRecord fields, External/mobile boundaries; no fixed 800-word gate or invented qualityScore | 14 field groups; document/link/field checks and offline board VM; 154 source/check/config, 25 historical JSON, 173 screenshot paths, 18 artifacts and 29 source acceptances preserved. Original QA dates retained; no fresh application type/lint/test/build/HTTP/SEO/browser/mobile/CWV claims | Board v1.70 pending CONTENT-QA-001 acceptance. LICENSE-GATE material request stays cancelled, UNKNOWN remains factual. No runtime content gate, full-page content certification, commit/push/deploy/seo:prod or Week 5 work. Evidence: docs/quality/evidence/content-qa-001/checks.json |",
+        "new": "| 2026-09-03 | Established CONTENT-QA-001 game-content fact-review standard and reusable single-page worksheet | Local standards/governance only; no website URL, UI, index or production SEO change | CT-01/02/03/05/06, FAQ evidence, actual GameRecord fields, External/mobile boundaries; no fixed 800-word gate or invented qualityScore | 14 field groups; document/link/field checks and offline board VM; 154 source/check/config, 25 historical JSON, 173 screenshot paths, 18 artifacts and 29 source acceptances preserved. Original QA dates retained; no fresh application type/lint/test/build/HTTP/SEO/browser/mobile/CWV claims | Board v1.70 pending CONTENT-QA-001 acceptance. LICENSE-GATE material request stays cancelled, UNKNOWN remains factual. No runtime content gate, full-page content certification, commit/push/deploy/seo:prod or Week 5 work. Evidence: docs/quality/evidence/content-qa-001/checks.json |\n| 2026-09-03 | Accepted CONTENT-QA-001 standards; prepared GAMES-INDEX-001 directory proposal | Governance/proposal only; no website code, URL, index or production change | Keep /games noindex/self-canonical and real 2 on-site + 1 external entries; propose navigation, route-specific social metadata/schema and ad isolation | Document/link and offline board VM checks; original standards, application, 26 historical JSON and prior QA/build artifacts preserved. No fresh app type/lint/test/Next/OpenNext/HTTP/SEO/browser/mobile/CWV results | Board v1.71: 30 source acceptances, directory proposal pending explicit confirmation; other tasks unstarted. Cancelled material task stays cancelled, UNKNOWN/P0 not cleared; no commit/push/deploy/seo:prod. Evidence: docs/quality/evidence/content-qa-001/acceptance-checks.json and docs/quality/evidence/games-index-001/proposal-checks.json |"
+      },
+      {
+        "file": "F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+        "old": "    <div class=\"focusTop\"><h2>当前任务</h2><span class=\"badge\" id=\"focusStatus\">待验收</span></div>",
+        "new": "    <div class=\"focusTop\"><h2>当前任务</h2><span class=\"badge\" id=\"focusStatus\">设计中</span></div>"
+      },
+      {
+        "file": "F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+        "old": "    <div class=\"focusId\" id=\"focusId\">CONTENT-QA-001</div><div class=\"focusTitle\" id=\"focusTitle\">建立游戏页面独特内容规则（标准与模板待验收）</div>",
+        "new": "    <div class=\"focusId\" id=\"focusId\">GAMES-INDEX-001</div><div class=\"focusTitle\" id=\"focusTitle\">完善 /games 游戏目录（方案待确认）</div>"
+      },
+      {
+        "file": "F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+        "old": "    <div class=\"dlabel\">目标</div><p class=\"dcopy\" id=\"focusGoal\">把独有价值、controls/how-to/tips/mobile/source/FAQ 和 AI 草稿人类复核落到可复制的逐条证据流程。</p>",
+        "new": "    <div class=\"dlabel\">目标</div><p class=\"dcopy\" id=\"focusGoal\">把现有 3 条记录组织成可往返的目录入口；明确本站/External、真实数量和广告边界，保留 URL 与 noindex，不扩展游戏或其他发现功能。</p>"
+      },
+      {
+        "file": "F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+        "old": "    <div class=\"dlabel\">下一步</div><p class=\"dcopy\" id=\"focusNext\">请查看游戏内容标准与单页审核模板，并回复“CONTENT-QA-001 验收通过”。本轮只验收规范与模板，不代表三页已完成事实复审；验收前不开始下一项或部署。</p>",
+        "new": "    <div class=\"dlabel\">下一步</div><p class=\"dcopy\" id=\"focusNext\">请阅读 docs/product/games-index-directory-proposal.md，并回复“确认 GAMES-INDEX-001 目录页方案，进行开发”。本次只准备方案：沿用现有目录样式，2 个本站条目 + 1 个 External Tool，保持 noindex；确认前不编码，不开始分类/收藏等任务或部署。</p>"
+      },
+      {
+        "file": "F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+        "old": "    <div class=\"dlabel\">完成证据</div><p class=\"dcopy evidence-box\" id=\"focusEvidence\">v1.70：按用户“继续进行开发”完成 CONTENT-QA-001 文档交付：独立价值、14 组实际字段核验、FAQ/移动/来源边界、AI 草稿人类复核与单页审核模板；不新增自动发布或事实认证代码。文档/引用/字段与看板离线 VM 已核对，原 154 项源码/检查/配置、25 份历史 JSON、173 个截图路径、18 个构建产物和 29 条源验收保留。原 QA 日期不刷新；未重跑应用 type/lint/tests/build/Browser/SEO/CWV。LICENSE-GATE 材料任务保持取消，UNKNOWN 不改写；未提交、推送、部署或开始 Week 5。</p>",
+        "new": "    <div class=\"dlabel\">完成证据</div><p class=\"dcopy evidence-box\" id=\"focusEvidence\">v1.71：CONTENT-QA-001 已按用户明确回复验收，源验收增至 30 条；GAMES-INDEX-001 仅完成现有代码核对与目录方案，尚未实施。方案包含真实分组与分类计数、目录往返入口、独立分享 metadata/schema、noindex 保持及目录广告隔离；未虚构可玩性、热度或权利。文档/链接与看板离线 VM 验证见 docs/quality/evidence/games-index-001/proposal-checks.json。应用、历史 QA 与构建产物保留；本轮未重跑应用 type/lint/tests/build/浏览器/SEO/CWV 或部署；LICENSE-GATE 材料任务继续取消。</p>"
+      },
+      {
+        "file": "F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+        "old": "    <div class=\"acceptanceActions\"><button class=\"btn primary\" id=\"acceptBtn\">验收通过</button><button class=\"btn\" id=\"reviseBtn\">退回开发</button></div>",
+        "new": "    <div class=\"acceptanceActions\"><button class=\"btn primary\" id=\"acceptBtn\" disabled>验收通过</button><button class=\"btn\" id=\"reviseBtn\" disabled>退回开发</button></div>"
+      },
+      {
+        "file": "F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+        "old": "    <p class=\"gate-note\" id=\"gateNote\">等待用户人工验收；不会自动进入下一任务。</p>",
+        "new": "    <p class=\"gate-note\" id=\"gateNote\">核心模块方案待用户明确确认；确认前不编码。</p>"
+      },
+      {
+        "file": "F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+        "old": "    <p class=\"quality-note\">v1.70：CONTENT-QA-001 标准与模板待验收，14 组字段按证据核验，AI 草稿须有人类复核。本轮不改应用、不重测页面或发布；29 条验收与原 QA 保留。LICENSE-GATE 材料任务继续取消，不催件，不把 UNKNOWN 或原发布风险记作通过。</p>",
+        "new": "    <p class=\"quality-note\">v1.71：CONTENT-QA-001 标准与模板已验收，现有 30 条源验收；GAMES-INDEX-001 目录方案待确认。仅准备真实条目/导航/metadata/广告隔离方案，尚未实施或重跑应用 QA。材料任务继续取消；UNKNOWN、旧 P0 与未验证项不因局部验收关闭。</p>"
+      },
+      {
+        "file": "F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+        "old": "    <li>29 条源验收保持；LICENSE-GATE 材料补充计划已取消并归档，不再催交或重建。当前仅 CONTENT-QA-001 标准待验收，UNKNOWN 与其它未关闭风险保留；未部署，Week 5 未开始。</li>",
+        "new": "    <li>30 条源验收保留；CONTENT-QA-001 规范已验收，不代表网站全部内容已复审。当前仅目录方案待确认，其他任务未启动；LICENSE-GATE 材料计划保持取消，UNKNOWN 与原 P0/广告/生产风险未清除，未部署。</li>"
+      },
+      {
+        "file": "F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+        "old": "版本 1.70 · 2026-09-03",
+        "new": "版本 1.71 · 2026-09-03"
+      },
+      {
+        "file": "F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+        "old": "const BUILTIN=",
+        "new": "// v1.71: explicit content-standard acceptance and proposal-only directory work; cancellation and historical QA remain unchanged.\nSOURCE_ACCEPTANCE[\"CONTENT-QA-001\"]={\"result\":\"通过\",\"scope\":\"CONTENT_STANDARD_ONLY\",\"acceptedAt\":\"2026-09-03T14:14:26.356Z\",\"source\":\"用户明确回复“CONTENT-QA-001 验收通过”，并要求“现在进行下一步开发”\",\"localOnly\":true,\"note\":\"仅验收 v1.70 的游戏内容标准与审核模板；不等于三页事实复审、自动内容门禁、实际许可或生产通过。原 QA 日期及 29 条既有验收保留。按当前指令只准备 GAMES-INDEX-001 目录方案，确认前不编码或部署。\",\"evidencePath\":\"docs/quality/evidence/content-qa-001/acceptance-checks.json\"};\nTASK_UPDATES[\"CONTENT-QA-001\"]={\"status\":\"已完成\",\"updatedAt\":\"2026-09-03T14:14:26.356Z\",\"scope\":\"CONTENT_STANDARD_ONLY\",\"localOnly\":true,\"request\":\"继续进行开发\",\"proposalRequired\":false,\"proposalReason\":\"仅文档与治理交付，不新增页面或改变布局、URL、索引、搜索意图及模块顺序。\",\"implementationStarted\":true,\"implementationCompleted\":true,\"userAcceptanceReceived\":true,\"focusTitle\":\"游戏页面独特内容规则（标准与模板已验收）\",\"focusGoal\":\"把独有价值、controls/how-to/tips/mobile/source/FAQ 和 AI 草稿人类复核落到可复制的逐条证据流程。\",\"deliverablePath\":\"docs/content/game-page-quality-standard.md\",\"templatePath\":\"docs/content/game-page-review-template.md\",\"evidence\":\"v1.71：用户明确验收 CONTENT-QA-001，新增第 30 条源验收；标准/模板及 v1.70 checks.json 保持原字节与验证日期。之前 29 条验收、应用与原 QA 保留，未把规范验收当作页面事实认证或发布通过。按当前“下一步开发”指令仅准备 GAMES-INDEX-001 目录方案，等待确认；材料任务仍取消，未部署。\",\"evidencePath\":\"docs/quality/evidence/content-qa-001/acceptance-checks.json\",\"readmePath\":\"docs/quality/evidence/content-qa-001/README.md\",\"acceptanceScope\":\"CONTENT_STANDARD_ONLY\",\"acceptanceNotBefore\":\"2026-09-03T13:42:25.273Z\",\"acceptanceNext\":\"CONTENT-QA-001 已验收，无需重复验收。当前下一项为 GAMES-INDEX-001 目录页方案待确认；确认前不编码、部署或推进其他任务。\",\"acceptancePrompt\":\"CONTENT-QA-001 验收通过\",\"releaseStatus\":\"未部署 / 未新增发布验证；原未关闭风险保留\",\"acceptedAt\":\"2026-09-03T14:14:26.356Z\",\"implementationEvidencePath\":\"docs/quality/evidence/content-qa-001/checks.json\",\"acceptanceEvidencePath\":\"docs/quality/evidence/content-qa-001/acceptance-checks.json\",\"acceptanceStatus\":\"规范与模板已验收 / 网站内容与生产未新增验证\",\"acceptedNext\":\"CONTENT-QA-001 已验收，无需重复验收。当前下一项为 GAMES-INDEX-001 目录页方案待确认；确认前不编码、部署或推进其他任务。\",\"acceptedGateNote\":\"已记录用户对标准与模板的明确验收；不等于网站全部内容、许可或生产发布通过。\"};\nTASK_UPDATES[\"GAMES-INDEX-001\"]={\"status\":\"设计中\",\"updatedAt\":\"2026-09-03T14:14:26.356Z\",\"scope\":\"LOCAL_DIRECTORY_NOINDEX\",\"stage\":\"PROPOSAL_PENDING\",\"localOnly\":true,\"request\":\"CONTENT-QA-001 验收通过，现在进行下一步开发\",\"proposalRequired\":true,\"proposalStatus\":\"待确认\",\"proposalPath\":\"docs/product/games-index-directory-proposal.md\",\"proposalConfirmed\":false,\"proposalConfirmation\":\"确认 GAMES-INDEX-001 目录页方案，进行开发\",\"proposalNext\":\"请阅读 docs/product/games-index-directory-proposal.md，并回复“确认 GAMES-INDEX-001 目录页方案，进行开发”。本次只准备方案：沿用现有目录样式，2 个本站条目 + 1 个 External Tool，保持 noindex；确认前不编码，不开始分类/收藏等任务或部署。\",\"implementationStarted\":false,\"implementationCompleted\":false,\"userAcceptanceReceived\":false,\"focusTitle\":\"完善 /games 游戏目录（方案待确认）\",\"focusGoal\":\"把现有 3 条记录组织成可往返的目录入口；明确本站/External、真实数量和广告边界，保留 URL 与 noindex，不扩展游戏或其他发现功能。\",\"evidence\":\"v1.71：CONTENT-QA-001 已按用户明确回复验收，源验收增至 30 条；GAMES-INDEX-001 仅完成现有代码核对与目录方案，尚未实施。方案包含真实分组与分类计数、目录往返入口、独立分享 metadata/schema、noindex 保持及目录广告隔离；未虚构可玩性、热度或权利。文档/链接与看板离线 VM 验证见 docs/quality/evidence/games-index-001/proposal-checks.json。应用、历史 QA 与构建产物保留；本轮未重跑应用 type/lint/tests/build/浏览器/SEO/CWV 或部署；LICENSE-GATE 材料任务继续取消。\",\"evidencePath\":\"docs/quality/evidence/games-index-001/proposal-checks.json\",\"proposalEvidencePath\":\"docs/quality/evidence/games-index-001/proposal-checks.json\",\"acceptanceScope\":\"LOCAL_DIRECTORY_NOINDEX\",\"releaseStatus\":\"不通过 / 未部署；原未关闭 P0 与本轮未验证项保留\"};\nQUALITY_SUPERVISOR.validation.gamesIndexProposal171={\"taskId\":\"GAMES-INDEX-001\",\"recordedAt\":\"2026-09-03T14:14:26.356Z\",\"scope\":\"PROPOSAL_ONLY\",\"proposalPath\":\"docs/product/games-index-directory-proposal.md\",\"evidencePath\":\"docs/quality/evidence/games-index-001/proposal-checks.json\",\"contentAcceptanceEvidencePath\":\"docs/quality/evidence/content-qa-001/acceptance-checks.json\",\"sourceAcceptanceCount\":30,\"previousAcceptancesPreserved\":29,\"proposalConfirmed\":false,\"implementationStarted\":false,\"documentAndReferences\":\"通过\",\"boardJavaScriptAndOfflineVm\":\"通过\",\"boardVisual\":\"未验证 / 既有访问限制，不绕行\",\"applicationTypeLintTests\":\"未执行 / 方案未获确认，不改应用\",\"frameworkAndPlatformBuild\":\"未执行 / 保留旧产物与日期\",\"browserMobileSeoCwv\":\"未验证 / 本轮不运行应用 QA\",\"websiteUrlsChanged\":[],\"adBoundary\":\"方案提出 / 源码显示全局加载器无路由资格，未测当前网络，不记修复通过\",\"cancelledLicenseTaskRetained\":true,\"licenseVerified\":false,\"deployed\":false};\nQUALITY_SUPERVISOR.currentWork={\"taskId\":\"GAMES-INDEX-001\",\"status\":\"设计中 / 方案待确认\",\"requestedAt\":\"2026-09-03T14:14:26.356Z\",\"request\":\"CONTENT-QA-001 验收通过，现在进行下一步开发\",\"scope\":\"PROPOSAL_ONLY\",\"instructionBoundary\":\"用户验收 CONTENT-QA-001 并要求下一项；仅准备本地目录方案，明确确认前不编码。取消的材料任务不恢复，不把旧部署顺序作为当前自动部署指令。\",\"proposalPath\":\"docs/product/games-index-directory-proposal.md\",\"evidencePath\":\"docs/quality/evidence/games-index-001/proposal-checks.json\",\"deployed\":false,\"implementationStarted\":false,\"otherTasksStarted\":false,\"cancelledMaterialTaskReopened\":false};\n\nconst BUILTIN="
+      },
+      {
+        "file": "F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+        "old": "let state=applySourceUpdates({...BUILTIN,...saved}), selectedWeek=3, selectedTask='CONTENT-QA-001';",
+        "new": "let state=applySourceUpdates({...BUILTIN,...saved}), selectedWeek=4, selectedTask='GAMES-INDEX-001';"
+      },
+      {
+        "file": "F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+        "old": "version:'1.70',exportedAt:",
+        "new": "version:'1.71',exportedAt:"
+      },
+      {
+        "file": "F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+        "old": "selectedWeek=3;selectedTask='CONTENT-QA-001';renderAll()",
+        "new": "selectedWeek=4;selectedTask='GAMES-INDEX-001';renderAll()"
+      },
+      {
+        "file": "F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+        "old": "function makePrompt(t){",
+        "new": "function makePrompt(t){if(t.id===\"CONTENT-QA-001\"&&state[t.id]===\"已完成\"&&SOURCE_ACCEPTANCE[t.id]?.result===\"通过\")return \"CONTENT-QA-001 标准与模板已获用户明确验收，保留原成果与 QA，不重复实施或再次索取验收。该验收不代表未来页面内容已认证。当前下一项 GAMES-INDEX-001 仅方案待确认；按当前用户指令与方案门禁继续，不自动部署，也不恢复已取消的材料任务。验收证据：\"+TASK_UPDATES[t.id].acceptanceEvidencePath;"
+      }
+    ],
+    "verificationMode": "Node vm with mock DOM/storage; original user browser localStorage not read or changed",
+    "staticAndDynamicFocusEqual": true,
+    "defaultWeek": 5,
+    "resetAndExportVersion": "1.71",
+    "proposalAcceptButtonStatusAndCheckboxProtected": true,
+    "scope": "Read-only assertions against current files; no live UI or production proof"
+  },
+  "preservation": {
+    "baselinePath": "docs/quality/evidence/content-qa-001/checks.json",
+    "baselineSha256": "40371180bbf00e36a69038596644f3c4701e7c869b00548cd29c80a167ccb641",
+    "verifiedManifestSha256": "b116b8c9499b9cdf51400ec8d1d482dfde72fcde8a0a6aeb5d920789d706bad1",
+    "newlyProtected": [
+      {
+        "path": "docs/content/game-page-quality-standard.md",
+        "sha256": "e0f2d02ad0792e6bbe0b6fc13c478a856efe86d51a4bf78f1b05c62a10c2ca3b",
+        "kind": "accepted-standard"
+      },
+      {
+        "path": "docs/content/game-page-review-template.md",
+        "sha256": "3b690beea6cb73e5b16246053853c31e1db6d100c977d7f02d2a868067d0a7d3",
+        "kind": "accepted-template"
+      },
+      {
+        "path": "CONTENT_PLAN.md",
+        "sha256": "f18e848328c708a896ec8e988d55979ee6fd121689249e67bb8f6c1934211d4c",
+        "kind": "content-plan"
+      }
+    ]
+  },
+  "protectedCounts": {
+    "sourceAndCheckAndConfig": 154,
+    "historicalJson": 26,
+    "screenshotFilePathsIncludingCopies": 173,
+    "artifacts": 18,
+    "swfs": 2,
+    "registry": 1,
+    "cancelledArchiveFiles": 3,
+    "acceptedStandards": 2
+  },
+  "originalQaBoundary": "v1.70 checks.json, all pre-existing QA JSON, accepted content standards and 29 prior SOURCE_ACCEPTANCE records remain byte-/object-identical; this record does not refresh old application QA dates.",
+  "changedFiles": [
+    "docs/product/games-index-directory-proposal.md",
+    "docs/quality/evidence/content-qa-001/acceptance-checks.json",
+    "docs/quality/evidence/games-index-001/proposal-checks.json",
+    "PAGE_PLAN.md",
+    "LAUNCH_CHECKLIST.md",
+    "docs/quality/evidence/content-qa-001/README.md",
+    "SEO_LOG.md",
+    "F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html"
+  ],
+  "linksChecked": [
+    {
+      "file": "docs/product/games-index-directory-proposal.md",
+      "target": "../../app/games/page.tsx",
+      "type": "local"
+    },
+    {
+      "file": "docs/product/games-index-directory-proposal.md",
+      "target": "../../lib/games/routes.ts",
+      "type": "local"
+    },
+    {
+      "file": "docs/product/games-index-directory-proposal.md",
+      "target": "../content/game-page-quality-standard.md",
+      "type": "local"
+    },
+    {
+      "file": "docs/product/games-index-directory-proposal.md",
+      "target": "https://developers.google.com/search/docs/crawling-indexing/block-indexing",
+      "type": "external-primary-source"
+    },
+    {
+      "file": "docs/product/games-index-directory-proposal.md",
+      "target": "https://developers.google.com/search/docs/crawling-indexing/links-crawlable",
+      "type": "external-primary-source"
+    },
+    {
+      "file": "docs/product/games-index-directory-proposal.md",
+      "target": "../../app/layout.tsx",
+      "type": "local"
+    },
+    {
+      "file": "docs/product/games-index-directory-proposal.md",
+      "target": "../../components/DeferredThirdPartyScripts.tsx",
+      "type": "local"
+    },
+    {
+      "file": "PAGE_PLAN.md",
+      "target": "docs/quality/evidence/content-qa-001/acceptance-checks.json",
+      "type": "local"
+    },
+    {
+      "file": "PAGE_PLAN.md",
+      "target": "docs/product/games-index-directory-proposal.md",
+      "type": "local"
+    },
+    {
+      "file": "LAUNCH_CHECKLIST.md",
+      "target": "docs/quality/evidence/content-qa-001/acceptance-checks.json",
+      "type": "local"
+    },
+    {
+      "file": "LAUNCH_CHECKLIST.md",
+      "target": "docs/product/games-index-directory-proposal.md",
+      "type": "local"
+    },
+    {
+      "file": "LAUNCH_CHECKLIST.md",
+      "target": "RULES.md",
+      "type": "local"
+    },
+    {
+      "file": "LAUNCH_CHECKLIST.md",
+      "target": "QUALITY_STANDARD.md",
+      "type": "local"
+    },
+    {
+      "file": "docs/quality/evidence/content-qa-001/README.md",
+      "target": "checks.json",
+      "type": "local"
+    },
+    {
+      "file": "docs/quality/evidence/content-qa-001/README.md",
+      "target": "acceptance-checks.json",
+      "type": "local"
+    },
+    {
+      "file": "docs/quality/evidence/content-qa-001/README.md",
+      "target": "../../../product/games-index-directory-proposal.md",
+      "type": "local"
+    },
+    {
+      "file": "docs/quality/evidence/content-qa-001/README.md",
+      "target": "../../../content/game-page-quality-standard.md",
+      "type": "local"
+    },
+    {
+      "file": "docs/quality/evidence/content-qa-001/README.md",
+      "target": "../../../content/game-page-review-template.md",
+      "type": "local"
+    }
+  ],
+  "primarySources": {
+    "reviewedAt": "2026-09-03",
+    "sources": [
+      {
+        "url": "https://developers.google.com/search/docs/crawling-indexing/block-indexing",
+        "purpose": "noindex must remain accessible to crawlers; not a reason to block the directory in robots.txt"
+      },
+      {
+        "url": "https://developers.google.com/search/docs/crawling-indexing/links-crawlable",
+        "purpose": "Real hrefs and descriptive anchor text for directory links"
+      }
+    ],
+    "notCompleted": "No target-query SERP top 10 / KW-04 coverage study"
+  },
+  "commands": [
+    {
+      "command": "node --check C:/Users/liu/AppData/Local/Temp/mysquarefaceicon-games-index-v171-c1952a2efadc4e538748f3e77f316906/prepare.cjs",
+      "result": "通过",
+      "exitCode": 0
+    },
+    {
+      "command": "node --check C:/Users/liu/AppData/Local/Temp/mysquarefaceicon-games-index-v171-c1952a2efadc4e538748f3e77f316906/verify.cjs",
+      "result": "通过",
+      "exitCode": 0
+    },
+    {
+      "command": "node C:/Users/liu/AppData/Local/Temp/mysquarefaceicon-games-index-v171-c1952a2efadc4e538748f3e77f316906/verify.cjs",
+      "result": "通过",
+      "exitCode": 0,
+      "recordedAt": "2026-09-03T14:19:09.352Z"
+    },
+    {
+      "command": "git diff --check",
+      "cwd": "D:/LYXGIT/mysquarefaceicon",
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": "warning: in the working copy of '.gitignore', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'AGENTS.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'CONTENT_PLAN.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'LAUNCH_CHECKLIST.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'PAGE_PLAN.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'PROJECT_BRIEF.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'SEO_LOG.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'SEO_RULES.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/about-us/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/blog/avatar-maker-without-signup/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/blog/cute-profile-picture-ideas/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/blog/discord-avatar-size-guide/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/blog/how-to-make-a-cute-discord-profile-icon/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/blog/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/blog/tiktok-profile-icon-ideas/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/contact/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/editorial-policy/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/gallery/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/globals.css', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/oval-face-icon-generator/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/pixel-art-avatar-icon-generator/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/privacy-policy/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/robots.ts', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/sitemap.ts', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/terms-of-service/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'components/FlashGenerator.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'components/GameSidebar.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'components/HomePage.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'components/SiteHeader.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'docs/legal/game-rights.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'docs/quality/installation-and-board-workflow.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'lib/locales.ts', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'package.json', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'public/games/README.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'scripts/README.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'scripts/post-deploy-check.mjs', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'scripts/seo-check.mjs', LF will be replaced by CRLF the next time Git touches it\n"
+    },
+    {
+      "command": "git diff --check -- 我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+      "cwd": "F:/LYXGIT/Liu-library",
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "diagnostics": [
+    {
+      "stage": "governance-writeback",
+      "result": "FAILED",
+      "reason": "apply_patch could not match the makePrompt hunk after later export/reset hunks; generated hunks were not in source order",
+      "applicationCodeChanged": false,
+      "recovery": "Confirmed all five existing files still matched the pre-write hashes; regenerated hunks in source order using apply_patch. The final 21 reverse hunks restore all five original normalized file hashes.",
+      "postRecovery": "通过"
+    }
+  ],
+  "quality": {
+    "documentAndLinkChecks": "通过",
+    "offlineBoardLogic": "通过",
+    "sourceDataReconciliation": "通过（只读事实核对）",
+    "typeCheck": "未执行 / 方案阶段未改应用",
+    "lint": "未执行 / 方案阶段未改应用",
+    "applicationTests": "未执行 / 方案阶段未改应用",
+    "nextBuild": "未执行 / 保留原产物与日期",
+    "cloudflareOpenNextBuild": "未执行 / 保留原产物与日期",
+    "applicationBrowserDesktopMobile": "未验证",
+    "boardBrowserVisual": "未验证 / 既有访问限制未绕行",
+    "localSeoRuntime": "未验证",
+    "cwv": "未验证",
+    "productionRelease": "不通过 / 未部署；未关闭 P0 不因方案或用户验收消除"
+  },
+  "preservedRisks": [
+    "LICENSE-GATE materials request remains cancelled, never reopened; registry UNKNOWN is not verified permission",
+    "Oval full template migration remains deferred; its local binding acceptance preserved",
+    "Legacy narrow viewport/copy warnings and historical 12 SEO should remain; KW-04 unverified",
+    "Global ad eligibility outside the proposed directory scope, actual ad fill/CMP and production URL/version/smoke evidence remain unresolved or unverified",
+    "External editor/save/real-device behavior and all SWF internal controls are not certified by this proposal"
+  ],
+  "skillsApplied": [
+    {
+      "skill": "website-quality-supervisor",
+      "effect": "Board-first acceptance recording, single-task directory proposal, no implementation before explicit confirmation, exact scope of evidence and retained P0/cancellation"
+    }
+  ],
+  "reproduction": {
+    "checker": "C:/Users/liu/AppData/Local/Temp/mysquarefaceicon-games-index-v171-c1952a2efadc4e538748f3e77f316906/verify.cjs",
+    "checkerIsTemporary": true,
+    "durableBaselines": "Original content-qa-001/checks.json contains source/artifact/hash manifests; this record includes exact governance hunks and normalized before/after hashes, plus immutable baseline SHA256.",
+    "note": "Not a new production quality command or automated content gate"
+  },
+  "rollback": "Only reverse this proposal/governance increment after checking concurrent changes. Preserve user acceptance unless expressly rescinded; never overwrite entire dirty files, revert accepted website code or revive the cancelled materials task. No online rollback needed because no deployment occurred.",
+  "realBrowserStorageModified": false,
+  "otherTasksStarted": false
+}

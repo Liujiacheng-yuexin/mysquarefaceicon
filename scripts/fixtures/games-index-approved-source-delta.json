@@ -1,0 +1,586 @@
+{
+  "app/games/page.tsx": {
+    "beforeSha256": "325b8221aec0d9ea69a2374faad321a0fa75dd7e8c0df05c59da4db93e46c44f",
+    "afterSha256": "5c154f0c23e174f94b68ce7e705ae978f7ecb6ffab15d04fd1439e148234d3c5",
+    "beforeSha256LF": "325b8221aec0d9ea69a2374faad321a0fa75dd7e8c0df05c59da4db93e46c44f",
+    "afterSha256LF": "5c154f0c23e174f94b68ce7e705ae978f7ecb6ffab15d04fd1439e148234d3c5",
+    "edits": [
+      {
+        "offset": 0,
+        "before": "import type { Metadata } from \"next\";\n",
+        "after": "",
+        "offsetLF": 0
+      },
+      {
+        "offset": 273,
+        "before": "import {\n  listAvailableCategoryRoutes,\n  listPublishedGames\n} from \"@/lib/games/routes\";\n\nconst pageUrl = \"https://mysquarefaceicon.com/games\";\n",
+        "after": "import { directoryEntryCount, resolveGamesDirectory } from \"@/lib/games/directory\";\nimport { gamesDirectoryPolicy } from \"@/lib/games/directory-policy\";\nimport { buildGamesDirectoryStructuredData, gamesDirectoryMetadata } from \"@/lib/seo/games-directory\";\nimport { serializeGameStructuredData } from \"@/lib/seo/game-structured-data\";\n",
+        "offsetLF": 273
+      },
+      {
+        "offset": 608,
+        "before": "export const metadata: Metadata = {\n  title: {\n    absolute: \"Avatar Games & Face Makers | My Square Face Icon\"\n  },\n  description:\n    \"Browse face makers, avatar creator games, pixel avatar tools, and clearly labeled external character creators from My Square Face Icon.\",\n  alternates: {\n    canonical: pageUrl\n  },\n  robots: {\n    index: false,\n    follow: true,\n    googleBot: {\n      index: false,\n      follow: true\n    }\n  }\n};\n",
+        "after": "export const metadata = gamesDirectoryMetadata;\n",
+        "offsetLF": 608
+      },
+      {
+        "offset": 657,
+        "before": "const publishedGames = listPublishedGames();\nconst onSiteGames = publishedGames.filter((game) => game.pageType === \"GAME\");\nconst externalTools = publishedGames.filter((game) => game.pageType === \"EXTERNAL_TOOL\");\nconst categoryRoutes = listAvailableCategoryRoutes();\n",
+        "after": "const { games, onSiteGames, externalTools, categoryRoutes } = resolveGamesDirectory();\n",
+        "offsetLF": 657
+      },
+      {
+        "offset": 806,
+        "before": "",
+        "after": "      {buildGamesDirectoryStructuredData(games).map((schema) => (\n        <script key={String(schema[\"@type\"])} type=\"application/ld+json\"\n          dangerouslySetInnerHTML={{ __html: serializeGameStructuredData(schema) }} />\n      ))}\n",
+        "offsetLF": 806
+      },
+      {
+        "offset": 1063,
+        "before": "      <main className=\"route-directory-shell\">\n        <GameBreadcrumb items={[{ label: \"Home\", href: \"/\" }, { label: \"Games\" }]} />\n",
+        "after": "      <main className=\"route-directory-shell\" data-ad-eligible={gamesDirectoryPolicy.adEligible}>\n        <GameBreadcrumb items={[{ label: \"Home\", href: \"/\" }, { label: \"Games\" }]} reloadDocument />\n",
+        "offsetLF": 1063
+      },
+      {
+        "offset": 1442,
+        "before": "            Browse browser-based face makers, avatar creator games, pixel avatar tools, and focused\n            character creators. External tools are labeled before you leave this site.\n",
+        "after": "            Choose an on-site avatar game or explore an external tool. Each card opens its own\n            page with game information or source and access details.\n",
+        "offsetLF": 1442
+      },
+      {
+        "offset": 1949,
+        "before": "            <span>{onSiteGames.length} available</span>\n",
+        "after": "            <span>{directoryEntryCount(onSiteGames.length)}</span>\n",
+        "offsetLF": 1949
+      },
+      {
+        "offset": 2033,
+        "before": "          <GameGrid games={onSiteGames} ariaLabel=\"On-site avatar games\" actionLabel=\"Open game\" />\n",
+        "after": "          <GameGrid games={onSiteGames} ariaLabel=\"On-site avatar games\" actionLabel=\"Open game\"\n            emptyTitle=\"No on-site entries\" reloadDocument />\n",
+        "offsetLF": 2033
+      },
+      {
+        "offset": 2580,
+        "before": "              <span>{externalTools.length} available</span>\n",
+        "after": "              <span>{directoryEntryCount(externalTools.length)}</span>\n",
+        "offsetLF": 2580
+      },
+      {
+        "offset": 2670,
+        "before": "",
+        "after": "            <p>Read the source and access details here before choosing to open the original site.</p>\n",
+        "offsetLF": 2670
+      },
+      {
+        "offset": 2937,
+        "before": "",
+        "after": "              reloadDocument\n",
+        "offsetLF": 2937
+      },
+      {
+        "offset": 3362,
+        "before": "",
+        "after": "          <p>Categories overlap: the same entry can appear in more than one group.</p>\n",
+        "offsetLF": 3362
+      },
+      {
+        "offset": 3557,
+        "before": "              <CategoryChip category={category} gameCount={games.length} key={category.slug} />\n",
+        "after": "              <CategoryChip category={category} gameCount={games.length} key={category.slug} reloadDocument />\n",
+        "offsetLF": 3557
+      }
+    ]
+  },
+  "components/DeferredThirdPartyScripts.tsx": {
+    "beforeSha256": "09ae2617d036e47be5874e366d0ced2fc1634d03b59ac9c2505f1938c7cfe7e2",
+    "afterSha256": "2a8204c7a63d175a2b3db9356557bb56a09ed24a415c1648c4a6e50a5361d538",
+    "beforeSha256LF": "09ae2617d036e47be5874e366d0ced2fc1634d03b59ac9c2505f1938c7cfe7e2",
+    "afterSha256LF": "2a8204c7a63d175a2b3db9356557bb56a09ed24a415c1648c4a6e50a5361d538",
+    "edits": [
+      {
+        "offset": 15,
+        "before": "import { useEffect } from \"react\";\n",
+        "after": "import { usePathname } from \"next/navigation\";\nimport { useEffect, useRef } from \"react\";\nimport {\n  canLoadAdsOutsideGamesDirectory,\n  crossesGamesDirectoryBoundary\n} from \"../lib/games/directory-policy\";\n",
+        "offsetLF": 15
+      },
+      {
+        "offset": 930,
+        "before": "",
+        "after": "  const pathname = usePathname();\n  const documentPath = useRef<string | null>(pathname);\n\n",
+        "offsetLF": 930
+      },
+      {
+        "offset": 1041,
+        "before": "",
+        "after": "    // Directory links use document navigation. Fail safely if a future client-side link misses it.\n    if (crossesGamesDirectoryBoundary(documentPath.current, pathname)) {\n      window.location.replace(window.location.href);\n    }\n  }, [pathname]);\n\n  useEffect(() => {\n",
+        "offsetLF": 1041
+      },
+      {
+        "offset": 1397,
+        "before": "      if (timer) window.clearTimeout(timer);\n",
+        "after": "      if (timer !== undefined) window.clearTimeout(timer);\n      window.removeEventListener(\"load\", scheduleAfterLoad);\n",
+        "offsetLF": 1397
+      },
+      {
+        "offset": 1738,
+        "before": "      appendScript(`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${googleAdsenseClient}`, {\n        crossorigin: \"anonymous\"\n      });\n",
+        "after": "      if (canLoadAdsOutsideGamesDirectory(documentPath.current, window.location.pathname)) {\n        appendScript(`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${googleAdsenseClient}`, {\n          crossorigin: \"anonymous\"\n        });\n      }\n",
+        "offsetLF": 1738
+      }
+    ]
+  },
+  "components/game/GameCard.tsx": {
+    "beforeSha256": "94af78fdd701884f8e69d2d3cdf919d2a0b730c685b6e5287130d85ef9b92edf",
+    "afterSha256": "e405ecff0e4a26ef3ed686ef5ac7c06d5c622312d17a010bdcae6e495c66edcd",
+    "beforeSha256LF": "94af78fdd701884f8e69d2d3cdf919d2a0b730c685b6e5287130d85ef9b92edf",
+    "afterSha256LF": "e405ecff0e4a26ef3ed686ef5ac7c06d5c622312d17a010bdcae6e495c66edcd",
+    "edits": [
+      {
+        "offset": 89,
+        "before": "import Link from \"next/link\";\n",
+        "after": "import GameLink from \"./GameLink\";\n",
+        "offsetLF": 89
+      },
+      {
+        "offset": 447,
+        "before": "",
+        "after": "  readonly reloadDocument?: boolean;\n",
+        "offsetLF": 447
+      },
+      {
+        "offset": 624,
+        "before": "export default function GameCard({ game, actionLabel, variant = \"default\" }: GameCardProps) {\n",
+        "after": "export default function GameCard({ game, actionLabel, variant = \"default\", reloadDocument = false }: GameCardProps) {\n",
+        "offsetLF": 624
+      },
+      {
+        "offset": 917,
+        "before": "      <Link\n",
+        "after": "      <GameLink\n",
+        "offsetLF": 917
+      },
+      {
+        "offset": 1073,
+        "before": "",
+        "after": "        reloadDocument={reloadDocument}\n",
+        "offsetLF": 1073
+      },
+      {
+        "offset": 1447,
+        "before": "      </Link>\n",
+        "after": "      </GameLink>\n",
+        "offsetLF": 1447
+      },
+      {
+        "offset": 1606,
+        "before": "      <Link\n",
+        "after": "      <GameLink\n",
+        "offsetLF": 1606
+      },
+      {
+        "offset": 1863,
+        "before": "",
+        "after": "        reloadDocument={reloadDocument}\n",
+        "offsetLF": 1863
+      },
+      {
+        "offset": 3032,
+        "before": "      </Link>\n",
+        "after": "      </GameLink>\n",
+        "offsetLF": 3032
+      },
+      {
+        "offset": 3073,
+        "before": "    <Link\n",
+        "after": "    <GameLink\n",
+        "offsetLF": 3073
+      },
+      {
+        "offset": 3316,
+        "before": "",
+        "after": "      reloadDocument={reloadDocument}\n",
+        "offsetLF": 3316
+      },
+      {
+        "offset": 4462,
+        "before": "    </Link>\n",
+        "after": "    </GameLink>\n",
+        "offsetLF": 4462
+      }
+    ]
+  },
+  "components/game/GameGrid.tsx": {
+    "beforeSha256": "261672ac47c7cafeb3f2576caf6ba6240fa3c9b15472f55778b8ae3f45d631b5",
+    "afterSha256": "ae5a454723185b9c2b34f2129c00e1e3cc3d6336567034d9b4f7798767b71f6c",
+    "beforeSha256LF": "261672ac47c7cafeb3f2576caf6ba6240fa3c9b15472f55778b8ae3f45d631b5",
+    "afterSha256LF": "ae5a454723185b9c2b34f2129c00e1e3cc3d6336567034d9b4f7798767b71f6c",
+    "edits": [
+      {
+        "offset": 400,
+        "before": "",
+        "after": "  readonly reloadDocument?: boolean;\n",
+        "offsetLF": 400
+      },
+      {
+        "offset": 637,
+        "before": "  variant = \"default\"\n",
+        "after": "  variant = \"default\",\n  reloadDocument = false\n",
+        "offsetLF": 637
+      },
+      {
+        "offset": 1111,
+        "before": "          <GameCard game={game} actionLabel={actionLabel} variant={variant} />\n",
+        "after": "          <GameCard game={game} actionLabel={actionLabel} variant={variant} reloadDocument={reloadDocument} />\n",
+        "offsetLF": 1111
+      }
+    ]
+  },
+  "components/game/CategoryChip.tsx": {
+    "beforeSha256": "78e2ddcf2ce6b77899d3ab35f06f5d49a87f82f1015d8f4deb862dfe76ab0850",
+    "afterSha256": "ef65d12fb1ace3a669ed33e14379cc76d8edb0b5822ef19acdcd0834f836c1e5",
+    "beforeSha256LF": "78e2ddcf2ce6b77899d3ab35f06f5d49a87f82f1015d8f4deb862dfe76ab0850",
+    "afterSha256LF": "ef65d12fb1ace3a669ed33e14379cc76d8edb0b5822ef19acdcd0834f836c1e5",
+    "edits": [
+      {
+        "offset": 106,
+        "before": "import Link from \"next/link\";\n",
+        "after": "import GameLink from \"./GameLink\";\n",
+        "offsetLF": 106
+      },
+      {
+        "offset": 425,
+        "before": "",
+        "after": "  readonly reloadDocument?: boolean;\n",
+        "offsetLF": 425
+      },
+      {
+        "offset": 792,
+        "before": "export default function CategoryChip({ category, gameCount, variant = \"default\" }: CategoryChipProps) {\n",
+        "after": "export default function CategoryChip({ category, gameCount, variant = \"default\", reloadDocument = false }: CategoryChipProps) {\n",
+        "offsetLF": 792
+      },
+      {
+        "offset": 964,
+        "before": "      <Link className=\"category-chip\" href={`/category/${category.slug}`} data-category-slug={category.slug}>\n",
+        "after": "      <GameLink className=\"category-chip\" href={`/category/${category.slug}`} reloadDocument={reloadDocument} data-category-slug={category.slug}>\n",
+        "offsetLF": 964
+      },
+      {
+        "offset": 1199,
+        "before": "      </Link>\n",
+        "after": "      </GameLink>\n",
+        "offsetLF": 1199
+      },
+      {
+        "offset": 1305,
+        "before": "    <Link\n",
+        "after": "    <GameLink\n",
+        "offsetLF": 1305
+      },
+      {
+        "offset": 1412,
+        "before": "",
+        "after": "      reloadDocument={reloadDocument}\n",
+        "offsetLF": 1412
+      },
+      {
+        "offset": 1928,
+        "before": "    </Link>\n",
+        "after": "    </GameLink>\n",
+        "offsetLF": 1928
+      }
+    ]
+  },
+  "components/game/GameBreadcrumb.tsx": {
+    "beforeSha256": "933a23729f0c280559d64ac1376022520c3d700031a489935d1e1b30b604b474",
+    "afterSha256": "db7beaf87e42bf14ed8966dd1912dfa81dc34b1a09eec87d40a446e28daceb3f",
+    "beforeSha256LF": "933a23729f0c280559d64ac1376022520c3d700031a489935d1e1b30b604b474",
+    "afterSha256LF": "db7beaf87e42bf14ed8966dd1912dfa81dc34b1a09eec87d40a446e28daceb3f",
+    "edits": [
+      {
+        "offset": 0,
+        "before": "import Link from \"next/link\";\n",
+        "after": "import GameLink from \"./GameLink\";\n",
+        "offsetLF": 0
+      },
+      {
+        "offset": 264,
+        "before": "",
+        "after": "  readonly reloadDocument?: boolean;\n",
+        "offsetLF": 264
+      },
+      {
+        "offset": 305,
+        "before": "export default function GameBreadcrumb({ items }: GameBreadcrumbProps) {\n",
+        "after": "export default function GameBreadcrumb({ items, reloadDocument = false }: GameBreadcrumbProps) {\n",
+        "offsetLF": 305
+      },
+      {
+        "offset": 794,
+        "before": "              <Link href={item.href}>{item.label}</Link>\n",
+        "after": "              <GameLink href={item.href} reloadDocument={reloadDocument}>{item.label}</GameLink>\n",
+        "offsetLF": 794
+      }
+    ]
+  },
+  "components/SiteHeader.tsx": {
+    "beforeSha256": "8182d2e2a5012cfbb62ebadcc8cb581d088364d263f9eb11f9d217686df115a1",
+    "afterSha256": "dd7b227b9b8cd195352bd4167ced3365e3866757043953a470982ab897222dbc",
+    "beforeSha256LF": "8182d2e2a5012cfbb62ebadcc8cb581d088364d263f9eb11f9d217686df115a1",
+    "afterSha256LF": "dd7b227b9b8cd195352bd4167ced3365e3866757043953a470982ab897222dbc",
+    "edits": [
+      {
+        "offset": 1155,
+        "before": "",
+        "after": "            <a href=\"/games\">All avatar games</a>\n",
+        "offsetLF": 1155
+      },
+      {
+        "offset": 1986,
+        "before": "",
+        "after": "          <a href=\"/games\">All avatar games</a>\n",
+        "offsetLF": 1986
+      }
+    ]
+  },
+  "components/SiteFooter.tsx": {
+    "beforeSha256": "0a8f7e7ca185853a8494ba94f8ecaa65e9ddd73ba3e43781c0efacfcdd3c2291",
+    "afterSha256": "9e02069c0ad45f33e14aace05afbba2d1a6f01d29c64e593b93dce0e52a38565",
+    "beforeSha256LF": "0a8f7e7ca185853a8494ba94f8ecaa65e9ddd73ba3e43781c0efacfcdd3c2291",
+    "afterSha256LF": "9e02069c0ad45f33e14aace05afbba2d1a6f01d29c64e593b93dce0e52a38565",
+    "edits": [
+      {
+        "offset": 604,
+        "before": "",
+        "after": "          <a href=\"/games\">All avatar games</a>\n",
+        "offsetLF": 604
+      }
+    ]
+  },
+  "components/game/GameDetailTemplate.tsx": {
+    "beforeSha256": "c643d800efd8bdbc6d439047b53c3aad6fae403ad59ed55b7c8349218c1ca43c",
+    "afterSha256": "3ed1e3577a95db9c5bf455d52fa1f09a7b5be214f16d3706773b2c5d6ae81d4a",
+    "beforeSha256LF": "c643d800efd8bdbc6d439047b53c3aad6fae403ad59ed55b7c8349218c1ca43c",
+    "afterSha256LF": "3ed1e3577a95db9c5bf455d52fa1f09a7b5be214f16d3706773b2c5d6ae81d4a",
+    "edits": [
+      {
+        "offset": 105,
+        "before": "",
+        "after": "import GameLink from \"./GameLink\";\n",
+        "offsetLF": 105
+      },
+      {
+        "offset": 5382,
+        "before": "            <Link href=\"/games\">\n",
+        "after": "            <GameLink href=\"/games\">\n",
+        "offsetLF": 5382
+      },
+      {
+        "offset": 5586,
+        "before": "            </Link>\n",
+        "after": "            </GameLink>\n",
+        "offsetLF": 5586
+      }
+    ]
+  },
+  "app/category/[slug]/page.tsx": {
+    "beforeSha256": "db5f8c1c1c4df37b7f8a0a726e540d1a0897fa14d84efd8a2f50a8b79aaba0e1",
+    "afterSha256": "00765e46360563750250645120e171f4d7e0858e9cb31fd07814cc96a6d03cc7",
+    "beforeSha256LF": "db5f8c1c1c4df37b7f8a0a726e540d1a0897fa14d84efd8a2f50a8b79aaba0e1",
+    "afterSha256LF": "00765e46360563750250645120e171f4d7e0858e9cb31fd07814cc96a6d03cc7",
+    "edits": [
+      {
+        "offset": 68,
+        "before": "",
+        "after": "import GameLink from \"@/components/game/GameLink\";\n",
+        "offsetLF": 68
+      },
+      {
+        "offset": 2825,
+        "before": "          <Link href=\"/games\">Browse all avatar games</Link>\n",
+        "after": "          <GameLink href=\"/games\">Browse all avatar games</GameLink>\n",
+        "offsetLF": 2825
+      }
+    ]
+  },
+  "app/not-found.tsx": {
+    "beforeSha256": "1ae05e6e788c22dba45d7cbdce2a4b9271d584246a553bda51428c396991a351",
+    "afterSha256": "508a22e3b5b22cacde2ccf576b7a4b47f6cdfdc6b29138bb3cbf8eada71665c8",
+    "beforeSha256LF": "1ae05e6e788c22dba45d7cbdce2a4b9271d584246a553bda51428c396991a351",
+    "afterSha256LF": "508a22e3b5b22cacde2ccf576b7a4b47f6cdfdc6b29138bb3cbf8eada71665c8",
+    "edits": [
+      {
+        "offset": 68,
+        "before": "",
+        "after": "import GameLink from \"@/components/game/GameLink\";\n",
+        "offsetLF": 68
+      },
+      {
+        "offset": 1019,
+        "before": "          <Link href=\"/games\">Browse avatar games</Link>\n",
+        "after": "          <GameLink href=\"/games\">Browse avatar games</GameLink>\n",
+        "offsetLF": 1019
+      }
+    ]
+  },
+  "package.json": {
+    "beforeSha256": "76d1b6b42ab81d1febbfd9235541e6c29b205e958b02bdeff850941cd55283c5",
+    "afterSha256": "9052cf21592e8520a39c306773e15414377b96fa0835e1720002f9c0a685aa70",
+    "beforeSha256LF": "76d1b6b42ab81d1febbfd9235541e6c29b205e958b02bdeff850941cd55283c5",
+    "afterSha256LF": "9052cf21592e8520a39c306773e15414377b96fa0835e1720002f9c0a685aa70",
+    "edits": [
+      {
+        "offset": 2079,
+        "before": "",
+        "after": "    \"games-index:check\": \"node scripts/check-games-index.mjs\",\n",
+        "offsetLF": 2079
+      }
+    ]
+  },
+  "scripts/README.md": {
+    "beforeSha256": "3ae51f90927e57bc4b8f4e331a6442fa2a461819fb92303f6909904bb63ed0dc",
+    "afterSha256": "f8d1930c5445a230e8d378f3b13f94faede8036fac784cbb05a98b418dec69fe",
+    "beforeSha256LF": "3ae51f90927e57bc4b8f4e331a6442fa2a461819fb92303f6909904bb63ed0dc",
+    "afterSha256LF": "f8d1930c5445a230e8d378f3b13f94faede8036fac784cbb05a98b418dec69fe",
+    "edits": [
+      {
+        "offset": 12051,
+        "before": "",
+        "after": "# GAMES-INDEX-001 follow-on check\n\n`npm run games-index:check` validates real directory data/SSR, negative fixtures, JSON-LD escaping, and the actual deferred loader using explicit event/timer fixtures. `-- --built` checks the current Next output; `-- --base http://127.0.0.1:3100` checks one loopback production preview and artifact identity. Real navigation, advertising network and responsive QA remain separate.\n\nThe legacy Square/Oval/Pixel goldens are retained. `games-index-compat.mjs` reverses only exact approved source fragments and the three new shared navigation anchors before those old comparisons; the new directory check owns current behavior. Its source-delta fixture is a reviewable compatibility contract, not a replacement for historical evidence. Unrelated source, card text, metadata, SWF and Registry changes still fail.\n",
+        "offsetLF": 12051
+      }
+    ]
+  },
+  "scripts/check-square-homepage.mjs": {
+    "beforeSha256": "4b9bb6e3adf0e99fbe8d2cfe03e9c1808eae13492b935300fdb24420aa895c71",
+    "afterSha256": "41e99e6ec5b81d0ca3cc849cb8705d13bc87e1a2b52f772c8b6d2823f2d6c852",
+    "beforeSha256LF": "4b9bb6e3adf0e99fbe8d2cfe03e9c1808eae13492b935300fdb24420aa895c71",
+    "afterSha256LF": "41e99e6ec5b81d0ca3cc849cb8705d13bc87e1a2b52f772c8b6d2823f2d6c852",
+    "edits": [
+      {
+        "offset": 429,
+        "before": "",
+        "after": "import { beforeGamesIndexNavigation } from \"./games-index-compat.mjs\";\n",
+        "offsetLF": 429
+      },
+      {
+        "offset": 12482,
+        "before": "      assert.equal(sha(originalPixelSidebarMarkup(html, locale === \"en\" ? 0 : 1)), hash,\n",
+        "after": "      assert.equal(sha(beforeGamesIndexNavigation(originalPixelSidebarMarkup(html, locale === \"en\" ? 0 : 1))), hash,\n",
+        "offsetLF": 12482
+      }
+    ]
+  },
+  "scripts/check-oval-legacy-page.mjs": {
+    "beforeSha256": "3a546fbe49f1f2a66c6139481c838b58527f26ac4e1a97cf39cee213e601a56a",
+    "afterSha256": "e956d6505ff788195c61f9e664cb63bc98e04bc75bd940871df0710fff612bc2",
+    "beforeSha256LF": "3a546fbe49f1f2a66c6139481c838b58527f26ac4e1a97cf39cee213e601a56a",
+    "afterSha256LF": "e956d6505ff788195c61f9e664cb63bc98e04bc75bd940871df0710fff612bc2",
+    "edits": [
+      {
+        "offset": 429,
+        "before": "",
+        "after": "import { beforeGamesIndexNavigation, beforeGamesIndexSource } from \"./games-index-compat.mjs\";\n",
+        "offsetLF": 429
+      },
+      {
+        "offset": 19106,
+        "before": "    const source = read(file);\n",
+        "after": "    const source = beforeGamesIndexSource(file, read(file));\n",
+        "offsetLF": 19106
+      },
+      {
+        "offset": 21961,
+        "before": "    assert.equal(sha(restoreOriginalCoverDimensions(originalPixelSidebarMarkup(html, 1))), golden.ssr,\n",
+        "after": "    assert.equal(sha(beforeGamesIndexNavigation(restoreOriginalCoverDimensions(originalPixelSidebarMarkup(html, 1)))), golden.ssr,\n",
+        "offsetLF": 21961
+      }
+    ]
+  },
+  "components/HomePage.tsx": {
+    "beforeSha256": "fd9f94372bd2cbc98ddcf88b4364183d860ad24dd5dbb5551790fca63e8a8c9c",
+    "afterSha256": "294ff206904e9cc127fcf986d54e4820017331370208a5d4731c84dbb5999623",
+    "beforeSha256LF": "5ef46b20b057f491dbcd16051db5dac33a5b1dd1b24f184d0391e3ba43b4fe2f",
+    "afterSha256LF": "e740dc5c985046b1fe39976af87036f22c2c92878d2b025191ae59ae858fcc1a",
+    "edits": [
+      {
+        "offset": 7900,
+        "before": "",
+        "after": "              <a href=\"/games\">All avatar games</a>\n",
+        "offsetLF": 7900
+      },
+      {
+        "offset": 9434,
+        "before": "",
+        "after": "            <a href=\"/games\">All avatar games</a>\n",
+        "offsetLF": 9434
+      },
+      {
+        "offset": 15991,
+        "before": "",
+        "after": "          <a href=\"/games\">All avatar games</a>\n",
+        "offsetLF": 15991
+      }
+    ]
+  },
+  "app/oval-face-icon-generator/page.tsx": {
+    "beforeSha256": "7047682caac9809799f475caece2ce110d82e769bee389ceedaba966167701cf",
+    "afterSha256": "d52adae5f4e58886ff467df0a335128ba5b1752cd9875d085edd29f452a27e22",
+    "beforeSha256LF": "7047682caac9809799f475caece2ce110d82e769bee389ceedaba966167701cf",
+    "afterSha256LF": "d52adae5f4e58886ff467df0a335128ba5b1752cd9875d085edd29f452a27e22",
+    "edits": [
+      {
+        "offset": 10431,
+        "before": "",
+        "after": "            <a href=\"/games\">All avatar games</a>\n",
+        "offsetLF": 10431
+      }
+    ]
+  },
+  "scripts/check-locale-rights.mjs": {
+    "beforeSha256": "a37deaf5dde95c0f88bd37488c1acfce43c5f3024a6c87c3c3d56088453f21c3",
+    "afterSha256": "05acbc5cf323e2a024e1f664d0a71badaede373a7b9955627020336403b5aeef",
+    "beforeSha256LF": "a37deaf5dde95c0f88bd37488c1acfce43c5f3024a6c87c3c3d56088453f21c3",
+    "afterSha256LF": "05acbc5cf323e2a024e1f664d0a71badaede373a7b9955627020336403b5aeef",
+    "edits": [
+      {
+        "offset": 438,
+        "before": "",
+        "after": "import { beforeGamesIndexNavigation, beforeGamesIndexSource } from \"./games-index-compat.mjs\";\n",
+        "offsetLF": 438
+      },
+      {
+        "offset": 14710,
+        "before": "    let mask = normalized(sources[file]);\n",
+        "after": "    let mask = normalized(beforeGamesIndexSource(file, sources[file]));\n",
+        "offsetLF": 14710
+      },
+      {
+        "offset": 18094,
+        "before": "    assert.equal(sha(originalPixelSidebarMarkup(html, code === \"en\" ? 0 : 1)), expectedDocuments[code].isolatedHash,\n",
+        "after": "    assert.equal(sha(beforeGamesIndexNavigation(originalPixelSidebarMarkup(html, code === \"en\" ? 0 : 1))), expectedDocuments[code].isolatedHash,\n",
+        "offsetLF": 18094
+      },
+      {
+        "offset": 22379,
+        "before": "",
+        "after": "  html = beforeGamesIndexNavigation(html);\n",
+        "offsetLF": 22379
+      }
+    ]
+  },
+  "scripts/validate-game-routes.ts": {
+    "beforeSha256": "bca62350b59f545437c2e5a8e834275dce7c5df330bb58d268befd12ab00803f",
+    "afterSha256": "6c9795ea4b3611650465bbe424ad0e88514c08fa9761cf4952c1ca1b54ef7680",
+    "beforeSha256LF": "bca62350b59f545437c2e5a8e834275dce7c5df330bb58d268befd12ab00803f",
+    "afterSha256LF": "6c9795ea4b3611650465bbe424ad0e88514c08fa9761cf4952c1ca1b54ef7680",
+    "edits": [
+      {
+        "offset": 6082,
+        "before": "  [\"app/games/page.tsx\", [\"index: false\", \"listPublishedGames\", \"External tool\"]],\n",
+        "after": "  [\"app/games/page.tsx\", [\"gamesDirectoryMetadata\", \"resolveGamesDirectory\", \"reloadDocument\"]],\n  [\"lib/seo/games-directory.ts\", [\"index: false\", \"follow: true\", \"gamesDirectoryUrl\"]],\n  [\"lib/games/directory.ts\", [\"listPublishedGames\", \"EXTERNAL_TOOL\"]],\n",
+        "offsetLF": 6082
+      }
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "startedAt": "2026-09-22T08:54:23.643Z",
+  "base": "http://127.0.0.1:3000/",
+  "browser": "Installed Chrome, headless Playwright; Browser plugin not available",
+  "viewports": [],
+  "flows": [],
+  "screenshots": [],
+  "downloads": [],
+  "errors": [
+    "page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:3000/\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:3000/\", waiting until \"networkidle\"\u001b[22m\n\n    at open (D:\\LYXGIT\\mysquarefaceicon\\scripts\\check-home-maker.cjs:19:29)\n    at async D:\\LYXGIT\\mysquarefaceicon\\scripts\\check-home-maker.cjs:40:41"
+  ],
+  "consoleLogs": [],
+  "result": "failed",
+  "finishedAt": "2026-09-22T08:54:24.352Z"
+}

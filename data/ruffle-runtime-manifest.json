@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "packageName": "@ruffle-rs/ruffle",
+  "version": "0.2.0-nightly.2026.5.12",
+  "license": "(MIT OR Apache-2.0)",
+  "sourceDirectory": "node_modules/@ruffle-rs/ruffle",
+  "publicBasePath": "/ruffle/",
+  "entryFile": "ruffle.js",
+  "files": [
+    {
+      "path": "ruffle.js",
+      "bytes": 455299,
+      "sha256": "0f320b07abc9a000a5e9d445eaec8df05d8607351bc3248ef5552f943ba5b7ea",
+      "contentType": "application/javascript; charset=utf-8",
+      "cacheControl": "public, max-age=0, must-revalidate"
+    },
+    {
+      "path": "core.ruffle.549e09f5ab25b1ddd637.js",
+      "bytes": 110264,
+      "sha256": "b1c9f536332a91f3af74ce4dc954774383abc1df485ba1be331c44fba85eaa86",
+      "contentType": "application/javascript; charset=utf-8",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "core.ruffle.c736d9febaa371cbf8ce.js",
+      "bytes": 102936,
+      "sha256": "c568b9a9a9a1842eb0bb5fbef9468291c410dc56d535338da9fb81fa471b5803",
+      "contentType": "application/javascript; charset=utf-8",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "5ab714cfe6d10dcc7003.wasm",
+      "bytes": 13878361,
+      "sha256": "575a14c02e47dcf34d61a2de684783994f29a60046361cd950c37a9feb10df9a",
+      "contentType": "application/wasm",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "9e3e2a04bfe37ff3e3e9.wasm",
+      "bytes": 12965837,
+      "sha256": "6e2b664d1a5f4b9f0acaf51cc94caa2460d3920a5584611075a250475ffa0c25",
+      "contentType": "application/wasm",
+      "cacheControl": "public, max-age=31536000, immutable"
+    }
+  ]
+}

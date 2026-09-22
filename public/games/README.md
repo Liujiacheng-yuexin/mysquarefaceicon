@@ -1,15 +1,17 @@
 # Game Files
 
-The current local SWF files are stored here:
+The current local player assets are stored here:
 
 ```text
 public/games/square-face.swf
 public/games/oval-face.swf
+public/games/square-face-cover.png
 ```
 
-The site loads these local files with Ruffle through the shared Flash generator
-component. Do not decompile or modify the SWF internals; only adjust the page
-wrapper, copy, and player loading experience.
+The site loads the SWF files with Ruffle through the shared Flash generator.
+The PNG is the stable click-to-load cover shown before runtime activation. Do
+not decompile or modify the SWF internals; only adjust the page wrapper, copy,
+and player loading experience.
 
 Before describing a file as authorized, commercial-use-ready, embeddable, or
 redistributable, verify its exact hash and evidence in

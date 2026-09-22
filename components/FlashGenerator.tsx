@@ -1,13 +1,14 @@
 "use client";
 
-import dynamic from "next/dynamic";
-import { Flag, Maximize2, Play, RotateCcw } from "lucide-react";
-import type { CSSProperties, KeyboardEvent } from "react";
-import { useEffect, useRef, useState } from "react";
+import GamePlayer from "./game-player/GamePlayer";
+import type { GamePlayerHandle } from "./game-player/GamePlayer";
+import type { RufflePlayerModel } from "../lib/games/game-player-model";
+import { forwardRef } from "react";
 
-type FlashGeneratorProps = {
+export type FlashGeneratorProps = {
+  gameId: string;
   gameName?: string;
-  swfSources?: string[];
+  swfSources?: readonly string[];
   coverImageUrl?: string;
   backgroundColor?: string;
   ariaLabel?: string;
@@ -27,148 +28,75 @@ type FlashGeneratorProps = {
   showStartControl?: boolean;
 };
 
-const FlashGeneratorRuntime = dynamic(() => import("@/components/FlashGeneratorRuntime"), {
-  ssr: false,
-  loading: () => null
+export type FlashGeneratorHandle = GamePlayerHandle;
+
+const defaultSwfSources: [string, ...string[]] = ["/games/square-face.swf"];
+const defaultCoverImageUrl = "/games/square-face-cover.png";
+
+const FlashGenerator = forwardRef<FlashGeneratorHandle, FlashGeneratorProps>(function FlashGenerator(
+  {
+    gameId,
+    gameName = "Square Face Generator",
+    swfSources = defaultSwfSources,
+    coverImageUrl = defaultCoverImageUrl,
+    backgroundColor = "#FFAF03",
+    ariaLabel = "Square face Flash generator",
+    coverLabel = "Start Square Face Generator game",
+    loadingMessage = "Loading Square Face Generator...",
+    errorMessage = "The game could not be loaded. Please refresh the page or try a desktop browser.",
+    slowLoadingHint = "Still loading? This classic Flash game may take a few seconds to start.",
+    deviceNotice = "This classic Flash game works best on desktop. If you are using a phone, try landscape mode for a better experience.",
+    reportHref = "/contact",
+    aspectRatio = "690 / 600",
+    maxWidth = "980px",
+    coverImageWidth = 970,
+    coverImageHeight = 844,
+    startLabel = "Start Game",
+    reloadLabel = "Reload",
+    helpLabel = "Game Help",
+    showStartControl = true
+  },
+  ref
+) {
+  const resolvedSources = (swfSources.length > 0 ? swfSources : defaultSwfSources) as [string, ...string[]];
+  const model: RufflePlayerModel = {
+    id: gameId,
+    name: gameName,
+    type: "RUFFLE_SWF",
+    ariaLabel,
+    cover: coverImageUrl
+      ? { src: coverImageUrl, width: coverImageWidth, height: coverImageHeight }
+      : null,
+    frame: { aspectRatio, maxWidth, backgroundColor },
+    labels: {
+      start: startLabel,
+      reload: reloadLabel,
+      help: helpLabel,
+      cover: coverLabel,
+      loading: loadingMessage,
+      error: errorMessage,
+      slowLoadingHint
+    },
+    source: {
+      providerName: "My Square Face Icon project archive",
+      originalUrl: null,
+      attribution: null
+    },
+    policy: {
+      releaseDecision: "REVIEW_REQUIRED",
+      allowedDeliveryTypes: ["RUFFLE_SWF"]
+    },
+    deviceNotice,
+    reportHref,
+    showStartControl,
+    player: {
+      swfSources: resolvedSources,
+      backgroundColor,
+      clickToLoad: true
+    }
+  };
+
+  return <GamePlayer ref={ref} model={model} />;
 });
 
-const defaultCoverImageUrl = "https://static.mysquarefaceicon.com/squarefacegenerator/square-face-cover.png";
-
-export default function FlashGenerator({
-  gameName = "Square Face Generator",
-  coverImageUrl = defaultCoverImageUrl,
-  ariaLabel = "Square face Flash generator",
-  coverLabel = "Start Square Face Generator game",
-  deviceNotice = "This classic Flash game works best on desktop. If you are using a phone, try landscape mode for a better experience.",
-  reportHref = "/contact",
-  aspectRatio = "690 / 600",
-  maxWidth = "980px",
-  coverImageWidth = 690,
-  coverImageHeight = 600,
-  startLabel = "Start Game",
-  reloadLabel = "Reload",
-  helpLabel = "Game Help",
-  showStartControl = true,
-  ...runtimeProps
-}: FlashGeneratorProps) {
-  const stageRef = useRef<HTMLDivElement | null>(null);
-  const [activated, setActivated] = useState(false);
-  const [fullscreenAvailable, setFullscreenAvailable] = useState(false);
-  const stageStyle = {
-    "--flash-aspect-ratio": aspectRatio,
-    "--flash-max-width": maxWidth
-  } as CSSProperties;
-
-  useEffect(() => {
-    setFullscreenAvailable(Boolean(stageRef.current?.requestFullscreen));
-  }, []);
-
-  async function toggleFullscreen() {
-    const stage = stageRef.current;
-    if (!stage?.requestFullscreen) return;
-
-    try {
-      if (document.fullscreenElement) {
-        await document.exitFullscreen();
-        return;
-      }
-
-      await stage.requestFullscreen();
-    } catch {
-      // Fullscreen support varies across mobile browsers; keep the preview usable.
-    }
-  }
-
-  function startGame() {
-    setActivated(true);
-  }
-
-  function handleCoverKeyDown(event: KeyboardEvent<HTMLDivElement>) {
-    if (event.key === "Enter" || event.key === " ") {
-      event.preventDefault();
-      startGame();
-    }
-  }
-
-  if (activated) {
-    return (
-      <FlashGeneratorRuntime
-        {...runtimeProps}
-        gameName={gameName}
-        coverImageUrl={coverImageUrl}
-        ariaLabel={ariaLabel}
-        coverLabel={coverLabel}
-        deviceNotice={deviceNotice}
-        reportHref={reportHref}
-        aspectRatio={aspectRatio}
-        maxWidth={maxWidth}
-        coverImageWidth={coverImageWidth}
-        coverImageHeight={coverImageHeight}
-        startLabel={startLabel}
-        reloadLabel={reloadLabel}
-        helpLabel={helpLabel}
-      />
-    );
-  }
-
-  return (
-    <div className="flash-tool-shell" aria-label={ariaLabel}>
-      <div className="flash-stage" ref={stageRef} style={stageStyle}>
-        <div className="flash-player">
-          <div
-            className="flash-cover flash-preview"
-            role="button"
-            tabIndex={0}
-            aria-label={coverLabel}
-            onClick={startGame}
-            onKeyDown={handleCoverKeyDown}
-          >
-            {coverImageUrl && (
-              // eslint-disable-next-line @next/next/no-img-element
-              <img
-                className="flash-cover-image"
-                src={coverImageUrl}
-                width={coverImageWidth}
-                height={coverImageHeight}
-                alt=""
-                loading="eager"
-                decoding="async"
-                fetchPriority="high"
-              />
-            )}
-            <span className="flash-play-panel" aria-hidden="true">
-              <Play size={18} />
-              {startLabel}
-            </span>
-          </div>
-        </div>
-      </div>
-
-      <div className="game-control-bar" aria-label="Game controls">
-        {showStartControl && (
-          <button className="tool-button primary" type="button" onClick={startGame}>
-            <Play aria-hidden="true" size={18} />
-            {startLabel}
-          </button>
-        )}
-        <button className="tool-button secondary" type="button" onClick={toggleFullscreen} disabled={!fullscreenAvailable}>
-          <Maximize2 aria-hidden="true" size={18} />
-          Fullscreen
-        </button>
-        <button className="tool-button secondary" type="button" onClick={startGame}>
-          <RotateCcw aria-hidden="true" size={18} />
-          {reloadLabel}
-        </button>
-        <a className="tool-button secondary" href={reportHref}>
-          <Flag aria-hidden="true" size={18} />
-          {helpLabel}
-        </a>
-      </div>
-
-      <p className="game-status" aria-live="polite">
-        {gameName} is ready. Click {startLabel} to load the classic Flash player.
-      </p>
-      <aside className="game-device-notice">{deviceNotice}</aside>
-    </div>
-  );
-}
+export default FlashGenerator;

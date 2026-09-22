@@ -1,0 +1,25 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noEmit": false,
+    "outDir": ".game-route-check",
+    "rootDir": ".",
+    "incremental": false,
+    "isolatedModules": false,
+    "declaration": false,
+    "sourceMap": false,
+    "plugins": []
+  },
+  "include": [
+    "data/game-categories.ts",
+    "data/games/**/*.ts",
+    "lib/games/catalog.ts",
+    "lib/games/game-schema.ts",
+    "lib/games/routes.ts",
+    "scripts/validate-game-routes.ts"
+  ],
+  "exclude": ["node_modules", ".next", ".game-route-check"]
+}

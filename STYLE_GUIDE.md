@@ -5,7 +5,7 @@
 - Style keywords: clean, cute, practical, fast, friendly
 - Mood: light tool interface with enough personality for an avatar maker
 - First viewport: show the generator immediately
-- Current homepage direction: US-style retro Flash game page with a compact white nav, mint hero band, orange CTA, and the self-hosted Ruffle/SWF player as the main visual.
+- Current homepage direction: compact white nav and mint hero band, with a Classic game / Simple maker choice in the core tool area. Desktop defaults to the orange-CTA classic preview; phones default to the compact Canvas maker (confirmed 2026-09-22).
 
 ## Colors
 
@@ -22,10 +22,10 @@
 
 ## Layout
 
-- Keep the Ruffle/SWF game centered near the first viewport and treat it as a classic Flash avatar maker game.
+- Keep the selected editor visible in the first viewport; present the Ruffle/SWF option as a classic Flash avatar maker game.
 - Keep the game flow explicit near the game: load the player, press START, customize, and save or screenshot when the original game allows it.
-- Do not present the page as an AI generator or a rebuilt modern generator.
-- The HTML5 Canvas maker may remain available in the codebase for future fallback work, but the public homepage should prioritize the classic Flash game player.
+- Do not present either mode as an AI generator or claim that the Simple maker recreates the classic game's artwork.
+- The confirmed mobile homepage uses the existing Canvas drawing code for Simple maker, with face/hair/eyes/colors and PNG export. Desktop defaults to Classic game. Explicit choices persist across viewport changes, and Canvas settings persist across mode switches within the current page visit; no account or storage is added.
 - Cards should use 8px border radius unless a control needs to be circular.
 - Avoid large decorative gradients, blobs, and empty hero sections.
 - Keep text readable and prevent horizontal overflow on mobile.

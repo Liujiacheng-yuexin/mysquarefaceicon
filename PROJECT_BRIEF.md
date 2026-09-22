@@ -11,6 +11,7 @@
 
 ## Confirmed Product Direction
 
+- On 2026-09-22, the user accepted HOME-CTR-001 homepage metadata and confirmed the HOME-MOBILE-001 proposal: a Classic game / Simple maker switch within the same homepage tool region. Phones default to the geometric Canvas maker; desktop defaults to the classic game. These are distinct visual styles, not a remake of the SWF. Homepage keyword, H1, canonical, index policy and vertical scope remain unchanged. Implementation acceptance and deployment remain separate.
 - On 2026-08-31, the user explicitly confirmed the STRAT-001 “vertical avatar game portal” proposal.
 - Square Face Generator remains the flagship homepage experience and the primary intent of `/`; the portal role is additive and must not displace the core game.
 - Expansion is limited to strongly related Avatar Maker, Face Maker, Character Creator, Pixel Avatar, Retro Flash, and conditional avatar-focused Dress-up Creator experiences.
@@ -22,7 +23,7 @@
 
 - Users who want a quick, cute square avatar for Discord, TikTok, YouTube, forums, games, or profile pages.
 - Users want to create an icon without signup, payment, or installing an app.
-- The core action is to play the classic Flash avatar maker game in the browser, customize a square face icon, and save or screenshot the result when the original game workflow supports it.
+- The core action is to customize a square avatar. Simple maker offers Canvas PNG export; Classic game keeps its in-game save or screenshot workflow when supported by the browser.
 
 ## SEO Goals
 
@@ -37,7 +38,27 @@
 - On 2026-08-31, the user explicitly approved migration to the `RULES.md` v2.1 SEO standard during `BASE-001` acceptance.
 - The retired `3%-5%` exact-keyword density target is not a ranking target or release gate. Content follows KW-01/02 position and minimum-use coverage, KW-03 naturalness alerts, and KW-04 semantic coverage.
 - `RULES.md` is the reusable rule authority; `SEO_RULES.md` contains only confirmed MySquareFaceIcon project decisions.
-- The per-crawler AI policy required by AI-01 remains a separate undecided item. Existing robots behavior must not be changed until the user explicitly chooses the training/search crawler policy.
+- On 2026-09-02, the user explicitly confirmed the recommended AI-01 split policy with `确认 AI-01 分流策略`.
+- The project opts out of model-training and bulk-corpus crawlers while keeping public pages available to AI search and user-triggered retrieval. This preserves potential citation/discovery traffic without silently granting training access.
+- `robots.txt` remains a crawler preference signal rather than a security control. `/admin/` and `/api/` stay disallowed for the wildcard group and every explicitly allowed AI search/retrieval group.
+
+### AI-01 crawler decisions
+
+| User-agent | Decision | Project rationale |
+|---|---|---|
+| `GPTBot` | Block all paths | Opt out of OpenAI model-training crawl |
+| `OAI-SearchBot` | Allow public paths; block `/admin/` and `/api/` | Preserve ChatGPT search discovery |
+| `ChatGPT-User` | Allow public paths; block `/admin/` and `/api/` | Express support for user-triggered retrieval; robots enforcement is not guaranteed for user actions |
+| `ClaudeBot` | Block all paths | Opt out of Anthropic model-training crawl |
+| `Claude-User` | Allow public paths; block `/admin/` and `/api/` | Preserve user-triggered retrieval |
+| `Claude-SearchBot` | Allow public paths; block `/admin/` and `/api/` | Preserve Anthropic search discovery; added from the current official crawler list |
+| `PerplexityBot` | Allow public paths; block `/admin/` and `/api/` | Preserve Perplexity search discovery |
+| `Google-Extended` | Block all paths | Opt out of the covered Gemini training/grounding uses without changing normal Google Search policy |
+| `CCBot` | Block all paths | Opt out of the Common Crawl open corpus |
+| `Bytespider` | Block all paths | Conservative bulk/training-risk choice; current primary vendor purpose documentation was not found during the 2026-09-02 review |
+| `Applebot-Extended` | Block all paths | Opt out of Apple foundation-model training while leaving ordinary Apple search discovery under the wildcard policy |
+
+The dated primary-source review and rollback boundary are recorded in `docs/ops/ai-crawler-policy-proposal.md`. The executable decision source is `data/ai-crawler-policy.json`.
 
 ## Competitor Reference
 
@@ -49,7 +70,7 @@
 
 - The main experience currently runs a project-provided SWF through Ruffle. Its exact source and license permissions remain `UNKNOWN` until evidence is attached to `data/game-license-registry.json`; repository presence or an old project note must not be treated as authorization.
 - Ruffle is self-hosted from the site where possible instead of relying on CDN loading.
-- The public page should not present the game as an AI generator or a modern rebuilt generator.
+- The public page should not present the classic game as an AI generator or a modern rebuilt generator. Simple maker is labeled as a separate illustrated style, with no rights or authorship claims.
 - The core user action should take three steps: start the Flash game, customize the square face, then save through the game or take a screenshot if saving is not available.
 - Production target is Cloudflare Workers through OpenNext, with Cloudflare KV for
   moderated comment metadata and lightweight like records, and R2 for optional

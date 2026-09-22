@@ -1,0 +1,205 @@
+[
+  {
+    "name": "canonical:check",
+    "start": "2026-09-22T08:49:30.686Z",
+    "exitCode": 0,
+    "stdout": "\n> mysquarefaceicon@0.1.0 canonical:check\n> node scripts/run-canonical-host-check.mjs\n\nOP-11 canonical-host validation passed\n- HTTP apex, HTTP www, and HTTPS www normalize to the HTTPS apex with status 308\n- paths, queries, and method-preserving redirect semantics are retained\n- HTTPS apex, localhost, preview, and unrelated hosts pass through without redirects\n",
+    "stderr": ""
+  },
+  {
+    "name": "terms:check",
+    "start": "2026-09-22T08:49:32.039Z",
+    "exitCode": 0,
+    "stdout": "\n> mysquarefaceicon@0.1.0 terms:check\n> node scripts/check-terms-rights.mjs\n\nTERMS-001 source passed: exact approved copy/date, 1 H1, 7 H2s, 8 paragraphs, KW-02 count 3, two links, frozen remaining source.\nFail-closed negative fixtures: 6 rejected (rights, keyword, link, date and metadata regressions).\nRaw HTTP, browser, actual licenses and production release are NOT verified by a source-only run.\n",
+    "stderr": ""
+  },
+  {
+    "name": "about:check",
+    "start": "2026-09-22T08:49:32.478Z",
+    "exitCode": 0,
+    "stdout": "\n> mysquarefaceicon@0.1.0 about:check\n> node scripts/check-about-rights.mjs\n\nABOUT-001 source passed: seven exact approved regions, frozen remaining source/metadata/schema, 1 H1 / 5 H2 / 7 H3 / 16 paragraphs, KW-02 count 3, eight main links.\nFail-closed source negative fixtures: 14 rejected.\nSource checks do not verify raw HTTP, browser/mobile, actual licenses or production release.\n",
+    "stderr": ""
+  },
+  {
+    "name": "editorial:check",
+    "start": "2026-09-22T08:49:32.910Z",
+    "exitCode": 0,
+    "stdout": "\n> mysquarefaceicon@0.1.0 editorial:check\n> node scripts/check-editorial-rights.mjs\n\nEDITORIAL-001 source passed: five exact approved regions, frozen remaining source/metadata/schema, 1 H1 / 4 H2 / 3 H3 / 10 paragraphs, KW-02 count 3, two main links.\nFail-closed source negative fixtures: 14 rejected.\nSource checks do not verify raw HTTP, browser/mobile, actual licenses or production release.\n",
+    "stderr": ""
+  },
+  {
+    "name": "gallery:check",
+    "start": "2026-09-22T08:49:33.346Z",
+    "exitCode": 0,
+    "stdout": "\n> mysquarefaceicon@0.1.0 gallery:check\n> node scripts/check-gallery-rights.mjs\n\nGALLERY-001 source passed: six confirmed regions, other source frozen, 1 H1 / 4 H2 / 14 H3 / 19 page paragraphs + 1 actual initial community paragraph, eight CSS samples, four main links, KW-02 count 3.\nFail-closed source negative fixtures: 18 rejected. Community in-memory SSR states: empty, load-error, populated-liked, already-liked; no API, database, storage or browser interaction.\nSource/SSR fixtures do not verify HTTP, live UGC availability, browser/mobile, actual licenses or production release.\n",
+    "stderr": ""
+  },
+  {
+    "name": "locale:check",
+    "start": "2026-09-22T08:49:34.224Z",
+    "exitCode": 0,
+    "stdout": "\n> mysquarefaceicon@0.1.0 locale:check\n> node scripts/check-locale-rights.mjs\n\nMIG-OVAL-001 isolated discovery guard: 7 negative fixtures rejected; original eight SSR hashes and all existing fixtures retained.\nMIG-PIXEL-001 isolated discovery guard: 8 negative fixtures rejected; only exact confirmed data/side-label differences reversed, no golden refresh.\nLOCALE-001 source passed: four confirmed copy regions plus MIG-SQUARE data binding, other source frozen; 8 unchanged isolated HomePage/GameSidebar SSR and metadata contracts.\nFail-closed source negative fixtures: 19 rejected. Player/Hero/discovery/gallery/resource/install components use explicit isolated stubs, not browser proof.\nThis check does not prove actual SWF/image permissions, browser hydration/mobile behavior, current CWV, or production deployment.\n",
+    "stderr": ""
+  },
+  {
+    "name": "square-home:check",
+    "start": "2026-09-22T08:49:35.252Z",
+    "exitCode": 0,
+    "stdout": "\n> mysquarefaceicon@0.1.0 square-home:check\n> node scripts/check-square-homepage.mjs\n\nMIG-SQUARE-001 passed: 19 explicit player props; 8 original full real-component SSR contracts with only the verified MIG-PIXEL sidebar label reversed; 56 content-binding and 38 end-to-end prop-forwarding cases.\nFail-closed malformed-record fixtures: 150 rejected; optional schema, 11 frozen source files, two SWF hashes, and unchanged UNKNOWN generic-model rejection verified.\nSSR allows only the pre-existing React 18 fetchPriority warning; interaction, fresh CWV, actual licensing, and deployment require separate evidence.\n",
+    "stderr": ""
+  },
+  {
+    "name": "oval-page:check",
+    "start": "2026-09-22T08:49:38.138Z",
+    "exitCode": 0,
+    "stdout": "\n> mysquarefaceicon@0.1.0 oval-page:check\n> node scripts/check-oval-legacy-page.mjs\n\nMIG-OVAL-001 source passed: 19 explicit player inputs and end-to-end forwarding cases; 75 text bindings, 2 sidebar image bindings, 3 resolved related href bindings.\nFull real-component SSR/metadata/three schemas preserved except the two verified cover dimensions and exact MIG-PIXEL sidebar label; 250 malformed records rejected, 26 related exclusions verified.\n22 frozen sources and three binary hashes unchanged; optional schema and UNKNOWN generic-model rejection preserved.\nExisting React 18 fetchPriority SSR warning only. This local binding phase is not full template migration, rights approval, browser/CWV verification or deployment.\n",
+    "stderr": ""
+  },
+  {
+    "name": "pixel-page:check",
+    "start": "2026-09-22T08:49:40.978Z",
+    "exitCode": 0,
+    "stdout": "\n> mysquarefaceicon@0.1.0 pixel-page:check\n> node scripts/check-pixel-external-page.mjs\n\nMIG-PIXEL-001 source/real SSR passed: 3 How-to / 6 Features / 5 Tips / 6 FAQ; 41 content/link bindings; original metadata and minimal PlayerModel preserved.\nExact old source/SSR reversals passed; 37 source/data normalization negatives, 127 fail-closed record/Registry negatives, 11 badge negatives rejected; 7 unpublished/non-External sidebar exclusions.\n144 other source/check/config hashes unchanged. No rights waiver, iframe, hosted tool, extra runtime, schema claim, or URL/index change.\nBrowser/mobile/new-tab behavior, external generator functionality, CWV, actual licensing, production and deployment require separate evidence.\n",
+    "stderr": ""
+  },
+  {
+    "name": "games:check",
+    "start": "2026-09-22T08:49:43.150Z",
+    "exitCode": 0,
+    "stdout": "\n> mysquarefaceicon@0.1.0 games:check\n> node scripts/run-game-data-check.mjs\n\nGAME-DATA-001 validation passed\n- 3 current records validated\n- IDs, slugs, routes, canonicals, relations, and query lookups are unique/valid\n- license status and delivery gates match data/game-license-registry.json\n- local SWF checksums, player sources, and project image files are present\n- external tool remains direct-link-only with no local generator asset path\n",
+    "stderr": ""
+  },
+  {
+    "name": "player:check",
+    "start": "2026-09-22T08:49:44.900Z",
+    "exitCode": 0,
+    "stdout": "\n> mysquarefaceicon@0.1.0 player:check\n> node scripts/run-game-player-check.mjs\n\nPLAYER-001 validation passed\n- all five delivery adapters have valid fixtures and exhaustive capabilities\n- unknown and DIRECT_LINK_ONLY mismatches fail closed\n- ExternalLinkAdapter renders a safe new-tab link and no iframe\n- RuffleAdapter remains conditionally dynamic for click-to-load delivery\n- GamePlayer validates URLs and release policy before runtime adapter dispatch\n- first activation paints loading before the dynamic adapter mounts\n- Ruffle reloads reuse one initialized release\n",
+    "stderr": ""
+  },
+  {
+    "name": "routes:check",
+    "start": "2026-09-22T08:49:46.904Z",
+    "exitCode": 0,
+    "stdout": "\n> mysquarefaceicon@0.1.0 routes:check\n> node scripts/run-game-route-check.mjs\n\nROUTE-001 validation passed\n- three frozen legacy paths resolve without duplicate /games aliases\n- future /games/[slug] routes require exact paths, published status, and release permission\n- five allowlisted categories resolve from real published records; unknown categories fail closed\n- new route families retain explicit noindex and 404 guards\n",
+    "stderr": ""
+  },
+  {
+    "name": "components:check",
+    "start": "2026-09-22T08:49:50.697Z",
+    "exitCode": 0,
+    "stdout": "\n> mysquarefaceicon@0.1.0 components:check\n> node scripts/run-game-component-check.mjs\n\nCOMP-001 validation passed\n- all ten required shared components exist under components/game\n- cards, grids, categories, breadcrumbs, metadata, related records, empty state, and ad shell render from typed data\n- GameControls preserves playable and external-tool capability boundaries\n- route pages consume shared components without duplicate card markup\n- noindex directory/category scaffolds and the 404 boundary do not import AdSlotShell\n",
+    "stderr": ""
+  },
+  {
+    "name": "metadata:check",
+    "start": "2026-09-22T08:49:53.811Z",
+    "exitCode": 0,
+    "stdout": "\n> mysquarefaceicon@0.1.0 metadata:check\n> node scripts/run-game-metadata-check.mjs\n\nMETA-001 validation passed\n- Square, Oval, Pixel, and future game routes use the shared Game Data metadata builder\n- title, description, canonical, OG, Twitter, and one H1 resolve from validated records or the shared detail template\n- frozen legacy canonicals and current index states remain unchanged\n- missing required SEO fields and duplicate index metadata fail closed\n",
+    "stderr": ""
+  },
+  {
+    "name": "home:check",
+    "start": "2026-09-22T08:49:55.346Z",
+    "exitCode": 0,
+    "stdout": "\n> mysquarefaceicon@0.1.0 home:check\n> node scripts/run-home-information-architecture-check.mjs\n\nHOME-IA-001 validation passed\n- Square remains the core section and discovery precedes Gallery and long-form content\n- Related contains only Oval and Pixel published Game Data; Pixel remains External Tool\n- five real category routes render; empty Continue/New modules do not render\n- Guide, Gallery, and Blog links are isolated in the post-FAQ Resources section\n- the mobile core Play button remains centered in resting and hover states\n",
+    "stderr": ""
+  },
+  {
+    "name": "home-hero:check",
+    "start": "2026-09-22T08:49:58.131Z",
+    "exitCode": 0,
+    "stdout": "\n> mysquarefaceicon@0.1.0 home-hero:check\n> node scripts/run-home-hero-check.mjs\n\nHOME-HERO-001 validation passed\n- exact H1/value copy, one core preview, and both Play entry points are present\n- the desktop Hero uses the accepted split layout and mobile hides the duplicate CTA\n- initial HTML contains no Ruffle/WASM/SWF and the heavy adapter remains conditional\n- the external Hero Play action controls the same GamePlayer instance directly\n",
+    "stderr": ""
+  },
+  {
+    "name": "home-discovery:check",
+    "start": "2026-09-22T08:50:00.654Z",
+    "exitCode": 0,
+    "stdout": "\n> mysquarefaceicon@0.1.0 home-discovery:check\n> node scripts/run-home-discovery-check.mjs\n\nHOME-DISC-001 validation passed\n- Related uses the shared Category + Tags selector and ignores legacy relatedGameIds order\n- New requires a valid VERIFIED publication timestamp and is absent for current UNKNOWN data\n- cards use real Game Data thumbnails; Pixel remains an onsite External Tool details link\n- five non-empty categories render with truthful counts; all-empty discovery renders nothing\n- desktop media cards and the compact two-column mobile category layout are present\n",
+    "stderr": ""
+  },
+  {
+    "name": "home-gallery:check",
+    "start": "2026-09-22T08:50:02.998Z",
+    "exitCode": 0,
+    "stdout": "\n> mysquarefaceicon@0.1.0 home-gallery:check\n> node scripts/run-home-gallery-check.mjs\n\nHOME-GALLERY-001 validation passed\n- exact curated title, copy, trust note, six-item order, and ordinary /gallery link passed\n- semantic figures, explicit 512x512 dimensions, lazy loading, and responsive 3x2 CSS passed\n- hardcoded likes, Heart UI, community-title claims, and the old mandatory-like component are absent\n- Home uses the editorial variant; Oval and Pixel use the bounded compact variant\n- the real /gallery CommentSection remains in place\n",
+    "stderr": ""
+  },
+  {
+    "name": "perf-home:check",
+    "start": "2026-09-22T08:50:07.096Z",
+    "exitCode": 0,
+    "stdout": "\n> mysquarefaceicon@0.1.0 perf-home:check\n> node scripts/run-home-performance-check.mjs\n\nPERF-HOME-001 validation passed\n- the LCP cover is a byte-verified local project asset with truthful intrinsic dimensions\n- initial HTML contains no Ruffle runtime, WASM, or SWF request\n- Ruffle remains conditional on activation and preview/loading/runtime share one reserved surface\n- the loading response is committed before the dynamic adapter mounts after a paint opportunity\n- the service-worker install list does not prefetch Ruffle or SWF assets\n",
+    "stderr": ""
+  },
+  {
+    "name": "game-template:check",
+    "start": "2026-09-22T08:50:09.700Z",
+    "exitCode": 0,
+    "stdout": "\n> mysquarefaceicon@0.1.0 game-template:check\n> node scripts/run-game-template-check.mjs\n\nGAME-TPL-001 validation passed\n- five delivery types render through the shared Player-first detail template\n- module order, conditional sections, FAQ DOM, factual rights, and internal navigation are present\n- External Tool structured data stays WebPage-only; playable records use conservative VideoGame data\n- initial template markup contains no Ruffle runtime, WASM, or SWF request URL\n- future route keeps resolver, true-404 boundary, and force-noindex metadata gate\n",
+    "stderr": "Warning: React does not recognize the `fetchPriority` prop on a DOM element. If you intentionally want it to appear in the DOM as a custom attribute, spell it as lowercase `fetchpriority` instead. If you accidentally passed it from a parent component, remove it from the DOM element.\n    at img\n    at button\n    at div\n    at div\n    at div\n    at GamePlayer (D:\\LYXGIT\\mysquarefaceicon\\.game-template-check\\components\\game-player\\GamePlayer.js:81:66)\n    at section\n    at main\n    at GameDetailTemplate (D:\\LYXGIT\\mysquarefaceicon\\.game-template-check\\components\\game\\GameDetailTemplate.js:34:31)\n"
+  },
+  {
+    "name": "games-index:check",
+    "start": "2026-09-22T08:50:12.832Z",
+    "exitCode": 0,
+    "stdout": "\n> mysquarefaceicon@0.1.0 games-index:check\n> node scripts/check-games-index.mjs\n\n{\"task\":\"GAMES-INDEX-001\",\"result\":\"PASS\",\"assertions\":338,\"negativeFixtures\":60,\"mode\":\"source/SSR/loader\",\"browser\":\"separate evidence required\"}\n",
+    "stderr": ""
+  },
+  {
+    "name": "category-sample:check",
+    "start": "2026-09-22T08:50:14.293Z",
+    "exitCode": 0,
+    "stdout": "\n> mysquarefaceicon@0.1.0 category-sample:check\n> node scripts/check-category-sample.mjs\n\n{\"task\":\"CATEGORY-001\",\"scope\":\"CATEGORY_SAMPLE\",\"result\":\"PASS\",\"assertions\":581,\"negativeFixtures\":80,\"mode\":\"source/SSR/loader\",\"humanReview\":\"not completed\",\"browser\":\"separate evidence required\"}\n",
+    "stderr": ""
+  },
+  {
+    "name": "category-remaining:check",
+    "start": "2026-09-22T08:50:16.496Z",
+    "exitCode": 0,
+    "stdout": "\n> mysquarefaceicon@0.1.0 category-remaining:check\n> node scripts/check-category-remaining.mjs\n\n{\"task\":\"CATEGORY-001\",\"scope\":\"CATEGORY_REMAINING_PAGES\",\"result\":\"PASS\",\"assertions\":380,\"negativeFixtures\":162,\"mode\":\"source/SSR\",\"humanReview\":\"not completed\",\"browser\":\"separate evidence required\",\"indexing\":\"noindex remains; independent search value not certified\"}\n",
+    "stderr": ""
+  },
+  {
+    "name": "related:check",
+    "start": "2026-09-22T08:50:18.195Z",
+    "exitCode": 0,
+    "stdout": "\n> mysquarefaceicon@0.1.0 related:check\n> node scripts/run-related-games-check.mjs\n\nRELATED-001 validation passed\n- 72 algorithm, boundary, immutability, and Oval source assertions passed\n- real Oval order: Square (3 categories / 3 tags), Pixel External (1 category / 0 tags)\n- quality/popularity remain disabled; unrelated candidates are not used as fillers\n",
+    "stderr": ""
+  },
+  {
+    "name": "recent:check",
+    "start": "2026-09-22T08:50:20.038Z",
+    "exitCode": 0,
+    "stdout": "\n> mysquarefaceicon@0.1.0 recent:check\n> node scripts/run-recently-played-check.mjs\n\nRECENT-001 validation passed\n- versioned parsing, dedupe, ordering, limits, clear isolation and storage failures pass\n- only published playable local candidates are mapped; Pixel External is excluded\n- Square, Oval and future player models use real Game Data IDs at first Play only\n- server output stays empty until valid local history exists; no network-backed state was added\n- homepage, /games, focus recovery and Privacy disclosure match the confirmed scope\n",
+    "stderr": ""
+  },
+  {
+    "name": "favorites:check",
+    "start": "2026-09-22T08:50:22.241Z",
+    "exitCode": 0,
+    "stdout": "\n> mysquarefaceicon@0.1.0 favorites:check\n> node scripts/run-favorites-check.mjs\n\nFAV-001 validation passed\n- versioned local parsing, newest-first order, 50-item limit and fail-closed storage pass\n- all three published Game Data records are eligible, including labeled Pixel External\n- card buttons are link siblings; detail actions preserve primary CTA order and /games visibility\n- empty SSR, focus target, privacy disclosure and no-network boundary match the confirmed scope\nFAV-001 compatibility validation passed\n- exact pre-FAV source hashes remain available to immutable historical checks\n- binary inputs remain byte-identical and only favorite wrappers/controls are removed from legacy SSR\n",
+    "stderr": ""
+  },
+  {
+    "name": "assets:check",
+    "start": "2026-09-22T08:50:24.568Z",
+    "exitCode": 0,
+    "stdout": "\n> mysquarefaceicon@0.1.0 assets:check\n> node scripts/run-game-asset-check.mjs\n\nASSET-001 validation passed\n- 10 Game Data asset references validated\n- 1599640 unique local bytes (1603126 referenced bytes including shared assets)\n- 20 fail-closed negative fixtures rejected\n- no R2 assets declared; Square/Oval SWFs remain blocked, Ruffle excluded, Pixel direct-link-only\n",
+    "stderr": ""
+  },
+  {
+    "name": "images:check",
+    "start": "2026-09-22T08:50:26.420Z",
+    "exitCode": 0,
+    "stdout": "\n> mysquarefaceicon@0.1.0 images:check\n> node scripts/run-game-image-check.mjs\n\nIMG-001 validation passed\n- 29 public images inspected from file signatures (448379 bytes)\n- MIME inventory: image/png=9, image/svg+xml=1, image/webp=18, image/x-icon=1\n- 8 Game Data image records match intrinsic dimensions and ASSET-001 mappings\n- role ratios, required/forbidden roles, alt, provenance, legacy formats and no-array-fallback selection passed\n- non-first-viewport images are explicitly lazy; first-viewport Player preview remains eager/high priority\n- 18 fail-closed image/schema/format/loading negative fixtures rejected\n",
+    "stderr": ""
+  },
+  {
+    "name": "ruffle:check",
+    "start": "2026-09-22T08:50:28.320Z",
+    "exitCode": 0,
+    "stdout": "\n> mysquarefaceicon@0.1.0 ruffle:check\n> node scripts/check-ruffle-runtime.mjs\n\nRUFFLE-001 check passed: 0.2.0-nightly.2026.5.12; 5 files; 27512697 bytes; 10 negative fixtures rejected.\n",
+    "stderr": ""
+  }
+]

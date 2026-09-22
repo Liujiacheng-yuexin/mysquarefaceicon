@@ -1,0 +1,292 @@
+{
+  "version": "1.72",
+  "recordedAt": "2026-09-03T23:42:19.686Z",
+  "latestUserRequest": "确认 HOME-DISC-001 方案，进行开发",
+  "result": "NEEDS_USER_SCOPE",
+  "homeTask": "HOME-DISC-001",
+  "homeStatus": "已完成",
+  "originalHomeAcceptance": {
+    "result": "通过",
+    "acceptedAt": "2026-09-01T09:17:19.3773648+08:00",
+    "source": "用户明确回复“HOME-DISC-001 验收通过”"
+  },
+  "homeImplementationRewritten": false,
+  "homeCheck": {
+    "command": "node -e bounded spawnSync(process.execPath, [\"scripts/run-home-discovery-check.mjs\"], { timeout: 90000, windowsHide: true })",
+    "runner": "scripts/run-home-discovery-check.mjs",
+    "timeoutMs": 90000,
+    "exitCode": 0,
+    "stdout": "HOME-DISC-001 validation passed; Featured/New/External/empty/categories/responsive-source contracts pass",
+    "scope": "Current task TypeScript + data/SSR/source assertions; no fresh browser verification"
+  },
+  "directory": {
+    "taskId": "GAMES-INDEX-001",
+    "proposalConfirmed": true,
+    "implementationStarted": true,
+    "implementationCompleted": false,
+    "executionPaused": true,
+    "userAcceptanceReceived": false,
+    "changed": [
+      {
+        "path": "components/DeferredThirdPartyScripts.tsx",
+        "beforeSha256": "09ae2617d036e47be5874e366d0ced2fc1634d03b59ac9c2505f1938c7cfe7e2",
+        "sha256": "2a8204c7a63d175a2b3db9356557bb56a09ed24a415c1648c4a6e50a5361d538",
+        "backup": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-games-index-v172-72945fbaa87f4b219a4799d28466b57e\\before\\components\\DeferredThirdPartyScripts.tsx"
+      },
+      {
+        "path": "components/game/GameCard.tsx",
+        "beforeSha256": "94af78fdd701884f8e69d2d3cdf919d2a0b730c685b6e5287130d85ef9b92edf",
+        "sha256": "e405ecff0e4a26ef3ed686ef5ac7c06d5c622312d17a010bdcae6e495c66edcd",
+        "backup": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-games-index-v172-72945fbaa87f4b219a4799d28466b57e\\before\\components\\game\\GameCard.tsx"
+      },
+      {
+        "path": "components/game/GameGrid.tsx",
+        "beforeSha256": "261672ac47c7cafeb3f2576caf6ba6240fa3c9b15472f55778b8ae3f45d631b5",
+        "sha256": "ae5a454723185b9c2b34f2129c00e1e3cc3d6336567034d9b4f7798767b71f6c",
+        "backup": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-games-index-v172-72945fbaa87f4b219a4799d28466b57e\\before\\components\\game\\GameGrid.tsx"
+      },
+      {
+        "path": "components/game/CategoryChip.tsx",
+        "beforeSha256": "78e2ddcf2ce6b77899d3ab35f06f5d49a87f82f1015d8f4deb862dfe76ab0850",
+        "sha256": "ef65d12fb1ace3a669ed33e14379cc76d8edb0b5822ef19acdcd0834f836c1e5",
+        "backup": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-games-index-v172-72945fbaa87f4b219a4799d28466b57e\\before\\components\\game\\CategoryChip.tsx"
+      },
+      {
+        "path": "components/game/GameBreadcrumb.tsx",
+        "beforeSha256": "933a23729f0c280559d64ac1376022520c3d700031a489935d1e1b30b604b474",
+        "sha256": "db7beaf87e42bf14ed8966dd1912dfa81dc34b1a09eec87d40a446e28daceb3f",
+        "backup": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-games-index-v172-72945fbaa87f4b219a4799d28466b57e\\before\\components\\game\\GameBreadcrumb.tsx"
+      },
+      {
+        "path": "components/SiteHeader.tsx",
+        "beforeSha256": "8182d2e2a5012cfbb62ebadcc8cb581d088364d263f9eb11f9d217686df115a1",
+        "sha256": "dd7b227b9b8cd195352bd4167ced3365e3866757043953a470982ab897222dbc",
+        "backup": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-games-index-v172-72945fbaa87f4b219a4799d28466b57e\\before\\components\\SiteHeader.tsx"
+      },
+      {
+        "path": "components/SiteFooter.tsx",
+        "beforeSha256": "0a8f7e7ca185853a8494ba94f8ecaa65e9ddd73ba3e43781c0efacfcdd3c2291",
+        "sha256": "9e02069c0ad45f33e14aace05afbba2d1a6f01d29c64e593b93dce0e52a38565",
+        "backup": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-games-index-v172-72945fbaa87f4b219a4799d28466b57e\\before\\components\\SiteFooter.tsx"
+      }
+    ],
+    "added": [
+      {
+        "path": "lib/games/directory-policy.ts",
+        "sha256": "72fc949b2d939681de626cefac8d43be4bb22042c6a5fe9a5eb509a942af7b30"
+      },
+      {
+        "path": "lib/games/directory.ts",
+        "sha256": "1798450afc3572db887ce289a9a1b177cf464726cf8d84c9c80d6c23746875f4"
+      },
+      {
+        "path": "lib/seo/games-directory.ts",
+        "sha256": "02da1204cd8dac745877c5fd1507d55921fb611f788e714225839918413ec4a0"
+      },
+      {
+        "path": "components/game/GameLink.tsx",
+        "sha256": "4707246ee064f8ba5ce3401cd555af88f4fb44bf0bc41178fe875c9ce205cbda"
+      }
+    ],
+    "uncompleted": [
+      "app/games/page.tsx wiring and copy",
+      "directory return links",
+      "dedicated tests",
+      "type/lint/full regressions",
+      "Next/OpenNext builds",
+      "current-build HTTP/SEO",
+      "current-build desktop/mobile/browser ad-boundary validation"
+    ],
+    "baselineBuildId": "h1IC4O9PXVmRzgZw2n74n",
+    "baselineObservation": "Old build /games had AdSense script and advertising iframe after waiting. Not a check of the new partial implementation.",
+    "rawNetworkEvidence": "未验证 / selected browser exposed DOM but no resource-timing or network API; no zero-request claim",
+    "rollback": "Only reverse this turn's exact increments after checking current hashes; preserve unrelated dirty changes and old QA. Before copies recorded per file; do not use git reset/checkout."
+  },
+  "sourceAcceptances": {
+    "AUDIT-001": {
+      "result": "通过",
+      "acceptedAt": "2026-08-31T01:07:48.794Z",
+      "source": "用户明确回复"
+    },
+    "BASE-001": {
+      "result": "通过",
+      "acceptedAt": "2026-08-31T09:50:39.0521386+08:00",
+      "source": "用户明确回复；同时选择 SEO v2.1 迁移"
+    },
+    "LEGAL-001": {
+      "result": "通过",
+      "acceptedAt": "2026-08-31T10:36:16.812+08:00",
+      "source": "用户明确回复"
+    },
+    "STRAT-001": {
+      "result": "通过",
+      "acceptedAt": "2026-08-31T11:27:04.0957825+08:00",
+      "source": "用户明确回复"
+    },
+    "BACKUP-001": {
+      "result": "通过",
+      "acceptedAt": "2026-08-31T11:40:28.1663179+08:00",
+      "source": "用户在待验收状态后明确回复"
+    },
+    "GAME-DATA-001": {
+      "result": "通过",
+      "acceptedAt": "2026-08-31T12:31:18.6581030+08:00",
+      "source": "用户明确回复“确认验收，进行下一步的开发”"
+    },
+    "PLAYER-001": {
+      "result": "通过",
+      "acceptedAt": "2026-08-31T14:52:41.3316418+08:00",
+      "source": "用户明确回复“确认验收，进行下一步开发”"
+    },
+    "ROUTE-001": {
+      "result": "通过",
+      "acceptedAt": "2026-08-31T16:35:57.4914593+08:00",
+      "source": "用户明确回复“确认验收，请进行下一步开发”"
+    },
+    "COMP-001": {
+      "result": "通过",
+      "acceptedAt": "2026-08-31T17:27:33.8191524+08:00",
+      "source": "用户明确回复“确认验收”"
+    },
+    "META-001": {
+      "result": "通过",
+      "acceptedAt": "2026-08-31T22:53:08.6628545+08:00",
+      "source": "用户明确回复“验收通过，现在继续进行开发下一步”"
+    },
+    "HOME-IA-001": {
+      "result": "通过",
+      "acceptedAt": "2026-08-31T23:48:57.5740036+08:00",
+      "source": "用户明确回复“验收通过，现在进行下一步开发”"
+    },
+    "HOME-HERO-001": {
+      "result": "通过",
+      "acceptedAt": "2026-09-01T08:26:38.6207315+08:00",
+      "source": "用户明确回复“验收通过，现在进行下一步开发”"
+    },
+    "HOME-DISC-001": {
+      "result": "通过",
+      "acceptedAt": "2026-09-01T09:17:19.3773648+08:00",
+      "source": "用户明确回复“HOME-DISC-001 验收通过”"
+    },
+    "HOME-GALLERY-001": {
+      "result": "通过",
+      "acceptedAt": "2026-09-01T18:56:17.0982774+08:00",
+      "source": "用户明确回复“确认验收，进行下一步开发”"
+    },
+    "PERF-HOME-001": {
+      "result": "通过",
+      "acceptedAt": "2026-09-01T20:05:10.9773005+08:00",
+      "source": "用户明确回复“确认验收，进行下一步开发”"
+    },
+    "GAME-TPL-001": {
+      "result": "通过",
+      "acceptedAt": "2026-09-01T23:58:01.7208795+08:00",
+      "source": "用户明确回复“GAME-TPL-001 验收通过”并授权先部署累计验收内容"
+    },
+    "OP-11": {
+      "result": "通过",
+      "acceptedAt": "2026-09-02T08:09:45+08:00",
+      "source": "用户明确回复“OP-11 验收通过，继续下一发布阻断项”",
+      "scope": "本地源实现已验收；生产一跳矩阵仍未验证"
+    },
+    "AI-01": {
+      "result": "通过",
+      "acceptedAt": "2026-09-02T09:19:57+08:00",
+      "source": "用户明确回复“AI-01 验收通过，继续下一发布阻断项”",
+      "scope": "本地源实现已验收；生产 robots 仍未验证"
+    },
+    "KW-02-SAMPLE": {
+      "result": "通过",
+      "acceptedAt": "2026-09-02T10:11:51+08:00",
+      "source": "用户明确回复“KW-02 单页样例验收通过”",
+      "scope": "本记录验收 /contact 单页样例；后续 11 页批次已另行确认、实施并验收，生产未部署"
+    },
+    "KW-02": {
+      "result": "通过",
+      "acceptedAt": "2026-09-02T11:04:15+08:00",
+      "source": "用户明确回复“KW-02 剩余 11 页验收通过”",
+      "scope": "/contact 样例与剩余 11 页批次本地验收通过；生产未部署；12 条 should 独立保留"
+    },
+    "PF-01": {
+      "result": "通过",
+      "acceptedAt": "2026-09-02T04:16:42.772Z",
+      "source": "用户明确回复“PF-01 验收通过”，并要求下一步开发",
+      "scope": "仅本地激活响应实现与既有验证证据；生产性能未验证；本轮未重测"
+    },
+    "TERMS-001": {
+      "result": "通过",
+      "acceptedAt": "2026-09-02T05:42:21.798Z",
+      "source": "用户明确回复“TERMS-001 验收通过”",
+      "scope": "仅 TERMS-001 本地两段权利说明、一个 H2、日期修正及既有验证证据；不授予实际许可，不代表生产通过。本轮仅记录验收，未重跑应用检查，不启动下一项或部署。"
+    },
+    "ABOUT-001": {
+      "result": "通过",
+      "acceptedAt": "2026-09-02T07:50:25Z",
+      "source": "用户明确回复“ABOUT-001 验收通过”",
+      "scope": "仅 ABOUT-001 本地七处权利/示例来源文案修正及 v1.47 既有 QA；实际许可 UNKNOWN、生产未验证。本轮仅记录验收，未改应用或重跑检查，不启动下一项或部署。"
+    },
+    "EDITORIAL-001": {
+      "result": "通过",
+      "acceptedAt": "2026-09-02T10:24:29.697Z",
+      "source": "用户明确回复“验收通过，请进行下一步开发”",
+      "scope": "仅 EDITORIAL-001 本地五处确认文案与 v1.50/v1.52 已有验证证据；本轮不重跑应用 QA，不授予实际许可或生产批准。下一项仅开启 GALLERY-001 待确认方案。"
+    },
+    "GALLERY-001": {
+      "result": "通过",
+      "acceptedAt": "2026-09-02T12:44:34.299Z",
+      "source": "用户明确回复“GALLERY-001 验收通过”",
+      "scope": "仅 GALLERY-001 已确认六处本地文案与 v1.54 既有实现/QA 证据；不授予实际许可或生产批准。本轮只记录验收，未改应用或重跑应用检查，不启动下一项、推送或部署。"
+    },
+    "LOCALE-001": {
+      "result": "通过",
+      "acceptedAt": "2026-09-03T00:14:44Z",
+      "source": "用户明确回复“LOCALE-001 验收通过”",
+      "scope": "仅 LOCALE-001 已确认四处本地文案及 v1.58 手机单句修订，引用原实现/QA 证据；不授予实际许可或生产批准。本轮只登记验收，未改应用或重跑应用检查，不启动下一项、提交、推送或部署。"
+    },
+    "MIG-SQUARE-001": {
+      "result": "通过",
+      "acceptedAt": "2026-09-03T03:02:57.1669554Z",
+      "source": "用户明确回复“MIG-SQUARE-001 验收通过”，并要求现在进行下一步开发",
+      "scope": "仅已确认的 Square 首页本地数据绑定，引用原 v1.63 实现/QA；不表示完整通用许可模型迁移、真实许可或生产发布通过。本轮源码/历史/产物复核保持，未重跑完整应用 QA；按同一句指令仅准备 MIG-OVAL-001 本地阶段方案，仍待明确确认，不提交、推送或部署。"
+    },
+    "MIG-OVAL-001": {
+      "result": "通过",
+      "scope": "LOCAL_DATA_BINDING",
+      "acceptedAt": "2026-09-03T05:17:09.304Z",
+      "source": "用户明确回复“确认验收，现在进行下一步开发”",
+      "templateMigrationCompleted": false,
+      "localOnly": true,
+      "note": "只覆盖已确认并于 v1.65 实施的 Oval 本地数据绑定，保留原 QA 日期与视觉有条件通过边界；不代表完整模板迁移、真实许可或生产验收。下一项仅准备 Pixel 方案，确认前不编码。",
+      "evidencePath": "docs/quality/evidence/mig-oval-001/acceptance-checks.json"
+    },
+    "MIG-PIXEL-001": {
+      "result": "通过",
+      "scope": "EXTERNAL_TOOL_CONSISTENCY",
+      "acceptedAt": "2026-09-03T07:09:26.255Z",
+      "source": "用户明确回复“MIG-PIXEL-001 验收通过”，并要求“部署之前所有内容后进行下一步开发”",
+      "localOnly": true,
+      "note": "仅验收已确认并于 v1.67 实施、验证的 Pixel External Tool 一致性；原 QA 日期、失败记录和证据不改写。累计发布已重新获得明确授权并优先于下一项，但许可/P0 与生产验收不因此通过；完整 Oval 模板迁移仍未完成。",
+      "evidencePath": "docs/quality/evidence/mig-pixel-001/acceptance-checks.json"
+    },
+    "CONTENT-QA-001": {
+      "result": "通过",
+      "scope": "CONTENT_STANDARD_ONLY",
+      "acceptedAt": "2026-09-03T14:14:26.356Z",
+      "source": "用户明确回复“CONTENT-QA-001 验收通过”，并要求“现在进行下一步开发”",
+      "localOnly": true,
+      "note": "仅验收 v1.70 的游戏内容标准与审核模板；不等于三页事实复审、自动内容门禁、实际许可或生产通过。原 QA 日期及 29 条既有验收保留。按当前指令只准备 GAMES-INDEX-001 目录方案，确认前不编码或部署。",
+      "evidencePath": "docs/quality/evidence/content-qa-001/acceptance-checks.json"
+    }
+  },
+  "sourceAcceptanceCount": 30,
+  "release": "不通过 / 原未关闭 P0 + 本轮部分实现尚未验证",
+  "productionSeo": "未运行 / 无部署",
+  "commit": false,
+  "push": false,
+  "deployed": false,
+  "cancelledLicenseTaskReopened": false,
+  "boardVisual": "未验证 / 未绕过已有访问限制",
+  "boardOfflineValidation": {"result":"PASS","recordedAt":"2026-09-03T23:46:58.155Z","assertionCount":255,"protectedFileCount":177,"checks":["board matches bounded intended update","board script compiles","all 30 original acceptances unchanged","roadmap unchanged","board styles unchanged","other task unchanged AUDIT-001","other task unchanged BASE-001","other task unchanged LEGAL-001","other task unchanged STRAT-001","other task unchanged BACKUP-001","other task unchanged GAME-DATA-001","other task unchanged PLAYER-001","other task unchanged ROUTE-001","other task unchanged COMP-001","other task unchanged META-001","other task unchanged HOME-IA-001","other task unchanged HOME-HERO-001","other task unchanged HOME-GALLERY-001","other task unchanged PERF-HOME-001","other task unchanged GAME-TPL-001","other task unchanged MIG-SQUARE-001","other task unchanged MIG-OVAL-001","other task unchanged MIG-PIXEL-001","other task unchanged CONTENT-QA-001","prior quality and cancellation records unchanged","home reviewed without reimplementation","directory partial paused scope exact","protected source app/about-us/page.tsx","protected source app/admin/comments/page.tsx","protected source app/api/admin/comment-images/[...key]/route.ts","protected source app/api/admin/comments/route.ts","protected source app/api/admin/comments/[id]/route.ts","protected source app/api/comment-images/[...key]/route.ts","protected source app/api/comments/route.ts","protected source app/api/comments/[id]/like/route.ts","protected source app/blog/avatar-maker-without-signup/page.tsx","protected source app/blog/best-discord-avatar-style/page.tsx","protected source app/blog/cute-profile-picture-ideas/page.tsx","protected source app/blog/discord-avatar-size-guide/page.tsx","protected source app/blog/how-to-make-a-cute-discord-profile-icon/page.tsx","protected source app/blog/page.tsx","protected source app/blog/square-avatar-vs-round-avatar/page.tsx","protected source app/blog/tiktok-profile-icon-ideas/page.tsx","protected source app/category/[slug]/page.tsx","protected source app/contact/page.tsx","protected source app/cute-square-avatar-generator/page.tsx","protected source app/editorial-policy/page.tsx","protected source app/free-avatar-maker/page.tsx","protected source app/gallery/page.tsx","protected source app/games/page.tsx","protected source app/games/[slug]/page.tsx","protected source app/globals.css","protected source app/layout.tsx","protected source app/manifest.ts","protected source app/not-found.tsx","protected source app/oval-face-icon-generator/page.tsx","protected source app/page.tsx","protected source app/pixel-art-avatar-icon-generator/page.tsx","protected source app/pixel-square-face-maker/page.tsx","protected source app/privacy-policy/page.tsx","protected source app/robots.ts","protected source app/sitemap.ts","protected source app/square-avatar-generator/page.tsx","protected source app/square-face-icon-generator/page.tsx","protected source app/terms-of-service/page.tsx","protected source app/[locale]/page.tsx","protected source components/AdminComments.tsx","protected source components/AvatarGenerator.tsx","protected source components/CloudflareAnalytics.tsx","protected source components/CommentSection.tsx","protected source components/CuratedGalleryPreview.tsx","protected source components/FlashGenerator.tsx","protected source components/game/AdSlotShell.tsx","protected source components/game/EmptyState.tsx","protected source components/game/GameControls.tsx","protected source components/game/GameDetailTemplate.tsx","protected source components/game/GameFaq.tsx","protected source components/game/GameMeta.tsx","protected source components/game/GamePlayer.tsx","protected source components/game/GameSourceRights.tsx","protected source components/game/README.md","protected source components/game/RelatedGames.tsx","protected source components/game-player/adapters/adapter-types.ts","protected source components/game-player/adapters/ExternalLinkAdapter.tsx","protected source components/game-player/adapters/Html5Adapter.tsx","protected source components/game-player/adapters/IframeAdapterFrame.tsx","protected source components/game-player/adapters/LocalIframeAdapter.tsx","protected source components/game-player/adapters/OfficialIframeAdapter.tsx","protected source components/game-player/adapters/RuffleAdapter.tsx","protected source components/game-player/GamePlayer.tsx","protected source components/GameSidebar.tsx","protected source components/home/CoreGamePreview.tsx","protected source components/home/HomeDiscoveryRegion.tsx","protected source components/home/HomeHero.tsx","protected source components/home/HomeResourceLinks.tsx","protected source components/HomePage.tsx","protected source components/InstallPrompt.tsx","protected source components/ShareButtons.tsx","protected source lib/comment-store.ts","protected source lib/games/catalog.ts","protected source lib/games/game-player-model.ts","protected source lib/games/game-schema.ts","protected source lib/games/home-discovery.ts","protected source lib/games/routes.ts","protected source lib/locales.ts","protected source lib/metadata.ts","protected source lib/seo/canonical-origin.ts","protected source lib/seo/game-metadata.ts","protected source lib/seo/game-structured-data.ts","protected source data/ai-crawler-policy.json","protected source data/curated-icon-ideas.ts","protected source data/game-categories.ts","protected source data/game-license-registry.json","protected source data/games/oval-face.ts","protected source data/games/pixel-art-avatar.ts","protected source data/games/README.md","protected source data/games/square-face.ts","protected source scripts/check-ai-crawler-policy.mjs","protected source scripts/check-terms-rights.mjs","protected source scripts/cloudflare-login.cmd","protected source scripts/cloudflare-provision.cmd","protected source scripts/cloudflare-set-secrets.cmd","protected source scripts/patch-opennext-worker.mjs","protected source scripts/post-deploy-check.mjs","protected source scripts/README.md","protected source scripts/robots-policy.mjs","protected source scripts/run-canonical-host-check.mjs","protected source scripts/run-game-component-check.mjs","protected source scripts/run-game-data-check.mjs","protected source scripts/run-game-metadata-check.mjs","protected source scripts/run-game-player-check.mjs","protected source scripts/run-game-route-check.mjs","protected source scripts/run-game-template-check.mjs","protected source scripts/run-home-discovery-check.mjs","protected source scripts/run-home-gallery-check.mjs","protected source scripts/run-home-hero-check.mjs","protected source scripts/run-home-information-architecture-check.mjs","protected source scripts/run-home-performance-check.mjs","protected source scripts/seo-check.mjs","protected source scripts/start-local-preview.cmd","protected source scripts/submit-indexnow.mjs","protected source scripts/validate-canonical-host.ts","protected source scripts/validate-game-components.tsx","protected source scripts/validate-game-data.ts","protected source scripts/validate-game-metadata.ts","protected source scripts/validate-game-player.tsx","protected source scripts/validate-game-routes.ts","protected source scripts/validate-game-template.tsx","protected source scripts/validate-home-discovery.tsx","protected source scripts/validate-home-gallery.tsx","protected source scripts/validate-home-hero.tsx","protected source scripts/validate-home-information-architecture.tsx","protected source scripts/validate-home-performance.tsx","protected source public/games/oval-face-cover.png","protected source public/games/oval-face-icon.png","protected source public/games/oval-face.swf","protected source public/games/README.md","protected source public/games/square-face-cover.png","protected source public/games/square-face.swf","protected source package.json","protected source package-lock.json","protected source next.config.mjs","protected source middleware.ts","protected source tsconfig.json","protected source scripts/check-about-rights.mjs","protected source scripts/check-editorial-rights.mjs","protected source scripts/check-gallery-rights.mjs","protected source scripts/check-locale-rights.mjs","protected source lib/games/square-homepage.ts","protected source scripts/check-square-homepage.mjs","protected source lib/games/oval-legacy-page.ts","protected source scripts/check-oval-legacy-page.mjs","protected source lib/games/pixel-external-page.ts","protected source scripts/check-pixel-external-page.mjs","original QA docs/quality/evidence/terms-001-rights-copy/checks.json","original QA docs/quality/evidence/perf-home-001/metrics.json","original QA docs/quality/evidence/mig-square-001/proposal-checks.json","original QA docs/quality/evidence/mig-square-001/checks.json","original QA docs/quality/evidence/mig-square-001/acceptance-checks.json","original QA docs/quality/evidence/gallery-001-rights-copy/checks.json","original QA docs/quality/evidence/gallery-001-rights-copy/acceptance-checks.json","original QA docs/quality/evidence/gallery-001-rights-copy/proposal-checks.json","original QA docs/quality/evidence/mig-oval-001/proposal-checks.json","original QA docs/quality/evidence/mig-oval-001/checks.json","original QA docs/quality/evidence/mig-oval-001/acceptance-checks.json","original QA docs/quality/evidence/mig-pixel-001/proposal-checks.json","original QA docs/quality/evidence/mig-pixel-001/checks.json","original QA docs/quality/evidence/about-001-rights-copy/checks.json","original QA docs/quality/evidence/editorial-001-rights-copy/checks.json","original QA docs/quality/evidence/editorial-001-rights-copy/proposal-checks.json","original QA docs/quality/evidence/home-gallery-001/production-approved-ugc-probe.json","original QA docs/quality/evidence/locale-001-rights-copy/acceptance-checks.json","original QA docs/quality/evidence/locale-001-rights-copy/checks.json","original QA docs/archive/license-gate-cancelled-2026-09-03/checks.json","original QA docs/quality/evidence/about-001-rights-copy/proposal-checks.json","original QA docs/archive/license-gate-cancelled-2026-09-03/release-order-confirmation.json","original QA docs/quality/evidence/locale-001-rights-copy/mobile-revision-checks.json","original QA docs/quality/evidence/locale-001-rights-copy/proposal-checks.json","original QA docs/quality/evidence/mig-pixel-001/acceptance-checks.json","binary/archive public/games/square-face.swf","binary/archive public/games/oval-face.swf","binary/archive docs/archive/license-gate-cancelled-2026-09-03/swf-license-evidence-request.md","binary/archive docs/archive/license-gate-cancelled-2026-09-03/checks.json","binary/archive docs/archive/license-gate-cancelled-2026-09-03/release-order-confirmation.json","Registry UNKNOWN preserved","cancelled active file absent docs/legal/swf-license-evidence-request.md","cancelled active file absent docs/quality/evidence/license-gate-2026-09-03/checks.json","cancelled active file absent docs/quality/evidence/license-gate-2026-09-03/release-order-confirmation.json","paused partial file unchanged components/DeferredThirdPartyScripts.tsx","paused partial file unchanged components/game/GameCard.tsx","paused partial file unchanged components/game/GameGrid.tsx","paused partial file unchanged components/game/CategoryChip.tsx","paused partial file unchanged components/game/GameBreadcrumb.tsx","paused partial file unchanged components/SiteHeader.tsx","paused partial file unchanged components/SiteFooter.tsx","paused partial file unchanged lib/games/directory-policy.ts","paused partial file unchanged lib/games/directory.ts","paused partial file unchanged lib/seo/games-directory.ts","paused partial file unchanged components/game/GameLink.tsx","CONTENT-QA original checks unchanged","accepted standard unchanged","accepted template unchanged","content plan unchanged","original directory proposal QA unchanged","CONTENT-QA acceptance evidence unchanged","latest request focused","correct home week","home acceptance not reopened","directory not falsely complete","static/dynamic focus focusStatus","static/dynamic focus focusId","static/dynamic focus focusTitle","static/dynamic focus focusGoal","static/dynamic focus focusNext","static/dynamic focus focusEvidence","static/dynamic focus gateNote","home has no duplicate acceptance request","home prompt requires new scope","partial directory acceptance disabled","directory prompt does not resume work","paused dropdown rejects 待验收","paused dropdown rejects 已完成","paused checkbox cannot submit","stale directory cache rejected 待验收","no cached premature acceptance 待验收","home source acceptance wins 待验收","stale directory cache rejected 已完成","no cached premature acceptance 已完成","home source acceptance wins 已完成","stale directory cache rejected 开发中","no cached premature acceptance 开发中","home source acceptance wins 开发中","reset focus","reset retains all source acceptances","no new build claimed"]},
+  "evidencePath": "docs/quality/evidence/games-index-001/interruption-checks.json",
+  "readmePath": "docs/quality/evidence/games-index-001/implementation-interruption.md"
+}

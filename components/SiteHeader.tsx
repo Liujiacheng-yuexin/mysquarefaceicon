@@ -1,13 +1,21 @@
 import { ChevronDown, Gamepad2, Menu } from "lucide-react";
 
-export default function SiteHeader() {
+type SiteHeaderProps = {
+  readonly mobileStartHref?: string;
+  readonly mobileStartLabel?: string;
+};
+
+export default function SiteHeader({
+  mobileStartHref = "/#maker",
+  mobileStartLabel = "Start"
+}: SiteHeaderProps = {}) {
   return (
     <header className="site-nav">
       <a className="brand" href="/" aria-label="My Square Face Icon home">
         <span className="brand-mark" aria-hidden="true" />
         <span>Square Face Generator</span>
       </a>
-      <a className="mobile-start-link" href="/#maker">Start</a>
+      <a className="mobile-start-link" href={mobileStartHref}>{mobileStartLabel}</a>
       <nav className="nav-links" aria-label="Primary navigation">
         <details className="nav-dropdown">
           <summary>
@@ -19,6 +27,7 @@ export default function SiteHeader() {
             <a href="/#maker">Square Face Generator</a>
             <a href="/oval-face-icon-generator">Oval Face Icon Generator</a>
             <a href="/pixel-art-avatar-icon-generator">Pixel Art Avatar Icon Generator</a>
+            <a href="/games">All avatar games</a>
           </div>
         </details>
         <a href="/free-avatar-maker">Free Avatar Maker</a>
@@ -38,6 +47,7 @@ export default function SiteHeader() {
           <a href="/#maker">Start Creating</a>
           <a href="/oval-face-icon-generator">Oval Face</a>
           <a href="/pixel-art-avatar-icon-generator">Pixel Avatar</a>
+          <a href="/games">All avatar games</a>
           <a href="/free-avatar-maker">Free Avatar Maker</a>
           <a href="/gallery">Gallery</a>
           <a href="/square-face-icon-generator">Icon Guide</a>

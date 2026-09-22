@@ -1,0 +1,11 @@
+{
+  "checkedAt": "2026-09-01T09:28:51.6524598+08:00",
+  "url": "https://mysquarefaceicon.com/api/comments?locale=en&limit=500&sort=latest",
+  "statusCode": 200,
+  "contentType": "application/json",
+  "responseKeys": [
+    "comments"
+  ],
+  "commentCount": 0,
+  "interpretation": "The production English comments endpoint returned no approved UGC at the recorded time. This is a point-in-time probe, not a permanent claim."
+}

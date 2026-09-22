@@ -1,0 +1,154 @@
+{
+  "taskId": "ASSET-001",
+  "scope": "GAME_ASSET_STORAGE_LOCAL_IMPLEMENTATION",
+  "boardVersion": "1.94",
+  "recordedAt": "2026-09-08T03:27:06.9688829Z",
+  "userInstruction": "确认 ASSET-001 方案，进行开发",
+  "result": "通过（本地实现与适用 QA）/ 待用户验收 / 全站发布不通过",
+  "userAcceptanceReceived": false,
+  "implementation": {
+    "manifest": "data/game-asset-manifest.json",
+    "schema": "lib/games/game-asset-schema.ts",
+    "checker": "scripts/validate-game-assets.ts",
+    "command": "npm run assets:check",
+    "gameDataAssetReferences": 10,
+    "uniqueLocalFiles": 8,
+    "uniqueLocalBytes": 1599640,
+    "referencedBytesIncludingSharedAssets": 1603126,
+    "negativeFixturesRejected": 20,
+    "r2AssetsDeclared": 0,
+    "dependenciesChanged": false,
+    "gameDataUrlsChanged": false,
+    "localBinaryFilesChanged": false,
+    "visiblePageOrSeoChanged": false
+  },
+  "decisions": {
+    "ruffle": "EXCLUDED_RUNTIME",
+    "squareAndOvalSwf": "BLOCKED_RIGHTS_UNKNOWN",
+    "pixelExternal": "EXTERNAL_DIRECT_ONLY",
+    "squareCover": "KEEP_APP_STATIC_LCP",
+    "currentOtherImages": "HOLD_CURRENT",
+    "allowedCdnOriginForFutureAuthorizedObjects": "https://static.mysquarefaceicon.com",
+    "contentAddressedConvention": "games/{game-id}/{kind}/{sha256-prefix}/{filename}"
+  },
+  "commands": [
+    {"command": "npm run assets:check", "exitCode": 0, "result": "10 references / 8 unique local files / 20 negative fixtures / 0 R2 objects"},
+    {"command": "npx tsc --noEmit --pretty false", "exitCode": 0},
+    {"command": "npm run lint", "exitCode": 0, "result": "0 warnings / 0 errors"},
+    {"command": "npm run canonical:check", "exitCode": 0},
+    {"command": "npm run games:check", "exitCode": 0},
+    {"command": "npm run player:check", "exitCode": 0},
+    {"command": "npm run ruffle:check", "exitCode": 0, "result": "5 files / 27,512,697 bytes / 10 negative fixtures"},
+    {"command": "npm run perf-home:check", "exitCode": 0},
+    {"command": "npm run square-home:check", "exitCode": 0},
+    {"command": "npm run oval-page:check", "exitCode": 0},
+    {"command": "npm run pixel-page:check", "exitCode": 0},
+    {"command": "npm run games-index:check", "exitCode": 0},
+    {"command": "npm run category-sample:check", "exitCode": 0},
+    {"command": "npm run category-remaining:check", "exitCode": 0},
+    {"command": "npm run related:check", "exitCode": 0},
+    {"command": "npm run recent:check", "exitCode": 0},
+    {"command": "npm run favorites:check", "exitCode": 0},
+    {"command": "npm run build", "exitCode": 0, "result": "42/42 static pages"},
+    {"command": "npm run cf:build", "exitCode": 0, "result": "OpenNext Worker bundle complete; one chdir patch; existing Windows warning retained"},
+    {"command": "node scripts/run-game-asset-check.mjs --base http://127.0.0.1:3100", "exitCode": 0, "result": "8 unique responses; status/MIME/cache/bytes/SHA-256; three HTML surfaces contain no R2 game-object URL"},
+    {"command": "node scripts/check-ruffle-runtime.mjs --base http://127.0.0.1:3100", "exitCode": 0, "result": "7 runtime/SWF responses"},
+    {"command": "node scripts/check-oval-legacy-page.mjs --base http://127.0.0.1:3100", "exitCode": 0},
+    {"command": "node scripts/check-pixel-external-page.mjs --base http://127.0.0.1:3100", "exitCode": 0},
+    {"command": "node scripts/check-ai-crawler-policy.mjs --base http://127.0.0.1:3100", "exitCode": 0, "result": "6 blocked / 5 allowed decisions"},
+    {"command": "node scripts/seo-check.mjs --base http://127.0.0.1:3100", "exitCode": 0, "result": "20 URLs / 0 mandatory / 12 existing should notices"}
+  ],
+  "preservedFailuresAndCorrections": [
+    {"stage": "negative-fixture development", "result": "failed to exercise byte mismatch because file checks were disabled", "correction": "kept file verification enabled; all 20 final negatives fail closed"},
+    {"stage": "data/games documentation", "result": "Pixel immutable source hash failed", "correction": "reverted the unrelated README edit; old golden was not refreshed"},
+    {"stage": "historical compatibility", "result": "first ASSET inverse was not idempotent across nested regression chains", "correction": "made the exact inverse idempotent; all legacy checks pass"},
+    {"stage": "local server startup", "result": "background Start-Process rejected and npm swallowed host/port arguments", "correction": "started the repository-local Next CLI directly"},
+    {"stage": "Square HTTP command", "result": "check-square-homepage.mjs rejects --base and printed usage", "correction": "used its supported source mode plus asset/Ruffle/SEO HTTP and browser activation evidence"},
+    {"stage": "browser tooling", "result": "preferred Playwright screenshot/network/performance/viewport/final-console APIs unavailable", "correction": "used direct desktop accessibility interactions and exact HTTP evidence; mobile/network-panel/final-console remain unverified"}
+  ],
+  "http": {
+    "base": "http://127.0.0.1:3100",
+    "assetResponses": 8,
+    "ruffleAndSwfResponses": 7,
+    "statusMimeCacheBytesAndHash": "通过",
+    "r2GameObjectUrlsInSquareOvalPixelHtml": 0
+  },
+  "browser": {
+    "environment": "Codex in-app browser desktop fallback",
+    "finalBuildDesktop": {
+      "square": "H1 and start control present; activation removed start control and kept fullscreen/reload controls",
+      "oval": "H1 and start control present; activation reached explicit loaded state with fullscreen/reload controls",
+      "pixel": "H1 and Open Original Page present; no Ruffle or R2 game-object URL in the accessibility/DOM snapshot"
+    },
+    "preFinalBuildConsole": "no errors or warnings observed in the earlier desktop run",
+    "finalBuildConsole": "未验证; final browser adapter did not expose a console log API",
+    "mobile390And360": "未验证; browser adapter did not expose viewport resizing and repository Playwright is absent",
+    "networkRequestPanel": "未验证; browser adapter did not expose network inspection",
+    "realDevicesAndOtherEngines": "未验证"
+  },
+  "build": {
+    "nextBuildId": "eprP1ZLPJRXECNBWQl0Cw",
+    "nextPages": 42,
+    "next": "通过",
+    "openNextCloudflare": "通过 with existing Windows compatibility warning",
+    "openNextAssetFiles": 88,
+    "openNextAssetBytes": 30298977,
+    "productionDeployment": false
+  },
+  "inventory": {
+    "publicFilesIncludingDocumentation": 40,
+    "publicBytes": 29367157,
+    "ruffleBytes": 27512697,
+    "swfBytes": 1403193,
+    "otherBytes": 451267
+  },
+  "fileHashes": {
+    "data/game-asset-manifest.json": "5e21167e9658818c1870af80801848972d744f8f92d2d87389956430ab859cac",
+    "lib/games/game-asset-schema.ts": "57300362a2ea39c7e6b4393c97e360a1b3ef42149b63d9fa3eedfdbb5ebcce76",
+    "scripts/run-game-asset-check.mjs": "89306f12b8c5cfbbdb8b795e07e8189e1857061c80441a5a6571ed3949f59636",
+    "scripts/validate-game-assets.ts": "5a4b1ea752862edeca74e2b26eae22830111f6899b6fe7881f2af6d364a59a01",
+    "tsconfig.game-assets.json": "ed9b0fad087bfc1648ffb539d8aa17de0c6c97fe7775641d7e3ab3227e765d69",
+    "scripts/asset-compat.mjs": "f4d4184e121be8013f8a9a0debaf6849ac45082988dcb9470c0976d2682a5f5c",
+    "scripts/ruffle-compat.mjs": "99104634e2af62b80bf9a536bfa6032555f3afef51bbd17e5741c48d91041fa2",
+    "package.json": "dab0103b7b11a30b9e58cfd7b8db82bcf65d50d4e21f499970452512cde28f55"
+  },
+  "seoInvariant": {
+    "urlsRoutesMetadataH1CanonicalSchemaChanged": false,
+    "robotsIndexSitemapChanged": false,
+    "visibleCopyLayoutSearchIntentChanged": false,
+    "seoLogEntryNeeded": false,
+    "reason": "asset-governance-only local implementation; no page or production SEO change",
+    "seoProdRun": false
+  },
+  "unverifiedOrBlocking": [
+    "fresh 390/360 browser layouts, real devices and other engines",
+    "browser request-panel inspection and final-build console log collection",
+    "failure injection/Retry, real fullscreen and in-game save behavior",
+    "field and production CWV",
+    "Square and Oval SWF rights remain UNKNOWN",
+    "remaining human factual, advertising and CMP gates",
+    "production SEO and deployment"
+  ],
+  "board": {
+    "path": "F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+    "previousSha256": "f0928871a5605fb3bce40c6a69203bd532ca63b5cb1d4746c11bcf4bb5ef60d6",
+    "currentSha256": "629034e20f9a3ee825768d060ff94fd2035a3bb36a72f8b698ca497891ab06d3",
+    "status": "待验收",
+    "javascriptAndEmbeddedState": "通过",
+    "visual": "未验证; file URL browser action was blocked by browser security policy and no workaround was attempted",
+    "completedTasks": 25,
+    "totalTasks": 60,
+    "sourceAcceptanceKeys": 36,
+    "nextRequiredUserReply": "ASSET-001 验收通过"
+  },
+  "release": {
+    "externalR2MutationAuthorized": false,
+    "r2BucketDomainCorsTlsOrObjectsChanged": false,
+    "commitCreated": false,
+    "pushed": false,
+    "deployed": false,
+    "seoProdRun": false,
+    "result": "不通过 / 未部署"
+  },
+  "rollback": "Remove the ASSET manifest/schema/checker/config and exact package/README/compat increments; retain accepted Game Data, Ruffle, SWFs and pages. No production or R2 rollback is needed because no external state changed."
+}

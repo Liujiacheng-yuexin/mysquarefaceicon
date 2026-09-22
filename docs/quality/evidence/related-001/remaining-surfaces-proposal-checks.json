@@ -1,0 +1,123 @@
+{
+  "taskId": "RELATED-001",
+  "scope": "RELATED_REMAINING_SURFACES_PROPOSAL",
+  "boardVersion": "1.82",
+  "recordedAt": "2026-09-07T02:05:00.3642056Z",
+  "request": "确认验收，现在进行下一步开发",
+  "result": "通过（只读范围核对与方案治理）；方案待确认；应用未实施；生产未验证 / 未部署",
+  "proposal": {
+    "path": "docs/product/related-games-remaining-surfaces-proposal.md",
+    "status": "待确认",
+    "confirmation": "确认 RELATED-001 剩余入口方案，进行开发",
+    "implementationStarted": false,
+    "implementationCompleted": false,
+    "wholeTaskCompleted": false
+  },
+  "acceptedSample": {
+    "path": "/oval-face-icon-generator",
+    "status": "已获用户明确本地验收",
+    "acceptanceEvidencePath": "docs/quality/evidence/related-001/acceptance-checks.json",
+    "acceptanceEvidenceSha256": "38f8c67168d6fb1c81b72c3d863f2ef9eefa32b194d86eca4d5ff9e81fd9e709",
+    "implementationEvidencePath": "docs/quality/evidence/related-001/checks.json",
+    "implementationEvidenceSha256": "e3eb03f2dda884b910c0e03d77fd07131505bd41264b5f1c51d049e0f2a98605",
+    "modifiedInProposalTurn": false
+  },
+  "currentFacts": {
+    "remainingSurfaces": [
+      "/ English homepage discovery",
+      "/pixel-art-avatar-icon-generator post-FAQ related section",
+      "future /games/[slug] RelatedGames component"
+    ],
+    "excludedSurfaces": [
+      "/oval-face-icon-generator accepted sample",
+      "/games directory",
+      "five /category/[slug] aggregation pages",
+      "seven noindex locale drafts",
+      "RECENT-001 and FAV-001"
+    ],
+    "currentRanking": {
+      "square-face": [
+        { "id": "oval-face", "sharedCategories": 3, "sharedTags": 3 },
+        { "id": "pixel-art-avatar", "sharedCategories": 1, "sharedTags": 1 }
+      ],
+      "pixel-art-avatar": [
+        { "id": "square-face", "sharedCategories": 1, "sharedTags": 1 },
+        { "id": "oval-face", "sharedCategories": 1, "sharedTags": 0 }
+      ]
+    },
+    "qualityPopularity": "DISABLED_NO_VERIFIED_DATA",
+    "currentPublicLinkTargetsAndOrderChange": false,
+    "newRoutes": false,
+    "indexingChange": false
+  },
+  "preflightChecks": [
+    { "command": "npm run related:check", "exitCode": 0, "result": "PASS; 53 current selector and Oval assertions" },
+    { "command": "npm run home-discovery:check", "exitCode": 0, "result": "PASS; confirms current explicit relation order before proposed migration" },
+    { "command": "npm run game-template:check", "exitCode": 0, "result": "PASS with pre-existing React fetchPriority warning retained" },
+    { "command": "npm run pixel-page:check", "exitCode": 0, "result": "PASS; confirms current manual mixed footer section and frozen Pixel boundaries" }
+  ],
+  "applicationBaseline": {
+    "applicationCodeChangedInProposalTurn": false,
+    "branch": "codex/game-platform-rebuild",
+    "head": "c6d30087c2c03a7c4eb8d5bfe6e055e9b8d40228",
+    "buildId": "jNeY9E9kpEdOXfB1UZQaz",
+    "hashes": {
+      "lib/recommendations/related-games.ts": "f897da450dffbc2dc028115995294cbf413d1b830e3bd640bb01ce201c6083a4",
+      "components/game/RelatedGames.tsx": "1fa094f28bd8b0855c7869596b9df55b0072a48a8db6d3db8c6558f954209aa7",
+      "components/game/GameDetailTemplate.tsx": "3ed1e3577a95db9c5bf455d52fa1f09a7b5be214f16d3706773b2c5d6ae81d4a",
+      "lib/games/home-discovery.ts": "b172dd4a9e807754f59dfe5f9bb5b42fdc2d360bd89c54eab504f5577dac166e",
+      "components/home/HomeDiscoveryRegion.tsx": "8652a91eeeb4650230235422c661be58841a49475ce1bc446425c7e2ac697b04",
+      "components/HomePage.tsx": "294ff206904e9cc127fcf986d54e4820017331370208a5d4731c84dbb5999623",
+      "app/pixel-art-avatar-icon-generator/page.tsx": "6116dc65fae1b664512d2267263f242b5085765f4a5f0fbac3368c301d92496c",
+      "app/oval-face-icon-generator/page.tsx": "dcabb4e17228e253afe758d299a67ec7c514011272a39eb11575e25963ab4ae6",
+      "app/games/page.tsx": "5c154f0c23e174f94b68ce7e705ae978f7ecb6ffab15d04fd1439e148234d3c5",
+      "app/category/[slug]/page.tsx": "358074712a967ae9442d670cbb3fb4d5aa5aa09b7f6cf89a29c6cb8457c8926d"
+    }
+  },
+  "board": {
+    "path": "F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+    "previousSha256": "4e659aa595e62240a0a4056e95ccee904b338283777c874fcb81cb76f5ee0c1d",
+    "currentSha256": "e9a5ebe61e4d3359a52c66c5c40ad696c43d79e0190459e11f5fbe29ebf29412",
+    "completedTasks": 21,
+    "totalTasks": 60,
+    "sourceAcceptanceKeyCount": 33,
+    "ovalSampleAcceptancePreserved": true,
+    "recentAndFavoriteStarted": false,
+    "realBrowserVisual": "未验证；方案轮不以替代副本绕过真实看板文件访问边界"
+  },
+  "governanceChecks": {
+    "boardSourceAndVm": {
+      "result": "PASS",
+      "inlineScriptsCompiled": 1,
+      "completedTasks": 21,
+      "totalTasks": 60,
+      "sourceAcceptanceKeyCount": 33,
+      "remainingProposalPending": true,
+      "acceptedOvalSamplePreserved": true,
+      "recentAndFavoriteUnstarted": true
+    },
+    "applicationPreservation": {
+      "result": "PASS",
+      "applicationFilesMatched": 10,
+      "priorEvidenceFilesMatched": 3,
+      "applicationCodeChanged": false
+    },
+    "proposalJsonParse": "PASS",
+    "gitDiffCheck": "PASS; only existing line-ending notices"
+  },
+  "notRun": [
+    "application type/lint/full regression suite",
+    "Next and Cloudflare/OpenNext rebuild",
+    "HTTP and seo:check",
+    "browser/mobile/CWV",
+    "seo:prod and production verification"
+  ],
+  "release": {
+    "commitCreated": false,
+    "pushed": false,
+    "deployed": false,
+    "productionVerified": false,
+    "result": "不通过 / 未部署"
+  },
+  "rollback": "Remove only the v1.82 proposal and governance entries; preserve the accepted Oval implementation, all prior evidence, and user worktree changes."
+}

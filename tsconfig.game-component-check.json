@@ -1,0 +1,26 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "jsx": "react-jsx",
+    "noEmit": false,
+    "outDir": ".game-component-check",
+    "rootDir": ".",
+    "incremental": false,
+    "isolatedModules": false,
+    "declaration": false,
+    "sourceMap": false,
+    "plugins": []
+  },
+  "include": [
+    "components/game/**/*.tsx",
+    "components/game-player/**/*.tsx",
+    "data/game-categories.ts",
+    "data/games/**/*.ts",
+    "lib/games/**/*.ts",
+    "scripts/validate-game-components.tsx"
+  ],
+  "exclude": ["node_modules", ".next", ".game-component-check", "app/sitemap.ts"]
+}

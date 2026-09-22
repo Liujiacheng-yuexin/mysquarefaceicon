@@ -1,0 +1,3251 @@
+{
+  "task": "GALLERY-001",
+  "boardVersion": "1.54",
+  "startedAt": "2026-09-02T10:49:09.254Z",
+  "recordedAt": "2026-09-02T11:19:47.319Z",
+  "status": "待验收",
+  "applicationWritten": true,
+  "userProposalConfirmation": {
+    "received": true,
+    "message": "确认 GALLERY-001 示例来源与权利声明修正方案",
+    "recordedAt": "2026-09-02T11:19:47.319Z"
+  },
+  "userAcceptance": "NOT_RECEIVED",
+  "result": {
+    "confirmedImplementationAndRequiredLocalChecks": "通过",
+    "overallLocalQuality": "有条件通过（12 既有 SEO should 与旧视觉提醒保留）",
+    "production": "未验证 / 未部署",
+    "release": "不通过（实际许可与生产门禁未关闭）"
+  },
+  "environment": {
+    "cwd": "D:/LYXGIT/mysquarefaceicon",
+    "branch": "codex/game-platform-rebuild",
+    "head": "c6d30087c2c03a7c4eb8d5bfe6e055e9b8d40228",
+    "os": "Windows / PowerShell",
+    "node": "v22.16.0",
+    "next": "14.2.35",
+    "openNextCloudflare": "1.3.0",
+    "buildId": "Vyf3tcN5LOfwDiSXRH6xO",
+    "base": "http://127.0.0.1:3100",
+    "productionDeployment": false
+  },
+  "scope": "仅实施三个 description、CollectionPage.description、eyebrow 与 lead 六处逐字替换；页面其他源码、真实社区功能、8 个 CSS 示例、Title/H1、URL/canonical/index、KW-02 原句和主词 3 次冻结。",
+  "sourcePath": "app/gallery/page.tsx",
+  "sourceSha256": "d051f12b8e4c71a9b15a75efb59c3ffbb1f9904ec5d69577f9640ff47d479901",
+  "previousSourceSha256": "352e649d9ff6592e62f74aa91f7f3cf3cb0e7b48d4671d553d4eb0106c6dd12e",
+  "proposedSourceSha256": "d051f12b8e4c71a9b15a75efb59c3ffbb1f9904ec5d69577f9640ff47d479901",
+  "frozenRegionSha256": "0e6e6fb2063f544bd0f6d3757888a8b33d22ed79e8396764866b97ce9380bb39",
+  "textRegionCount": 6,
+  "metadataExceptions": [
+    "description",
+    "openGraph.description",
+    "twitter.description"
+  ],
+  "schemaExceptions": [
+    "CollectionPage.description"
+  ],
+  "edits": [
+    {
+      "id": "metadata.description",
+      "old": "Browse the Square Face Icon Gallery for approved community creations, user screenshots, ratings, and original avatar style ideas.",
+      "new": "Explore the Square Face Icon Gallery for simple avatar style examples and approved community submissions when available. Check source and reuse permissions.",
+      "originalLine": 13
+    },
+    {
+      "id": "openGraph.description",
+      "old": "Approved square face icon community creations, screenshots, ratings, and original avatar style ideas.",
+      "new": "Simple square face icon style examples, plus approved community submissions when available. Source and reuse permissions require separate verification.",
+      "originalLine": 22
+    },
+    {
+      "id": "twitter.description",
+      "old": "Browse approved square face avatar creations and ideas before making your own icon.",
+      "new": "Browse simple avatar style examples and approved community submissions when available. Check source and reuse permissions before using an image.",
+      "originalLine": 29
+    },
+    {
+      "id": "collectionSchema.description",
+      "old": "Approved community square face icon creations plus original style ideas for profile avatars and social media icons.",
+      "new": "Simple square face icon style examples and approved community submissions when available; selection or moderation does not establish authorship or image-use rights.",
+      "originalLine": 124
+    },
+    {
+      "id": "eyebrow",
+      "old": "Original avatar ideas",
+      "new": "Avatar style ideas",
+      "originalLine": 159
+    },
+    {
+      "id": "lead",
+      "old": "This gallery collects approved community submissions from My Square Face Icon along with original style ideas.\n          Use it to browse screenshots, ratings, expressions, colors, and profile-picture readability before making your\n          own avatar in the generator.",
+      "new": "This gallery pairs simple style illustrations with approved community submissions when available.\n          The eight sample faces in the examples section are illustrations, not game screenshots.\n          Use them to compare expression, contrast, and small-size readability.\n          Display or moderation does not verify authorship or grant image-use rights; check permissions for the specific image.",
+      "originalLine": 162
+    }
+  ],
+  "metadataLengths": {
+    "description": 156,
+    "openGraph": 151,
+    "twitter": 144
+  },
+  "acceptedKwCopy": "Use this square face icon gallery to compare expression, contrast, and small-size readability before you make a new design.",
+  "renderedExpected": {
+    "metadata": {
+      "title": "Square Face Icon Gallery - Community Creations",
+      "description": "Explore the Square Face Icon Gallery for simple avatar style examples and approved community submissions when available. Check source and reuse permissions.",
+      "alternates": {
+        "canonical": "https://mysquarefaceicon.com/gallery"
+      },
+      "openGraph": {
+        "type": "website",
+        "url": "https://mysquarefaceicon.com/gallery",
+        "title": "Square Face Icon Gallery - Community Creations",
+        "description": "Simple square face icon style examples, plus approved community submissions when available. Source and reuse permissions require separate verification.",
+        "images": [
+          "/og-image.svg"
+        ]
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "title": "Square Face Icon Gallery - Community Creations",
+        "description": "Browse simple avatar style examples and approved community submissions when available. Check source and reuse permissions before using an image.",
+        "images": [
+          "/og-image.svg"
+        ]
+      }
+    },
+    "headings": {
+      "h1": [
+        "Square Face Icon Gallery"
+      ],
+      "h2": [
+        "Community Square Face Creations",
+        "Browse Square Face Icon Gallery Examples",
+        "How to Use These Gallery Examples",
+        "Create Your Own Square Face Icon"
+      ],
+      "h3": [
+        "Soft Mint Smile",
+        "Coral Creator",
+        "Game Lobby Green",
+        "Peach Chat Icon",
+        "Blue Forum Badge",
+        "Berry Cute Avatar",
+        "Minimal Profile Face",
+        "Sunny Group Icon",
+        "Pick a mood",
+        "Copy the principle, not the exact look",
+        "Check the small preview",
+        "Open the generator",
+        "Use the free avatar maker workflow",
+        "Read cute avatar tips"
+      ]
+    },
+    "pageOwnedParagraphs": [
+      "Avatar style ideas",
+      "This gallery pairs simple style illustrations with approved community submissions when available. The eight sample faces in the examples section are illustrations, not game screenshots. Use them to compare expression, contrast, and small-size readability. Display or moderation does not verify authorship or grant image-use rights; check permissions for the specific image.",
+      "These public cards come from approved user submissions only. New comments and optional images are reviewed before they appear here, and email addresses are never displayed publicly.",
+      "Use this square face icon gallery to compare expression, contrast, and small-size readability before you make a new design.",
+      "A friendly profile icon style with soft color contrast and a calm expression.",
+      "A brighter avatar idea for TikTok, YouTube, and creator profile pages.",
+      "A simple gaming-style icon with clear edges and a readable small-size face.",
+      "A warm square avatar that works well for chat apps and small communities.",
+      "A cool, clean style for forums, classroom projects, and team profiles.",
+      "A playful look with a stronger accent color and a compact centered face.",
+      "A low-detail avatar idea for users who want a clean, private profile image.",
+      "A bright square face style for friend groups, light projects, and casual servers.",
+      "Decide whether the avatar should feel friendly, calm, bold, playful, or minimal before choosing parts.",
+      "Use the examples for color balance and readability, then create your own combination in the generator.",
+      "A good gallery-inspired avatar should still read clearly when it appears as a small social profile icon.",
+      "The examples on this page are intentionally simple because profile avatars are usually viewed at small sizes. If you want a stronger result, focus on one memorable feature: a hairstyle, glasses, a bright background, or a clear smile.",
+      "Start with the main square face generator and build your own icon.",
+      "Follow a fast process for creating profile-ready avatars.",
+      "Learn how to choose softer expressions, colors, and accessories."
+    ],
+    "initialSharedCommunityParagraphCount": 1,
+    "mainLinkCount": 4,
+    "links": [
+      {
+        "href": "/#maker",
+        "text": "Make your own icon"
+      },
+      {
+        "href": "/#maker",
+        "text": "Open the generator Start with the main square face generator and build your own icon."
+      },
+      {
+        "href": "/free-avatar-maker",
+        "text": "Use the free avatar maker workflow Follow a fast process for creating profile-ready avatars."
+      },
+      {
+        "href": "/cute-square-avatar-generator",
+        "text": "Read cute avatar tips Learn how to choose softer expressions, colors, and accessories."
+      }
+    ],
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Square Face Icon Gallery",
+        "description": "Simple square face icon style examples and approved community submissions when available; selection or moderation does not establish authorship or image-use rights.",
+        "url": "https://mysquarefaceicon.com/gallery",
+        "isPartOf": {
+          "@type": "WebSite",
+          "name": "My Square Face Icon",
+          "url": "https://mysquarefaceicon.com"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://mysquarefaceicon.com"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Gallery",
+            "item": "https://mysquarefaceicon.com/gallery"
+          }
+        ]
+      }
+    ],
+    "sampleCount": 8,
+    "keywordPhraseCount": 3
+  },
+  "checker": {
+    "path": "scripts/check-gallery-rights.mjs",
+    "sha256": "13dcc0d9ff2cc8b651fcaabeb537f4aaf284c519a3dfe4ab60a003fbdea651eb",
+    "modes": [
+      "source",
+      "--built",
+      "--base http://127.0.0.1:3100"
+    ],
+    "httpTimeoutMs": 10000,
+    "dependencyChange": false,
+    "sourceNegativeFixtures": 18,
+    "rawHtmlNegativeFixtures": 20,
+    "communityInMemoryFixtures": [
+      "empty",
+      "load-error",
+      "populated-liked",
+      "already-liked"
+    ],
+    "communityFixtureBoundary": "Uses the actual shared CommentSection and locales, with in-memory hook values for fixture SSR; no API, DB, storage or browser write. Initial raw HTML and browser empty state are independently verified.",
+    "expectedRedBaseline": {
+      "result": "EXPECTED_FAIL_ON_OLD_COPY",
+      "chunk_id": "bb165f",
+      "wall_time_seconds": 3.6235205,
+      "exit_code": 1,
+      "original_token_count": 21,
+      "output": "GALLERY-001 check failed: metadata.description must appear exactly once\n\n0 !== 1\n\n"
+    },
+    "firstGreenSource": {
+      "chunk_id": "bbac61",
+      "wall_time_seconds": 0.7443169,
+      "exit_code": 0,
+      "original_token_count": 127,
+      "output": "GALLERY-001 source passed: six confirmed regions, other source frozen, 1 H1 / 4 H2 / 14 H3 / 19 page paragraphs + 1 actual initial community paragraph, eight CSS samples, four main links, KW-02 count 3.\nFail-closed source negative fixtures: 18 rejected. Community in-memory SSR states: empty, load-error, populated-liked, already-liked; no API, database, storage or browser interaction.\nSource/SSR fixtures do not verify HTTP, live UGC availability, browser/mobile, actual licenses or production release.\n"
+    }
+  },
+  "commands": {
+    "codeCount": 20,
+    "buildAndBuiltCount": 6,
+    "httpRobotsSeoCount": 6,
+    "totalFinalCommands": 32,
+    "allExitCodesZero": true,
+    "code": [
+      {
+        "name": "type-check",
+        "command": "node node_modules/typescript/bin/tsc --noEmit",
+        "args": [
+          "node_modules/typescript/bin/tsc",
+          "--noEmit"
+        ],
+        "timeoutMs": 120000,
+        "startedAt": "2026-09-02T10:58:24.044Z",
+        "completedAt": "2026-09-02T10:58:34.238Z",
+        "durationMs": 10194,
+        "exitCode": 0,
+        "signal": null,
+        "error": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "name": "lint",
+        "command": "node C:/nvm4w/nodejs/node_modules/npm/bin/npm-cli.js run lint -- --max-warnings 0",
+        "args": [
+          "C:/nvm4w/nodejs/node_modules/npm/bin/npm-cli.js",
+          "run",
+          "lint",
+          "--",
+          "--max-warnings",
+          "0"
+        ],
+        "timeoutMs": 120000,
+        "startedAt": "2026-09-02T10:58:34.239Z",
+        "completedAt": "2026-09-02T10:59:16.377Z",
+        "durationMs": 42138,
+        "exitCode": 0,
+        "signal": null,
+        "error": null,
+        "stdout": "\n> mysquarefaceicon@0.1.0 lint\n> next lint --max-warnings 0\n\n✔ No ESLint warnings or errors\n",
+        "stderr": ""
+      },
+      {
+        "name": "gallery-checker-lint",
+        "command": "node node_modules/eslint/bin/eslint.js scripts/check-gallery-rights.mjs --max-warnings 0",
+        "args": [
+          "node_modules/eslint/bin/eslint.js",
+          "scripts/check-gallery-rights.mjs",
+          "--max-warnings",
+          "0"
+        ],
+        "timeoutMs": 60000,
+        "startedAt": "2026-09-02T10:59:16.378Z",
+        "completedAt": "2026-09-02T10:59:20.018Z",
+        "durationMs": 3640,
+        "exitCode": 0,
+        "signal": null,
+        "error": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "name": "gallery:check",
+        "command": "node scripts/check-gallery-rights.mjs",
+        "args": [
+          "scripts/check-gallery-rights.mjs"
+        ],
+        "timeoutMs": 30000,
+        "startedAt": "2026-09-02T10:59:20.018Z",
+        "completedAt": "2026-09-02T10:59:20.565Z",
+        "durationMs": 547,
+        "exitCode": 0,
+        "signal": null,
+        "error": null,
+        "stdout": "GALLERY-001 source passed: six confirmed regions, other source frozen, 1 H1 / 4 H2 / 14 H3 / 19 page paragraphs + 1 actual initial community paragraph, eight CSS samples, four main links, KW-02 count 3.\nFail-closed source negative fixtures: 18 rejected. Community in-memory SSR states: empty, load-error, populated-liked, already-liked; no API, database, storage or browser interaction.\nSource/SSR fixtures do not verify HTTP, live UGC availability, browser/mobile, actual licenses or production release.\n",
+        "stderr": ""
+      },
+      {
+        "name": "editorial-checker-lint",
+        "command": "node node_modules/eslint/bin/eslint.js scripts/check-editorial-rights.mjs --max-warnings 0",
+        "args": [
+          "node_modules/eslint/bin/eslint.js",
+          "scripts/check-editorial-rights.mjs",
+          "--max-warnings",
+          "0"
+        ],
+        "timeoutMs": 60000,
+        "startedAt": "2026-09-02T10:59:20.565Z",
+        "completedAt": "2026-09-02T10:59:22.027Z",
+        "durationMs": 1462,
+        "exitCode": 0,
+        "signal": null,
+        "error": null,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "name": "editorial:check",
+        "command": "node C:/nvm4w/nodejs/node_modules/npm/bin/npm-cli.js run editorial:check",
+        "args": [
+          "C:/nvm4w/nodejs/node_modules/npm/bin/npm-cli.js",
+          "run",
+          "editorial:check"
+        ],
+        "timeoutMs": 30000,
+        "startedAt": "2026-09-02T10:59:22.027Z",
+        "completedAt": "2026-09-02T10:59:22.344Z",
+        "durationMs": 317,
+        "exitCode": 0,
+        "signal": null,
+        "error": null,
+        "stdout": "\n> mysquarefaceicon@0.1.0 editorial:check\n> node scripts/check-editorial-rights.mjs\n\nEDITORIAL-001 source passed: five exact approved regions, frozen remaining source/metadata/schema, 1 H1 / 4 H2 / 3 H3 / 10 paragraphs, KW-02 count 3, two main links.\nFail-closed source negative fixtures: 14 rejected.\nSource checks do not verify raw HTTP, browser/mobile, actual licenses or production release.\n",
+        "stderr": ""
+      },
+      {
+        "name": "about:check",
+        "command": "node C:/nvm4w/nodejs/node_modules/npm/bin/npm-cli.js run about:check",
+        "args": [
+          "C:/nvm4w/nodejs/node_modules/npm/bin/npm-cli.js",
+          "run",
+          "about:check"
+        ],
+        "timeoutMs": 30000,
+        "startedAt": "2026-09-02T10:59:22.344Z",
+        "completedAt": "2026-09-02T10:59:22.671Z",
+        "durationMs": 327,
+        "exitCode": 0,
+        "signal": null,
+        "error": null,
+        "stdout": "\n> mysquarefaceicon@0.1.0 about:check\n> node scripts/check-about-rights.mjs\n\nABOUT-001 source passed: seven exact approved regions, frozen remaining source/metadata/schema, 1 H1 / 5 H2 / 7 H3 / 16 paragraphs, KW-02 count 3, eight main links.\nFail-closed source negative fixtures: 14 rejected.\nSource checks do not verify raw HTTP, browser/mobile, actual licenses or production release.\n",
+        "stderr": ""
+      },
+      {
+        "name": "terms:check",
+        "command": "node C:/nvm4w/nodejs/node_modules/npm/bin/npm-cli.js run terms:check",
+        "args": [
+          "C:/nvm4w/nodejs/node_modules/npm/bin/npm-cli.js",
+          "run",
+          "terms:check"
+        ],
+        "timeoutMs": 30000,
+        "startedAt": "2026-09-02T10:59:22.671Z",
+        "completedAt": "2026-09-02T10:59:23.022Z",
+        "durationMs": 351,
+        "exitCode": 0,
+        "signal": null,
+        "error": null,
+        "stdout": "\n> mysquarefaceicon@0.1.0 terms:check\n> node scripts/check-terms-rights.mjs\n\nTERMS-001 source passed: exact approved copy/date, 1 H1, 7 H2s, 8 paragraphs, KW-02 count 3, two links, frozen remaining source.\nFail-closed negative fixtures: 6 rejected (rights, keyword, link, date and metadata regressions).\nRaw HTTP, browser, actual licenses and production release are NOT verified by a source-only run.\n",
+        "stderr": ""
+      },
+      {
+        "name": "canonical:check",
+        "command": "node C:/nvm4w/nodejs/node_modules/npm/bin/npm-cli.js run canonical:check",
+        "args": [
+          "C:/nvm4w/nodejs/node_modules/npm/bin/npm-cli.js",
+          "run",
+          "canonical:check"
+        ],
+        "timeoutMs": 120000,
+        "startedAt": "2026-09-02T10:59:23.022Z",
+        "completedAt": "2026-09-02T10:59:24.983Z",
+        "durationMs": 1961,
+        "exitCode": 0,
+        "signal": null,
+        "error": null,
+        "stdout": "\n> mysquarefaceicon@0.1.0 canonical:check\n> node scripts/run-canonical-host-check.mjs\n\nOP-11 canonical-host validation passed\n- HTTP apex, HTTP www, and HTTPS www normalize to the HTTPS apex with status 308\n- paths, queries, and method-preserving redirect semantics are retained\n- HTTPS apex, localhost, preview, and unrelated hosts pass through without redirects\n",
+        "stderr": ""
+      },
+      {
+        "name": "games:check",
+        "command": "node C:/nvm4w/nodejs/node_modules/npm/bin/npm-cli.js run games:check",
+        "args": [
+          "C:/nvm4w/nodejs/node_modules/npm/bin/npm-cli.js",
+          "run",
+          "games:check"
+        ],
+        "timeoutMs": 120000,
+        "startedAt": "2026-09-02T10:59:24.984Z",
+        "completedAt": "2026-09-02T10:59:26.505Z",
+        "durationMs": 1521,
+        "exitCode": 0,
+        "signal": null,
+        "error": null,
+        "stdout": "\n> mysquarefaceicon@0.1.0 games:check\n> node scripts/run-game-data-check.mjs\n\nGAME-DATA-001 validation passed\n- 3 current records validated\n- IDs, slugs, routes, canonicals, relations, and query lookups are unique/valid\n- license status and delivery gates match data/game-license-registry.json\n- local SWF checksums, player sources, and project image files are present\n- external tool remains direct-link-only with no local generator asset path\n",
+        "stderr": ""
+      },
+      {
+        "name": "player:check",
+        "command": "node C:/nvm4w/nodejs/node_modules/npm/bin/npm-cli.js run player:check",
+        "args": [
+          "C:/nvm4w/nodejs/node_modules/npm/bin/npm-cli.js",
+          "run",
+          "player:check"
+        ],
+        "timeoutMs": 120000,
+        "startedAt": "2026-09-02T10:59:26.505Z",
+        "completedAt": "2026-09-02T10:59:28.281Z",
+        "durationMs": 1776,
+        "exitCode": 0,
+        "signal": null,
+        "error": null,
+        "stdout": "\n> mysquarefaceicon@0.1.0 player:check\n> node scripts/run-game-player-check.mjs\n\nPLAYER-001 validation passed\n- all five delivery adapters have valid fixtures and exhaustive capabilities\n- unknown and DIRECT_LINK_ONLY mismatches fail closed\n- ExternalLinkAdapter renders a safe new-tab link and no iframe\n- RuffleAdapter remains conditionally dynamic for click-to-load delivery\n- GamePlayer validates URLs and release policy before runtime adapter dispatch\n- first activation paints loading before the dynamic adapter mounts\n- Ruffle reloads reuse one initialized release\n",
+        "stderr": ""
+      },
+      {
+        "name": "routes:check",
+        "command": "node C:/nvm4w/nodejs/node_modules/npm/bin/npm-cli.js run routes:check",
+        "args": [
+          "C:/nvm4w/nodejs/node_modules/npm/bin/npm-cli.js",
+          "run",
+          "routes:check"
+        ],
+        "timeoutMs": 120000,
+        "startedAt": "2026-09-02T10:59:28.281Z",
+        "completedAt": "2026-09-02T10:59:32.163Z",
+        "durationMs": 3882,
+        "exitCode": 0,
+        "signal": null,
+        "error": null,
+        "stdout": "\n> mysquarefaceicon@0.1.0 routes:check\n> node scripts/run-game-route-check.mjs\n\nROUTE-001 validation passed\n- three frozen legacy paths resolve without duplicate /games aliases\n- future /games/[slug] routes require exact paths, published status, and release permission\n- five allowlisted categories resolve from real published records; unknown categories fail closed\n- new route families retain explicit noindex and 404 guards\n",
+        "stderr": ""
+      },
+      {
+        "name": "components:check",
+        "command": "node C:/nvm4w/nodejs/node_modules/npm/bin/npm-cli.js run components:check",
+        "args": [
+          "C:/nvm4w/nodejs/node_modules/npm/bin/npm-cli.js",
+          "run",
+          "components:check"
+        ],
+        "timeoutMs": 120000,
+        "startedAt": "2026-09-02T10:59:32.163Z",
+        "completedAt": "2026-09-02T10:59:35.812Z",
+        "durationMs": 3649,
+        "exitCode": 0,
+        "signal": null,
+        "error": null,
+        "stdout": "\n> mysquarefaceicon@0.1.0 components:check\n> node scripts/run-game-component-check.mjs\n\nCOMP-001 validation passed\n- all ten required shared components exist under components/game\n- cards, grids, categories, breadcrumbs, metadata, related records, empty state, and ad shell render from typed data\n- GameControls preserves playable and external-tool capability boundaries\n- route pages consume shared components without duplicate card markup\n- noindex directory/category scaffolds and the 404 boundary do not import AdSlotShell\n",
+        "stderr": ""
+      },
+      {
+        "name": "metadata:check",
+        "command": "node C:/nvm4w/nodejs/node_modules/npm/bin/npm-cli.js run metadata:check",
+        "args": [
+          "C:/nvm4w/nodejs/node_modules/npm/bin/npm-cli.js",
+          "run",
+          "metadata:check"
+        ],
+        "timeoutMs": 120000,
+        "startedAt": "2026-09-02T10:59:35.812Z",
+        "completedAt": "2026-09-02T10:59:37.389Z",
+        "durationMs": 1577,
+        "exitCode": 0,
+        "signal": null,
+        "error": null,
+        "stdout": "\n> mysquarefaceicon@0.1.0 metadata:check\n> node scripts/run-game-metadata-check.mjs\n\nMETA-001 validation passed\n- Square, Oval, Pixel, and future game routes use the shared Game Data metadata builder\n- title, description, canonical, OG, Twitter, and one H1 resolve from validated records or the shared detail template\n- frozen legacy canonicals and current index states remain unchanged\n- missing required SEO fields and duplicate index metadata fail closed\n",
+        "stderr": ""
+      },
+      {
+        "name": "home:check",
+        "command": "node C:/nvm4w/nodejs/node_modules/npm/bin/npm-cli.js run home:check",
+        "args": [
+          "C:/nvm4w/nodejs/node_modules/npm/bin/npm-cli.js",
+          "run",
+          "home:check"
+        ],
+        "timeoutMs": 120000,
+        "startedAt": "2026-09-02T10:59:37.389Z",
+        "completedAt": "2026-09-02T10:59:39.885Z",
+        "durationMs": 2496,
+        "exitCode": 0,
+        "signal": null,
+        "error": null,
+        "stdout": "\n> mysquarefaceicon@0.1.0 home:check\n> node scripts/run-home-information-architecture-check.mjs\n\nHOME-IA-001 validation passed\n- Square remains the core section and discovery precedes Gallery and long-form content\n- Featured contains only Oval and Pixel published Game Data; Pixel remains External Tool\n- five real category routes render; empty Continue/New modules do not render\n- Guide, Gallery, and Blog links are isolated in the post-FAQ Resources section\n- the mobile core Play button remains centered in resting and hover states\n",
+        "stderr": ""
+      },
+      {
+        "name": "home-hero:check",
+        "command": "node C:/nvm4w/nodejs/node_modules/npm/bin/npm-cli.js run home-hero:check",
+        "args": [
+          "C:/nvm4w/nodejs/node_modules/npm/bin/npm-cli.js",
+          "run",
+          "home-hero:check"
+        ],
+        "timeoutMs": 120000,
+        "startedAt": "2026-09-02T10:59:39.885Z",
+        "completedAt": "2026-09-02T10:59:42.119Z",
+        "durationMs": 2234,
+        "exitCode": 0,
+        "signal": null,
+        "error": null,
+        "stdout": "\n> mysquarefaceicon@0.1.0 home-hero:check\n> node scripts/run-home-hero-check.mjs\n\nHOME-HERO-001 validation passed\n- exact H1/value copy, one core preview, and both Play entry points are present\n- the desktop Hero uses the accepted split layout and mobile hides the duplicate CTA\n- initial HTML contains no Ruffle/WASM/SWF and the heavy adapter remains conditional\n- the external Hero Play action controls the same GamePlayer instance directly\n",
+        "stderr": ""
+      },
+      {
+        "name": "home-discovery:check",
+        "command": "node C:/nvm4w/nodejs/node_modules/npm/bin/npm-cli.js run home-discovery:check",
+        "args": [
+          "C:/nvm4w/nodejs/node_modules/npm/bin/npm-cli.js",
+          "run",
+          "home-discovery:check"
+        ],
+        "timeoutMs": 120000,
+        "startedAt": "2026-09-02T10:59:42.119Z",
+        "completedAt": "2026-09-02T10:59:43.994Z",
+        "durationMs": 1875,
+        "exitCode": 0,
+        "signal": null,
+        "error": null,
+        "stdout": "\n> mysquarefaceicon@0.1.0 home-discovery:check\n> node scripts/run-home-discovery-check.mjs\n\nHOME-DISC-001 validation passed\n- Featured preserves Square's published relation order and removes duplicates\n- New requires a valid VERIFIED publication timestamp and is absent for current UNKNOWN data\n- cards use real Game Data thumbnails; Pixel remains an onsite External Tool details link\n- five non-empty categories render with truthful counts; all-empty discovery renders nothing\n- desktop media cards and the compact two-column mobile category layout are present\n",
+        "stderr": ""
+      },
+      {
+        "name": "home-gallery:check",
+        "command": "node C:/nvm4w/nodejs/node_modules/npm/bin/npm-cli.js run home-gallery:check",
+        "args": [
+          "C:/nvm4w/nodejs/node_modules/npm/bin/npm-cli.js",
+          "run",
+          "home-gallery:check"
+        ],
+        "timeoutMs": 120000,
+        "startedAt": "2026-09-02T10:59:43.994Z",
+        "completedAt": "2026-09-02T10:59:49.000Z",
+        "durationMs": 5006,
+        "exitCode": 0,
+        "signal": null,
+        "error": null,
+        "stdout": "\n> mysquarefaceicon@0.1.0 home-gallery:check\n> node scripts/run-home-gallery-check.mjs\n\nHOME-GALLERY-001 validation passed\n- exact curated title, copy, trust note, six-item order, and ordinary /gallery link passed\n- semantic figures, explicit 512x512 dimensions, lazy loading, and responsive 3x2 CSS passed\n- hardcoded likes, Heart UI, community-title claims, and the old mandatory-like component are absent\n- Home uses the editorial variant; Oval and Pixel use the bounded compact variant\n- the real /gallery CommentSection remains in place\n",
+        "stderr": ""
+      },
+      {
+        "name": "perf-home:check",
+        "command": "node C:/nvm4w/nodejs/node_modules/npm/bin/npm-cli.js run perf-home:check",
+        "args": [
+          "C:/nvm4w/nodejs/node_modules/npm/bin/npm-cli.js",
+          "run",
+          "perf-home:check"
+        ],
+        "timeoutMs": 120000,
+        "startedAt": "2026-09-02T10:59:49.000Z",
+        "completedAt": "2026-09-02T10:59:51.191Z",
+        "durationMs": 2191,
+        "exitCode": 0,
+        "signal": null,
+        "error": null,
+        "stdout": "\n> mysquarefaceicon@0.1.0 perf-home:check\n> node scripts/run-home-performance-check.mjs\n\nPERF-HOME-001 validation passed\n- the LCP cover is a byte-verified local project asset with truthful intrinsic dimensions\n- initial HTML contains no Ruffle runtime, WASM, or SWF request\n- Ruffle remains conditional on activation and preview/loading/runtime share one reserved surface\n- the loading response is committed before the dynamic adapter mounts after a paint opportunity\n- the service-worker install list does not prefetch Ruffle or SWF assets\n",
+        "stderr": ""
+      },
+      {
+        "name": "game-template:check",
+        "command": "node C:/nvm4w/nodejs/node_modules/npm/bin/npm-cli.js run game-template:check",
+        "args": [
+          "C:/nvm4w/nodejs/node_modules/npm/bin/npm-cli.js",
+          "run",
+          "game-template:check"
+        ],
+        "timeoutMs": 120000,
+        "startedAt": "2026-09-02T10:59:51.191Z",
+        "completedAt": "2026-09-02T10:59:54.475Z",
+        "durationMs": 3284,
+        "exitCode": 0,
+        "signal": null,
+        "error": null,
+        "stdout": "\n> mysquarefaceicon@0.1.0 game-template:check\n> node scripts/run-game-template-check.mjs\n\nGAME-TPL-001 validation passed\n- five delivery types render through the shared Player-first detail template\n- module order, conditional sections, FAQ DOM, factual rights, and internal navigation are present\n- External Tool structured data stays WebPage-only; playable records use conservative VideoGame data\n- initial template markup contains no Ruffle runtime, WASM, or SWF request URL\n- future route keeps resolver, true-404 boundary, and force-noindex metadata gate\n",
+        "stderr": "Warning: React does not recognize the `fetchPriority` prop on a DOM element. If you intentionally want it to appear in the DOM as a custom attribute, spell it as lowercase `fetchpriority` instead. If you accidentally passed it from a parent component, remove it from the DOM element.\n    at img\n    at button\n    at div\n    at div\n    at div\n    at GamePlayer (D:\\LYXGIT\\mysquarefaceicon\\.game-template-check\\components\\game-player\\GamePlayer.js:80:66)\n    at section\n    at main\n    at GameDetailTemplate (D:\\LYXGIT\\mysquarefaceicon\\.game-template-check\\components\\game\\GameDetailTemplate.js:32:31)\n"
+      }
+    ],
+    "build": [
+      {
+        "name": "next-build",
+        "command": "node C:/nvm4w/nodejs/node_modules/npm/bin/npm-cli.js run build",
+        "args": [
+          "C:/nvm4w/nodejs/node_modules/npm/bin/npm-cli.js",
+          "run",
+          "build"
+        ],
+        "timeoutMs": 300000,
+        "startedAt": "2026-09-02T11:00:18.106Z",
+        "completedAt": "2026-09-02T11:01:06.171Z",
+        "durationMs": 48064,
+        "exitCode": 0,
+        "signal": null,
+        "error": null,
+        "stdout": "\n> mysquarefaceicon@0.1.0 build\n> next build\n\n  ▲ Next.js 14.2.35\n\n   Creating an optimized production build ...\n ✓ Compiled successfully\n   Linting and checking validity of types ...\n   Collecting page data ...\n   Generating static pages (0/42) ...\n   Generating static pages (10/42) \r\n   Generating static pages (20/42) \r\n   Generating static pages (31/42) \r\n ✓ Generating static pages (42/42)\n   Finalizing page optimization ...\n   Collecting build traces ...\n\nRoute (app)                                        Size     First Load JS\n┌ ○ /                                              2.38 kB         109 kB\n├ ○ /_not-found                                    185 B          87.5 kB\n├ ● /[locale]                                      2.38 kB         109 kB\n├   ├ /es\n├   ├ /vi\n├   ├ /ja\n├   └ [+4 more paths]\n├ ○ /about-us                                      185 B          87.5 kB\n├ ○ /admin/comments                                2.46 kB        94.9 kB\n├ ƒ /api/admin/comment-images/[...key]             0 B                0 B\n├ ƒ /api/admin/comments                            0 B                0 B\n├ ƒ /api/admin/comments/[id]                       0 B                0 B\n├ ƒ /api/comment-images/[...key]                   0 B                0 B\n├ ƒ /api/comments                                  0 B                0 B\n├ ƒ /api/comments/[id]/like                        0 B                0 B\n├ ○ /blog                                          185 B          87.5 kB\n├ ○ /blog/avatar-maker-without-signup              185 B          87.5 kB\n├ ○ /blog/best-discord-avatar-style                185 B          87.5 kB\n├ ○ /blog/cute-profile-picture-ideas               185 B          87.5 kB\n├ ○ /blog/discord-avatar-size-guide                185 B          87.5 kB\n├ ○ /blog/how-to-make-a-cute-discord-profile-icon  185 B          87.5 kB\n├ ○ /blog/square-avatar-vs-round-avatar            185 B          87.5 kB\n├ ○ /blog/tiktok-profile-icon-ideas                185 B          87.5 kB\n├ ● /category/[slug]                               188 B           101 kB\n├   ├ /category/face-makers\n├   ├ /category/avatar-makers\n├   ├ /category/pixel-avatars\n├   └ [+2 more paths]\n├ ○ /contact                                       185 B          87.5 kB\n├ ○ /cute-square-avatar-generator                  185 B          87.5 kB\n├ ○ /editorial-policy                              185 B          87.5 kB\n├ ○ /free-avatar-maker                             185 B          87.5 kB\n├ ○ /gallery                                       4.26 kB        96.7 kB\n├ ○ /games                                         188 B           101 kB\n├ ● /games/[slug]                                  194 B           107 kB\n├ ○ /manifest.webmanifest                          0 B                0 B\n├ ○ /oval-face-icon-generator                      1.86 kB         100 kB\n├ ○ /pixel-art-avatar-icon-generator               186 B          98.5 kB\n├ ○ /pixel-square-face-maker                       185 B          87.5 kB\n├ ○ /privacy-policy                                185 B          87.5 kB\n├ ○ /robots.txt                                    0 B                0 B\n├ ○ /sitemap.xml                                   0 B                0 B\n├ ○ /square-avatar-generator                       185 B          87.5 kB\n├ ○ /square-face-icon-generator                    185 B          87.5 kB\n└ ○ /terms-of-service                              185 B          87.5 kB\n+ First Load JS shared by all                      87.3 kB\n  ├ chunks/117-afe62c434925fd13.js                 31.7 kB\n  ├ chunks/fd9d1056-fc216cdb7d7cbbdc.js            53.6 kB\n  └ other shared chunks (total)                    1.92 kB\n\n\nƒ Middleware                                       26.8 kB\n\n○  (Static)   prerendered as static content\n●  (SSG)      prerendered as static HTML (uses getStaticProps)\nƒ  (Dynamic)  server-rendered on demand\n\n",
+        "stderr": ""
+      },
+      {
+        "name": "cloudflare-build",
+        "command": "node C:/nvm4w/nodejs/node_modules/npm/bin/npm-cli.js run cf:build",
+        "args": [
+          "C:/nvm4w/nodejs/node_modules/npm/bin/npm-cli.js",
+          "run",
+          "cf:build"
+        ],
+        "timeoutMs": 420000,
+        "startedAt": "2026-09-02T11:01:06.173Z",
+        "completedAt": "2026-09-02T11:02:24.477Z",
+        "durationMs": 78304,
+        "exitCode": 0,
+        "signal": null,
+        "error": null,
+        "stdout": "\n> mysquarefaceicon@0.1.0 cf:build\n> opennextjs-cloudflare build && node scripts/patch-opennext-worker.mjs\n\n\n┌─────────────────────────────┐\n│ OpenNext — Cloudflare build │\n└─────────────────────────────┘\n\nApp directory: D:\\LYXGIT\\mysquarefaceicon\nNext.js version : 14.2.35\n@opennextjs/cloudflare version: 1.3.0\n@opennextjs/aws version: 3.6.5\n\n┌─────────────────────────────────┐\n│ OpenNext — Building Next.js app │\n└─────────────────────────────────┘\n\n\n> mysquarefaceicon@0.1.0 build\n> next build\n\n  ▲ Next.js 14.2.35\n\n   Creating an optimized production build ...\n ✓ Compiled successfully\n   Linting and checking validity of types ...\n   Collecting page data ...\n   Generating static pages (0/42) ...\n   Generating static pages (10/42) \r\n   Generating static pages (20/42) \r\n   Generating static pages (31/42) \r\n ✓ Generating static pages (42/42)\n   Finalizing page optimization ...\n   Collecting build traces ...\n\nRoute (app)                                        Size     First Load JS\n┌ ○ /                                              2.38 kB         109 kB\n├ ○ /_not-found                                    185 B          87.5 kB\n├ ● /[locale]                                      2.38 kB         109 kB\n├   ├ /es\n├   ├ /vi\n├   ├ /ja\n├   └ [+4 more paths]\n├ ○ /about-us                                      185 B          87.5 kB\n├ ○ /admin/comments                                2.46 kB        94.9 kB\n├ ƒ /api/admin/comment-images/[...key]             0 B                0 B\n├ ƒ /api/admin/comments                            0 B                0 B\n├ ƒ /api/admin/comments/[id]                       0 B                0 B\n├ ƒ /api/comment-images/[...key]                   0 B                0 B\n├ ƒ /api/comments                                  0 B                0 B\n├ ƒ /api/comments/[id]/like                        0 B                0 B\n├ ○ /blog                                          184 B          87.5 kB\n├ ○ /blog/avatar-maker-without-signup              185 B          87.5 kB\n├ ○ /blog/best-discord-avatar-style                185 B          87.5 kB\n├ ○ /blog/cute-profile-picture-ideas               185 B          87.5 kB\n├ ○ /blog/discord-avatar-size-guide                185 B          87.5 kB\n├ ○ /blog/how-to-make-a-cute-discord-profile-icon  185 B          87.5 kB\n├ ○ /blog/square-avatar-vs-round-avatar            185 B          87.5 kB\n├ ○ /blog/tiktok-profile-icon-ideas                185 B          87.5 kB\n├ ● /category/[slug]                               188 B           101 kB\n├   ├ /category/face-makers\n├   ├ /category/avatar-makers\n├   ├ /category/pixel-avatars\n├   └ [+2 more paths]\n├ ○ /contact                                       185 B          87.5 kB\n├ ○ /cute-square-avatar-generator                  185 B          87.5 kB\n├ ○ /editorial-policy                              185 B          87.5 kB\n├ ○ /free-avatar-maker                             185 B          87.5 kB\n├ ○ /gallery                                       4.26 kB        96.7 kB\n├ ○ /games                                         188 B           101 kB\n├ ● /games/[slug]                                  194 B           107 kB\n├ ○ /manifest.webmanifest                          0 B                0 B\n├ ○ /oval-face-icon-generator                      1.86 kB         100 kB\n├ ○ /pixel-art-avatar-icon-generator               186 B          98.5 kB\n├ ○ /pixel-square-face-maker                       185 B          87.5 kB\n├ ○ /privacy-policy                                185 B          87.5 kB\n├ ○ /robots.txt                                    0 B                0 B\n├ ○ /sitemap.xml                                   0 B                0 B\n├ ○ /square-avatar-generator                       185 B          87.5 kB\n├ ○ /square-face-icon-generator                    185 B          87.5 kB\n└ ○ /terms-of-service                              184 B          87.5 kB\n+ First Load JS shared by all                      87.3 kB\n  ├ chunks/117-afe62c434925fd13.js                 31.7 kB\n  ├ chunks/fd9d1056-fc216cdb7d7cbbdc.js            53.6 kB\n  └ other shared chunks (total)                    1.92 kB\n\n\nƒ Middleware                                       26.8 kB\n\n○  (Static)   prerendered as static content\n●  (SSG)      prerendered as static HTML (uses getStaticProps)\nƒ  (Dynamic)  server-rendered on demand\n\n\n┌──────────────────────────────┐\n│ OpenNext — Generating bundle │\n└──────────────────────────────┘\n\nBundling middleware function...\nBundling static assets...\nBundling cache assets...\nBuilding server function: default...\nApplying code patches: 2.753s\n# copyPackageTemplateFiles\n\u001b[35m⚙️ Bundling the OpenNext server...\n\u001b[0m\n\u001b[35mWorker saved in `.open-next\\worker.js` 🚀\n\u001b[0m\nOpenNext build complete.\nPatched 1 OpenNext chdir call(s) in D:\\LYXGIT\\mysquarefaceicon\\.open-next\\server-functions\\default\\handler.mjs\n",
+        "stderr": "WARN OpenNext is not fully compatible with Windows.\nWARN For optimal performance, it is recommended to use Windows Subsystem for Linux (WSL).\nWARN While OpenNext may function on Windows, it could encounter unpredictable failures during runtime.\n"
+      },
+      {
+        "name": "gallery-built",
+        "command": "node scripts/check-gallery-rights.mjs --built",
+        "args": [
+          "scripts/check-gallery-rights.mjs",
+          "--built"
+        ],
+        "timeoutMs": 30000,
+        "startedAt": "2026-09-02T11:02:24.477Z",
+        "completedAt": "2026-09-02T11:02:29.891Z",
+        "durationMs": 5414,
+        "exitCode": 0,
+        "signal": null,
+        "error": null,
+        "stdout": "GALLERY-001 source passed: six confirmed regions, other source frozen, 1 H1 / 4 H2 / 14 H3 / 19 page paragraphs + 1 actual initial community paragraph, eight CSS samples, four main links, KW-02 count 3.\nFail-closed source negative fixtures: 18 rejected. Community in-memory SSR states: empty, load-error, populated-liked, already-liked; no API, database, storage or browser interaction.\nGALLERY-001 built HTML passed: source/render parity, descriptions, metadata/schema/index and community empty-state structure; 20 raw negative fixtures rejected.\nOffline artifacts do not verify HTTP, hydration/browser/mobile, actual licenses or production release.\n",
+        "stderr": ""
+      },
+      {
+        "name": "editorial-built",
+        "command": "node C:/nvm4w/nodejs/node_modules/npm/bin/npm-cli.js run editorial:check -- --built",
+        "args": [
+          "C:/nvm4w/nodejs/node_modules/npm/bin/npm-cli.js",
+          "run",
+          "editorial:check",
+          "--",
+          "--built"
+        ],
+        "timeoutMs": 30000,
+        "startedAt": "2026-09-02T11:02:29.891Z",
+        "completedAt": "2026-09-02T11:02:41.216Z",
+        "durationMs": 11325,
+        "exitCode": 0,
+        "signal": null,
+        "error": null,
+        "stdout": "\n> mysquarefaceicon@0.1.0 editorial:check\n> node scripts/check-editorial-rights.mjs --built\n\nEDITORIAL-001 source passed: five exact approved regions, frozen remaining source/metadata/schema, 1 H1 / 4 H2 / 3 H3 / 10 paragraphs, KW-02 count 3, two main links.\nFail-closed source negative fixtures: 14 rejected.\nEDITORIAL-001 built HTML passed: source/render parity, three descriptions, frozen title/canonical/OG/Twitter/schema, no noindex; 15 raw negative fixtures rejected.\nOffline artifacts do not verify HTTP, browser interactions or deployment.\n",
+        "stderr": ""
+      },
+      {
+        "name": "about-built",
+        "command": "node C:/nvm4w/nodejs/node_modules/npm/bin/npm-cli.js run about:check -- --built",
+        "args": [
+          "C:/nvm4w/nodejs/node_modules/npm/bin/npm-cli.js",
+          "run",
+          "about:check",
+          "--",
+          "--built"
+        ],
+        "timeoutMs": 30000,
+        "startedAt": "2026-09-02T11:02:41.216Z",
+        "completedAt": "2026-09-02T11:02:44.684Z",
+        "durationMs": 3468,
+        "exitCode": 0,
+        "signal": null,
+        "error": null,
+        "stdout": "\n> mysquarefaceicon@0.1.0 about:check\n> node scripts/check-about-rights.mjs --built\n\nABOUT-001 source passed: seven exact approved regions, frozen remaining source/metadata/schema, 1 H1 / 5 H2 / 7 H3 / 16 paragraphs, KW-02 count 3, eight main links.\nFail-closed source negative fixtures: 14 rejected.\nABOUT-001 built HTML passed: source/render parity, both descriptions, frozen title/canonical/OG/Twitter/schema, no noindex; 6 raw negative fixtures rejected.\nOffline artifacts do not verify HTTP, browser interactions or deployment.\n",
+        "stderr": ""
+      },
+      {
+        "name": "terms-built",
+        "command": "node C:/nvm4w/nodejs/node_modules/npm/bin/npm-cli.js run terms:check -- --built",
+        "args": [
+          "C:/nvm4w/nodejs/node_modules/npm/bin/npm-cli.js",
+          "run",
+          "terms:check",
+          "--",
+          "--built"
+        ],
+        "timeoutMs": 30000,
+        "startedAt": "2026-09-02T11:02:44.685Z",
+        "completedAt": "2026-09-02T11:02:46.824Z",
+        "durationMs": 2139,
+        "exitCode": 0,
+        "signal": null,
+        "error": null,
+        "stdout": "\n> mysquarefaceicon@0.1.0 terms:check\n> node scripts/check-terms-rights.mjs --built\n\nTERMS-001 source passed: exact approved copy/date, 1 H1, 7 H2s, 8 paragraphs, KW-02 count 3, two links, frozen remaining source.\nFail-closed negative fixtures: 6 rejected (rights, keyword, link, date and metadata regressions).\nTERMS-001 built HTML passed: exact copy, title/description/canonical, no noindex, source/render parity; 2 raw negative fixtures rejected.\nThis is an offline build-artifact check. HTTP status/headers, browser interactions and production release remain NOT verified.\n",
+        "stderr": ""
+      }
+    ],
+    "http": [
+      {
+        "name": "gallery-http",
+        "command": "node scripts/check-gallery-rights.mjs --base http://127.0.0.1:3100",
+        "args": [
+          "scripts/check-gallery-rights.mjs",
+          "--base",
+          "http://127.0.0.1:3100"
+        ],
+        "timeoutMs": 30000,
+        "startedAt": "2026-09-02T11:03:44.633Z",
+        "completedAt": "2026-09-02T11:03:45.611Z",
+        "durationMs": 978,
+        "exitCode": 0,
+        "signal": null,
+        "error": null,
+        "stdout": "GALLERY-001 source passed: six confirmed regions, other source frozen, 1 H1 / 4 H2 / 14 H3 / 19 page paragraphs + 1 actual initial community paragraph, eight CSS samples, four main links, KW-02 count 3.\nFail-closed source negative fixtures: 18 rejected. Community in-memory SSR states: empty, load-error, populated-liked, already-liked; no API, database, storage or browser interaction.\nGALLERY-001 HTTP passed: http://127.0.0.1:3100/gallery; 200, exact content, metadata/schema/index, actual initial SSR parity; 20 raw negative fixtures rejected.\n",
+        "stderr": ""
+      },
+      {
+        "name": "editorial-http",
+        "command": "node C:/nvm4w/nodejs/node_modules/npm/bin/npm-cli.js run editorial:check -- --base http://127.0.0.1:3100",
+        "args": [
+          "C:/nvm4w/nodejs/node_modules/npm/bin/npm-cli.js",
+          "run",
+          "editorial:check",
+          "--",
+          "--base",
+          "http://127.0.0.1:3100"
+        ],
+        "timeoutMs": 30000,
+        "startedAt": "2026-09-02T11:03:45.613Z",
+        "completedAt": "2026-09-02T11:03:46.110Z",
+        "durationMs": 497,
+        "exitCode": 0,
+        "signal": null,
+        "error": null,
+        "stdout": "\n> mysquarefaceicon@0.1.0 editorial:check\n> node scripts/check-editorial-rights.mjs --base http://127.0.0.1:3100\n\nEDITORIAL-001 source passed: five exact approved regions, frozen remaining source/metadata/schema, 1 H1 / 4 H2 / 3 H3 / 10 paragraphs, KW-02 count 3, two main links.\nFail-closed source negative fixtures: 14 rejected.\nEDITORIAL-001 local production HTTP passed: http://127.0.0.1:3100/editorial-policy; HTTP 200, exact copy, metadata/schema/index and source/render parity; 15 raw negative fixtures rejected.\n",
+        "stderr": ""
+      },
+      {
+        "name": "about-http",
+        "command": "node C:/nvm4w/nodejs/node_modules/npm/bin/npm-cli.js run about:check -- --base http://127.0.0.1:3100",
+        "args": [
+          "C:/nvm4w/nodejs/node_modules/npm/bin/npm-cli.js",
+          "run",
+          "about:check",
+          "--",
+          "--base",
+          "http://127.0.0.1:3100"
+        ],
+        "timeoutMs": 30000,
+        "startedAt": "2026-09-02T11:03:46.110Z",
+        "completedAt": "2026-09-02T11:03:46.628Z",
+        "durationMs": 518,
+        "exitCode": 0,
+        "signal": null,
+        "error": null,
+        "stdout": "\n> mysquarefaceicon@0.1.0 about:check\n> node scripts/check-about-rights.mjs --base http://127.0.0.1:3100\n\nABOUT-001 source passed: seven exact approved regions, frozen remaining source/metadata/schema, 1 H1 / 5 H2 / 7 H3 / 16 paragraphs, KW-02 count 3, eight main links.\nFail-closed source negative fixtures: 14 rejected.\nABOUT-001 local production HTTP passed: http://127.0.0.1:3100/about-us; HTTP 200, exact copy, metadata/schema/index and source/render parity; 6 raw negative fixtures rejected.\n",
+        "stderr": ""
+      },
+      {
+        "name": "terms-http",
+        "command": "node C:/nvm4w/nodejs/node_modules/npm/bin/npm-cli.js run terms:check -- --base http://127.0.0.1:3100",
+        "args": [
+          "C:/nvm4w/nodejs/node_modules/npm/bin/npm-cli.js",
+          "run",
+          "terms:check",
+          "--",
+          "--base",
+          "http://127.0.0.1:3100"
+        ],
+        "timeoutMs": 30000,
+        "startedAt": "2026-09-02T11:03:46.628Z",
+        "completedAt": "2026-09-02T11:03:47.094Z",
+        "durationMs": 466,
+        "exitCode": 0,
+        "signal": null,
+        "error": null,
+        "stdout": "\n> mysquarefaceicon@0.1.0 terms:check\n> node scripts/check-terms-rights.mjs --base http://127.0.0.1:3100\n\nTERMS-001 source passed: exact approved copy/date, 1 H1, 7 H2s, 8 paragraphs, KW-02 count 3, two links, frozen remaining source.\nFail-closed negative fixtures: 6 rejected (rights, keyword, link, date and metadata regressions).\nTERMS-001 raw local production passed: http://127.0.0.1:3100/terms-of-service; HTTP 200, exact copy, title/description/canonical, no noindex, source/render parity; 2 raw negative fixtures rejected.\n",
+        "stderr": ""
+      },
+      {
+        "name": "robots-http",
+        "command": "node scripts/check-ai-crawler-policy.mjs --base http://127.0.0.1:3100",
+        "args": [
+          "scripts/check-ai-crawler-policy.mjs",
+          "--base",
+          "http://127.0.0.1:3100"
+        ],
+        "timeoutMs": 60000,
+        "startedAt": "2026-09-02T11:03:47.094Z",
+        "completedAt": "2026-09-02T11:03:47.261Z",
+        "durationMs": 167,
+        "exitCode": 0,
+        "signal": null,
+        "error": null,
+        "stdout": "AI-01 crawler policy passed at http://127.0.0.1:3100/robots.txt.\nExplicit decisions: 6 blocked, 5 public-search/user retrieval allowed.\n",
+        "stderr": ""
+      },
+      {
+        "name": "seo-local-production",
+        "command": "node scripts/seo-check.mjs --base http://127.0.0.1:3100 --json",
+        "args": [
+          "scripts/seo-check.mjs",
+          "--base",
+          "http://127.0.0.1:3100",
+          "--json"
+        ],
+        "timeoutMs": 120000,
+        "startedAt": "2026-09-02T11:03:47.262Z",
+        "completedAt": "2026-09-02T11:03:47.688Z",
+        "durationMs": 426,
+        "exitCode": 0,
+        "signal": null,
+        "error": null,
+        "stdout": "{\n  \"base\": \"http://127.0.0.1:3100\",\n  \"checkedUrls\": 20,\n  \"specVersion\": \"2026-08-31\",\n  \"summary\": {\n    \"must\": 0,\n    \"should\": 12\n  },\n  \"findings\": [\n    {\n      \"rule\": \"META-03\",\n      \"level\": \"应该\",\n      \"url\": \"https://mysquarefaceicon.com/free-avatar-maker\",\n      \"message\": \"title 66 字符，超过建议上限 60\"\n    },\n    {\n      \"rule\": \"META-04\",\n      \"level\": \"应该\",\n      \"url\": \"https://mysquarefaceicon.com/free-avatar-maker\",\n      \"message\": \"description 175 字符，超过建议上限 160\"\n    },\n    {\n      \"rule\": \"META-03\",\n      \"level\": \"应该\",\n      \"url\": \"https://mysquarefaceicon.com/square-avatar-generator\",\n      \"message\": \"title 68 字符，超过建议上限 60\"\n    },\n    {\n      \"rule\": \"META-03\",\n      \"level\": \"应该\",\n      \"url\": \"https://mysquarefaceicon.com/oval-face-icon-generator\",\n      \"message\": \"title 68 字符，超过建议上限 60\"\n    },\n    {\n      \"rule\": \"META-03\",\n      \"level\": \"应该\",\n      \"url\": \"https://mysquarefaceicon.com/gallery\",\n      \"message\": \"title 68 字符，超过建议上限 60\"\n    },\n    {\n      \"rule\": \"META-03\",\n      \"level\": \"应该\",\n      \"url\": \"https://mysquarefaceicon.com/pixel-art-avatar-icon-generator\",\n      \"message\": \"title 68 字符，超过建议上限 60\"\n    },\n    {\n      \"rule\": \"META-04\",\n      \"level\": \"应该\",\n      \"url\": \"https://mysquarefaceicon.com/\",\n      \"message\": \"description 175 字符，超过建议上限 160\"\n    },\n    {\n      \"rule\": \"META-03\",\n      \"level\": \"应该\",\n      \"url\": \"https://mysquarefaceicon.com/blog/how-to-make-a-cute-discord-profile-icon\",\n      \"message\": \"title 61 字符，超过建议上限 60\"\n    },\n    {\n      \"rule\": \"KW-03\",\n      \"level\": \"应该\",\n      \"url\": \"https://mysquarefaceicon.com/blog/how-to-make-a-cute-discord-profile-icon\",\n      \"message\": \"密度 0.49% < 0.5%（命中 3 次 / 609 词）\"\n    },\n    {\n      \"rule\": \"META-03\",\n      \"level\": \"应该\",\n      \"url\": \"https://mysquarefaceicon.com/blog/best-discord-avatar-style\",\n      \"message\": \"title 71 字符，超过建议上限 60\"\n    },\n    {\n      \"rule\": \"META-04\",\n      \"level\": \"应该\",\n      \"url\": \"https://mysquarefaceicon.com/terms-of-service\",\n      \"message\": \"description 仅 76 字符，短于建议下限 110\"\n    },\n    {\n      \"rule\": \"META-04\",\n      \"level\": \"应该\",\n      \"url\": \"https://mysquarefaceicon.com/privacy-policy\",\n      \"message\": \"description 仅 83 字符，短于建议下限 110\"\n    }\n  ]\n}\n",
+        "stderr": "正在检查 20 个 URL …\n正在探测 7 个站内链接目标 …\n"
+      }
+    ]
+  },
+  "preview": {
+    "stopOldPreview": {
+      "chunk_id": "106c16",
+      "wall_time_seconds": 4.222624,
+      "exit_code": 0,
+      "original_token_count": 80,
+      "output": "{\"ProcessId\":34860,\"ParentProcessId\":19412,\"ExecutablePath\":\"C:\\\\nvm4w\\\\nodejs\\\\node.exe\",\"CommandLine\":\"\\\"node\\\"   \\\"D:\\\\LYXGIT\\\\mysquarefaceicon\\\\node_modules\\\\.bin\\\\\\\\..\\\\next\\\\dist\\\\bin\\\\next\\\" start -H 127.0.0.1 -p 3100\"}\r\n{\"StoppedPid\":34860,\"RecordedAt\":\"2026-09-02T11:00:15.5147055Z\",\"RemainingListeners\":1}\r\n"
+    },
+    "confirmedOldPreviewStopped": {
+      "recordedAt": "2026-09-02T11:01:25.9072165Z",
+      "oldPreviewExists": false,
+      "listenerCount": 0
+    },
+    "start": {
+      "chunk_id": "736dbf",
+      "wall_time_seconds": 4.9960381,
+      "exit_code": 0,
+      "original_token_count": 67,
+      "output": "{\"ProcessId\":8064,\"RecordedAt\":\"2026-09-02T11:03:15.7864105Z\",\"Stdout\":\"C:/Users/liu/AppData/Local/Temp/mysquarefaceicon-gallery-001-impl-v154/preview.stdout.log\",\"Stderr\":\"C:/Users/liu/AppData/Local/Temp/mysquarefaceicon-gallery-001-impl-v154/preview.stderr.log\"}\r\n"
+    },
+    "pid": 8064,
+    "startedAt": "2026-09-02T11:03:15.7864105Z",
+    "url": "http://127.0.0.1:3100/gallery",
+    "keptForAcceptance": true
+  },
+  "sourceFreeze": {
+    "priorCount": 146,
+    "priorUnchanged": 143,
+    "allowedPriorChanges": [
+      "app/gallery/page.tsx",
+      "package.json",
+      "scripts/README.md"
+    ],
+    "newChecker": "scripts/check-gallery-rights.mjs",
+    "currentCount": 147,
+    "currentHashes": {
+      "app/about-us/page.tsx": "bd812baed9b69e531d369be6e0be168dc5232d3729def0d7f5a747fbccbf1779",
+      "app/admin/comments/page.tsx": "5da66215f6c126892b132af3f11937d2fba81dc9d3b86b680b207b0cd6680f99",
+      "app/api/admin/comment-images/[...key]/route.ts": "818b0b4c81cd56f9455a3228adc95137268a90db6b82f1a2e1f6f8ec232f03a0",
+      "app/api/admin/comments/route.ts": "63ddcb14964f633f199af6873497abb9091420dba4e889396ca7d2d775578bb2",
+      "app/api/admin/comments/[id]/route.ts": "e471d00f054151ac6636c81fd9d21ce108b19c86875ee524f2e0b44f429c135b",
+      "app/api/comment-images/[...key]/route.ts": "defb2f8ec7f4be7c19beb82663f781ae2e735cf19db127d603f5c82d8925d98a",
+      "app/api/comments/route.ts": "4297d56bf81fb7182236ef0c880cd1039907dc345415e1bacddc39ae01ab2e7f",
+      "app/api/comments/[id]/like/route.ts": "edf2b13178884db9af47debed1186655b55a96abe807e1dde8f4367381089a14",
+      "app/blog/avatar-maker-without-signup/page.tsx": "27b767b9898a1cf54a8bd8d15949690a99c3bcf8fee0a510275d2c05880dce97",
+      "app/blog/best-discord-avatar-style/page.tsx": "2e0807728e27e7b62e0be6aee9319079626b6d8f259fbf452afb3193f6040b9d",
+      "app/blog/cute-profile-picture-ideas/page.tsx": "23d0d94e184f86457eec7bccce657e83a401d94fef36686008af683fbf9ed126",
+      "app/blog/discord-avatar-size-guide/page.tsx": "3990a509c0f009f3007edf767e28983943e35ec03a9422483d7427972e3a7a24",
+      "app/blog/how-to-make-a-cute-discord-profile-icon/page.tsx": "126709f27ed82ffa275ec56f8c19d3ef97bd972f3a6d7737eca02eb016fe4a38",
+      "app/blog/page.tsx": "ae764e709b2e95b94978264e94f7c8339e18fbb40619e2b61003e73979b777e9",
+      "app/blog/square-avatar-vs-round-avatar/page.tsx": "21831b3d94e787b7442827822de117fd9cb6854408e25ea55443bc5cafb3c82b",
+      "app/blog/tiktok-profile-icon-ideas/page.tsx": "c480c6c80cc10800e1ff12710861712d4bde2aefe7145e7666d8352e0f2c29ad",
+      "app/category/[slug]/page.tsx": "db5f8c1c1c4df37b7f8a0a726e540d1a0897fa14d84efd8a2f50a8b79aaba0e1",
+      "app/contact/page.tsx": "43c774c71e326750845afe0168f4d66bbb1ee47367bcfc6015bb17592860c98e",
+      "app/cute-square-avatar-generator/page.tsx": "fe22cddd887475ecc89983278ceeabc06678a344c8ea7aefb47a65eb7a893042",
+      "app/editorial-policy/page.tsx": "c758e70ce143b58db1453877efcb6d82a9e89fd96d1bc473c73c6dcf4c81a529",
+      "app/free-avatar-maker/page.tsx": "65b5cd3745e7aad2dd9bdb11a851fb8a7fa74fe6e7a2e3221474688c76b75aa5",
+      "app/gallery/page.tsx": "d051f12b8e4c71a9b15a75efb59c3ffbb1f9904ec5d69577f9640ff47d479901",
+      "app/games/page.tsx": "325b8221aec0d9ea69a2374faad321a0fa75dd7e8c0df05c59da4db93e46c44f",
+      "app/games/[slug]/page.tsx": "0131595a7dc55e0b9227944e41f5cf54548213f5527cc62f034eb8a61c05aab4",
+      "app/globals.css": "5b5e8d7253be79edbd479a01a53bf3f760d52482ced5f4c6edcd387975669867",
+      "app/layout.tsx": "c9d72791c1167896c2ab3a72bb9e7eada5b909bbf8f540a6e64fb52bed4e77b5",
+      "app/manifest.ts": "035fb0b64fd59984750a16cca5b4e7bd4e776d8ee7c9a608e339cabef2a8a179",
+      "app/not-found.tsx": "1ae05e6e788c22dba45d7cbdce2a4b9271d584246a553bda51428c396991a351",
+      "app/oval-face-icon-generator/page.tsx": "4b0263e9b0fbba1824e32bcec8b324e45aeae0c373f50375a7ba8fe8f9fd0e54",
+      "app/page.tsx": "d10f79e2522ca3c3e21195e09df0f090b119af6452c265e48eb125639b2c46c1",
+      "app/pixel-art-avatar-icon-generator/page.tsx": "514139869fbd206326dc6d2e426d86c2b49f27c557b86868471de200fe94c50d",
+      "app/pixel-square-face-maker/page.tsx": "b691a2359a6a6581eadc75fb1944a93a1718f85c4fff11ba6ebdfbad756603e5",
+      "app/privacy-policy/page.tsx": "eba51fcadf3aa4e61506242d5d5fb1d9d4ac7d870626e7877670ae0984c7d1c4",
+      "app/robots.ts": "dd47d2bd1355fb44791c0f5e481b06c98142639383a902cd6e976cb4f7583aa8",
+      "app/sitemap.ts": "183aafaeb14f529f8c341c70aa9c3278082f670aeaa4f487271d6ff110e0db18",
+      "app/square-avatar-generator/page.tsx": "a239bb17efb6eddce7e49f3214cef92017eed9f167c0879103855d91b4554a31",
+      "app/square-face-icon-generator/page.tsx": "24e88b1057bfea65f350bb84205cc5fc89fec0cd06e4f6dea24719c7513ff731",
+      "app/terms-of-service/page.tsx": "8121043e9a474a19a5c1c366ed80e03db93ec6bc8dc1ed9eda63ef60d85c83f5",
+      "app/[locale]/page.tsx": "e47894775647c4a8630490b2e7ab0a72cc4fdcc2d0f253ce2ce724676adf7ece",
+      "components/AdminComments.tsx": "a3a1dd2d1bc175a4862a49299b363fe50c9b006945fc6b20df97dc08d527af4d",
+      "components/AvatarGenerator.tsx": "61e65dd817d517975ba89ca2ba7e7b182cf015bc296e4a993aa4733342fda74b",
+      "components/CloudflareAnalytics.tsx": "54e33cdc6f229a708c86013649a283ed946be150f717b11eebc6ccdb793368c4",
+      "components/CommentSection.tsx": "02db74c38bf07f57c92defb239866cd75bfeef561333de1db9acfc9d44ddfd21",
+      "components/CuratedGalleryPreview.tsx": "0238422e69aa37737063f1600e11a82505b0b8f94bd813161eb8ea6985e78792",
+      "components/DeferredThirdPartyScripts.tsx": "09ae2617d036e47be5874e366d0ced2fc1634d03b59ac9c2505f1938c7cfe7e2",
+      "components/FlashGenerator.tsx": "c443323031b15428a502ff4fcad3653ffc424ef75db9335b76883576f45ac794",
+      "components/game/AdSlotShell.tsx": "3c1aaa1ab799dddb7e7e0bb607a31c0cc9d77683c42554b7663bc4bdc4a28a27",
+      "components/game/CategoryChip.tsx": "78e2ddcf2ce6b77899d3ab35f06f5d49a87f82f1015d8f4deb862dfe76ab0850",
+      "components/game/EmptyState.tsx": "2ef1bad5737139a2cd9c1cf9d003b28a9f202a50fa9925072cea8e35cef549d2",
+      "components/game/GameBreadcrumb.tsx": "933a23729f0c280559d64ac1376022520c3d700031a489935d1e1b30b604b474",
+      "components/game/GameCard.tsx": "94af78fdd701884f8e69d2d3cdf919d2a0b730c685b6e5287130d85ef9b92edf",
+      "components/game/GameControls.tsx": "2a738d34297ad718e59a678ea9572d8c6cc981180e083e8fca7cb03e21c1b4da",
+      "components/game/GameDetailTemplate.tsx": "c643d800efd8bdbc6d439047b53c3aad6fae403ad59ed55b7c8349218c1ca43c",
+      "components/game/GameFaq.tsx": "c680b9728a08c896095bb85fc688f6d451360142e0bb447763b8fed0a0a1139a",
+      "components/game/GameGrid.tsx": "261672ac47c7cafeb3f2576caf6ba6240fa3c9b15472f55778b8ae3f45d631b5",
+      "components/game/GameMeta.tsx": "d7c6e283401f295579cff65cd01ee761626d727098fbc6e983e8d18e47f807e9",
+      "components/game/GamePlayer.tsx": "a568634e413cacc1ef816bd2835be4916dfc6094f9cc4d3a2ee3a3fd5d51b2da",
+      "components/game/GameSourceRights.tsx": "ebc2ec19b91bf5dde44eae24ca75b6ee208a487c707a9862f694c6d88dbd2243",
+      "components/game/README.md": "4c7ea3c7e616a686fbf08567f8b9e28082912a2dbcbfc7a73d3166867c172f89",
+      "components/game/RelatedGames.tsx": "1fa094f28bd8b0855c7869596b9df55b0072a48a8db6d3db8c6558f954209aa7",
+      "components/game-player/adapters/adapter-types.ts": "4e6c492777363116b8a450d5b7e822abdf99609e518f15a3fc682f2d6fd84df5",
+      "components/game-player/adapters/ExternalLinkAdapter.tsx": "f7d4c98916a2a25785175af7ae6bf009a700f68271b8345322fd904c2431f45c",
+      "components/game-player/adapters/Html5Adapter.tsx": "524f0c49fd8af608ddf86aed872fe1cd0af72839b30391206be8eae639e08325",
+      "components/game-player/adapters/IframeAdapterFrame.tsx": "af31a35c493f607bacbfb548b386f604cbb98c7722a32cf580da11a7b7b593b6",
+      "components/game-player/adapters/LocalIframeAdapter.tsx": "b73408e66cb4dec9fe5b8460960627c95a1a92c43282345562dbfd173b3f4d9f",
+      "components/game-player/adapters/OfficialIframeAdapter.tsx": "0668f81f43684d59522799c55ecc4affe8fb24fdfc571af7e6ac8e56118cc23c",
+      "components/game-player/adapters/RuffleAdapter.tsx": "5fcff6669f4ca75147728e8a73434cdef8abb2823325110d585ad46a1cfe8ada",
+      "components/game-player/GamePlayer.tsx": "142cf22ac3a485c78285d920bbe84114f3931a38f0e9aec067bbf8ca2e562d5c",
+      "components/GameSidebar.tsx": "1d6d43a434f91bface5858c3d648c3aeff90f8f0d930bfbdc9f2ae0ebd28bb70",
+      "components/home/CoreGamePreview.tsx": "9a05388d53d969ef1ea1f4ea9a6273a0ebd1cd8ec6d1df43a1afd8da1c4c44a1",
+      "components/home/HomeDiscoveryRegion.tsx": "8652a91eeeb4650230235422c661be58841a49475ce1bc446425c7e2ac697b04",
+      "components/home/HomeHero.tsx": "0f336bfa249d291f9ef1fde2e558400e2c1d7fcb9e1e5c4991f92daef50d1547",
+      "components/home/HomeResourceLinks.tsx": "fd03f53ecc08510a86e3edd54864e132af9e70b363a7d5dee4c50d1eea207e23",
+      "components/HomePage.tsx": "6f112888eca633682594d9ecc717566142a3a78547fb48146c73351147b6d93b",
+      "components/InstallPrompt.tsx": "fb4a9fd5a43625673f03b26b8d31284c955b4e970d9fbe80be41863228c02ac8",
+      "components/ShareButtons.tsx": "5becc8e6cf2a779dd192222de56087f468b41243f60950d0290f45ff07a71a28",
+      "components/SiteFooter.tsx": "0a8f7e7ca185853a8494ba94f8ecaa65e9ddd73ba3e43781c0efacfcdd3c2291",
+      "components/SiteHeader.tsx": "8182d2e2a5012cfbb62ebadcc8cb581d088364d263f9eb11f9d217686df115a1",
+      "lib/comment-store.ts": "734fa24cbf3cf6518f5026c93953628dca8c28935db6927d53650d4019865804",
+      "lib/games/catalog.ts": "6cc0df85e3acf146b3cc18b63cc4785982607fc0e59142ce89f59d2d6ef0ac0d",
+      "lib/games/game-player-model.ts": "42672e8d0917e9d7d6a1b28137e505ecd4d7b09ba40e3c971751b6d7f3fbe84c",
+      "lib/games/game-schema.ts": "a57eae1f63dff2698c45c6b98d70cd811f513b274fb26182bb20d9059803d235",
+      "lib/games/home-discovery.ts": "b172dd4a9e807754f59dfe5f9bb5b42fdc2d360bd89c54eab504f5577dac166e",
+      "lib/games/routes.ts": "058434c725a09ae921c2c5f184396377873ad67603130f985fcfe39bcd97c5a6",
+      "lib/locales.ts": "937e6c91f0cd3c67bdb9a5a1e865fe9c9829495d5d119ad464a4feaaf7ea3d36",
+      "lib/metadata.ts": "ed02bc92dbfe7e71c0988bef9cf8bbdabc34caef5a1a2ba67d40cf69d839a275",
+      "lib/seo/canonical-origin.ts": "2d506dc08f622a898efd6eb57c9210018d2b8ba73ec8666a3bd4c9685e831fd9",
+      "lib/seo/game-metadata.ts": "87e7f42b085e2714cd22bce3634ccf1272fa822fb70b77292c5831d0f38fe660",
+      "lib/seo/game-structured-data.ts": "84193180e9b8827a2566d38585ce753b94ee30f4c9b5f6aee4fe22da3c875391",
+      "data/ai-crawler-policy.json": "adea8bf57c056c93b319da9033654f573989948058ab04a7c74e4739c472487c",
+      "data/curated-icon-ideas.ts": "b51d0f7b57249b1e3cfe0e16bede29688154814168a2c6271a7388ad10933dce",
+      "data/game-categories.ts": "b0bbb1eccbc70bdc70323c05da94acc725df06d857c70eaba8860f5b3e701d8d",
+      "data/game-license-registry.json": "fb0b94f56ffa3c7feca89ee136c73795a95d993de0ebe16d81ca8041da4a8924",
+      "data/games/oval-face.ts": "ee2ded5bf3d11fb4572b4861f5c39164a37d5e7a3d91f404130510c453331f74",
+      "data/games/pixel-art-avatar.ts": "118d1b40325cb26d8ff19141f5af2ff1b451a3b89de0e6131836a37a0510fabb",
+      "data/games/README.md": "71272ce378d8adc438b34b6d60e58080fa32b8728fd9c513e6aad2001eac24ee",
+      "data/games/square-face.ts": "4be5084d160f2d09b87fb4392ef3e43bbc8675edcfd1f94970e2b2e05ba2b304",
+      "scripts/check-ai-crawler-policy.mjs": "76e030b11a653a01ed101e13c06460f29354f55d33c1e96aab4ace3f53be5042",
+      "scripts/check-terms-rights.mjs": "62ab3d26bb2459fe9abe92a1c520e740cba77f01cec5324a7d19ddadfe6dba50",
+      "scripts/cloudflare-login.cmd": "9285c7cf0105fa6087da2dbb9264265a5daed85475ea61a12b0310431e3c8b0f",
+      "scripts/cloudflare-provision.cmd": "72b6efc1ad0cab89dc54d6d18cb6a6c3f2c1bbc7fa42444b9be968cc1cd22aeb",
+      "scripts/cloudflare-set-secrets.cmd": "5964a356784cc9ea3beeb76b801fc04ae79762ff1c47ab1fecb9f5a0d35a8cd0",
+      "scripts/patch-opennext-worker.mjs": "1f761820c8ec949e7a32f1435b82f14f9919d46bf965090741ab55add8b4068b",
+      "scripts/post-deploy-check.mjs": "51b28a8e14558dfc69c71779ebe9ed28d195f2f671d5eda07977afe885bbee82",
+      "scripts/README.md": "67a0f8e281b6cb2e7c90fac94b05ca798eda10f5e817fb36660289b5f26474bc",
+      "scripts/robots-policy.mjs": "0d3f85f8568a4b17a53c2eaa82fd06460a14262160ba53131f29978c5f4416ed",
+      "scripts/run-canonical-host-check.mjs": "99c282d9246c3a3c060c9b697d0c4a769e6b7622a63b97ab99899d41bc2edc4b",
+      "scripts/run-game-component-check.mjs": "bf05d0f3119b094bc4674846c71bbc69482541921ba199ec693dce021ba86e62",
+      "scripts/run-game-data-check.mjs": "985321918bfc7abdbea07a675b710d40fe8ddbbfa6d128e24e67cd90309f536b",
+      "scripts/run-game-metadata-check.mjs": "a6a16a08338143f1ada4f8f446e89f2e08208c0896cf884a5d494c894931ccf8",
+      "scripts/run-game-player-check.mjs": "59f17f0f2dacc0b596f572a9a1871e58f78623a267257e3f33e7f1eac7bd9f09",
+      "scripts/run-game-route-check.mjs": "be951b8407d08aadf9e1b2b29dda30fe33ffb133af6cd8ee6e8c7897a95eac44",
+      "scripts/run-game-template-check.mjs": "c7121e18a868db05d702639ff8448cbaad958c20117e91b71fb0ed71d98ced8d",
+      "scripts/run-home-discovery-check.mjs": "70cb3221dedd42081b24c201902a3dce2ff46c31e54b8ee478384da4545b4196",
+      "scripts/run-home-gallery-check.mjs": "e0bf58437b6de392dd98af862c97be25107432cec1a24df9a8d9d028b7ab738d",
+      "scripts/run-home-hero-check.mjs": "40ad21661b97f27e306c2eaa8d130637ecbd9a31d5c72c8ef25c214fb3a276e0",
+      "scripts/run-home-information-architecture-check.mjs": "6fc9c018915cb8cbdf68f23fde16239be0cb246bd6f92eab7000b243a98d9f66",
+      "scripts/run-home-performance-check.mjs": "58c55d5a6be4d07961c9163167fb2b1394c2807d4a31b8522da4e79ff7d9d308",
+      "scripts/seo-check.mjs": "a56453c56c8f55f4a308790e38a34aed19b667d1ba3514bd09eb18709db2ca9f",
+      "scripts/start-local-preview.cmd": "edd040a98ac02704de22f632fb21f981976c70b88932461874e4631db1dbcfb1",
+      "scripts/submit-indexnow.mjs": "1394eb5cfa2bb600af3bd3fbdf0f8c2eae9adf78b31d18d6f4cd57f3be0f4ae9",
+      "scripts/validate-canonical-host.ts": "1c7d329c5a0d5ac1b06432381f0933cfe70e0f17f8b4081f5e9695d23a6d32aa",
+      "scripts/validate-game-components.tsx": "3ba59b4e768241a57ec53da796c5cca2c35c6b69c95259f827166c0780a7b74d",
+      "scripts/validate-game-data.ts": "7e6f204d5397830accd8e33534939146bcbdd934b3ec49d8653c113b412d73bd",
+      "scripts/validate-game-metadata.ts": "e7a6f47384a1e305a8a2b1ed3ebd0d5243831191119d34e3a56481fd0ca4e55d",
+      "scripts/validate-game-player.tsx": "370b6809735b2b1ccbd99003fea04ea0f06a9761950333d765a661b3157797eb",
+      "scripts/validate-game-routes.ts": "bca62350b59f545437c2e5a8e834275dce7c5df330bb58d268befd12ab00803f",
+      "scripts/validate-game-template.tsx": "5427f7fbd835530eaa34ef7fc514692b203f8f312e71624ed51df3dc14af6406",
+      "scripts/validate-home-discovery.tsx": "f0236c66dc6e603595d39ba675293c5aba44add9a50cd71b7a2f7e461065d894",
+      "scripts/validate-home-gallery.tsx": "9d551c13b6df1c9173c32a805b07abe6ba85bef830057db78bc4653d56aac19b",
+      "scripts/validate-home-hero.tsx": "f80f6aaa538c53f02b1bc90007cabcbe7fe1ee3bfd1513fcb60ade5ff0f56f70",
+      "scripts/validate-home-information-architecture.tsx": "e3c0001100d69301d7007ba8fc3840779530fbdadae93bd784d48978138cfbc4",
+      "scripts/validate-home-performance.tsx": "ab1f4951e3c77a9806c355717dcfb20977d36fcac2be1edd9090e7811a5c2916",
+      "public/games/oval-face-cover.png": "0e914b27b602683442d57dfa232c88be1fdea5a2ed45bdabe0da72e3ff464073",
+      "public/games/oval-face-icon.png": "a3cdaeff0397647bd1580980c60e2996e5aa499eab8e5f2e634557b1c5da0909",
+      "public/games/oval-face.swf": "80e974d8ef4ad5e849e93464eaea1833620c269bac30601d960f5438c285e09b",
+      "public/games/README.md": "e5ae6e267570980805a1f298d9a6f0b5cf842f934035ae8e6d2355e5b8a3cf0c",
+      "public/games/square-face-cover.png": "15a5c93f79859441eef3032ce45e07abc2e91a7520a9aaef42158dd4fe00a535",
+      "public/games/square-face.swf": "b1d074c95f15b7dcecdbc2405abf820ead985669bb12cd47247fc8ea7537bc1e",
+      "package.json": "1b88a70e51e8c8b828add0fd1c739c630b8221e43cc1467ef4f9b7798c27f585",
+      "package-lock.json": "bf7b778ff42d02d40a11190d56d969cb03ac183a0cf70dbd85c199dc79778c97",
+      "next.config.mjs": "10f3416af7a0a92f59c4d283113624e9c286f645c6155e91c5a381d512feb9ee",
+      "middleware.ts": "4ce3b9cd325b843f1f80bca6545c114ac84f3336434a719cbfd47577c7ab53d6",
+      "tsconfig.json": "a749da922f5e6f1d93a68270185c1ed56e3e45c786d1de1ee59f9bdb7512d720",
+      "scripts/check-about-rights.mjs": "5d1591d13e293168dda865890daecbd33048bfca16b569a4059a262afae94868",
+      "scripts/check-editorial-rights.mjs": "1ec7268b707490f6b55d297b5bfb7a1b36f944da45ddcc8d6f561a52518a503b",
+      "scripts/check-gallery-rights.mjs": "13dcc0d9ff2cc8b651fcaabeb537f4aaf284c519a3dfe4ab60a003fbdea651eb"
+    }
+  },
+  "historicalEvidence": {
+    "count": 9,
+    "allUnchanged": true,
+    "hashes": {
+      "docs/quality/evidence/about-001-rights-copy/checks.json": "9b5d2192b7ddac92a9b01c8f2368d3faaee116253166bb6c623c83bbf8e647e7",
+      "docs/quality/evidence/about-001-rights-copy/proposal-checks.json": "dbb44b079bd622e93813761c939091e15a0b892a20d2272aaa1cfbd93a690362",
+      "docs/quality/evidence/about-001-rights-copy/README.md": "5a11b0502a2a6efc90f556cd547806ec0b50eaa51f82a1b756ae240e46d38161",
+      "docs/quality/evidence/terms-001-rights-copy/checks.json": "5b0aaefeca88262d57203e5caa92ea3ac465f5c399361be4bf873c28c4dccf1d",
+      "docs/quality/evidence/terms-001-rights-copy/README.md": "9689d72a5b142b65b639cce43b4508d9eeac5a06d34c4efabe1a8716ba352929",
+      "docs/quality/evidence/pf-01-activation-response/README.md": "118652d153b0036190a6afea9c8688739410148ff27d06e0d1a59f670173399c",
+      "docs/quality/evidence/editorial-001-rights-copy/proposal-checks.json": "a30c3eb49860af11e4af1e998dff78d8b42970d909113ee64c7a728256d5beed",
+      "docs/quality/evidence/editorial-001-rights-copy/checks.json": "72f7ff3be63a9e3b14a41a3f651a336c57f7d74d59785fb9173cd2af36117d52",
+      "docs/quality/evidence/gallery-001-rights-copy/proposal-checks.json": "3c00f1471ba2741fb27d44b1efecd823834443243e46754c1aeda8fea1a81a08"
+    },
+    "all24AcceptancesPreserved": true,
+    "originalProposal": "docs/quality/evidence/gallery-001-rights-copy/proposal-checks.json",
+    "originalProposalSha256": "3c00f1471ba2741fb27d44b1efecd823834443243e46754c1aeda8fea1a81a08",
+    "boundary": "All original v1.53 proposal and earlier accepted QA/failure timestamps are preserved, not relabeled as current checks."
+  },
+  "freshBuildAndHttp": {
+    "startedAt": "2026-09-02T11:03:49.044Z",
+    "recordedAt": "2026-09-02T11:03:49.522Z",
+    "mode": "HTTP",
+    "nodeVersion": "v22.16.0",
+    "sourceHashesChecked": 146,
+    "unchangedPriorFiles": 143,
+    "allowedChangedPriorFiles": [
+      "app/gallery/page.tsx",
+      "package.json",
+      "scripts/README.md"
+    ],
+    "newChecker": "scripts/check-gallery-rights.mjs",
+    "sourceHashes": {
+      "app/about-us/page.tsx": "bd812baed9b69e531d369be6e0be168dc5232d3729def0d7f5a747fbccbf1779",
+      "app/admin/comments/page.tsx": "5da66215f6c126892b132af3f11937d2fba81dc9d3b86b680b207b0cd6680f99",
+      "app/api/admin/comment-images/[...key]/route.ts": "818b0b4c81cd56f9455a3228adc95137268a90db6b82f1a2e1f6f8ec232f03a0",
+      "app/api/admin/comments/route.ts": "63ddcb14964f633f199af6873497abb9091420dba4e889396ca7d2d775578bb2",
+      "app/api/admin/comments/[id]/route.ts": "e471d00f054151ac6636c81fd9d21ce108b19c86875ee524f2e0b44f429c135b",
+      "app/api/comment-images/[...key]/route.ts": "defb2f8ec7f4be7c19beb82663f781ae2e735cf19db127d603f5c82d8925d98a",
+      "app/api/comments/route.ts": "4297d56bf81fb7182236ef0c880cd1039907dc345415e1bacddc39ae01ab2e7f",
+      "app/api/comments/[id]/like/route.ts": "edf2b13178884db9af47debed1186655b55a96abe807e1dde8f4367381089a14",
+      "app/blog/avatar-maker-without-signup/page.tsx": "27b767b9898a1cf54a8bd8d15949690a99c3bcf8fee0a510275d2c05880dce97",
+      "app/blog/best-discord-avatar-style/page.tsx": "2e0807728e27e7b62e0be6aee9319079626b6d8f259fbf452afb3193f6040b9d",
+      "app/blog/cute-profile-picture-ideas/page.tsx": "23d0d94e184f86457eec7bccce657e83a401d94fef36686008af683fbf9ed126",
+      "app/blog/discord-avatar-size-guide/page.tsx": "3990a509c0f009f3007edf767e28983943e35ec03a9422483d7427972e3a7a24",
+      "app/blog/how-to-make-a-cute-discord-profile-icon/page.tsx": "126709f27ed82ffa275ec56f8c19d3ef97bd972f3a6d7737eca02eb016fe4a38",
+      "app/blog/page.tsx": "ae764e709b2e95b94978264e94f7c8339e18fbb40619e2b61003e73979b777e9",
+      "app/blog/square-avatar-vs-round-avatar/page.tsx": "21831b3d94e787b7442827822de117fd9cb6854408e25ea55443bc5cafb3c82b",
+      "app/blog/tiktok-profile-icon-ideas/page.tsx": "c480c6c80cc10800e1ff12710861712d4bde2aefe7145e7666d8352e0f2c29ad",
+      "app/category/[slug]/page.tsx": "db5f8c1c1c4df37b7f8a0a726e540d1a0897fa14d84efd8a2f50a8b79aaba0e1",
+      "app/contact/page.tsx": "43c774c71e326750845afe0168f4d66bbb1ee47367bcfc6015bb17592860c98e",
+      "app/cute-square-avatar-generator/page.tsx": "fe22cddd887475ecc89983278ceeabc06678a344c8ea7aefb47a65eb7a893042",
+      "app/editorial-policy/page.tsx": "c758e70ce143b58db1453877efcb6d82a9e89fd96d1bc473c73c6dcf4c81a529",
+      "app/free-avatar-maker/page.tsx": "65b5cd3745e7aad2dd9bdb11a851fb8a7fa74fe6e7a2e3221474688c76b75aa5",
+      "app/gallery/page.tsx": "d051f12b8e4c71a9b15a75efb59c3ffbb1f9904ec5d69577f9640ff47d479901",
+      "app/games/page.tsx": "325b8221aec0d9ea69a2374faad321a0fa75dd7e8c0df05c59da4db93e46c44f",
+      "app/games/[slug]/page.tsx": "0131595a7dc55e0b9227944e41f5cf54548213f5527cc62f034eb8a61c05aab4",
+      "app/globals.css": "5b5e8d7253be79edbd479a01a53bf3f760d52482ced5f4c6edcd387975669867",
+      "app/layout.tsx": "c9d72791c1167896c2ab3a72bb9e7eada5b909bbf8f540a6e64fb52bed4e77b5",
+      "app/manifest.ts": "035fb0b64fd59984750a16cca5b4e7bd4e776d8ee7c9a608e339cabef2a8a179",
+      "app/not-found.tsx": "1ae05e6e788c22dba45d7cbdce2a4b9271d584246a553bda51428c396991a351",
+      "app/oval-face-icon-generator/page.tsx": "4b0263e9b0fbba1824e32bcec8b324e45aeae0c373f50375a7ba8fe8f9fd0e54",
+      "app/page.tsx": "d10f79e2522ca3c3e21195e09df0f090b119af6452c265e48eb125639b2c46c1",
+      "app/pixel-art-avatar-icon-generator/page.tsx": "514139869fbd206326dc6d2e426d86c2b49f27c557b86868471de200fe94c50d",
+      "app/pixel-square-face-maker/page.tsx": "b691a2359a6a6581eadc75fb1944a93a1718f85c4fff11ba6ebdfbad756603e5",
+      "app/privacy-policy/page.tsx": "eba51fcadf3aa4e61506242d5d5fb1d9d4ac7d870626e7877670ae0984c7d1c4",
+      "app/robots.ts": "dd47d2bd1355fb44791c0f5e481b06c98142639383a902cd6e976cb4f7583aa8",
+      "app/sitemap.ts": "183aafaeb14f529f8c341c70aa9c3278082f670aeaa4f487271d6ff110e0db18",
+      "app/square-avatar-generator/page.tsx": "a239bb17efb6eddce7e49f3214cef92017eed9f167c0879103855d91b4554a31",
+      "app/square-face-icon-generator/page.tsx": "24e88b1057bfea65f350bb84205cc5fc89fec0cd06e4f6dea24719c7513ff731",
+      "app/terms-of-service/page.tsx": "8121043e9a474a19a5c1c366ed80e03db93ec6bc8dc1ed9eda63ef60d85c83f5",
+      "app/[locale]/page.tsx": "e47894775647c4a8630490b2e7ab0a72cc4fdcc2d0f253ce2ce724676adf7ece",
+      "components/AdminComments.tsx": "a3a1dd2d1bc175a4862a49299b363fe50c9b006945fc6b20df97dc08d527af4d",
+      "components/AvatarGenerator.tsx": "61e65dd817d517975ba89ca2ba7e7b182cf015bc296e4a993aa4733342fda74b",
+      "components/CloudflareAnalytics.tsx": "54e33cdc6f229a708c86013649a283ed946be150f717b11eebc6ccdb793368c4",
+      "components/CommentSection.tsx": "02db74c38bf07f57c92defb239866cd75bfeef561333de1db9acfc9d44ddfd21",
+      "components/CuratedGalleryPreview.tsx": "0238422e69aa37737063f1600e11a82505b0b8f94bd813161eb8ea6985e78792",
+      "components/DeferredThirdPartyScripts.tsx": "09ae2617d036e47be5874e366d0ced2fc1634d03b59ac9c2505f1938c7cfe7e2",
+      "components/FlashGenerator.tsx": "c443323031b15428a502ff4fcad3653ffc424ef75db9335b76883576f45ac794",
+      "components/game/AdSlotShell.tsx": "3c1aaa1ab799dddb7e7e0bb607a31c0cc9d77683c42554b7663bc4bdc4a28a27",
+      "components/game/CategoryChip.tsx": "78e2ddcf2ce6b77899d3ab35f06f5d49a87f82f1015d8f4deb862dfe76ab0850",
+      "components/game/EmptyState.tsx": "2ef1bad5737139a2cd9c1cf9d003b28a9f202a50fa9925072cea8e35cef549d2",
+      "components/game/GameBreadcrumb.tsx": "933a23729f0c280559d64ac1376022520c3d700031a489935d1e1b30b604b474",
+      "components/game/GameCard.tsx": "94af78fdd701884f8e69d2d3cdf919d2a0b730c685b6e5287130d85ef9b92edf",
+      "components/game/GameControls.tsx": "2a738d34297ad718e59a678ea9572d8c6cc981180e083e8fca7cb03e21c1b4da",
+      "components/game/GameDetailTemplate.tsx": "c643d800efd8bdbc6d439047b53c3aad6fae403ad59ed55b7c8349218c1ca43c",
+      "components/game/GameFaq.tsx": "c680b9728a08c896095bb85fc688f6d451360142e0bb447763b8fed0a0a1139a",
+      "components/game/GameGrid.tsx": "261672ac47c7cafeb3f2576caf6ba6240fa3c9b15472f55778b8ae3f45d631b5",
+      "components/game/GameMeta.tsx": "d7c6e283401f295579cff65cd01ee761626d727098fbc6e983e8d18e47f807e9",
+      "components/game/GamePlayer.tsx": "a568634e413cacc1ef816bd2835be4916dfc6094f9cc4d3a2ee3a3fd5d51b2da",
+      "components/game/GameSourceRights.tsx": "ebc2ec19b91bf5dde44eae24ca75b6ee208a487c707a9862f694c6d88dbd2243",
+      "components/game/README.md": "4c7ea3c7e616a686fbf08567f8b9e28082912a2dbcbfc7a73d3166867c172f89",
+      "components/game/RelatedGames.tsx": "1fa094f28bd8b0855c7869596b9df55b0072a48a8db6d3db8c6558f954209aa7",
+      "components/game-player/adapters/adapter-types.ts": "4e6c492777363116b8a450d5b7e822abdf99609e518f15a3fc682f2d6fd84df5",
+      "components/game-player/adapters/ExternalLinkAdapter.tsx": "f7d4c98916a2a25785175af7ae6bf009a700f68271b8345322fd904c2431f45c",
+      "components/game-player/adapters/Html5Adapter.tsx": "524f0c49fd8af608ddf86aed872fe1cd0af72839b30391206be8eae639e08325",
+      "components/game-player/adapters/IframeAdapterFrame.tsx": "af31a35c493f607bacbfb548b386f604cbb98c7722a32cf580da11a7b7b593b6",
+      "components/game-player/adapters/LocalIframeAdapter.tsx": "b73408e66cb4dec9fe5b8460960627c95a1a92c43282345562dbfd173b3f4d9f",
+      "components/game-player/adapters/OfficialIframeAdapter.tsx": "0668f81f43684d59522799c55ecc4affe8fb24fdfc571af7e6ac8e56118cc23c",
+      "components/game-player/adapters/RuffleAdapter.tsx": "5fcff6669f4ca75147728e8a73434cdef8abb2823325110d585ad46a1cfe8ada",
+      "components/game-player/GamePlayer.tsx": "142cf22ac3a485c78285d920bbe84114f3931a38f0e9aec067bbf8ca2e562d5c",
+      "components/GameSidebar.tsx": "1d6d43a434f91bface5858c3d648c3aeff90f8f0d930bfbdc9f2ae0ebd28bb70",
+      "components/home/CoreGamePreview.tsx": "9a05388d53d969ef1ea1f4ea9a6273a0ebd1cd8ec6d1df43a1afd8da1c4c44a1",
+      "components/home/HomeDiscoveryRegion.tsx": "8652a91eeeb4650230235422c661be58841a49475ce1bc446425c7e2ac697b04",
+      "components/home/HomeHero.tsx": "0f336bfa249d291f9ef1fde2e558400e2c1d7fcb9e1e5c4991f92daef50d1547",
+      "components/home/HomeResourceLinks.tsx": "fd03f53ecc08510a86e3edd54864e132af9e70b363a7d5dee4c50d1eea207e23",
+      "components/HomePage.tsx": "6f112888eca633682594d9ecc717566142a3a78547fb48146c73351147b6d93b",
+      "components/InstallPrompt.tsx": "fb4a9fd5a43625673f03b26b8d31284c955b4e970d9fbe80be41863228c02ac8",
+      "components/ShareButtons.tsx": "5becc8e6cf2a779dd192222de56087f468b41243f60950d0290f45ff07a71a28",
+      "components/SiteFooter.tsx": "0a8f7e7ca185853a8494ba94f8ecaa65e9ddd73ba3e43781c0efacfcdd3c2291",
+      "components/SiteHeader.tsx": "8182d2e2a5012cfbb62ebadcc8cb581d088364d263f9eb11f9d217686df115a1",
+      "lib/comment-store.ts": "734fa24cbf3cf6518f5026c93953628dca8c28935db6927d53650d4019865804",
+      "lib/games/catalog.ts": "6cc0df85e3acf146b3cc18b63cc4785982607fc0e59142ce89f59d2d6ef0ac0d",
+      "lib/games/game-player-model.ts": "42672e8d0917e9d7d6a1b28137e505ecd4d7b09ba40e3c971751b6d7f3fbe84c",
+      "lib/games/game-schema.ts": "a57eae1f63dff2698c45c6b98d70cd811f513b274fb26182bb20d9059803d235",
+      "lib/games/home-discovery.ts": "b172dd4a9e807754f59dfe5f9bb5b42fdc2d360bd89c54eab504f5577dac166e",
+      "lib/games/routes.ts": "058434c725a09ae921c2c5f184396377873ad67603130f985fcfe39bcd97c5a6",
+      "lib/locales.ts": "937e6c91f0cd3c67bdb9a5a1e865fe9c9829495d5d119ad464a4feaaf7ea3d36",
+      "lib/metadata.ts": "ed02bc92dbfe7e71c0988bef9cf8bbdabc34caef5a1a2ba67d40cf69d839a275",
+      "lib/seo/canonical-origin.ts": "2d506dc08f622a898efd6eb57c9210018d2b8ba73ec8666a3bd4c9685e831fd9",
+      "lib/seo/game-metadata.ts": "87e7f42b085e2714cd22bce3634ccf1272fa822fb70b77292c5831d0f38fe660",
+      "lib/seo/game-structured-data.ts": "84193180e9b8827a2566d38585ce753b94ee30f4c9b5f6aee4fe22da3c875391",
+      "data/ai-crawler-policy.json": "adea8bf57c056c93b319da9033654f573989948058ab04a7c74e4739c472487c",
+      "data/curated-icon-ideas.ts": "b51d0f7b57249b1e3cfe0e16bede29688154814168a2c6271a7388ad10933dce",
+      "data/game-categories.ts": "b0bbb1eccbc70bdc70323c05da94acc725df06d857c70eaba8860f5b3e701d8d",
+      "data/game-license-registry.json": "fb0b94f56ffa3c7feca89ee136c73795a95d993de0ebe16d81ca8041da4a8924",
+      "data/games/oval-face.ts": "ee2ded5bf3d11fb4572b4861f5c39164a37d5e7a3d91f404130510c453331f74",
+      "data/games/pixel-art-avatar.ts": "118d1b40325cb26d8ff19141f5af2ff1b451a3b89de0e6131836a37a0510fabb",
+      "data/games/README.md": "71272ce378d8adc438b34b6d60e58080fa32b8728fd9c513e6aad2001eac24ee",
+      "data/games/square-face.ts": "4be5084d160f2d09b87fb4392ef3e43bbc8675edcfd1f94970e2b2e05ba2b304",
+      "scripts/check-ai-crawler-policy.mjs": "76e030b11a653a01ed101e13c06460f29354f55d33c1e96aab4ace3f53be5042",
+      "scripts/check-terms-rights.mjs": "62ab3d26bb2459fe9abe92a1c520e740cba77f01cec5324a7d19ddadfe6dba50",
+      "scripts/cloudflare-login.cmd": "9285c7cf0105fa6087da2dbb9264265a5daed85475ea61a12b0310431e3c8b0f",
+      "scripts/cloudflare-provision.cmd": "72b6efc1ad0cab89dc54d6d18cb6a6c3f2c1bbc7fa42444b9be968cc1cd22aeb",
+      "scripts/cloudflare-set-secrets.cmd": "5964a356784cc9ea3beeb76b801fc04ae79762ff1c47ab1fecb9f5a0d35a8cd0",
+      "scripts/patch-opennext-worker.mjs": "1f761820c8ec949e7a32f1435b82f14f9919d46bf965090741ab55add8b4068b",
+      "scripts/post-deploy-check.mjs": "51b28a8e14558dfc69c71779ebe9ed28d195f2f671d5eda07977afe885bbee82",
+      "scripts/README.md": "67a0f8e281b6cb2e7c90fac94b05ca798eda10f5e817fb36660289b5f26474bc",
+      "scripts/robots-policy.mjs": "0d3f85f8568a4b17a53c2eaa82fd06460a14262160ba53131f29978c5f4416ed",
+      "scripts/run-canonical-host-check.mjs": "99c282d9246c3a3c060c9b697d0c4a769e6b7622a63b97ab99899d41bc2edc4b",
+      "scripts/run-game-component-check.mjs": "bf05d0f3119b094bc4674846c71bbc69482541921ba199ec693dce021ba86e62",
+      "scripts/run-game-data-check.mjs": "985321918bfc7abdbea07a675b710d40fe8ddbbfa6d128e24e67cd90309f536b",
+      "scripts/run-game-metadata-check.mjs": "a6a16a08338143f1ada4f8f446e89f2e08208c0896cf884a5d494c894931ccf8",
+      "scripts/run-game-player-check.mjs": "59f17f0f2dacc0b596f572a9a1871e58f78623a267257e3f33e7f1eac7bd9f09",
+      "scripts/run-game-route-check.mjs": "be951b8407d08aadf9e1b2b29dda30fe33ffb133af6cd8ee6e8c7897a95eac44",
+      "scripts/run-game-template-check.mjs": "c7121e18a868db05d702639ff8448cbaad958c20117e91b71fb0ed71d98ced8d",
+      "scripts/run-home-discovery-check.mjs": "70cb3221dedd42081b24c201902a3dce2ff46c31e54b8ee478384da4545b4196",
+      "scripts/run-home-gallery-check.mjs": "e0bf58437b6de392dd98af862c97be25107432cec1a24df9a8d9d028b7ab738d",
+      "scripts/run-home-hero-check.mjs": "40ad21661b97f27e306c2eaa8d130637ecbd9a31d5c72c8ef25c214fb3a276e0",
+      "scripts/run-home-information-architecture-check.mjs": "6fc9c018915cb8cbdf68f23fde16239be0cb246bd6f92eab7000b243a98d9f66",
+      "scripts/run-home-performance-check.mjs": "58c55d5a6be4d07961c9163167fb2b1394c2807d4a31b8522da4e79ff7d9d308",
+      "scripts/seo-check.mjs": "a56453c56c8f55f4a308790e38a34aed19b667d1ba3514bd09eb18709db2ca9f",
+      "scripts/start-local-preview.cmd": "edd040a98ac02704de22f632fb21f981976c70b88932461874e4631db1dbcfb1",
+      "scripts/submit-indexnow.mjs": "1394eb5cfa2bb600af3bd3fbdf0f8c2eae9adf78b31d18d6f4cd57f3be0f4ae9",
+      "scripts/validate-canonical-host.ts": "1c7d329c5a0d5ac1b06432381f0933cfe70e0f17f8b4081f5e9695d23a6d32aa",
+      "scripts/validate-game-components.tsx": "3ba59b4e768241a57ec53da796c5cca2c35c6b69c95259f827166c0780a7b74d",
+      "scripts/validate-game-data.ts": "7e6f204d5397830accd8e33534939146bcbdd934b3ec49d8653c113b412d73bd",
+      "scripts/validate-game-metadata.ts": "e7a6f47384a1e305a8a2b1ed3ebd0d5243831191119d34e3a56481fd0ca4e55d",
+      "scripts/validate-game-player.tsx": "370b6809735b2b1ccbd99003fea04ea0f06a9761950333d765a661b3157797eb",
+      "scripts/validate-game-routes.ts": "bca62350b59f545437c2e5a8e834275dce7c5df330bb58d268befd12ab00803f",
+      "scripts/validate-game-template.tsx": "5427f7fbd835530eaa34ef7fc514692b203f8f312e71624ed51df3dc14af6406",
+      "scripts/validate-home-discovery.tsx": "f0236c66dc6e603595d39ba675293c5aba44add9a50cd71b7a2f7e461065d894",
+      "scripts/validate-home-gallery.tsx": "9d551c13b6df1c9173c32a805b07abe6ba85bef830057db78bc4653d56aac19b",
+      "scripts/validate-home-hero.tsx": "f80f6aaa538c53f02b1bc90007cabcbe7fe1ee3bfd1513fcb60ade5ff0f56f70",
+      "scripts/validate-home-information-architecture.tsx": "e3c0001100d69301d7007ba8fc3840779530fbdadae93bd784d48978138cfbc4",
+      "scripts/validate-home-performance.tsx": "ab1f4951e3c77a9806c355717dcfb20977d36fcac2be1edd9090e7811a5c2916",
+      "public/games/oval-face-cover.png": "0e914b27b602683442d57dfa232c88be1fdea5a2ed45bdabe0da72e3ff464073",
+      "public/games/oval-face-icon.png": "a3cdaeff0397647bd1580980c60e2996e5aa499eab8e5f2e634557b1c5da0909",
+      "public/games/oval-face.swf": "80e974d8ef4ad5e849e93464eaea1833620c269bac30601d960f5438c285e09b",
+      "public/games/README.md": "e5ae6e267570980805a1f298d9a6f0b5cf842f934035ae8e6d2355e5b8a3cf0c",
+      "public/games/square-face-cover.png": "15a5c93f79859441eef3032ce45e07abc2e91a7520a9aaef42158dd4fe00a535",
+      "public/games/square-face.swf": "b1d074c95f15b7dcecdbc2405abf820ead985669bb12cd47247fc8ea7537bc1e",
+      "package.json": "1b88a70e51e8c8b828add0fd1c739c630b8221e43cc1467ef4f9b7798c27f585",
+      "package-lock.json": "bf7b778ff42d02d40a11190d56d969cb03ac183a0cf70dbd85c199dc79778c97",
+      "next.config.mjs": "10f3416af7a0a92f59c4d283113624e9c286f645c6155e91c5a381d512feb9ee",
+      "middleware.ts": "4ce3b9cd325b843f1f80bca6545c114ac84f3336434a719cbfd47577c7ab53d6",
+      "tsconfig.json": "a749da922f5e6f1d93a68270185c1ed56e3e45c786d1de1ee59f9bdb7512d720",
+      "scripts/check-about-rights.mjs": "5d1591d13e293168dda865890daecbd33048bfca16b569a4059a262afae94868",
+      "scripts/check-editorial-rights.mjs": "1ec7268b707490f6b55d297b5bfb7a1b36f944da45ddcc8d6f561a52518a503b",
+      "scripts/check-gallery-rights.mjs": "13dcc0d9ff2cc8b651fcaabeb537f4aaf284c519a3dfe4ab60a003fbdea651eb"
+    },
+    "historicalEvidenceHashes": {
+      "docs/quality/evidence/about-001-rights-copy/checks.json": "9b5d2192b7ddac92a9b01c8f2368d3faaee116253166bb6c623c83bbf8e647e7",
+      "docs/quality/evidence/about-001-rights-copy/proposal-checks.json": "dbb44b079bd622e93813761c939091e15a0b892a20d2272aaa1cfbd93a690362",
+      "docs/quality/evidence/about-001-rights-copy/README.md": "5a11b0502a2a6efc90f556cd547806ec0b50eaa51f82a1b756ae240e46d38161",
+      "docs/quality/evidence/terms-001-rights-copy/checks.json": "5b0aaefeca88262d57203e5caa92ea3ac465f5c399361be4bf873c28c4dccf1d",
+      "docs/quality/evidence/terms-001-rights-copy/README.md": "9689d72a5b142b65b639cce43b4508d9eeac5a06d34c4efabe1a8716ba352929",
+      "docs/quality/evidence/pf-01-activation-response/README.md": "118652d153b0036190a6afea9c8688739410148ff27d06e0d1a59f670173399c",
+      "docs/quality/evidence/editorial-001-rights-copy/proposal-checks.json": "a30c3eb49860af11e4af1e998dff78d8b42970d909113ee64c7a728256d5beed",
+      "docs/quality/evidence/editorial-001-rights-copy/checks.json": "72f7ff3be63a9e3b14a41a3f651a336c57f7d74d59785fb9173cd2af36117d52",
+      "docs/quality/evidence/gallery-001-rights-copy/proposal-checks.json": "3c00f1471ba2741fb27d44b1efecd823834443243e46754c1aeda8fea1a81a08"
+    },
+    "historicalEvidenceUnchanged": true,
+    "buildId": "Vyf3tcN5LOfwDiSXRH6xO",
+    "artifacts": {
+      "/gallery": {
+        "path": ".next/server/app/gallery.html",
+        "sha256": "2ac5c491a04e834876e122216bd7d4dd03cd5f536606b803063ebebe82dbd35f",
+        "bytes": 52414
+      },
+      "/editorial-policy": {
+        "path": ".next/server/app/editorial-policy.html",
+        "sha256": "c25943c9f5f601d5f99cb36ecf79132cb202b7336dd8251c945eb1eae70a1908",
+        "bytes": 33201
+      },
+      "/about-us": {
+        "path": ".next/server/app/about-us.html",
+        "sha256": "5a53a438b734523ad7eac532d5c9c21a81e8ce5c3d184575dc7d2bdee4838885",
+        "bytes": 38196
+      },
+      "/terms-of-service": {
+        "path": ".next/server/app/terms-of-service.html",
+        "sha256": "fe3841745d6113d5845a465301422bb268d6a0529aa332aaf9d2333f92bbfd35",
+        "bytes": 21778
+      },
+      "/robots.txt": {
+        "path": ".next/server/app/robots.txt.body",
+        "sha256": "e114dfaaa714b7b9d2385907a7f1e915e30c606d049f11457f45a9f6549d554f",
+        "bytes": 711
+      },
+      "/sitemap.xml": {
+        "path": ".next/server/app/sitemap.xml.body",
+        "sha256": "3f1341c4b3d4e339fc5b231539157032ff42ecfc991e4bc2058903d372bb12a7",
+        "bytes": 2770
+      }
+    },
+    "platformArtifact": {
+      "path": ".open-next/worker.js",
+      "sha256": "4e7c7cb3850c2ca12374d034118afc422ed5d95f46bfc3df3ff1dba2911807f3",
+      "bytes": 2234
+    },
+    "sitemap": {
+      "urls": [
+        "https://mysquarefaceicon.com",
+        "https://mysquarefaceicon.com/about-us",
+        "https://mysquarefaceicon.com/contact",
+        "https://mysquarefaceicon.com/editorial-policy",
+        "https://mysquarefaceicon.com/free-avatar-maker",
+        "https://mysquarefaceicon.com/oval-face-icon-generator",
+        "https://mysquarefaceicon.com/pixel-art-avatar-icon-generator",
+        "https://mysquarefaceicon.com/square-avatar-generator",
+        "https://mysquarefaceicon.com/gallery",
+        "https://mysquarefaceicon.com/square-face-icon-generator",
+        "https://mysquarefaceicon.com/blog",
+        "https://mysquarefaceicon.com/blog/avatar-maker-without-signup",
+        "https://mysquarefaceicon.com/blog/cute-profile-picture-ideas",
+        "https://mysquarefaceicon.com/blog/best-discord-avatar-style",
+        "https://mysquarefaceicon.com/blog/how-to-make-a-cute-discord-profile-icon",
+        "https://mysquarefaceicon.com/blog/discord-avatar-size-guide",
+        "https://mysquarefaceicon.com/blog/tiktok-profile-icon-ideas",
+        "https://mysquarefaceicon.com/blog/square-avatar-vs-round-avatar",
+        "https://mysquarefaceicon.com/privacy-policy",
+        "https://mysquarefaceicon.com/terms-of-service"
+      ],
+      "count": 20,
+      "unique": 20,
+      "lastmod": 0,
+      "newGameOrCategory": 0
+    },
+    "http": [
+      {
+        "url": "http://127.0.0.1:3100/gallery",
+        "startedAt": "2026-09-02T11:03:49.454Z",
+        "completedAt": "2026-09-02T11:03:49.494Z",
+        "status": 200,
+        "contentType": "text/html; charset=utf-8",
+        "sha256": "2ac5c491a04e834876e122216bd7d4dd03cd5f536606b803063ebebe82dbd35f",
+        "bytes": 52414,
+        "artifactSha256": "2ac5c491a04e834876e122216bd7d4dd03cd5f536606b803063ebebe82dbd35f",
+        "xRobotsTag": null
+      },
+      {
+        "url": "http://127.0.0.1:3100/editorial-policy",
+        "startedAt": "2026-09-02T11:03:49.494Z",
+        "completedAt": "2026-09-02T11:03:49.500Z",
+        "status": 200,
+        "contentType": "text/html; charset=utf-8",
+        "sha256": "c25943c9f5f601d5f99cb36ecf79132cb202b7336dd8251c945eb1eae70a1908",
+        "bytes": 33201,
+        "artifactSha256": "c25943c9f5f601d5f99cb36ecf79132cb202b7336dd8251c945eb1eae70a1908",
+        "xRobotsTag": null
+      },
+      {
+        "url": "http://127.0.0.1:3100/about-us",
+        "startedAt": "2026-09-02T11:03:49.501Z",
+        "completedAt": "2026-09-02T11:03:49.507Z",
+        "status": 200,
+        "contentType": "text/html; charset=utf-8",
+        "sha256": "5a53a438b734523ad7eac532d5c9c21a81e8ce5c3d184575dc7d2bdee4838885",
+        "bytes": 38196,
+        "artifactSha256": "5a53a438b734523ad7eac532d5c9c21a81e8ce5c3d184575dc7d2bdee4838885",
+        "xRobotsTag": null
+      },
+      {
+        "url": "http://127.0.0.1:3100/terms-of-service",
+        "startedAt": "2026-09-02T11:03:49.507Z",
+        "completedAt": "2026-09-02T11:03:49.512Z",
+        "status": 200,
+        "contentType": "text/html; charset=utf-8",
+        "sha256": "fe3841745d6113d5845a465301422bb268d6a0529aa332aaf9d2333f92bbfd35",
+        "bytes": 21778,
+        "artifactSha256": "fe3841745d6113d5845a465301422bb268d6a0529aa332aaf9d2333f92bbfd35",
+        "xRobotsTag": null
+      },
+      {
+        "url": "http://127.0.0.1:3100/robots.txt",
+        "startedAt": "2026-09-02T11:03:49.512Z",
+        "completedAt": "2026-09-02T11:03:49.516Z",
+        "status": 200,
+        "contentType": "text/plain",
+        "sha256": "e114dfaaa714b7b9d2385907a7f1e915e30c606d049f11457f45a9f6549d554f",
+        "bytes": 711,
+        "artifactSha256": "e114dfaaa714b7b9d2385907a7f1e915e30c606d049f11457f45a9f6549d554f",
+        "xRobotsTag": null
+      },
+      {
+        "url": "http://127.0.0.1:3100/sitemap.xml",
+        "startedAt": "2026-09-02T11:03:49.516Z",
+        "completedAt": "2026-09-02T11:03:49.522Z",
+        "status": 200,
+        "contentType": "application/xml",
+        "sha256": "3f1341c4b3d4e339fc5b231539157032ff42ecfc991e4bc2058903d372bb12a7",
+        "bytes": 2770,
+        "artifactSha256": "3f1341c4b3d4e339fc5b231539157032ff42ecfc991e4bc2058903d372bb12a7",
+        "xRobotsTag": null
+      }
+    ],
+    "releaseResult": "不通过 / 未部署"
+  },
+  "seo": {
+    "base": "http://127.0.0.1:3100",
+    "checkedUrls": 20,
+    "specVersion": "2026-08-31",
+    "summary": {
+      "must": 0,
+      "should": 12
+    },
+    "findings": [
+      {
+        "rule": "META-03",
+        "level": "应该",
+        "url": "https://mysquarefaceicon.com/free-avatar-maker",
+        "message": "title 66 字符，超过建议上限 60"
+      },
+      {
+        "rule": "META-04",
+        "level": "应该",
+        "url": "https://mysquarefaceicon.com/free-avatar-maker",
+        "message": "description 175 字符，超过建议上限 160"
+      },
+      {
+        "rule": "META-03",
+        "level": "应该",
+        "url": "https://mysquarefaceicon.com/square-avatar-generator",
+        "message": "title 68 字符，超过建议上限 60"
+      },
+      {
+        "rule": "META-03",
+        "level": "应该",
+        "url": "https://mysquarefaceicon.com/oval-face-icon-generator",
+        "message": "title 68 字符，超过建议上限 60"
+      },
+      {
+        "rule": "META-03",
+        "level": "应该",
+        "url": "https://mysquarefaceicon.com/gallery",
+        "message": "title 68 字符，超过建议上限 60"
+      },
+      {
+        "rule": "META-03",
+        "level": "应该",
+        "url": "https://mysquarefaceicon.com/pixel-art-avatar-icon-generator",
+        "message": "title 68 字符，超过建议上限 60"
+      },
+      {
+        "rule": "META-04",
+        "level": "应该",
+        "url": "https://mysquarefaceicon.com/",
+        "message": "description 175 字符，超过建议上限 160"
+      },
+      {
+        "rule": "META-03",
+        "level": "应该",
+        "url": "https://mysquarefaceicon.com/blog/how-to-make-a-cute-discord-profile-icon",
+        "message": "title 61 字符，超过建议上限 60"
+      },
+      {
+        "rule": "KW-03",
+        "level": "应该",
+        "url": "https://mysquarefaceicon.com/blog/how-to-make-a-cute-discord-profile-icon",
+        "message": "密度 0.49% < 0.5%（命中 3 次 / 609 词）"
+      },
+      {
+        "rule": "META-03",
+        "level": "应该",
+        "url": "https://mysquarefaceicon.com/blog/best-discord-avatar-style",
+        "message": "title 71 字符，超过建议上限 60"
+      },
+      {
+        "rule": "META-04",
+        "level": "应该",
+        "url": "https://mysquarefaceicon.com/terms-of-service",
+        "message": "description 仅 76 字符，短于建议下限 110"
+      },
+      {
+        "rule": "META-04",
+        "level": "应该",
+        "url": "https://mysquarefaceicon.com/privacy-policy",
+        "message": "description 仅 83 字符，短于建议下限 110"
+      }
+    ]
+  },
+  "readOnlyCommunityApi": [
+    {
+      "recordedAt": "2026-09-02T11:18:13.5187902Z",
+      "method": "GET",
+      "url": "http://127.0.0.1:3100/api/comments?locale=en&sort=latest&limit=500",
+      "status": 200,
+      "commentCount": 0,
+      "bodyKeys": [
+        "comments"
+      ],
+      "state": "actual local response; no POST, UGC content or identities collected"
+    },
+    {
+      "recordedAt": "2026-09-02T11:18:13.5539331Z",
+      "method": "GET",
+      "url": "http://127.0.0.1:3100/api/comments?locale=en&sort=liked&limit=500",
+      "status": 200,
+      "commentCount": 0,
+      "bodyKeys": [
+        "comments"
+      ],
+      "state": "actual local response; no POST, UGC content or identities collected"
+    }
+  ],
+  "browser": {
+    "startedAt": "2026-09-02T11:02:52.056Z",
+    "scope": "GALLERY-001 six confirmed regions",
+    "before": {
+      "commentCards": 0,
+      "empty": "No creations yetNo approved comments yet. Share the first screenshot after your comment is reviewed.",
+      "headings": [
+        [
+          "H1",
+          "Square Face Icon Gallery"
+        ],
+        [
+          "H2",
+          "Community Square Face Creations"
+        ],
+        [
+          "H2",
+          "Browse Square Face Icon Gallery Examples"
+        ],
+        [
+          "H3",
+          "Soft Mint Smile"
+        ],
+        [
+          "H3",
+          "Coral Creator"
+        ],
+        [
+          "H3",
+          "Game Lobby Green"
+        ],
+        [
+          "H3",
+          "Peach Chat Icon"
+        ],
+        [
+          "H3",
+          "Blue Forum Badge"
+        ],
+        [
+          "H3",
+          "Berry Cute Avatar"
+        ],
+        [
+          "H3",
+          "Minimal Profile Face"
+        ],
+        [
+          "H3",
+          "Sunny Group Icon"
+        ],
+        [
+          "H2",
+          "How to Use These Gallery Examples"
+        ],
+        [
+          "H3",
+          "Pick a mood"
+        ],
+        [
+          "H3",
+          "Copy the principle, not the exact look"
+        ],
+        [
+          "H3",
+          "Check the small preview"
+        ],
+        [
+          "H2",
+          "Create Your Own Square Face Icon"
+        ],
+        [
+          "H3",
+          "Open the generator"
+        ],
+        [
+          "H3",
+          "Use the free avatar maker workflow"
+        ],
+        [
+          "H3",
+          "Read cute avatar tips"
+        ]
+      ],
+      "lead": "This gallery collects approved community submissions from My Square Face Icon along with original style ideas. Use it to browse screenshots, ratings, expressions, colors, and profile-picture readability before making your own avatar in the generator.",
+      "sampleLabels": [
+        "Soft Mint Smile square face icon example",
+        "Coral Creator square face icon example",
+        "Game Lobby Green square face icon example",
+        "Peach Chat Icon square face icon example",
+        "Blue Forum Badge square face icon example",
+        "Berry Cute Avatar square face icon example",
+        "Minimal Profile Face square face icon example",
+        "Sunny Group Icon square face icon example"
+      ],
+      "sort": [
+        {
+          "active": true,
+          "text": "Latest"
+        },
+        {
+          "active": false,
+          "text": "Most Liked"
+        }
+      ],
+      "title": "Square Face Icon Gallery - Community Creations | My Square Face Icon"
+    },
+    "views": [
+      {
+        "name": "desktop",
+        "requestedViewport": {
+          "width": 1280,
+          "height": 900
+        },
+        "recordedAt": "2026-09-02T11:04:43.460Z",
+        "snapshot": "- banner:\n  - link \"My Square Face Icon home\":\n    - /url: /\n    - generic: Square Face Generator\n  - navigation \"Primary navigation\":\n    - generic \"Game\":\n      - text: Game\n    - link \"Free Avatar Maker\":\n      - /url: /free-avatar-maker\n    - link \"Gallery\":\n      - /url: /gallery\n    - link \"Icon Guide\":\n      - /url: /square-face-icon-generator\n    - link \"Blog\":\n      - /url: /blog\n    - link \"About\":\n      - /url: /about-us\n    - link \"Contact\":\n      - /url: /contact\n    - link \"Start Creating\":\n      - /url: /#maker\n- main:\n  - link \"Make your own icon\":\n    - /url: /#maker\n  - paragraph: Avatar style ideas\n  - heading \"Square Face Icon Gallery\" [level=1]\n  - paragraph: This gallery pairs simple style illustrations with approved community submissions when available. The eight sample faces in the examples section are illustrations, not game screenshots. Use them to compare expression, contrast, and small-size readability. Display or moderation does not verify authorship or grant image-use rights; check permissions for the specific image.\n  - heading \"Community Square Face Creations\" [level=2]\n  - paragraph: These public cards come from approved user submissions only. New comments and optional images are reviewed before they appear here, and email addresses are never displayed publicly.\n  - strong: Approved community creations\n  - text: Sorted from reviewed public submissions.\n  - generic \"Sort gallery comments\":\n    - button \"Latest\"\n    - button \"Most Liked\"\n  - strong: No creations yet\n  - paragraph: No approved comments yet. Share the first screenshot after your comment is reviewed.\n  - heading \"Browse Square Face Icon Gallery Examples\" [level=2]\n  - paragraph: Use this square face icon gallery to compare expression, contrast, and small-size readability before you make a new design.\n  - article:\n    - img \"Soft Mint Smile square face icon example\"\n    - heading \"Soft Mint Smile\" [level=3]\n    - paragraph: A friendly profile icon style with soft color contrast and a calm expression.\n  - article:\n    - img \"Coral Creator square face icon example\"\n    - heading \"Coral Creator\" [level=3]\n    - paragraph: A brighter avatar idea for TikTok, YouTube, and creator profile pages.\n  - article:\n    - img \"Game Lobby Green square face icon example\"\n    - heading \"Game Lobby Green\" [level=3]\n    - paragraph: A simple gaming-style icon with clear edges and a readable small-size face.\n  - article:\n    - img \"Peach Chat Icon square face icon example\"\n    - heading \"Peach Chat Icon\" [level=3]\n    - paragraph: A warm square avatar that works well for chat apps and small communities.\n  - article:\n    - img \"Blue Forum Badge square face icon example\"\n    - heading \"Blue Forum Badge\" [level=3]\n    - paragraph: A cool, clean style for forums, classroom projects, and team profiles.\n  - article:\n    - img \"Berry Cute Avatar square face icon example\"\n    - heading \"Berry Cute Avatar\" [level=3]\n    - paragraph: A playful look with a stronger accent color and a compact centered face.\n  - article:\n    - img \"Minimal Profile Face square face icon example\"\n    - heading \"Minimal Profile Face\" [level=3]\n    - paragraph: A low-detail avatar idea for users who want a clean, private profile image.\n  - article:\n    - img \"Sunny Group Icon square face icon example\"\n    - heading \"Sunny Group Icon\" [level=3]\n    - paragraph: A bright square face style for friend groups, light projects, and casual servers.\n  - heading \"How to Use These Gallery Examples\" [level=2]\n  - article:\n    - generic: \"1\"\n    - heading \"Pick a mood\" [level=3]\n    - paragraph: Decide whether the avatar should feel friendly, calm, bold, playful, or minimal before choosing parts.\n  - article:\n    - generic: \"2\"\n    - heading \"Copy the principle, not the exact look\" [level=3]\n    - paragraph: Use the examples for color balance and readability, then create your own combination in the generator.\n  - article:\n    - generic: \"3\"\n    - heading \"Check the small preview\" [level=3]\n    - paragraph: A good gallery-inspired avatar should still read clearly when it appears as a small social profile icon.\n  - heading \"Create Your Own Square Face Icon\" [level=2]\n  - paragraph: \"The examples on this page are intentionally simple because profile avatars are usually viewed at small sizes. If you want a stronger result, focus on one memorable feature: a hairstyle, glasses, a bright background, or a clear smile.\"\n  - link \"Open the generator Start with the main square face generator and build your own icon.\":\n    - /url: /#maker\n    - heading \"Open the generator\" [level=3]\n    - paragraph: Start with the main square face generator and build your own icon.\n  - link \"Use the free avatar maker workflow Follow a fast process for creating profile-ready avatars.\":\n    - /url: /free-avatar-maker\n    - heading \"Use the free avatar maker workflow\" [level=3]\n    - paragraph: Follow a fast process for creating profile-ready avatars.\n  - link \"Read cute avatar tips Learn how to choose softer expressions, colors, and accessories.\":\n    - /url: /cute-square-avatar-generator\n    - heading \"Read cute avatar tips\" [level=3]\n    - paragraph: Learn how to choose softer expressions, colors, and accessories.\n- contentinfo:\n  - paragraph: © 2026 My Square Face Icon.\n  - paragraph: Create cute square face icons online with a free browser-based generator.\n  - generic \"Footer navigation\":\n    - heading \"Quick Links\" [level=3]\n    - link \"Square Face Generator\":\n      - /url: /#maker\n    - link \"Oval Face Icon Generator\":\n      - /url: /oval-face-icon-generator\n    - link \"Pixel Art Avatar Icon Generator\":\n      - /url: /pixel-art-avatar-icon-generator\n    - link \"Free Avatar Maker\":\n      - /url: /free-avatar-maker\n    - link \"Square Avatar Generator\":\n      - /url: /square-avatar-generator\n    - link \"Gallery\":\n      - /url: /gallery\n    - link \"Icon Guide\":\n      - /url: /square-face-icon-generator\n    - heading \"Resources\" [level=3]\n    - link \"Blog\":\n      - /url: /blog\n    - link \"Avatar Maker Without Signup\":\n      - /url: /blog/avatar-maker-without-signup\n    - link \"Cute Profile Picture Ideas\":\n      - /url: /blog/cute-profile-picture-ideas\n    - link \"Discord Avatar Style\":\n      - /url: /blog/best-discord-avatar-style\n    - link \"Discord Icon Guide\":\n      - /url: /blog/how-to-make-a-cute-discord-profile-icon\n    - link \"Discord Avatar Size\":\n      - /url: /blog/discord-avatar-size-guide\n    - link \"Pixel Square Face Maker\":\n      - /url: /pixel-square-face-maker\n    - heading \"Legal\" [level=3]\n    - link \"About Us\":\n      - /url: /about-us\n    - link \"Contact\":\n      - /url: /contact\n    - link \"Editorial Policy\":\n      - /url: /editorial-policy\n    - link \"Privacy Policy\":\n      - /url: /privacy-policy\n    - link \"Terms of Service\":\n      - /url: /terms-of-service",
+        "data": {
+          "canonical": "https://mysquarefaceicon.com/gallery",
+          "commentCards": 0,
+          "empty": "No creations yet No approved comments yet. Share the first screenshot after your comment is reviewed.",
+          "formCount": 0,
+          "headings": {
+            "h1": [
+              "Square Face Icon Gallery"
+            ],
+            "h2": [
+              "Community Square Face Creations",
+              "Browse Square Face Icon Gallery Examples",
+              "How to Use These Gallery Examples",
+              "Create Your Own Square Face Icon"
+            ],
+            "h3": [
+              "Soft Mint Smile",
+              "Coral Creator",
+              "Game Lobby Green",
+              "Peach Chat Icon",
+              "Blue Forum Badge",
+              "Berry Cute Avatar",
+              "Minimal Profile Face",
+              "Sunny Group Icon",
+              "Pick a mood",
+              "Copy the principle, not the exact look",
+              "Check the small preview",
+              "Open the generator",
+              "Use the free avatar maker workflow",
+              "Read cute avatar tips"
+            ]
+          },
+          "leadRect": {
+            "bottom": 440.84375,
+            "height": 143.984375,
+            "right": 922.5,
+            "width": 780,
+            "x": 142.5,
+            "y": 296.859375
+          },
+          "links": [
+            {
+              "href": "/#maker",
+              "text": "Make your own icon"
+            },
+            {
+              "href": "/#maker",
+              "text": "Open the generator Start with the main square face generator and build your own icon."
+            },
+            {
+              "href": "/free-avatar-maker",
+              "text": "Use the free avatar maker workflow Follow a fast process for creating profile-ready avatars."
+            },
+            {
+              "href": "/cute-square-avatar-generator",
+              "text": "Read cute avatar tips Learn how to choose softer expressions, colors, and accessories."
+            }
+          ],
+          "loadError": "",
+          "mainText": "Make your own icon AVATAR STYLE IDEAS Square Face Icon Gallery This gallery pairs simple style illustrations with approved community submissions when available. The eight sample faces in the examples section are illustrations, not game screenshots. Use them to compare expression, contrast, and small-size readability. Display or moderation does not verify authorship or grant image-use rights; check permissions for the specific image. Community Square Face Creations These public cards come from approved user submissions only. New comments and optional images are reviewed before they appear here, and email addresses are never displayed publicly. Approved community creationsSorted from reviewed public submissions. Latest Most Liked No creations yet No approved comments yet. Share the first screenshot after your comment is reviewed. Browse Square Face Icon Gallery Examples Use this square face icon gallery to compare expression, contrast, and small-size readability before you make a new design. Soft Mint Smile A friendly profile icon style with soft color contrast and a calm expression. Coral Creator A brighter avatar idea for TikTok, YouTube, and creator profile pages. Game Lobby Green A simple gaming-style icon with clear edges and a readable small-size face. Peach Chat Icon A warm square avatar that works well for chat apps and small communities. Blue Forum Badge A cool, clean style for forums, classroom projects, and team profiles. Berry Cute Avatar A playful look with a stronger accent color and a compact centered face. Minimal Profile Face A low-detail avatar idea for users who want a clean, private profile image. Sunny Group Icon A bright square face style for friend groups, light projects, and casual servers. How to Use These Gallery Examples 1 Pick a mood Decide whether the avatar should feel friendly, calm, bold, playful, or minimal before choosing parts. 2 Copy the principle, not the exact look Use the examples for color balance and readability, then create your own combination in the generator. 3 Check the small preview A good gallery-inspired avatar should still read clearly when it appears as a small social profile icon. Create Your Own Square Face Icon The examples on this page are intentionally simple because profile avatars are usually viewed at small sizes. If you want a stronger result, focus on one memorable feature: a hairstyle, glasses, a bright background, or a clear smile. Open the generator Start with the main square face generator and build your own icon. Use the free avatar maker workflow Follow a fast process for creating profile-ready avatars. Read cute avatar tips Learn how to choose softer expressions, colors, and accessories.",
+          "metadata": {
+            "description": "Explore the Square Face Icon Gallery for simple avatar style examples and approved community submissions when available. Check source and reuse permissions.",
+            "og:description": "Simple square face icon style examples, plus approved community submissions when available. Source and reuse permissions require separate verification.",
+            "og:image": "https://mysquarefaceicon.com/og-image.svg",
+            "og:title": "Square Face Icon Gallery - Community Creations",
+            "og:type": "website",
+            "og:url": "https://mysquarefaceicon.com/gallery",
+            "twitter:card": "summary_large_image",
+            "twitter:description": "Browse simple avatar style examples and approved community submissions when available. Check source and reuse permissions before using an image.",
+            "twitter:image": "https://mysquarefaceicon.com/og-image.svg",
+            "twitter:title": "Square Face Icon Gallery - Community Creations"
+          },
+          "overflow": [],
+          "overlays": 0,
+          "pageParagraphs": [
+            "AVATAR STYLE IDEAS",
+            "This gallery pairs simple style illustrations with approved community submissions when available. The eight sample faces in the examples section are illustrations, not game screenshots. Use them to compare expression, contrast, and small-size readability. Display or moderation does not verify authorship or grant image-use rights; check permissions for the specific image.",
+            "These public cards come from approved user submissions only. New comments and optional images are reviewed before they appear here, and email addresses are never displayed publicly.",
+            "Use this square face icon gallery to compare expression, contrast, and small-size readability before you make a new design.",
+            "A friendly profile icon style with soft color contrast and a calm expression.",
+            "A brighter avatar idea for TikTok, YouTube, and creator profile pages.",
+            "A simple gaming-style icon with clear edges and a readable small-size face.",
+            "A warm square avatar that works well for chat apps and small communities.",
+            "A cool, clean style for forums, classroom projects, and team profiles.",
+            "A playful look with a stronger accent color and a compact centered face.",
+            "A low-detail avatar idea for users who want a clean, private profile image.",
+            "A bright square face style for friend groups, light projects, and casual servers.",
+            "Decide whether the avatar should feel friendly, calm, bold, playful, or minimal before choosing parts.",
+            "Use the examples for color balance and readability, then create your own combination in the generator.",
+            "A good gallery-inspired avatar should still read clearly when it appears as a small social profile icon.",
+            "The examples on this page are intentionally simple because profile avatars are usually viewed at small sizes. If you want a stronger result, focus on one memorable feature: a hairstyle, glasses, a bright background, or a clear smile.",
+            "Start with the main square face generator and build your own icon.",
+            "Follow a fast process for creating profile-ready avatars.",
+            "Learn how to choose softer expressions, colors, and accessories."
+          ],
+          "samples": [
+            {
+              "label": "Soft Mint Smile square face icon example",
+              "rect": {
+                "bottom": 1196.015625,
+                "height": 176,
+                "right": 347.75,
+                "width": 176,
+                "x": 171.75,
+                "y": 1020.015625
+              },
+              "role": "img",
+              "style": "--sample-bg:#d8f5e1;--sample-hair:#5a3420;--sample-cheek:#ff9a9a;--sample-accent:#19c58d"
+            },
+            {
+              "label": "Coral Creator square face icon example",
+              "rect": {
+                "bottom": 1196.015625,
+                "height": 176,
+                "right": 596.25,
+                "width": 176,
+                "x": 420.25,
+                "y": 1020.015625
+              },
+              "role": "img",
+              "style": "--sample-bg:#ffe1d4;--sample-hair:#2f2a28;--sample-cheek:#ff7a7a;--sample-accent:#ff7a1a"
+            },
+            {
+              "label": "Game Lobby Green square face icon example",
+              "rect": {
+                "bottom": 1196.015625,
+                "height": 176,
+                "right": 844.75,
+                "width": 176,
+                "x": 668.75,
+                "y": 1020.015625
+              },
+              "role": "img",
+              "style": "--sample-bg:#d9fff0;--sample-hair:#174b3f;--sample-cheek:#ffb3b3;--sample-accent:#08795e"
+            },
+            {
+              "label": "Peach Chat Icon square face icon example",
+              "rect": {
+                "bottom": 1196.015625,
+                "height": 176,
+                "right": 1093.25,
+                "width": 176,
+                "x": 917.25,
+                "y": 1020.015625
+              },
+              "role": "img",
+              "style": "--sample-bg:#fff0d1;--sample-hair:#7a431e;--sample-cheek:#ff9f9f;--sample-accent:#f4b24f"
+            },
+            {
+              "label": "Blue Forum Badge square face icon example",
+              "rect": {
+                "bottom": 1579.984375,
+                "height": 176,
+                "right": 347.75,
+                "width": 176,
+                "x": 171.75,
+                "y": 1403.984375
+              },
+              "role": "img",
+              "style": "--sample-bg:#dcecff;--sample-hair:#233a5a;--sample-cheek:#ff9eb0;--sample-accent:#4d8fd6"
+            },
+            {
+              "label": "Berry Cute Avatar square face icon example",
+              "rect": {
+                "bottom": 1579.984375,
+                "height": 176,
+                "right": 596.25,
+                "width": 176,
+                "x": 420.25,
+                "y": 1403.984375
+              },
+              "role": "img",
+              "style": "--sample-bg:#ffe3f1;--sample-hair:#5c2240;--sample-cheek:#ff8ab3;--sample-accent:#d94f86"
+            },
+            {
+              "label": "Minimal Profile Face square face icon example",
+              "rect": {
+                "bottom": 1579.984375,
+                "height": 176,
+                "right": 844.75,
+                "width": 176,
+                "x": 668.75,
+                "y": 1403.984375
+              },
+              "role": "img",
+              "style": "--sample-bg:#f5f2ea;--sample-hair:#3f3028;--sample-cheek:#f49b91;--sample-accent:#c9bda8"
+            },
+            {
+              "label": "Sunny Group Icon square face icon example",
+              "rect": {
+                "bottom": 1579.984375,
+                "height": 176,
+                "right": 1093.25,
+                "width": 176,
+                "x": 917.25,
+                "y": 1403.984375
+              },
+              "role": "img",
+              "style": "--sample-bg:#fff3b8;--sample-hair:#6a3b14;--sample-cheek:#ff8f87;--sample-accent:#ffaf03"
+            }
+          ],
+          "schemas": [
+            {
+              "@context": "https://schema.org",
+              "@type": "CollectionPage",
+              "description": "Simple square face icon style examples and approved community submissions when available; selection or moderation does not establish authorship or image-use rights.",
+              "isPartOf": {
+                "@type": "WebSite",
+                "name": "My Square Face Icon",
+                "url": "https://mysquarefaceicon.com"
+              },
+              "name": "Square Face Icon Gallery",
+              "url": "https://mysquarefaceicon.com/gallery"
+            },
+            {
+              "@context": "https://schema.org",
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "item": "https://mysquarefaceicon.com",
+                  "name": "Home",
+                  "position": 1
+                },
+                {
+                  "@type": "ListItem",
+                  "item": "https://mysquarefaceicon.com/gallery",
+                  "name": "Gallery",
+                  "position": 2
+                }
+              ]
+            }
+          ],
+          "sort": [
+            {
+              "active": true,
+              "rect": {
+                "bottom": 647.53125,
+                "height": 37.59375,
+                "right": 981.515625,
+                "width": 68.390625,
+                "x": 913.125,
+                "y": 609.9375
+              },
+              "text": "Latest"
+            },
+            {
+              "active": false,
+              "rect": {
+                "bottom": 647.53125,
+                "height": 37.59375,
+                "right": 1096.5,
+                "width": 108.984375,
+                "x": 987.515625,
+                "y": 609.9375
+              },
+              "text": "Most Liked"
+            }
+          ],
+          "title": "Square Face Icon Gallery - Community Creations | My Square Face Icon",
+          "url": "http://127.0.0.1:3100/gallery",
+          "viewport": {
+            "clientWidth": 1265,
+            "innerHeight": 900,
+            "innerWidth": 1280,
+            "scrollWidth": 1265
+          }
+        },
+        "logs": []
+      },
+      {
+        "name": "mobile",
+        "requestedViewport": {
+          "width": 390,
+          "height": 844
+        },
+        "recordedAt": "2026-09-02T11:14:16.771Z",
+        "snapshot": "- banner:\n  - link \"My Square Face Icon home\":\n    - /url: /\n    - generic: Square Face Generator\n  - link \"Start\":\n    - /url: /#maker\n  - generic \"Open navigation menu\":\n    - text: Menu\n- main:\n  - link \"Make your own icon\":\n    - /url: /#maker\n  - paragraph: Avatar style ideas\n  - heading \"Square Face Icon Gallery\" [level=1]\n  - paragraph: This gallery pairs simple style illustrations with approved community submissions when available. The eight sample faces in the examples section are illustrations, not game screenshots. Use them to compare expression, contrast, and small-size readability. Display or moderation does not verify authorship or grant image-use rights; check permissions for the specific image.\n  - heading \"Community Square Face Creations\" [level=2]\n  - paragraph: These public cards come from approved user submissions only. New comments and optional images are reviewed before they appear here, and email addresses are never displayed publicly.\n  - strong: Approved community creations\n  - text: Sorted from reviewed public submissions.\n  - generic \"Sort gallery comments\":\n    - button \"Latest\"\n    - button \"Most Liked\"\n  - strong: No creations yet\n  - paragraph: No approved comments yet. Share the first screenshot after your comment is reviewed.\n  - heading \"Browse Square Face Icon Gallery Examples\" [level=2]\n  - paragraph: Use this square face icon gallery to compare expression, contrast, and small-size readability before you make a new design.\n  - article:\n    - img \"Soft Mint Smile square face icon example\"\n    - heading \"Soft Mint Smile\" [level=3]\n    - paragraph: A friendly profile icon style with soft color contrast and a calm expression.\n  - article:\n    - img \"Coral Creator square face icon example\"\n    - heading \"Coral Creator\" [level=3]\n    - paragraph: A brighter avatar idea for TikTok, YouTube, and creator profile pages.\n  - article:\n    - img \"Game Lobby Green square face icon example\"\n    - heading \"Game Lobby Green\" [level=3]\n    - paragraph: A simple gaming-style icon with clear edges and a readable small-size face.\n  - article:\n    - img \"Peach Chat Icon square face icon example\"\n    - heading \"Peach Chat Icon\" [level=3]\n    - paragraph: A warm square avatar that works well for chat apps and small communities.\n  - article:\n    - img \"Blue Forum Badge square face icon example\"\n    - heading \"Blue Forum Badge\" [level=3]\n    - paragraph: A cool, clean style for forums, classroom projects, and team profiles.\n  - article:\n    - img \"Berry Cute Avatar square face icon example\"\n    - heading \"Berry Cute Avatar\" [level=3]\n    - paragraph: A playful look with a stronger accent color and a compact centered face.\n  - article:\n    - img \"Minimal Profile Face square face icon example\"\n    - heading \"Minimal Profile Face\" [level=3]\n    - paragraph: A low-detail avatar idea for users who want a clean, private profile image.\n  - article:\n    - img \"Sunny Group Icon square face icon example\"\n    - heading \"Sunny Group Icon\" [level=3]\n    - paragraph: A bright square face style for friend groups, light projects, and casual servers.\n  - heading \"How to Use These Gallery Examples\" [level=2]\n  - article:\n    - generic: \"1\"\n    - heading \"Pick a mood\" [level=3]\n    - paragraph: Decide whether the avatar should feel friendly, calm, bold, playful, or minimal before choosing parts.\n  - article:\n    - generic: \"2\"\n    - heading \"Copy the principle, not the exact look\" [level=3]\n    - paragraph: Use the examples for color balance and readability, then create your own combination in the generator.\n  - article:\n    - generic: \"3\"\n    - heading \"Check the small preview\" [level=3]\n    - paragraph: A good gallery-inspired avatar should still read clearly when it appears as a small social profile icon.\n  - heading \"Create Your Own Square Face Icon\" [level=2]\n  - paragraph: \"The examples on this page are intentionally simple because profile avatars are usually viewed at small sizes. If you want a stronger result, focus on one memorable feature: a hairstyle, glasses, a bright background, or a clear smile.\"\n  - link \"Open the generator Start with the main square face generator and build your own icon.\":\n    - /url: /#maker\n    - heading \"Open the generator\" [level=3]\n    - paragraph: Start with the main square face generator and build your own icon.\n  - link \"Use the free avatar maker workflow Follow a fast process for creating profile-ready avatars.\":\n    - /url: /free-avatar-maker\n    - heading \"Use the free avatar maker workflow\" [level=3]\n    - paragraph: Follow a fast process for creating profile-ready avatars.\n  - link \"Read cute avatar tips Learn how to choose softer expressions, colors, and accessories.\":\n    - /url: /cute-square-avatar-generator\n    - heading \"Read cute avatar tips\" [level=3]\n    - paragraph: Learn how to choose softer expressions, colors, and accessories.\n- contentinfo:\n  - paragraph: © 2026 My Square Face Icon.\n  - paragraph: Create cute square face icons online with a free browser-based generator.\n  - generic \"Footer navigation\":\n    - heading \"Quick Links\" [level=3]\n    - link \"Square Face Generator\":\n      - /url: /#maker\n    - link \"Oval Face Icon Generator\":\n      - /url: /oval-face-icon-generator\n    - link \"Pixel Art Avatar Icon Generator\":\n      - /url: /pixel-art-avatar-icon-generator\n    - link \"Free Avatar Maker\":\n      - /url: /free-avatar-maker\n    - link \"Square Avatar Generator\":\n      - /url: /square-avatar-generator\n    - link \"Gallery\":\n      - /url: /gallery\n    - link \"Icon Guide\":\n      - /url: /square-face-icon-generator\n    - heading \"Resources\" [level=3]\n    - link \"Blog\":\n      - /url: /blog\n    - link \"Avatar Maker Without Signup\":\n      - /url: /blog/avatar-maker-without-signup\n    - link \"Cute Profile Picture Ideas\":\n      - /url: /blog/cute-profile-picture-ideas\n    - link \"Discord Avatar Style\":\n      - /url: /blog/best-discord-avatar-style\n    - link \"Discord Icon Guide\":\n      - /url: /blog/how-to-make-a-cute-discord-profile-icon\n    - link \"Discord Avatar Size\":\n      - /url: /blog/discord-avatar-size-guide\n    - link \"Pixel Square Face Maker\":\n      - /url: /pixel-square-face-maker\n    - heading \"Legal\" [level=3]\n    - link \"About Us\":\n      - /url: /about-us\n    - link \"Contact\":\n      - /url: /contact\n    - link \"Editorial Policy\":\n      - /url: /editorial-policy\n    - link \"Privacy Policy\":\n      - /url: /privacy-policy\n    - link \"Terms of Service\":\n      - /url: /terms-of-service\n- alert",
+        "data": {
+          "canonical": "https://mysquarefaceicon.com/gallery",
+          "commentCards": 0,
+          "empty": "No creations yet No approved comments yet. Share the first screenshot after your comment is reviewed.",
+          "formCount": 0,
+          "headings": {
+            "h1": [
+              "Square Face Icon Gallery"
+            ],
+            "h2": [
+              "Community Square Face Creations",
+              "Browse Square Face Icon Gallery Examples",
+              "How to Use These Gallery Examples",
+              "Create Your Own Square Face Icon"
+            ],
+            "h3": [
+              "Soft Mint Smile",
+              "Coral Creator",
+              "Game Lobby Green",
+              "Peach Chat Icon",
+              "Blue Forum Badge",
+              "Berry Cute Avatar",
+              "Minimal Profile Face",
+              "Sunny Group Icon",
+              "Pick a mood",
+              "Copy the principle, not the exact look",
+              "Check the small preview",
+              "Open the generator",
+              "Use the free avatar maker workflow",
+              "Read cute avatar tips"
+            ]
+          },
+          "leadRect": {
+            "bottom": 588.1875,
+            "height": 316.765625,
+            "right": 359,
+            "width": 343,
+            "x": 16,
+            "y": 271.421875
+          },
+          "links": [
+            {
+              "href": "/#maker",
+              "text": "Make your own icon"
+            },
+            {
+              "href": "/#maker",
+              "text": "Open the generator Start with the main square face generator and build your own icon."
+            },
+            {
+              "href": "/free-avatar-maker",
+              "text": "Use the free avatar maker workflow Follow a fast process for creating profile-ready avatars."
+            },
+            {
+              "href": "/cute-square-avatar-generator",
+              "text": "Read cute avatar tips Learn how to choose softer expressions, colors, and accessories."
+            }
+          ],
+          "loadError": "",
+          "mainText": "Make your own icon AVATAR STYLE IDEAS Square Face Icon Gallery This gallery pairs simple style illustrations with approved community submissions when available. The eight sample faces in the examples section are illustrations, not game screenshots. Use them to compare expression, contrast, and small-size readability. Display or moderation does not verify authorship or grant image-use rights; check permissions for the specific image. Community Square Face Creations These public cards come from approved user submissions only. New comments and optional images are reviewed before they appear here, and email addresses are never displayed publicly. Approved community creationsSorted from reviewed public submissions. Latest Most Liked No creations yet No approved comments yet. Share the first screenshot after your comment is reviewed. Browse Square Face Icon Gallery Examples Use this square face icon gallery to compare expression, contrast, and small-size readability before you make a new design. Soft Mint Smile A friendly profile icon style with soft color contrast and a calm expression. Coral Creator A brighter avatar idea for TikTok, YouTube, and creator profile pages. Game Lobby Green A simple gaming-style icon with clear edges and a readable small-size face. Peach Chat Icon A warm square avatar that works well for chat apps and small communities. Blue Forum Badge A cool, clean style for forums, classroom projects, and team profiles. Berry Cute Avatar A playful look with a stronger accent color and a compact centered face. Minimal Profile Face A low-detail avatar idea for users who want a clean, private profile image. Sunny Group Icon A bright square face style for friend groups, light projects, and casual servers. How to Use These Gallery Examples 1 Pick a mood Decide whether the avatar should feel friendly, calm, bold, playful, or minimal before choosing parts. 2 Copy the principle, not the exact look Use the examples for color balance and readability, then create your own combination in the generator. 3 Check the small preview A good gallery-inspired avatar should still read clearly when it appears as a small social profile icon. Create Your Own Square Face Icon The examples on this page are intentionally simple because profile avatars are usually viewed at small sizes. If you want a stronger result, focus on one memorable feature: a hairstyle, glasses, a bright background, or a clear smile. Open the generator Start with the main square face generator and build your own icon. Use the free avatar maker workflow Follow a fast process for creating profile-ready avatars. Read cute avatar tips Learn how to choose softer expressions, colors, and accessories.",
+          "metadata": {
+            "description": "Explore the Square Face Icon Gallery for simple avatar style examples and approved community submissions when available. Check source and reuse permissions.",
+            "og:description": "Simple square face icon style examples, plus approved community submissions when available. Source and reuse permissions require separate verification.",
+            "og:image": "https://mysquarefaceicon.com/og-image.svg",
+            "og:title": "Square Face Icon Gallery - Community Creations",
+            "og:type": "website",
+            "og:url": "https://mysquarefaceicon.com/gallery",
+            "twitter:card": "summary_large_image",
+            "twitter:description": "Browse simple avatar style examples and approved community submissions when available. Check source and reuse permissions before using an image.",
+            "twitter:image": "https://mysquarefaceicon.com/og-image.svg",
+            "twitter:title": "Square Face Icon Gallery - Community Creations"
+          },
+          "overflow": [],
+          "overlays": 0,
+          "pageParagraphs": [
+            "AVATAR STYLE IDEAS",
+            "This gallery pairs simple style illustrations with approved community submissions when available. The eight sample faces in the examples section are illustrations, not game screenshots. Use them to compare expression, contrast, and small-size readability. Display or moderation does not verify authorship or grant image-use rights; check permissions for the specific image.",
+            "These public cards come from approved user submissions only. New comments and optional images are reviewed before they appear here, and email addresses are never displayed publicly.",
+            "Use this square face icon gallery to compare expression, contrast, and small-size readability before you make a new design.",
+            "A friendly profile icon style with soft color contrast and a calm expression.",
+            "A brighter avatar idea for TikTok, YouTube, and creator profile pages.",
+            "A simple gaming-style icon with clear edges and a readable small-size face.",
+            "A warm square avatar that works well for chat apps and small communities.",
+            "A cool, clean style for forums, classroom projects, and team profiles.",
+            "A playful look with a stronger accent color and a compact centered face.",
+            "A low-detail avatar idea for users who want a clean, private profile image.",
+            "A bright square face style for friend groups, light projects, and casual servers.",
+            "Decide whether the avatar should feel friendly, calm, bold, playful, or minimal before choosing parts.",
+            "Use the examples for color balance and readability, then create your own combination in the generator.",
+            "A good gallery-inspired avatar should still read clearly when it appears as a small social profile icon.",
+            "The examples on this page are intentionally simple because profile avatars are usually viewed at small sizes. If you want a stronger result, focus on one memorable feature: a hairstyle, glasses, a bright background, or a clear smile.",
+            "Start with the main square face generator and build your own icon.",
+            "Follow a fast process for creating profile-ready avatars.",
+            "Learn how to choose softer expressions, colors, and accessories."
+          ],
+          "samples": [
+            {
+              "label": "Soft Mint Smile square face icon example",
+              "rect": {
+                "bottom": 1637.515625,
+                "height": 176,
+                "right": 275.5,
+                "width": 176,
+                "x": 99.5,
+                "y": 1461.515625
+              },
+              "role": "img",
+              "style": "--sample-bg:#d8f5e1;--sample-hair:#5a3420;--sample-cheek:#ff9a9a;--sample-accent:#19c58d"
+            },
+            {
+              "label": "Coral Creator square face icon example",
+              "rect": {
+                "bottom": 1970.296875,
+                "height": 176,
+                "right": 275.5,
+                "width": 176,
+                "x": 99.5,
+                "y": 1794.296875
+              },
+              "role": "img",
+              "style": "--sample-bg:#ffe1d4;--sample-hair:#2f2a28;--sample-cheek:#ff7a7a;--sample-accent:#ff7a1a"
+            },
+            {
+              "label": "Game Lobby Green square face icon example",
+              "rect": {
+                "bottom": 2303.078125,
+                "height": 176,
+                "right": 275.5,
+                "width": 176,
+                "x": 99.5,
+                "y": 2127.078125
+              },
+              "role": "img",
+              "style": "--sample-bg:#d9fff0;--sample-hair:#174b3f;--sample-cheek:#ffb3b3;--sample-accent:#08795e"
+            },
+            {
+              "label": "Peach Chat Icon square face icon example",
+              "rect": {
+                "bottom": 2635.859375,
+                "height": 176,
+                "right": 275.5,
+                "width": 176,
+                "x": 99.5,
+                "y": 2459.859375
+              },
+              "role": "img",
+              "style": "--sample-bg:#fff0d1;--sample-hair:#7a431e;--sample-cheek:#ff9f9f;--sample-accent:#f4b24f"
+            },
+            {
+              "label": "Blue Forum Badge square face icon example",
+              "rect": {
+                "bottom": 2968.640625,
+                "height": 176,
+                "right": 275.5,
+                "width": 176,
+                "x": 99.5,
+                "y": 2792.640625
+              },
+              "role": "img",
+              "style": "--sample-bg:#dcecff;--sample-hair:#233a5a;--sample-cheek:#ff9eb0;--sample-accent:#4d8fd6"
+            },
+            {
+              "label": "Berry Cute Avatar square face icon example",
+              "rect": {
+                "bottom": 3301.421875,
+                "height": 176,
+                "right": 275.5,
+                "width": 176,
+                "x": 99.5,
+                "y": 3125.421875
+              },
+              "role": "img",
+              "style": "--sample-bg:#ffe3f1;--sample-hair:#5c2240;--sample-cheek:#ff8ab3;--sample-accent:#d94f86"
+            },
+            {
+              "label": "Minimal Profile Face square face icon example",
+              "rect": {
+                "bottom": 3634.203125,
+                "height": 176,
+                "right": 275.5,
+                "width": 176,
+                "x": 99.5,
+                "y": 3458.203125
+              },
+              "role": "img",
+              "style": "--sample-bg:#f5f2ea;--sample-hair:#3f3028;--sample-cheek:#f49b91;--sample-accent:#c9bda8"
+            },
+            {
+              "label": "Sunny Group Icon square face icon example",
+              "rect": {
+                "bottom": 3966.984375,
+                "height": 176,
+                "right": 275.5,
+                "width": 176,
+                "x": 99.5,
+                "y": 3790.984375
+              },
+              "role": "img",
+              "style": "--sample-bg:#fff3b8;--sample-hair:#6a3b14;--sample-cheek:#ff8f87;--sample-accent:#ffaf03"
+            }
+          ],
+          "schemas": [
+            {
+              "@context": "https://schema.org",
+              "@type": "CollectionPage",
+              "description": "Simple square face icon style examples and approved community submissions when available; selection or moderation does not establish authorship or image-use rights.",
+              "isPartOf": {
+                "@type": "WebSite",
+                "name": "My Square Face Icon",
+                "url": "https://mysquarefaceicon.com"
+              },
+              "name": "Square Face Icon Gallery",
+              "url": "https://mysquarefaceicon.com/gallery"
+            },
+            {
+              "@context": "https://schema.org",
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "item": "https://mysquarefaceicon.com",
+                  "name": "Home",
+                  "position": 1
+                },
+                {
+                  "@type": "ListItem",
+                  "item": "https://mysquarefaceicon.com/gallery",
+                  "name": "Gallery",
+                  "position": 2
+                }
+              ]
+            }
+          ],
+          "sort": [
+            {
+              "active": true,
+              "rect": {
+                "bottom": 986.34375,
+                "height": 37.59375,
+                "right": 110.390625,
+                "width": 68.390625,
+                "x": 42,
+                "y": 948.75
+              },
+              "text": "Latest"
+            },
+            {
+              "active": false,
+              "rect": {
+                "bottom": 986.34375,
+                "height": 37.59375,
+                "right": 225.375,
+                "width": 108.984375,
+                "x": 116.390625,
+                "y": 948.75
+              },
+              "text": "Most Liked"
+            }
+          ],
+          "title": "Square Face Icon Gallery - Community Creations | My Square Face Icon",
+          "url": "http://127.0.0.1:3100/gallery",
+          "viewport": {
+            "clientWidth": 375,
+            "innerHeight": 844,
+            "innerWidth": 390,
+            "scrollWidth": 375
+          }
+        },
+        "logs": []
+      }
+    ],
+    "interactions": [
+      {
+        "view": "desktop",
+        "action": "click Most Liked",
+        "recordedAt": "2026-09-02T11:13:20.016Z",
+        "url": "http://127.0.0.1:3100/gallery",
+        "sort": [
+          {
+            "active": false,
+            "rect": {
+              "bottom": 468.53125,
+              "height": 37.59375,
+              "right": 981.515625,
+              "width": 68.390625,
+              "x": 913.125,
+              "y": 430.9375
+            },
+            "text": "Latest"
+          },
+          {
+            "active": true,
+            "rect": {
+              "bottom": 468.53125,
+              "height": 37.59375,
+              "right": 1096.5,
+              "width": 108.984375,
+              "x": 987.515625,
+              "y": 430.9375
+            },
+            "text": "Most Liked"
+          }
+        ],
+        "empty": "No creations yet No approved comments yet. Share the first screenshot after your comment is reviewed.",
+        "commentCards": 0,
+        "loadError": ""
+      },
+      {
+        "view": "desktop",
+        "action": "click Latest",
+        "recordedAt": "2026-09-02T11:13:20.321Z",
+        "url": "http://127.0.0.1:3100/gallery",
+        "sort": [
+          {
+            "active": true,
+            "rect": {
+              "bottom": 468.53125,
+              "height": 37.59375,
+              "right": 981.515625,
+              "width": 68.390625,
+              "x": 913.125,
+              "y": 430.9375
+            },
+            "text": "Latest"
+          },
+          {
+            "active": false,
+            "rect": {
+              "bottom": 468.53125,
+              "height": 37.59375,
+              "right": 1096.5,
+              "width": 108.984375,
+              "x": 987.515625,
+              "y": 430.9375
+            },
+            "text": "Most Liked"
+          }
+        ],
+        "empty": "No creations yet No approved comments yet. Share the first screenshot after your comment is reviewed.",
+        "commentCards": 0,
+        "loadError": ""
+      },
+      {
+        "view": "desktop",
+        "action": "open free avatar workflow",
+        "recordedAt": "2026-09-02T11:13:53.338Z",
+        "bodyText": 3257,
+        "h1": [
+          "Free Avatar Maker for Cute Square Face Icons"
+        ],
+        "overlays": 0,
+        "title": "Free Avatar Maker for Cute Square Face Icons | My Square Face Icon",
+        "url": "http://127.0.0.1:3100/free-avatar-maker"
+      },
+      {
+        "view": "desktop",
+        "action": "Back to Gallery from free avatar workflow",
+        "recordedAt": "2026-09-02T11:13:53.369Z",
+        "h1": "Square Face Icon Gallery",
+        "url": "http://127.0.0.1:3100/gallery"
+      },
+      {
+        "view": "desktop",
+        "action": "open cute avatar tips",
+        "recordedAt": "2026-09-02T11:13:53.513Z",
+        "bodyText": 2647,
+        "h1": [
+          "Cute Square Avatar Generator Tips"
+        ],
+        "overlays": 0,
+        "robots": "noindex, follow",
+        "title": "Cute Square Avatar Generator Tips | My Square Face Icon",
+        "url": "http://127.0.0.1:3100/cute-square-avatar-generator"
+      },
+      {
+        "view": "desktop",
+        "action": "Back to Gallery from cute avatar tips",
+        "recordedAt": "2026-09-02T11:13:53.543Z",
+        "h1": "Square Face Icon Gallery",
+        "url": "http://127.0.0.1:3100/gallery"
+      },
+      {
+        "view": "desktop",
+        "action": "Make your own icon to maker",
+        "recordedAt": "2026-09-02T11:14:14.668Z",
+        "bodyText": 4091,
+        "h1": [
+          "Square Face Generator"
+        ],
+        "makerExists": true,
+        "overlays": 0,
+        "url": "http://127.0.0.1:3100/#maker"
+      },
+      {
+        "view": "desktop",
+        "action": "Back to Gallery from maker",
+        "recordedAt": "2026-09-02T11:14:14.764Z",
+        "h1": "Square Face Icon Gallery",
+        "url": "http://127.0.0.1:3100/gallery"
+      },
+      {
+        "view": "mobile",
+        "action": "click Most Liked",
+        "recordedAt": "2026-09-02T11:14:45.517Z",
+        "url": "http://127.0.0.1:3100/gallery",
+        "sort": [
+          {
+            "active": false,
+            "rect": {
+              "bottom": 440.546875,
+              "height": 37.59375,
+              "right": 110.390625,
+              "width": 68.390625,
+              "x": 42,
+              "y": 402.953125
+            },
+            "text": "Latest"
+          },
+          {
+            "active": true,
+            "rect": {
+              "bottom": 440.546875,
+              "height": 37.59375,
+              "right": 225.375,
+              "width": 108.984375,
+              "x": 116.390625,
+              "y": 402.953125
+            },
+            "text": "Most Liked"
+          }
+        ],
+        "empty": "No creations yet No approved comments yet. Share the first screenshot after your comment is reviewed.",
+        "commentCards": 0,
+        "loadError": ""
+      },
+      {
+        "view": "mobile",
+        "action": "click Latest",
+        "recordedAt": "2026-09-02T11:14:45.803Z",
+        "url": "http://127.0.0.1:3100/gallery",
+        "sort": [
+          {
+            "active": true,
+            "rect": {
+              "bottom": 440.546875,
+              "height": 37.59375,
+              "right": 110.390625,
+              "width": 68.390625,
+              "x": 42,
+              "y": 402.953125
+            },
+            "text": "Latest"
+          },
+          {
+            "active": false,
+            "rect": {
+              "bottom": 440.546875,
+              "height": 37.59375,
+              "right": 225.375,
+              "width": 108.984375,
+              "x": 116.390625,
+              "y": 402.953125
+            },
+            "text": "Most Liked"
+          }
+        ],
+        "empty": "No creations yet No approved comments yet. Share the first screenshot after your comment is reviewed.",
+        "commentCards": 0,
+        "loadError": ""
+      },
+      {
+        "view": "mobile",
+        "action": "Open the generator to maker",
+        "recordedAt": "2026-09-02T11:15:06.572Z",
+        "bodyText": 4009,
+        "h1": [
+          "Square Face Generator"
+        ],
+        "makerExists": true,
+        "overlays": 0,
+        "url": "http://127.0.0.1:3100/#maker"
+      },
+      {
+        "view": "mobile",
+        "action": "Back to Gallery from generator link",
+        "recordedAt": "2026-09-02T11:15:06.667Z",
+        "h1": "Square Face Icon Gallery",
+        "url": "http://127.0.0.1:3100/gallery"
+      }
+    ],
+    "keyboard": [
+      {
+        "view": "desktop",
+        "action": "Tab from Latest",
+        "recordedAt": "2026-09-02T11:13:33.314Z",
+        "focus": {
+          "className": "",
+          "href": null,
+          "inViewport": true,
+          "outlineColor": "rgb(16, 16, 16)",
+          "outlineStyle": "auto",
+          "outlineWidth": "1px",
+          "rect": {
+            "height": 37.59375,
+            "width": 108.984375,
+            "x": 987.515625,
+            "y": 430.9375
+          },
+          "tag": "BUTTON",
+          "text": "Most Liked"
+        }
+      },
+      {
+        "view": "desktop",
+        "action": "Enter Most Liked",
+        "recordedAt": "2026-09-02T11:13:33.338Z",
+        "sort": [
+          {
+            "active": false,
+            "rect": {
+              "bottom": 468.53125,
+              "height": 37.59375,
+              "right": 981.515625,
+              "width": 68.390625,
+              "x": 913.125,
+              "y": 430.9375
+            },
+            "text": "Latest"
+          },
+          {
+            "active": true,
+            "rect": {
+              "bottom": 468.53125,
+              "height": 37.59375,
+              "right": 1096.5,
+              "width": 108.984375,
+              "x": 987.515625,
+              "y": 430.9375
+            },
+            "text": "Most Liked"
+          }
+        ],
+        "empty": "No creations yet No approved comments yet. Share the first screenshot after your comment is reviewed.",
+        "url": "http://127.0.0.1:3100/gallery"
+      },
+      {
+        "view": "mobile",
+        "action": "Tab from Latest",
+        "recordedAt": "2026-09-02T11:14:45.817Z",
+        "focus": {
+          "className": "",
+          "href": null,
+          "inViewport": true,
+          "outlineColor": "rgb(16, 16, 16)",
+          "outlineStyle": "auto",
+          "outlineWidth": "1px",
+          "rect": {
+            "height": 37.59375,
+            "width": 108.984375,
+            "x": 116.390625,
+            "y": 402.953125
+          },
+          "tag": "BUTTON",
+          "text": "Most Liked"
+        }
+      },
+      {
+        "view": "mobile",
+        "action": "Enter Most Liked",
+        "recordedAt": "2026-09-02T11:14:45.834Z",
+        "sort": [
+          {
+            "active": false,
+            "rect": {
+              "bottom": 440.546875,
+              "height": 37.59375,
+              "right": 110.390625,
+              "width": 68.390625,
+              "x": 42,
+              "y": 402.953125
+            },
+            "text": "Latest"
+          },
+          {
+            "active": true,
+            "rect": {
+              "bottom": 440.546875,
+              "height": 37.59375,
+              "right": 225.375,
+              "width": 108.984375,
+              "x": 116.390625,
+              "y": 402.953125
+            },
+            "text": "Most Liked"
+          }
+        ],
+        "empty": "No creations yet No approved comments yet. Share the first screenshot after your comment is reviewed.",
+        "url": "http://127.0.0.1:3100/gallery"
+      }
+    ],
+    "screenshots": [
+      {
+        "name": "before-desktop-1280x900",
+        "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/gallery-001-v1.54/before-desktop-1280x900.jpg",
+        "fullPage": false,
+        "bytes": 95628,
+        "sha256": "d3db54431fabbacae5b353fe6a11cd02d5da967318a1f38538401c728531cf62",
+        "recordedAt": "2026-09-02T10:53:00.032Z"
+      },
+      {
+        "name": "before-mobile-390x844",
+        "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/gallery-001-v1.54/before-mobile-390x844.jpg",
+        "fullPage": false,
+        "bytes": 48812,
+        "sha256": "11e4d6b80f6c1420c569f02e6bacdc393f7518d44350f871c9c8d94e8be53568",
+        "recordedAt": "2026-09-02T10:53:46.066Z"
+      },
+      {
+        "name": "after-desktop-1280x900",
+        "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/gallery-001-v1.54/after-desktop-1280x900.jpg",
+        "fullPage": false,
+        "bytes": 97564,
+        "sha256": "94b9bb64148056968e0253b7b96f0470d4bac8f4a489359accd901139216c152",
+        "recordedAt": "2026-09-02T11:04:43.514Z"
+      },
+      {
+        "name": "after-desktop-full",
+        "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/gallery-001-v1.54/after-desktop-full.jpg",
+        "fullPage": true,
+        "bytes": 371012,
+        "sha256": "80d47ebb296b00cd843e366a9f5a7cc5a67df5da20022a63f8f86e6e3ad49aca",
+        "recordedAt": "2026-09-02T11:04:44.669Z"
+      },
+      {
+        "name": "after-desktop-sort-focus",
+        "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/gallery-001-v1.54/after-desktop-sort-focus.jpg",
+        "fullPage": false,
+        "bytes": 108993,
+        "sha256": "75c3484309a560d6290fb79340f6cecf74f39660a26ba69555aeedb5fd05f6ea",
+        "recordedAt": "2026-09-02T11:13:33.375Z"
+      },
+      {
+        "name": "after-mobile-390x844",
+        "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/gallery-001-v1.54/after-mobile-390x844.jpg",
+        "fullPage": false,
+        "bytes": 51897,
+        "sha256": "abc152d525361a9e80da3b4c2ec2f560b9028fffe9ba67762e492a9c3eb20928",
+        "recordedAt": "2026-09-02T11:14:16.794Z"
+      },
+      {
+        "name": "after-mobile-full",
+        "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/gallery-001-v1.54/after-mobile-full.jpg",
+        "fullPage": true,
+        "bytes": 338018,
+        "sha256": "48f5119a0a13e6da49a3199b9c8606ccb39e97ade533e97e216b54089cc279f8",
+        "recordedAt": "2026-09-02T11:14:25.233Z"
+      },
+      {
+        "name": "after-mobile-sort-focus",
+        "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/gallery-001-v1.54/after-mobile-sort-focus.jpg",
+        "fullPage": false,
+        "bytes": 58844,
+        "sha256": "fd577ffd169f516d82d6aeb8b4a249c4efe3bb91b1e5b93a692e8d6537e16c60",
+        "recordedAt": "2026-09-02T11:14:45.853Z"
+      }
+    ],
+    "production": false,
+    "desktopEndLogs": [],
+    "mobileEndLogs": [],
+    "completedAt": "2026-09-02T11:15:06.704Z",
+    "visualReview": {
+      "desktop": "New lead wraps without clipping; eight CSS illustrations, sections and link cards unchanged; no blank screen or runtime overlay.",
+      "mobile": "390 x 844 viewport and full-page screenshots inspected; all eight illustrations and links remain within the viewport; no horizontal overflow or text clipping.",
+      "existingAdvisory": "Community heading and its subtitle visually join because the unchanged adjacent strong/span have no explicit spacing. Present in before and after screenshots; no CSS change authorized.",
+      "boardVisual": "Not verified: prior local-file browser access was denied; no alternate file-serving or browser bypass used.",
+      "realCommunityState": "Only the real approved-submission empty state was exercised in the browser; populated, load-error and already-liked states were checked separately with in-memory shared-component SSR fixtures, without API writes."
+    }
+  },
+  "browserAssertions": {
+    "recordedAt": "2026-09-02T11:16:56.841Z",
+    "result": "通过",
+    "assertionCount": 44,
+    "eyebrowStyle": {
+      "rawText": "Avatar style ideas",
+      "textTransform": "uppercase",
+      "visibleText": "AVATAR STYLE IDEAS"
+    },
+    "assertionDiagnostic": "Initial direct innerText-to-source comparison reported an eyebrow mismatch. Inspection confirmed the frozen text-transform: uppercase CSS; assertion now requires exact raw text and this existing visible transform. No application change was made.",
+    "checks": [
+      {
+        "name": "desktop: Gallery identity",
+        "result": "通过"
+      },
+      {
+        "name": "desktop: nonblank and no runtime overlay",
+        "result": "通过"
+      },
+      {
+        "name": "desktop: 19 page paragraphs exact with existing uppercase eyebrow CSS",
+        "result": "通过"
+      },
+      {
+        "name": "desktop: headings 1/4/14 frozen",
+        "result": "通过"
+      },
+      {
+        "name": "desktop: all four main links frozen",
+        "result": "通过"
+      },
+      {
+        "name": "desktop: two JSON-LD exact",
+        "result": "通过"
+      },
+      {
+        "name": "desktop: descriptions/canonical exact",
+        "result": "通过"
+      },
+      {
+        "name": "desktop: eight labelled CSS examples",
+        "result": "通过"
+      },
+      {
+        "name": "desktop: no overflow",
+        "result": "通过"
+      },
+      {
+        "name": "desktop: real empty-state and no form",
+        "result": "通过"
+      },
+      {
+        "name": "desktop: Latest initial sort",
+        "result": "通过"
+      },
+      {
+        "name": "desktop: frozen KW phrase count",
+        "result": "通过"
+      },
+      {
+        "name": "desktop: no console warning/error",
+        "result": "通过"
+      },
+      {
+        "name": "mobile: Gallery identity",
+        "result": "通过"
+      },
+      {
+        "name": "mobile: nonblank and no runtime overlay",
+        "result": "通过"
+      },
+      {
+        "name": "mobile: 19 page paragraphs exact with existing uppercase eyebrow CSS",
+        "result": "通过"
+      },
+      {
+        "name": "mobile: headings 1/4/14 frozen",
+        "result": "通过"
+      },
+      {
+        "name": "mobile: all four main links frozen",
+        "result": "通过"
+      },
+      {
+        "name": "mobile: two JSON-LD exact",
+        "result": "通过"
+      },
+      {
+        "name": "mobile: descriptions/canonical exact",
+        "result": "通过"
+      },
+      {
+        "name": "mobile: eight labelled CSS examples",
+        "result": "通过"
+      },
+      {
+        "name": "mobile: no overflow",
+        "result": "通过"
+      },
+      {
+        "name": "mobile: real empty-state and no form",
+        "result": "通过"
+      },
+      {
+        "name": "mobile: Latest initial sort",
+        "result": "通过"
+      },
+      {
+        "name": "mobile: frozen KW phrase count",
+        "result": "通过"
+      },
+      {
+        "name": "mobile: no console warning/error",
+        "result": "通过"
+      },
+      {
+        "name": "desktop: click Most Liked",
+        "result": "通过"
+      },
+      {
+        "name": "desktop: click Latest",
+        "result": "通过"
+      },
+      {
+        "name": "desktop: open free avatar workflow",
+        "result": "通过"
+      },
+      {
+        "name": "desktop: Back to Gallery from free avatar workflow",
+        "result": "通过"
+      },
+      {
+        "name": "desktop: open cute avatar tips",
+        "result": "通过"
+      },
+      {
+        "name": "desktop: Back to Gallery from cute avatar tips",
+        "result": "通过"
+      },
+      {
+        "name": "desktop: Make your own icon to maker",
+        "result": "通过"
+      },
+      {
+        "name": "desktop: Back to Gallery from maker",
+        "result": "通过"
+      },
+      {
+        "name": "mobile: click Most Liked",
+        "result": "通过"
+      },
+      {
+        "name": "mobile: click Latest",
+        "result": "通过"
+      },
+      {
+        "name": "mobile: Open the generator to maker",
+        "result": "通过"
+      },
+      {
+        "name": "mobile: Back to Gallery from generator link",
+        "result": "通过"
+      },
+      {
+        "name": "desktop: keyboard visible focus",
+        "result": "通过"
+      },
+      {
+        "name": "desktop: Enter activates Most Liked",
+        "result": "通过"
+      },
+      {
+        "name": "mobile: keyboard visible focus",
+        "result": "通过"
+      },
+      {
+        "name": "mobile: Enter activates Most Liked",
+        "result": "通过"
+      },
+      {
+        "name": "All interaction end console logs clear",
+        "result": "通过"
+      },
+      {
+        "name": "Before and after screenshots include both viewports",
+        "result": "通过"
+      }
+    ]
+  },
+  "advisories": [
+    {
+      "id": "EXISTING-SEO-SHOULDS",
+      "result": "未关闭",
+      "detail": "META-03 x7 / META-04 x4 / KW-03 x1 unchanged. Gallery title remains frozen at rendered length 68; no cross-task SEO rewrite."
+    },
+    {
+      "id": "EXISTING-GALLERY-SPACING",
+      "result": "有条件通过",
+      "detail": "Community heading and its subtitle visually join because the unchanged adjacent strong/span have no explicit spacing. Present in before and after screenshots; no CSS change authorized."
+    },
+    {
+      "id": "EXISTING-TRUST-CARD-WRAP",
+      "result": "有条件通过",
+      "detail": "About/Editorial narrow desktop-card wrapping advisories retain original dates; this turn does not change their CSS."
+    },
+    {
+      "id": "EXISTING-REACT-FETCHPRIORITY",
+      "result": "已知 warning",
+      "detail": "Existing GAME-TPL React SSR fetchPriority warning retained in raw command output; lint itself has zero warnings/errors."
+    },
+    {
+      "id": "OPENNEXT-WINDOWS",
+      "result": "已知 warning",
+      "detail": "OpenNext Windows compatibility warning retained; platform build exited 0, not deployed."
+    }
+  ],
+  "unverified": [
+    {
+      "id": "BOARD-VISUAL",
+      "detail": "Not verified: prior local-file browser access was denied; no alternate file-serving or browser bypass used."
+    },
+    {
+      "id": "RIGHTS",
+      "detail": "Exact Square/Oval provenance, rights holder and hosting/public-run/redistribution/generated-output permissions remain UNKNOWN. Copy does not grant rights."
+    },
+    {
+      "id": "PRODUCTION",
+      "detail": "No commit/push/deploy, release-version linkage, production HTTP/seo:prod/browser/canonical-host/robots/CWV or migration. Original PF-01 measurements are not remeasured."
+    },
+    {
+      "id": "KW-04",
+      "detail": "No fresh SERP/semantic-coverage research; scope preserves accepted KW-02."
+    },
+    {
+      "id": "LIVE-POPULATED-UGC",
+      "detail": "Real browser/API is empty. Non-empty/error/already-liked behavior only has in-memory SSR coverage; no real comment submission or like action."
+    },
+    {
+      "id": "LOCALE-FOLLOWUP",
+      "detail": "Unchanged lib/locales.ts authorized wording remains separately scoped; no next task was started."
+    }
+  ],
+  "governanceValidation": {
+    "status": "PASS",
+    "boardVersion": "1.54",
+    "startedAt": "2026-09-02T11:35:08.069Z",
+    "recordedAt": "2026-09-02T11:35:10.416Z",
+    "stage": "FINAL_RECHECK",
+    "changedFiles": 13,
+    "docChecks": [
+      {
+        "path": "D:/LYXGIT/mysquarefaceicon/docs/legal/gallery-rights-consistency-proposal.md",
+        "sha256": "9ed9f9bdefc70cc566fa516d8463e2fdd6b9a8810a6fd4a4e5f457ad189cc23e",
+        "originalContentRestored": true
+      },
+      {
+        "path": "D:/LYXGIT/mysquarefaceicon/docs/legal/game-rights.md",
+        "sha256": "ab85639682096a22751e474f27d41dc9bdda6463c62b8bc593518a1d7974eeeb",
+        "originalContentRestored": true
+      },
+      {
+        "path": "D:/LYXGIT/mysquarefaceicon/docs/quality/evidence/release-2026-09-02/README.md",
+        "sha256": "94afea65c552919d6d1f3958a23dcee0e45cdeb678f5abe6fd2d2ab70422d5ef",
+        "originalContentRestored": true
+      },
+      {
+        "path": "D:/LYXGIT/mysquarefaceicon/LAUNCH_CHECKLIST.md",
+        "sha256": "0644d83577269a303ac7948acb15d95d1308db8d0a17efa62c102ffb0015b2de",
+        "originalContentRestored": true
+      },
+      {
+        "path": "D:/LYXGIT/mysquarefaceicon/PAGE_PLAN.md",
+        "sha256": "6c2b3fb1813d5e2de5b5eaa42d5ae9552ff81f1b52ff823e847663dbc6890e47",
+        "originalContentRestored": true
+      },
+      {
+        "path": "D:/LYXGIT/mysquarefaceicon/SEO_LOG.md",
+        "sha256": "e7fb413d7e89011682ba03a85457e4e5328631926ea73a6b0ae65df001ca6d85",
+        "originalContentRestored": true
+      },
+      {
+        "path": "F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+        "sha256": "8ace8a21c986409751253d73f53a0fdae5ea502ebb63654193f9555fb7eb7e37",
+        "originalContentRestored": true
+      },
+      {
+        "path": "D:/LYXGIT/mysquarefaceicon/app/gallery/page.tsx",
+        "sha256": "d051f12b8e4c71a9b15a75efb59c3ffbb1f9904ec5d69577f9640ff47d479901",
+        "originalContentRestored": true
+      },
+      {
+        "path": "D:/LYXGIT/mysquarefaceicon/package.json",
+        "sha256": "1b88a70e51e8c8b828add0fd1c739c630b8221e43cc1467ef4f9b7798c27f585",
+        "originalContentRestored": true
+      },
+      {
+        "path": "D:/LYXGIT/mysquarefaceicon/scripts/README.md",
+        "sha256": "67a0f8e281b6cb2e7c90fac94b05ca798eda10f5e817fb36660289b5f26474bc",
+        "originalContentRestored": true
+      },
+      {
+        "path": "D:/LYXGIT/mysquarefaceicon/docs/quality/evidence/gallery-001-rights-copy/checks.json",
+        "new": true,
+        "verification": "Semantic restoration to recorded QA; self-file digest intentionally omitted."
+      },
+      {
+        "path": "D:/LYXGIT/mysquarefaceicon/docs/quality/evidence/gallery-001-rights-copy/README.md",
+        "sha256": "7cfd71d9d13cb94f829213c1e886bba51a24cb7fc12f4b76982657f964a196d7",
+        "new": true
+      },
+      {
+        "path": "D:/LYXGIT/mysquarefaceicon/scripts/check-gallery-rights.mjs",
+        "sha256": "13dcc0d9ff2cc8b651fcaabeb537f4aaf284c519a3dfe4ab60a003fbdea651eb",
+        "new": true
+      }
+    ],
+    "board": {
+      "javascript": "PASS",
+      "staticDynamicFocus": "PASS",
+      "exportVersion": "1.54",
+      "sourceAcceptances": 24,
+      "previousAcceptancesPreserved": 24,
+      "galleryConfirmed": true,
+      "galleryAccepted": false,
+      "status": "待验收",
+      "cssUnchanged": true,
+      "roadmapUnchanged": true,
+      "unrelatedTaskEvidenceUnchanged": true,
+      "otherQualityStateUnchanged": true
+    },
+    "sourceHashesVerified": 147,
+    "historicalEvidenceUnchanged": 9,
+    "artifactChecks": [
+      {
+        "path": ".next/server/app/gallery.html",
+        "sha256": "2ac5c491a04e834876e122216bd7d4dd03cd5f536606b803063ebebe82dbd35f",
+        "bytes": 52414
+      },
+      {
+        "path": ".next/server/app/editorial-policy.html",
+        "sha256": "c25943c9f5f601d5f99cb36ecf79132cb202b7336dd8251c945eb1eae70a1908",
+        "bytes": 33201
+      },
+      {
+        "path": ".next/server/app/about-us.html",
+        "sha256": "5a53a438b734523ad7eac532d5c9c21a81e8ce5c3d184575dc7d2bdee4838885",
+        "bytes": 38196
+      },
+      {
+        "path": ".next/server/app/terms-of-service.html",
+        "sha256": "fe3841745d6113d5845a465301422bb268d6a0529aa332aaf9d2333f92bbfd35",
+        "bytes": 21778
+      },
+      {
+        "path": ".next/server/app/robots.txt.body",
+        "sha256": "e114dfaaa714b7b9d2385907a7f1e915e30c606d049f11457f45a9f6549d554f",
+        "bytes": 711
+      },
+      {
+        "path": ".next/server/app/sitemap.xml.body",
+        "sha256": "3f1341c4b3d4e339fc5b231539157032ff42ecfc991e4bc2058903d372bb12a7",
+        "bytes": 2770
+      },
+      {
+        "path": ".open-next/worker.js",
+        "sha256": "4e7c7cb3850c2ca12374d034118afc422ed5d95f46bfc3df3ff1dba2911807f3",
+        "bytes": 2234
+      }
+    ],
+    "buildId": "Vyf3tcN5LOfwDiSXRH6xO",
+    "screenshotChecks": [
+      {
+        "name": "before-desktop-1280x900",
+        "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/gallery-001-v1.54/before-desktop-1280x900.jpg",
+        "fullPage": false,
+        "bytes": 95628,
+        "sha256": "d3db54431fabbacae5b353fe6a11cd02d5da967318a1f38538401c728531cf62",
+        "recordedAt": "2026-09-02T10:53:00.032Z",
+        "width": 1265,
+        "height": 889,
+        "format": "JPEG",
+        "hashVerified": true
+      },
+      {
+        "name": "before-mobile-390x844",
+        "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/gallery-001-v1.54/before-mobile-390x844.jpg",
+        "fullPage": false,
+        "bytes": 48812,
+        "sha256": "11e4d6b80f6c1420c569f02e6bacdc393f7518d44350f871c9c8d94e8be53568",
+        "recordedAt": "2026-09-02T10:53:46.066Z",
+        "width": 375,
+        "height": 812,
+        "format": "JPEG",
+        "hashVerified": true
+      },
+      {
+        "name": "after-desktop-1280x900",
+        "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/gallery-001-v1.54/after-desktop-1280x900.jpg",
+        "fullPage": false,
+        "bytes": 97564,
+        "sha256": "94b9bb64148056968e0253b7b96f0470d4bac8f4a489359accd901139216c152",
+        "recordedAt": "2026-09-02T11:04:43.514Z",
+        "width": 1265,
+        "height": 889,
+        "format": "JPEG",
+        "hashVerified": true
+      },
+      {
+        "name": "after-desktop-full",
+        "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/gallery-001-v1.54/after-desktop-full.jpg",
+        "fullPage": true,
+        "bytes": 371012,
+        "sha256": "80d47ebb296b00cd843e366a9f5a7cc5a67df5da20022a63f8f86e6e3ad49aca",
+        "recordedAt": "2026-09-02T11:04:44.669Z",
+        "width": 1265,
+        "height": 2765,
+        "format": "JPEG",
+        "hashVerified": true
+      },
+      {
+        "name": "after-desktop-sort-focus",
+        "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/gallery-001-v1.54/after-desktop-sort-focus.jpg",
+        "fullPage": false,
+        "bytes": 108993,
+        "sha256": "75c3484309a560d6290fb79340f6cecf74f39660a26ba69555aeedb5fd05f6ea",
+        "recordedAt": "2026-09-02T11:13:33.375Z",
+        "width": 1265,
+        "height": 889,
+        "format": "JPEG",
+        "hashVerified": true
+      },
+      {
+        "name": "after-mobile-390x844",
+        "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/gallery-001-v1.54/after-mobile-390x844.jpg",
+        "fullPage": false,
+        "bytes": 51897,
+        "sha256": "abc152d525361a9e80da3b4c2ec2f560b9028fffe9ba67762e492a9c3eb20928",
+        "recordedAt": "2026-09-02T11:14:16.794Z",
+        "width": 375,
+        "height": 812,
+        "format": "JPEG",
+        "hashVerified": true
+      },
+      {
+        "name": "after-mobile-full",
+        "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/gallery-001-v1.54/after-mobile-full.jpg",
+        "fullPage": true,
+        "bytes": 338018,
+        "sha256": "48f5119a0a13e6da49a3199b9c8606ccb39e97ade533e97e216b54089cc279f8",
+        "recordedAt": "2026-09-02T11:14:25.233Z",
+        "width": 375,
+        "height": 6561,
+        "format": "JPEG",
+        "hashVerified": true
+      },
+      {
+        "name": "after-mobile-sort-focus",
+        "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/gallery-001-v1.54/after-mobile-sort-focus.jpg",
+        "fullPage": false,
+        "bytes": 58844,
+        "sha256": "fd577ffd169f516d82d6aeb8b4a249c4efe3bb91b1e5b93a692e8d6537e16c60",
+        "recordedAt": "2026-09-02T11:14:45.853Z",
+        "width": 390,
+        "height": 844,
+        "format": "JPEG",
+        "hashVerified": true
+      }
+    ],
+    "gitChecks": [
+      {
+        "cwd": "D:\\LYXGIT\\mysquarefaceicon",
+        "args": [
+          "branch",
+          "--show-current"
+        ],
+        "startedAt": "2026-09-02T11:35:08.104Z",
+        "completedAt": "2026-09-02T11:35:08.317Z",
+        "timeoutMs": 30000,
+        "exitCode": 0,
+        "stdout": "codex/game-platform-rebuild\n",
+        "stderr": ""
+      },
+      {
+        "cwd": "D:\\LYXGIT\\mysquarefaceicon",
+        "args": [
+          "rev-parse",
+          "HEAD"
+        ],
+        "startedAt": "2026-09-02T11:35:08.317Z",
+        "completedAt": "2026-09-02T11:35:09.512Z",
+        "timeoutMs": 30000,
+        "exitCode": 0,
+        "stdout": "c6d30087c2c03a7c4eb8d5bfe6e055e9b8d40228\n",
+        "stderr": ""
+      },
+      {
+        "cwd": "D:\\LYXGIT\\mysquarefaceicon",
+        "args": [
+          "diff",
+          "--check"
+        ],
+        "startedAt": "2026-09-02T11:35:09.512Z",
+        "completedAt": "2026-09-02T11:35:10.008Z",
+        "timeoutMs": 30000,
+        "exitCode": 0,
+        "stdout": "",
+        "stderr": "warning: in the working copy of '.gitignore', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'LAUNCH_CHECKLIST.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'PAGE_PLAN.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'PROJECT_BRIEF.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'SEO_LOG.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'SEO_RULES.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/about-us/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/blog/avatar-maker-without-signup/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/blog/cute-profile-picture-ideas/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/blog/discord-avatar-size-guide/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/blog/how-to-make-a-cute-discord-profile-icon/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/blog/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/blog/tiktok-profile-icon-ideas/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/contact/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/editorial-policy/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/gallery/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/globals.css', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/oval-face-icon-generator/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/pixel-art-avatar-icon-generator/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/privacy-policy/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/robots.ts', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/sitemap.ts', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/terms-of-service/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'components/FlashGenerator.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'components/HomePage.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'components/SiteHeader.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'docs/legal/game-rights.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'docs/quality/installation-and-board-workflow.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'package.json', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'public/games/README.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'scripts/README.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'scripts/post-deploy-check.mjs', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'scripts/seo-check.mjs', LF will be replaced by CRLF the next time Git touches it\n"
+      },
+      {
+        "cwd": "F:/LYXGIT/Liu-library",
+        "args": [
+          "diff",
+          "--check",
+          "--",
+          "F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html"
+        ],
+        "startedAt": "2026-09-02T11:35:10.008Z",
+        "completedAt": "2026-09-02T11:35:10.415Z",
+        "timeoutMs": 30000,
+        "exitCode": 0,
+        "stdout": "",
+        "stderr": ""
+      }
+    ],
+    "applicationWritten": true,
+    "applicationChecks": "32 final command results verified; not rerun by this governance script",
+    "realBrowserMobile": "44 assertions / 12 interaction records / four keyboard records verified",
+    "boardVisual": "UNVERIFIED_ACCESS_RESTRICTION_PRESERVED",
+    "deployment": "NOT_RUN",
+    "releaseResult": "不通过 / 未部署",
+    "selfReference": "checks.json self digest is omitted because embedding this validation changes it. The final recheck validates semantic equality of all original QA fields plus this validation status.",
+    "runtimeRecheck": {
+      "recordedAt": "2026-09-02T11:33:41.892Z",
+      "buildId": "Vyf3tcN5LOfwDiSXRH6xO",
+      "sourceHashesVerified": 147,
+      "unchangedPriorFiles": 143,
+      "historicalEvidenceUnchanged": 9,
+      "http": [
+        {
+          "url": "http://127.0.0.1:3100/gallery",
+          "startedAt": "2026-09-02T11:33:41.830Z",
+          "completedAt": "2026-09-02T11:33:41.864Z",
+          "status": 200,
+          "contentType": "text/html; charset=utf-8",
+          "sha256": "2ac5c491a04e834876e122216bd7d4dd03cd5f536606b803063ebebe82dbd35f",
+          "bytes": 52414,
+          "artifactSha256": "2ac5c491a04e834876e122216bd7d4dd03cd5f536606b803063ebebe82dbd35f",
+          "xRobotsTag": null
+        },
+        {
+          "url": "http://127.0.0.1:3100/editorial-policy",
+          "startedAt": "2026-09-02T11:33:41.864Z",
+          "completedAt": "2026-09-02T11:33:41.870Z",
+          "status": 200,
+          "contentType": "text/html; charset=utf-8",
+          "sha256": "c25943c9f5f601d5f99cb36ecf79132cb202b7336dd8251c945eb1eae70a1908",
+          "bytes": 33201,
+          "artifactSha256": "c25943c9f5f601d5f99cb36ecf79132cb202b7336dd8251c945eb1eae70a1908",
+          "xRobotsTag": null
+        },
+        {
+          "url": "http://127.0.0.1:3100/about-us",
+          "startedAt": "2026-09-02T11:33:41.870Z",
+          "completedAt": "2026-09-02T11:33:41.876Z",
+          "status": 200,
+          "contentType": "text/html; charset=utf-8",
+          "sha256": "5a53a438b734523ad7eac532d5c9c21a81e8ce5c3d184575dc7d2bdee4838885",
+          "bytes": 38196,
+          "artifactSha256": "5a53a438b734523ad7eac532d5c9c21a81e8ce5c3d184575dc7d2bdee4838885",
+          "xRobotsTag": null
+        },
+        {
+          "url": "http://127.0.0.1:3100/terms-of-service",
+          "startedAt": "2026-09-02T11:33:41.876Z",
+          "completedAt": "2026-09-02T11:33:41.881Z",
+          "status": 200,
+          "contentType": "text/html; charset=utf-8",
+          "sha256": "fe3841745d6113d5845a465301422bb268d6a0529aa332aaf9d2333f92bbfd35",
+          "bytes": 21778,
+          "artifactSha256": "fe3841745d6113d5845a465301422bb268d6a0529aa332aaf9d2333f92bbfd35",
+          "xRobotsTag": null
+        },
+        {
+          "url": "http://127.0.0.1:3100/robots.txt",
+          "startedAt": "2026-09-02T11:33:41.881Z",
+          "completedAt": "2026-09-02T11:33:41.887Z",
+          "status": 200,
+          "contentType": "text/plain",
+          "sha256": "e114dfaaa714b7b9d2385907a7f1e915e30c606d049f11457f45a9f6549d554f",
+          "bytes": 711,
+          "artifactSha256": "e114dfaaa714b7b9d2385907a7f1e915e30c606d049f11457f45a9f6549d554f",
+          "xRobotsTag": null
+        },
+        {
+          "url": "http://127.0.0.1:3100/sitemap.xml",
+          "startedAt": "2026-09-02T11:33:41.887Z",
+          "completedAt": "2026-09-02T11:33:41.892Z",
+          "status": 200,
+          "contentType": "application/xml",
+          "sha256": "3f1341c4b3d4e339fc5b231539157032ff42ecfc991e4bc2058903d372bb12a7",
+          "bytes": 2770,
+          "artifactSha256": "3f1341c4b3d4e339fc5b231539157032ff42ecfc991e4bc2058903d372bb12a7",
+          "xRobotsTag": null
+        }
+      ],
+      "process": {
+        "recordedAt": "2026-09-02T11:33:44.2812344Z",
+        "pid": 8064,
+        "parentPid": 30384,
+        "commandLine": "\"C:\\nvm4w\\nodejs\\node.exe\" D:\\LYXGIT\\mysquarefaceicon\\node_modules\\next\\dist\\bin\\next start -H 127.0.0.1 -p 3100",
+        "listeners": [
+          {
+            "LocalAddress": "127.0.0.1",
+            "LocalPort": 3100,
+            "OwningProcess": 8064
+          }
+        ],
+        "stdout": "  ▲ Next.js 14.2.35\n  - Local:        http://127.0.0.1:3100\n  - Network:      http://127.0.0.1:3100\n\n ✓ Starting...\n ✓ Ready in 1070ms\n",
+        "stderr": null
+      }
+    },
+    "harnessDiagnostics": [
+      {
+        "recordedAt": "2026-09-02T11:31:37.663Z",
+        "kind": "HARNESS_SCREENSHOT_DIMENSION_ASSUMPTION",
+        "command": {
+          "chunk_id": "f916b6",
+          "wall_time_seconds": 5.7227572,
+          "exit_code": 1,
+          "original_token_count": 258,
+          "output": "node:assert:95\r\n  throw new AssertionError(obj);\r\n  ^\r\n\r\nAssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\r\n\r\n889 !== 900\r\n\r\n    at C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-gallery-001-impl-v154\\governance-check.cjs:112:67\r\n    at Array.map (<anonymous>)\r\n    at Object.<anonymous> (C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-gallery-001-impl-v154\\governance-check.cjs:106:44)\r\n    at Module._compile (node:internal/modules/cjs/loader:1730:14)\r\n    at Object..js (node:internal/modules/cjs/loader:1895:10)\r\n    at Module.load (node:internal/modules/cjs/loader:1465:32)\r\n    at Function._load (node:internal/modules/cjs/loader:1282:12)\r\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\r\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\r\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5) {\r\n  generatedMessage: true,\r\n  code: 'ERR_ASSERTION',\r\n  actual: 889,\r\n  expected: 900,\r\n  operator: 'strictEqual'\r\n}\r\n\r\nNode.js v22.16.0\r\n"
+        },
+        "resolution": "Corrected the evidence harness, not the application or screenshot: artifact JPEG dimensions differ from independently verified CSS viewport dimensions. Verify their observed width and rounded aspect-ratio height, and hash the unchanged bytes. All eight image checks now pass.",
+        "observedRasterDimensions": [
+          {
+            "name": "before-desktop-1280x900",
+            "width": 1265,
+            "height": 889,
+            "bytes": 95628,
+            "sha256": "d3db54431fabbacae5b353fe6a11cd02d5da967318a1f38538401c728531cf62"
+          },
+          {
+            "name": "before-mobile-390x844",
+            "width": 375,
+            "height": 812,
+            "bytes": 48812,
+            "sha256": "11e4d6b80f6c1420c569f02e6bacdc393f7518d44350f871c9c8d94e8be53568"
+          },
+          {
+            "name": "after-desktop-1280x900",
+            "width": 1265,
+            "height": 889,
+            "bytes": 97564,
+            "sha256": "94b9bb64148056968e0253b7b96f0470d4bac8f4a489359accd901139216c152"
+          },
+          {
+            "name": "after-desktop-full",
+            "width": 1265,
+            "height": 2765,
+            "bytes": 371012,
+            "sha256": "80d47ebb296b00cd843e366a9f5a7cc5a67df5da20022a63f8f86e6e3ad49aca"
+          },
+          {
+            "name": "after-desktop-sort-focus",
+            "width": 1265,
+            "height": 889,
+            "bytes": 108993,
+            "sha256": "75c3484309a560d6290fb79340f6cecf74f39660a26ba69555aeedb5fd05f6ea"
+          },
+          {
+            "name": "after-mobile-390x844",
+            "width": 375,
+            "height": 812,
+            "bytes": 51897,
+            "sha256": "abc152d525361a9e80da3b4c2ec2f560b9028fffe9ba67762e492a9c3eb20928"
+          },
+          {
+            "name": "after-mobile-full",
+            "width": 375,
+            "height": 6561,
+            "bytes": 338018,
+            "sha256": "48f5119a0a13e6da49a3199b9c8606ccb39e97ade533e97e216b54089cc279f8"
+          },
+          {
+            "name": "after-mobile-sort-focus",
+            "width": 390,
+            "height": 844,
+            "bytes": 58844,
+            "sha256": "fd577ffd169f516d82d6aeb8b4a249c4efe3bb91b1e5b93a692e8d6537e16c60"
+          }
+        ]
+      }
+    ]
+  },
+  "rollback": {
+    "deployed": false,
+    "instructions": "Reverse only the six GALLERY-001 copy replacements and this task's checker/package/scripts-README increments using the old/new regions in this evidence; update the same board and keep historical QA/24 acceptances. Do not reset the repository or undo unrelated dirty-worktree changes. No online rollback is needed."
+  }
+}

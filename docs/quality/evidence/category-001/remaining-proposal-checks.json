@@ -1,0 +1,2368 @@
+{
+  "recordedAt": "2026-09-04T03:17:01.702Z",
+  "taskId": "CATEGORY-001",
+  "scope": "CATEGORY_REMAINING_PAGES_PROPOSAL",
+  "result": "通过（仅方案治理与只读保全核验；不是页面实现验收）",
+  "userRequest": "现在进行下一步开发",
+  "proposalConfirmed": false,
+  "assertions": 185,
+  "checks": [
+    "all_407_non_governance_repo_files_unchanged",
+    "all_38_historical_JSON_unchanged",
+    "all_590_non_mutable_prior_fingerprints_unchanged",
+    "original_deletion_preserved:components/FlashGeneratorRuntime.tsx",
+    "original_deletion_preserved:components/GalleryPreview.tsx",
+    "build_id_unchanged",
+    "board_JS_compiles",
+    "board_exact_approved_governance_delta",
+    "board_CSS_unchanged",
+    "original_60_roadmap_tasks_preserved",
+    "all_32_source_acceptances_identical",
+    "only_scoped_batch_proposal_fields_added",
+    "other_task_preserved:AUDIT-001",
+    "other_task_preserved:BASE-001",
+    "other_task_preserved:LEGAL-001",
+    "other_task_preserved:STRAT-001",
+    "other_task_preserved:BACKUP-001",
+    "other_task_preserved:GAME-DATA-001",
+    "other_task_preserved:PLAYER-001",
+    "other_task_preserved:ROUTE-001",
+    "other_task_preserved:COMP-001",
+    "other_task_preserved:META-001",
+    "other_task_preserved:HOME-IA-001",
+    "other_task_preserved:HOME-HERO-001",
+    "other_task_preserved:HOME-DISC-001",
+    "other_task_preserved:HOME-GALLERY-001",
+    "other_task_preserved:PERF-HOME-001",
+    "other_task_preserved:GAME-TPL-001",
+    "other_task_preserved:MIG-SQUARE-001",
+    "other_task_preserved:MIG-OVAL-001",
+    "other_task_preserved:MIG-PIXEL-001",
+    "other_task_preserved:CONTENT-QA-001",
+    "other_task_preserved:GAMES-INDEX-001",
+    "prior_quality_P0_cancelled_task_and_QA_unchanged",
+    "current_scope_proposal_only",
+    "new_governance_evidence_only",
+    "current_focus",
+    "current_week",
+    "whole_task_not_complete",
+    "sample_acceptance_still_effective",
+    "batch_pending_gate",
+    "shared_gate_covers_new_stage",
+    "games_stays_accepted",
+    "oval_full_migration_deferred",
+    "RELATED_RECENT_FAV_unstarted",
+    "no_premature_or_repeated_acceptance",
+    "button_label_current_stage",
+    "week_progress_not_inflated",
+    "overall_progress_not_inflated",
+    "static_dynamic:focusStatus",
+    "static_dynamic:focusTitle",
+    "static_dynamic:focusGoal",
+    "static_dynamic:focusNext",
+    "static_dynamic:focusEvidence",
+    "static_dynamic:gateNote",
+    "static_dynamic:focusId",
+    "static_dynamic:cycleValue",
+    "static_dynamic:cyclePct",
+    "static_dynamic:overallValue",
+    "static_dynamic:overallPct",
+    "prompt_preserves_acceptance:CATEGORY-001",
+    "prompt_batch_gate:CATEGORY-001",
+    "prompt_no_duplicate_sample_acceptance:CATEGORY-001",
+    "prompt_preserves_acceptance:GAMES-INDEX-001",
+    "prompt_batch_gate:GAMES-INDEX-001",
+    "prompt_no_duplicate_sample_acceptance:GAMES-INDEX-001",
+    "prompt_preserves_acceptance:HOME-DISC-001",
+    "prompt_batch_gate:HOME-DISC-001",
+    "prompt_no_duplicate_sample_acceptance:HOME-DISC-001",
+    "prompt_preserves_acceptance:CONTENT-QA-001",
+    "prompt_batch_gate:CONTENT-QA-001",
+    "prompt_no_duplicate_sample_acceptance:CONTENT-QA-001",
+    "prompt_exact_batch_proposal_link",
+    "detail_batch_scope",
+    "detail_current_proposal_evidence",
+    "cached_state_cannot_start_or_complete:已完成:undefined",
+    "sample_source_overrides_cache:已完成:undefined",
+    "cached_record_cannot_open_acceptance:已完成:undefined",
+    "cached_state_cannot_start_or_complete:已完成:退回",
+    "sample_source_overrides_cache:已完成:退回",
+    "cached_record_cannot_open_acceptance:已完成:退回",
+    "cached_state_cannot_start_or_complete:已完成:通过",
+    "sample_source_overrides_cache:已完成:通过",
+    "cached_record_cannot_open_acceptance:已完成:通过",
+    "cached_state_cannot_start_or_complete:待验收:undefined",
+    "sample_source_overrides_cache:待验收:undefined",
+    "cached_record_cannot_open_acceptance:待验收:undefined",
+    "cached_state_cannot_start_or_complete:待验收:退回",
+    "sample_source_overrides_cache:待验收:退回",
+    "cached_record_cannot_open_acceptance:待验收:退回",
+    "cached_state_cannot_start_or_complete:待验收:通过",
+    "sample_source_overrides_cache:待验收:通过",
+    "cached_record_cannot_open_acceptance:待验收:通过",
+    "cached_state_cannot_start_or_complete:开发中:undefined",
+    "sample_source_overrides_cache:开发中:undefined",
+    "cached_record_cannot_open_acceptance:开发中:undefined",
+    "cached_state_cannot_start_or_complete:开发中:退回",
+    "sample_source_overrides_cache:开发中:退回",
+    "cached_record_cannot_open_acceptance:开发中:退回",
+    "cached_state_cannot_start_or_complete:开发中:通过",
+    "sample_source_overrides_cache:开发中:通过",
+    "cached_record_cannot_open_acceptance:开发中:通过",
+    "cached_state_cannot_start_or_complete:已阻塞:undefined",
+    "sample_source_overrides_cache:已阻塞:undefined",
+    "cached_record_cannot_open_acceptance:已阻塞:undefined",
+    "cached_state_cannot_start_or_complete:已阻塞:退回",
+    "sample_source_overrides_cache:已阻塞:退回",
+    "cached_record_cannot_open_acceptance:已阻塞:退回",
+    "cached_state_cannot_start_or_complete:已阻塞:通过",
+    "sample_source_overrides_cache:已阻塞:通过",
+    "cached_record_cannot_open_acceptance:已阻塞:通过",
+    "malformed_cache_safe",
+    "malformed_cache_preserves_acceptances",
+    "dropdown_gate:开发中",
+    "dropdown_gate:待验收",
+    "dropdown_gate:已完成",
+    "dropdown_gate:未开始",
+    "checkbox_gate",
+    "disabled_actions_cannot_mutate_acceptance",
+    "pending_state_alone_does_not_bypass_proposal",
+    "handlers_enforce_proposal_gate_even_if_dispatched",
+    "no_implicit_batch_confirmation",
+    "export_version",
+    "export_32_original_acceptances",
+    "export_incomplete_whole_task",
+    "export_pending_confirmation",
+    "reset_keeps_acceptances",
+    "reset_keeps_gate",
+    "reset_keeps_pending_batch",
+    "report_current_task_present",
+    "doc_heading:PAGE_PLAN.md",
+    "original_doc_body_retained:PAGE_PLAN.md",
+    "new_banner:PAGE_PLAN.md",
+    "doc_heading:LAUNCH_CHECKLIST.md",
+    "original_doc_body_retained:LAUNCH_CHECKLIST.md",
+    "new_banner:LAUNCH_CHECKLIST.md",
+    "doc_heading:SEO_LOG.md",
+    "original_doc_body_retained:SEO_LOG.md",
+    "new_banner:SEO_LOG.md",
+    "doc_heading:docs/product/category-pages-proposal.md",
+    "original_doc_body_retained:docs/product/category-pages-proposal.md",
+    "new_banner:docs/product/category-pages-proposal.md",
+    "doc_heading:docs/quality/evidence/category-001/README.md",
+    "original_doc_body_retained:docs/quality/evidence/category-001/README.md",
+    "new_banner:docs/quality/evidence/category-001/README.md",
+    "proposal_existing_route:/category/avatar-makers",
+    "proposal_existing_route:/category/pixel-avatars",
+    "proposal_existing_route:/category/retro-flash",
+    "proposal_existing_route:/category/character-creators",
+    "proposal_boundary:方案待确认，未实施",
+    "proposal_boundary:Face Makers 的已验收正文",
+    "proposal_boundary:noindex/follow",
+    "proposal_boundary:不进 sitemap",
+    "proposal_boundary:CT-02/05",
+    "proposal_boundary:humanReview",
+    "proposal_boundary:未完成",
+    "proposal_boundary:UNKNOWN",
+    "proposal_boundary:LICENSE-GATE 材料任务继续取消",
+    "proposal_boundary:旧 golden",
+    "proposal_boundary:原 v1.75 两次整体 load 超时失败",
+    "proposal_boundary:确认 CATEGORY-001 剩余四页批量方案，进行开发",
+    "proposal_boundary:不自动开始 RELATED",
+    "exact_new_heading:Choose where to create",
+    "exact_new_heading:Before opening the pixel avatar tool",
+    "exact_new_heading:Opening the Flash-based makers",
+    "exact_new_heading:About this collection",
+    "document_link:docs/product/category-remaining-pages-proposal.md:../../lib/games/categories.ts",
+    "document_link:docs/product/category-remaining-pages-proposal.md:../quality/evidence/category-001/acceptance-checks.json",
+    "document_link:docs/product/category-remaining-pages-proposal.md:category-pages-proposal.md",
+    "document_link:docs/product/category-remaining-pages-proposal.md:../../data/game-categories.ts",
+    "document_link:docs/product/category-remaining-pages-proposal.md:../content/game-page-review-template.md",
+    "document_link:docs/product/category-remaining-pages-proposal.md:../quality/evidence/category-001/remaining-proposal-checks.json",
+    "document_link:PAGE_PLAN.md:docs/product/category-remaining-pages-proposal.md",
+    "document_link:PAGE_PLAN.md:docs/quality/evidence/category-001/remaining-proposal-checks.json",
+    "document_link:LAUNCH_CHECKLIST.md:docs/product/category-remaining-pages-proposal.md",
+    "document_link:LAUNCH_CHECKLIST.md:docs/quality/evidence/category-001/remaining-proposal-checks.json",
+    "document_link:SEO_LOG.md:docs/product/category-remaining-pages-proposal.md",
+    "document_link:SEO_LOG.md:docs/quality/evidence/category-001/remaining-proposal-checks.json",
+    "document_link:docs/product/category-pages-proposal.md:category-remaining-pages-proposal.md",
+    "document_link:docs/quality/evidence/category-001/README.md:../../../product/category-remaining-pages-proposal.md",
+    "document_link:docs/quality/evidence/category-001/README.md:remaining-proposal-checks.json",
+    "git_diff_whitespace_check",
+    "no_commit",
+    "branch_unchanged",
+    "only_new_proposal_and_own_evidence_allowed"
+  ],
+  "proposal": {
+    "path": "docs/product/category-remaining-pages-proposal.md",
+    "sha256": "704158888612f0224c2a31da3371d39b072058fab7ea6c0feea865d145a715a3",
+    "pages": [
+      {
+        "slug": "avatar-makers",
+        "name": "Avatar Makers",
+        "description": "Browse tools for creating profile avatars, icons, and lightweight character portraits.",
+        "path": "/category/avatar-makers",
+        "games": [
+          {
+            "id": "square-face",
+            "name": "Square Face Generator",
+            "path": "/",
+            "type": "RUFFLE_SWF",
+            "pageType": "GAME"
+          },
+          {
+            "id": "oval-face",
+            "name": "Oval Face Icon Generator",
+            "path": "/oval-face-icon-generator",
+            "type": "RUFFLE_SWF",
+            "pageType": "GAME"
+          },
+          {
+            "id": "pixel-art-avatar",
+            "name": "Pixel Art Avatar Icon Generator",
+            "path": "/pixel-art-avatar-icon-generator",
+            "type": "EXTERNAL_LINK",
+            "pageType": "EXTERNAL_TOOL"
+          }
+        ]
+      },
+      {
+        "slug": "pixel-avatars",
+        "name": "Pixel Avatars",
+        "description": "Browse pixel-art and chibi-style avatar tools with clear on-site or external-use boundaries.",
+        "path": "/category/pixel-avatars",
+        "games": [
+          {
+            "id": "pixel-art-avatar",
+            "name": "Pixel Art Avatar Icon Generator",
+            "path": "/pixel-art-avatar-icon-generator",
+            "type": "EXTERNAL_LINK",
+            "pageType": "EXTERNAL_TOOL"
+          }
+        ]
+      },
+      {
+        "slug": "retro-flash",
+        "name": "Retro Flash",
+        "description": "Browse preserved creator experiences that run in the browser through a compatible Flash runtime.",
+        "path": "/category/retro-flash",
+        "games": [
+          {
+            "id": "square-face",
+            "name": "Square Face Generator",
+            "path": "/",
+            "type": "RUFFLE_SWF",
+            "pageType": "GAME"
+          },
+          {
+            "id": "oval-face",
+            "name": "Oval Face Icon Generator",
+            "path": "/oval-face-icon-generator",
+            "type": "RUFFLE_SWF",
+            "pageType": "GAME"
+          }
+        ]
+      },
+      {
+        "slug": "character-creators",
+        "name": "Character Creators",
+        "description": "Browse focused tools for building a character look that can work as an avatar or profile image.",
+        "path": "/category/character-creators",
+        "games": [
+          {
+            "id": "pixel-art-avatar",
+            "name": "Pixel Art Avatar Icon Generator",
+            "path": "/pixel-art-avatar-icon-generator",
+            "type": "EXTERNAL_LINK",
+            "pageType": "EXTERNAL_TOOL"
+          }
+        ]
+      }
+    ],
+    "indexChange": false,
+    "implementationStarted": false,
+    "humanReview": "未完成",
+    "independentSearchValue": "未验证；Pixel/Character 共享一条记录，保留 noindex"
+  },
+  "board": {
+    "path": "F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+    "sha256": "030eaebb314d55bb1627058287bec4f3113c295113467e9bec2d40dadc36d72c",
+    "version": "1.77",
+    "state": "设计中 / 剩余四页方案待确认 / 样例已验收 / 整项未完成",
+    "visual": "未验证；不绕过既有文件访问限制"
+  },
+  "preserved": {
+    "sourceAcceptances": {
+      "AUDIT-001": {
+        "result": "通过",
+        "acceptedAt": "2026-08-31T01:07:48.794Z",
+        "source": "用户明确回复"
+      },
+      "BASE-001": {
+        "result": "通过",
+        "acceptedAt": "2026-08-31T09:50:39.0521386+08:00",
+        "source": "用户明确回复；同时选择 SEO v2.1 迁移"
+      },
+      "LEGAL-001": {
+        "result": "通过",
+        "acceptedAt": "2026-08-31T10:36:16.812+08:00",
+        "source": "用户明确回复"
+      },
+      "STRAT-001": {
+        "result": "通过",
+        "acceptedAt": "2026-08-31T11:27:04.0957825+08:00",
+        "source": "用户明确回复"
+      },
+      "BACKUP-001": {
+        "result": "通过",
+        "acceptedAt": "2026-08-31T11:40:28.1663179+08:00",
+        "source": "用户在待验收状态后明确回复"
+      },
+      "GAME-DATA-001": {
+        "result": "通过",
+        "acceptedAt": "2026-08-31T12:31:18.6581030+08:00",
+        "source": "用户明确回复“确认验收，进行下一步的开发”"
+      },
+      "PLAYER-001": {
+        "result": "通过",
+        "acceptedAt": "2026-08-31T14:52:41.3316418+08:00",
+        "source": "用户明确回复“确认验收，进行下一步开发”"
+      },
+      "ROUTE-001": {
+        "result": "通过",
+        "acceptedAt": "2026-08-31T16:35:57.4914593+08:00",
+        "source": "用户明确回复“确认验收，请进行下一步开发”"
+      },
+      "COMP-001": {
+        "result": "通过",
+        "acceptedAt": "2026-08-31T17:27:33.8191524+08:00",
+        "source": "用户明确回复“确认验收”"
+      },
+      "META-001": {
+        "result": "通过",
+        "acceptedAt": "2026-08-31T22:53:08.6628545+08:00",
+        "source": "用户明确回复“验收通过，现在继续进行开发下一步”"
+      },
+      "HOME-IA-001": {
+        "result": "通过",
+        "acceptedAt": "2026-08-31T23:48:57.5740036+08:00",
+        "source": "用户明确回复“验收通过，现在进行下一步开发”"
+      },
+      "HOME-HERO-001": {
+        "result": "通过",
+        "acceptedAt": "2026-09-01T08:26:38.6207315+08:00",
+        "source": "用户明确回复“验收通过，现在进行下一步开发”"
+      },
+      "HOME-DISC-001": {
+        "result": "通过",
+        "acceptedAt": "2026-09-01T09:17:19.3773648+08:00",
+        "source": "用户明确回复“HOME-DISC-001 验收通过”"
+      },
+      "HOME-GALLERY-001": {
+        "result": "通过",
+        "acceptedAt": "2026-09-01T18:56:17.0982774+08:00",
+        "source": "用户明确回复“确认验收，进行下一步开发”"
+      },
+      "PERF-HOME-001": {
+        "result": "通过",
+        "acceptedAt": "2026-09-01T20:05:10.9773005+08:00",
+        "source": "用户明确回复“确认验收，进行下一步开发”"
+      },
+      "GAME-TPL-001": {
+        "result": "通过",
+        "acceptedAt": "2026-09-01T23:58:01.7208795+08:00",
+        "source": "用户明确回复“GAME-TPL-001 验收通过”并授权先部署累计验收内容"
+      },
+      "OP-11": {
+        "result": "通过",
+        "acceptedAt": "2026-09-02T08:09:45+08:00",
+        "source": "用户明确回复“OP-11 验收通过，继续下一发布阻断项”",
+        "scope": "本地源实现已验收；生产一跳矩阵仍未验证"
+      },
+      "AI-01": {
+        "result": "通过",
+        "acceptedAt": "2026-09-02T09:19:57+08:00",
+        "source": "用户明确回复“AI-01 验收通过，继续下一发布阻断项”",
+        "scope": "本地源实现已验收；生产 robots 仍未验证"
+      },
+      "KW-02-SAMPLE": {
+        "result": "通过",
+        "acceptedAt": "2026-09-02T10:11:51+08:00",
+        "source": "用户明确回复“KW-02 单页样例验收通过”",
+        "scope": "本记录验收 /contact 单页样例；后续 11 页批次已另行确认、实施并验收，生产未部署"
+      },
+      "KW-02": {
+        "result": "通过",
+        "acceptedAt": "2026-09-02T11:04:15+08:00",
+        "source": "用户明确回复“KW-02 剩余 11 页验收通过”",
+        "scope": "/contact 样例与剩余 11 页批次本地验收通过；生产未部署；12 条 should 独立保留"
+      },
+      "PF-01": {
+        "result": "通过",
+        "acceptedAt": "2026-09-02T04:16:42.772Z",
+        "source": "用户明确回复“PF-01 验收通过”，并要求下一步开发",
+        "scope": "仅本地激活响应实现与既有验证证据；生产性能未验证；本轮未重测"
+      },
+      "TERMS-001": {
+        "result": "通过",
+        "acceptedAt": "2026-09-02T05:42:21.798Z",
+        "source": "用户明确回复“TERMS-001 验收通过”",
+        "scope": "仅 TERMS-001 本地两段权利说明、一个 H2、日期修正及既有验证证据；不授予实际许可，不代表生产通过。本轮仅记录验收，未重跑应用检查，不启动下一项或部署。"
+      },
+      "ABOUT-001": {
+        "result": "通过",
+        "acceptedAt": "2026-09-02T07:50:25Z",
+        "source": "用户明确回复“ABOUT-001 验收通过”",
+        "scope": "仅 ABOUT-001 本地七处权利/示例来源文案修正及 v1.47 既有 QA；实际许可 UNKNOWN、生产未验证。本轮仅记录验收，未改应用或重跑检查，不启动下一项或部署。"
+      },
+      "EDITORIAL-001": {
+        "result": "通过",
+        "acceptedAt": "2026-09-02T10:24:29.697Z",
+        "source": "用户明确回复“验收通过，请进行下一步开发”",
+        "scope": "仅 EDITORIAL-001 本地五处确认文案与 v1.50/v1.52 已有验证证据；本轮不重跑应用 QA，不授予实际许可或生产批准。下一项仅开启 GALLERY-001 待确认方案。"
+      },
+      "GALLERY-001": {
+        "result": "通过",
+        "acceptedAt": "2026-09-02T12:44:34.299Z",
+        "source": "用户明确回复“GALLERY-001 验收通过”",
+        "scope": "仅 GALLERY-001 已确认六处本地文案与 v1.54 既有实现/QA 证据；不授予实际许可或生产批准。本轮只记录验收，未改应用或重跑应用检查，不启动下一项、推送或部署。"
+      },
+      "LOCALE-001": {
+        "result": "通过",
+        "acceptedAt": "2026-09-03T00:14:44Z",
+        "source": "用户明确回复“LOCALE-001 验收通过”",
+        "scope": "仅 LOCALE-001 已确认四处本地文案及 v1.58 手机单句修订，引用原实现/QA 证据；不授予实际许可或生产批准。本轮只登记验收，未改应用或重跑应用检查，不启动下一项、提交、推送或部署。"
+      },
+      "MIG-SQUARE-001": {
+        "result": "通过",
+        "acceptedAt": "2026-09-03T03:02:57.1669554Z",
+        "source": "用户明确回复“MIG-SQUARE-001 验收通过”，并要求现在进行下一步开发",
+        "scope": "仅已确认的 Square 首页本地数据绑定，引用原 v1.63 实现/QA；不表示完整通用许可模型迁移、真实许可或生产发布通过。本轮源码/历史/产物复核保持，未重跑完整应用 QA；按同一句指令仅准备 MIG-OVAL-001 本地阶段方案，仍待明确确认，不提交、推送或部署。"
+      },
+      "MIG-OVAL-001": {
+        "result": "通过",
+        "scope": "LOCAL_DATA_BINDING",
+        "acceptedAt": "2026-09-03T05:17:09.304Z",
+        "source": "用户明确回复“确认验收，现在进行下一步开发”",
+        "templateMigrationCompleted": false,
+        "localOnly": true,
+        "note": "只覆盖已确认并于 v1.65 实施的 Oval 本地数据绑定，保留原 QA 日期与视觉有条件通过边界；不代表完整模板迁移、真实许可或生产验收。下一项仅准备 Pixel 方案，确认前不编码。",
+        "evidencePath": "docs/quality/evidence/mig-oval-001/acceptance-checks.json"
+      },
+      "MIG-PIXEL-001": {
+        "result": "通过",
+        "scope": "EXTERNAL_TOOL_CONSISTENCY",
+        "acceptedAt": "2026-09-03T07:09:26.255Z",
+        "source": "用户明确回复“MIG-PIXEL-001 验收通过”，并要求“部署之前所有内容后进行下一步开发”",
+        "localOnly": true,
+        "note": "仅验收已确认并于 v1.67 实施、验证的 Pixel External Tool 一致性；原 QA 日期、失败记录和证据不改写。累计发布已重新获得明确授权并优先于下一项，但许可/P0 与生产验收不因此通过；完整 Oval 模板迁移仍未完成。",
+        "evidencePath": "docs/quality/evidence/mig-pixel-001/acceptance-checks.json"
+      },
+      "CONTENT-QA-001": {
+        "result": "通过",
+        "scope": "CONTENT_STANDARD_ONLY",
+        "acceptedAt": "2026-09-03T14:14:26.356Z",
+        "source": "用户明确回复“CONTENT-QA-001 验收通过”，并要求“现在进行下一步开发”",
+        "localOnly": true,
+        "note": "仅验收 v1.70 的游戏内容标准与审核模板；不等于三页事实复审、自动内容门禁、实际许可或生产通过。原 QA 日期及 29 条既有验收保留。按当前指令只准备 GAMES-INDEX-001 目录方案，确认前不编码或部署。",
+        "evidencePath": "docs/quality/evidence/content-qa-001/acceptance-checks.json"
+      },
+      "GAMES-INDEX-001": {
+        "result": "通过",
+        "scope": "LOCAL_DIRECTORY_NOINDEX",
+        "acceptedAt": "2026-09-04T01:41:36.956Z",
+        "source": "用户明确回复“GAMES-INDEX-001 验收通过”，并要求“现在进行下一项任务”",
+        "localOnly": true,
+        "note": "仅验收 v1.73 本地目录、导航及广告隔离；保留原检查/构建/浏览器日期和失败记录。不等于全站人类事实审核、权利、索引或生产验收通过；材料任务保持取消。",
+        "evidencePath": "docs/quality/evidence/games-index-001/acceptance-checks.json"
+      },
+      "CATEGORY-001": {
+        "result": "通过",
+        "scope": "CATEGORY_SAMPLE",
+        "acceptedAt": "2026-09-04T02:44:00.162Z",
+        "source": "用户明确回复“CATEGORY-001 单页样例验收通过”",
+        "localOnly": true,
+        "samplePath": "/category/face-makers",
+        "remainingPagesImplemented": false,
+        "wholeTaskCompleted": false,
+        "evidencePath": "docs/quality/evidence/category-001/acceptance-checks.json",
+        "note": "仅验收 v1.75 Face Makers 单页样例及已确认共享分类数据/导航/广告边界；不代表剩余四页、完整 CATEGORY-001、全站事实审核、权利、索引或生产验收。原 QA/失败日期和 P0/UNKNOWN/取消状态保留。"
+      }
+    },
+    "unmodifiedRepoFiles": [
+      {
+        "path": "app/category/[slug]/page.tsx",
+        "sha256": "14d32d29e5a23250a1fa37a1e273791ab62103c384fa3e5c57ad73a1e747e0ae"
+      },
+      {
+        "path": "app/games/[slug]/page.tsx",
+        "sha256": "0131595a7dc55e0b9227944e41f5cf54548213f5527cc62f034eb8a61c05aab4"
+      },
+      {
+        "path": "app/games/page.tsx",
+        "sha256": "5c154f0c23e174f94b68ce7e705ae978f7ecb6ffab15d04fd1439e148234d3c5"
+      },
+      {
+        "path": "app/not-found.tsx",
+        "sha256": "508a22e3b5b22cacde2ccf576b7a4b47f6cdfdc6b29138bb3cbf8eada71665c8"
+      },
+      {
+        "path": "components/CuratedGalleryPreview.tsx",
+        "sha256": "0238422e69aa37737063f1600e11a82505b0b8f94bd813161eb8ea6985e78792"
+      },
+      {
+        "path": "components/game-player/GamePlayer.tsx",
+        "sha256": "142cf22ac3a485c78285d920bbe84114f3931a38f0e9aec067bbf8ca2e562d5c"
+      },
+      {
+        "path": "components/game-player/adapters/ExternalLinkAdapter.tsx",
+        "sha256": "f7d4c98916a2a25785175af7ae6bf009a700f68271b8345322fd904c2431f45c"
+      },
+      {
+        "path": "components/game-player/adapters/Html5Adapter.tsx",
+        "sha256": "524f0c49fd8af608ddf86aed872fe1cd0af72839b30391206be8eae639e08325"
+      },
+      {
+        "path": "components/game-player/adapters/IframeAdapterFrame.tsx",
+        "sha256": "af31a35c493f607bacbfb548b386f604cbb98c7722a32cf580da11a7b7b593b6"
+      },
+      {
+        "path": "components/game-player/adapters/LocalIframeAdapter.tsx",
+        "sha256": "b73408e66cb4dec9fe5b8460960627c95a1a92c43282345562dbfd173b3f4d9f"
+      },
+      {
+        "path": "components/game-player/adapters/OfficialIframeAdapter.tsx",
+        "sha256": "0668f81f43684d59522799c55ecc4affe8fb24fdfc571af7e6ac8e56118cc23c"
+      },
+      {
+        "path": "components/game-player/adapters/RuffleAdapter.tsx",
+        "sha256": "5fcff6669f4ca75147728e8a73434cdef8abb2823325110d585ad46a1cfe8ada"
+      },
+      {
+        "path": "components/game-player/adapters/adapter-types.ts",
+        "sha256": "4e6c492777363116b8a450d5b7e822abdf99609e518f15a3fc682f2d6fd84df5"
+      },
+      {
+        "path": "components/game/AdSlotShell.tsx",
+        "sha256": "3c1aaa1ab799dddb7e7e0bb607a31c0cc9d77683c42554b7663bc4bdc4a28a27"
+      },
+      {
+        "path": "components/game/CategoryChip.tsx",
+        "sha256": "ef65d12fb1ace3a669ed33e14379cc76d8edb0b5822ef19acdcd0834f836c1e5"
+      },
+      {
+        "path": "components/game/EmptyState.tsx",
+        "sha256": "2ef1bad5737139a2cd9c1cf9d003b28a9f202a50fa9925072cea8e35cef549d2"
+      },
+      {
+        "path": "components/game/GameBreadcrumb.tsx",
+        "sha256": "db7beaf87e42bf14ed8966dd1912dfa81dc34b1a09eec87d40a446e28daceb3f"
+      },
+      {
+        "path": "components/game/GameCard.tsx",
+        "sha256": "e405ecff0e4a26ef3ed686ef5ac7c06d5c622312d17a010bdcae6e495c66edcd"
+      },
+      {
+        "path": "components/game/GameControls.tsx",
+        "sha256": "2a738d34297ad718e59a678ea9572d8c6cc981180e083e8fca7cb03e21c1b4da"
+      },
+      {
+        "path": "components/game/GameDetailTemplate.tsx",
+        "sha256": "3ed1e3577a95db9c5bf455d52fa1f09a7b5be214f16d3706773b2c5d6ae81d4a"
+      },
+      {
+        "path": "components/game/GameFaq.tsx",
+        "sha256": "c680b9728a08c896095bb85fc688f6d451360142e0bb447763b8fed0a0a1139a"
+      },
+      {
+        "path": "components/game/GameGrid.tsx",
+        "sha256": "ae5a454723185b9c2b34f2129c00e1e3cc3d6336567034d9b4f7798767b71f6c"
+      },
+      {
+        "path": "components/game/GameLink.tsx",
+        "sha256": "0c260fc2424a48582bc75c209763c3de36860c9a953451ff302574c03297d7d3"
+      },
+      {
+        "path": "components/game/GameMeta.tsx",
+        "sha256": "d7c6e283401f295579cff65cd01ee761626d727098fbc6e983e8d18e47f807e9"
+      },
+      {
+        "path": "components/game/GamePlayer.tsx",
+        "sha256": "a568634e413cacc1ef816bd2835be4916dfc6094f9cc4d3a2ee3a3fd5d51b2da"
+      },
+      {
+        "path": "components/game/GameSourceRights.tsx",
+        "sha256": "ebc2ec19b91bf5dde44eae24ca75b6ee208a487c707a9862f694c6d88dbd2243"
+      },
+      {
+        "path": "components/game/README.md",
+        "sha256": "4c7ea3c7e616a686fbf08567f8b9e28082912a2dbcbfc7a73d3166867c172f89"
+      },
+      {
+        "path": "components/game/RelatedGames.tsx",
+        "sha256": "1fa094f28bd8b0855c7869596b9df55b0072a48a8db6d3db8c6558f954209aa7"
+      },
+      {
+        "path": "components/home/CoreGamePreview.tsx",
+        "sha256": "9a05388d53d969ef1ea1f4ea9a6273a0ebd1cd8ec6d1df43a1afd8da1c4c44a1"
+      },
+      {
+        "path": "components/home/HomeDiscoveryRegion.tsx",
+        "sha256": "8652a91eeeb4650230235422c661be58841a49475ce1bc446425c7e2ac697b04"
+      },
+      {
+        "path": "components/home/HomeHero.tsx",
+        "sha256": "d7c0c2c35b98735c002d4a9066b68615e73df77326cc42468eaee6607b442fd3"
+      },
+      {
+        "path": "components/home/HomeResourceLinks.tsx",
+        "sha256": "fd03f53ecc08510a86e3edd54864e132af9e70b363a7d5dee4c50d1eea207e23"
+      },
+      {
+        "path": "data/ai-crawler-policy.json",
+        "sha256": "adea8bf57c056c93b319da9033654f573989948058ab04a7c74e4739c472487c"
+      },
+      {
+        "path": "data/curated-icon-ideas.ts",
+        "sha256": "b51d0f7b57249b1e3cfe0e16bede29688154814168a2c6271a7388ad10933dce"
+      },
+      {
+        "path": "data/game-categories.ts",
+        "sha256": "b0bbb1eccbc70bdc70323c05da94acc725df06d857c70eaba8860f5b3e701d8d"
+      },
+      {
+        "path": "data/games/README.md",
+        "sha256": "71272ce378d8adc438b34b6d60e58080fa32b8728fd9c513e6aad2001eac24ee"
+      },
+      {
+        "path": "data/games/oval-face.ts",
+        "sha256": "03d3c9d884161baafd9f5baadf85bbb05567324cc8e7251f094ca0bbe4b872fe"
+      },
+      {
+        "path": "data/games/pixel-art-avatar.ts",
+        "sha256": "29d6d8696f5ad1d4ef59ee45080d1ae42723f38640c56c0cf0a685c7fc19c7b8"
+      },
+      {
+        "path": "data/games/square-face.ts",
+        "sha256": "5f70eb18ae8e87db1db4d2603c080e5a4b01d44ae2b57f7abcf9afbf26550d0e"
+      },
+      {
+        "path": "docs/archive/license-gate-cancelled-2026-09-03/checks.json",
+        "sha256": "4fbe84181fe0d7231944eeb3bf2b64b93b6aae6b557cdba1b9445c4d12eb44fb"
+      },
+      {
+        "path": "docs/archive/license-gate-cancelled-2026-09-03/release-order-confirmation.json",
+        "sha256": "7481222829e0f28319a65406495fa334c58e535b5c9d038e2b9d9706000cce57"
+      },
+      {
+        "path": "docs/archive/license-gate-cancelled-2026-09-03/swf-license-evidence-request.md",
+        "sha256": "d257345a56bbbe3eebb183e56bd42fc3988f49d09f4b9daaeb3cf546cdde4557"
+      },
+      {
+        "path": "docs/content/game-page-quality-standard.md",
+        "sha256": "e0f2d02ad0792e6bbe0b6fc13c478a856efe86d51a4bf78f1b05c62a10c2ca3b"
+      },
+      {
+        "path": "docs/content/game-page-review-template.md",
+        "sha256": "3b690beea6cb73e5b16246053853c31e1db6d100c977d7f02d2a868067d0a7d3"
+      },
+      {
+        "path": "docs/legal/about-rights-consistency-proposal.md",
+        "sha256": "ebfa7fa0c746ca176ebe2dfdb5dc876a6e8065e70715b9af8da09db43884b10d"
+      },
+      {
+        "path": "docs/legal/editorial-rights-consistency-proposal.md",
+        "sha256": "d8c63e1499f18dfce91183b6c2cf3e7fed2ea68b90fad8ec15fed84be606544c"
+      },
+      {
+        "path": "docs/legal/gallery-rights-consistency-proposal.md",
+        "sha256": "530e3a7d8388bd35fde4478289df1b2c8e89f0b1fd381a28a44f7f78bb08b145"
+      },
+      {
+        "path": "docs/legal/locale-rights-consistency-proposal.md",
+        "sha256": "fbf02f2b9e6078f9719ed0d318a26af5873b9fe3bc9af7a3585b31b119f65536"
+      },
+      {
+        "path": "docs/legal/terms-rights-consistency-proposal.md",
+        "sha256": "41fe8e0f5a0a92ddbab5e2284c22917153fa813682a7edcda21f87e408b05c70"
+      },
+      {
+        "path": "docs/ops/ai-crawler-policy-proposal.md",
+        "sha256": "dcf67282522e2a415b6de1d92f4fab121a2db71aadf17a37b4f636036b5cf913"
+      },
+      {
+        "path": "docs/ops/canonical-host-normalization-proposal.md",
+        "sha256": "920c4f4d02ffa32316cdd57f4c224d0adc15741ad3d12a1f03c803defa9b00e9"
+      },
+      {
+        "path": "docs/product/concepts/game-tpl-001-desktop-content-concept.png",
+        "sha256": "2e038eb58ca14e570d50b99753191756749743f0508581fa94cf5864ae9009d4"
+      },
+      {
+        "path": "docs/product/concepts/game-tpl-001-desktop-first-viewport-concept.png",
+        "sha256": "534efb638575945044f314bf8615d98ea006f2c085966047dad083f15d0f4d51"
+      },
+      {
+        "path": "docs/product/concepts/game-tpl-001-desktop-trust-and-navigation-concept.png",
+        "sha256": "7a84227b9b621f2725310d2efd73f56ec87ff02ab3bd6dc0d9ec3d4da8dd936d"
+      },
+      {
+        "path": "docs/product/concepts/game-tpl-001-mobile-first-viewport-concept.png",
+        "sha256": "c81f06be1236f7ae3d8d5af2c94dd6dde909b470d43ef5a6dd6ed2c10db0f25f"
+      },
+      {
+        "path": "docs/product/concepts/home-disc-001-desktop-concept.png",
+        "sha256": "5b94b1bdd977a8a53ac6c538ddfed030dd1339c5ba167b536d4fd0d09db8f3df"
+      },
+      {
+        "path": "docs/product/concepts/home-disc-001-mobile-concept.png",
+        "sha256": "88f5de276de5bbdb9b8e57c2a640755a9abeadb5d88121a8de1de0e738fd1f5f"
+      },
+      {
+        "path": "docs/product/concepts/home-gallery-001-desktop-concept.png",
+        "sha256": "650dcc338f67370186c4d0c4a300df423853399a75c5d18e95a6f63dfe4f992a"
+      },
+      {
+        "path": "docs/product/concepts/home-gallery-001-mobile-concept.png",
+        "sha256": "6d96782d2a506448b59161cdefbf2e94fc6ecd7b6094b10e6e16e12f4261b3ec"
+      },
+      {
+        "path": "docs/product/concepts/home-hero-001-desktop-concept.png",
+        "sha256": "31e49482748f189cc9a596e0f083c0f788d2f7d869a290714f3152c8ccdae284"
+      },
+      {
+        "path": "docs/product/concepts/home-hero-001-mobile-concept.png",
+        "sha256": "c9239ba9f06d91b0c3a72e3de4c434d914cf80281283fcbe95f5a8d6b470339e"
+      },
+      {
+        "path": "docs/product/game-detail-template-proposal.md",
+        "sha256": "638160e5d3818b7dab255b988e14555cd9f560574ce7e2879876a29f127fdd65"
+      },
+      {
+        "path": "docs/product/games-index-directory-proposal.md",
+        "sha256": "7ac00ca4770f7506bb87d2b77671127f41429d5cf9b72214667ea82f159cd4e6"
+      },
+      {
+        "path": "docs/product/home-curated-icon-ideas-proposal.md",
+        "sha256": "6dfa7ca9c0a09ddb8d292c3cc38aea2f9e36508d364f1c4f5d1dacf189195db8"
+      },
+      {
+        "path": "docs/product/home-discovery-modules-proposal.md",
+        "sha256": "bd57bcb42b446d668c67148cf198523e757f58c87332124d725a34b89d03234c"
+      },
+      {
+        "path": "docs/product/home-hero-and-core-entry-proposal.md",
+        "sha256": "f76aa557530af215f6b290cbbc2fd020f392db06aef32e740af9d6da33fe1949"
+      },
+      {
+        "path": "docs/product/home-information-architecture-proposal.md",
+        "sha256": "ebc2841e261d4e8bf04ee2c593c134d0728ea2e9ef74a441386b642b9817eef1"
+      },
+      {
+        "path": "docs/product/oval-local-data-binding-proposal.md",
+        "sha256": "6c6bc7fc05ab8a9cb7842f7ee7e1028365cd11cef52fd987e42a41b80f28d7c1"
+      },
+      {
+        "path": "docs/product/pixel-external-tool-consistency-proposal.md",
+        "sha256": "0d1aec00b5a06f4a5f429ac7e084cec015db221eb837476b039085727ced82cd"
+      },
+      {
+        "path": "docs/product/player-adapter-proposal.md",
+        "sha256": "55af320356a8689452b1b7b264825471e09d4c720f16cdad943afe14a2725194"
+      },
+      {
+        "path": "docs/product/route-architecture-proposal.md",
+        "sha256": "68ed8af9fe4996675cce1c6bc4fcecde10c2f0e9c3be249363561fdcb61d73c5"
+      },
+      {
+        "path": "docs/product/square-home-data-binding-proposal.md",
+        "sha256": "abd091e521acff9474c4125aeb8cbc4455261dba3681033ae12db11b50cf9870"
+      },
+      {
+        "path": "docs/quality/evidence/about-001-rights-copy/README.md",
+        "sha256": "5a11b0502a2a6efc90f556cd547806ec0b50eaa51f82a1b756ae240e46d38161"
+      },
+      {
+        "path": "docs/quality/evidence/about-001-rights-copy/checks.json",
+        "sha256": "9b5d2192b7ddac92a9b01c8f2368d3faaee116253166bb6c623c83bbf8e647e7"
+      },
+      {
+        "path": "docs/quality/evidence/about-001-rights-copy/proposal-checks.json",
+        "sha256": "dbb44b079bd622e93813761c939091e15a0b892a20d2272aaa1cfbd93a690362"
+      },
+      {
+        "path": "docs/quality/evidence/ai-01-crawler-policy/README.md",
+        "sha256": "37dbd6df022c6d8c22dde32d3d0d76d14e72853b622072b6b1f3888a5189751e"
+      },
+      {
+        "path": "docs/quality/evidence/category-001/acceptance-checks.json",
+        "sha256": "9a81a75322a2e9552a30814825e64f6447e7f9a0228534d9a2915252ecf321d2"
+      },
+      {
+        "path": "docs/quality/evidence/category-001/board-checks.json",
+        "sha256": "20cbb039a5d58c4d781f9b2e3aba88b14cf19b5dba27eaab9bb9f1bf7aa0f6e6"
+      },
+      {
+        "path": "docs/quality/evidence/category-001/checks.json",
+        "sha256": "c172ba9b969407f175a37e986a97fd9f5cec21f2d3980d999234b4d253419b31"
+      },
+      {
+        "path": "docs/quality/evidence/category-001/content-review.md",
+        "sha256": "451e89bac81dfffb92db891d6151124a6b0c1f796b1753817a22113f34ccd170"
+      },
+      {
+        "path": "docs/quality/evidence/category-001/proposal-checks.json",
+        "sha256": "f7cbcf62f6890a5bd68e588aa222654e75e064ac993d0957925b59676abd72cf"
+      },
+      {
+        "path": "docs/quality/evidence/content-qa-001/README.md",
+        "sha256": "21d0aa3528cb0ce2a8a7d8f9349ffa93e2480e30667edb09750052e15467180c"
+      },
+      {
+        "path": "docs/quality/evidence/content-qa-001/acceptance-checks.json",
+        "sha256": "102cecc66d9d9ae8fed6d3c4dfde9521b5cfeb10341ab8e3b53330967c189201"
+      },
+      {
+        "path": "docs/quality/evidence/content-qa-001/checks.json",
+        "sha256": "40371180bbf00e36a69038596644f3c4701e7c869b00548cd29c80a167ccb641"
+      },
+      {
+        "path": "docs/quality/evidence/editorial-001-rights-copy/README.md",
+        "sha256": "59367ceb5172d339c51023e19e1827623dc904312d4622dd2b8b006b8cbbca47"
+      },
+      {
+        "path": "docs/quality/evidence/editorial-001-rights-copy/checks.json",
+        "sha256": "72f7ff3be63a9e3b14a41a3f651a336c57f7d74d59785fb9173cd2af36117d52"
+      },
+      {
+        "path": "docs/quality/evidence/editorial-001-rights-copy/proposal-checks.json",
+        "sha256": "a30c3eb49860af11e4af1e998dff78d8b42970d909113ee64c7a728256d5beed"
+      },
+      {
+        "path": "docs/quality/evidence/gallery-001-rights-copy/README.md",
+        "sha256": "1034c852b108636c6e72a0fc124ca36ee8f39925141a76cd81ed564c8df075b9"
+      },
+      {
+        "path": "docs/quality/evidence/gallery-001-rights-copy/acceptance-checks.json",
+        "sha256": "eb8105300c659fdc668f06d64b820bac69fcca5a2011a1bc2da0dfa51c121143"
+      },
+      {
+        "path": "docs/quality/evidence/gallery-001-rights-copy/checks.json",
+        "sha256": "a41646b12dffdc099bc9c1a84cf10667f6efc1753b1db5be2c437e3695bd86af"
+      },
+      {
+        "path": "docs/quality/evidence/gallery-001-rights-copy/proposal-checks.json",
+        "sha256": "3c00f1471ba2741fb27d44b1efecd823834443243e46754c1aeda8fea1a81a08"
+      },
+      {
+        "path": "docs/quality/evidence/game-tpl-001/README.md",
+        "sha256": "c675b3aa0b6b1f2768ba68cb47f6a34c021b5855f930d728d2c1e7c33d27212f"
+      },
+      {
+        "path": "docs/quality/evidence/games-index-001/README.md",
+        "sha256": "d2a592300a75c3a48309f7a3e8d9425a0f424910fc947bd6a9c999934b1681b1"
+      },
+      {
+        "path": "docs/quality/evidence/games-index-001/acceptance-checks.json",
+        "sha256": "a3c0d0932f4bcdb70819133d94c45e1976e3bee69f5ef25cae03e185d6ecdb27"
+      },
+      {
+        "path": "docs/quality/evidence/games-index-001/board-checks.json",
+        "sha256": "4311645d850f7144df9c4181ce77282f538ff835af03a43c3e0628701b05eaa2"
+      },
+      {
+        "path": "docs/quality/evidence/games-index-001/checks.json",
+        "sha256": "365e09ef5dc5ab40e4f6c7997a0bf3bcbe9e5ebb7355e229f374bf912ea8d508"
+      },
+      {
+        "path": "docs/quality/evidence/games-index-001/content-review.md",
+        "sha256": "39986526854469b8ab5237c22925099e1b07f832f8e22f284e2f0eff17ffb585"
+      },
+      {
+        "path": "docs/quality/evidence/games-index-001/implementation-interruption.md",
+        "sha256": "32dba6ac0607e831a64ab299c39e74cb43d14e04104cbb242704d19afcea4312"
+      },
+      {
+        "path": "docs/quality/evidence/games-index-001/interruption-checks.json",
+        "sha256": "b5e31ce1a481bf89b56b965d3a91487b78ca93232c01da7f9d68ca25c2905594"
+      },
+      {
+        "path": "docs/quality/evidence/games-index-001/proposal-checks.json",
+        "sha256": "864180ac6ea02eb4d5e4c6e41b883dba60a6d3dc66ce4c0884449f2235b64fb4"
+      },
+      {
+        "path": "docs/quality/evidence/home-disc-001/README.md",
+        "sha256": "103eea705e7a74bcb13596707a4d9dccc6ca86fece0fc5c92df32851d0892634"
+      },
+      {
+        "path": "docs/quality/evidence/home-disc-001/desktop-1440x900.png",
+        "sha256": "3b01c26f1563eb6e0e302dc2a6fc4084e26fb85e7e7ac0b3e8f316fb4423c1ad"
+      },
+      {
+        "path": "docs/quality/evidence/home-disc-001/desktop-1600x960.png",
+        "sha256": "e66c29539c1be230ba76c8ce212c35c80da87bfaca43823321698b26cd75bcc3"
+      },
+      {
+        "path": "docs/quality/evidence/home-disc-001/mobile-390x1000-bottom.png",
+        "sha256": "4693663434b26aa01f1a0a8a565ca2783b7e8174b306030a0a2a07bc3a05dcad"
+      },
+      {
+        "path": "docs/quality/evidence/home-disc-001/mobile-390x1000.png",
+        "sha256": "26f6e71aec08acd3496e2f7fb60855bc30f00564a49996b554313609e3a76b78"
+      },
+      {
+        "path": "docs/quality/evidence/home-gallery-001/README.md",
+        "sha256": "0644bf743bcf4c8314f406a004c6d081686710b131dd985e78f771f3ae06a28c"
+      },
+      {
+        "path": "docs/quality/evidence/home-gallery-001/baseline-desktop-1440x900.jpg",
+        "sha256": "a98e1e0225653fb688a2c84c68767dac5b4bde2d8b831be042b287775d0ad296"
+      },
+      {
+        "path": "docs/quality/evidence/home-gallery-001/baseline-mobile-390x1000.jpg",
+        "sha256": "3b2ed55e2385edb560f01f8dc755c913d24c522018bd46ce4819531a602bde9a"
+      },
+      {
+        "path": "docs/quality/evidence/home-gallery-001/implementation-desktop-1440x900.jpg",
+        "sha256": "094c150950af01cf0e44d0d95ee2229ee9edf4c48fcc17ba92c84993448a237e"
+      },
+      {
+        "path": "docs/quality/evidence/home-gallery-001/implementation-mobile-390x1000.jpg",
+        "sha256": "d6f0034cbb4993d839abbb9e1a3fe931c640f1431fe9ec99044fe64641889972"
+      },
+      {
+        "path": "docs/quality/evidence/home-gallery-001/production-approved-ugc-probe.json",
+        "sha256": "37f3fa29f7f9b84721ae117bf85efb4ce79fe7d2015192e2ce0cd62d8981f93c"
+      },
+      {
+        "path": "docs/quality/evidence/home-hero-001/README.md",
+        "sha256": "2d896a2ca1d813dc70306a1f6895d5e6bea524c40b80b0aa92b2b9d663ef05a4"
+      },
+      {
+        "path": "docs/quality/evidence/home-hero-001/desktop-1440x1000.png",
+        "sha256": "2da19ba3939d749edf838dedf75e9663861d3fd5732ebb6b0dfc5d072bd0bcfc"
+      },
+      {
+        "path": "docs/quality/evidence/home-hero-001/mobile-390x844.png",
+        "sha256": "0d214231531f2c70b2648021b249f728b9769ce4e146a9d0f908851c8486c7f7"
+      },
+      {
+        "path": "docs/quality/evidence/kw-02-contact-sample/README.md",
+        "sha256": "f428506f33efbb049d930156f2b96ded4285d37424ccfe1f5dc84d3f2b77e22a"
+      },
+      {
+        "path": "docs/quality/evidence/kw-02-remaining-batch/README.md",
+        "sha256": "8ebfc99f23acc293fc4efc9a66ab5d0b043c4bed785639b9b1c67bed6da050d8"
+      },
+      {
+        "path": "docs/quality/evidence/locale-001-rights-copy/README.md",
+        "sha256": "efa49792c9bd443f78d07d25dea4ab693e986d7df45b7a8b713de14a9d7f4cde"
+      },
+      {
+        "path": "docs/quality/evidence/locale-001-rights-copy/acceptance-checks.json",
+        "sha256": "bfe4948dc8eae906a7f6435fbc0cbfc29ee725027f9599a2d49444c305cd9d63"
+      },
+      {
+        "path": "docs/quality/evidence/locale-001-rights-copy/checks.json",
+        "sha256": "55b49e3506e3141ffd1ef5dd701136411dc06b0c351a10fe99caf1fd9eadfdfb"
+      },
+      {
+        "path": "docs/quality/evidence/locale-001-rights-copy/mobile-revision-checks.json",
+        "sha256": "71421d8433f2e8fe3f05c0d62ee46584535e4ef1c378fef54f0ec2bd0b4fb31f"
+      },
+      {
+        "path": "docs/quality/evidence/locale-001-rights-copy/proposal-checks.json",
+        "sha256": "0ec30303ae7c7fc9a3af588e0939017aa2175896e4ec1fef741741ccbfe82de4"
+      },
+      {
+        "path": "docs/quality/evidence/mig-oval-001/README.md",
+        "sha256": "1e16c0286e5eabad0030f5cea97bb2b478d94ad6f0eb50c61bf45ead76ccd09d"
+      },
+      {
+        "path": "docs/quality/evidence/mig-oval-001/acceptance-checks.json",
+        "sha256": "48d1db1998610c94e5bfc398b51ae31edf7751f251fd0b0e0cbbefff4faa6a6f"
+      },
+      {
+        "path": "docs/quality/evidence/mig-oval-001/checks.json",
+        "sha256": "47bfac00708ee560e90b915bbc7fd6c57e4fc9a7def201fa3a4c9ea8a2fd3231"
+      },
+      {
+        "path": "docs/quality/evidence/mig-oval-001/proposal-checks.json",
+        "sha256": "20e52eba57d40a3d407e73962d0f799f5e7f5415e6dc950454da99dbf890d350"
+      },
+      {
+        "path": "docs/quality/evidence/mig-pixel-001/README.md",
+        "sha256": "cb24c9b36215f2d3d319acebb4dd83d3f59eced4fde29573b4210553315562f7"
+      },
+      {
+        "path": "docs/quality/evidence/mig-pixel-001/acceptance-checks.json",
+        "sha256": "7a5f9e7b3f58b823357c2e26a70cbab1771d8ef86cf2c83b23703c3bfe85dd70"
+      },
+      {
+        "path": "docs/quality/evidence/mig-pixel-001/checks.json",
+        "sha256": "bb9571f180ccc4dd2d4a7b29e1733582b363eb1c49c637051fcdb0edb984d512"
+      },
+      {
+        "path": "docs/quality/evidence/mig-pixel-001/proposal-checks.json",
+        "sha256": "45526d6726ccc0b4f1e837e77f2e0159d306f374f86e2b27ff69fdaf8c157d18"
+      },
+      {
+        "path": "docs/quality/evidence/mig-pixel-001/screenshots/after-ar-1280.jpg",
+        "sha256": "70709abc985ceed93879d193115ad4938a17aa0e2e2fa3684b433028d478cdb7"
+      },
+      {
+        "path": "docs/quality/evidence/mig-pixel-001/screenshots/after-ar-360.jpg",
+        "sha256": "ee2bfcc21d017411cfbb8d9001e85cbc2d0589699d85a314e60032c45446e05e"
+      },
+      {
+        "path": "docs/quality/evidence/mig-pixel-001/screenshots/after-ar-390.jpg",
+        "sha256": "c06fcb8cd492c38a918fd904ae532f8010e5fae6564a5344c3a11354b7bdec81"
+      },
+      {
+        "path": "docs/quality/evidence/mig-pixel-001/screenshots/after-es-1280.jpg",
+        "sha256": "1b52ae906c703f1ef55996de7c5a10e41b40f7730d076f67071a7743e5689fee"
+      },
+      {
+        "path": "docs/quality/evidence/mig-pixel-001/screenshots/after-es-360.jpg",
+        "sha256": "3284d2effab554f8dc53956f861df4232463e988ed3185c5cea728a16955e0ab"
+      },
+      {
+        "path": "docs/quality/evidence/mig-pixel-001/screenshots/after-es-390.jpg",
+        "sha256": "6ad13fb220c3ae816e7ba11542605d3f87328da637acf184e00988a07455c772"
+      },
+      {
+        "path": "docs/quality/evidence/mig-pixel-001/screenshots/after-home-1280.jpg",
+        "sha256": "f1e5bebca8f011802003bb292d922d6bd6435d35a788ff8f1ae8a81fc32cc9b6"
+      },
+      {
+        "path": "docs/quality/evidence/mig-pixel-001/screenshots/after-home-390.jpg",
+        "sha256": "0e8a5d2c0125af35aad9fec3b2389b7cee40365bd63fc999ed466743bf4efbbf"
+      },
+      {
+        "path": "docs/quality/evidence/mig-pixel-001/screenshots/after-oval-1280.jpg",
+        "sha256": "95c123f6ac0a2c613e49ddab6a41b13c37920e2955d9b2d51ad3dd1375da9bcc"
+      },
+      {
+        "path": "docs/quality/evidence/mig-pixel-001/screenshots/after-oval-360.jpg",
+        "sha256": "5786589881878f576f40c9ad285909ca16d904ca78ef78f56cb58e550e71f7af"
+      },
+      {
+        "path": "docs/quality/evidence/mig-pixel-001/screenshots/after-oval-390.jpg",
+        "sha256": "b1a6304c9163af4791286593a31d47a2e60b76b4b2072386ad6f27925c06eb49"
+      },
+      {
+        "path": "docs/quality/evidence/mig-pixel-001/screenshots/after-pixel-1280-stable.jpg",
+        "sha256": "5ff431c25396f4b8b97b8ca51eb789dc91bf8208602d61d7d71ac058e58f0e5d"
+      },
+      {
+        "path": "docs/quality/evidence/mig-pixel-001/screenshots/after-pixel-1280.jpg",
+        "sha256": "eff0c1d76198efe292d8c37bc656b367be7b68539813eaad7e40c86c6538c797"
+      },
+      {
+        "path": "docs/quality/evidence/mig-pixel-001/screenshots/after-pixel-360.jpg",
+        "sha256": "937076dd8a92054b808980d4ffe2fe68ed77cb216ef04112cf7e254e8f4e260c"
+      },
+      {
+        "path": "docs/quality/evidence/mig-pixel-001/screenshots/after-pixel-390.jpg",
+        "sha256": "9f2dea0bf20de06cfffaf98bb60dc1c292446c70637f37b67fd82154403b349f"
+      },
+      {
+        "path": "docs/quality/evidence/mig-pixel-001/screenshots/before-ar-1280.jpg",
+        "sha256": "18ae7ae0b9b4cd9332a7d91b3162187c0ca0faf8658acdb62242cf1ea0e235cb"
+      },
+      {
+        "path": "docs/quality/evidence/mig-pixel-001/screenshots/before-ar-360.jpg",
+        "sha256": "3493bd9f145f15d403be8d251d1d515e0c53c6202c4b9469e06b559535a2d913"
+      },
+      {
+        "path": "docs/quality/evidence/mig-pixel-001/screenshots/before-ar-390.jpg",
+        "sha256": "3e72e3c0b2b23ba1694dd6bff876c0dacb790ee65552f19c8d16e2f4e80a519c"
+      },
+      {
+        "path": "docs/quality/evidence/mig-pixel-001/screenshots/before-es-1280.jpg",
+        "sha256": "26ce2e321281bb479ce111d67cde34628eb2c03bb88d40a066c3f1bb8b25cbca"
+      },
+      {
+        "path": "docs/quality/evidence/mig-pixel-001/screenshots/before-es-360.jpg",
+        "sha256": "5ac0adf297646cd46dbd5facf7ad0809dc6983431e3c6d0d1bee0f443a1611ad"
+      },
+      {
+        "path": "docs/quality/evidence/mig-pixel-001/screenshots/before-es-390.jpg",
+        "sha256": "4880e423597db704be049c2794da834beef5975a728230bdc233d332374790db"
+      },
+      {
+        "path": "docs/quality/evidence/mig-pixel-001/screenshots/before-home-1280.jpg",
+        "sha256": "f1e5bebca8f011802003bb292d922d6bd6435d35a788ff8f1ae8a81fc32cc9b6"
+      },
+      {
+        "path": "docs/quality/evidence/mig-pixel-001/screenshots/before-home-390.jpg",
+        "sha256": "0e8a5d2c0125af35aad9fec3b2389b7cee40365bd63fc999ed466743bf4efbbf"
+      },
+      {
+        "path": "docs/quality/evidence/mig-pixel-001/screenshots/before-oval-1280.jpg",
+        "sha256": "70c1447beffd7669a162643ade88aa974d8fdabaa5a2e69308e36621a56538b7"
+      },
+      {
+        "path": "docs/quality/evidence/mig-pixel-001/screenshots/before-oval-360.jpg",
+        "sha256": "81174ac59e34e9edbce8b0983868dc29f73fff5a021b9e2ee257a5fe5ccfb101"
+      },
+      {
+        "path": "docs/quality/evidence/mig-pixel-001/screenshots/before-oval-390.jpg",
+        "sha256": "c33ba33ec1815604327f3da6bad9024ae7d348505236a7617416fe01df72a83a"
+      },
+      {
+        "path": "docs/quality/evidence/mig-pixel-001/screenshots/before-pixel-1280.jpg",
+        "sha256": "5c34aae558c878938e1973d3237f5461f51cb543b4fd4c3d6abae788fa7da8f1"
+      },
+      {
+        "path": "docs/quality/evidence/mig-pixel-001/screenshots/before-pixel-360.jpg",
+        "sha256": "920ad5da998c2abfefc8051b477f5776189f69df6e28d8c4e00fa9168b99fc59"
+      },
+      {
+        "path": "docs/quality/evidence/mig-pixel-001/screenshots/before-pixel-390.jpg",
+        "sha256": "501060360918926e2edb4306b62246e4d8401ef5ee6edaa755ec47a0423347a1"
+      },
+      {
+        "path": "docs/quality/evidence/mig-pixel-001/screenshots/pixel-adapter-keyboard-focus.jpg",
+        "sha256": "2379af9b44baf9e640dfc5ea727117d3beb4ed8620f2ebd41679eb316a7d437d"
+      },
+      {
+        "path": "docs/quality/evidence/mig-pixel-001/screenshots/pixel-faq-keyboard-open.jpg",
+        "sha256": "72ab6cf75319308a614a920154aa886a7b17e8cb40b409c89ee3bbe69d11bbff"
+      },
+      {
+        "path": "docs/quality/evidence/mig-pixel-001/screenshots/pixel-hero-keyboard-focus.jpg",
+        "sha256": "e396a6dcb52c4854a8dd2326d2e25c2702c5a4e99248a02f01dfc3fb4c069320"
+      },
+      {
+        "path": "docs/quality/evidence/mig-pixel-001/screenshots/pixel-mobile-open-anchor.jpg",
+        "sha256": "d1edd89b5a38948abb513a6801a51533d58df4bb048c4c17fc61c4661b17130f"
+      },
+      {
+        "path": "docs/quality/evidence/mig-pixel-001/screenshots/sidebar-ar-360-focused.jpg",
+        "sha256": "5ab53279c75310ad84292be608c42186ebe3053b19522d04947c5ee2f82d3ef2"
+      },
+      {
+        "path": "docs/quality/evidence/mig-pixel-001/screenshots/sidebar-ar-360.jpg",
+        "sha256": "11cc4a5d35cb2e2d950bba1027e75ab0912f486f525dcddea7c08ab45bd2a52e"
+      },
+      {
+        "path": "docs/quality/evidence/mig-pixel-001/screenshots/sidebar-ar-390-focused.jpg",
+        "sha256": "119f9a419092935c3dc18ddc87416b58632321dac91fb104262796bd57c2af92"
+      },
+      {
+        "path": "docs/quality/evidence/mig-pixel-001/screenshots/sidebar-ar-390.jpg",
+        "sha256": "c7d405ff753a5e470850a0d8c62e7d0c1b00c081d1bc2cdbe375ccb88fdda95b"
+      },
+      {
+        "path": "docs/quality/evidence/mig-pixel-001/screenshots/sidebar-es-360-focused.jpg",
+        "sha256": "564efa5ae3cdbb81ef6998bf0ca282de7af9a2ded91299160369f228792e8722"
+      },
+      {
+        "path": "docs/quality/evidence/mig-pixel-001/screenshots/sidebar-es-360.jpg",
+        "sha256": "caa34bf6d1c155d4e505892e1d64f6f1b3b263059c1464c993d671a8c56f3786"
+      },
+      {
+        "path": "docs/quality/evidence/mig-pixel-001/screenshots/sidebar-es-390-focused.jpg",
+        "sha256": "3e812adfcf2e91d0daf314679805d0599b0d0026193c37ec05297fad5884e78c"
+      },
+      {
+        "path": "docs/quality/evidence/mig-pixel-001/screenshots/sidebar-es-390.jpg",
+        "sha256": "9f19cecf35898f9ce5edf25d0571b1482665547fdcc32f2dcd2773e27790b6fb"
+      },
+      {
+        "path": "docs/quality/evidence/mig-pixel-001/screenshots/sidebar-oval-360-focused.jpg",
+        "sha256": "8fe5e63706067f75bdab4a02092869ed5ccaa3625452cec5e2b56906f04a51b4"
+      },
+      {
+        "path": "docs/quality/evidence/mig-pixel-001/screenshots/sidebar-oval-360.jpg",
+        "sha256": "bad1a2e9aeacaf225377b638031243efa14b451deff93bab0294996997650609"
+      },
+      {
+        "path": "docs/quality/evidence/mig-pixel-001/screenshots/sidebar-oval-390-focused.jpg",
+        "sha256": "bcdafcd8d7886fd7a1201f2d487e1a84542ddde6c7a4e7c29ab447023d3e299a"
+      },
+      {
+        "path": "docs/quality/evidence/mig-pixel-001/screenshots/sidebar-oval-390.jpg",
+        "sha256": "aa1e5b8420975d85cf3ad0e6f2c7dd4e997cb41a4f9ef448f8d800080f1ed7f0"
+      },
+      {
+        "path": "docs/quality/evidence/mig-square-001/README.md",
+        "sha256": "7e9fd30f982af7e5129efda1ecdd26f7d516a1d181523f3a4567c00152990409"
+      },
+      {
+        "path": "docs/quality/evidence/mig-square-001/acceptance-checks.json",
+        "sha256": "29fbf5eb482a1e1ebb56c1b34086bf05d2113518bfeb422bdb8a8b2148636b8c"
+      },
+      {
+        "path": "docs/quality/evidence/mig-square-001/checks.json",
+        "sha256": "f3de4b6319696f228e95ad5fddc53f1ba9588d48237daeee2fb31f1d4000daa6"
+      },
+      {
+        "path": "docs/quality/evidence/mig-square-001/proposal-checks.json",
+        "sha256": "4f737e30de67ec8de4c70954fb7ab7c9cf9e9ecaf91c96ece597245848636ee6"
+      },
+      {
+        "path": "docs/quality/evidence/op-11-canonical-host/README.md",
+        "sha256": "6afc10adeb605298d0f18318ed97a6411a2d61f94bdb3b1f79a931fe12cd6a94"
+      },
+      {
+        "path": "docs/quality/evidence/perf-home-001/README.md",
+        "sha256": "cf83f2dfc6d32cbf21b24ad32187748388d1f8360f07df8d3bd4269c9b772994"
+      },
+      {
+        "path": "docs/quality/evidence/perf-home-001/metrics.json",
+        "sha256": "06eb8a27312031aff0f530f12c5961c552c8def39b582cf96f5abe823ac7c905"
+      },
+      {
+        "path": "docs/quality/evidence/pf-01-activation-response/README.md",
+        "sha256": "118652d153b0036190a6afea9c8688739410148ff27d06e0d1a59f670173399c"
+      },
+      {
+        "path": "docs/quality/evidence/release-2026-09-02/README.md",
+        "sha256": "43fed96eaffaf15e1f800551cbfe4221abc9b213baf68eb8cd33132900d0aa23"
+      },
+      {
+        "path": "docs/quality/evidence/terms-001-rights-copy/README.md",
+        "sha256": "9689d72a5b142b65b639cce43b4508d9eeac5a06d34c4efabe1a8716ba352929"
+      },
+      {
+        "path": "docs/quality/evidence/terms-001-rights-copy/checks.json",
+        "sha256": "5b0aaefeca88262d57203e5caa92ea3ac465f5c399361be4bf873c28c4dccf1d"
+      },
+      {
+        "path": "docs/quality/release-performance-remediation-proposal.md",
+        "sha256": "b424b8564db97706823d38861fca16e211da5094dcc87196861705a4403c56a1"
+      },
+      {
+        "path": "docs/seo/keyword-coverage-release-proposal.md",
+        "sha256": "cef682bf5e3e82cacd006a08b8bb0b8f769ccee09ef3835afb1f70a9afc2895c"
+      },
+      {
+        "path": "lib/games/catalog.ts",
+        "sha256": "6cc0df85e3acf146b3cc18b63cc4785982607fc0e59142ce89f59d2d6ef0ac0d"
+      },
+      {
+        "path": "lib/games/categories.ts",
+        "sha256": "94213ee06bcfc6d621c2e0f4e260c6a91e0e161048730813fced1ee0320d52a4"
+      },
+      {
+        "path": "lib/games/category-content.ts",
+        "sha256": "a5005bd17bcc5b81541ad97b0cebc9653f04e3086ef55dbcd5145a9c7bc01db6"
+      },
+      {
+        "path": "lib/games/category-policy.ts",
+        "sha256": "7e21cea3f2fee12e29f8aca9cbe5b47c2316963572278aae9b8f531ccb4c7454"
+      },
+      {
+        "path": "lib/games/directory-policy.ts",
+        "sha256": "72fc949b2d939681de626cefac8d43be4bb22042c6a5fe9a5eb509a942af7b30"
+      },
+      {
+        "path": "lib/games/directory.ts",
+        "sha256": "ae6f5e98a8886478ec3daafecc7801d99ad4725d63e81faa1dcf5dcaedab0f3d"
+      },
+      {
+        "path": "lib/games/game-player-model.ts",
+        "sha256": "42672e8d0917e9d7d6a1b28137e505ecd4d7b09ba40e3c971751b6d7f3fbe84c"
+      },
+      {
+        "path": "lib/games/game-schema.ts",
+        "sha256": "b3d036c8973bc9562b99b55058e042d9040605f6e04f008dc54378eb005e8df6"
+      },
+      {
+        "path": "lib/games/home-discovery.ts",
+        "sha256": "b172dd4a9e807754f59dfe5f9bb5b42fdc2d360bd89c54eab504f5577dac166e"
+      },
+      {
+        "path": "lib/games/oval-legacy-page.ts",
+        "sha256": "29a465e18d5a0520e1e4db970f7fa5b7b23b6022f317f890d31c8ba22efa4f79"
+      },
+      {
+        "path": "lib/games/pixel-external-page.ts",
+        "sha256": "00ef4fb078b36124ca0ba8f21d1823ce12caad1886908f9765fe1dc9b27626df"
+      },
+      {
+        "path": "lib/games/routes.ts",
+        "sha256": "058434c725a09ae921c2c5f184396377873ad67603130f985fcfe39bcd97c5a6"
+      },
+      {
+        "path": "lib/games/square-homepage.ts",
+        "sha256": "ce7d111d8a4df65194394ed31468a43fac96c83da1f53c8761090f159efe3aa4"
+      },
+      {
+        "path": "lib/seo/canonical-origin.ts",
+        "sha256": "2d506dc08f622a898efd6eb57c9210018d2b8ba73ec8666a3bd4c9685e831fd9"
+      },
+      {
+        "path": "lib/seo/category-sample.ts",
+        "sha256": "480e51f9faaf60b3260b54f7bdd539bf8574fd24f2fc06440d62ecadbb8d190e"
+      },
+      {
+        "path": "lib/seo/game-metadata.ts",
+        "sha256": "87e7f42b085e2714cd22bce3634ccf1272fa822fb70b77292c5831d0f38fe660"
+      },
+      {
+        "path": "lib/seo/game-structured-data.ts",
+        "sha256": "84193180e9b8827a2566d38585ce753b94ee30f4c9b5f6aee4fe22da3c875391"
+      },
+      {
+        "path": "lib/seo/games-directory.ts",
+        "sha256": "02da1204cd8dac745877c5fd1507d55921fb611f788e714225839918413ec4a0"
+      },
+      {
+        "path": "middleware.ts",
+        "sha256": "4ce3b9cd325b843f1f80bca6545c114ac84f3336434a719cbfd47577c7ab53d6"
+      },
+      {
+        "path": "public/games/square-face-cover.png",
+        "sha256": "15a5c93f79859441eef3032ce45e07abc2e91a7520a9aaef42158dd4fe00a535"
+      },
+      {
+        "path": "scripts/category-sample-compat.mjs",
+        "sha256": "a1048c0f3a6ee281bb8001ccb0e59027f4a4b107bc3fd39fedc0ae9b1fbe2eb0"
+      },
+      {
+        "path": "scripts/category-sample-test-utils.mjs",
+        "sha256": "a5ed8f340980c011f8e8e42cf960d5dd6a0483aa332d150b39b5a346bd18b472"
+      },
+      {
+        "path": "scripts/check-about-rights.mjs",
+        "sha256": "5d1591d13e293168dda865890daecbd33048bfca16b569a4059a262afae94868"
+      },
+      {
+        "path": "scripts/check-ai-crawler-policy.mjs",
+        "sha256": "76e030b11a653a01ed101e13c06460f29354f55d33c1e96aab4ace3f53be5042"
+      },
+      {
+        "path": "scripts/check-category-sample.mjs",
+        "sha256": "185f0b96c011da03f9e028b17e03fce8a56d2128a3cf5dee1c4b2cde02ae5f01"
+      },
+      {
+        "path": "scripts/check-editorial-rights.mjs",
+        "sha256": "1ec7268b707490f6b55d297b5bfb7a1b36f944da45ddcc8d6f561a52518a503b"
+      },
+      {
+        "path": "scripts/check-gallery-rights.mjs",
+        "sha256": "bd2ed64fb002334e4e3d72527ec28e87414877bd8777535b97ca102b4953996f"
+      },
+      {
+        "path": "scripts/check-games-index.mjs",
+        "sha256": "df86ca15473cc373707d0451809baf3a81565a931a0536532b8da21c0e694282"
+      },
+      {
+        "path": "scripts/check-locale-rights.mjs",
+        "sha256": "05acbc5cf323e2a024e1f664d0a71badaede373a7b9955627020336403b5aeef"
+      },
+      {
+        "path": "scripts/check-oval-legacy-page.mjs",
+        "sha256": "e956d6505ff788195c61f9e664cb63bc98e04bc75bd940871df0710fff612bc2"
+      },
+      {
+        "path": "scripts/check-pixel-external-page.mjs",
+        "sha256": "51df87ab42a045b6b37b494805cefa4e8841da934fbfe6caaafd398b52828ad9"
+      },
+      {
+        "path": "scripts/check-square-homepage.mjs",
+        "sha256": "41e99e6ec5b81d0ca3cc849cb8705d13bc87e1a2b52f772c8b6d2823f2d6c852"
+      },
+      {
+        "path": "scripts/check-terms-rights.mjs",
+        "sha256": "62ab3d26bb2459fe9abe92a1c520e740cba77f01cec5324a7d19ddadfe6dba50"
+      },
+      {
+        "path": "scripts/fixtures/category-sample-approved-source-delta.json",
+        "sha256": "2d121f1f37eb1366d8259febab3e7df801c0f2fe74f976f06294c0ec09c4964f"
+      },
+      {
+        "path": "scripts/fixtures/category-sample-baseline.json",
+        "sha256": "850a3175bfdbf7fff5e7af50730be85ca88b572194dac7da9ff21fae497cadda"
+      },
+      {
+        "path": "scripts/fixtures/games-index-approved-source-delta.json",
+        "sha256": "abeb25af3c27fd7b6f1c9479be31c7d8233b91587a1401b2ae3b7d00fa8d9cec"
+      },
+      {
+        "path": "scripts/games-index-compat.mjs",
+        "sha256": "fc9b87e8c900d32b3058d4a023ff2e58374e173ddd932671ac7079093062ead9"
+      },
+      {
+        "path": "scripts/robots-policy.mjs",
+        "sha256": "0d3f85f8568a4b17a53c2eaa82fd06460a14262160ba53131f29978c5f4416ed"
+      },
+      {
+        "path": "scripts/run-canonical-host-check.mjs",
+        "sha256": "99c282d9246c3a3c060c9b697d0c4a769e6b7622a63b97ab99899d41bc2edc4b"
+      },
+      {
+        "path": "scripts/run-game-component-check.mjs",
+        "sha256": "bf05d0f3119b094bc4674846c71bbc69482541921ba199ec693dce021ba86e62"
+      },
+      {
+        "path": "scripts/run-game-data-check.mjs",
+        "sha256": "985321918bfc7abdbea07a675b710d40fe8ddbbfa6d128e24e67cd90309f536b"
+      },
+      {
+        "path": "scripts/run-game-metadata-check.mjs",
+        "sha256": "a6a16a08338143f1ada4f8f446e89f2e08208c0896cf884a5d494c894931ccf8"
+      },
+      {
+        "path": "scripts/run-game-player-check.mjs",
+        "sha256": "59f17f0f2dacc0b596f572a9a1871e58f78623a267257e3f33e7f1eac7bd9f09"
+      },
+      {
+        "path": "scripts/run-game-route-check.mjs",
+        "sha256": "be951b8407d08aadf9e1b2b29dda30fe33ffb133af6cd8ee6e8c7897a95eac44"
+      },
+      {
+        "path": "scripts/run-game-template-check.mjs",
+        "sha256": "c7121e18a868db05d702639ff8448cbaad958c20117e91b71fb0ed71d98ced8d"
+      },
+      {
+        "path": "scripts/run-home-discovery-check.mjs",
+        "sha256": "70cb3221dedd42081b24c201902a3dce2ff46c31e54b8ee478384da4545b4196"
+      },
+      {
+        "path": "scripts/run-home-gallery-check.mjs",
+        "sha256": "e0bf58437b6de392dd98af862c97be25107432cec1a24df9a8d9d028b7ab738d"
+      },
+      {
+        "path": "scripts/run-home-hero-check.mjs",
+        "sha256": "40ad21661b97f27e306c2eaa8d130637ecbd9a31d5c72c8ef25c214fb3a276e0"
+      },
+      {
+        "path": "scripts/run-home-information-architecture-check.mjs",
+        "sha256": "6fc9c018915cb8cbdf68f23fde16239be0cb246bd6f92eab7000b243a98d9f66"
+      },
+      {
+        "path": "scripts/run-home-performance-check.mjs",
+        "sha256": "58c55d5a6be4d07961c9163167fb2b1394c2807d4a31b8522da4e79ff7d9d308"
+      },
+      {
+        "path": "scripts/validate-canonical-host.ts",
+        "sha256": "1c7d329c5a0d5ac1b06432381f0933cfe70e0f17f8b4081f5e9695d23a6d32aa"
+      },
+      {
+        "path": "scripts/validate-game-components.tsx",
+        "sha256": "3ba59b4e768241a57ec53da796c5cca2c35c6b69c95259f827166c0780a7b74d"
+      },
+      {
+        "path": "scripts/validate-game-data.ts",
+        "sha256": "7e6f204d5397830accd8e33534939146bcbdd934b3ec49d8653c113b412d73bd"
+      },
+      {
+        "path": "scripts/validate-game-metadata.ts",
+        "sha256": "72c8aa3f30b341d9eec53d55551ddd422c9271aca9b52d203469a8910b11b403"
+      },
+      {
+        "path": "scripts/validate-game-player.tsx",
+        "sha256": "370b6809735b2b1ccbd99003fea04ea0f06a9761950333d765a661b3157797eb"
+      },
+      {
+        "path": "scripts/validate-game-routes.ts",
+        "sha256": "6c9795ea4b3611650465bbe424ad0e88514c08fa9761cf4952c1ca1b54ef7680"
+      },
+      {
+        "path": "scripts/validate-game-template.tsx",
+        "sha256": "5427f7fbd835530eaa34ef7fc514692b203f8f312e71624ed51df3dc14af6406"
+      },
+      {
+        "path": "scripts/validate-home-discovery.tsx",
+        "sha256": "f0236c66dc6e603595d39ba675293c5aba44add9a50cd71b7a2f7e461065d894"
+      },
+      {
+        "path": "scripts/validate-home-gallery.tsx",
+        "sha256": "9d551c13b6df1c9173c32a805b07abe6ba85bef830057db78bc4653d56aac19b"
+      },
+      {
+        "path": "scripts/validate-home-hero.tsx",
+        "sha256": "6d2f6dc8332a7ea2fed9776ae3e453857c6ee2f4adfd2528ce6663fab73c9e3c"
+      },
+      {
+        "path": "scripts/validate-home-information-architecture.tsx",
+        "sha256": "e3c0001100d69301d7007ba8fc3840779530fbdadae93bd784d48978138cfbc4"
+      },
+      {
+        "path": "scripts/validate-home-performance.tsx",
+        "sha256": "8aefc3b9227758e6f2b651f539b8385bb5275376b6d939f6c0e76f618a48d90d"
+      },
+      {
+        "path": "tsconfig.canonical-host-check.json",
+        "sha256": "f61329ded5f26f87aaa169c8cb1af4f230fbd46c44502d7de28e3a3edced4b5a"
+      },
+      {
+        "path": "tsconfig.game-component-check.json",
+        "sha256": "97909d1333961fdc8f5b83e793ce1c10798e683858e11d76948d0bb38f03d657"
+      },
+      {
+        "path": "tsconfig.game-data.json",
+        "sha256": "33c616dfc4bf4a2322afbf7bac4cd2de9f5f6559e3a85eed98a72a2117c6e765"
+      },
+      {
+        "path": "tsconfig.game-metadata-check.json",
+        "sha256": "7c6cb07973e15c9da556c7265014e89c48489b1826c470b0dece7afb840b924c"
+      },
+      {
+        "path": "tsconfig.game-player-check.json",
+        "sha256": "241a994c9ad42e55bf87008f082cd0ceb49a661fef3c11e46f6d0e6bd0e68540"
+      },
+      {
+        "path": "tsconfig.game-route-check.json",
+        "sha256": "4b8a1a96963832d4df24574e1ca4d07571d54074d550c1bece90329a7ed36a44"
+      },
+      {
+        "path": "tsconfig.game-template-check.json",
+        "sha256": "2fa94755c19aa9685ad62abc33f2e981762a190b52e5c25ef5596dbf78259c8b"
+      },
+      {
+        "path": "tsconfig.home-discovery-check.json",
+        "sha256": "3381c4132167cecd7add583e30350465bd34b2a4bb492521aa13bc9399290dd5"
+      },
+      {
+        "path": "tsconfig.home-gallery-check.json",
+        "sha256": "91f1211e3082673356a99c13427bebbab0113e8a0932c95d58ca21b3c5b262a1"
+      },
+      {
+        "path": "tsconfig.home-hero-check.json",
+        "sha256": "e6306654f28a439227de0ddd6def791130546c0456d926012dd3c00aab2ce874"
+      },
+      {
+        "path": "tsconfig.home-ia-check.json",
+        "sha256": "f3b531a3adbbcbd7c45ca52331cba05fb0b942ef43ef40b45d7b906918c3ec1c"
+      },
+      {
+        "path": "tsconfig.home-performance-check.json",
+        "sha256": "88832627e1187686e8d2b1beff32773392ea9b419b4e534c08759dbc01bdb31e"
+      },
+      {
+        "path": "tsconfig.player.json",
+        "sha256": "194b2fde6b9d25c956e4393f0c0bd4d244c85458809a3323781935e835a252c2"
+      },
+      {
+        "path": "tsconfig.routes.json",
+        "sha256": "a0be515c3c34f25a311f1f3b6836ed4d5485d9ad194ad11c9bca00d3ec437ae3"
+      },
+      {
+        "path": ".agents/skills/website-quality-supervisor/SKILL.md",
+        "sha256": "5abe776de30a2c05cfb65a0e24705467f424b359c13551c35d13f4b941bc7041"
+      },
+      {
+        "path": ".agents/skills/website-quality-supervisor/agents/openai.yaml",
+        "sha256": "7ba12994782b10914158325f6cb1e47d59e1c74ecea7c524fb1b77162d1418f7"
+      },
+      {
+        "path": ".dev.vars.example",
+        "sha256": "8e0e76a7ea3dbd2cadd1d6978a8e25b642ce486aed838249cb4286672cf9400a"
+      },
+      {
+        "path": ".eslintrc.json",
+        "sha256": "bac4378e77bf3142b9d096d6b978021fca3fa78d581bef96e7acef844d737d16"
+      },
+      {
+        "path": ".gitignore",
+        "sha256": "b377c30920d8019afa9281db73391f653e4757a80a9b6b9a4e9503fb6b6d9108"
+      },
+      {
+        "path": "AGENTS.md",
+        "sha256": "08c198f947f2945bc86ffccf715bc7ff8bb81e817d84e8cad37d81f4bc2d56c3"
+      },
+      {
+        "path": "CHANGELOG.md",
+        "sha256": "238338816c0b37d1e204c5813380d157915d0c2e8c39d8b4dfc919379c58b9e0"
+      },
+      {
+        "path": "CLAUDE.md",
+        "sha256": "453521de4fa565c9c7499b62f9baa1296509c846a04b7a1f996fb060d1f28920"
+      },
+      {
+        "path": "CONTENT_PLAN.md",
+        "sha256": "f18e848328c708a896ec8e988d55979ee6fd121689249e67bb8f6c1934211d4c"
+      },
+      {
+        "path": "DEPLOYMENT_TODO.md",
+        "sha256": "41335fc992572c7defe7bf0d4e2ad1c8e0e7956548f8ee3e07545dada5bb8f72"
+      },
+      {
+        "path": "PROJECT_BRIEF.md",
+        "sha256": "9b577b8ee50a5e6ab8b4f5ad4fcf3c484b3f8b97ec0db02cce015bb767b2ecea"
+      },
+      {
+        "path": "QUALITY_STANDARD.md",
+        "sha256": "a7a1058c372eb5b596f5b718b19b7b635d6e917a203766496b6ab1985db0cc15"
+      },
+      {
+        "path": "README.md",
+        "sha256": "c508a746b4a5c3ea8b3335e1586645c0c8bc502d3ccb7e2c40ea858c0ef1a24c"
+      },
+      {
+        "path": "RULES.md",
+        "sha256": "7d1f4e543c275adaa6261773247bcf7dbac4a41e293fb34ca0145c2c91414a20"
+      },
+      {
+        "path": "SEO_ARCHITECTURE.md",
+        "sha256": "9ebfb68754d992adfdc98852041dbea2449f97aa2a7b5732bbd286f640ae87dd"
+      },
+      {
+        "path": "SEO_GUIDE.md",
+        "sha256": "66b4aab51e60e4e3ee1fce0d2e7967cc91df9cd7b89807d26c86e731dfee6673"
+      },
+      {
+        "path": "SEO_PLAN.md",
+        "sha256": "76d63a734173bb0063a0a9a407a5af39aff48ec9e71ea7ddcf6d3daaa6fdb5c9"
+      },
+      {
+        "path": "SEO_RULES.md",
+        "sha256": "6db4c53b2da42e090239a5cf7c20b6814dcb98e250299eb2a1a69c9f187d7b22"
+      },
+      {
+        "path": "STRATEGY.md",
+        "sha256": "a45738169e36c8884026cfdbeb7e8b524737bf4e78b4f4e774daebd9d7cda68c"
+      },
+      {
+        "path": "STYLE_GUIDE.md",
+        "sha256": "29212556c43636fd46d6c60c8b9072d62d7749a25e95a401ced1001be3e10e89"
+      },
+      {
+        "path": "TECH_RULES.md",
+        "sha256": "0c40591fb3820d83fdb82f4be9863b89b4360de587bfb03dec6d48e686a11482"
+      },
+      {
+        "path": "app/[locale]/page.tsx",
+        "sha256": "e47894775647c4a8630490b2e7ab0a72cc4fdcc2d0f253ce2ce724676adf7ece"
+      },
+      {
+        "path": "app/about-us/page.tsx",
+        "sha256": "bd812baed9b69e531d369be6e0be168dc5232d3729def0d7f5a747fbccbf1779"
+      },
+      {
+        "path": "app/admin/comments/page.tsx",
+        "sha256": "5da66215f6c126892b132af3f11937d2fba81dc9d3b86b680b207b0cd6680f99"
+      },
+      {
+        "path": "app/api/admin/comment-images/[...key]/route.ts",
+        "sha256": "818b0b4c81cd56f9455a3228adc95137268a90db6b82f1a2e1f6f8ec232f03a0"
+      },
+      {
+        "path": "app/api/admin/comments/[id]/route.ts",
+        "sha256": "e471d00f054151ac6636c81fd9d21ce108b19c86875ee524f2e0b44f429c135b"
+      },
+      {
+        "path": "app/api/admin/comments/route.ts",
+        "sha256": "63ddcb14964f633f199af6873497abb9091420dba4e889396ca7d2d775578bb2"
+      },
+      {
+        "path": "app/api/comment-images/[...key]/route.ts",
+        "sha256": "defb2f8ec7f4be7c19beb82663f781ae2e735cf19db127d603f5c82d8925d98a"
+      },
+      {
+        "path": "app/api/comments/[id]/like/route.ts",
+        "sha256": "edf2b13178884db9af47debed1186655b55a96abe807e1dde8f4367381089a14"
+      },
+      {
+        "path": "app/api/comments/route.ts",
+        "sha256": "4297d56bf81fb7182236ef0c880cd1039907dc345415e1bacddc39ae01ab2e7f"
+      },
+      {
+        "path": "app/blog/avatar-maker-without-signup/page.tsx",
+        "sha256": "27b767b9898a1cf54a8bd8d15949690a99c3bcf8fee0a510275d2c05880dce97"
+      },
+      {
+        "path": "app/blog/best-discord-avatar-style/page.tsx",
+        "sha256": "2e0807728e27e7b62e0be6aee9319079626b6d8f259fbf452afb3193f6040b9d"
+      },
+      {
+        "path": "app/blog/cute-profile-picture-ideas/page.tsx",
+        "sha256": "23d0d94e184f86457eec7bccce657e83a401d94fef36686008af683fbf9ed126"
+      },
+      {
+        "path": "app/blog/discord-avatar-size-guide/page.tsx",
+        "sha256": "3990a509c0f009f3007edf767e28983943e35ec03a9422483d7427972e3a7a24"
+      },
+      {
+        "path": "app/blog/how-to-make-a-cute-discord-profile-icon/page.tsx",
+        "sha256": "126709f27ed82ffa275ec56f8c19d3ef97bd972f3a6d7737eca02eb016fe4a38"
+      },
+      {
+        "path": "app/blog/page.tsx",
+        "sha256": "ae764e709b2e95b94978264e94f7c8339e18fbb40619e2b61003e73979b777e9"
+      },
+      {
+        "path": "app/blog/square-avatar-vs-round-avatar/page.tsx",
+        "sha256": "21831b3d94e787b7442827822de117fd9cb6854408e25ea55443bc5cafb3c82b"
+      },
+      {
+        "path": "app/blog/tiktok-profile-icon-ideas/page.tsx",
+        "sha256": "c480c6c80cc10800e1ff12710861712d4bde2aefe7145e7666d8352e0f2c29ad"
+      },
+      {
+        "path": "app/contact/page.tsx",
+        "sha256": "43c774c71e326750845afe0168f4d66bbb1ee47367bcfc6015bb17592860c98e"
+      },
+      {
+        "path": "app/cute-square-avatar-generator/page.tsx",
+        "sha256": "fe22cddd887475ecc89983278ceeabc06678a344c8ea7aefb47a65eb7a893042"
+      },
+      {
+        "path": "app/editorial-policy/page.tsx",
+        "sha256": "c758e70ce143b58db1453877efcb6d82a9e89fd96d1bc473c73c6dcf4c81a529"
+      },
+      {
+        "path": "app/free-avatar-maker/page.tsx",
+        "sha256": "65b5cd3745e7aad2dd9bdb11a851fb8a7fa74fe6e7a2e3221474688c76b75aa5"
+      },
+      {
+        "path": "app/gallery/page.tsx",
+        "sha256": "d051f12b8e4c71a9b15a75efb59c3ffbb1f9904ec5d69577f9640ff47d479901"
+      },
+      {
+        "path": "app/globals.css",
+        "sha256": "5b5e8d7253be79edbd479a01a53bf3f760d52482ced5f4c6edcd387975669867"
+      },
+      {
+        "path": "app/layout.tsx",
+        "sha256": "c9d72791c1167896c2ab3a72bb9e7eada5b909bbf8f540a6e64fb52bed4e77b5"
+      },
+      {
+        "path": "app/manifest.ts",
+        "sha256": "035fb0b64fd59984750a16cca5b4e7bd4e776d8ee7c9a608e339cabef2a8a179"
+      },
+      {
+        "path": "app/oval-face-icon-generator/page.tsx",
+        "sha256": "d52adae5f4e58886ff467df0a335128ba5b1752cd9875d085edd29f452a27e22"
+      },
+      {
+        "path": "app/page.tsx",
+        "sha256": "d10f79e2522ca3c3e21195e09df0f090b119af6452c265e48eb125639b2c46c1"
+      },
+      {
+        "path": "app/pixel-art-avatar-icon-generator/page.tsx",
+        "sha256": "6116dc65fae1b664512d2267263f242b5085765f4a5f0fbac3368c301d92496c"
+      },
+      {
+        "path": "app/pixel-square-face-maker/page.tsx",
+        "sha256": "b691a2359a6a6581eadc75fb1944a93a1718f85c4fff11ba6ebdfbad756603e5"
+      },
+      {
+        "path": "app/privacy-policy/page.tsx",
+        "sha256": "eba51fcadf3aa4e61506242d5d5fb1d9d4ac7d870626e7877670ae0984c7d1c4"
+      },
+      {
+        "path": "app/robots.ts",
+        "sha256": "dd47d2bd1355fb44791c0f5e481b06c98142639383a902cd6e976cb4f7583aa8"
+      },
+      {
+        "path": "app/sitemap.ts",
+        "sha256": "183aafaeb14f529f8c341c70aa9c3278082f670aeaa4f487271d6ff110e0db18"
+      },
+      {
+        "path": "app/square-avatar-generator/page.tsx",
+        "sha256": "a239bb17efb6eddce7e49f3214cef92017eed9f167c0879103855d91b4554a31"
+      },
+      {
+        "path": "app/square-face-icon-generator/page.tsx",
+        "sha256": "24e88b1057bfea65f350bb84205cc5fc89fec0cd06e4f6dea24719c7513ff731"
+      },
+      {
+        "path": "app/terms-of-service/page.tsx",
+        "sha256": "8121043e9a474a19a5c1c366ed80e03db93ec6bc8dc1ed9eda63ef60d85c83f5"
+      },
+      {
+        "path": "components/AdminComments.tsx",
+        "sha256": "a3a1dd2d1bc175a4862a49299b363fe50c9b006945fc6b20df97dc08d527af4d"
+      },
+      {
+        "path": "components/AvatarGenerator.tsx",
+        "sha256": "61e65dd817d517975ba89ca2ba7e7b182cf015bc296e4a993aa4733342fda74b"
+      },
+      {
+        "path": "components/CloudflareAnalytics.tsx",
+        "sha256": "54e33cdc6f229a708c86013649a283ed946be150f717b11eebc6ccdb793368c4"
+      },
+      {
+        "path": "components/CommentSection.tsx",
+        "sha256": "02db74c38bf07f57c92defb239866cd75bfeef561333de1db9acfc9d44ddfd21"
+      },
+      {
+        "path": "components/DeferredThirdPartyScripts.tsx",
+        "sha256": "d660cbb3e2912dbbd9a0bb118e00237cb41aa81455fc0034be26f7fd17e261df"
+      },
+      {
+        "path": "components/FlashGenerator.tsx",
+        "sha256": "c443323031b15428a502ff4fcad3653ffc424ef75db9335b76883576f45ac794"
+      },
+      {
+        "path": "components/GameSidebar.tsx",
+        "sha256": "fc0c33185e4852ae7024c1c3474c7976817a012bd96360721fc32d29399567da"
+      },
+      {
+        "path": "components/HomePage.tsx",
+        "sha256": "294ff206904e9cc127fcf986d54e4820017331370208a5d4731c84dbb5999623"
+      },
+      {
+        "path": "components/InstallPrompt.tsx",
+        "sha256": "fb4a9fd5a43625673f03b26b8d31284c955b4e970d9fbe80be41863228c02ac8"
+      },
+      {
+        "path": "components/ShareButtons.tsx",
+        "sha256": "5becc8e6cf2a779dd192222de56087f468b41243f60950d0290f45ff07a71a28"
+      },
+      {
+        "path": "components/SiteFooter.tsx",
+        "sha256": "9e02069c0ad45f33e14aace05afbba2d1a6f01d29c64e593b93dce0e52a38565"
+      },
+      {
+        "path": "components/SiteHeader.tsx",
+        "sha256": "dd7b227b9b8cd195352bd4167ced3365e3866757043953a470982ab897222dbc"
+      },
+      {
+        "path": "data/game-license-registry.json",
+        "sha256": "fb0b94f56ffa3c7feca89ee136c73795a95d993de0ebe16d81ca8041da4a8924"
+      },
+      {
+        "path": "docs/audit/current-architecture.md",
+        "sha256": "597b8105b3487827aed087713db51f4773a008e58067320cd9008bda1b4ddc23"
+      },
+      {
+        "path": "docs/baseline/2026-08-31-baseline.md",
+        "sha256": "8a7899f0e1321a6d82fae281fc9f51a9ed05bd367814a818c84492a407737a99"
+      },
+      {
+        "path": "docs/baseline/evidence/lighthouse-desktop-2026-08-31.json",
+        "sha256": "60613861913e9d558d9e9567f3c38e091c9b5ad50f87b45aa3dbf7076a91c924"
+      },
+      {
+        "path": "docs/baseline/evidence/lighthouse-mobile-2026-08-31.json",
+        "sha256": "5781efc12d42c72f5a57bb4f6ef411a72484c697d81d28d654c80ff49a3f7641"
+      },
+      {
+        "path": "docs/indexnow.md",
+        "sha256": "56db5e9bd39059d9f86f4a8e0851fe0f97bd245330bbc7ea00e43d14b5ee84fb"
+      },
+      {
+        "path": "docs/legal/game-rights.md",
+        "sha256": "bd84d541b4d870fdc432df6c1b0d58ffa7ded387d491500e268be9c018fd0ebb"
+      },
+      {
+        "path": "docs/migration/rollback-plan.md",
+        "sha256": "5cc1e19fc15057adbcabace1d5233542e73a7e6e2c63d8dd324c67a6d461507b"
+      },
+      {
+        "path": "docs/migration/url-freeze.csv",
+        "sha256": "833246f2ba4dc8eab5d9ce30a198013042eada7739785f630ce88bbc245b028d"
+      },
+      {
+        "path": "docs/product/positioning.md",
+        "sha256": "e252d10f3873a1c690581e63d7cefb70d841b4070d22a2b34ad332384d61cacc"
+      },
+      {
+        "path": "docs/quality/AGENTS.template.md",
+        "sha256": "be8fcff3648964d90ff8a38c212c56343e6ad6f8246d6e23c5dc17cf6b746f49"
+      },
+      {
+        "path": "docs/quality/STYLE_GUIDE.template.md",
+        "sha256": "6ed0f5023ec5ef96f598f7812551f16b52cd71638a49caa78daac6e3c3bad856"
+      },
+      {
+        "path": "docs/quality/installation-and-board-workflow.md",
+        "sha256": "c708e69c7fba49ffcc7d05441e5b62a0187e76dccf11f37590b6dd90a3d60773"
+      },
+      {
+        "path": "docs/quality/创建输出表单.template.md",
+        "sha256": "83953d7cdd2211beb1ffcec1af739f6696caa7f78e6f3bc39e2de9a8375d4a6b"
+      },
+      {
+        "path": "lib/comment-store.ts",
+        "sha256": "734fa24cbf3cf6518f5026c93953628dca8c28935db6927d53650d4019865804"
+      },
+      {
+        "path": "lib/locales.ts",
+        "sha256": "a96fefe1140236963e49b59ed632641794f1b39b5f5c3bd5df79adac876df8db"
+      },
+      {
+        "path": "lib/metadata.ts",
+        "sha256": "ed02bc92dbfe7e71c0988bef9cf8bbdabc34caef5a1a2ba67d40cf69d839a275"
+      },
+      {
+        "path": "next-env.d.ts",
+        "sha256": "9dd9d642cdb87d4d5b3173217e0c45429b3e47a6f5cf5fb0ead6c644ec5fed01"
+      },
+      {
+        "path": "next.config.mjs",
+        "sha256": "10f3416af7a0a92f59c4d283113624e9c286f645c6155e91c5a381d512feb9ee"
+      },
+      {
+        "path": "open-next.config.ts",
+        "sha256": "8e02c850592160eb80d1aed908789f317babcb76985792a86bb79e7c0dd4b1d9"
+      },
+      {
+        "path": "package-lock.json",
+        "sha256": "bf7b778ff42d02d40a11190d56d969cb03ac183a0cf70dbd85c199dc79778c97"
+      },
+      {
+        "path": "package.json",
+        "sha256": "5a4ee571c974dcd205cf0fdd5c50e719ff365922193c087b2fefca6074d71436"
+      },
+      {
+        "path": "prompts/BUILD_PROMPT.md",
+        "sha256": "ee75331ce17de5a03ff71fa8557c7a41e5fda7ec3522e48f8fe18f7a9ec2542e"
+      },
+      {
+        "path": "prompts/广告与变现.md",
+        "sha256": "a8d6cd25698f1100c2c85a931718008792c1f8bf27eaf7346bc554b427e967b1"
+      },
+      {
+        "path": "public/07647d4631f55c330de4b7c203375f6e.txt",
+        "sha256": "00d523da026f8eab82be8ff615c798b1d157ee9d10b8f6d165ff920e31c25106"
+      },
+      {
+        "path": "public/ads.txt",
+        "sha256": "5c1e1f2f952846d71cfd0548be371c7bbf2884a76b640fc2563723c40ffb65ff"
+      },
+      {
+        "path": "public/favicon.ico",
+        "sha256": "e13224f7b7c3f2cf5e78ddf90c9e541ab09a08e29cd9cf912e2f7bdde52ee534"
+      },
+      {
+        "path": "public/favicon16.png",
+        "sha256": "7e17a011679d625f17612a266831532ea06d89fde9eae6cf3e2da54c355f0bfe"
+      },
+      {
+        "path": "public/favicon180.png",
+        "sha256": "4a5c287400d99e411fbce126fdd57d13ed82ea3e8fe9081d8fa93941659994bf"
+      },
+      {
+        "path": "public/favicon192.png",
+        "sha256": "6375bd4e44062528b5a31a063be815db588639e6bce40f96b4efe70b7ed8437d"
+      },
+      {
+        "path": "public/favicon32.png",
+        "sha256": "ff27303534461c396a7d1094c888bb1883b243ca8f55084140edcaf2352011fe"
+      },
+      {
+        "path": "public/favicon512.png",
+        "sha256": "7c29beef953a42953af5d95f307f21eae97be72303ac16b52ccb7201ee4c42ac"
+      },
+      {
+        "path": "public/game-face-samples/classic.webp",
+        "sha256": "77fa0970ea091a812a47c9c4e14d46d75e39edcac08bc7960178c48bcf12cf22"
+      },
+      {
+        "path": "public/game-face-samples/cute.webp",
+        "sha256": "3bfed93670c92dbd396866385e5f18d085a975668eddc5b8f7dc34869b5208e8"
+      },
+      {
+        "path": "public/game-face-samples/funny.webp",
+        "sha256": "c0b0efcaafe1b534a95b3fdad84f1536e64ddb0a41b28ef3c8982461999bcada"
+      },
+      {
+        "path": "public/game-face-samples/gamer.webp",
+        "sha256": "92012feead14455b70f8d53433a5d5bafc6850da3441d4c13abace4e1254f1b3"
+      },
+      {
+        "path": "public/game-face-samples/ideas/classic-face.webp",
+        "sha256": "f6d11c9d21ffc1aadef442668ed2019b2b6c1392f52d91c9de16df1d9c0f928b"
+      },
+      {
+        "path": "public/game-face-samples/ideas/cute-square-face.webp",
+        "sha256": "3bfed93670c92dbd396866385e5f18d085a975668eddc5b8f7dc34869b5208e8"
+      },
+      {
+        "path": "public/game-face-samples/ideas/discord-pfp.webp",
+        "sha256": "a2eaedde2f2c607b0ed2e770d82ef29b4e9641f8dc0fd892268994b0fa9780cc"
+      },
+      {
+        "path": "public/game-face-samples/ideas/favicon-style.webp",
+        "sha256": "e07b26fd6206b17a6975d21984a33912d8c92a0bff17b2cceae700f83c0cd1c4"
+      },
+      {
+        "path": "public/game-face-samples/ideas/funny-square-face.webp",
+        "sha256": "c0b0efcaafe1b534a95b3fdad84f1536e64ddb0a41b28ef3c8982461999bcada"
+      },
+      {
+        "path": "public/game-face-samples/ideas/gamer-avatar.webp",
+        "sha256": "92012feead14455b70f8d53433a5d5bafc6850da3441d4c13abace4e1254f1b3"
+      },
+      {
+        "path": "public/game-face-samples/ideas/github-avatar.webp",
+        "sha256": "77fa0970ea091a812a47c9c4e14d46d75e39edcac08bc7960178c48bcf12cf22"
+      },
+      {
+        "path": "public/game-face-samples/ideas/minimal-face.webp",
+        "sha256": "a1afea4eb1fc3c2dd46ebd98404efd78f5647b0531007b33ce8fa6814996cdc7"
+      },
+      {
+        "path": "public/game-face-samples/ideas/notion-icon.webp",
+        "sha256": "302252e9b323adfd3fc877bc8072c2eb644dbc5910610c58f5f3f847748b0c25"
+      },
+      {
+        "path": "public/game-face-samples/ideas/retro-flash-face.webp",
+        "sha256": "1c35a2552ed615558b423adda68de9848c21194826dd20f6629e22b7c3536b10"
+      },
+      {
+        "path": "public/game-face-samples/ideas/simple-icon-face.webp",
+        "sha256": "7699ad059b65eb17c7c33aa0a4097590978773de8155f91dc9accb7081649f2f"
+      },
+      {
+        "path": "public/game-face-samples/ideas/weird-face.webp",
+        "sha256": "79831db5cfa2fac85e040cf8f553925399cd0bcd57d8ed27164245e5274ed341"
+      },
+      {
+        "path": "public/game-face-samples/minimal.webp",
+        "sha256": "a1afea4eb1fc3c2dd46ebd98404efd78f5647b0531007b33ce8fa6814996cdc7"
+      },
+      {
+        "path": "public/game-face-samples/retro.webp",
+        "sha256": "1c35a2552ed615558b423adda68de9848c21194826dd20f6629e22b7c3536b10"
+      },
+      {
+        "path": "public/games/README.md",
+        "sha256": "e5ae6e267570980805a1f298d9a6f0b5cf842f934035ae8e6d2355e5b8a3cf0c"
+      },
+      {
+        "path": "public/games/oval-face-cover.png",
+        "sha256": "0e914b27b602683442d57dfa232c88be1fdea5a2ed45bdabe0da72e3ff464073"
+      },
+      {
+        "path": "public/games/oval-face-icon.png",
+        "sha256": "a3cdaeff0397647bd1580980c60e2996e5aa499eab8e5f2e634557b1c5da0909"
+      },
+      {
+        "path": "public/games/oval-face.swf",
+        "sha256": "80e974d8ef4ad5e849e93464eaea1833620c269bac30601d960f5438c285e09b"
+      },
+      {
+        "path": "public/games/square-face.swf",
+        "sha256": "b1d074c95f15b7dcecdbc2405abf820ead985669bb12cd47247fc8ea7537bc1e"
+      },
+      {
+        "path": "public/og-image.svg",
+        "sha256": "62b25f254895de06e9253402370a8c10c14f6360e59621dffb3d9e88f084896a"
+      },
+      {
+        "path": "public/ruffle/5ab714cfe6d10dcc7003.wasm",
+        "sha256": "575a14c02e47dcf34d61a2de684783994f29a60046361cd950c37a9feb10df9a"
+      },
+      {
+        "path": "public/ruffle/9e3e2a04bfe37ff3e3e9.wasm",
+        "sha256": "6e2b664d1a5f4b9f0acaf51cc94caa2460d3920a5584611075a250475ffa0c25"
+      },
+      {
+        "path": "public/ruffle/core.ruffle.549e09f5ab25b1ddd637.js",
+        "sha256": "b1c9f536332a91f3af74ce4dc954774383abc1df485ba1be331c44fba85eaa86"
+      },
+      {
+        "path": "public/ruffle/core.ruffle.c736d9febaa371cbf8ce.js",
+        "sha256": "c568b9a9a9a1842eb0bb5fbef9468291c410dc56d535338da9fb81fa471b5803"
+      },
+      {
+        "path": "public/ruffle/ruffle.js",
+        "sha256": "0f320b07abc9a000a5e9d445eaec8df05d8607351bc3248ef5552f943ba5b7ea"
+      },
+      {
+        "path": "public/square-face-icon.png",
+        "sha256": "7c29beef953a42953af5d95f307f21eae97be72303ac16b52ccb7201ee4c42ac"
+      },
+      {
+        "path": "public/sw.js",
+        "sha256": "05b14d5b9f3e447b180a12fb025c6937675bc7009b6e68082eebb4a8d83f322d"
+      },
+      {
+        "path": "scripts/README.md",
+        "sha256": "761b75b823033edfab51d2cb64bca22b9adf3e3c915acccb1884f6113507c917"
+      },
+      {
+        "path": "scripts/cloudflare-login.cmd",
+        "sha256": "9285c7cf0105fa6087da2dbb9264265a5daed85475ea61a12b0310431e3c8b0f"
+      },
+      {
+        "path": "scripts/cloudflare-provision.cmd",
+        "sha256": "72b6efc1ad0cab89dc54d6d18cb6a6c3f2c1bbc7fa42444b9be968cc1cd22aeb"
+      },
+      {
+        "path": "scripts/cloudflare-set-secrets.cmd",
+        "sha256": "5964a356784cc9ea3beeb76b801fc04ae79762ff1c47ab1fecb9f5a0d35a8cd0"
+      },
+      {
+        "path": "scripts/patch-opennext-worker.mjs",
+        "sha256": "1f761820c8ec949e7a32f1435b82f14f9919d46bf965090741ab55add8b4068b"
+      },
+      {
+        "path": "scripts/post-deploy-check.mjs",
+        "sha256": "51b28a8e14558dfc69c71779ebe9ed28d195f2f671d5eda07977afe885bbee82"
+      },
+      {
+        "path": "scripts/seo-check.mjs",
+        "sha256": "a56453c56c8f55f4a308790e38a34aed19b667d1ba3514bd09eb18709db2ca9f"
+      },
+      {
+        "path": "scripts/start-local-preview.cmd",
+        "sha256": "edd040a98ac02704de22f632fb21f981976c70b88932461874e4631db1dbcfb1"
+      },
+      {
+        "path": "scripts/submit-indexnow.mjs",
+        "sha256": "1394eb5cfa2bb600af3bd3fbdf0f8c2eae9adf78b31d18d6f4cd57f3be0f4ae9"
+      },
+      {
+        "path": "seo-check.config.json",
+        "sha256": "5cdfde7432572142acdf8b4ec94cbe9c2611737c520d2bd92e84943adf85730c"
+      },
+      {
+        "path": "tsconfig.json",
+        "sha256": "a749da922f5e6f1d93a68270185c1ed56e3e45c786d1de1ee59f9bdb7512d720"
+      },
+      {
+        "path": "wrangler.toml",
+        "sha256": "c4d4f4404397e4f6966014812a1b61f939a2ae1b27510c5f9db207871b0065a4"
+      },
+      {
+        "path": "发展情况/website-development-monitor.html",
+        "sha256": "04231fa40e984abb02c98a361d404a4dafbacbfb3bb17e85cc35d9b10abab243"
+      }
+    ],
+    "historicalJson": [
+      {
+        "path": "docs/archive/license-gate-cancelled-2026-09-03/checks.json",
+        "sha256": "4fbe84181fe0d7231944eeb3bf2b64b93b6aae6b557cdba1b9445c4d12eb44fb"
+      },
+      {
+        "path": "docs/archive/license-gate-cancelled-2026-09-03/release-order-confirmation.json",
+        "sha256": "7481222829e0f28319a65406495fa334c58e535b5c9d038e2b9d9706000cce57"
+      },
+      {
+        "path": "docs/quality/evidence/about-001-rights-copy/checks.json",
+        "sha256": "9b5d2192b7ddac92a9b01c8f2368d3faaee116253166bb6c623c83bbf8e647e7"
+      },
+      {
+        "path": "docs/quality/evidence/about-001-rights-copy/proposal-checks.json",
+        "sha256": "dbb44b079bd622e93813761c939091e15a0b892a20d2272aaa1cfbd93a690362"
+      },
+      {
+        "path": "docs/quality/evidence/category-001/acceptance-checks.json",
+        "sha256": "9a81a75322a2e9552a30814825e64f6447e7f9a0228534d9a2915252ecf321d2"
+      },
+      {
+        "path": "docs/quality/evidence/category-001/board-checks.json",
+        "sha256": "20cbb039a5d58c4d781f9b2e3aba88b14cf19b5dba27eaab9bb9f1bf7aa0f6e6"
+      },
+      {
+        "path": "docs/quality/evidence/category-001/checks.json",
+        "sha256": "c172ba9b969407f175a37e986a97fd9f5cec21f2d3980d999234b4d253419b31"
+      },
+      {
+        "path": "docs/quality/evidence/category-001/proposal-checks.json",
+        "sha256": "f7cbcf62f6890a5bd68e588aa222654e75e064ac993d0957925b59676abd72cf"
+      },
+      {
+        "path": "docs/quality/evidence/content-qa-001/acceptance-checks.json",
+        "sha256": "102cecc66d9d9ae8fed6d3c4dfde9521b5cfeb10341ab8e3b53330967c189201"
+      },
+      {
+        "path": "docs/quality/evidence/content-qa-001/checks.json",
+        "sha256": "40371180bbf00e36a69038596644f3c4701e7c869b00548cd29c80a167ccb641"
+      },
+      {
+        "path": "docs/quality/evidence/editorial-001-rights-copy/checks.json",
+        "sha256": "72f7ff3be63a9e3b14a41a3f651a336c57f7d74d59785fb9173cd2af36117d52"
+      },
+      {
+        "path": "docs/quality/evidence/editorial-001-rights-copy/proposal-checks.json",
+        "sha256": "a30c3eb49860af11e4af1e998dff78d8b42970d909113ee64c7a728256d5beed"
+      },
+      {
+        "path": "docs/quality/evidence/gallery-001-rights-copy/acceptance-checks.json",
+        "sha256": "eb8105300c659fdc668f06d64b820bac69fcca5a2011a1bc2da0dfa51c121143"
+      },
+      {
+        "path": "docs/quality/evidence/gallery-001-rights-copy/checks.json",
+        "sha256": "a41646b12dffdc099bc9c1a84cf10667f6efc1753b1db5be2c437e3695bd86af"
+      },
+      {
+        "path": "docs/quality/evidence/gallery-001-rights-copy/proposal-checks.json",
+        "sha256": "3c00f1471ba2741fb27d44b1efecd823834443243e46754c1aeda8fea1a81a08"
+      },
+      {
+        "path": "docs/quality/evidence/games-index-001/acceptance-checks.json",
+        "sha256": "a3c0d0932f4bcdb70819133d94c45e1976e3bee69f5ef25cae03e185d6ecdb27"
+      },
+      {
+        "path": "docs/quality/evidence/games-index-001/board-checks.json",
+        "sha256": "4311645d850f7144df9c4181ce77282f538ff835af03a43c3e0628701b05eaa2"
+      },
+      {
+        "path": "docs/quality/evidence/games-index-001/checks.json",
+        "sha256": "365e09ef5dc5ab40e4f6c7997a0bf3bcbe9e5ebb7355e229f374bf912ea8d508"
+      },
+      {
+        "path": "docs/quality/evidence/games-index-001/interruption-checks.json",
+        "sha256": "b5e31ce1a481bf89b56b965d3a91487b78ca93232c01da7f9d68ca25c2905594"
+      },
+      {
+        "path": "docs/quality/evidence/games-index-001/proposal-checks.json",
+        "sha256": "864180ac6ea02eb4d5e4c6e41b883dba60a6d3dc66ce4c0884449f2235b64fb4"
+      },
+      {
+        "path": "docs/quality/evidence/home-gallery-001/production-approved-ugc-probe.json",
+        "sha256": "37f3fa29f7f9b84721ae117bf85efb4ce79fe7d2015192e2ce0cd62d8981f93c"
+      },
+      {
+        "path": "docs/quality/evidence/locale-001-rights-copy/acceptance-checks.json",
+        "sha256": "bfe4948dc8eae906a7f6435fbc0cbfc29ee725027f9599a2d49444c305cd9d63"
+      },
+      {
+        "path": "docs/quality/evidence/locale-001-rights-copy/checks.json",
+        "sha256": "55b49e3506e3141ffd1ef5dd701136411dc06b0c351a10fe99caf1fd9eadfdfb"
+      },
+      {
+        "path": "docs/quality/evidence/locale-001-rights-copy/mobile-revision-checks.json",
+        "sha256": "71421d8433f2e8fe3f05c0d62ee46584535e4ef1c378fef54f0ec2bd0b4fb31f"
+      },
+      {
+        "path": "docs/quality/evidence/locale-001-rights-copy/proposal-checks.json",
+        "sha256": "0ec30303ae7c7fc9a3af588e0939017aa2175896e4ec1fef741741ccbfe82de4"
+      },
+      {
+        "path": "docs/quality/evidence/mig-oval-001/acceptance-checks.json",
+        "sha256": "48d1db1998610c94e5bfc398b51ae31edf7751f251fd0b0e0cbbefff4faa6a6f"
+      },
+      {
+        "path": "docs/quality/evidence/mig-oval-001/checks.json",
+        "sha256": "47bfac00708ee560e90b915bbc7fd6c57e4fc9a7def201fa3a4c9ea8a2fd3231"
+      },
+      {
+        "path": "docs/quality/evidence/mig-oval-001/proposal-checks.json",
+        "sha256": "20e52eba57d40a3d407e73962d0f799f5e7f5415e6dc950454da99dbf890d350"
+      },
+      {
+        "path": "docs/quality/evidence/mig-pixel-001/acceptance-checks.json",
+        "sha256": "7a5f9e7b3f58b823357c2e26a70cbab1771d8ef86cf2c83b23703c3bfe85dd70"
+      },
+      {
+        "path": "docs/quality/evidence/mig-pixel-001/checks.json",
+        "sha256": "bb9571f180ccc4dd2d4a7b29e1733582b363eb1c49c637051fcdb0edb984d512"
+      },
+      {
+        "path": "docs/quality/evidence/mig-pixel-001/proposal-checks.json",
+        "sha256": "45526d6726ccc0b4f1e837e77f2e0159d306f374f86e2b27ff69fdaf8c157d18"
+      },
+      {
+        "path": "docs/quality/evidence/mig-square-001/acceptance-checks.json",
+        "sha256": "29fbf5eb482a1e1ebb56c1b34086bf05d2113518bfeb422bdb8a8b2148636b8c"
+      },
+      {
+        "path": "docs/quality/evidence/mig-square-001/checks.json",
+        "sha256": "f3de4b6319696f228e95ad5fddc53f1ba9588d48237daeee2fb31f1d4000daa6"
+      },
+      {
+        "path": "docs/quality/evidence/mig-square-001/proposal-checks.json",
+        "sha256": "4f737e30de67ec8de4c70954fb7ab7c9cf9e9ecaf91c96ece597245848636ee6"
+      },
+      {
+        "path": "docs/quality/evidence/perf-home-001/metrics.json",
+        "sha256": "06eb8a27312031aff0f530f12c5961c552c8def39b582cf96f5abe823ac7c905"
+      },
+      {
+        "path": "docs/quality/evidence/terms-001-rights-copy/checks.json",
+        "sha256": "5b0aaefeca88262d57203e5caa92ea3ac465f5c399361be4bf873c28c4dccf1d"
+      },
+      {
+        "path": "docs/baseline/evidence/lighthouse-desktop-2026-08-31.json",
+        "sha256": "60613861913e9d558d9e9567f3c38e091c9b5ad50f87b45aa3dbf7076a91c924"
+      },
+      {
+        "path": "docs/baseline/evidence/lighthouse-mobile-2026-08-31.json",
+        "sha256": "5781efc12d42c72f5a57bb4f6ef411a72484c697d81d28d654c80ff49a3f7641"
+      }
+    ],
+    "priorFingerprintCount": 590,
+    "buildId": "nTDZHFbpW4UvLAIaq4fWV",
+    "originalRoadmap": true,
+    "wholeOvalMigrationDeferred": true,
+    "cancelledMaterialTaskReopened": false
+  },
+  "modifiedFiles": [
+    {
+      "path": "PAGE_PLAN.md",
+      "sha256": "0b07dce4428a991430e9c3b9d1e62f61ce1eb2c2a7253a996ecf2fddaaba5f9e",
+      "beforeSha256": "9143ee72004aec16e57e64be4603a2a1474cb75da4dc94af21e4665564f336ee"
+    },
+    {
+      "path": "LAUNCH_CHECKLIST.md",
+      "sha256": "d98ccd282611fd0c331e6893823913b072804b04c258b79b67f1f0f0f1f99556",
+      "beforeSha256": "6dc35d4e62fcf2a8f58acb9306e376e1cb9512a1921b5357de38b04e3911d36c"
+    },
+    {
+      "path": "SEO_LOG.md",
+      "sha256": "6bf001fc0dd5bfbed28271729bb5f91de8f5af77cd5362e8e743f76a38c83d3f",
+      "beforeSha256": "3beff9983ad32df47df0126374fad0b039f1aac2e9120895a271ba630210ea1b"
+    },
+    {
+      "path": "docs/product/category-pages-proposal.md",
+      "sha256": "66898097ae7cee6d7e1bc53c487bd6b85082fb82bd1d3ea026935144d2d115fb",
+      "beforeSha256": "bbb4fd5023f5e33343671500aa4552387fcab370ad40ce39e0119350031fdae0"
+    },
+    {
+      "path": "docs/quality/evidence/category-001/README.md",
+      "sha256": "59506855b73aa73c3833d7f1401d5dbbf6984ba6aa7175b5a67d417d5bde0a58",
+      "beforeSha256": "d27615e69899af3d483aa782c6c6769bacab04b0fb0cbecd0d3ef73197ee9021"
+    }
+  ],
+  "environment": {
+    "root": "D:/LYXGIT/mysquarefaceicon",
+    "branch": "codex/game-platform-rebuild",
+    "head": "c6d30087c2c03a7c4eb8d5bfe6e055e9b8d40228"
+  },
+  "notRun": [
+    "application type/lint/tests",
+    "Next/OpenNext build",
+    "browser/mobile/CWV",
+    "HTTP/SEO",
+    "preview liveness",
+    "production/deployment"
+  ],
+  "applicationCodeChanged": false,
+  "remainingPagesImplemented": false,
+  "wholeTaskCompleted": false,
+  "commitCreated": false,
+  "pushed": false,
+  "deployed": false,
+  "release": "不通过 / 原 P0 与生产门禁保留",
+  "rollback": "仅逆向 v1.77 方案/看板/治理引用增量，不撤销 v1.76 样例验收或 v1.75 实现；不覆盖其它累计改动。",
+  "artifacts": [
+    {
+      "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-remaining-proposal-v177-20260904\\capture.cjs",
+      "sha256": "8f5d6904358b1379f611e8739db43fd379ba1352f3b1258a5df9bdf537673dc5"
+    },
+    {
+      "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-remaining-proposal-v177-20260904\\prepare.cjs",
+      "sha256": "1c3d1aaf8f422a4567bf9b63c58f8d554d009ff3be78f0f68915d9e2cf352d27"
+    },
+    {
+      "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-remaining-proposal-v177-20260904\\verify.cjs",
+      "sha256": "376082b50b0e39260da1aa4ed2845c61c01c334fc6af147096816141d5c835cb"
+    },
+    {
+      "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-remaining-proposal-v177-20260904\\baseline.json",
+      "sha256": "849ab0d349d6c6178757c4c1b1d187ae144b0b15f3acbf98576854ac809d5724"
+    },
+    {
+      "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-remaining-proposal-v177-20260904\\prepared.json",
+      "sha256": "f73ed2718d583c87a54dc2afcad909a3b38521d71e2fc57bf9a0871bd4a6dd3d"
+    },
+    {
+      "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-remaining-proposal-v177-20260904\\board.before.html",
+      "sha256": "4f715f95c01a6a33cb548d3a21f646be90b6e98d90b248ef34d61cd73eed2c7d"
+    }
+  ],
+  "vmHarness": {
+    "path": "C:/Users/liu/AppData/Local/Temp/mysquarefaceicon-content-qa-v170-1fc57964925a4354a1ee2a2e73e447b3/verify.cjs",
+    "sha256": "0540700d01b34a043849933a43298b32d262cba8707d1b7e3c8ac56c2f13e2eb"
+  },
+  "initialFailures": [
+    {
+      "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-remaining-proposal-v177-20260904\\verification-initial-failure.json",
+      "sha256": "45f5aeb5f976073ac4cd6b1c706f4c4f508e752ac44b9efb6523e60b68d83c90",
+      "result": "FAIL",
+      "reason": "Diagnostic wording match; source acceptance invariants already passed. Final rerun is separate."
+    }
+  ]
+}

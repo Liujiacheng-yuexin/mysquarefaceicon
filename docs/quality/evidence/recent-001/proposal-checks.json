@@ -1,0 +1,182 @@
+{
+  "taskId": "RECENT-001",
+  "scope": "RECENTLY_PLAYED_PROPOSAL",
+  "boardVersion": "1.85",
+  "recordedAt": "2026-09-07T05:03:53.238Z",
+  "userInstruction": "确认，现在进行下一步开发",
+  "result": "通过（现状核对与方案治理）；方案待用户确认；应用未实施；全站发布不通过",
+  "proposal": {
+    "path": "docs/product/recently-played-proposal.md",
+    "sha256": "2a886711a67ac144bb6b5746916df3fc16c74ea75845d7cc5b4b6131a242b347",
+    "status": "待确认",
+    "confirmationRequired": "确认 RECENT-001 方案，进行开发"
+  },
+  "currentFacts": {
+    "unifiedGameStartEventExists": false,
+    "recentlyPlayedModuleExists": false,
+    "gamePlayerHasSeparateFirstActivationAndReloadBranches": true,
+    "futureGameDetailUsesGameDataId": true,
+    "legacyFlashGeneratorUsesDerivedId": true,
+    "homeContinuePlayingCurrentlyRendered": false,
+    "gamesDirectoryIsServerRendered": true,
+    "privacyPolicyDisclosesRecentHistory": false,
+    "currentPlayableCandidates": [
+      { "gameId": "square-face", "href": "/", "type": "RUFFLE_SWF" },
+      { "gameId": "oval-face", "href": "/oval-face-icon-generator", "type": "RUFFLE_SWF" }
+    ],
+    "excludedCurrentExternalCandidate": {
+      "gameId": "pixel-art-avatar",
+      "href": "/pixel-art-avatar-icon-generator",
+      "type": "EXTERNAL_LINK",
+      "reason": "No onsite play capability; opening an external provider is not game_start."
+    }
+  },
+  "plannedContract": {
+    "storageKey": "msfi-recently-played-v1",
+    "version": 1,
+    "storedFields": ["gameId", "startedAt"],
+    "storeLimit": 8,
+    "displayLimit": 4,
+    "recordTrigger": "first validated playable idle-to-Play activation per mounted player",
+    "reloadCreatesAdditionalStart": false,
+    "pageViewCreatesStart": false,
+    "externalLinkCreatesStart": false,
+    "sameIdBehavior": "deduplicate, refresh timestamp, move to first",
+    "invalidStorageBehavior": "fail closed to sanitized valid entries or empty history",
+    "storageFailureBlocksGame": false,
+    "clearScope": "only msfi-recently-played-v1",
+    "sameTabSync": "project custom change event",
+    "crossTabSync": "native storage event",
+    "networkWrite": false,
+    "accountOrCloudSync": false
+  },
+  "plannedSurfaces": {
+    "homepage": {
+      "path": "/",
+      "position": "first conditional panel inside existing Discover More Avatar Games region",
+      "heading": "Continue Playing",
+      "headingLevel": 3,
+      "emptyBehavior": "no heading, panel, cards, empty state or reserved height",
+      "draftLocalesReceiveVisibleModule": false
+    },
+    "gamesDirectory": {
+      "path": "/games",
+      "position": "after directory hero and before On-site avatar games",
+      "heading": "Continue Playing",
+      "headingLevel": 2,
+      "emptyBehavior": "entire visible module omitted"
+    },
+    "cardAction": "Continue game",
+    "clearAction": "Clear history"
+  },
+  "privacyAndSecurity": {
+    "privacyPolicyUpdateRequired": true,
+    "disclosure": "Stable game ID and start time stay in this browser, support Continue Playing, can be removed with Clear history, and do not sync across devices.",
+    "sensitiveFieldsStored": false,
+    "generatedAvatarOrGameStateStored": false,
+    "visitorOrCommentKeysTouched": false,
+    "arbitraryLocalStorageTextRendered": false,
+    "candidateMapping": "server-supplied minimal published playable view models only"
+  },
+  "seoAndReleaseFreeze": {
+    "urlsChanged": false,
+    "metadataChanged": false,
+    "h1Changed": false,
+    "canonicalChanged": false,
+    "schemaChanged": false,
+    "robotsOrIndexChanged": false,
+    "sitemapChanged": false,
+    "searchIntentChanged": false,
+    "dynamicHistoryUsedForKeywordOrInternalLinkCounts": false,
+    "gameRightsOrPublicationGateChanged": false,
+    "favoriteStarted": false
+  },
+  "preflight": [
+    {
+      "command": "npm run player:check",
+      "exitCode": 0,
+      "result": "PASS"
+    },
+    {
+      "command": "npm run home:check",
+      "exitCode": 0,
+      "result": "PASS"
+    },
+    {
+      "command": "npm run home-discovery:check",
+      "exitCode": 0,
+      "result": "PASS"
+    },
+    {
+      "command": "npm run games-index:check",
+      "exitCode": 0,
+      "result": "PASS",
+      "assertions": 321,
+      "negativeFixtures": 60
+    }
+  ],
+  "applicationPreservation": {
+    "applicationCodeChangedInProposalTurn": false,
+    "testsOrPackageChangedInProposalTurn": false,
+    "gameDataChangedInProposalTurn": false,
+    "cssChangedInProposalTurn": false,
+    "buildArtifactsChangedInProposalTurn": false,
+    "keyFileHashes": {
+      "components/game-player/GamePlayer.tsx": "142cf22ac3a485c78285d920bbe84114f3931a38f0e9aec067bbf8ca2e562d5c",
+      "components/FlashGenerator.tsx": "c443323031b15428a502ff4fcad3653ffc424ef75db9335b76883576f45ac794",
+      "components/HomePage.tsx": "294ff206904e9cc127fcf986d54e4820017331370208a5d4731c84dbb5999623",
+      "components/home/HomeDiscoveryRegion.tsx": "c7fb2ac8ea2e54ae2f4000217128434016b2875b846e9c830efb6e9d2df0dec0",
+      "app/games/page.tsx": "5c154f0c23e174f94b68ce7e705ae978f7ecb6ffab15d04fd1439e148234d3c5",
+      "app/privacy-policy/page.tsx": "eba51fcadf3aa4e61506242d5d5fb1d9d4ac7d870626e7877670ae0984c7d1c4",
+      "lib/games/square-homepage.ts": "ce7d111d8a4df65194394ed31468a43fac96c83da1f53c8761090f159efe3aa4",
+      "lib/games/oval-legacy-page.ts": "29a465e18d5a0520e1e4db970f7fa5b7b23b6022f317f890d31c8ba22efa4f79"
+    }
+  },
+  "checksNotRun": {
+    "typecheck": "未运行（方案阶段）",
+    "lint": "未运行（方案阶段）",
+    "nextBuild": "未运行（方案阶段）",
+    "openNextBuild": "未运行（方案阶段）",
+    "builtOrHttp": "未运行（方案阶段）",
+    "seo": "未运行（方案阶段）",
+    "robots": "未运行（方案阶段）",
+    "browserDesktopMobile": "未运行（方案阶段）",
+    "cwv": "未运行",
+    "production": "未验证 / 未部署"
+  },
+  "board": {
+    "path": "F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+    "previousSha256": "26a968cd31c4c3f990c301236d1903111581c0312587fd068bce5e85651aca09",
+    "currentSha256": "eb564ee28e95a09bc5ea748ad7138ef693b20038c4229484970c29980cd35049",
+    "version": "1.85",
+    "currentTask": "RECENT-001",
+    "currentStatus": "设计中 / 方案待确认",
+    "completedTasks": 22,
+    "totalTasks": 60,
+    "uniqueSourceAcceptanceTaskKeys": 33,
+    "relatedStatus": "已完成（本地整项已验收）",
+    "favoriteStatus": "未开始",
+    "realBrowserVisual": "未验证；本轮仅源脚本与离线状态检查"
+  },
+  "governanceFiles": {
+    "PAGE_PLAN.md": "af6b75694225b5e06b7202e7a9f626765b088669631ffdebbe64813760a84e89",
+    "LAUNCH_CHECKLIST.md": "c571db44f46398f77c8d82bfbdcb7b13594a8259f3a63dbe549b05592069dc2b",
+    "SEO_LOG.md": "36878c120f698389606157191f8f3eca9e52fe8a91aeae8f0c83ed0110c89488"
+  },
+  "initialFailureAndCorrection": {
+    "failure": "First v1.85 board VM evaluation threw TypeError because RECENT-001 had no previous TASK_UPDATES object and Object.assign received undefined.",
+    "correction": "Initialize TASK_UPDATES[\"RECENT-001\"] to an empty object before the v1.85 bounded assignment.",
+    "applicationAffected": false,
+    "finalBoardVm": "PASS"
+  },
+  "release": {
+    "commitCreated": false,
+    "pushed": false,
+    "deployed": false,
+    "seoProdRun": false,
+    "productionVerified": false,
+    "rightsVerified": false,
+    "result": "不通过 / 未部署"
+  },
+  "rollback": "Remove only the v1.85 RECENT proposal, evidence and governance increments and restore the v1.84 board focus; preserve RELATED acceptance, application code, historical QA and all other user worktree changes."
+}

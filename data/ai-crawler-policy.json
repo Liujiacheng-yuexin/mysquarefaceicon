@@ -1,0 +1,23 @@
+{
+  "version": "2026-09-02",
+  "decision": "split-training-and-search",
+  "privatePaths": [
+    "/admin/",
+    "/api/"
+  ],
+  "blockedFromAllPaths": [
+    "GPTBot",
+    "ClaudeBot",
+    "Google-Extended",
+    "CCBot",
+    "Bytespider",
+    "Applebot-Extended"
+  ],
+  "allowedOnPublicPaths": [
+    "OAI-SearchBot",
+    "ChatGPT-User",
+    "Claude-User",
+    "Claude-SearchBot",
+    "PerplexityBot"
+  ]
+}

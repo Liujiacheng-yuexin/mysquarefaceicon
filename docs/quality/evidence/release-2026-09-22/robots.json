@@ -1,0 +1,7 @@
+{
+  "command": "npm run robots:check",
+  "at": "2026-09-22T08:55:55.683Z",
+  "exitCode": 0,
+  "stdout": "\n> mysquarefaceicon@0.1.0 robots:check\n> node scripts/check-ai-crawler-policy.mjs --base http://localhost:3000\n\nAI-01 crawler policy passed at http://localhost:3000/robots.txt.\nExplicit decisions: 6 blocked, 5 public-search/user retrieval allowed.\n",
+  "stderr": ""
+}

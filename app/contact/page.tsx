@@ -60,6 +60,10 @@ export default function ContactPage() {
             Contact: <a href="mailto:contact@mysquarefaceicon.com">contact@mysquarefaceicon.com</a>
           </p>
           <p>
+            To contact My Square Face Icon about a correction, privacy request, or generator problem,
+            include the affected page and enough context for review.
+          </p>
+          <p>
             If the email inbox is not active yet during early launch, use your domain email provider to enable this address before public outreach.
           </p>
         </section>

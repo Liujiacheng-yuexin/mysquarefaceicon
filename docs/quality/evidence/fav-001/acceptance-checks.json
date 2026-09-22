@@ -1,0 +1,109 @@
+{
+  "taskId": "FAV-001",
+  "scope": "FAVORITES_IMPLEMENTATION",
+  "boardVersion": "1.90",
+  "recordedAt": "2026-09-08T00:39:40.3624401Z",
+  "userInstruction": "FAV-001 验收通过；现在进行下一步开发",
+  "result": "通过（用户明确验收 v1.89 本地成果）",
+  "userAcceptanceReceived": true,
+  "wholeLocalTaskCompleted": true,
+  "sourceAcceptance": {
+    "result": "通过",
+    "scope": "FAVORITES_IMPLEMENTATION",
+    "acceptedAt": "2026-09-08T00:39:40.3624401Z",
+    "source": "用户明确回复“FAV-001 验收通过”",
+    "localOnly": true,
+    "wholeTaskCompleted": true,
+    "implementationEvidencePath": "docs/quality/evidence/fav-001/checks.json",
+    "note": "仅验收 v1.89 的本地 Favorites 实现；不代表真实权利、人工事实审核、生产 CWV、广告/CMP、生产或发布通过。"
+  },
+  "acceptedFeatures": [
+    "versioned msfi-favorites-v1 storage with stable Game Data IDs only",
+    "maximum 50 favorites ordered newest first",
+    "shared, Recently Played and legacy Related card toggles without nested controls",
+    "Square and Oval Favorite plus Pixel External Save tool entries",
+    "conditional Favorites section on /games",
+    "refresh persistence and same-tab/cross-tab synchronization",
+    "removal focus recovery and live-region feedback",
+    "Privacy disclosure and no account/network/cloud boundary"
+  ],
+  "originalImplementationEvidence": {
+    "path": "docs/quality/evidence/fav-001/checks.json",
+    "sha256": "813eb0bec065db93ec151116b498f5cbe8cb951a442a4b03c2fcea38789bda2f",
+    "readmePath": "docs/quality/evidence/fav-001/README.md",
+    "readmeSha256": "42922d576d50c8000c324c50f9cb9300e89add7b3ecb29626777370e151863b8",
+    "boardVersion": "1.89",
+    "recordedAt": "2026-09-07T10:46:24.4334021Z",
+    "originalResult": "通过（本地实施与验收前 QA）",
+    "buildId": "mWjiOpm1VaKo3fn7FXuFq",
+    "note": "原实施 QA、失败、浏览器结论、未验证项与日期保持；本文件单独登记后续用户验收。"
+  },
+  "applicationPreservation": {
+    "applicationCodeChangedInAcceptanceTurn": false,
+    "testsOrCheckersChangedForFavInAcceptanceTurn": false,
+    "gameDataOrStorageChangedInAcceptanceTurn": false,
+    "cssChangedInAcceptanceTurn": false,
+    "routesMetadataOrIndexingChangedInAcceptanceTurn": false,
+    "buildArtifactsChangedInAcceptanceTurn": false,
+    "branch": "codex/game-platform-rebuild",
+    "head": "c6d30087c2c03a7c4eb8d5bfe6e055e9b8d40228",
+    "buildId": "mWjiOpm1VaKo3fn7FXuFq"
+  },
+  "checksInAcceptanceTurn": {
+    "favApplicationQaRerun": false,
+    "favHttpSeoRobotsRerun": false,
+    "favBrowserMobileCwvRerun": false,
+    "productionChecksRerun": false,
+    "previewLivenessChecked": false,
+    "reason": "Acceptance-only FAV governance update; preserve v1.89 evidence dates and do not claim new application QA.",
+    "nextTaskProposalPreflight": [
+      {"command": "npm run player:check", "exitCode": 0},
+      {"command": "npm run perf-home:check", "exitCode": 0},
+      {"command": "npm run square-home:check", "exitCode": 0},
+      {"command": "npm run oval-page:check", "exitCode": 0}
+    ]
+  },
+  "board": {
+    "path": "F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+    "previousSha256": "22c6c840bfb13fe21753d083e6db28e867b905bf9532e03f83ae7a5fea145781",
+    "currentSha256": "cd21fab811c7aef4754a4c1de9fca74ac890dae6f5d51bbc7c38ee37c8712774",
+    "version": "1.90",
+    "favStatus": "已完成（本地已验收）",
+    "currentTask": "RUFFLE-001",
+    "currentStatus": "设计中 / 方案待确认",
+    "completedTasks": 24,
+    "totalTasks": 60,
+    "uniqueSourceAcceptanceTaskKeys": 35,
+    "realBrowserVisual": "未重跑；本轮不以离线看板脚本核验冒充真实浏览器视觉"
+  },
+  "retainedUnverifiedOrBlocking": [
+    "real devices and additional browser engines",
+    "field and production CWV",
+    "actual Square and Oval rights remain UNKNOWN",
+    "human factual review and remaining semantic-quality notices",
+    "whole-site ads and CMP gates",
+    "production canonical, robots, SEO and deployment evidence"
+  ],
+  "nextState": {
+    "favCompleted": true,
+    "nextTaskId": "RUFFLE-001",
+    "nextTaskStage": "PROPOSAL_PENDING",
+    "proposalPath": "docs/product/ruffle-runtime-governance-proposal.md",
+    "proposalSha256": "4a4b2245657170c627a4a10e8dcecd7a16f2a8e578fed852b6a6bd2da9e08b57",
+    "implementationStarted": false,
+    "nextRequiredUserReply": "确认 RUFFLE-001 方案，进行开发"
+  },
+  "release": {
+    "commitCreated": false,
+    "pushed": false,
+    "deployed": false,
+    "seoProdRun": false,
+    "productionVerified": false,
+    "result": "不通过 / 未部署"
+  },
+  "rollback": {
+    "application": "none for the FAV acceptance-only record or the RUFFLE proposal",
+    "governance": "remove only the v1.90 acceptance/proposal entries and restore the v1.89 pending-acceptance board/docs; preserve FAV implementation and original QA evidence",
+    "production": "not applicable because no deployment occurred"
+  }
+}

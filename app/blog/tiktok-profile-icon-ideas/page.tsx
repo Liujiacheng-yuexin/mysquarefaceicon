@@ -113,6 +113,7 @@ export default function TiktokProfileIconIdeasPage() {
         <h1>TikTok Profile Icon Ideas</h1>
         <p className="lead">
           A TikTok profile icon should be easy to recognize on a phone screen and expressive enough to match your account style. Cute square face avatars work well because they keep the character centered, readable, and personal.
+          Treat these TikTok profile icon ideas as visual directions: choose one mood, one readable expression, and a simple color relationship before adding details.
         </p>
 
         <nav className="toc-card" aria-label="Article sections">

@@ -62,7 +62,7 @@ Passing automation never substitutes for user acceptance. Conversely, user accep
 - The source post-deploy script originally treated `Disallow: /` in named AI-crawler groups as a wildcard block. The project copy now parses robots groups and no longer reports that false positive.
 - A five-page production probe of `seo-check` completed after the parser fix. It found three mandatory `KW-02` findings on `/contact`, `/about-us`, and `/editorial-policy`, plus five should-level warnings covering density, inbound links, title length, and description length. This validates the checker but is not the complete `BASE-001` baseline.
 - The project has no automated test script. This is reported as unavailable, never as passed.
-- `PROJECT_BRIEF.md` does not yet record the required per-crawler AI policy from `AI-01`; this needs a user decision rather than an invented default.
+- The user confirmed the AI-01 split policy on 2026-09-02. `PROJECT_BRIEF.md` now records each crawler decision; source implementation and local/production verification remain separate acceptance and release evidence gates.
 - Game license/provenance evidence is incomplete and remains a release/content-expansion gate.
 - The user accepted `BASE-001` and explicitly selected the v2.1 SEO migration on 2026-08-31. `SEO_RULES.md`, `TECH_RULES.md`, `CONTENT_PLAN.md`, and `LAUNCH_CHECKLIST.md` now use `RULES.md` IDs instead of the retired `3%-5%` density target.
 - No commit, push, deployment, IndexNow submission, or production mutation is authorized by installing this supervisor.

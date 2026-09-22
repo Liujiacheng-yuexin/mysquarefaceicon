@@ -1,6 +1,21 @@
+import { readFileSync } from "node:fs";
+
+const ruffleRuntimeManifest = JSON.parse(
+  readFileSync(new URL("./data/ruffle-runtime-manifest.json", import.meta.url), "utf8")
+);
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true
+  reactStrictMode: true,
+  async headers() {
+    return ruffleRuntimeManifest.files.map((file) => ({
+      source: `${ruffleRuntimeManifest.publicBasePath}${file.path}`,
+      headers: [
+        { key: "Content-Type", value: file.contentType },
+        { key: "Cache-Control", value: file.cacheControl }
+      ]
+    }));
+  }
 };
 
 export default nextConfig;

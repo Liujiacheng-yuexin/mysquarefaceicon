@@ -1,0 +1,749 @@
+{
+  "taskId": "CATEGORY-001",
+  "recordedAt": "2026-09-04T01:45:18.852Z",
+  "scope": "LOCAL_CATEGORY_SAMPLE_NOINDEX",
+  "status": "设计中 / 方案待确认",
+  "proposal": {
+    "path": "docs/product/category-pages-proposal.md",
+    "sha256": "22df67e56453d007d3b7278a4f6615e0a3c90df8fa5c0c705c83b16cff3808ab",
+    "confirmationReceived": false
+  },
+  "userRequest": "GAMES-INDEX-001 验收通过，现在进行下一项任务",
+  "confirmationRequired": "确认 CATEGORY-001 单页样例方案，进行开发",
+  "implementationStarted": false,
+  "implementationCompleted": false,
+  "sample": "/category/face-makers",
+  "remainingFourPages": "未开始；样例验收后另提批量方案",
+  "sharedScopeException": "拟议分类族真实数据解析、无广告与导航文档边界；尚未实施，须用户确认",
+  "sourceFacts": [
+    {
+      "slug": "face-makers",
+      "name": "Face Makers",
+      "description": "Browse browser-based tools centered on choosing and combining facial features for profile icons.",
+      "count": 2,
+      "records": [
+        {
+          "id": "square-face",
+          "path": "/",
+          "pageType": "GAME"
+        },
+        {
+          "id": "oval-face",
+          "path": "/oval-face-icon-generator",
+          "pageType": "GAME"
+        }
+      ]
+    },
+    {
+      "slug": "avatar-makers",
+      "name": "Avatar Makers",
+      "description": "Browse tools for creating profile avatars, icons, and lightweight character portraits.",
+      "count": 3,
+      "records": [
+        {
+          "id": "square-face",
+          "path": "/",
+          "pageType": "GAME"
+        },
+        {
+          "id": "oval-face",
+          "path": "/oval-face-icon-generator",
+          "pageType": "GAME"
+        },
+        {
+          "id": "pixel-art-avatar",
+          "path": "/pixel-art-avatar-icon-generator",
+          "pageType": "EXTERNAL_TOOL"
+        }
+      ]
+    },
+    {
+      "slug": "pixel-avatars",
+      "name": "Pixel Avatars",
+      "description": "Browse pixel-art and chibi-style avatar tools with clear on-site or external-use boundaries.",
+      "count": 1,
+      "records": [
+        {
+          "id": "pixel-art-avatar",
+          "path": "/pixel-art-avatar-icon-generator",
+          "pageType": "EXTERNAL_TOOL"
+        }
+      ]
+    },
+    {
+      "slug": "retro-flash",
+      "name": "Retro Flash",
+      "description": "Browse preserved creator experiences that run in the browser through a compatible Flash runtime.",
+      "count": 2,
+      "records": [
+        {
+          "id": "square-face",
+          "path": "/",
+          "pageType": "GAME"
+        },
+        {
+          "id": "oval-face",
+          "path": "/oval-face-icon-generator",
+          "pageType": "GAME"
+        }
+      ]
+    },
+    {
+      "slug": "character-creators",
+      "name": "Character Creators",
+      "description": "Browse focused tools for building a character look that can work as an avatar or profile image.",
+      "count": 1,
+      "records": [
+        {
+          "id": "pixel-art-avatar",
+          "path": "/pixel-art-avatar-icon-generator",
+          "pageType": "EXTERNAL_TOOL"
+        }
+      ]
+    }
+  ],
+  "adPolicy": {
+    "observation": "源码求值允许五个分类加载广告，非真实广告填充测量；本轮未修复",
+    "values": [
+      {
+        "path": "/category/face-makers",
+        "sourceAllowsAds": true
+      },
+      {
+        "path": "/category/avatar-makers",
+        "sourceAllowsAds": true
+      },
+      {
+        "path": "/category/pixel-avatars",
+        "sourceAllowsAds": true
+      },
+      {
+        "path": "/category/retro-flash",
+        "sourceAllowsAds": true
+      },
+      {
+        "path": "/category/character-creators",
+        "sourceAllowsAds": true
+      }
+    ]
+  },
+  "verification": {
+    "result": "通过（仅验收/方案治理与只读核验）",
+    "assertions": 127,
+    "checks": [
+      {
+        "name": "all_390_non_governance_files_unchanged",
+        "result": "PASS"
+      },
+      {
+        "name": "all_122_v173_source_history_screenshot_artifact_logs_unchanged",
+        "result": "PASS"
+      },
+      {
+        "name": "prior_missing_file_unchanged:components/FlashGeneratorRuntime.tsx",
+        "result": "PASS"
+      },
+      {
+        "name": "prior_missing_file_unchanged:components/GalleryPreview.tsx",
+        "result": "PASS"
+      },
+      {
+        "name": "existing_build_id_unchanged",
+        "result": "PASS"
+      },
+      {
+        "name": "board_script_compiles",
+        "result": "PASS"
+      },
+      {
+        "name": "board_css_unchanged",
+        "result": "PASS"
+      },
+      {
+        "name": "original_60_task_roadmap_unchanged",
+        "result": "PASS"
+      },
+      {
+        "name": "source_acceptance_count_31",
+        "result": "PASS"
+      },
+      {
+        "name": "prior_acceptance_unchanged:AUDIT-001",
+        "result": "PASS"
+      },
+      {
+        "name": "prior_acceptance_unchanged:BASE-001",
+        "result": "PASS"
+      },
+      {
+        "name": "prior_acceptance_unchanged:LEGAL-001",
+        "result": "PASS"
+      },
+      {
+        "name": "prior_acceptance_unchanged:STRAT-001",
+        "result": "PASS"
+      },
+      {
+        "name": "prior_acceptance_unchanged:BACKUP-001",
+        "result": "PASS"
+      },
+      {
+        "name": "prior_acceptance_unchanged:GAME-DATA-001",
+        "result": "PASS"
+      },
+      {
+        "name": "prior_acceptance_unchanged:PLAYER-001",
+        "result": "PASS"
+      },
+      {
+        "name": "prior_acceptance_unchanged:ROUTE-001",
+        "result": "PASS"
+      },
+      {
+        "name": "prior_acceptance_unchanged:COMP-001",
+        "result": "PASS"
+      },
+      {
+        "name": "prior_acceptance_unchanged:META-001",
+        "result": "PASS"
+      },
+      {
+        "name": "prior_acceptance_unchanged:HOME-IA-001",
+        "result": "PASS"
+      },
+      {
+        "name": "prior_acceptance_unchanged:HOME-HERO-001",
+        "result": "PASS"
+      },
+      {
+        "name": "prior_acceptance_unchanged:HOME-DISC-001",
+        "result": "PASS"
+      },
+      {
+        "name": "prior_acceptance_unchanged:HOME-GALLERY-001",
+        "result": "PASS"
+      },
+      {
+        "name": "prior_acceptance_unchanged:PERF-HOME-001",
+        "result": "PASS"
+      },
+      {
+        "name": "prior_acceptance_unchanged:GAME-TPL-001",
+        "result": "PASS"
+      },
+      {
+        "name": "prior_acceptance_unchanged:OP-11",
+        "result": "PASS"
+      },
+      {
+        "name": "prior_acceptance_unchanged:AI-01",
+        "result": "PASS"
+      },
+      {
+        "name": "prior_acceptance_unchanged:KW-02-SAMPLE",
+        "result": "PASS"
+      },
+      {
+        "name": "prior_acceptance_unchanged:KW-02",
+        "result": "PASS"
+      },
+      {
+        "name": "prior_acceptance_unchanged:PF-01",
+        "result": "PASS"
+      },
+      {
+        "name": "prior_acceptance_unchanged:TERMS-001",
+        "result": "PASS"
+      },
+      {
+        "name": "prior_acceptance_unchanged:ABOUT-001",
+        "result": "PASS"
+      },
+      {
+        "name": "prior_acceptance_unchanged:EDITORIAL-001",
+        "result": "PASS"
+      },
+      {
+        "name": "prior_acceptance_unchanged:GALLERY-001",
+        "result": "PASS"
+      },
+      {
+        "name": "prior_acceptance_unchanged:LOCALE-001",
+        "result": "PASS"
+      },
+      {
+        "name": "prior_acceptance_unchanged:MIG-SQUARE-001",
+        "result": "PASS"
+      },
+      {
+        "name": "prior_acceptance_unchanged:MIG-OVAL-001",
+        "result": "PASS"
+      },
+      {
+        "name": "prior_acceptance_unchanged:MIG-PIXEL-001",
+        "result": "PASS"
+      },
+      {
+        "name": "prior_acceptance_unchanged:CONTENT-QA-001",
+        "result": "PASS"
+      },
+      {
+        "name": "explicit_games_acceptance_exact",
+        "result": "PASS"
+      },
+      {
+        "name": "category_proposal_metadata_exact",
+        "result": "PASS"
+      },
+      {
+        "name": "other_task_unchanged:AUDIT-001",
+        "result": "PASS"
+      },
+      {
+        "name": "other_task_unchanged:BASE-001",
+        "result": "PASS"
+      },
+      {
+        "name": "other_task_unchanged:LEGAL-001",
+        "result": "PASS"
+      },
+      {
+        "name": "other_task_unchanged:STRAT-001",
+        "result": "PASS"
+      },
+      {
+        "name": "other_task_unchanged:BACKUP-001",
+        "result": "PASS"
+      },
+      {
+        "name": "other_task_unchanged:GAME-DATA-001",
+        "result": "PASS"
+      },
+      {
+        "name": "other_task_unchanged:PLAYER-001",
+        "result": "PASS"
+      },
+      {
+        "name": "other_task_unchanged:ROUTE-001",
+        "result": "PASS"
+      },
+      {
+        "name": "other_task_unchanged:COMP-001",
+        "result": "PASS"
+      },
+      {
+        "name": "other_task_unchanged:META-001",
+        "result": "PASS"
+      },
+      {
+        "name": "other_task_unchanged:HOME-IA-001",
+        "result": "PASS"
+      },
+      {
+        "name": "other_task_unchanged:HOME-HERO-001",
+        "result": "PASS"
+      },
+      {
+        "name": "home_only_next_guidance_changed",
+        "result": "PASS"
+      },
+      {
+        "name": "other_task_unchanged:HOME-GALLERY-001",
+        "result": "PASS"
+      },
+      {
+        "name": "other_task_unchanged:PERF-HOME-001",
+        "result": "PASS"
+      },
+      {
+        "name": "other_task_unchanged:GAME-TPL-001",
+        "result": "PASS"
+      },
+      {
+        "name": "other_task_unchanged:MIG-SQUARE-001",
+        "result": "PASS"
+      },
+      {
+        "name": "other_task_unchanged:MIG-OVAL-001",
+        "result": "PASS"
+      },
+      {
+        "name": "other_task_unchanged:MIG-PIXEL-001",
+        "result": "PASS"
+      },
+      {
+        "name": "other_task_unchanged:CONTENT-QA-001",
+        "result": "PASS"
+      },
+      {
+        "name": "games_metadata_bounded",
+        "result": "PASS"
+      },
+      {
+        "name": "all_prior_quality_and_cancelled_material_records_preserved",
+        "result": "PASS"
+      },
+      {
+        "name": "quality_focus_proposal_only",
+        "result": "PASS"
+      },
+      {
+        "name": "new_governance_record_exact",
+        "result": "PASS"
+      },
+      {
+        "name": "default_category_focus",
+        "result": "PASS"
+      },
+      {
+        "name": "week_five",
+        "result": "PASS"
+      },
+      {
+        "name": "games_completed_from_explicit_acceptance",
+        "result": "PASS"
+      },
+      {
+        "name": "category_design_not_implementation",
+        "result": "PASS"
+      },
+      {
+        "name": "oval_full_migration_deferred",
+        "result": "PASS"
+      },
+      {
+        "name": "related_recent_favorites_unstarted",
+        "result": "PASS"
+      },
+      {
+        "name": "category_confirmation_gate_active",
+        "result": "PASS"
+      },
+      {
+        "name": "no_category_acceptance",
+        "result": "PASS"
+      },
+      {
+        "name": "proposal_review_buttons_disabled",
+        "result": "PASS"
+      },
+      {
+        "name": "static_dynamic_focusStatus",
+        "result": "PASS"
+      },
+      {
+        "name": "static_dynamic_focusId",
+        "result": "PASS"
+      },
+      {
+        "name": "static_dynamic_focusTitle",
+        "result": "PASS"
+      },
+      {
+        "name": "static_dynamic_focusGoal",
+        "result": "PASS"
+      },
+      {
+        "name": "static_dynamic_focusNext",
+        "result": "PASS"
+      },
+      {
+        "name": "static_dynamic_focusEvidence",
+        "result": "PASS"
+      },
+      {
+        "name": "static_dynamic_gateNote",
+        "result": "PASS"
+      },
+      {
+        "name": "static_dynamic_summary_cycleValue",
+        "result": "PASS"
+      },
+      {
+        "name": "static_dynamic_summary_cyclePct",
+        "result": "PASS"
+      },
+      {
+        "name": "static_dynamic_summary_overallValue",
+        "result": "PASS"
+      },
+      {
+        "name": "static_dynamic_summary_overallPct",
+        "result": "PASS"
+      },
+      {
+        "name": "static_dynamic_summary_cycleTitle",
+        "result": "PASS"
+      },
+      {
+        "name": "static_dynamic_summary_cycleStage",
+        "result": "PASS"
+      },
+      {
+        "name": "static_buttons_disabled",
+        "result": "PASS"
+      },
+      {
+        "name": "category_prompt_obeys_gate",
+        "result": "PASS"
+      },
+      {
+        "name": "games_prompt_does_not_request_repeat_acceptance",
+        "result": "PASS"
+      },
+      {
+        "name": "content_prompt_current",
+        "result": "PASS"
+      },
+      {
+        "name": "cached_category_已完成_cannot_approve",
+        "result": "PASS"
+      },
+      {
+        "name": "cached_category_acceptance_removed:已完成",
+        "result": "PASS"
+      },
+      {
+        "name": "source_acceptance_overrides_cache:已完成",
+        "result": "PASS"
+      },
+      {
+        "name": "cached_category_待验收_cannot_approve",
+        "result": "PASS"
+      },
+      {
+        "name": "cached_category_acceptance_removed:待验收",
+        "result": "PASS"
+      },
+      {
+        "name": "source_acceptance_overrides_cache:待验收",
+        "result": "PASS"
+      },
+      {
+        "name": "cached_category_开发中_cannot_approve",
+        "result": "PASS"
+      },
+      {
+        "name": "cached_category_acceptance_removed:开发中",
+        "result": "PASS"
+      },
+      {
+        "name": "source_acceptance_overrides_cache:开发中",
+        "result": "PASS"
+      },
+      {
+        "name": "cached_category_已阻塞_cannot_approve",
+        "result": "PASS"
+      },
+      {
+        "name": "cached_category_acceptance_removed:已阻塞",
+        "result": "PASS"
+      },
+      {
+        "name": "source_acceptance_overrides_cache:已阻塞",
+        "result": "PASS"
+      },
+      {
+        "name": "checkbox_cannot_submit_proposal",
+        "result": "PASS"
+      },
+      {
+        "name": "status_cannot_complete_proposal",
+        "result": "PASS"
+      },
+      {
+        "name": "export_version",
+        "result": "PASS"
+      },
+      {
+        "name": "export_31_acceptances",
+        "result": "PASS"
+      },
+      {
+        "name": "export_proposal_scope",
+        "result": "PASS"
+      },
+      {
+        "name": "reset_category_focus",
+        "result": "PASS"
+      },
+      {
+        "name": "reset_keeps_all_source_acceptances",
+        "result": "PASS"
+      },
+      {
+        "name": "reset_keeps_proposal_gate",
+        "result": "PASS"
+      },
+      {
+        "name": "report_category_visible",
+        "result": "PASS"
+      },
+      {
+        "name": "proposal_boundary:方案待确认，未实施",
+        "result": "PASS"
+      },
+      {
+        "name": "proposal_boundary:单页样例",
+        "result": "PASS"
+      },
+      {
+        "name": "proposal_boundary:其它四页",
+        "result": "PASS"
+      },
+      {
+        "name": "proposal_boundary:noindex",
+        "result": "PASS"
+      },
+      {
+        "name": "proposal_boundary:共享范围例外",
+        "result": "PASS"
+      },
+      {
+        "name": "proposal_boundary:UNKNOWN",
+        "result": "PASS"
+      },
+      {
+        "name": "proposal_boundary:材料任务继续取消",
+        "result": "PASS"
+      },
+      {
+        "name": "proposal_boundary:未运行应用 QA",
+        "result": "PASS"
+      },
+      {
+        "name": "proposal_boundary:1280×900",
+        "result": "PASS"
+      },
+      {
+        "name": "proposal_boundary:390×844",
+        "result": "PASS"
+      },
+      {
+        "name": "proposal_boundary:360×800",
+        "result": "PASS"
+      },
+      {
+        "name": "proposal_boundary:确认 CATEGORY-001 单页样例方案，进行开发",
+        "result": "PASS"
+      },
+      {
+        "name": "proposal_link:../../app/category/[slug]/page.tsx",
+        "result": "PASS"
+      },
+      {
+        "name": "proposal_link:../../lib/games/directory.ts",
+        "result": "PASS"
+      },
+      {
+        "name": "git_diff_check",
+        "result": "PASS"
+      }
+    ],
+    "rawEvidence": {
+      "baseline": {
+        "path": "C:/Users/liu/AppData/Local/Temp/mysquarefaceicon-category-v174-20260904/baseline.json",
+        "sha256": "87da5fe594c1b357d8b8ec9d26ae9fafc6957dda19c21d04f553adbf352372ba"
+      },
+      "verification": {
+        "path": "C:/Users/liu/AppData/Local/Temp/mysquarefaceicon-category-v174-20260904/verification.json",
+        "sha256": "c646eee081492c3dc894c50d4c8c86cd78069ebdf8c89e24a5bf30eddf9e3704"
+      },
+      "verifier": {
+        "path": "C:/Users/liu/AppData/Local/Temp/mysquarefaceicon-category-v174-20260904/verify.cjs",
+        "sha256": "089c8c9e3d9ec798c887cf8ae1af3c8c050842967a0b20265fd674bbac8cd9f3"
+      }
+    },
+    "gitDiffCheck": {
+      "exitCode": 0,
+      "stderr": "warning: in the working copy of '.gitignore', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'AGENTS.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'CONTENT_PLAN.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'LAUNCH_CHECKLIST.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'PAGE_PLAN.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'PROJECT_BRIEF.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'SEO_LOG.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'SEO_RULES.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/about-us/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/blog/avatar-maker-without-signup/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/blog/cute-profile-picture-ideas/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/blog/discord-avatar-size-guide/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/blog/how-to-make-a-cute-discord-profile-icon/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/blog/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/blog/tiktok-profile-icon-ideas/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/contact/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/editorial-policy/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/gallery/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/globals.css', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/oval-face-icon-generator/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/pixel-art-avatar-icon-generator/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/privacy-policy/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/robots.ts', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/sitemap.ts', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/terms-of-service/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'components/DeferredThirdPartyScripts.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'components/FlashGenerator.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'components/GameSidebar.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'components/HomePage.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'components/SiteFooter.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'components/SiteHeader.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'docs/legal/game-rights.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'docs/quality/installation-and-board-workflow.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'lib/locales.ts', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'package.json', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'public/games/README.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'scripts/README.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'scripts/post-deploy-check.mjs', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'scripts/seo-check.mjs', LF will be replaced by CRLF the next time Git touches it\n"
+    }
+  },
+  "preservation": {
+    "baselineRepositoryFiles": 395,
+    "unchangedNonGovernanceFiles": 390,
+    "unchangedV173SourceHistoryScreenshotArtifactLogs": 122,
+    "originalGamesQaSha256": "365e09ef5dc5ab40e4f6c7997a0bf3bcbe9e5ebb7355e229f374bf912ea8d508",
+    "previousSourceAcceptancesPreserved": 30,
+    "newExplicitAcceptance": "GAMES-INDEX-001",
+    "totalSourceAcceptances": 31,
+    "buildId": "0I9s24K1NYq3oZVWsWY5B",
+    "allMatched": true
+  },
+  "governanceChanges": [
+    "PAGE_PLAN.md",
+    "LAUNCH_CHECKLIST.md",
+    "SEO_LOG.md",
+    "docs/product/games-index-directory-proposal.md",
+    "docs/product/category-pages-proposal.md",
+    "docs/quality/evidence/games-index-001/README.md",
+    "docs/quality/evidence/games-index-001/acceptance-checks.json",
+    "docs/quality/evidence/category-001/proposal-checks.json",
+    "F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html"
+  ],
+  "board": {
+    "path": "F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+    "sha256": "4080577219283ede267da9dff71ff41d6e9013832e24f7efdcf17d904347591e",
+    "visual": "未验证；未绕过既有文件访问限制",
+    "sourceAcceptanceCount": 31,
+    "focus": "CATEGORY-001",
+    "status": "设计中 / 方案待确认"
+  },
+  "environment": {
+    "root": "D:/LYXGIT/mysquarefaceicon",
+    "branch": "codex/game-platform-rebuild",
+    "head": "c6d30087c2c03a7c4eb8d5bfe6e055e9b8d40228",
+    "applicationDirtyWorktreePreserved": true
+  },
+  "failures": [
+    {
+      "phase": "diagnostic capture",
+      "error": "deepStrictEqual rejected equal arrays from separate VM realms",
+      "resolution": "Compare serialized count values; reread unchanged source and rerun capture successfully",
+      "applicationImpact": "none; no baseline or application file had been written before the failed assertion"
+    }
+  ],
+  "notRun": [
+    "application type-check",
+    "application lint",
+    "application regressions",
+    "Next build",
+    "Cloudflare/OpenNext build",
+    "HTTP/SEO",
+    "browser/mobile",
+    "CWV/physical device",
+    "preview liveness",
+    "production/deployment"
+  ],
+  "rulesReviewed": [
+    "IA-02",
+    "IDX-01",
+    "IDX-02",
+    "IDX-03",
+    "IDX-06",
+    "CT-02",
+    "CT-03",
+    "CT-05",
+    "CT-06",
+    "KW-04",
+    "META-06",
+    "META-09",
+    "LINK-07",
+    "AD-02",
+    "AD-04",
+    "AY-01",
+    "AY-03",
+    "PF-05",
+    "OP-05",
+    "OP-09",
+    "OP-10",
+    "OP-12"
+  ],
+  "ruleResult": "仅方案边界复核；未执行新页面实现质量认证。KW-04/人类复核/CWV/生产未验证；源码分类广告风险未修复。",
+  "release": "不通过 / 原 P0 与全站生产门禁未关闭",
+  "commitCreated": false,
+  "pushed": false,
+  "deployed": false,
+  "cancelledMaterialTaskReopened": false,
+  "rollback": "仅撤回本轮方案/治理增量，不修改已验收应用、原 QA/失败、Registry/SWF 或生产；撤回方案不撤销真实 GAMES 验收。"
+}

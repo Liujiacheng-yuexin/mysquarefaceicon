@@ -16,6 +16,11 @@
  */
 
 import { readFileSync, existsSync } from 'node:fs';
+import {
+  loadAiCrawlerPolicy,
+  robotsBlocksAllUserAgents,
+  validateAiCrawlerRobots,
+} from './robots-policy.mjs';
 
 // ---------------------------------------------------------------- 参数解析
 
@@ -72,6 +77,7 @@ const RULE_LEVEL = {
   'PF-02': '必须', 'PF-03': '必须',
   'AY-01': '必须', 'AY-02': '必须',
   'PS-04': '必须',
+  'AI-01': '必须',
 };
 
 const findings = [];
@@ -164,42 +170,6 @@ function parseHtml(html) {
 
 function stripTags(s) { return decodeEntities(s.replace(/<[^>]*>/g, ' ')).replace(/\s+/g, ' ').trim(); }
 
-function robotsBlocksAllUserAgents(body) {
-  const groups = [];
-  let agents = [], rules = [], hasRules = false;
-  const flush = () => {
-    if (agents.length) groups.push({ agents, rules });
-    agents = []; rules = []; hasRules = false;
-  };
-
-  for (const raw of body.split(/\r?\n/)) {
-    const line = raw.replace(/#.*$/, '').trim();
-    if (!line) continue;
-    const match = line.match(/^([^:]+):\s*(.*)$/);
-    if (!match) continue;
-    const directive = match[1].trim().toLowerCase();
-    const value = match[2].trim();
-
-    if (directive === 'user-agent') {
-      if (hasRules) flush();
-      agents.push(value.toLowerCase());
-      continue;
-    }
-    if (agents.length && (directive === 'allow' || directive === 'disallow')) {
-      rules.push({ directive, value });
-      hasRules = true;
-    }
-  }
-  flush();
-
-  const wildcardRules = groups
-    .filter((group) => group.agents.includes('*'))
-    .flatMap((group) => group.rules);
-  const rootDisallowed = wildcardRules.some((rule) => rule.directive === 'disallow' && rule.value === '/');
-  const rootAllowed = wildcardRules.some((rule) => rule.directive === 'allow' && rule.value === '/');
-  return rootDisallowed && !rootAllowed;
-}
-
 function decodeEntities(s) {
   return String(s)
     .replace(/&nbsp;/g, ' ').replace(/&amp;/g, '&').replace(/&lt;/g, '<')
@@ -282,11 +252,11 @@ async function mapLimit(items, limit, fn) {
 
 // ---------------------------------------------------------------- sitemap
 
-async function collectSitemapUrls(sitemapUrl, seen = new Set()) {
+async function collectSitemapUrls(sitemapUrl, seen = new Set(), fetchUrl = (url) => url) {
   if (seen.has(sitemapUrl)) return { urls: [], sitemaps: [] };
   seen.add(sitemapUrl);
 
-  const res = await get(sitemapUrl);
+  const res = await get(fetchUrl(sitemapUrl));
   if (!res.ok) {
     report('IDX-06', sitemapUrl, `sitemap 不可访问（HTTP ${res.status}）`);
     return { urls: [], sitemaps: [] };
@@ -297,7 +267,7 @@ async function collectSitemapUrls(sitemapUrl, seen = new Set()) {
   const locs = [...res.body.matchAll(/<loc>\s*([\s\S]*?)\s*<\/loc>/gi)].map((m) => decodeEntities(m[1]).trim());
 
   if (isIndex) {
-    const nested = await Promise.all(locs.map((l) => collectSitemapUrls(l, seen)));
+    const nested = await Promise.all(locs.map((l) => collectSitemapUrls(l, seen, fetchUrl)));
     return {
       urls: nested.flatMap((n) => n.urls),
       sitemaps: [{ url: sitemapUrl, count: locs.length, bytes }, ...nested.flatMap((n) => n.sitemaps)],
@@ -336,6 +306,21 @@ async function main() {
     descMin: cfg.descMin ?? 110, descMax: cfg.descMax ?? 160,
   };
 
+  // A local production preview often emits the canonical production origin in
+  // robots, sitemap, and links. Fetch those URLs from --base while retaining
+  // their canonical identity for graph, metadata, and index checks.
+  const toBase = (u) => {
+    try {
+      const target = new URL(u, conf.prodDomain || base);
+      const local = new URL(base);
+      target.protocol = local.protocol;
+      target.host = local.host;
+      return target.href;
+    } catch {
+      return u;
+    }
+  };
+
   // --- IDX-07 robots.txt --------------------------------------------------
   const robotsRes = await get(`${base}/robots.txt`);
   let sitemapUrls = [];
@@ -349,11 +334,9 @@ async function main() {
     if (robotsBlocksAllUserAgents(robotsRes.body)) {
       report('IDX-07', `${base}/robots.txt`, '⚠️ robots.txt 对所有 UA 声明了 Disallow: /（全站封禁）');
     }
-    // AI-01 提示（不计入失败，仅提醒显式声明）
-    const aiBots = ['GPTBot', 'OAI-SearchBot', 'ClaudeBot', 'PerplexityBot', 'Google-Extended', 'CCBot'];
-    const missing = aiBots.filter((b) => !new RegExp(`user-agent:\\s*${b}`, 'i').test(robotsRes.body));
-    if (missing.length === aiBots.length) {
-      console.error(`提示 · AI-01：robots.txt 未对任何 AI 爬虫做显式声明。RULES.md 要求显式选择，缺省状态不被接受。`);
+    const aiPolicy = loadAiCrawlerPolicy();
+    for (const message of validateAiCrawlerRobots(robotsRes.body, aiPolicy)) {
+      report('AI-01', `${base}/robots.txt`, message);
     }
   }
 
@@ -363,7 +346,11 @@ async function main() {
   let allUrls = [];
   const sitemapStats = [];
   for (const sm of sitemapUrls) {
-    const { urls, sitemaps } = await collectSitemapUrls(normalize(sm, base) || sm);
+    const { urls, sitemaps } = await collectSitemapUrls(
+      normalize(sm, conf.prodDomain || base) || sm,
+      new Set(),
+      toBase
+    );
     allUrls.push(...urls);
     sitemapStats.push(...sitemaps);
   }
@@ -379,15 +366,28 @@ async function main() {
   if (allUrls.length === 0) { console.error('错误：sitemap 中没有可检查的 URL。'); process.exitCode = 2; return; }
   if (args.max > 0) allUrls = allUrls.slice(0, args.max);
 
-  // sitemap 中的 URL 可能指向生产域名，检查时映射回 base
-  const toLocal = (u) => { try { const a = new URL(u); const b = new URL(base); a.protocol = b.protocol; a.host = b.host; return a.href; } catch { return u; } };
+  const siteOrigin = conf.prodDomain || new URL(allUrls[0]).origin;
+  const toSiteIdentity = (u) => {
+    try {
+      const target = new URL(u, siteOrigin);
+      const localOrigin = new URL(base).origin;
+      if (target.origin === localOrigin) {
+        const canonical = new URL(siteOrigin);
+        target.protocol = canonical.protocol;
+        target.host = canonical.host;
+      }
+      return normalize(target.href, siteOrigin);
+    } catch {
+      return null;
+    }
+  };
 
   console.error(`正在检查 ${allUrls.length} 个 URL …`);
 
   // --- 抓取全部页面 -------------------------------------------------------
   const pages = new Map();
   await mapLimit(allUrls, args.concurrency, async (u) => {
-    const res = await get(toLocal(u));
+    const res = await get(toBase(u));
     if (!res.ok) { report('IDX-06', u, `sitemap 中的 URL 返回 HTTP ${res.status}`); return; }
     const doc = parseHtml(res.body);
     doc.xRobotsTag = (res.headers.get('x-robots-tag') || '').toLowerCase();
@@ -528,9 +528,9 @@ async function main() {
     const outs = new Set();
     for (const a of doc.anchors) {
       if (!a.href || /^(#|mailto:|tel:|javascript:)/i.test(a.href)) continue;
-      const target = normalize(a.href, url);
+      const target = toSiteIdentity(normalize(a.href, url));
       if (!target) continue;
-      if (sameOrigin(target, base)) {
+      if (sameOrigin(target, siteOrigin)) {
         outs.add(target);
         if (inbound.has(target) && target !== url) inbound.get(target).add(url);
         if (!pages.has(target) && !conf.ignore.some((ig) => pathOf(target).startsWith(ig))) externalLinkTargets.add(target);
@@ -556,7 +556,7 @@ async function main() {
     if (sources.size === 0) report('LINK-01', url, '孤岛页面：没有任何站内入链');
   }
   for (const cp of conf.corePages) {
-    const full = normalize(base + cp, base);
+    const full = normalize(new URL(cp, siteOrigin).href, siteOrigin);
     if (!full || !inbound.has(full)) continue;
     const n = inbound.get(full).size;
     if (pathOf(full) !== '/' && n < 5) report('LINK-02', full, `核心页入链仅 ${n} 条，要求 ≥ 5`);
@@ -567,8 +567,8 @@ async function main() {
   if (toProbe.length) {
     console.error(`正在探测 ${toProbe.length} 个站内链接目标 …`);
     await mapLimit(toProbe, args.concurrency, async (u) => {
-      const res = await get(toLocal(u), { method: 'HEAD' });
-      const status = res.status === 405 || res.status === 0 ? (await get(toLocal(u))).status : res.status;
+      const res = await get(toBase(u), { method: 'HEAD' });
+      const status = res.status === 405 || res.status === 0 ? (await get(toBase(u))).status : res.status;
       if (status >= 400) {
         const from = [...(inbound.get(u) || [])].map(pathOf).slice(0, 3);
         report('LINK-08', u, `站内链接指向 HTTP ${status}${from.length ? `（来源：${from.join(', ')}）` : ''}`);
@@ -577,7 +577,7 @@ async function main() {
   }
 
   // --- IA-07 点击深度 -----------------------------------------------------
-  const root = normalize(base + '/', base);
+  const root = normalize(new URL('/', siteOrigin).href, siteOrigin);
   const depth = new Map([[root, 0]]);
   const queue = [root];
   while (queue.length) {
@@ -587,7 +587,7 @@ async function main() {
     }
   }
   for (const cp of conf.corePages) {
-    const full = normalize(base + cp, base);
+    const full = normalize(new URL(cp, siteOrigin).href, siteOrigin);
     const d = depth.get(full);
     if (d === undefined) report('IA-07', full || cp, '核心页从首页不可达（无链接路径）');
     else if (d > 3) report('IA-07', full, `从首页点击深度为 ${d}，要求 ≤ 3`);

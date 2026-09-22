@@ -1,0 +1,7 @@
+{
+  "command": "npm run lint",
+  "at": "2026-09-22T08:55:58.150Z",
+  "exitCode": 0,
+  "stdout": "\n> mysquarefaceicon@0.1.0 lint\n> next lint\n\n✔ No ESLint warnings or errors\n",
+  "stderr": ""
+}

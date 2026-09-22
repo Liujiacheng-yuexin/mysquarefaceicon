@@ -1,0 +1,653 @@
+{
+  "task": "GALLERY-001",
+  "boardVersion": "1.55",
+  "mode": "ACCEPTANCE_ONLY",
+  "recordedAt": "2026-09-02T12:44:34.299Z",
+  "status": "已完成（本地已验收） / 生产未验证 / 未部署",
+  "acceptance": {
+    "result": "通过",
+    "acceptedAt": "2026-09-02T12:44:34.299Z",
+    "source": "用户明确回复“GALLERY-001 验收通过”",
+    "scope": "仅 GALLERY-001 已确认六处本地文案与 v1.54 既有实现/QA 证据；不授予实际许可或生产批准。本轮只记录验收，未改应用或重跑应用检查，不启动下一项、推送或部署。"
+  },
+  "userAcceptanceReceived": true,
+  "applicationChanged": false,
+  "nextTaskStarted": false,
+  "acceptanceOrdinal": 25,
+  "previousAcceptancesPreserved": 24,
+  "scope": "仅 GALLERY-001 已确认六处本地文案与 v1.54 既有实现/QA 证据；不授予实际许可或生产批准。本轮只记录验收，未改应用或重跑应用检查，不启动下一项、推送或部署。",
+  "changedFiles": [
+    "D:/LYXGIT/mysquarefaceicon/docs/quality/evidence/gallery-001-rights-copy/README.md",
+    "D:/LYXGIT/mysquarefaceicon/docs/legal/gallery-rights-consistency-proposal.md",
+    "D:/LYXGIT/mysquarefaceicon/docs/legal/game-rights.md",
+    "D:/LYXGIT/mysquarefaceicon/docs/quality/evidence/release-2026-09-02/README.md",
+    "D:/LYXGIT/mysquarefaceicon/LAUNCH_CHECKLIST.md",
+    "D:/LYXGIT/mysquarefaceicon/PAGE_PLAN.md",
+    "D:/LYXGIT/mysquarefaceicon/SEO_LOG.md",
+    "F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+    "D:/LYXGIT/mysquarefaceicon/docs/quality/evidence/gallery-001-rights-copy/acceptance-checks.json"
+  ],
+  "affectedUrl": "/gallery (acceptance record only; no page change)",
+  "qaEvidence": {
+    "path": "docs/quality/evidence/gallery-001-rights-copy/checks.json",
+    "sha256": "a41646b12dffdc099bc9c1a84cf10667f6efc1753b1db5be2c437e3695bd86af",
+    "boardVersion": "1.54",
+    "originalRecordedAt": "2026-09-02T11:19:47.319Z",
+    "browserCompletedAt": "2026-09-02T11:15:06.704Z",
+    "sourceSha256": "d051f12b8e4c71a9b15a75efb59c3ffbb1f9904ec5d69577f9640ff47d479901",
+    "localResults": "通过（原 v1.54 必需检查） / 有条件通过（12 should 和既有视觉提醒保留）",
+    "finalCommands": 32,
+    "gallerySourceNegativeFixtures": 18,
+    "galleryHtmlNegativeFixtures": 20,
+    "communityInMemoryStates": 4,
+    "seo": {
+      "pages": 20,
+      "must": 0,
+      "should": 12
+    },
+    "browser": {
+      "viewports": [
+        "1280x900",
+        "390x844"
+      ],
+      "assertions": 44,
+      "interactionRecords": 12,
+      "keyboardRecords": 4,
+      "screenshots": 8,
+      "actualCommunityState": "empty at v1.54 observation; no current count or liveness claim",
+      "otherStates": "in-memory shared-component SSR only"
+    },
+    "historicalStatusNote": "The unchanged v1.54 checks.json status/userAcceptance fields refer to its earlier pending-acceptance point. The explicit user acceptance is recorded here and in the authoritative board; historical evidence is not rewritten."
+  },
+  "frozenSource": {
+    "count": 147,
+    "hashes": {
+      "app/about-us/page.tsx": "bd812baed9b69e531d369be6e0be168dc5232d3729def0d7f5a747fbccbf1779",
+      "app/admin/comments/page.tsx": "5da66215f6c126892b132af3f11937d2fba81dc9d3b86b680b207b0cd6680f99",
+      "app/api/admin/comment-images/[...key]/route.ts": "818b0b4c81cd56f9455a3228adc95137268a90db6b82f1a2e1f6f8ec232f03a0",
+      "app/api/admin/comments/route.ts": "63ddcb14964f633f199af6873497abb9091420dba4e889396ca7d2d775578bb2",
+      "app/api/admin/comments/[id]/route.ts": "e471d00f054151ac6636c81fd9d21ce108b19c86875ee524f2e0b44f429c135b",
+      "app/api/comment-images/[...key]/route.ts": "defb2f8ec7f4be7c19beb82663f781ae2e735cf19db127d603f5c82d8925d98a",
+      "app/api/comments/route.ts": "4297d56bf81fb7182236ef0c880cd1039907dc345415e1bacddc39ae01ab2e7f",
+      "app/api/comments/[id]/like/route.ts": "edf2b13178884db9af47debed1186655b55a96abe807e1dde8f4367381089a14",
+      "app/blog/avatar-maker-without-signup/page.tsx": "27b767b9898a1cf54a8bd8d15949690a99c3bcf8fee0a510275d2c05880dce97",
+      "app/blog/best-discord-avatar-style/page.tsx": "2e0807728e27e7b62e0be6aee9319079626b6d8f259fbf452afb3193f6040b9d",
+      "app/blog/cute-profile-picture-ideas/page.tsx": "23d0d94e184f86457eec7bccce657e83a401d94fef36686008af683fbf9ed126",
+      "app/blog/discord-avatar-size-guide/page.tsx": "3990a509c0f009f3007edf767e28983943e35ec03a9422483d7427972e3a7a24",
+      "app/blog/how-to-make-a-cute-discord-profile-icon/page.tsx": "126709f27ed82ffa275ec56f8c19d3ef97bd972f3a6d7737eca02eb016fe4a38",
+      "app/blog/page.tsx": "ae764e709b2e95b94978264e94f7c8339e18fbb40619e2b61003e73979b777e9",
+      "app/blog/square-avatar-vs-round-avatar/page.tsx": "21831b3d94e787b7442827822de117fd9cb6854408e25ea55443bc5cafb3c82b",
+      "app/blog/tiktok-profile-icon-ideas/page.tsx": "c480c6c80cc10800e1ff12710861712d4bde2aefe7145e7666d8352e0f2c29ad",
+      "app/category/[slug]/page.tsx": "db5f8c1c1c4df37b7f8a0a726e540d1a0897fa14d84efd8a2f50a8b79aaba0e1",
+      "app/contact/page.tsx": "43c774c71e326750845afe0168f4d66bbb1ee47367bcfc6015bb17592860c98e",
+      "app/cute-square-avatar-generator/page.tsx": "fe22cddd887475ecc89983278ceeabc06678a344c8ea7aefb47a65eb7a893042",
+      "app/editorial-policy/page.tsx": "c758e70ce143b58db1453877efcb6d82a9e89fd96d1bc473c73c6dcf4c81a529",
+      "app/free-avatar-maker/page.tsx": "65b5cd3745e7aad2dd9bdb11a851fb8a7fa74fe6e7a2e3221474688c76b75aa5",
+      "app/gallery/page.tsx": "d051f12b8e4c71a9b15a75efb59c3ffbb1f9904ec5d69577f9640ff47d479901",
+      "app/games/page.tsx": "325b8221aec0d9ea69a2374faad321a0fa75dd7e8c0df05c59da4db93e46c44f",
+      "app/games/[slug]/page.tsx": "0131595a7dc55e0b9227944e41f5cf54548213f5527cc62f034eb8a61c05aab4",
+      "app/globals.css": "5b5e8d7253be79edbd479a01a53bf3f760d52482ced5f4c6edcd387975669867",
+      "app/layout.tsx": "c9d72791c1167896c2ab3a72bb9e7eada5b909bbf8f540a6e64fb52bed4e77b5",
+      "app/manifest.ts": "035fb0b64fd59984750a16cca5b4e7bd4e776d8ee7c9a608e339cabef2a8a179",
+      "app/not-found.tsx": "1ae05e6e788c22dba45d7cbdce2a4b9271d584246a553bda51428c396991a351",
+      "app/oval-face-icon-generator/page.tsx": "4b0263e9b0fbba1824e32bcec8b324e45aeae0c373f50375a7ba8fe8f9fd0e54",
+      "app/page.tsx": "d10f79e2522ca3c3e21195e09df0f090b119af6452c265e48eb125639b2c46c1",
+      "app/pixel-art-avatar-icon-generator/page.tsx": "514139869fbd206326dc6d2e426d86c2b49f27c557b86868471de200fe94c50d",
+      "app/pixel-square-face-maker/page.tsx": "b691a2359a6a6581eadc75fb1944a93a1718f85c4fff11ba6ebdfbad756603e5",
+      "app/privacy-policy/page.tsx": "eba51fcadf3aa4e61506242d5d5fb1d9d4ac7d870626e7877670ae0984c7d1c4",
+      "app/robots.ts": "dd47d2bd1355fb44791c0f5e481b06c98142639383a902cd6e976cb4f7583aa8",
+      "app/sitemap.ts": "183aafaeb14f529f8c341c70aa9c3278082f670aeaa4f487271d6ff110e0db18",
+      "app/square-avatar-generator/page.tsx": "a239bb17efb6eddce7e49f3214cef92017eed9f167c0879103855d91b4554a31",
+      "app/square-face-icon-generator/page.tsx": "24e88b1057bfea65f350bb84205cc5fc89fec0cd06e4f6dea24719c7513ff731",
+      "app/terms-of-service/page.tsx": "8121043e9a474a19a5c1c366ed80e03db93ec6bc8dc1ed9eda63ef60d85c83f5",
+      "app/[locale]/page.tsx": "e47894775647c4a8630490b2e7ab0a72cc4fdcc2d0f253ce2ce724676adf7ece",
+      "components/AdminComments.tsx": "a3a1dd2d1bc175a4862a49299b363fe50c9b006945fc6b20df97dc08d527af4d",
+      "components/AvatarGenerator.tsx": "61e65dd817d517975ba89ca2ba7e7b182cf015bc296e4a993aa4733342fda74b",
+      "components/CloudflareAnalytics.tsx": "54e33cdc6f229a708c86013649a283ed946be150f717b11eebc6ccdb793368c4",
+      "components/CommentSection.tsx": "02db74c38bf07f57c92defb239866cd75bfeef561333de1db9acfc9d44ddfd21",
+      "components/CuratedGalleryPreview.tsx": "0238422e69aa37737063f1600e11a82505b0b8f94bd813161eb8ea6985e78792",
+      "components/DeferredThirdPartyScripts.tsx": "09ae2617d036e47be5874e366d0ced2fc1634d03b59ac9c2505f1938c7cfe7e2",
+      "components/FlashGenerator.tsx": "c443323031b15428a502ff4fcad3653ffc424ef75db9335b76883576f45ac794",
+      "components/game/AdSlotShell.tsx": "3c1aaa1ab799dddb7e7e0bb607a31c0cc9d77683c42554b7663bc4bdc4a28a27",
+      "components/game/CategoryChip.tsx": "78e2ddcf2ce6b77899d3ab35f06f5d49a87f82f1015d8f4deb862dfe76ab0850",
+      "components/game/EmptyState.tsx": "2ef1bad5737139a2cd9c1cf9d003b28a9f202a50fa9925072cea8e35cef549d2",
+      "components/game/GameBreadcrumb.tsx": "933a23729f0c280559d64ac1376022520c3d700031a489935d1e1b30b604b474",
+      "components/game/GameCard.tsx": "94af78fdd701884f8e69d2d3cdf919d2a0b730c685b6e5287130d85ef9b92edf",
+      "components/game/GameControls.tsx": "2a738d34297ad718e59a678ea9572d8c6cc981180e083e8fca7cb03e21c1b4da",
+      "components/game/GameDetailTemplate.tsx": "c643d800efd8bdbc6d439047b53c3aad6fae403ad59ed55b7c8349218c1ca43c",
+      "components/game/GameFaq.tsx": "c680b9728a08c896095bb85fc688f6d451360142e0bb447763b8fed0a0a1139a",
+      "components/game/GameGrid.tsx": "261672ac47c7cafeb3f2576caf6ba6240fa3c9b15472f55778b8ae3f45d631b5",
+      "components/game/GameMeta.tsx": "d7c6e283401f295579cff65cd01ee761626d727098fbc6e983e8d18e47f807e9",
+      "components/game/GamePlayer.tsx": "a568634e413cacc1ef816bd2835be4916dfc6094f9cc4d3a2ee3a3fd5d51b2da",
+      "components/game/GameSourceRights.tsx": "ebc2ec19b91bf5dde44eae24ca75b6ee208a487c707a9862f694c6d88dbd2243",
+      "components/game/README.md": "4c7ea3c7e616a686fbf08567f8b9e28082912a2dbcbfc7a73d3166867c172f89",
+      "components/game/RelatedGames.tsx": "1fa094f28bd8b0855c7869596b9df55b0072a48a8db6d3db8c6558f954209aa7",
+      "components/game-player/adapters/adapter-types.ts": "4e6c492777363116b8a450d5b7e822abdf99609e518f15a3fc682f2d6fd84df5",
+      "components/game-player/adapters/ExternalLinkAdapter.tsx": "f7d4c98916a2a25785175af7ae6bf009a700f68271b8345322fd904c2431f45c",
+      "components/game-player/adapters/Html5Adapter.tsx": "524f0c49fd8af608ddf86aed872fe1cd0af72839b30391206be8eae639e08325",
+      "components/game-player/adapters/IframeAdapterFrame.tsx": "af31a35c493f607bacbfb548b386f604cbb98c7722a32cf580da11a7b7b593b6",
+      "components/game-player/adapters/LocalIframeAdapter.tsx": "b73408e66cb4dec9fe5b8460960627c95a1a92c43282345562dbfd173b3f4d9f",
+      "components/game-player/adapters/OfficialIframeAdapter.tsx": "0668f81f43684d59522799c55ecc4affe8fb24fdfc571af7e6ac8e56118cc23c",
+      "components/game-player/adapters/RuffleAdapter.tsx": "5fcff6669f4ca75147728e8a73434cdef8abb2823325110d585ad46a1cfe8ada",
+      "components/game-player/GamePlayer.tsx": "142cf22ac3a485c78285d920bbe84114f3931a38f0e9aec067bbf8ca2e562d5c",
+      "components/GameSidebar.tsx": "1d6d43a434f91bface5858c3d648c3aeff90f8f0d930bfbdc9f2ae0ebd28bb70",
+      "components/home/CoreGamePreview.tsx": "9a05388d53d969ef1ea1f4ea9a6273a0ebd1cd8ec6d1df43a1afd8da1c4c44a1",
+      "components/home/HomeDiscoveryRegion.tsx": "8652a91eeeb4650230235422c661be58841a49475ce1bc446425c7e2ac697b04",
+      "components/home/HomeHero.tsx": "0f336bfa249d291f9ef1fde2e558400e2c1d7fcb9e1e5c4991f92daef50d1547",
+      "components/home/HomeResourceLinks.tsx": "fd03f53ecc08510a86e3edd54864e132af9e70b363a7d5dee4c50d1eea207e23",
+      "components/HomePage.tsx": "6f112888eca633682594d9ecc717566142a3a78547fb48146c73351147b6d93b",
+      "components/InstallPrompt.tsx": "fb4a9fd5a43625673f03b26b8d31284c955b4e970d9fbe80be41863228c02ac8",
+      "components/ShareButtons.tsx": "5becc8e6cf2a779dd192222de56087f468b41243f60950d0290f45ff07a71a28",
+      "components/SiteFooter.tsx": "0a8f7e7ca185853a8494ba94f8ecaa65e9ddd73ba3e43781c0efacfcdd3c2291",
+      "components/SiteHeader.tsx": "8182d2e2a5012cfbb62ebadcc8cb581d088364d263f9eb11f9d217686df115a1",
+      "lib/comment-store.ts": "734fa24cbf3cf6518f5026c93953628dca8c28935db6927d53650d4019865804",
+      "lib/games/catalog.ts": "6cc0df85e3acf146b3cc18b63cc4785982607fc0e59142ce89f59d2d6ef0ac0d",
+      "lib/games/game-player-model.ts": "42672e8d0917e9d7d6a1b28137e505ecd4d7b09ba40e3c971751b6d7f3fbe84c",
+      "lib/games/game-schema.ts": "a57eae1f63dff2698c45c6b98d70cd811f513b274fb26182bb20d9059803d235",
+      "lib/games/home-discovery.ts": "b172dd4a9e807754f59dfe5f9bb5b42fdc2d360bd89c54eab504f5577dac166e",
+      "lib/games/routes.ts": "058434c725a09ae921c2c5f184396377873ad67603130f985fcfe39bcd97c5a6",
+      "lib/locales.ts": "937e6c91f0cd3c67bdb9a5a1e865fe9c9829495d5d119ad464a4feaaf7ea3d36",
+      "lib/metadata.ts": "ed02bc92dbfe7e71c0988bef9cf8bbdabc34caef5a1a2ba67d40cf69d839a275",
+      "lib/seo/canonical-origin.ts": "2d506dc08f622a898efd6eb57c9210018d2b8ba73ec8666a3bd4c9685e831fd9",
+      "lib/seo/game-metadata.ts": "87e7f42b085e2714cd22bce3634ccf1272fa822fb70b77292c5831d0f38fe660",
+      "lib/seo/game-structured-data.ts": "84193180e9b8827a2566d38585ce753b94ee30f4c9b5f6aee4fe22da3c875391",
+      "data/ai-crawler-policy.json": "adea8bf57c056c93b319da9033654f573989948058ab04a7c74e4739c472487c",
+      "data/curated-icon-ideas.ts": "b51d0f7b57249b1e3cfe0e16bede29688154814168a2c6271a7388ad10933dce",
+      "data/game-categories.ts": "b0bbb1eccbc70bdc70323c05da94acc725df06d857c70eaba8860f5b3e701d8d",
+      "data/game-license-registry.json": "fb0b94f56ffa3c7feca89ee136c73795a95d993de0ebe16d81ca8041da4a8924",
+      "data/games/oval-face.ts": "ee2ded5bf3d11fb4572b4861f5c39164a37d5e7a3d91f404130510c453331f74",
+      "data/games/pixel-art-avatar.ts": "118d1b40325cb26d8ff19141f5af2ff1b451a3b89de0e6131836a37a0510fabb",
+      "data/games/README.md": "71272ce378d8adc438b34b6d60e58080fa32b8728fd9c513e6aad2001eac24ee",
+      "data/games/square-face.ts": "4be5084d160f2d09b87fb4392ef3e43bbc8675edcfd1f94970e2b2e05ba2b304",
+      "scripts/check-ai-crawler-policy.mjs": "76e030b11a653a01ed101e13c06460f29354f55d33c1e96aab4ace3f53be5042",
+      "scripts/check-terms-rights.mjs": "62ab3d26bb2459fe9abe92a1c520e740cba77f01cec5324a7d19ddadfe6dba50",
+      "scripts/cloudflare-login.cmd": "9285c7cf0105fa6087da2dbb9264265a5daed85475ea61a12b0310431e3c8b0f",
+      "scripts/cloudflare-provision.cmd": "72b6efc1ad0cab89dc54d6d18cb6a6c3f2c1bbc7fa42444b9be968cc1cd22aeb",
+      "scripts/cloudflare-set-secrets.cmd": "5964a356784cc9ea3beeb76b801fc04ae79762ff1c47ab1fecb9f5a0d35a8cd0",
+      "scripts/patch-opennext-worker.mjs": "1f761820c8ec949e7a32f1435b82f14f9919d46bf965090741ab55add8b4068b",
+      "scripts/post-deploy-check.mjs": "51b28a8e14558dfc69c71779ebe9ed28d195f2f671d5eda07977afe885bbee82",
+      "scripts/README.md": "67a0f8e281b6cb2e7c90fac94b05ca798eda10f5e817fb36660289b5f26474bc",
+      "scripts/robots-policy.mjs": "0d3f85f8568a4b17a53c2eaa82fd06460a14262160ba53131f29978c5f4416ed",
+      "scripts/run-canonical-host-check.mjs": "99c282d9246c3a3c060c9b697d0c4a769e6b7622a63b97ab99899d41bc2edc4b",
+      "scripts/run-game-component-check.mjs": "bf05d0f3119b094bc4674846c71bbc69482541921ba199ec693dce021ba86e62",
+      "scripts/run-game-data-check.mjs": "985321918bfc7abdbea07a675b710d40fe8ddbbfa6d128e24e67cd90309f536b",
+      "scripts/run-game-metadata-check.mjs": "a6a16a08338143f1ada4f8f446e89f2e08208c0896cf884a5d494c894931ccf8",
+      "scripts/run-game-player-check.mjs": "59f17f0f2dacc0b596f572a9a1871e58f78623a267257e3f33e7f1eac7bd9f09",
+      "scripts/run-game-route-check.mjs": "be951b8407d08aadf9e1b2b29dda30fe33ffb133af6cd8ee6e8c7897a95eac44",
+      "scripts/run-game-template-check.mjs": "c7121e18a868db05d702639ff8448cbaad958c20117e91b71fb0ed71d98ced8d",
+      "scripts/run-home-discovery-check.mjs": "70cb3221dedd42081b24c201902a3dce2ff46c31e54b8ee478384da4545b4196",
+      "scripts/run-home-gallery-check.mjs": "e0bf58437b6de392dd98af862c97be25107432cec1a24df9a8d9d028b7ab738d",
+      "scripts/run-home-hero-check.mjs": "40ad21661b97f27e306c2eaa8d130637ecbd9a31d5c72c8ef25c214fb3a276e0",
+      "scripts/run-home-information-architecture-check.mjs": "6fc9c018915cb8cbdf68f23fde16239be0cb246bd6f92eab7000b243a98d9f66",
+      "scripts/run-home-performance-check.mjs": "58c55d5a6be4d07961c9163167fb2b1394c2807d4a31b8522da4e79ff7d9d308",
+      "scripts/seo-check.mjs": "a56453c56c8f55f4a308790e38a34aed19b667d1ba3514bd09eb18709db2ca9f",
+      "scripts/start-local-preview.cmd": "edd040a98ac02704de22f632fb21f981976c70b88932461874e4631db1dbcfb1",
+      "scripts/submit-indexnow.mjs": "1394eb5cfa2bb600af3bd3fbdf0f8c2eae9adf78b31d18d6f4cd57f3be0f4ae9",
+      "scripts/validate-canonical-host.ts": "1c7d329c5a0d5ac1b06432381f0933cfe70e0f17f8b4081f5e9695d23a6d32aa",
+      "scripts/validate-game-components.tsx": "3ba59b4e768241a57ec53da796c5cca2c35c6b69c95259f827166c0780a7b74d",
+      "scripts/validate-game-data.ts": "7e6f204d5397830accd8e33534939146bcbdd934b3ec49d8653c113b412d73bd",
+      "scripts/validate-game-metadata.ts": "e7a6f47384a1e305a8a2b1ed3ebd0d5243831191119d34e3a56481fd0ca4e55d",
+      "scripts/validate-game-player.tsx": "370b6809735b2b1ccbd99003fea04ea0f06a9761950333d765a661b3157797eb",
+      "scripts/validate-game-routes.ts": "bca62350b59f545437c2e5a8e834275dce7c5df330bb58d268befd12ab00803f",
+      "scripts/validate-game-template.tsx": "5427f7fbd835530eaa34ef7fc514692b203f8f312e71624ed51df3dc14af6406",
+      "scripts/validate-home-discovery.tsx": "f0236c66dc6e603595d39ba675293c5aba44add9a50cd71b7a2f7e461065d894",
+      "scripts/validate-home-gallery.tsx": "9d551c13b6df1c9173c32a805b07abe6ba85bef830057db78bc4653d56aac19b",
+      "scripts/validate-home-hero.tsx": "f80f6aaa538c53f02b1bc90007cabcbe7fe1ee3bfd1513fcb60ade5ff0f56f70",
+      "scripts/validate-home-information-architecture.tsx": "e3c0001100d69301d7007ba8fc3840779530fbdadae93bd784d48978138cfbc4",
+      "scripts/validate-home-performance.tsx": "ab1f4951e3c77a9806c355717dcfb20977d36fcac2be1edd9090e7811a5c2916",
+      "public/games/oval-face-cover.png": "0e914b27b602683442d57dfa232c88be1fdea5a2ed45bdabe0da72e3ff464073",
+      "public/games/oval-face-icon.png": "a3cdaeff0397647bd1580980c60e2996e5aa499eab8e5f2e634557b1c5da0909",
+      "public/games/oval-face.swf": "80e974d8ef4ad5e849e93464eaea1833620c269bac30601d960f5438c285e09b",
+      "public/games/README.md": "e5ae6e267570980805a1f298d9a6f0b5cf842f934035ae8e6d2355e5b8a3cf0c",
+      "public/games/square-face-cover.png": "15a5c93f79859441eef3032ce45e07abc2e91a7520a9aaef42158dd4fe00a535",
+      "public/games/square-face.swf": "b1d074c95f15b7dcecdbc2405abf820ead985669bb12cd47247fc8ea7537bc1e",
+      "package.json": "1b88a70e51e8c8b828add0fd1c739c630b8221e43cc1467ef4f9b7798c27f585",
+      "package-lock.json": "bf7b778ff42d02d40a11190d56d969cb03ac183a0cf70dbd85c199dc79778c97",
+      "next.config.mjs": "10f3416af7a0a92f59c4d283113624e9c286f645c6155e91c5a381d512feb9ee",
+      "middleware.ts": "4ce3b9cd325b843f1f80bca6545c114ac84f3336434a719cbfd47577c7ab53d6",
+      "tsconfig.json": "a749da922f5e6f1d93a68270185c1ed56e3e45c786d1de1ee59f9bdb7512d720",
+      "scripts/check-about-rights.mjs": "5d1591d13e293168dda865890daecbd33048bfca16b569a4059a262afae94868",
+      "scripts/check-editorial-rights.mjs": "1ec7268b707490f6b55d297b5bfb7a1b36f944da45ddcc8d6f561a52518a503b",
+      "scripts/check-gallery-rights.mjs": "13dcc0d9ff2cc8b651fcaabeb537f4aaf284c519a3dfe4ab60a003fbdea651eb"
+    }
+  },
+  "historicalEvidence": {
+    "count": 10,
+    "hashes": {
+      "docs/quality/evidence/about-001-rights-copy/checks.json": "9b5d2192b7ddac92a9b01c8f2368d3faaee116253166bb6c623c83bbf8e647e7",
+      "docs/quality/evidence/about-001-rights-copy/proposal-checks.json": "dbb44b079bd622e93813761c939091e15a0b892a20d2272aaa1cfbd93a690362",
+      "docs/quality/evidence/about-001-rights-copy/README.md": "5a11b0502a2a6efc90f556cd547806ec0b50eaa51f82a1b756ae240e46d38161",
+      "docs/quality/evidence/terms-001-rights-copy/checks.json": "5b0aaefeca88262d57203e5caa92ea3ac465f5c399361be4bf873c28c4dccf1d",
+      "docs/quality/evidence/terms-001-rights-copy/README.md": "9689d72a5b142b65b639cce43b4508d9eeac5a06d34c4efabe1a8716ba352929",
+      "docs/quality/evidence/pf-01-activation-response/README.md": "118652d153b0036190a6afea9c8688739410148ff27d06e0d1a59f670173399c",
+      "docs/quality/evidence/editorial-001-rights-copy/proposal-checks.json": "a30c3eb49860af11e4af1e998dff78d8b42970d909113ee64c7a728256d5beed",
+      "docs/quality/evidence/editorial-001-rights-copy/checks.json": "72f7ff3be63a9e3b14a41a3f651a336c57f7d74d59785fb9173cd2af36117d52",
+      "docs/quality/evidence/gallery-001-rights-copy/proposal-checks.json": "3c00f1471ba2741fb27d44b1efecd823834443243e46754c1aeda8fea1a81a08",
+      "docs/quality/evidence/gallery-001-rights-copy/checks.json": "a41646b12dffdc099bc9c1a84cf10667f6efc1753b1db5be2c437e3695bd86af"
+    }
+  },
+  "preservedBuild": {
+    "buildId": "Vyf3tcN5LOfwDiSXRH6xO",
+    "artifacts": [
+      {
+        "path": ".next/server/app/gallery.html",
+        "sha256": "2ac5c491a04e834876e122216bd7d4dd03cd5f536606b803063ebebe82dbd35f",
+        "bytes": 52414
+      },
+      {
+        "path": ".next/server/app/editorial-policy.html",
+        "sha256": "c25943c9f5f601d5f99cb36ecf79132cb202b7336dd8251c945eb1eae70a1908",
+        "bytes": 33201
+      },
+      {
+        "path": ".next/server/app/about-us.html",
+        "sha256": "5a53a438b734523ad7eac532d5c9c21a81e8ce5c3d184575dc7d2bdee4838885",
+        "bytes": 38196
+      },
+      {
+        "path": ".next/server/app/terms-of-service.html",
+        "sha256": "fe3841745d6113d5845a465301422bb268d6a0529aa332aaf9d2333f92bbfd35",
+        "bytes": 21778
+      },
+      {
+        "path": ".next/server/app/robots.txt.body",
+        "sha256": "e114dfaaa714b7b9d2385907a7f1e915e30c606d049f11457f45a9f6549d554f",
+        "bytes": 711
+      },
+      {
+        "path": ".next/server/app/sitemap.xml.body",
+        "sha256": "3f1341c4b3d4e339fc5b231539157032ff42ecfc991e4bc2058903d372bb12a7",
+        "bytes": 2770
+      },
+      {
+        "path": ".open-next/worker.js",
+        "sha256": "4e7c7cb3850c2ca12374d034118afc422ed5d95f46bfc3df3ff1dba2911807f3",
+        "bytes": 2234
+      }
+    ],
+    "next": "14.2.35",
+    "openNextCloudflare": "1.3.0",
+    "rebuilt": false
+  },
+  "preservedScreenshots": [
+    {
+      "name": "before-desktop-1280x900",
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/gallery-001-v1.54/before-desktop-1280x900.jpg",
+      "fullPage": false,
+      "bytes": 95628,
+      "sha256": "d3db54431fabbacae5b353fe6a11cd02d5da967318a1f38538401c728531cf62",
+      "recordedAt": "2026-09-02T10:53:00.032Z",
+      "width": 1265,
+      "height": 889,
+      "format": "JPEG",
+      "hashVerified": true
+    },
+    {
+      "name": "before-mobile-390x844",
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/gallery-001-v1.54/before-mobile-390x844.jpg",
+      "fullPage": false,
+      "bytes": 48812,
+      "sha256": "11e4d6b80f6c1420c569f02e6bacdc393f7518d44350f871c9c8d94e8be53568",
+      "recordedAt": "2026-09-02T10:53:46.066Z",
+      "width": 375,
+      "height": 812,
+      "format": "JPEG",
+      "hashVerified": true
+    },
+    {
+      "name": "after-desktop-1280x900",
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/gallery-001-v1.54/after-desktop-1280x900.jpg",
+      "fullPage": false,
+      "bytes": 97564,
+      "sha256": "94b9bb64148056968e0253b7b96f0470d4bac8f4a489359accd901139216c152",
+      "recordedAt": "2026-09-02T11:04:43.514Z",
+      "width": 1265,
+      "height": 889,
+      "format": "JPEG",
+      "hashVerified": true
+    },
+    {
+      "name": "after-desktop-full",
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/gallery-001-v1.54/after-desktop-full.jpg",
+      "fullPage": true,
+      "bytes": 371012,
+      "sha256": "80d47ebb296b00cd843e366a9f5a7cc5a67df5da20022a63f8f86e6e3ad49aca",
+      "recordedAt": "2026-09-02T11:04:44.669Z",
+      "width": 1265,
+      "height": 2765,
+      "format": "JPEG",
+      "hashVerified": true
+    },
+    {
+      "name": "after-desktop-sort-focus",
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/gallery-001-v1.54/after-desktop-sort-focus.jpg",
+      "fullPage": false,
+      "bytes": 108993,
+      "sha256": "75c3484309a560d6290fb79340f6cecf74f39660a26ba69555aeedb5fd05f6ea",
+      "recordedAt": "2026-09-02T11:13:33.375Z",
+      "width": 1265,
+      "height": 889,
+      "format": "JPEG",
+      "hashVerified": true
+    },
+    {
+      "name": "after-mobile-390x844",
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/gallery-001-v1.54/after-mobile-390x844.jpg",
+      "fullPage": false,
+      "bytes": 51897,
+      "sha256": "abc152d525361a9e80da3b4c2ec2f560b9028fffe9ba67762e492a9c3eb20928",
+      "recordedAt": "2026-09-02T11:14:16.794Z",
+      "width": 375,
+      "height": 812,
+      "format": "JPEG",
+      "hashVerified": true
+    },
+    {
+      "name": "after-mobile-full",
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/gallery-001-v1.54/after-mobile-full.jpg",
+      "fullPage": true,
+      "bytes": 338018,
+      "sha256": "48f5119a0a13e6da49a3199b9c8606ccb39e97ade533e97e216b54089cc279f8",
+      "recordedAt": "2026-09-02T11:14:25.233Z",
+      "width": 375,
+      "height": 6561,
+      "format": "JPEG",
+      "hashVerified": true
+    },
+    {
+      "name": "after-mobile-sort-focus",
+      "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/gallery-001-v1.54/after-mobile-sort-focus.jpg",
+      "fullPage": false,
+      "bytes": 58844,
+      "sha256": "fd577ffd169f516d82d6aeb8b4a249c4efe3bb91b1e5b93a692e8d6537e16c60",
+      "recordedAt": "2026-09-02T11:14:45.853Z",
+      "width": 390,
+      "height": 844,
+      "format": "JPEG",
+      "hashVerified": true
+    }
+  ],
+  "notRerun": [
+    "type-check",
+    "lint",
+    "application tests",
+    "Next build",
+    "OpenNext build",
+    "raw HTTP",
+    "robots runtime",
+    "full local SEO",
+    "browser/mobile/interaction",
+    "performance/CWV",
+    "preview process or runtime liveness",
+    "production seo:prod"
+  ],
+  "governanceValidation": {
+    "status": "PASS",
+    "mode": "POST_EDIT_VALIDATION",
+    "boardVersion": "1.55",
+    "startedAt": "2026-09-02T12:50:10.799Z",
+    "recordedAt": "2026-09-02T12:50:11.130Z",
+    "changedFiles": 9,
+    "docChecks": [
+      {
+        "path": "D:/LYXGIT/mysquarefaceicon/docs/quality/evidence/gallery-001-rights-copy/README.md",
+        "sha256": "1034c852b108636c6e72a0fc124ca36ee8f39925141a76cd81ed564c8df075b9",
+        "onlyApprovedAcceptanceEdits": true
+      },
+      {
+        "path": "D:/LYXGIT/mysquarefaceicon/docs/legal/gallery-rights-consistency-proposal.md",
+        "sha256": "530e3a7d8388bd35fde4478289df1b2c8e89f0b1fd381a28a44f7f78bb08b145",
+        "onlyApprovedAcceptanceEdits": true
+      },
+      {
+        "path": "D:/LYXGIT/mysquarefaceicon/docs/legal/game-rights.md",
+        "sha256": "6fe1491ba33365ffa5ec6f6c24e54c7eaa25e01e072f0137b5b82d639cd4583f",
+        "onlyApprovedAcceptanceEdits": true
+      },
+      {
+        "path": "D:/LYXGIT/mysquarefaceicon/docs/quality/evidence/release-2026-09-02/README.md",
+        "sha256": "7d0b5fbda5782025ad7b40a170939ef9df6f1db00a94560273ac14de2d7cdd67",
+        "onlyApprovedAcceptanceEdits": true
+      },
+      {
+        "path": "D:/LYXGIT/mysquarefaceicon/LAUNCH_CHECKLIST.md",
+        "sha256": "eef3a519364372835e2a57719137a722288ab506cc0c28113e757e26e0c86962",
+        "onlyApprovedAcceptanceEdits": true
+      },
+      {
+        "path": "D:/LYXGIT/mysquarefaceicon/PAGE_PLAN.md",
+        "sha256": "07f19b964919faa33763c5b5e0d50ac11cbe5a2b86a7afa66f19f8349a81cd58",
+        "onlyApprovedAcceptanceEdits": true
+      },
+      {
+        "path": "D:/LYXGIT/mysquarefaceicon/SEO_LOG.md",
+        "sha256": "49f1423b98cdd7fdfd6749476030f149baff0ef98e47a209e422cee6759f358f",
+        "onlyApprovedAcceptanceEdits": true
+      },
+      {
+        "path": "F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+        "sha256": "384589f6a166431f5d65f7ec028c6e38248ee177a2efc1c35d100aefd8239d61",
+        "onlyApprovedAcceptanceEdits": true
+      },
+      {
+        "path": "D:/LYXGIT/mysquarefaceicon/docs/quality/evidence/gallery-001-rights-copy/acceptance-checks.json",
+        "new": true,
+        "contentVerified": true,
+        "selfDigest": "omitted because this validation is embedded in this file"
+      }
+    ],
+    "board": {
+      "javascript": "PASS",
+      "staticDataFocus": "PASS",
+      "exportVersion": "1.55",
+      "sourceAcceptances": 25,
+      "previousAcceptancesPreserved": 24,
+      "galleryAccepted": true,
+      "cssUnchanged": true,
+      "roadmapUnchanged": true,
+      "otherQualityAndTaskHistoryUnchanged": true,
+      "nextTaskStarted": false
+    },
+    "sourceHashesUnchanged": 147,
+    "historicalEvidenceUnchanged": 10,
+    "artifacts": [
+      {
+        "path": ".next/server/app/gallery.html",
+        "sha256": "2ac5c491a04e834876e122216bd7d4dd03cd5f536606b803063ebebe82dbd35f",
+        "bytes": 52414,
+        "unchanged": true
+      },
+      {
+        "path": ".next/server/app/editorial-policy.html",
+        "sha256": "c25943c9f5f601d5f99cb36ecf79132cb202b7336dd8251c945eb1eae70a1908",
+        "bytes": 33201,
+        "unchanged": true
+      },
+      {
+        "path": ".next/server/app/about-us.html",
+        "sha256": "5a53a438b734523ad7eac532d5c9c21a81e8ce5c3d184575dc7d2bdee4838885",
+        "bytes": 38196,
+        "unchanged": true
+      },
+      {
+        "path": ".next/server/app/terms-of-service.html",
+        "sha256": "fe3841745d6113d5845a465301422bb268d6a0529aa332aaf9d2333f92bbfd35",
+        "bytes": 21778,
+        "unchanged": true
+      },
+      {
+        "path": ".next/server/app/robots.txt.body",
+        "sha256": "e114dfaaa714b7b9d2385907a7f1e915e30c606d049f11457f45a9f6549d554f",
+        "bytes": 711,
+        "unchanged": true
+      },
+      {
+        "path": ".next/server/app/sitemap.xml.body",
+        "sha256": "3f1341c4b3d4e339fc5b231539157032ff42ecfc991e4bc2058903d372bb12a7",
+        "bytes": 2770,
+        "unchanged": true
+      },
+      {
+        "path": ".open-next/worker.js",
+        "sha256": "4e7c7cb3850c2ca12374d034118afc422ed5d95f46bfc3df3ff1dba2911807f3",
+        "bytes": 2234,
+        "unchanged": true
+      }
+    ],
+    "buildId": "Vyf3tcN5LOfwDiSXRH6xO",
+    "screenshots": [
+      {
+        "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/gallery-001-v1.54/before-desktop-1280x900.jpg",
+        "sha256": "d3db54431fabbacae5b353fe6a11cd02d5da967318a1f38538401c728531cf62",
+        "bytes": 95628,
+        "originalRecordedAt": "2026-09-02T10:53:00.032Z",
+        "unchanged": true
+      },
+      {
+        "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/gallery-001-v1.54/before-mobile-390x844.jpg",
+        "sha256": "11e4d6b80f6c1420c569f02e6bacdc393f7518d44350f871c9c8d94e8be53568",
+        "bytes": 48812,
+        "originalRecordedAt": "2026-09-02T10:53:46.066Z",
+        "unchanged": true
+      },
+      {
+        "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/gallery-001-v1.54/after-desktop-1280x900.jpg",
+        "sha256": "94b9bb64148056968e0253b7b96f0470d4bac8f4a489359accd901139216c152",
+        "bytes": 97564,
+        "originalRecordedAt": "2026-09-02T11:04:43.514Z",
+        "unchanged": true
+      },
+      {
+        "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/gallery-001-v1.54/after-desktop-full.jpg",
+        "sha256": "80d47ebb296b00cd843e366a9f5a7cc5a67df5da20022a63f8f86e6e3ad49aca",
+        "bytes": 371012,
+        "originalRecordedAt": "2026-09-02T11:04:44.669Z",
+        "unchanged": true
+      },
+      {
+        "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/gallery-001-v1.54/after-desktop-sort-focus.jpg",
+        "sha256": "75c3484309a560d6290fb79340f6cecf74f39660a26ba69555aeedb5fd05f6ea",
+        "bytes": 108993,
+        "originalRecordedAt": "2026-09-02T11:13:33.375Z",
+        "unchanged": true
+      },
+      {
+        "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/gallery-001-v1.54/after-mobile-390x844.jpg",
+        "sha256": "abc152d525361a9e80da3b4c2ec2f560b9028fffe9ba67762e492a9c3eb20928",
+        "bytes": 51897,
+        "originalRecordedAt": "2026-09-02T11:14:16.794Z",
+        "unchanged": true
+      },
+      {
+        "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/gallery-001-v1.54/after-mobile-full.jpg",
+        "sha256": "48f5119a0a13e6da49a3199b9c8606ccb39e97ade533e97e216b54089cc279f8",
+        "bytes": 338018,
+        "originalRecordedAt": "2026-09-02T11:14:25.233Z",
+        "unchanged": true
+      },
+      {
+        "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/gallery-001-v1.54/after-mobile-sort-focus.jpg",
+        "sha256": "fd577ffd169f516d82d6aeb8b4a249c4efe3bb91b1e5b93a692e8d6537e16c60",
+        "bytes": 58844,
+        "originalRecordedAt": "2026-09-02T11:14:45.853Z",
+        "unchanged": true
+      }
+    ],
+    "gitChecks": [
+      {
+        "cwd": "D:\\LYXGIT\\mysquarefaceicon",
+        "args": [
+          "branch",
+          "--show-current"
+        ],
+        "startedAt": "2026-09-02T12:50:10.833Z",
+        "completedAt": "2026-09-02T12:50:10.902Z",
+        "timeoutMs": 30000,
+        "exitCode": 0,
+        "stdout": "codex/game-platform-rebuild\n",
+        "stderr": ""
+      },
+      {
+        "cwd": "D:\\LYXGIT\\mysquarefaceicon",
+        "args": [
+          "rev-parse",
+          "HEAD"
+        ],
+        "startedAt": "2026-09-02T12:50:10.902Z",
+        "completedAt": "2026-09-02T12:50:10.971Z",
+        "timeoutMs": 30000,
+        "exitCode": 0,
+        "stdout": "c6d30087c2c03a7c4eb8d5bfe6e055e9b8d40228\n",
+        "stderr": ""
+      },
+      {
+        "cwd": "D:\\LYXGIT\\mysquarefaceicon",
+        "args": [
+          "diff",
+          "--check"
+        ],
+        "startedAt": "2026-09-02T12:50:10.971Z",
+        "completedAt": "2026-09-02T12:50:11.061Z",
+        "timeoutMs": 30000,
+        "exitCode": 0,
+        "stdout": "",
+        "stderr": "warning: in the working copy of '.gitignore', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'LAUNCH_CHECKLIST.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'PAGE_PLAN.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'PROJECT_BRIEF.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'SEO_LOG.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'SEO_RULES.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/about-us/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/blog/avatar-maker-without-signup/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/blog/cute-profile-picture-ideas/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/blog/discord-avatar-size-guide/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/blog/how-to-make-a-cute-discord-profile-icon/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/blog/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/blog/tiktok-profile-icon-ideas/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/contact/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/editorial-policy/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/gallery/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/globals.css', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/oval-face-icon-generator/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/pixel-art-avatar-icon-generator/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/privacy-policy/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/robots.ts', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/sitemap.ts', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/terms-of-service/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'components/FlashGenerator.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'components/HomePage.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'components/SiteHeader.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'docs/legal/game-rights.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'docs/quality/installation-and-board-workflow.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'package.json', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'public/games/README.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'scripts/README.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'scripts/post-deploy-check.mjs', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'scripts/seo-check.mjs', LF will be replaced by CRLF the next time Git touches it\n"
+      },
+      {
+        "cwd": "F:/LYXGIT/Liu-library",
+        "args": [
+          "diff",
+          "--check",
+          "--",
+          "F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html"
+        ],
+        "startedAt": "2026-09-02T12:50:11.061Z",
+        "completedAt": "2026-09-02T12:50:11.129Z",
+        "timeoutMs": 30000,
+        "exitCode": 0,
+        "stdout": "",
+        "stderr": ""
+      }
+    ],
+    "applicationChanged": false,
+    "applicationChecksRerun": false,
+    "buildsRerun": false,
+    "runtimeLivenessChecked": false,
+    "browserVisualRerun": false,
+    "boardVisual": "UNVERIFIED_ACCESS_RESTRICTION_PRESERVED",
+    "production": "UNVERIFIED / NOT_DEPLOYED",
+    "releaseResult": "不通过 / 未部署",
+    "rollback": "Acceptance governance only; no application or online rollback.",
+    "baselineRecordedAt": "2026-09-02T12:49:51.357Z",
+    "originalImplementationEvidence": "docs/quality/evidence/gallery-001-rights-copy/checks.json",
+    "originalImplementationEvidenceSha256": "a41646b12dffdc099bc9c1a84cf10667f6efc1753b1db5be2c437e3695bd86af"
+  },
+  "rules": [
+    "AGENTS.md explicit acceptance gate",
+    "KW-13 confirmed copy scope preserved",
+    "CT-03 factual evidence only",
+    "META-06 schema/copy unchanged",
+    "OP-05 acceptance governance log only",
+    "OP-09/10 original command outcomes and dates retained",
+    "OP-12 no production/release claim"
+  ],
+  "unresolved": {
+    "releaseResult": "不通过 / 未部署",
+    "production": "未验证",
+    "actualRights": "Square/Oval exact source, rights holder, hosting/public-run/redistribution/generated-output permissions remain UNKNOWN.",
+    "seo": "12 existing should and KW-04 remain open; no production or fresh SEO claim.",
+    "visual": "Existing Gallery heading/subtitle spacing and About/Editorial narrow-card advisories retained.",
+    "boardVisual": "未验证；preserve the prior local-file access restriction, no bypass.",
+    "followUp": "Unchanged locale wording needs a separate future instruction; no next task/proposal started."
+  },
+  "deployment": {
+    "commit": false,
+    "push": false,
+    "deployed": false,
+    "productionVerification": false,
+    "migration": false,
+    "previewRestart": false
+  },
+  "rollback": "No application or online rollback for this acceptance-only turn. If the user retracts acceptance, add an explicit governance record without rewriting original QA, undoing unrelated work or resetting the repository.",
+  "next": "等待用户下一步指示；不自动开发、部署或迁移。"
+}

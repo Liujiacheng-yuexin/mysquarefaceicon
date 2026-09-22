@@ -1,0 +1,10 @@
+{
+  "name": "seo",
+  "command": "node scripts/seo-check.mjs --base http://localhost:3000",
+  "startedAt": "2026-09-22T07:58:16.766Z",
+  "finishedAt": "2026-09-22T07:58:17.136Z",
+  "exitCode": 1,
+  "signal": null,
+  "stdout": "\n================================================================\nseo-check · 规范版本 2026-08-31 · 已检查 20 个页面\n================================================================\n\n✗ 必须  AY-02  (3 处)\n      /  —  表单控件缺少 label\n      /  —  表单控件缺少 label\n      /  —  表单控件缺少 label\n\n! 应该  KW-03  (1 处)\n      /blog/how-to-make-a-cute-discord-profile-icon  —  密度 0.49% < 0.5%（命中 3 次 / 609 词）\n\n! 应该  META-03  (7 处)\n      /square-avatar-generator  —  title 68 字符，超过建议上限 60\n      /free-avatar-maker  —  title 66 字符，超过建议上限 60\n      /oval-face-icon-generator  —  title 68 字符，超过建议上限 60\n      /pixel-art-avatar-icon-generator  —  title 68 字符，超过建议上限 60\n      /gallery  —  title 68 字符，超过建议上限 60\n      /blog/best-discord-avatar-style  —  title 71 字符，超过建议上限 60\n      /blog/how-to-make-a-cute-discord-profile-icon  —  title 61 字符，超过建议上限 60\n\n! 应该  META-04  (3 处)\n      /free-avatar-maker  —  description 175 字符，超过建议上限 160\n      /terms-of-service  —  description 仅 76 字符，短于建议下限 110\n      /privacy-policy  —  description 仅 83 字符，短于建议下限 110\n\n----------------------------------------------------------------\n必须级失败 3 项 · 应该级提醒 11 项\n注：KW-04 语义覆盖、CT-05 独有内容等语义类规则需人工判断，本脚本不检查。\n----------------------------------------------------------------\n\n",
+  "stderr": "正在检查 20 个 URL …\n正在探测 8 个站内链接目标 …\n"
+}

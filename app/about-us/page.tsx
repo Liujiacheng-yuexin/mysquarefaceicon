@@ -7,7 +7,7 @@ const pageUrl = "https://mysquarefaceicon.com/about-us";
 export const metadata: Metadata = {
   title: "About My Square Face Icon",
   description:
-    "Learn about My Square Face Icon, a free browser-based square face generator focused on cute profile icons, privacy, and original avatar resources.",
+    "Learn about My Square Face Icon, its browser-based avatar tools, curated examples, community gallery, privacy practices, and unverified game-file rights.",
   alternates: {
     canonical: pageUrl
   },
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "About My Square Face Icon",
     description:
-      "Learn why My Square Face Icon exists and how the site approaches free avatar tools, privacy, and original content.",
+      "Learn how My Square Face Icon handles avatar tools, curated examples, community submissions, privacy, and unverified game-file rights.",
     images: ["/og-image.svg"]
   }
 };
@@ -82,6 +82,9 @@ export default function AboutUsPage() {
             A good profile picture should be quick to make and easy to recognize at small sizes. Many users only need a playful avatar for Discord, TikTok, YouTube, forums, game profiles, classroom projects, or small communities. My Square Face Icon keeps that workflow simple: open the generator, create a face, and save or share the result when the tool supports it.
           </p>
           <p>
+            This page also explains what visitors should know about My Square Face Icon before using the generator, gallery, guides, or community features.
+          </p>
+          <p>
             The site is designed as a focused tool first, not a large social network. Pages are added only when they support the generator, answer a real search intent, or help visitors make better avatar choices.
           </p>
         </section>
@@ -98,16 +101,16 @@ export default function AboutUsPage() {
               <p>Support pages explain icon readability, cute avatar style, platform crops, and practical profile image workflows.</p>
             </article>
             <article className="info-card">
-              <h3>Original gallery ideas</h3>
-              <p>Gallery examples are created for this site as inspiration. They are not copied from competitors, user comments, or third-party art packs.</p>
+              <h3>Avatar inspiration</h3>
+              <p>The homepage shows site-curated icon examples. The gallery includes simple style examples and approved community submissions when available. Selection or moderation does not establish authorship or grant image-use permissions.</p>
             </article>
           </div>
         </section>
 
         <section>
-          <h2>Originality and Rights</h2>
+          <h2>Game Files and Image Rights</h2>
           <p>
-            The site does not copy competitor page text, screenshots, image libraries, comments, or downloadable assets. The main tool uses the square face game file that was provided for this project, while new examples and support content are written specifically for My Square Face Icon.
+            Square and Oval run third-party Flash (SWF) files through Ruffle. We have not verified the original source, rights holder, or permissions for the exact files used here, including hosting, public use, redistribution, and use of generated images. The site&apos;s availability and examples do not establish authorization or grant third-party rights.
           </p>
           <p>
             If the product expands into more avatar makers, each new URL should contain a real usable tool or a clearly useful guide. We avoid publishing thin pages that exist only to target a keyword.
@@ -138,7 +141,7 @@ export default function AboutUsPage() {
             </a>
             <a href="/gallery">
               <h3>Browse the gallery</h3>
-              <p>See original square face icon ideas for style inspiration.</p>
+              <p>Browse style ideas and approved community submissions when available.</p>
             </a>
             <a href="/contact">
               <h3>Contact the project</h3>

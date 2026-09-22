@@ -1,0 +1,243 @@
+{
+  "schemaVersion": 1,
+  "taskId": "LICENSE-GATE",
+  "boardVersion": "1.61",
+  "recordedAt": "2026-09-03T00:53:34.440Z",
+  "timezone": "Asia/Shanghai",
+  "status": "已阻塞（等待许可材料）",
+  "userInstruction": "先发布，然后再准备MIG-SQUARE-001 的本地开发方案",
+  "deploymentRequested": true,
+  "orderConfirmed": true,
+  "confirmedOrder": "Publish accumulated accepted work and verify production first; then prepare the local MIG-SQUARE-001 proposal.",
+  "schedulingQuestionResolved": true,
+  "releaseBeforeMigrationPaused": false,
+  "licenseEvidenceReceived": false,
+  "explicitLicenseGateWaiverReceived": false,
+  "scope": "Release prerequisite and governance review only; deployment was not attempted.",
+  "environment": {
+    "cwd": "D:/LYXGIT/mysquarefaceicon",
+    "branch": "codex/game-platform-rebuild",
+    "head": "c6d30087c2c03a7c4eb8d5bfe6e055e9b8d40228",
+    "os": "Windows",
+    "shell": "PowerShell"
+  },
+  "evidenceRecheck": {
+    "recordedAt": "2026-09-03T00:49:21.353Z",
+    "permissions": [
+      {
+        "id": "square-face-swf",
+        "path": "public/games/square-face.swf",
+        "sha256": "b1d074c95f15b7dcecdbc2405abf820ead985669bb12cd47247fc8ea7537bc1e",
+        "source": "UNKNOWN",
+        "license": "UNKNOWN",
+        "writtenPermission": "UNKNOWN",
+        "rightsHolder": "UNKNOWN"
+      },
+      {
+        "id": "oval-face-swf",
+        "path": "public/games/oval-face.swf",
+        "sha256": "80e974d8ef4ad5e849e93464eaea1833620c269bac30601d960f5438c285e09b",
+        "source": "UNKNOWN",
+        "license": "UNKNOWN",
+        "writtenPermission": "UNKNOWN",
+        "rightsHolder": "UNKNOWN"
+      }
+    ],
+    "sourceFilesUnchanged": 148,
+    "acceptancesUnchanged": 26,
+    "registryUpdated": false,
+    "binaryHashesUnchanged": true
+  },
+  "materialSearch": {
+    "scope": "Repository filenames excluding dependencies/build outputs/Ruffle/history QA, plus the named mysquarefaceicon knowledge folder only.",
+    "repositoryCandidates": [
+      "data/game-license-registry.json",
+      "docs/legal/swf-license-evidence-request.md"
+    ],
+    "knowledgeDirectoryFiles": [
+      "mysquarefaceicon_rebuild_dashboard.html",
+      "mysquarefaceicon_game_platform_rebuild.md"
+    ],
+    "conclusion": "Only the pre-existing Registry and this project's request checklist were candidates; no new licensing document was supplied or registered. This is not a whole-device or mailbox search."
+  },
+  "acceptedWorkPreserved": true,
+  "historicalEvidenceHashes": {
+    "docs/quality/evidence/about-001-rights-copy/checks.json": "9b5d2192b7ddac92a9b01c8f2368d3faaee116253166bb6c623c83bbf8e647e7",
+    "docs/quality/evidence/about-001-rights-copy/proposal-checks.json": "dbb44b079bd622e93813761c939091e15a0b892a20d2272aaa1cfbd93a690362",
+    "docs/quality/evidence/about-001-rights-copy/README.md": "5a11b0502a2a6efc90f556cd547806ec0b50eaa51f82a1b756ae240e46d38161",
+    "docs/quality/evidence/terms-001-rights-copy/checks.json": "5b0aaefeca88262d57203e5caa92ea3ac465f5c399361be4bf873c28c4dccf1d",
+    "docs/quality/evidence/terms-001-rights-copy/README.md": "9689d72a5b142b65b639cce43b4508d9eeac5a06d34c4efabe1a8716ba352929",
+    "docs/quality/evidence/pf-01-activation-response/README.md": "118652d153b0036190a6afea9c8688739410148ff27d06e0d1a59f670173399c",
+    "docs/quality/evidence/editorial-001-rights-copy/proposal-checks.json": "a30c3eb49860af11e4af1e998dff78d8b42970d909113ee64c7a728256d5beed",
+    "docs/quality/evidence/editorial-001-rights-copy/checks.json": "72f7ff3be63a9e3b14a41a3f651a336c57f7d74d59785fb9173cd2af36117d52",
+    "docs/quality/evidence/gallery-001-rights-copy/proposal-checks.json": "3c00f1471ba2741fb27d44b1efecd823834443243e46754c1aeda8fea1a81a08",
+    "docs/quality/evidence/gallery-001-rights-copy/checks.json": "a41646b12dffdc099bc9c1a84cf10667f6efc1753b1db5be2c437e3695bd86af",
+    "docs/quality/evidence/gallery-001-rights-copy/acceptance-checks.json": "eb8105300c659fdc668f06d64b820bac69fcca5a2011a1bc2da0dfa51c121143",
+    "docs/quality/evidence/gallery-001-rights-copy/README.md": "1034c852b108636c6e72a0fc124ca36ee8f39925141a76cd81ed564c8df075b9",
+    "docs/legal/gallery-rights-consistency-proposal.md": "530e3a7d8388bd35fde4478289df1b2c8e89f0b1fd381a28a44f7f78bb08b145",
+    "docs/quality/evidence/locale-001-rights-copy/proposal-checks.json": "0ec30303ae7c7fc9a3af588e0939017aa2175896e4ec1fef741741ccbfe82de4",
+    "docs/quality/evidence/locale-001-rights-copy/checks.json": "55b49e3506e3141ffd1ef5dd701136411dc06b0c351a10fe99caf1fd9eadfdfb",
+    "docs/quality/evidence/locale-001-rights-copy/mobile-revision-checks.json": "71421d8433f2e8fe3f05c0d62ee46584535e4ef1c378fef54f0ec2bd0b4fb31f",
+    "docs/quality/evidence/locale-001-rights-copy/acceptance-checks.json": "bfe4948dc8eae906a7f6435fbc0cbfc29ee725027f9599a2d49444c305cd9d63",
+    "docs/quality/evidence/license-gate-2026-09-03/checks.json": "4fbe84181fe0d7231944eeb3bf2b64b93b6aae6b557cdba1b9445c4d12eb44fb"
+  },
+  "historicalQa": {
+    "evidence": "docs/quality/evidence/locale-001-rights-copy/mobile-revision-checks.json",
+    "boardVersion": "1.58",
+    "recordedAt": "2026-09-02T23:32:04Z",
+    "buildId": "Y8uf2WKGr_E9Pn2mjsax-",
+    "results": "37 commands passed, 20-page SEO 0 must / 12 should, original bounded browser/mobile results retained; none rerun in this turn."
+  },
+  "governanceValidation": {
+    "status": "PASS",
+    "recordedAt": "2026-09-03T00:53:34.440Z",
+    "scope": "Release-order acknowledgement and immutable-evidence check only; not release execution or application QA",
+    "documents": [
+      {
+        "path": "F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+        "sha256": "cda5e95129de275a862e504731ba9aaa5f045c9b53719e4f99dc8876a876be42",
+        "unrelatedContentsPreserved": true
+      },
+      {
+        "path": "PAGE_PLAN.md",
+        "sha256": "769db863f846145b3d4d8984da993fc3d4f1db2256b1eca0574b995c04ea30d5",
+        "unrelatedContentsPreserved": true
+      },
+      {
+        "path": "LAUNCH_CHECKLIST.md",
+        "sha256": "b1206f9793b91592ba3c9d1a957ed23ae71db1fdf0816ea24b11b485220a83de",
+        "unrelatedContentsPreserved": true
+      },
+      {
+        "path": "SEO_LOG.md",
+        "sha256": "046c9bfe3ad2976b7a619fd51c7a0c5e16897642505fb71ca451d5ffeb91d2a6",
+        "unrelatedContentsPreserved": true
+      },
+      {
+        "path": "docs/quality/evidence/release-2026-09-02/README.md",
+        "sha256": "f792ed31ff91921b0a47b9f2fc8abfee544211e4531f8c3505a9899f566760f6",
+        "unrelatedContentsPreserved": true
+      },
+      {
+        "path": "docs/legal/swf-license-evidence-request.md",
+        "sha256": "987948f846e80fcc35f842756d2431916c69dcdf646ecad3c8e71fc444523f68",
+        "unrelatedContentsPreserved": true
+      }
+    ],
+    "board": {
+      "version": "1.61",
+      "task": "LICENSE-GATE",
+      "status": "已阻塞（等待许可材料）",
+      "orderConfirmed": true,
+      "javascript": "PASS",
+      "staticDataParity": "PASS",
+      "exportVersion": "PASS",
+      "acceptancesUnchanged": 26,
+      "allOriginalQaPreserved": true,
+      "migrationTask": "MIG-SQUARE-001 未开始",
+      "cssWeeksOtherTaskStatesUnchanged": true,
+      "visual": "UNVERIFIED_ACCESS_RESTRICTION_PRESERVED"
+    },
+    "unchanged": {
+      "sourceFiles": 148,
+      "historicalEvidenceFiles": 18,
+      "screenshots": 27,
+      "buildArtifacts": 15
+    },
+    "gitChecks": [
+      {
+        "cwd": "D:\\LYXGIT\\mysquarefaceicon",
+        "args": [
+          "branch",
+          "--show-current"
+        ],
+        "startedAt": "2026-09-03T00:53:33.613Z",
+        "completedAt": "2026-09-03T00:53:34.217Z",
+        "exitCode": 0,
+        "stdout": "codex/game-platform-rebuild\n",
+        "stderr": ""
+      },
+      {
+        "cwd": "D:\\LYXGIT\\mysquarefaceicon",
+        "args": [
+          "rev-parse",
+          "HEAD"
+        ],
+        "startedAt": "2026-09-03T00:53:34.217Z",
+        "completedAt": "2026-09-03T00:53:34.279Z",
+        "exitCode": 0,
+        "stdout": "c6d30087c2c03a7c4eb8d5bfe6e055e9b8d40228\n",
+        "stderr": ""
+      },
+      {
+        "cwd": "D:\\LYXGIT\\mysquarefaceicon",
+        "args": [
+          "diff",
+          "--check"
+        ],
+        "startedAt": "2026-09-03T00:53:34.279Z",
+        "completedAt": "2026-09-03T00:53:34.379Z",
+        "exitCode": 0,
+        "stdout": "",
+        "stderr": "warning: in the working copy of '.gitignore', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'LAUNCH_CHECKLIST.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'PAGE_PLAN.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'PROJECT_BRIEF.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'SEO_LOG.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'SEO_RULES.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/about-us/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/blog/avatar-maker-without-signup/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/blog/cute-profile-picture-ideas/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/blog/discord-avatar-size-guide/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/blog/how-to-make-a-cute-discord-profile-icon/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/blog/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/blog/tiktok-profile-icon-ideas/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/contact/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/editorial-policy/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/gallery/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/globals.css', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/oval-face-icon-generator/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/pixel-art-avatar-icon-generator/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/privacy-policy/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/robots.ts', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/sitemap.ts', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/terms-of-service/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'components/FlashGenerator.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'components/HomePage.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'components/SiteHeader.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'docs/legal/game-rights.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'docs/quality/installation-and-board-workflow.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'lib/locales.ts', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'package.json', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'public/games/README.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'scripts/README.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'scripts/post-deploy-check.mjs', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'scripts/seo-check.mjs', LF will be replaced by CRLF the next time Git touches it\n"
+      },
+      {
+        "cwd": "F:/LYXGIT/Liu-library",
+        "args": [
+          "diff",
+          "--check",
+          "--",
+          "F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html"
+        ],
+        "startedAt": "2026-09-03T00:53:34.379Z",
+        "completedAt": "2026-09-03T00:53:34.440Z",
+        "exitCode": 0,
+        "stdout": "",
+        "stderr": ""
+      }
+    ],
+    "applicationChecksRerun": false,
+    "releasePipelineRun": false,
+    "production": "UNVERIFIED / NOT_DEPLOYED",
+    "release": "BLOCKED_PENDING_LICENSE_EVIDENCE"
+  },
+  "changedFiles": [
+    "F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+    "PAGE_PLAN.md",
+    "LAUNCH_CHECKLIST.md",
+    "SEO_LOG.md",
+    "docs/quality/evidence/release-2026-09-02/README.md",
+    "docs/legal/swf-license-evidence-request.md",
+    "docs/quality/evidence/license-gate-2026-09-03/release-order-confirmation.json"
+  ],
+  "applicationChanged": false,
+  "urlOrIndexChanged": false,
+  "applicationChecksRerun": false,
+  "releasePipelineRun": false,
+  "notExecuted": [
+    "type/lint/application regressions",
+    "Next/OpenNext builds",
+    "HTTP/SEO/browser/mobile/performance verification",
+    "preview liveness/restart",
+    "Wrangler/API deployment or production mutation",
+    "commit/push",
+    "MIG-SQUARE-001 proposal or implementation"
+  ],
+  "qualitySupervisorInfluence": "Preserve the user-confirmed publish-first order and independent P0 evidence gate. Deployment authorization is recorded, but it is not treated as an original source or license document.",
+  "releaseResult": "不通过 / 未部署",
+  "deployed": false,
+  "committed": false,
+  "pushed": false,
+  "seoProd": false,
+  "migrationProposalStarted": false,
+  "migrationImplementationStarted": false,
+  "unresolved": [
+    "Square/Oval exact source, rights holder and written permission UNKNOWN",
+    "KW-04 and 12 existing should reminders",
+    "Existing visual advisories and board-file visual access restriction",
+    "Production version linkage, canonical one-hop matrix, robots, SEO, browser and CWV verification"
+  ],
+  "requiredInput": "Original-source and written-license file paths or links for the two exact SWF versions; review their allowed use and restrictions before continuing full release preflight.",
+  "rollback": "Only the seven listed governance files changed. Reverse only the v1.61 record/board additions if correction is requested; preserve application code, prior QA, acceptances and unrelated work. No online rollback is needed.",
+  "next": "请提供 Square/Oval 各自的原始来源与书面许可材料路径或链接。材料核验通过后再完成完整发布门禁并部署；生产验证完成后才准备 MIG-SQUARE-001 本地方案，不先行迁移。"
+}

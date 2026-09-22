@@ -1,0 +1,133 @@
+{
+  "taskId": "RECENT-001",
+  "scope": "RECENTLY_PLAYED_IMPLEMENTATION",
+  "boardVersion": "1.87",
+  "recordedAt": "2026-09-07T08:03:13.7828222Z",
+  "userInstruction": "RECENT-001 验收通过",
+  "result": "通过（用户明确验收 v1.86 本地成果）",
+  "userAcceptanceReceived": true,
+  "wholeLocalTaskCompleted": true,
+  "sourceAcceptance": {
+    "result": "通过",
+    "scope": "RECENTLY_PLAYED_IMPLEMENTATION",
+    "acceptedAt": "2026-09-07T08:03:13.7828222Z",
+    "source": "用户明确回复“RECENT-001 验收通过”",
+    "localOnly": true,
+    "wholeTaskCompleted": true,
+    "implementationEvidencePath": "docs/quality/evidence/recent-001/checks.json",
+    "note": "仅验收 v1.86 的本地 Recently Played 实现；不代表精确移动视觉、CLS、真实权利、人工审核、索引、生产或发布通过，也不自动启动 FAV-001。"
+  },
+  "acceptedFeatures": [
+    "versioned msfi-recently-played-v1 storage with gameId and startedAt only",
+    "maximum 8 stored entries and 4 displayed entries",
+    "Square and Oval first validated Play recording",
+    "no record from Reload, Retry, page view or Pixel External Tool",
+    "conditional Continue Playing on root and games directory",
+    "same-tab and cross-tab synchronization",
+    "clear only the Recently Played key with live announcement and focus recovery",
+    "September 7, 2026 Privacy disclosure"
+  ],
+  "originalImplementationEvidence": {
+    "path": "docs/quality/evidence/recent-001/checks.json",
+    "sha256": "fc7b33a9847ef6949214663e25aae5c66a70cecf0a3d77b1ef85cb7c2e42b81a",
+    "readmePath": "docs/quality/evidence/recent-001/README.md",
+    "readmeSha256": "f07e476bf3126dbf2ac89a5a9f293ad2dd2c8268dba7d14a673f74b6df670f6e",
+    "boardVersion": "1.86",
+    "recordedAt": "2026-09-07T07:24:12.4747720Z",
+    "originalResult": "有条件通过（本地实现、工程检查与 1280 CSS px 实际交互通过；精确 390/360 移动视觉与 seeded-history CLS 未验证）",
+    "buildId": "Q4ukIJY87jlNStoksFbdV",
+    "note": "原实施 QA、失败、浏览器结论、未验证项与日期保持；本文件单独登记后续用户验收，不把历史结果改写为新一轮验证。"
+  },
+  "applicationPreservation": {
+    "applicationCodeChangedInAcceptanceTurn": false,
+    "testsOrCheckersChangedInAcceptanceTurn": false,
+    "gameDataChangedInAcceptanceTurn": false,
+    "cssChangedInAcceptanceTurn": false,
+    "routesOrMetadataChangedInAcceptanceTurn": false,
+    "indexingOrSitemapChangedInAcceptanceTurn": false,
+    "buildArtifactsChangedInAcceptanceTurn": false,
+    "runtimeAndCheckerHashesChecked": 23,
+    "runtimeAndCheckerHashMismatches": 0,
+    "branch": "codex/game-platform-rebuild",
+    "head": "c6d30087c2c03a7c4eb8d5bfe6e055e9b8d40228",
+    "buildId": "Q4ukIJY87jlNStoksFbdV"
+  },
+  "checksInAcceptanceTurn": {
+    "applicationTypeLintTestsBuildsRerun": false,
+    "httpSeoRobotsRerun": false,
+    "browserMobileCwvRerun": false,
+    "productionChecksRerun": false,
+    "previewLivenessChecked": false,
+    "reason": "Acceptance-only governance update; preserve v1.86 evidence dates and do not claim new application QA.",
+    "governanceChecks": [
+      "acceptance JSON parsing",
+      "original implementation evidence JSON parsing",
+      "23 runtime and checker SHA-256 values unchanged",
+      "authoritative board JavaScript syntax",
+      "authoritative board task and source-acceptance evaluation",
+      "23/60 completed count",
+      "34 unique source acceptance task keys",
+      "RECENT-001 wholeTaskCompleted=true",
+      "FAV-001 remains unstarted",
+      "targeted git diff --check"
+    ]
+  },
+  "governanceResults": {
+    "acceptanceJsonParse": "PASS",
+    "implementationEvidenceJsonParse": "PASS",
+    "runtimeAndCheckerHashes": "PASS; 23 checked, 0 mismatches",
+    "boardSourceAndVm": "PASS",
+    "boardCounts": "PASS; 23/60 completed and 34 unique source acceptance task keys",
+    "favoriteBoundary": "PASS; FAV-001 remains unstarted",
+    "gitDiffCheck": "PASS; only existing LF-to-CRLF notices were emitted",
+    "applicationQaRerun": false,
+    "browserVisualRerun": false
+  },
+  "board": {
+    "path": "F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+    "previousSha256": "6108606df56adc7528453bb1b40d881519743ac109226d9d3f82ec0d32080d14",
+    "currentSha256": "526dfc68f31e5bbf487ae05451a9c1a5d93c6e65b928d76f2dc45c40155d8dc2",
+    "version": "1.87",
+    "currentTask": "RECENT-001",
+    "currentStatus": "已完成（本地已验收）",
+    "completedTasks": 23,
+    "totalTasks": 60,
+    "uniqueSourceAcceptanceTaskKeys": 34,
+    "favoriteStarted": false,
+    "nextInstructionRequired": true,
+    "realBrowserVisual": "未重跑；本轮只登记验收，不以源脚本核验冒充真实看板视觉"
+  },
+  "governanceFiles": {
+    "PAGE_PLAN.md": "04010fca6774ae2e4b2612c17a19d24dbbf0c0884ac72902d4a7bbd8a31d1916",
+    "LAUNCH_CHECKLIST.md": "65b13552f439ea596464f26cee6109747d9d2c77d9a822d32a50d868080ef7f0",
+    "SEO_LOG.md": "b21f4362f4f3cab14219f5307ba86f8e667614825d21d0111932aa8a8e09fdba"
+  },
+  "retainedUnverifiedOrBlocking": [
+    "exact 390x844 and 360x800 Recently Played visual checks",
+    "seeded-history CLS",
+    "real devices and other browser engines",
+    "actual Square and Oval rights remain UNKNOWN",
+    "human factual review and remaining semantic-quality notices",
+    "whole-site ads and CMP gates",
+    "field CWV and production canonical, robots, SEO and deployment evidence"
+  ],
+  "nextState": {
+    "recentCompleted": true,
+    "favoriteStarted": false,
+    "nextInstructionRequired": true,
+    "note": "等待用户明确指定下一任务；本轮不自动准备 FAV-001 方案、提交、推送或部署。"
+  },
+  "release": {
+    "commitCreated": false,
+    "pushed": false,
+    "deployed": false,
+    "seoProdRun": false,
+    "productionVerified": false,
+    "result": "不通过 / 未部署"
+  },
+  "rollback": {
+    "application": "none for this acceptance-only turn",
+    "governance": "remove only the v1.87 acceptance entries and restore the v1.86 pending-acceptance board/docs; preserve the implementation, original QA evidence and failure history",
+    "production": "not applicable because no deployment occurred"
+  }
+}

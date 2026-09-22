@@ -1,0 +1,10 @@
+{
+  "at": "2026-09-22T08:20:05.301Z",
+  "result": "passed",
+  "focusId": "HOME-MOBILE-001",
+  "focusStatus": "待验收",
+  "focusGoal": "手机默认 Simple maker，桌面默认 Classic game，用户可切换；保留 Canvas 设置并导出 PNG。",
+  "detailOpened": true,
+  "acceptanceClicked": false,
+  "pageErrors": []
+}

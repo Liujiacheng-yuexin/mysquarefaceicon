@@ -1,0 +1,7 @@
+{
+  "command": "npm run robots:check",
+  "at": "2026-09-22T08:54:19.721Z",
+  "exitCode": 2,
+  "stdout": "\n> mysquarefaceicon@0.1.0 robots:check\n> node scripts/check-ai-crawler-policy.mjs --base http://localhost:3000\n\n",
+  "stderr": "AI-01 crawler policy check could not complete: fetch failed\n"
+}

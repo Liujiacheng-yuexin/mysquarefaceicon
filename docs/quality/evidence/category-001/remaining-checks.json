@@ -1,0 +1,716 @@
+{
+  "taskId": "CATEGORY-001",
+  "scope": "CATEGORY_REMAINING_PAGES",
+  "boardVersion": "1.78",
+  "recordedAt": "2026-09-04T04:02:28.230Z",
+  "userInstruction": "确认 CATEGORY-001 剩余四页批量方案，进行开发",
+  "proposalConfirmed": true,
+  "implementationCompleted": true,
+  "userAcceptanceReceived": false,
+  "wholeTaskCompleted": false,
+  "result": "通过（已确认四页的本地实现与限定最终 QA）；等待用户验收",
+  "browserStability": "有条件通过：首轮 GA 连接关闭整体 FAIL 保留，最终同脚本独立 9 路批次通过",
+  "releaseResult": "不通过 / 原 P0 和生产门禁保留 / 未部署",
+  "pages": [
+    {
+      "path": "/category/avatar-makers",
+      "entries": 3
+    },
+    {
+      "path": "/category/pixel-avatars",
+      "entries": 1
+    },
+    {
+      "path": "/category/retro-flash",
+      "entries": 2
+    },
+    {
+      "path": "/category/character-creators",
+      "entries": 1
+    }
+  ],
+  "frozenSample": {
+    "path": "/category/face-makers",
+    "sourceAcceptance": {
+      "result": "通过",
+      "scope": "CATEGORY_SAMPLE",
+      "acceptedAt": "2026-09-04T02:44:00.162Z",
+      "source": "用户明确回复“CATEGORY-001 单页样例验收通过”",
+      "localOnly": true,
+      "samplePath": "/category/face-makers",
+      "remainingPagesImplemented": false,
+      "wholeTaskCompleted": false,
+      "evidencePath": "docs/quality/evidence/category-001/acceptance-checks.json",
+      "note": "仅验收 v1.75 Face Makers 单页样例及已确认共享分类数据/导航/广告边界；不代表剩余四页、完整 CATEGORY-001、全站事实审核、权利、索引或生产验收。原 QA/失败日期和 P0/UNKNOWN/取消状态保留。"
+    },
+    "fullRealSsrMetadataUnchanged": true,
+    "browserCases": 3,
+    "screenshotHashesEqual": true
+  },
+  "implementation": {
+    "runtimeFiles": [
+      "app/category/[slug]/page.tsx",
+      "lib/games/category-remaining-content.ts"
+    ],
+    "features": [
+      "approved exact access explanations and headings",
+      "true other-category counts and overlap note",
+      "OG/Twitter using existing brand image",
+      "CollectionPage/ItemList and BreadcrumbList",
+      "omit only explanation when identity/path/type/membership dependency fails"
+    ],
+    "cssDataRegistryPlayerAssetsNavigationAdsDependenciesUnchanged": true,
+    "oldGoldenFilesUnchanged": true,
+    "compatibility": "Exact five-source-file and four-render/metadata inverses; unrelated mutations fail closed"
+  },
+  "environment": {
+    "root": "D:/LYXGIT/mysquarefaceicon",
+    "branch": "codex/game-platform-rebuild",
+    "head": "c6d30087c2c03a7c4eb8d5bfe6e055e9b8d40228",
+    "node": "v22.16.0",
+    "previewBase": "http://127.0.0.1:3100",
+    "previewPid": 952,
+    "previewVerifiedAt": "2026-09-04T04:02:28.230Z",
+    "previewNextVersion": "14.2.35",
+    "previewCommand": "node node_modules/next/dist/bin/next start -H 127.0.0.1 -p 3100",
+    "buildId": "NbeJOq_fH0nAhjitrZ8be",
+    "previousBuildId": "nTDZHFbpW4UvLAIaq4fWV",
+    "browserVersion": "152.0.7977.65",
+    "playwright": "1.62.1",
+    "browserAvailability": "Absent",
+    "reason": "Browser plugin not available",
+    "viewports": [
+      [
+        1280,
+        900
+      ],
+      [
+        390,
+        844
+      ],
+      [
+        360,
+        800
+      ]
+    ],
+    "physicalDevice": false,
+    "networkInterception": false
+  },
+  "engineering": {
+    "result": "PASS",
+    "commandCount": 51,
+    "phases": [
+      {
+        "phase": "code-initial",
+        "evidence": {
+          "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-remaining-v178-20260904\\code-initial-results.json",
+          "sha256": "a832dfd7c08064423cc7f6a6b82b929dc1a12c18aa2ade84f2d03480a525333e"
+        },
+        "commands": [
+          {
+            "name": "type",
+            "startedAt": "2026-09-04T03:38:20.268Z",
+            "finishedAt": "2026-09-04T03:38:24.287Z",
+            "exitCode": 0
+          },
+          {
+            "name": "lint",
+            "startedAt": "2026-09-04T03:38:24.289Z",
+            "finishedAt": "2026-09-04T03:38:26.976Z",
+            "exitCode": 0
+          },
+          {
+            "name": "checker-lint",
+            "startedAt": "2026-09-04T03:38:26.977Z",
+            "finishedAt": "2026-09-04T03:38:28.856Z",
+            "exitCode": 0
+          },
+          {
+            "name": "terms:check",
+            "startedAt": "2026-09-04T03:38:28.857Z",
+            "finishedAt": "2026-09-04T03:38:28.936Z",
+            "exitCode": 0
+          },
+          {
+            "name": "about:check",
+            "startedAt": "2026-09-04T03:38:28.937Z",
+            "finishedAt": "2026-09-04T03:38:29.012Z",
+            "exitCode": 0
+          },
+          {
+            "name": "editorial:check",
+            "startedAt": "2026-09-04T03:38:29.013Z",
+            "finishedAt": "2026-09-04T03:38:29.092Z",
+            "exitCode": 0
+          },
+          {
+            "name": "gallery:check",
+            "startedAt": "2026-09-04T03:38:29.093Z",
+            "finishedAt": "2026-09-04T03:38:29.634Z",
+            "exitCode": 0
+          },
+          {
+            "name": "locale:check",
+            "startedAt": "2026-09-04T03:38:29.635Z",
+            "finishedAt": "2026-09-04T03:38:30.356Z",
+            "exitCode": 0
+          },
+          {
+            "name": "square-home:check",
+            "startedAt": "2026-09-04T03:38:30.357Z",
+            "finishedAt": "2026-09-04T03:38:32.878Z",
+            "exitCode": 0
+          },
+          {
+            "name": "oval-page:check",
+            "startedAt": "2026-09-04T03:38:32.880Z",
+            "finishedAt": "2026-09-04T03:38:35.490Z",
+            "exitCode": 0
+          },
+          {
+            "name": "pixel-page:check",
+            "startedAt": "2026-09-04T03:38:35.491Z",
+            "finishedAt": "2026-09-04T03:38:37.088Z",
+            "exitCode": 0
+          },
+          {
+            "name": "games:check",
+            "startedAt": "2026-09-04T03:38:37.089Z",
+            "finishedAt": "2026-09-04T03:38:38.522Z",
+            "exitCode": 0
+          },
+          {
+            "name": "player:check",
+            "startedAt": "2026-09-04T03:38:38.523Z",
+            "finishedAt": "2026-09-04T03:38:40.370Z",
+            "exitCode": 0
+          },
+          {
+            "name": "routes:check",
+            "startedAt": "2026-09-04T03:38:40.371Z",
+            "finishedAt": "2026-09-04T03:38:43.856Z",
+            "exitCode": 0
+          },
+          {
+            "name": "components:check",
+            "startedAt": "2026-09-04T03:38:43.857Z",
+            "finishedAt": "2026-09-04T03:38:46.695Z",
+            "exitCode": 0
+          },
+          {
+            "name": "metadata:check",
+            "startedAt": "2026-09-04T03:38:46.696Z",
+            "finishedAt": "2026-09-04T03:38:48.034Z",
+            "exitCode": 0
+          },
+          {
+            "name": "home:check",
+            "startedAt": "2026-09-04T03:38:48.035Z",
+            "finishedAt": "2026-09-04T03:38:50.264Z",
+            "exitCode": 0
+          },
+          {
+            "name": "home-hero:check",
+            "startedAt": "2026-09-04T03:38:50.265Z",
+            "finishedAt": "2026-09-04T03:38:52.246Z",
+            "exitCode": 0
+          },
+          {
+            "name": "home-discovery:check",
+            "startedAt": "2026-09-04T03:38:52.248Z",
+            "finishedAt": "2026-09-04T03:38:54.283Z",
+            "exitCode": 0
+          },
+          {
+            "name": "home-gallery:check",
+            "startedAt": "2026-09-04T03:38:54.284Z",
+            "finishedAt": "2026-09-04T03:38:57.897Z",
+            "exitCode": 0
+          },
+          {
+            "name": "perf-home:check",
+            "startedAt": "2026-09-04T03:38:57.898Z",
+            "finishedAt": "2026-09-04T03:38:59.916Z",
+            "exitCode": 0
+          },
+          {
+            "name": "game-template:check",
+            "startedAt": "2026-09-04T03:38:59.917Z",
+            "finishedAt": "2026-09-04T03:39:02.679Z",
+            "exitCode": 0
+          },
+          {
+            "name": "canonical:check",
+            "startedAt": "2026-09-04T03:39:02.680Z",
+            "finishedAt": "2026-09-04T03:39:03.939Z",
+            "exitCode": 0
+          },
+          {
+            "name": "games-index:check",
+            "startedAt": "2026-09-04T03:39:03.940Z",
+            "finishedAt": "2026-09-04T03:39:05.006Z",
+            "exitCode": 0
+          },
+          {
+            "name": "category-sample:check",
+            "startedAt": "2026-09-04T03:39:05.006Z",
+            "finishedAt": "2026-09-04T03:39:06.564Z",
+            "exitCode": 0
+          },
+          {
+            "name": "category-remaining:check",
+            "startedAt": "2026-09-04T03:39:06.565Z",
+            "finishedAt": "2026-09-04T03:39:07.541Z",
+            "exitCode": 0
+          }
+        ]
+      },
+      {
+        "phase": "build-initial",
+        "evidence": {
+          "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-remaining-v178-20260904\\build-initial-results.json",
+          "sha256": "f6f2f112cd6d042345b84bfc3fe46f5b334d6797b9a45a478acd5284a7e2f3ce"
+        },
+        "commands": [
+          {
+            "name": "next-build",
+            "startedAt": "2026-09-04T03:40:01.364Z",
+            "finishedAt": "2026-09-04T03:40:19.249Z",
+            "exitCode": 0
+          },
+          {
+            "name": "opennext-build",
+            "startedAt": "2026-09-04T03:40:19.252Z",
+            "finishedAt": "2026-09-04T03:40:59.509Z",
+            "exitCode": 0
+          },
+          {
+            "name": "opennext-patch",
+            "startedAt": "2026-09-04T03:40:59.510Z",
+            "finishedAt": "2026-09-04T03:41:00.073Z",
+            "exitCode": 0
+          }
+        ]
+      },
+      {
+        "phase": "built-initial",
+        "evidence": {
+          "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-remaining-v178-20260904\\built-initial-results.json",
+          "sha256": "b9b807885007002564f55809d1deadb71102f3fa4ec4ace644c9a31f982fa6d1"
+        },
+        "commands": [
+          {
+            "name": "terms-built",
+            "startedAt": "2026-09-04T03:43:56.248Z",
+            "finishedAt": "2026-09-04T03:43:56.336Z",
+            "exitCode": 0
+          },
+          {
+            "name": "about-built",
+            "startedAt": "2026-09-04T03:43:56.338Z",
+            "finishedAt": "2026-09-04T03:43:56.441Z",
+            "exitCode": 0
+          },
+          {
+            "name": "editorial-built",
+            "startedAt": "2026-09-04T03:43:56.442Z",
+            "finishedAt": "2026-09-04T03:43:56.523Z",
+            "exitCode": 0
+          },
+          {
+            "name": "gallery-built",
+            "startedAt": "2026-09-04T03:43:56.524Z",
+            "finishedAt": "2026-09-04T03:43:57.076Z",
+            "exitCode": 0
+          },
+          {
+            "name": "locale-built",
+            "startedAt": "2026-09-04T03:43:57.077Z",
+            "finishedAt": "2026-09-04T03:43:57.874Z",
+            "exitCode": 0
+          },
+          {
+            "name": "oval-page-built",
+            "startedAt": "2026-09-04T03:43:57.875Z",
+            "finishedAt": "2026-09-04T03:44:00.350Z",
+            "exitCode": 0
+          },
+          {
+            "name": "pixel-page-built",
+            "startedAt": "2026-09-04T03:44:00.351Z",
+            "finishedAt": "2026-09-04T03:44:01.946Z",
+            "exitCode": 0
+          },
+          {
+            "name": "games-index-built",
+            "startedAt": "2026-09-04T03:44:01.948Z",
+            "finishedAt": "2026-09-04T03:44:02.985Z",
+            "exitCode": 0
+          },
+          {
+            "name": "category-sample-built",
+            "startedAt": "2026-09-04T03:44:02.986Z",
+            "finishedAt": "2026-09-04T03:44:04.438Z",
+            "exitCode": 0
+          },
+          {
+            "name": "category-remaining-built",
+            "startedAt": "2026-09-04T03:44:04.440Z",
+            "finishedAt": "2026-09-04T03:44:05.382Z",
+            "exitCode": 0
+          }
+        ]
+      },
+      {
+        "phase": "http-initial",
+        "evidence": {
+          "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-remaining-v178-20260904\\http-initial-results.json",
+          "sha256": "f66b6f3de80f0320f63ab8b3e8008d449477ffbc7e65093c3569395543f0334b"
+        },
+        "commands": [
+          {
+            "name": "terms-http",
+            "startedAt": "2026-09-04T03:44:06.650Z",
+            "finishedAt": "2026-09-04T03:44:06.909Z",
+            "exitCode": 0
+          },
+          {
+            "name": "about-http",
+            "startedAt": "2026-09-04T03:44:06.912Z",
+            "finishedAt": "2026-09-04T03:44:07.038Z",
+            "exitCode": 0
+          },
+          {
+            "name": "editorial-http",
+            "startedAt": "2026-09-04T03:44:07.039Z",
+            "finishedAt": "2026-09-04T03:44:07.161Z",
+            "exitCode": 0
+          },
+          {
+            "name": "gallery-http",
+            "startedAt": "2026-09-04T03:44:07.162Z",
+            "finishedAt": "2026-09-04T03:44:07.752Z",
+            "exitCode": 0
+          },
+          {
+            "name": "locale-http",
+            "startedAt": "2026-09-04T03:44:07.752Z",
+            "finishedAt": "2026-09-04T03:44:08.695Z",
+            "exitCode": 0
+          },
+          {
+            "name": "oval-page-http",
+            "startedAt": "2026-09-04T03:44:08.696Z",
+            "finishedAt": "2026-09-04T03:44:11.182Z",
+            "exitCode": 0
+          },
+          {
+            "name": "pixel-page-http",
+            "startedAt": "2026-09-04T03:44:11.183Z",
+            "finishedAt": "2026-09-04T03:44:12.957Z",
+            "exitCode": 0
+          },
+          {
+            "name": "games-index-http",
+            "startedAt": "2026-09-04T03:44:12.959Z",
+            "finishedAt": "2026-09-04T03:44:14.050Z",
+            "exitCode": 0
+          },
+          {
+            "name": "category-sample-http",
+            "startedAt": "2026-09-04T03:44:14.051Z",
+            "finishedAt": "2026-09-04T03:44:15.810Z",
+            "exitCode": 0
+          },
+          {
+            "name": "category-remaining-http",
+            "startedAt": "2026-09-04T03:44:15.813Z",
+            "finishedAt": "2026-09-04T03:44:17.001Z",
+            "exitCode": 0
+          },
+          {
+            "name": "robots",
+            "startedAt": "2026-09-04T03:44:17.002Z",
+            "finishedAt": "2026-09-04T03:44:17.127Z",
+            "exitCode": 0
+          },
+          {
+            "name": "seo",
+            "startedAt": "2026-09-04T03:44:17.128Z",
+            "finishedAt": "2026-09-04T03:44:17.457Z",
+            "exitCode": 0
+          }
+        ]
+      }
+    ],
+    "categoryRemaining": {
+      "source": {
+        "assertions": 380,
+        "negativeFixtures": 162
+      },
+      "built": {
+        "assertions": 386,
+        "negativeFixtures": 182
+      },
+      "http": {
+        "assertions": 397,
+        "negativeFixtures": 182
+      }
+    },
+    "categorySample": {
+      "source": {
+        "assertions": 581,
+        "negativeFixtures": 80
+      },
+      "built": {
+        "assertions": 587,
+        "negativeFixtures": 90
+      },
+      "http": {
+        "assertions": 598,
+        "negativeFixtures": 90
+      }
+    },
+    "existingWarning": "React 18 isolated SSR fetchPriority warning retained in migration checks"
+  },
+  "seo": {
+    "indexing": "all five noindex/follow",
+    "canonical": "self",
+    "sitemapCategoryUrls": 0,
+    "sitemapTotalUrls": 20,
+    "http404": [
+      "/category",
+      "/category/unknown",
+      "/category/face-makers/extra"
+    ],
+    "genericMustFailures": 0,
+    "genericShouldWarnings": 12,
+    "semanticKW04": "未验证",
+    "independentSearchValueCT0205": "未验证；同集合类别保留 noindex",
+    "humanReview": "未完成",
+    "qualityScore": "未验证",
+    "production": "未验证"
+  },
+  "browser": {
+    "initialPageCases": 21,
+    "initialConsoleErrors": 0,
+    "blankPages": 0,
+    "frameworkOverlays": 0,
+    "horizontalOverflow": 0,
+    "frozenHomeGamesFaceCases": 9,
+    "identicalFrozenScreenshots": 7,
+    "nonIdenticalScreenshots": "HOME 1280/360 full PNG hashes differ; no claim of full pixel equivalence; DOM/head/main geometry unchanged",
+    "remainingFirstCardsFullyVisible": 12,
+    "geometryDeviation": {
+      "path": "/category/character-creators",
+      "width": 360,
+      "yShift": -23.3125,
+      "reason": "approved shorter list H2 removes one wrap line; identity and dimensions frozen"
+    },
+    "flows": 177,
+    "flowConsoleEvents": {
+      "expected404": 18,
+      "pageErrors": 0
+    },
+    "finalIdle": {
+      "cases": 9,
+      "loadThenWaitMs": 12500,
+      "postIdleInputs": [
+        "Tab",
+        "pointer",
+        "synthetic touchstart",
+        "wheel"
+      ],
+      "expected404Events": 3
+    },
+    "loadedAdBoundary": {
+      "cases": 4,
+      "sourceEvidence": "real 200 + script load + window.adsbygoogle",
+      "targetEvidence": "new document; no ads scripts/iframes/global/resource requests"
+    },
+    "categoryPlayerOrAdRequests": 0,
+    "evidence": [
+      {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-remaining-v178-20260904\\before-browser.json",
+        "sha256": "80bb2eae01186214d5c14586701eae190f4b80b3fd11a59a2a42c6a22eb96bd2"
+      },
+      {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-remaining-v178-20260904\\after-browser.json",
+        "sha256": "76bb68dacbef26923f6df8e73b539297cc67141f511495b8833006f9f50456b5"
+      },
+      {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-remaining-v178-20260904\\browser-comparison.json",
+        "sha256": "ba7cf5b9f85cec61de00e21596c4d798b72f926973d1f3d8d574bf76fa90ce7e"
+      },
+      {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-remaining-v178-20260904\\browser-flows.json",
+        "sha256": "23e6d9c5011bbee86d9c4499c3dddd3fc173bf962bfe4f21ca3da3148a699223"
+      },
+      {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-remaining-v178-20260904\\browser-idle.json",
+        "sha256": "a87a7b0075536984ea45d1729f52231bcb240e5996406f9c9f59047362c2e2ff"
+      },
+      {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-remaining-v178-20260904\\browser-loaded.json",
+        "sha256": "f30db977b2ccdb907848501b48338df7c0c2a6aa613b8597bd5a9b7a8c225ae2"
+      }
+    ]
+  },
+  "board": {
+    "path": "F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+    "sha256": "df7a46f318f31322cfeb472a8a72db4af918956a6d810057d2f55355ee533ae1",
+    "state": "待验收",
+    "currentScope": "CATEGORY_REMAINING_PAGES",
+    "sourceAcceptances": 32,
+    "overall": "20 / 60",
+    "week": "1 / 5",
+    "vmAssertions": 141,
+    "vmEvidence": {
+      "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-remaining-v178-20260904\\board-verification.json",
+      "sha256": "125955f666f7f6ea8816ee33774f14c54ed791eb891b0e37534d0b1a4659b8b6"
+    },
+    "visual": "未验证；不绕过既有文件访问限制",
+    "realBrowserStorageModified": false,
+    "nextTasksStarted": false
+  },
+  "preserved": {
+    "unmodifiedExistingFiles": 404,
+    "unmodifiedManifestSha256": "66df38476e76056b0110dca110005adcb345120c7faff4f605c3fc7e39e017a4",
+    "historicalJsonCount": 39,
+    "priorScreenshotCount": 36,
+    "priorArtifactCount": 30,
+    "previousBuildCopies": 45,
+    "baselineManifest": {
+      "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-remaining-v178-20260904\\baseline.json",
+      "sha256": "327e5713fcfe499a0c631a47f798394e64b1babebac0bd69a637c59a3238e283"
+    },
+    "sourceAcceptancesIdentical": true,
+    "allOriginalRoadmapTasksIdentical": true,
+    "fullOvalMigrationDeferred": true,
+    "cancelledLicenseGateReopened": false,
+    "originalDeletions": [
+      "components/FlashGeneratorRuntime.tsx",
+      "components/GalleryPreview.tsx"
+    ]
+  },
+  "modifiedFiles": [
+    {
+      "path": "app/category/[slug]/page.tsx",
+      "beforeSha256": "14d32d29e5a23250a1fa37a1e273791ab62103c384fa3e5c57ad73a1e747e0ae",
+      "sha256": "358074712a967ae9442d670cbb3fb4d5aa5aa09b7f6cf89a29c6cb8457c8926d"
+    },
+    {
+      "path": "docs/product/category-remaining-pages-proposal.md",
+      "beforeSha256": "704158888612f0224c2a31da3371d39b072058fab7ea6c0feea865d145a715a3",
+      "sha256": "674d0cd6e6aad959f2322495cb59f2b8b5531d9073fda2be7dec59bc0b4c3979"
+    },
+    {
+      "path": "docs/quality/evidence/category-001/README.md",
+      "beforeSha256": "59506855b73aa73c3833d7f1401d5dbbf6984ba6aa7175b5a67d417d5bde0a58",
+      "sha256": "625ad68238f80379faf836c4ad1f27e18980ceb0b25300ec72118609b9102c81"
+    },
+    {
+      "path": "scripts/category-sample-compat.mjs",
+      "beforeSha256": "a1048c0f3a6ee281bb8001ccb0e59027f4a4b107bc3fd39fedc0ae9b1fbe2eb0",
+      "sha256": "204f369b0ae41754126461dafd4a4b29ee25c4d62d6f152d0d90b11a3f904f46"
+    },
+    {
+      "path": "scripts/check-category-sample.mjs",
+      "beforeSha256": "185f0b96c011da03f9e028b17e03fce8a56d2128a3cf5dee1c4b2cde02ae5f01",
+      "sha256": "32d380d645a2e517c95edf507c10fb4cca8539b28d1068905685155ac199b117"
+    },
+    {
+      "path": "LAUNCH_CHECKLIST.md",
+      "beforeSha256": "d98ccd282611fd0c331e6893823913b072804b04c258b79b67f1f0f0f1f99556",
+      "sha256": "9d7a21195d3bcefb62502ff8237d6a662cca398849891e74ead0c7ce841c5032"
+    },
+    {
+      "path": "PAGE_PLAN.md",
+      "beforeSha256": "0b07dce4428a991430e9c3b9d1e62f61ce1eb2c2a7253a996ecf2fddaaba5f9e",
+      "sha256": "47f3eeec7ccdb8e75dd2dc0da7e9e0d4e9b8e16aebc6e11b7886b4a6656f1166"
+    },
+    {
+      "path": "SEO_LOG.md",
+      "beforeSha256": "6bf001fc0dd5bfbed28271729bb5f91de8f5af77cd5362e8e743f76a38c83d3f",
+      "sha256": "cca002912f788fb251aa7e48c321ae208f8590b513bfaf3480c294f96c2ba702"
+    },
+    {
+      "path": "package.json",
+      "beforeSha256": "5a4ee571c974dcd205cf0fdd5c50e719ff365922193c087b2fefca6074d71436",
+      "sha256": "7ffd72f3b5ec5e853869d8238da1ea11ce9ae4c84348725509a9ee10e7c756c5"
+    },
+    {
+      "path": "scripts/README.md",
+      "beforeSha256": "761b75b823033edfab51d2cb64bca22b9adf3e3c915acccb1884f6113507c917",
+      "sha256": "33e2a7efc167a8eed4fd1dd72ee67fb78d7012e7c6bb059468e0158d99e8adf8"
+    }
+  ],
+  "newFiles": [
+    {
+      "path": "docs/quality/evidence/category-001/remaining-README.md",
+      "sha256": "8fda51fc5e11758a111ec96a9b5c3cea96ca41f44913f5fb33371fe0c9fa1ce9"
+    },
+    {
+      "path": "docs/quality/evidence/category-001/remaining-content-review.md",
+      "sha256": "354830237a9b3c4fd0cc5da7a755168d15fb522910513f44773880c7eb00a31e"
+    },
+    {
+      "path": "lib/games/category-remaining-content.ts",
+      "sha256": "61bc5d007cb00c5d6fb4527ab163addce8cde5397bfee5b7d3898f7f8e596360"
+    },
+    {
+      "path": "scripts/category-remaining-compat.mjs",
+      "sha256": "8d3c31e79eecc732e0aaca4a33e940e8b9d0f134795960e8471c0ab869270574"
+    },
+    {
+      "path": "scripts/check-category-remaining.mjs",
+      "sha256": "b26874f271a89b44d7c14238498139c5585436be4d72883a5591e275884744e9"
+    },
+    {
+      "path": "scripts/fixtures/category-remaining-approved-source-delta.json",
+      "sha256": "f87370377ca872b9c5957011c0c512e28246eedf2c12088cf04b657a7cff2af2"
+    },
+    {
+      "path": "scripts/fixtures/category-remaining-contract.json",
+      "sha256": "e53b3330b08b641946bade0e1c61f4d1c26f626ee7e35ef377738a2c3e1237d8"
+    }
+  ],
+  "failureHistory": [
+    {
+      "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-remaining-v178-20260904\\diagnostic-failures.json",
+      "sha256": "ee3008c730de2e2f9791911cfebc25e3eb267b7046f300f37face80530392e93"
+    },
+    {
+      "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-remaining-v178-20260904\\additional-diagnostics.json",
+      "sha256": "d14aaabb6e7f6cfc61fadb81d1f55328dc4a8679bf36332688d96e112b045553"
+    },
+    {
+      "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-remaining-v178-20260904\\browser-idle-initial-failure.json",
+      "sha256": "71ac5d008c2ec5a9829cca524a9dea21bd57488c0367297185386d6a1a7a3ecc"
+    }
+  ],
+  "artifacts": {
+    "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-remaining-v178-20260904\\artifact-manifest.json",
+    "sha256": "366803154e85b0f91858041cc1f2db29c2c30edfb967606b7f747a9265babb79"
+  },
+  "limitations": [
+    "human factual review and qualityScore",
+    "KW-04 and independent CT-02/05 indexing value",
+    "physical devices and real touch",
+    "all SWF internal controls/save/fullscreen/retry",
+    "external generator internal capabilities",
+    "actual provenance/license UNKNOWN",
+    "current CWV and production version/SEO/redirect/robots",
+    "full-site ads/CMP and retained P0",
+    "real authoritative board visual access"
+  ],
+  "commitCreated": false,
+  "pushed": false,
+  "deployed": false,
+  "rollback": "Reverse only this batch runtime/compat/check fixtures and v1.78 governance against before/ and board.before.html; keep sample acceptance, old goldens and QA; no full git reset or production rollback.",
+  "acceptancePhrase": "CATEGORY-001 剩余四页验收通过",
+  "finalAudit": {
+    "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-category-remaining-v178-20260904\\final-audit.json",
+    "sha256": "aa3702552a4e75614869d021778a499668c6ca3a0d77cd97000c771c4c478600"
+  }
+}

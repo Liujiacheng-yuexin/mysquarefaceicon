@@ -1,0 +1,28 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "jsx": "react-jsx",
+    "noEmit": false,
+    "outDir": ".favorites-check",
+    "rootDir": ".",
+    "incremental": false,
+    "isolatedModules": false,
+    "declaration": false,
+    "sourceMap": false,
+    "plugins": []
+  },
+  "include": [
+    "components/game/FavoriteToggle.tsx",
+    "components/game/FavoritesSection.tsx",
+    "components/game/GameCard.tsx",
+    "components/game/GameGrid.tsx",
+    "data/games/**/*.ts",
+    "lib/favorites.ts",
+    "lib/games/**/*.ts",
+    "scripts/validate-favorites.tsx"
+  ],
+  "exclude": ["node_modules", ".next", ".favorites-check", "app/sitemap.ts"]
+}

@@ -15,6 +15,11 @@
  */
 
 import { readFileSync, existsSync } from 'node:fs';
+import {
+  loadAiCrawlerPolicy,
+  robotsBlocksAllUserAgents,
+  validateAiCrawlerRobots,
+} from './robots-policy.mjs';
 
 function parseArgs(argv) {
   const a = { base: '', sample: 12, config: 'seo-check.config.json' };
@@ -76,42 +81,6 @@ function extractSeo(html) {
   return { canonical, robots, ogImage, title: h.match(/<title[^>]*>([\s\S]*?)<\/title>/i)?.[1]?.trim() ?? null };
 }
 
-function robotsBlocksAllUserAgents(body) {
-  const groups = [];
-  let agents = [], rules = [], hasRules = false;
-  const flush = () => {
-    if (agents.length) groups.push({ agents, rules });
-    agents = []; rules = []; hasRules = false;
-  };
-
-  for (const raw of body.split(/\r?\n/)) {
-    const line = raw.replace(/#.*$/, '').trim();
-    if (!line) continue;
-    const match = line.match(/^([^:]+):\s*(.*)$/);
-    if (!match) continue;
-    const directive = match[1].trim().toLowerCase();
-    const value = match[2].trim();
-
-    if (directive === 'user-agent') {
-      if (hasRules) flush();
-      agents.push(value.toLowerCase());
-      continue;
-    }
-    if (agents.length && (directive === 'allow' || directive === 'disallow')) {
-      rules.push({ directive, value });
-      hasRules = true;
-    }
-  }
-  flush();
-
-  const wildcardRules = groups
-    .filter((group) => group.agents.includes('*'))
-    .flatMap((group) => group.rules);
-  const rootDisallowed = wildcardRules.some((rule) => rule.directive === 'disallow' && rule.value === '/');
-  const rootAllowed = wildcardRules.some((rule) => rule.directive === 'allow' && rule.value === '/');
-  return rootDisallowed && !rootAllowed;
-}
-
 async function main() {
   const args = parseArgs(process.argv);
   const cfg = existsSync(args.config) ? JSON.parse(readFileSync(args.config, 'utf8')) : {};
@@ -140,6 +109,13 @@ async function main() {
       fail('IDX-07', '🚨 robots.txt 对所有 UA 声明 Disallow: /（全站封禁，很可能是预发配置泄漏）');
     } else pass('IDX-07', 'robots.txt 未全站封禁');
 
+    const aiPolicyErrors = validateAiCrawlerRobots(robots.body, loadAiCrawlerPolicy());
+    if (aiPolicyErrors.length) {
+      for (const message of aiPolicyErrors) fail('AI-01', message);
+    } else {
+      pass('AI-01', '11 个 AI crawler 的训练/搜索分流与私有路径边界正确');
+    }
+
     const sm = [...robots.body.matchAll(/^\s*sitemap:\s*(\S+)/gim)].map((m) => m[1]);
     if (sm.length === 0) fail('IDX-07', 'robots.txt 未声明 sitemap');
     else {
@@ -162,17 +138,71 @@ async function main() {
     if (wrongHost.length) fail('IDX-04', `sitemap 中 ${wrongHost.length} 条 URL 指向非生产域名，例如 ${wrongHost[0]}`);
   }
 
-  // --- HTTPS 跳转 ---------------------------------------------------------
+  // --- OP-03 / OP-11 · HTTPS + apex 一跳归一 -----------------------------
   if (base.startsWith('https://')) {
-    const httpRes = await get(base.replace('https://', 'http://'), 'manual');
-    if (httpRes.status >= 300 && httpRes.status < 400) {
-      const loc = httpRes.headers.get('location') || '';
-      if (loc.startsWith('https://')) pass('OP-03', `HTTP → HTTPS 跳转正常（${httpRes.status}）`);
-      else fail('OP-03', `HTTP 跳转目标不是 HTTPS：${loc}`);
-      if (httpRes.status === 302) fail('OP-03', 'HTTP → HTTPS 使用 302，永久跳转应为 301');
-    } else if (httpRes.status === 200) {
-      fail('OP-03', 'HTTP 直接返回 200，未跳转到 HTTPS');
+    const canonical = new URL(base);
+    const canonicalOrigin = canonical.origin;
+    const alternateHostname = canonical.hostname.startsWith('www.')
+      ? canonical.hostname.slice(4)
+      : `www.${canonical.hostname}`;
+    const nestedPath = '/oval-face-icon-generator?op11=path-query';
+    const redirectCases = [
+      {
+        label: 'HTTP apex',
+        request: `http://${canonical.host}/`,
+        expected: `${canonicalOrigin}/`,
+      },
+      {
+        label: 'HTTP www',
+        request: `http://${alternateHostname}/`,
+        expected: `${canonicalOrigin}/`,
+      },
+      {
+        label: 'HTTPS www',
+        request: `https://${alternateHostname}/`,
+        expected: `${canonicalOrigin}/`,
+      },
+      {
+        label: 'HTTP www nested path + query',
+        request: `http://${alternateHostname}${nestedPath}`,
+        expected: `${canonicalOrigin}${nestedPath}`,
+      },
+    ];
+
+    const canonicalRoot = await get(`${canonicalOrigin}/`, 'manual');
+    if (canonicalRoot.status === 200) pass('OP-11', 'HTTPS apex 根路径直接返回 200');
+    else fail('OP-11', `HTTPS apex 根路径应返回 200，实际为 HTTP ${canonicalRoot.status}`);
+
+    for (const testCase of redirectCases) {
+      const firstHop = await get(testCase.request, 'manual');
+      const location = firstHop.headers.get('location') || '';
+      let normalizedLocation = '';
+      try { normalizedLocation = new URL(location, testCase.request).href; } catch { }
+
+      if (firstHop.status !== 308) {
+        fail('OP-11', `${testCase.label} 应返回 308，实际为 HTTP ${firstHop.status}`);
+        continue;
+      }
+      if (normalizedLocation !== testCase.expected) {
+        fail('OP-11', `${testCase.label} 跳转目标错误：${location || '(empty)'}`);
+        continue;
+      }
+
+      const finalHop = await get(normalizedLocation, 'manual');
+      if (finalHop.status >= 300 && finalHop.status < 400) {
+        fail('OP-11', `${testCase.label} 存在超过一跳的重定向链`);
+        continue;
+      }
+      if (finalHop.status !== 200) {
+        fail('OP-11', `${testCase.label} 的规范目标返回 HTTP ${finalHop.status}`);
+        continue;
+      }
+
+      pass('OP-11', `${testCase.label} 一跳 308 归一且保留目标路径`);
     }
+
+    const httpApexPassed = !failures.some((item) => item.includes('HTTP apex'));
+    if (httpApexPassed) pass('OP-03', 'HTTP → HTTPS 使用一跳永久 308');
   }
 
   // --- 抽样页面 -----------------------------------------------------------

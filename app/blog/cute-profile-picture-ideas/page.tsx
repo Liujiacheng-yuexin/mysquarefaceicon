@@ -94,6 +94,7 @@ export default function CuteProfilePictureIdeasPage() {
         <h1>Cute Profile Picture Ideas for Avatars</h1>
         <p className="lead">
           A cute profile picture should be easy to recognize, pleasant to look at, and simple enough to work in a tiny profile slot. A square face icon is a practical starting point because the face stays centered and the image can be reused across social, gaming, and community platforms.
+          Use these cute profile picture ideas as starting points for mood, contrast, and crop-safe composition rather than copying every detail.
         </p>
 
         <nav className="toc-card" aria-label="Article sections">

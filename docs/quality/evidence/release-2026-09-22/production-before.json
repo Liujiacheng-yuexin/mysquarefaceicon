@@ -1,0 +1,30 @@
+{
+  "at": "2026-09-22T08:50:33.210Z",
+  "previousVersion": "4f1b0c0c-d984-45ba-9620-e0add7244331",
+  "requests": [
+    {
+      "url": "http://mysquarefaceicon.com/",
+      "status": 200,
+      "location": null,
+      "title": "Square Face Generator - Classic Flash Avatar &amp; Icon Maker"
+    },
+    {
+      "url": "https://mysquarefaceicon.com/",
+      "status": 200,
+      "location": null,
+      "title": "Square Face Generator - Classic Flash Avatar &amp; Icon Maker"
+    },
+    {
+      "url": "http://www.mysquarefaceicon.com/",
+      "status": 200,
+      "location": null,
+      "title": "Square Face Generator - Classic Flash Avatar &amp; Icon Maker"
+    },
+    {
+      "url": "https://www.mysquarefaceicon.com/",
+      "status": 200,
+      "location": null,
+      "title": "Square Face Generator - Classic Flash Avatar &amp; Icon Maker"
+    }
+  ]
+}

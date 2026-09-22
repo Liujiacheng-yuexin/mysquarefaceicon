@@ -1,0 +1,22 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "incremental": false,
+    "plugins": []
+  },
+  "include": [
+    "next-env.d.ts",
+    "app/page.tsx",
+    "app/games/**/*.tsx",
+    "app/category/**/*.tsx",
+    "app/oval-face-icon-generator/page.tsx",
+    "app/pixel-art-avatar-icon-generator/page.tsx",
+    "components/HomePage.tsx",
+    "components/FlashGenerator.tsx",
+    "data/game-categories.ts",
+    "data/games/**/*.ts",
+    "lib/games/**/*.ts",
+    "lib/seo/**/*.ts"
+  ],
+  "exclude": ["node_modules", ".next", ".game-route-check"]
+}

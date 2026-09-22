@@ -1,0 +1,1916 @@
+{
+  "taskId": "GAMES-INDEX-001",
+  "recordedAt": "2026-09-04T00:50:07.698Z",
+  "scope": "LOCAL_DIRECTORY_NOINDEX",
+  "localQa": "通过",
+  "userAcceptance": "未收到",
+  "humanContentReview": "未完成",
+  "release": "不通过 / 原 P0 和全站生产门禁未关闭",
+  "deployed": false,
+  "commitCreated": false,
+  "pushed": false,
+  "nextTaskStarted": false,
+  "environment": {
+    "root": "D:/LYXGIT/mysquarefaceicon",
+    "branch": "codex/game-platform-rebuild",
+    "head": "c6d30087c2c03a7c4eb8d5bfe6e055e9b8d40228",
+    "buildId": "0I9s24K1NYq3oZVWsWY5B",
+    "preview": "http://127.0.0.1:3100/games",
+    "node": "v22.16.0",
+    "next": "14.2.35",
+    "opennext": "1.3.0",
+    "browserVersion": "152.0.7977.65",
+    "browserAvailability": "Browser plugin not available",
+    "automation": "bundled Playwright 1.62.1 with installed Chrome, headless isolated contexts; no dependency installation"
+  },
+  "sourceFiles": [
+    {
+      "path": "app/games/page.tsx",
+      "sha256": "5c154f0c23e174f94b68ce7e705ae978f7ecb6ffab15d04fd1439e148234d3c5"
+    },
+    {
+      "path": "components/DeferredThirdPartyScripts.tsx",
+      "sha256": "2a8204c7a63d175a2b3db9356557bb56a09ed24a415c1648c4a6e50a5361d538"
+    },
+    {
+      "path": "components/game/GameCard.tsx",
+      "sha256": "e405ecff0e4a26ef3ed686ef5ac7c06d5c622312d17a010bdcae6e495c66edcd"
+    },
+    {
+      "path": "components/game/GameGrid.tsx",
+      "sha256": "ae5a454723185b9c2b34f2129c00e1e3cc3d6336567034d9b4f7798767b71f6c"
+    },
+    {
+      "path": "components/game/CategoryChip.tsx",
+      "sha256": "ef65d12fb1ace3a669ed33e14379cc76d8edb0b5822ef19acdcd0834f836c1e5"
+    },
+    {
+      "path": "components/game/GameBreadcrumb.tsx",
+      "sha256": "db7beaf87e42bf14ed8966dd1912dfa81dc34b1a09eec87d40a446e28daceb3f"
+    },
+    {
+      "path": "components/SiteHeader.tsx",
+      "sha256": "dd7b227b9b8cd195352bd4167ced3365e3866757043953a470982ab897222dbc"
+    },
+    {
+      "path": "components/SiteFooter.tsx",
+      "sha256": "9e02069c0ad45f33e14aace05afbba2d1a6f01d29c64e593b93dce0e52a38565"
+    },
+    {
+      "path": "components/game/GameDetailTemplate.tsx",
+      "sha256": "3ed1e3577a95db9c5bf455d52fa1f09a7b5be214f16d3706773b2c5d6ae81d4a"
+    },
+    {
+      "path": "app/category/[slug]/page.tsx",
+      "sha256": "00765e46360563750250645120e171f4d7e0858e9cb31fd07814cc96a6d03cc7"
+    },
+    {
+      "path": "app/not-found.tsx",
+      "sha256": "508a22e3b5b22cacde2ccf576b7a4b47f6cdfdc6b29138bb3cbf8eada71665c8"
+    },
+    {
+      "path": "package.json",
+      "sha256": "9052cf21592e8520a39c306773e15414377b96fa0835e1720002f9c0a685aa70"
+    },
+    {
+      "path": "scripts/README.md",
+      "sha256": "f8d1930c5445a230e8d378f3b13f94faede8036fac784cbb05a98b418dec69fe"
+    },
+    {
+      "path": "scripts/check-square-homepage.mjs",
+      "sha256": "41e99e6ec5b81d0ca3cc849cb8705d13bc87e1a2b52f772c8b6d2823f2d6c852"
+    },
+    {
+      "path": "scripts/check-oval-legacy-page.mjs",
+      "sha256": "e956d6505ff788195c61f9e664cb63bc98e04bc75bd940871df0710fff612bc2"
+    },
+    {
+      "path": "components/HomePage.tsx",
+      "sha256": "294ff206904e9cc127fcf986d54e4820017331370208a5d4731c84dbb5999623"
+    },
+    {
+      "path": "app/oval-face-icon-generator/page.tsx",
+      "sha256": "d52adae5f4e58886ff467df0a335128ba5b1752cd9875d085edd29f452a27e22"
+    },
+    {
+      "path": "scripts/check-locale-rights.mjs",
+      "sha256": "05acbc5cf323e2a024e1f664d0a71badaede373a7b9955627020336403b5aeef"
+    },
+    {
+      "path": "scripts/validate-game-routes.ts",
+      "sha256": "6c9795ea4b3611650465bbe424ad0e88514c08fa9761cf4952c1ca1b54ef7680"
+    },
+    {
+      "path": "scripts/check-pixel-external-page.mjs",
+      "sha256": "51df87ab42a045b6b37b494805cefa4e8841da934fbfe6caaafd398b52828ad9"
+    },
+    {
+      "path": "lib/games/directory.ts",
+      "sha256": "ae6f5e98a8886478ec3daafecc7801d99ad4725d63e81faa1dcf5dcaedab0f3d"
+    },
+    {
+      "path": "lib/games/directory-policy.ts",
+      "sha256": "72fc949b2d939681de626cefac8d43be4bb22042c6a5fe9a5eb509a942af7b30"
+    },
+    {
+      "path": "lib/seo/games-directory.ts",
+      "sha256": "02da1204cd8dac745877c5fd1507d55921fb611f788e714225839918413ec4a0"
+    },
+    {
+      "path": "components/game/GameLink.tsx",
+      "sha256": "4707246ee064f8ba5ce3401cd555af88f4fb44bf0bc41178fe875c9ce205cbda"
+    },
+    {
+      "path": "scripts/check-games-index.mjs",
+      "sha256": "e2d9dbc476d4e6f9aa996ec181a63d78a3cdcfe5387cc565084e43cd8d64370e"
+    },
+    {
+      "path": "scripts/games-index-compat.mjs",
+      "sha256": "8ff759d48d6745ac451ef4a1ce0816a4f4437df66e8032a284788c36ac0ca50e"
+    },
+    {
+      "path": "scripts/fixtures/games-index-approved-source-delta.json",
+      "sha256": "abeb25af3c27fd7b6f1c9479be31c7d8233b91587a1401b2ae3b7d00fa8d9cec"
+    }
+  ],
+  "changesSinceResume": [
+    {
+      "path": "SEO_LOG.md",
+      "beforeSha256": "188e625c375c66b2ff0c0b269022e10da4c81a00af4ca50c6c81bfa8e0e52791",
+      "sha256": "d1823635ab9a14374dce6d66bee980ce5cada03eda0838c2c5b0b7c3f4d0e244"
+    },
+    {
+      "path": "scripts/validate-game-routes.ts",
+      "beforeSha256": "bca62350b59f545437c2e5a8e834275dce7c5df330bb58d268befd12ab00803f",
+      "sha256": "6c9795ea4b3611650465bbe424ad0e88514c08fa9761cf4952c1ca1b54ef7680"
+    },
+    {
+      "path": "scripts/README.md",
+      "beforeSha256": "3ae51f90927e57bc4b8f4e331a6442fa2a461819fb92303f6909904bb63ed0dc",
+      "sha256": "f8d1930c5445a230e8d378f3b13f94faede8036fac784cbb05a98b418dec69fe"
+    },
+    {
+      "path": "scripts/check-square-homepage.mjs",
+      "beforeSha256": "4b9bb6e3adf0e99fbe8d2cfe03e9c1808eae13492b935300fdb24420aa895c71",
+      "sha256": "41e99e6ec5b81d0ca3cc849cb8705d13bc87e1a2b52f772c8b6d2823f2d6c852"
+    },
+    {
+      "path": "scripts/check-pixel-external-page.mjs",
+      "beforeSha256": "d7e648d7b6d894c339d4ba9170de68dc36d3368b53f8df78d493338bdffaa8e0",
+      "sha256": "51df87ab42a045b6b37b494805cefa4e8841da934fbfe6caaafd398b52828ad9"
+    },
+    {
+      "path": "scripts/check-oval-legacy-page.mjs",
+      "beforeSha256": "3a546fbe49f1f2a66c6139481c838b58527f26ac4e1a97cf39cee213e601a56a",
+      "sha256": "e956d6505ff788195c61f9e664cb63bc98e04bc75bd940871df0710fff612bc2"
+    },
+    {
+      "path": "scripts/check-locale-rights.mjs",
+      "beforeSha256": "a37deaf5dde95c0f88bd37488c1acfce43c5f3024a6c87c3c3d56088453f21c3",
+      "sha256": "05acbc5cf323e2a024e1f664d0a71badaede373a7b9955627020336403b5aeef"
+    },
+    {
+      "path": "PAGE_PLAN.md",
+      "beforeSha256": "fe9693952dc555fb74a74f21bf2c77061369d2387188140c891efd50b785fb0b",
+      "sha256": "7be731aa9fc73514b44b1de12f81d4673a112674fb50e84cbd1bed281c98cfa3"
+    },
+    {
+      "path": "package.json",
+      "beforeSha256": "76d1b6b42ab81d1febbfd9235541e6c29b205e958b02bdeff850941cd55283c5",
+      "sha256": "9052cf21592e8520a39c306773e15414377b96fa0835e1720002f9c0a685aa70"
+    },
+    {
+      "path": "lib/games/directory.ts",
+      "beforeSha256": "1798450afc3572db887ce289a9a1b177cf464726cf8d84c9c80d6c23746875f4",
+      "sha256": "ae6f5e98a8886478ec3daafecc7801d99ad4725d63e81faa1dcf5dcaedab0f3d"
+    },
+    {
+      "path": "LAUNCH_CHECKLIST.md",
+      "beforeSha256": "218de2e6cdc8bede666c7d2aaa75ad2acaa3b9f13ab506289513799a2ce6e964",
+      "sha256": "502c7867b06cb09ea880646230165c18ed07db9030825a5943b60d174aa9b22b"
+    },
+    {
+      "path": "components/HomePage.tsx",
+      "beforeSha256": "fd9f94372bd2cbc98ddcf88b4364183d860ad24dd5dbb5551790fca63e8a8c9c",
+      "sha256": "294ff206904e9cc127fcf986d54e4820017331370208a5d4731c84dbb5999623"
+    },
+    {
+      "path": "components/game/GameDetailTemplate.tsx",
+      "beforeSha256": "c643d800efd8bdbc6d439047b53c3aad6fae403ad59ed55b7c8349218c1ca43c",
+      "sha256": "3ed1e3577a95db9c5bf455d52fa1f09a7b5be214f16d3706773b2c5d6ae81d4a"
+    },
+    {
+      "path": "app/oval-face-icon-generator/page.tsx",
+      "beforeSha256": "7047682caac9809799f475caece2ce110d82e769bee389ceedaba966167701cf",
+      "sha256": "d52adae5f4e58886ff467df0a335128ba5b1752cd9875d085edd29f452a27e22"
+    },
+    {
+      "path": "app/not-found.tsx",
+      "beforeSha256": "1ae05e6e788c22dba45d7cbdce2a4b9271d584246a553bda51428c396991a351",
+      "sha256": "508a22e3b5b22cacde2ccf576b7a4b47f6cdfdc6b29138bb3cbf8eada71665c8"
+    },
+    {
+      "path": "app/games/page.tsx",
+      "beforeSha256": "325b8221aec0d9ea69a2374faad321a0fa75dd7e8c0df05c59da4db93e46c44f",
+      "sha256": "5c154f0c23e174f94b68ce7e705ae978f7ecb6ffab15d04fd1439e148234d3c5"
+    },
+    {
+      "path": "app/category/[slug]/page.tsx",
+      "beforeSha256": "db5f8c1c1c4df37b7f8a0a726e540d1a0897fa14d84efd8a2f50a8b79aaba0e1",
+      "sha256": "00765e46360563750250645120e171f4d7e0858e9cb31fd07814cc96a6d03cc7"
+    },
+    {
+      "path": "docs/product/games-index-directory-proposal.md",
+      "beforeSha256": "f2860c3f13736219f87b9a0e7aeab6d00ee9d8fbf79255d59a371a03b2ff0f50",
+      "sha256": "95810370c8c3745301a996826843295d081f581bcf9c0d93e01f77c44f773ed6"
+    },
+    {
+      "path": "docs/quality/evidence/games-index-001/content-review.md",
+      "beforeSha256": "86d3826f15102b849493ca9112ca632af5637a126d6672223d5515a0b7d91d2e",
+      "sha256": "39986526854469b8ab5237c22925099e1b07f832f8e22f284e2f0eff17ffb585"
+    }
+  ],
+  "preserved": {
+    "total": 370,
+    "manifestSha256": "72d040d1b0d3ba2ac65a922738be0e7466f0a0c2a669c69d6af63f41dc410fc7",
+    "historicalJson": [
+      {
+        "path": "docs/quality/evidence/terms-001-rights-copy/checks.json",
+        "sha256": "5b0aaefeca88262d57203e5caa92ea3ac465f5c399361be4bf873c28c4dccf1d"
+      },
+      {
+        "path": "docs/quality/evidence/perf-home-001/metrics.json",
+        "sha256": "06eb8a27312031aff0f530f12c5961c552c8def39b582cf96f5abe823ac7c905"
+      },
+      {
+        "path": "docs/quality/evidence/mig-square-001/proposal-checks.json",
+        "sha256": "4f737e30de67ec8de4c70954fb7ab7c9cf9e9ecaf91c96ece597245848636ee6"
+      },
+      {
+        "path": "docs/quality/evidence/mig-square-001/checks.json",
+        "sha256": "f3de4b6319696f228e95ad5fddc53f1ba9588d48237daeee2fb31f1d4000daa6"
+      },
+      {
+        "path": "docs/quality/evidence/mig-square-001/acceptance-checks.json",
+        "sha256": "29fbf5eb482a1e1ebb56c1b34086bf05d2113518bfeb422bdb8a8b2148636b8c"
+      },
+      {
+        "path": "docs/quality/evidence/mig-pixel-001/proposal-checks.json",
+        "sha256": "45526d6726ccc0b4f1e837e77f2e0159d306f374f86e2b27ff69fdaf8c157d18"
+      },
+      {
+        "path": "docs/quality/evidence/mig-pixel-001/checks.json",
+        "sha256": "bb9571f180ccc4dd2d4a7b29e1733582b363eb1c49c637051fcdb0edb984d512"
+      },
+      {
+        "path": "docs/quality/evidence/mig-pixel-001/acceptance-checks.json",
+        "sha256": "7a5f9e7b3f58b823357c2e26a70cbab1771d8ef86cf2c83b23703c3bfe85dd70"
+      },
+      {
+        "path": "docs/quality/evidence/mig-oval-001/proposal-checks.json",
+        "sha256": "20e52eba57d40a3d407e73962d0f799f5e7f5415e6dc950454da99dbf890d350"
+      },
+      {
+        "path": "docs/quality/evidence/mig-oval-001/checks.json",
+        "sha256": "47bfac00708ee560e90b915bbc7fd6c57e4fc9a7def201fa3a4c9ea8a2fd3231"
+      },
+      {
+        "path": "docs/quality/evidence/mig-oval-001/acceptance-checks.json",
+        "sha256": "48d1db1998610c94e5bfc398b51ae31edf7751f251fd0b0e0cbbefff4faa6a6f"
+      },
+      {
+        "path": "docs/quality/evidence/content-qa-001/checks.json",
+        "sha256": "40371180bbf00e36a69038596644f3c4701e7c869b00548cd29c80a167ccb641"
+      },
+      {
+        "path": "docs/quality/evidence/content-qa-001/acceptance-checks.json",
+        "sha256": "102cecc66d9d9ae8fed6d3c4dfde9521b5cfeb10341ab8e3b53330967c189201"
+      },
+      {
+        "path": "docs/quality/evidence/locale-001-rights-copy/proposal-checks.json",
+        "sha256": "0ec30303ae7c7fc9a3af588e0939017aa2175896e4ec1fef741741ccbfe82de4"
+      },
+      {
+        "path": "docs/quality/evidence/locale-001-rights-copy/mobile-revision-checks.json",
+        "sha256": "71421d8433f2e8fe3f05c0d62ee46584535e4ef1c378fef54f0ec2bd0b4fb31f"
+      },
+      {
+        "path": "docs/quality/evidence/locale-001-rights-copy/checks.json",
+        "sha256": "55b49e3506e3141ffd1ef5dd701136411dc06b0c351a10fe99caf1fd9eadfdfb"
+      },
+      {
+        "path": "docs/quality/evidence/locale-001-rights-copy/acceptance-checks.json",
+        "sha256": "bfe4948dc8eae906a7f6435fbc0cbfc29ee725027f9599a2d49444c305cd9d63"
+      },
+      {
+        "path": "docs/quality/evidence/home-gallery-001/production-approved-ugc-probe.json",
+        "sha256": "37f3fa29f7f9b84721ae117bf85efb4ce79fe7d2015192e2ce0cd62d8981f93c"
+      },
+      {
+        "path": "docs/quality/evidence/about-001-rights-copy/proposal-checks.json",
+        "sha256": "dbb44b079bd622e93813761c939091e15a0b892a20d2272aaa1cfbd93a690362"
+      },
+      {
+        "path": "docs/quality/evidence/about-001-rights-copy/checks.json",
+        "sha256": "9b5d2192b7ddac92a9b01c8f2368d3faaee116253166bb6c623c83bbf8e647e7"
+      },
+      {
+        "path": "docs/quality/evidence/gallery-001-rights-copy/proposal-checks.json",
+        "sha256": "3c00f1471ba2741fb27d44b1efecd823834443243e46754c1aeda8fea1a81a08"
+      },
+      {
+        "path": "docs/quality/evidence/gallery-001-rights-copy/checks.json",
+        "sha256": "a41646b12dffdc099bc9c1a84cf10667f6efc1753b1db5be2c437e3695bd86af"
+      },
+      {
+        "path": "docs/quality/evidence/gallery-001-rights-copy/acceptance-checks.json",
+        "sha256": "eb8105300c659fdc668f06d64b820bac69fcca5a2011a1bc2da0dfa51c121143"
+      },
+      {
+        "path": "docs/quality/evidence/games-index-001/proposal-checks.json",
+        "sha256": "864180ac6ea02eb4d5e4c6e41b883dba60a6d3dc66ce4c0884449f2235b64fb4"
+      },
+      {
+        "path": "docs/quality/evidence/games-index-001/interruption-checks.json",
+        "sha256": "b5e31ce1a481bf89b56b965d3a91487b78ca93232c01da7f9d68ca25c2905594"
+      },
+      {
+        "path": "docs/quality/evidence/editorial-001-rights-copy/proposal-checks.json",
+        "sha256": "a30c3eb49860af11e4af1e998dff78d8b42970d909113ee64c7a728256d5beed"
+      },
+      {
+        "path": "docs/quality/evidence/editorial-001-rights-copy/checks.json",
+        "sha256": "72f7ff3be63a9e3b14a41a3f651a336c57f7d74d59785fb9173cd2af36117d52"
+      }
+    ],
+    "sourceAcceptances": 30,
+    "registrySha256": "fb0b94f56ffa3c7feca89ee136c73795a95d993de0ebe16d81ca8041da4a8924",
+    "squareSwfSha256": "b1d074c95f15b7dcecdbc2405abf820ead985669bb12cd47247fc8ea7537bc1e",
+    "ovalSwfSha256": "80e974d8ef4ad5e849e93464eaea1833620c269bac30601d960f5438c285e09b",
+    "cancelledMaterialTaskReopened": false
+  },
+  "commands": [
+    {
+      "phase": "code-final",
+      "name": "type",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.exe",
+        "node_modules/typescript/bin/tsc",
+        "--noEmit",
+        "--incremental",
+        "false"
+      ],
+      "timeoutMs": 120000,
+      "startedAt": "2026-09-04T00:34:05.790Z",
+      "finishedAt": "2026-09-04T00:34:09.648Z",
+      "exitCode": 0,
+      "rawLog": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-games-index-v173-20260904\\logs\\code-final-type.json",
+      "rawLogSha256": "c2d8d9889ffaabbc7e087566cb8f72f8e85e657fd59cfd8ddad2199ecf17cbb3"
+    },
+    {
+      "phase": "code-final",
+      "name": "lint",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.exe",
+        "node_modules/next/dist/bin/next",
+        "lint"
+      ],
+      "timeoutMs": 120000,
+      "startedAt": "2026-09-04T00:34:09.651Z",
+      "finishedAt": "2026-09-04T00:34:12.103Z",
+      "exitCode": 0,
+      "rawLog": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-games-index-v173-20260904\\logs\\code-final-lint.json",
+      "rawLogSha256": "e5efd71e0c8bbff4490ee44dda5a5c93c4bb17a4b0efae15afcda929aeb1df09"
+    },
+    {
+      "phase": "code-final",
+      "name": "checker-lint",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.exe",
+        "node_modules/eslint/bin/eslint.js",
+        "scripts/check-games-index.mjs",
+        "scripts/games-index-compat.mjs",
+        "scripts/check-locale-rights.mjs",
+        "scripts/check-square-homepage.mjs",
+        "scripts/check-oval-legacy-page.mjs",
+        "scripts/check-pixel-external-page.mjs",
+        "--max-warnings",
+        "0"
+      ],
+      "timeoutMs": 60000,
+      "startedAt": "2026-09-04T00:34:12.104Z",
+      "finishedAt": "2026-09-04T00:34:14.088Z",
+      "exitCode": 0,
+      "rawLog": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-games-index-v173-20260904\\logs\\code-final-checker-lint.json",
+      "rawLogSha256": "927595acb507882f60e53b9613b55c56396b458e90c05c11f46d3d44a022760a"
+    },
+    {
+      "phase": "code-final",
+      "name": "terms:check",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.exe",
+        "scripts/check-terms-rights.mjs"
+      ],
+      "timeoutMs": 120000,
+      "startedAt": "2026-09-04T00:34:14.089Z",
+      "finishedAt": "2026-09-04T00:34:14.166Z",
+      "exitCode": 0,
+      "rawLog": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-games-index-v173-20260904\\logs\\code-final-terms-check.json",
+      "rawLogSha256": "338e7af0d706aafb04ee0574adb116ca588a618010e3806f0bbdfa92bea57811"
+    },
+    {
+      "phase": "code-final",
+      "name": "about:check",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.exe",
+        "scripts/check-about-rights.mjs"
+      ],
+      "timeoutMs": 120000,
+      "startedAt": "2026-09-04T00:34:14.167Z",
+      "finishedAt": "2026-09-04T00:34:14.252Z",
+      "exitCode": 0,
+      "rawLog": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-games-index-v173-20260904\\logs\\code-final-about-check.json",
+      "rawLogSha256": "7623f14af9a9c4a4f2ee2ff4df5b043864fb011acbef22ddc4cb5ef8b561e8a6"
+    },
+    {
+      "phase": "code-final",
+      "name": "editorial:check",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.exe",
+        "scripts/check-editorial-rights.mjs"
+      ],
+      "timeoutMs": 120000,
+      "startedAt": "2026-09-04T00:34:14.253Z",
+      "finishedAt": "2026-09-04T00:34:14.330Z",
+      "exitCode": 0,
+      "rawLog": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-games-index-v173-20260904\\logs\\code-final-editorial-check.json",
+      "rawLogSha256": "bcc8066cdb00e5d83d202582de62cdd4398ebdbb0fbf19ff09d8bc4a51cb2484"
+    },
+    {
+      "phase": "code-final",
+      "name": "gallery:check",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.exe",
+        "scripts/check-gallery-rights.mjs"
+      ],
+      "timeoutMs": 120000,
+      "startedAt": "2026-09-04T00:34:14.331Z",
+      "finishedAt": "2026-09-04T00:34:14.884Z",
+      "exitCode": 0,
+      "rawLog": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-games-index-v173-20260904\\logs\\code-final-gallery-check.json",
+      "rawLogSha256": "51e00e39cec215de4fa15def4065268db259c882039528e7df32f92a99f6123d"
+    },
+    {
+      "phase": "code-final",
+      "name": "locale:check",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.exe",
+        "scripts/check-locale-rights.mjs"
+      ],
+      "timeoutMs": 120000,
+      "startedAt": "2026-09-04T00:34:14.885Z",
+      "finishedAt": "2026-09-04T00:34:15.589Z",
+      "exitCode": 0,
+      "rawLog": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-games-index-v173-20260904\\logs\\code-final-locale-check.json",
+      "rawLogSha256": "20972143f04776c572b3436d446175a8366a7ef73ad147e94fa77bfe8edc4a72"
+    },
+    {
+      "phase": "code-final",
+      "name": "square-home:check",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.exe",
+        "scripts/check-square-homepage.mjs"
+      ],
+      "timeoutMs": 120000,
+      "startedAt": "2026-09-04T00:34:15.591Z",
+      "finishedAt": "2026-09-04T00:34:18.439Z",
+      "exitCode": 0,
+      "rawLog": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-games-index-v173-20260904\\logs\\code-final-square-home-check.json",
+      "rawLogSha256": "7e816a55dedecc9fa703f66fcfbc39f436630815005f0df5c4916c065088a3e4"
+    },
+    {
+      "phase": "code-final",
+      "name": "oval-page:check",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.exe",
+        "scripts/check-oval-legacy-page.mjs"
+      ],
+      "timeoutMs": 120000,
+      "startedAt": "2026-09-04T00:34:18.440Z",
+      "finishedAt": "2026-09-04T00:34:21.245Z",
+      "exitCode": 0,
+      "rawLog": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-games-index-v173-20260904\\logs\\code-final-oval-page-check.json",
+      "rawLogSha256": "3741cf357043e91ff4d209a658d1479bb63d437c0805f451806c1892ef42fdc4"
+    },
+    {
+      "phase": "code-final",
+      "name": "pixel-page:check",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.exe",
+        "scripts/check-pixel-external-page.mjs"
+      ],
+      "timeoutMs": 120000,
+      "startedAt": "2026-09-04T00:34:21.246Z",
+      "finishedAt": "2026-09-04T00:34:23.226Z",
+      "exitCode": 0,
+      "rawLog": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-games-index-v173-20260904\\logs\\code-final-pixel-page-check.json",
+      "rawLogSha256": "7c1572dc975e5676a857201a62caad0b58dbd524711df63141e2cac1ce3ffb9e"
+    },
+    {
+      "phase": "code-final",
+      "name": "games:check",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.exe",
+        "scripts/run-game-data-check.mjs"
+      ],
+      "timeoutMs": 120000,
+      "startedAt": "2026-09-04T00:34:23.227Z",
+      "finishedAt": "2026-09-04T00:34:25.149Z",
+      "exitCode": 0,
+      "rawLog": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-games-index-v173-20260904\\logs\\code-final-games-check.json",
+      "rawLogSha256": "b0e7d5eaf5217e390e8a0d318ec0703d28237565786b9478ad2b0989f0b8e709"
+    },
+    {
+      "phase": "code-final",
+      "name": "player:check",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.exe",
+        "scripts/run-game-player-check.mjs"
+      ],
+      "timeoutMs": 120000,
+      "startedAt": "2026-09-04T00:34:25.151Z",
+      "finishedAt": "2026-09-04T00:34:26.990Z",
+      "exitCode": 0,
+      "rawLog": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-games-index-v173-20260904\\logs\\code-final-player-check.json",
+      "rawLogSha256": "93de10b6e7a30dbedab40c2d15edff4e1b7775ae523ac138221fbe131f3fa2ef"
+    },
+    {
+      "phase": "code-final",
+      "name": "routes:check",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.exe",
+        "scripts/run-game-route-check.mjs"
+      ],
+      "timeoutMs": 120000,
+      "startedAt": "2026-09-04T00:34:26.991Z",
+      "finishedAt": "2026-09-04T00:34:31.152Z",
+      "exitCode": 0,
+      "rawLog": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-games-index-v173-20260904\\logs\\code-final-routes-check.json",
+      "rawLogSha256": "88c9e72b4a471a0ff0b484859f74ccc154a0bf2695c6ee838e843c98bfa29f26"
+    },
+    {
+      "phase": "code-final",
+      "name": "components:check",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.exe",
+        "scripts/run-game-component-check.mjs"
+      ],
+      "timeoutMs": 120000,
+      "startedAt": "2026-09-04T00:34:31.153Z",
+      "finishedAt": "2026-09-04T00:34:34.106Z",
+      "exitCode": 0,
+      "rawLog": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-games-index-v173-20260904\\logs\\code-final-components-check.json",
+      "rawLogSha256": "574d09aa6f56fc0ab4642e99bcf9a9d4c274ebb6be599f9cf9ccc8bf48ee87d6"
+    },
+    {
+      "phase": "code-final",
+      "name": "metadata:check",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.exe",
+        "scripts/run-game-metadata-check.mjs"
+      ],
+      "timeoutMs": 120000,
+      "startedAt": "2026-09-04T00:34:34.106Z",
+      "finishedAt": "2026-09-04T00:34:35.418Z",
+      "exitCode": 0,
+      "rawLog": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-games-index-v173-20260904\\logs\\code-final-metadata-check.json",
+      "rawLogSha256": "f95168c7653ae252a89d2b2cec6062bc60d30494d999953cf249224d9435f58f"
+    },
+    {
+      "phase": "code-final",
+      "name": "home:check",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.exe",
+        "scripts/run-home-information-architecture-check.mjs"
+      ],
+      "timeoutMs": 120000,
+      "startedAt": "2026-09-04T00:34:35.419Z",
+      "finishedAt": "2026-09-04T00:34:37.712Z",
+      "exitCode": 0,
+      "rawLog": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-games-index-v173-20260904\\logs\\code-final-home-check.json",
+      "rawLogSha256": "459371a90eb9c83100f2c0980c4f0cb4c4dda3dcd5ed09f7a77a6ef1d2e61769"
+    },
+    {
+      "phase": "code-final",
+      "name": "home-hero:check",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.exe",
+        "scripts/run-home-hero-check.mjs"
+      ],
+      "timeoutMs": 120000,
+      "startedAt": "2026-09-04T00:34:37.713Z",
+      "finishedAt": "2026-09-04T00:34:39.739Z",
+      "exitCode": 0,
+      "rawLog": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-games-index-v173-20260904\\logs\\code-final-home-hero-check.json",
+      "rawLogSha256": "0debfdd3c364cca1cbad1fc2b503047c39c1c9fe87c674300d6f2ed3abe4caa1"
+    },
+    {
+      "phase": "code-final",
+      "name": "home-discovery:check",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.exe",
+        "scripts/run-home-discovery-check.mjs"
+      ],
+      "timeoutMs": 120000,
+      "startedAt": "2026-09-04T00:34:39.740Z",
+      "finishedAt": "2026-09-04T00:34:41.715Z",
+      "exitCode": 0,
+      "rawLog": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-games-index-v173-20260904\\logs\\code-final-home-discovery-check.json",
+      "rawLogSha256": "40b3a7bc8569af1d835bec231594b8a38bf89d74a86c230513ca90641c8b8bdd"
+    },
+    {
+      "phase": "code-final",
+      "name": "home-gallery:check",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.exe",
+        "scripts/run-home-gallery-check.mjs"
+      ],
+      "timeoutMs": 120000,
+      "startedAt": "2026-09-04T00:34:41.716Z",
+      "finishedAt": "2026-09-04T00:34:45.601Z",
+      "exitCode": 0,
+      "rawLog": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-games-index-v173-20260904\\logs\\code-final-home-gallery-check.json",
+      "rawLogSha256": "6a8ebb3f8abcf4f54f116c38a57d3886f4cf704baeae4d0a13760bd48520e8db"
+    },
+    {
+      "phase": "code-final",
+      "name": "perf-home:check",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.exe",
+        "scripts/run-home-performance-check.mjs"
+      ],
+      "timeoutMs": 120000,
+      "startedAt": "2026-09-04T00:34:45.602Z",
+      "finishedAt": "2026-09-04T00:34:47.818Z",
+      "exitCode": 0,
+      "rawLog": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-games-index-v173-20260904\\logs\\code-final-perf-home-check.json",
+      "rawLogSha256": "b292c2b9aab11b7a4c253145a51484b822554dcee57ac9a9f346721f10d2bb72"
+    },
+    {
+      "phase": "code-final",
+      "name": "game-template:check",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.exe",
+        "scripts/run-game-template-check.mjs"
+      ],
+      "timeoutMs": 120000,
+      "startedAt": "2026-09-04T00:34:47.819Z",
+      "finishedAt": "2026-09-04T00:34:50.650Z",
+      "exitCode": 0,
+      "rawLog": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-games-index-v173-20260904\\logs\\code-final-game-template-check.json",
+      "rawLogSha256": "5ec11806ee10884b358a34dd6bc197ff7472d678689e1af15b2b13e787e71403"
+    },
+    {
+      "phase": "code-final",
+      "name": "canonical:check",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.exe",
+        "scripts/run-canonical-host-check.mjs"
+      ],
+      "timeoutMs": 120000,
+      "startedAt": "2026-09-04T00:34:50.652Z",
+      "finishedAt": "2026-09-04T00:34:51.850Z",
+      "exitCode": 0,
+      "rawLog": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-games-index-v173-20260904\\logs\\code-final-canonical-check.json",
+      "rawLogSha256": "c01468a0ac329fb41c012ed317bdf67ccb63555a05f3fc8599c071860e1bcb4c"
+    },
+    {
+      "phase": "code-final",
+      "name": "games-index:check",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.exe",
+        "scripts/check-games-index.mjs"
+      ],
+      "timeoutMs": 120000,
+      "startedAt": "2026-09-04T00:34:51.851Z",
+      "finishedAt": "2026-09-04T00:34:52.867Z",
+      "exitCode": 0,
+      "rawLog": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-games-index-v173-20260904\\logs\\code-final-games-index-check.json",
+      "rawLogSha256": "82209d8e4699b6dcc014a45aaf4b5217c6f226bb24c45d76c594a62db919850b"
+    },
+    {
+      "phase": "build",
+      "name": "next-build",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.exe",
+        "node_modules/next/dist/bin/next",
+        "build"
+      ],
+      "timeoutMs": 600000,
+      "startedAt": "2026-09-04T00:31:48.605Z",
+      "finishedAt": "2026-09-04T00:32:22.329Z",
+      "exitCode": 0,
+      "rawLog": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-games-index-v173-20260904\\logs\\build-next-build.json",
+      "rawLogSha256": "846056e02194f2e081448020fd454828ee32213fca220e0810790c2f41a1ddc0"
+    },
+    {
+      "phase": "build",
+      "name": "opennext-build",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.exe",
+        "node_modules/@opennextjs/cloudflare/dist/cli/index.js",
+        "build"
+      ],
+      "timeoutMs": 600000,
+      "startedAt": "2026-09-04T00:32:22.333Z",
+      "finishedAt": "2026-09-04T00:33:31.396Z",
+      "exitCode": 0,
+      "rawLog": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-games-index-v173-20260904\\logs\\build-opennext-build.json",
+      "rawLogSha256": "4b509d344a12845f4466126bc581a2e1d27da2fb94bfc48034e79f6d0b80b41c"
+    },
+    {
+      "phase": "build",
+      "name": "opennext-patch",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.exe",
+        "scripts/patch-opennext-worker.mjs"
+      ],
+      "timeoutMs": 60000,
+      "startedAt": "2026-09-04T00:33:31.398Z",
+      "finishedAt": "2026-09-04T00:33:31.978Z",
+      "exitCode": 0,
+      "rawLog": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-games-index-v173-20260904\\logs\\build-opennext-patch.json",
+      "rawLogSha256": "4dde2952fd84a053b0bc816a80cdd3e7e34f07de7203a629a45a8d003622ee8c"
+    },
+    {
+      "phase": "built",
+      "name": "terms-built",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.exe",
+        "scripts/check-terms-rights.mjs",
+        "--built"
+      ],
+      "timeoutMs": 120000,
+      "startedAt": "2026-09-04T00:34:16.610Z",
+      "finishedAt": "2026-09-04T00:34:16.698Z",
+      "exitCode": 0,
+      "rawLog": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-games-index-v173-20260904\\logs\\built-terms-built.json",
+      "rawLogSha256": "c1adfda469ec9ff285d4b8fa7950426844ac983c7195cb0e80f7a001a29344b3"
+    },
+    {
+      "phase": "built",
+      "name": "about-built",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.exe",
+        "scripts/check-about-rights.mjs",
+        "--built"
+      ],
+      "timeoutMs": 120000,
+      "startedAt": "2026-09-04T00:34:16.700Z",
+      "finishedAt": "2026-09-04T00:34:16.785Z",
+      "exitCode": 0,
+      "rawLog": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-games-index-v173-20260904\\logs\\built-about-built.json",
+      "rawLogSha256": "695942aa67fef3514e45c546fc8ab36a639c7e5ef31bbc2164bddc4749b7733f"
+    },
+    {
+      "phase": "built",
+      "name": "editorial-built",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.exe",
+        "scripts/check-editorial-rights.mjs",
+        "--built"
+      ],
+      "timeoutMs": 120000,
+      "startedAt": "2026-09-04T00:34:16.786Z",
+      "finishedAt": "2026-09-04T00:34:16.878Z",
+      "exitCode": 0,
+      "rawLog": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-games-index-v173-20260904\\logs\\built-editorial-built.json",
+      "rawLogSha256": "98ff39ec00bb9c4aba8e0546cefb6a52bb236267f76473552b409a4425004fd0"
+    },
+    {
+      "phase": "built",
+      "name": "gallery-built",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.exe",
+        "scripts/check-gallery-rights.mjs",
+        "--built"
+      ],
+      "timeoutMs": 120000,
+      "startedAt": "2026-09-04T00:34:16.879Z",
+      "finishedAt": "2026-09-04T00:34:17.523Z",
+      "exitCode": 0,
+      "rawLog": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-games-index-v173-20260904\\logs\\built-gallery-built.json",
+      "rawLogSha256": "6363056ca6fb7f604d5bb0d00edc1ac5d1c86c1641479918e5a7707fc25ae370"
+    },
+    {
+      "phase": "built",
+      "name": "locale-built",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.exe",
+        "scripts/check-locale-rights.mjs",
+        "--built"
+      ],
+      "timeoutMs": 120000,
+      "startedAt": "2026-09-04T00:34:17.524Z",
+      "finishedAt": "2026-09-04T00:34:18.422Z",
+      "exitCode": 0,
+      "rawLog": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-games-index-v173-20260904\\logs\\built-locale-built.json",
+      "rawLogSha256": "ceded9b58596e37ddec01d6d9b74ab7c33aac6ffa639cc0b31c816504d4f7011"
+    },
+    {
+      "phase": "built",
+      "name": "oval-page-built",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.exe",
+        "scripts/check-oval-legacy-page.mjs",
+        "--built"
+      ],
+      "timeoutMs": 120000,
+      "startedAt": "2026-09-04T00:34:18.423Z",
+      "finishedAt": "2026-09-04T00:34:21.258Z",
+      "exitCode": 0,
+      "rawLog": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-games-index-v173-20260904\\logs\\built-oval-page-built.json",
+      "rawLogSha256": "f3f70a453e4f525d141634845eb0d79e1e08d5a3630c9daf985b3d66ddca13b8"
+    },
+    {
+      "phase": "built",
+      "name": "pixel-page-built",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.exe",
+        "scripts/check-pixel-external-page.mjs",
+        "--built"
+      ],
+      "timeoutMs": 120000,
+      "startedAt": "2026-09-04T00:34:21.259Z",
+      "finishedAt": "2026-09-04T00:34:23.287Z",
+      "exitCode": 0,
+      "rawLog": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-games-index-v173-20260904\\logs\\built-pixel-page-built.json",
+      "rawLogSha256": "6342f6f349adc8776b2e874849be9e6d75cc743639f7b545c67b6a24b546178c"
+    },
+    {
+      "phase": "built",
+      "name": "games-index-built",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.exe",
+        "scripts/check-games-index.mjs",
+        "--built"
+      ],
+      "timeoutMs": 120000,
+      "startedAt": "2026-09-04T00:34:23.289Z",
+      "finishedAt": "2026-09-04T00:34:24.721Z",
+      "exitCode": 0,
+      "rawLog": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-games-index-v173-20260904\\logs\\built-games-index-built.json",
+      "rawLogSha256": "17d1c673bf290423069e6e1a222653f9d60865810ef6e502a2d56a6e41aa395b"
+    },
+    {
+      "phase": "http",
+      "name": "terms-http",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.exe",
+        "scripts/check-terms-rights.mjs",
+        "--base",
+        "http://127.0.0.1:3100"
+      ],
+      "timeoutMs": 120000,
+      "startedAt": "2026-09-04T00:36:34.197Z",
+      "finishedAt": "2026-09-04T00:36:34.347Z",
+      "exitCode": 0,
+      "rawLog": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-games-index-v173-20260904\\logs\\http-terms-http.json",
+      "rawLogSha256": "26f73d928606559bc8f6e3502845f983a0dbd89d7a87a19d453b47cc6026c57b"
+    },
+    {
+      "phase": "http",
+      "name": "about-http",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.exe",
+        "scripts/check-about-rights.mjs",
+        "--base",
+        "http://127.0.0.1:3100"
+      ],
+      "timeoutMs": 120000,
+      "startedAt": "2026-09-04T00:36:34.350Z",
+      "finishedAt": "2026-09-04T00:36:34.482Z",
+      "exitCode": 0,
+      "rawLog": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-games-index-v173-20260904\\logs\\http-about-http.json",
+      "rawLogSha256": "669c65ae1511dee5051f36940d3c06d73a774824e0f9cbe61643dcdcdd5277c8"
+    },
+    {
+      "phase": "http",
+      "name": "editorial-http",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.exe",
+        "scripts/check-editorial-rights.mjs",
+        "--base",
+        "http://127.0.0.1:3100"
+      ],
+      "timeoutMs": 120000,
+      "startedAt": "2026-09-04T00:36:34.483Z",
+      "finishedAt": "2026-09-04T00:36:34.615Z",
+      "exitCode": 0,
+      "rawLog": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-games-index-v173-20260904\\logs\\http-editorial-http.json",
+      "rawLogSha256": "5a12cb6c621c0a0274f2d83382a7a3d080871eba59308ce9c19e162d3c50446d"
+    },
+    {
+      "phase": "http",
+      "name": "gallery-http",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.exe",
+        "scripts/check-gallery-rights.mjs",
+        "--base",
+        "http://127.0.0.1:3100"
+      ],
+      "timeoutMs": 120000,
+      "startedAt": "2026-09-04T00:36:34.616Z",
+      "finishedAt": "2026-09-04T00:36:35.288Z",
+      "exitCode": 0,
+      "rawLog": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-games-index-v173-20260904\\logs\\http-gallery-http.json",
+      "rawLogSha256": "123da30b9777184f69cc9929c8d51a6295b7b9e6b895c50ca029e36ddd30b72f"
+    },
+    {
+      "phase": "http",
+      "name": "locale-http",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.exe",
+        "scripts/check-locale-rights.mjs",
+        "--base",
+        "http://127.0.0.1:3100"
+      ],
+      "timeoutMs": 120000,
+      "startedAt": "2026-09-04T00:36:35.289Z",
+      "finishedAt": "2026-09-04T00:36:36.243Z",
+      "exitCode": 0,
+      "rawLog": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-games-index-v173-20260904\\logs\\http-locale-http.json",
+      "rawLogSha256": "a2393456ca56e5260616cb8321ea9ad968081d097c405083f7a863e37d348645"
+    },
+    {
+      "phase": "http",
+      "name": "oval-page-http",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.exe",
+        "scripts/check-oval-legacy-page.mjs",
+        "--base",
+        "http://127.0.0.1:3100"
+      ],
+      "timeoutMs": 120000,
+      "startedAt": "2026-09-04T00:36:36.245Z",
+      "finishedAt": "2026-09-04T00:36:38.903Z",
+      "exitCode": 0,
+      "rawLog": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-games-index-v173-20260904\\logs\\http-oval-page-http.json",
+      "rawLogSha256": "bd1b04896cef84026cdab352ddd9674e53a7a40667a5e2e83cdddc2cc42110f2"
+    },
+    {
+      "phase": "http",
+      "name": "pixel-page-http",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.exe",
+        "scripts/check-pixel-external-page.mjs",
+        "--base",
+        "http://127.0.0.1:3100"
+      ],
+      "timeoutMs": 120000,
+      "startedAt": "2026-09-04T00:36:38.905Z",
+      "finishedAt": "2026-09-04T00:36:40.748Z",
+      "exitCode": 0,
+      "rawLog": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-games-index-v173-20260904\\logs\\http-pixel-page-http.json",
+      "rawLogSha256": "96c02e0f4325ca8be100843c4340987d8360269a414a058856301ec88ac7e84d"
+    },
+    {
+      "phase": "http",
+      "name": "games-index-http",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.exe",
+        "scripts/check-games-index.mjs",
+        "--base",
+        "http://127.0.0.1:3100"
+      ],
+      "timeoutMs": 120000,
+      "startedAt": "2026-09-04T00:36:40.749Z",
+      "finishedAt": "2026-09-04T00:36:42.163Z",
+      "exitCode": 0,
+      "rawLog": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-games-index-v173-20260904\\logs\\http-games-index-http.json",
+      "rawLogSha256": "d91c2500418c243c0066ff984dc2a4c638ffa29a6963e86dedb5b371055e5b28"
+    },
+    {
+      "phase": "http",
+      "name": "robots",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.exe",
+        "scripts/check-ai-crawler-policy.mjs",
+        "--base",
+        "http://127.0.0.1:3100"
+      ],
+      "timeoutMs": 120000,
+      "startedAt": "2026-09-04T00:36:42.165Z",
+      "finishedAt": "2026-09-04T00:36:42.306Z",
+      "exitCode": 0,
+      "rawLog": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-games-index-v173-20260904\\logs\\http-robots.json",
+      "rawLogSha256": "eb80067b592f4569e40e413e51f28520625d6a59565186945909b43206e28bea"
+    },
+    {
+      "phase": "http",
+      "name": "seo",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.exe",
+        "scripts/seo-check.mjs",
+        "--base",
+        "http://127.0.0.1:3100"
+      ],
+      "timeoutMs": 180000,
+      "startedAt": "2026-09-04T00:36:42.308Z",
+      "finishedAt": "2026-09-04T00:36:42.677Z",
+      "exitCode": 0,
+      "rawLog": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-games-index-v173-20260904\\logs\\http-seo.json",
+      "rawLogSha256": "057329e4a4d3c846d8621cdc9957048c3df50d7e319b903e18f35dcf6f3a3d2f"
+    }
+  ],
+  "commandCount": 45,
+  "initialCodeFailure": [
+    {
+      "name": "routes:check",
+      "args": [
+        "scripts/run-game-route-check.mjs"
+      ],
+      "timeout": 120000,
+      "startedAt": "2026-09-04T00:32:20.373Z",
+      "finishedAt": "2026-09-04T00:32:24.616Z",
+      "command": [
+        "C:\\nvm4w\\nodejs\\node.exe",
+        "scripts/run-game-route-check.mjs"
+      ],
+      "exitCode": 1,
+      "signal": null,
+      "stdout": "",
+      "stderr": "ROUTE-001 validation failed:\n- app/games/page.tsx must contain index: false.\n- app/games/page.tsx must contain listPublishedGames.\n- app/games/page.tsx must contain External tool.\n"
+    }
+  ],
+  "seo": {
+    "base": "http://127.0.0.1:3100",
+    "pages": 20,
+    "must": 0,
+    "should": 12,
+    "KW04": "未验证",
+    "directoryIndex": "noindex, follow",
+    "canonical": "https://mysquarefaceicon.com/games",
+    "sitemap": "excluded",
+    "ruleIds": [
+      "IA-02",
+      "IA-03",
+      "IDX-01",
+      "IDX-03",
+      "IDX-10",
+      "META-06",
+      "META-09",
+      "LINK-01",
+      "AY-03",
+      "PF-05",
+      "AD-02"
+    ]
+  },
+  "browser": {
+    "result": "PASS",
+    "flow": "/games -> card/category/menu/keyboard navigation -> correct document and return; ad-loaded homepage -> /games -> back/forward -> isolated ad-free directory",
+    "recordedAt": "2026-09-04T00:36:23.640Z",
+    "finishedAt": "2026-09-04T00:37:56.718Z",
+    "widths": [
+      {
+        "width": 1280,
+        "height": 900,
+        "title": "Avatar Games & Face Makers | My Square Face Icon",
+        "h1": [
+          "Avatar Games & Face Makers"
+        ],
+        "scrollWidth": 1280,
+        "firstCardBottom": 784.65625,
+        "clipping": "none",
+        "after13SecondsAndInteraction": "no advertising request/script"
+      },
+      {
+        "width": 390,
+        "height": 844,
+        "title": "Avatar Games & Face Makers | My Square Face Icon",
+        "h1": [
+          "Avatar Games & Face Makers"
+        ],
+        "scrollWidth": 390,
+        "firstCardBottom": 714.625,
+        "clipping": "none",
+        "after13SecondsAndInteraction": "no advertising request/script"
+      },
+      {
+        "width": 360,
+        "height": 800,
+        "title": "Avatar Games & Face Makers | My Square Face Icon",
+        "h1": [
+          "Avatar Games & Face Makers"
+        ],
+        "scrollWidth": 360,
+        "firstCardBottom": 764.140625,
+        "clipping": "none",
+        "after13SecondsAndInteraction": "no advertising request/script"
+      }
+    ],
+    "interactions": [
+      {
+        "width": 1280,
+        "action": "breadcrumb -> Tab -> focused Square -> Enter -> footer All avatar games",
+        "result": "PASS",
+        "focus": {
+          "id": "square-face",
+          "outline": "3px"
+        }
+      },
+      {
+        "width": 1280,
+        "target": "/oval-face-icon-generator",
+        "heading": "Oval Face Icon Generator",
+        "return": "explicit directory link",
+        "result": "PASS"
+      },
+      {
+        "width": 1280,
+        "target": "/pixel-art-avatar-icon-generator",
+        "heading": "Pixel Art Avatar Icon Generator",
+        "return": "explicit directory link",
+        "result": "PASS"
+      },
+      {
+        "width": 1280,
+        "target": "/category/face-makers",
+        "heading": "Face Makers",
+        "return": "explicit directory link",
+        "result": "PASS"
+      },
+      {
+        "width": 1280,
+        "target": "/category/avatar-makers",
+        "heading": "Avatar Makers",
+        "return": "explicit directory link",
+        "result": "PASS"
+      },
+      {
+        "width": 1280,
+        "target": "/category/pixel-avatars",
+        "heading": "Pixel Avatars",
+        "return": "explicit directory link",
+        "result": "PASS"
+      },
+      {
+        "width": 1280,
+        "target": "/category/retro-flash",
+        "heading": "Retro Flash",
+        "return": "explicit directory link",
+        "result": "PASS"
+      },
+      {
+        "width": 1280,
+        "target": "/category/character-creators",
+        "heading": "Character Creators",
+        "return": "explicit directory link",
+        "result": "PASS"
+      },
+      {
+        "width": 1280,
+        "action": "homepage menu -> All avatar games",
+        "result": "PASS"
+      },
+      {
+        "width": 390,
+        "action": "breadcrumb -> Tab -> focused Square -> Enter -> footer All avatar games",
+        "result": "PASS",
+        "focus": {
+          "id": "square-face",
+          "outline": "3px"
+        }
+      },
+      {
+        "width": 390,
+        "target": "/oval-face-icon-generator",
+        "heading": "Oval Face Icon Generator",
+        "return": "explicit directory link",
+        "result": "PASS"
+      },
+      {
+        "width": 390,
+        "target": "/pixel-art-avatar-icon-generator",
+        "heading": "Pixel Art Avatar Icon Generator",
+        "return": "explicit directory link",
+        "result": "PASS"
+      },
+      {
+        "width": 390,
+        "target": "/category/face-makers",
+        "heading": "Face Makers",
+        "return": "explicit directory link",
+        "result": "PASS"
+      },
+      {
+        "width": 390,
+        "target": "/category/avatar-makers",
+        "heading": "Avatar Makers",
+        "return": "explicit directory link",
+        "result": "PASS"
+      },
+      {
+        "width": 390,
+        "target": "/category/pixel-avatars",
+        "heading": "Pixel Avatars",
+        "return": "explicit directory link",
+        "result": "PASS"
+      },
+      {
+        "width": 390,
+        "target": "/category/retro-flash",
+        "heading": "Retro Flash",
+        "return": "explicit directory link",
+        "result": "PASS"
+      },
+      {
+        "width": 390,
+        "target": "/category/character-creators",
+        "heading": "Character Creators",
+        "return": "explicit directory link",
+        "result": "PASS"
+      },
+      {
+        "width": 390,
+        "action": "homepage menu -> All avatar games",
+        "result": "PASS"
+      },
+      {
+        "width": 360,
+        "action": "breadcrumb -> Tab -> focused Square -> Enter -> footer All avatar games",
+        "result": "PASS",
+        "focus": {
+          "id": "square-face",
+          "outline": "3px"
+        }
+      },
+      {
+        "width": 360,
+        "target": "/oval-face-icon-generator",
+        "heading": "Oval Face Icon Generator",
+        "return": "explicit directory link",
+        "result": "PASS"
+      },
+      {
+        "width": 360,
+        "target": "/pixel-art-avatar-icon-generator",
+        "heading": "Pixel Art Avatar Icon Generator",
+        "return": "explicit directory link",
+        "result": "PASS"
+      },
+      {
+        "width": 360,
+        "target": "/category/face-makers",
+        "heading": "Face Makers",
+        "return": "explicit directory link",
+        "result": "PASS"
+      },
+      {
+        "width": 360,
+        "target": "/category/avatar-makers",
+        "heading": "Avatar Makers",
+        "return": "explicit directory link",
+        "result": "PASS"
+      },
+      {
+        "width": 360,
+        "target": "/category/pixel-avatars",
+        "heading": "Pixel Avatars",
+        "return": "explicit directory link",
+        "result": "PASS"
+      },
+      {
+        "width": 360,
+        "target": "/category/retro-flash",
+        "heading": "Retro Flash",
+        "return": "explicit directory link",
+        "result": "PASS"
+      },
+      {
+        "width": 360,
+        "target": "/category/character-creators",
+        "heading": "Character Creators",
+        "return": "explicit directory link",
+        "result": "PASS"
+      },
+      {
+        "width": 360,
+        "action": "homepage menu -> All avatar games",
+        "result": "PASS"
+      },
+      {
+        "width": 1280,
+        "action": "ad-triggered home -> directory -> Back -> Forward; wait >12s",
+        "result": "PASS"
+      }
+    ],
+    "console": [],
+    "pageErrors": [],
+    "adLoadedSource": {
+      "scriptCount": 1,
+      "responses": [
+        {
+          "scope": "ad-loaded-home",
+          "event": "ad-response",
+          "status": 200,
+          "url": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9616934112105331"
+        }
+      ]
+    },
+    "screenshots": [
+      {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-games-index-v173-20260904\\directory-1280.png",
+        "sha256": "9df505929891c09610c787aa3a2430b249803074270775168ac6cb67796c3553"
+      },
+      {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-games-index-v173-20260904\\directory-1280-full.png",
+        "sha256": "3fbc7f98bbca96e3545ff991e1ea89eb29df0c4a5ee2f57779d3534769e834c7"
+      },
+      {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-games-index-v173-20260904\\directory-1280-focus.png",
+        "sha256": "716499db614ead65d06b061fc0b1d8377180597e87a19d88e310a39e1bd67c84"
+      },
+      {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-games-index-v173-20260904\\menu-1280.png",
+        "sha256": "49f7dbcc6c3e0d03a0a313836b55761f155e644cbc8b96a2fcd90898df589cc1"
+      },
+      {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-games-index-v173-20260904\\directory-390.png",
+        "sha256": "6318dd80a0043c743ab979e5313330dc932625643f4e29a9312324ed01cddef1"
+      },
+      {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-games-index-v173-20260904\\directory-390-full.png",
+        "sha256": "30e08e10e22d3c9e28bb10e009787c2e638f117d6cd55f72f151b1cfab02ee2c"
+      },
+      {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-games-index-v173-20260904\\directory-390-focus.png",
+        "sha256": "cf98f3547c4fd5af72b259a94ed6dc145206127b4025eb6665b1d8f483a753d4"
+      },
+      {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-games-index-v173-20260904\\menu-390.png",
+        "sha256": "2c92976fd69d65314e543021db4309a564799f12b8176055c3c010e503994231"
+      },
+      {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-games-index-v173-20260904\\directory-360.png",
+        "sha256": "6decab735200c8f16e7ac85106c28b6d25812610970426ea0363cfa9fa86323d"
+      },
+      {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-games-index-v173-20260904\\directory-360-full.png",
+        "sha256": "1357a4e614e7ec3488bb607c9d46bff59c2c0ed980dd39102ff0b2d7fd330e92"
+      },
+      {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-games-index-v173-20260904\\directory-360-focus.png",
+        "sha256": "9558145f34ed06a8161a2799980870b9cbbd8186f0abcc8ced525f979ed82db7"
+      },
+      {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-games-index-v173-20260904\\menu-360.png",
+        "sha256": "5bbfc6348d3eded3dbbdc713be616a04c56b4cba6665acffabee42c65743a0fa"
+      },
+      {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-games-index-v173-20260904\\directory-from-ad-home.png",
+        "sha256": "dc4769d76480acffd3cb56e8f019bbab91197a0815c2f9d17af3c21e3803c5ac"
+      },
+      {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-games-index-v173-20260904\\not-found-1280.png",
+        "sha256": "c2891eb0a498fb340aaf56476bef4296c4db5342ff50a8dc8d7505105f2e0c71"
+      },
+      {
+        "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-games-index-v173-20260904\\not-found-390.png",
+        "sha256": "957238a465396857887bad8084f0f88d88cfd8372eacc0fca969477d225616fa"
+      }
+    ]
+  },
+  "networkAttribution": {
+    "localNavigationResult": "PASS",
+    "originalCombinedScriptResult": "FAIL",
+    "retainedFailure": "Additional raw 404 assertion incorrectly assumed a literal HTML anchor in streamed error shell; see passing HTTP/hydration follow-up.",
+    "transitions": [
+      {
+        "width": 1280,
+        "source": "/",
+        "result": "PASS",
+        "cleanDocument": true
+      },
+      {
+        "width": 1280,
+        "source": "/oval-face-icon-generator",
+        "result": "PASS",
+        "cleanDocument": true
+      },
+      {
+        "width": 1280,
+        "source": "/pixel-art-avatar-icon-generator",
+        "result": "PASS",
+        "cleanDocument": true
+      },
+      {
+        "width": 1280,
+        "source": "/category/face-makers",
+        "result": "PASS",
+        "cleanDocument": true
+      },
+      {
+        "width": 1280,
+        "source": "/category/avatar-makers",
+        "result": "PASS",
+        "cleanDocument": true
+      },
+      {
+        "width": 1280,
+        "source": "/category/pixel-avatars",
+        "result": "PASS",
+        "cleanDocument": true
+      },
+      {
+        "width": 1280,
+        "source": "/category/retro-flash",
+        "result": "PASS",
+        "cleanDocument": true
+      },
+      {
+        "width": 1280,
+        "source": "/category/character-creators",
+        "result": "PASS",
+        "cleanDocument": true
+      },
+      {
+        "width": 390,
+        "source": "/",
+        "result": "PASS",
+        "cleanDocument": true
+      },
+      {
+        "width": 390,
+        "source": "/oval-face-icon-generator",
+        "result": "PASS",
+        "cleanDocument": true
+      },
+      {
+        "width": 390,
+        "source": "/pixel-art-avatar-icon-generator",
+        "result": "PASS",
+        "cleanDocument": true
+      },
+      {
+        "width": 390,
+        "source": "/category/face-makers",
+        "result": "PASS",
+        "cleanDocument": true
+      },
+      {
+        "width": 390,
+        "source": "/category/avatar-makers",
+        "result": "PASS",
+        "cleanDocument": true
+      },
+      {
+        "width": 390,
+        "source": "/category/pixel-avatars",
+        "result": "PASS",
+        "cleanDocument": true
+      },
+      {
+        "width": 390,
+        "source": "/category/retro-flash",
+        "result": "PASS",
+        "cleanDocument": true
+      },
+      {
+        "width": 390,
+        "source": "/category/character-creators",
+        "result": "PASS",
+        "cleanDocument": true
+      },
+      {
+        "width": 360,
+        "source": "/",
+        "result": "PASS",
+        "cleanDocument": true
+      },
+      {
+        "width": 360,
+        "source": "/oval-face-icon-generator",
+        "result": "PASS",
+        "cleanDocument": true
+      },
+      {
+        "width": 360,
+        "source": "/pixel-art-avatar-icon-generator",
+        "result": "PASS",
+        "cleanDocument": true
+      },
+      {
+        "width": 360,
+        "source": "/category/face-makers",
+        "result": "PASS",
+        "cleanDocument": true
+      },
+      {
+        "width": 360,
+        "source": "/category/avatar-makers",
+        "result": "PASS",
+        "cleanDocument": true
+      },
+      {
+        "width": 360,
+        "source": "/category/pixel-avatars",
+        "result": "PASS",
+        "cleanDocument": true
+      },
+      {
+        "width": 360,
+        "source": "/category/retro-flash",
+        "result": "PASS",
+        "cleanDocument": true
+      },
+      {
+        "width": 360,
+        "source": "/category/character-creators",
+        "result": "PASS",
+        "cleanDocument": true
+      }
+    ],
+    "requests": [
+      {
+        "width": 1280,
+        "url": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9616934112105331",
+        "frameUrl": "http://127.0.0.1:3100/",
+        "mainFrameUrl": "http://127.0.0.1:3100/",
+        "at": "2026-09-04T00:39:48.323Z"
+      },
+      {
+        "width": 1280,
+        "url": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9616934112105331",
+        "frameUrl": "http://127.0.0.1:3100/oval-face-icon-generator",
+        "mainFrameUrl": "http://127.0.0.1:3100/oval-face-icon-generator",
+        "at": "2026-09-04T00:39:48.587Z"
+      },
+      {
+        "width": 1280,
+        "url": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9616934112105331",
+        "frameUrl": "http://127.0.0.1:3100/pixel-art-avatar-icon-generator",
+        "mainFrameUrl": "http://127.0.0.1:3100/pixel-art-avatar-icon-generator",
+        "at": "2026-09-04T00:39:48.821Z"
+      },
+      {
+        "width": 1280,
+        "url": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9616934112105331",
+        "frameUrl": "http://127.0.0.1:3100/category/face-makers",
+        "mainFrameUrl": "http://127.0.0.1:3100/category/face-makers",
+        "at": "2026-09-04T00:39:49.037Z"
+      },
+      {
+        "width": 1280,
+        "url": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9616934112105331",
+        "frameUrl": "http://127.0.0.1:3100/category/avatar-makers",
+        "mainFrameUrl": "http://127.0.0.1:3100/category/avatar-makers",
+        "at": "2026-09-04T00:39:49.255Z"
+      },
+      {
+        "width": 1280,
+        "url": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9616934112105331",
+        "frameUrl": "http://127.0.0.1:3100/category/pixel-avatars",
+        "mainFrameUrl": "http://127.0.0.1:3100/category/pixel-avatars",
+        "at": "2026-09-04T00:39:49.419Z"
+      },
+      {
+        "width": 1280,
+        "url": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9616934112105331",
+        "frameUrl": "http://127.0.0.1:3100/category/retro-flash",
+        "mainFrameUrl": "http://127.0.0.1:3100/category/retro-flash",
+        "at": "2026-09-04T00:39:49.620Z"
+      },
+      {
+        "width": 1280,
+        "url": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9616934112105331",
+        "frameUrl": "http://127.0.0.1:3100/category/character-creators",
+        "mainFrameUrl": "http://127.0.0.1:3100/category/character-creators",
+        "at": "2026-09-04T00:39:49.838Z"
+      },
+      {
+        "width": 390,
+        "url": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9616934112105331",
+        "frameUrl": "http://127.0.0.1:3100/",
+        "mainFrameUrl": "http://127.0.0.1:3100/",
+        "at": "2026-09-04T00:40:04.536Z"
+      },
+      {
+        "width": 390,
+        "url": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9616934112105331",
+        "frameUrl": "http://127.0.0.1:3100/oval-face-icon-generator",
+        "mainFrameUrl": "http://127.0.0.1:3100/oval-face-icon-generator",
+        "at": "2026-09-04T00:40:04.787Z"
+      },
+      {
+        "width": 390,
+        "url": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9616934112105331",
+        "frameUrl": "http://127.0.0.1:3100/pixel-art-avatar-icon-generator",
+        "mainFrameUrl": "http://127.0.0.1:3100/pixel-art-avatar-icon-generator",
+        "at": "2026-09-04T00:40:05.002Z"
+      },
+      {
+        "width": 390,
+        "url": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9616934112105331",
+        "frameUrl": "http://127.0.0.1:3100/category/face-makers",
+        "mainFrameUrl": "http://127.0.0.1:3100/category/face-makers",
+        "at": "2026-09-04T00:40:05.220Z"
+      },
+      {
+        "width": 390,
+        "url": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9616934112105331",
+        "frameUrl": "http://127.0.0.1:3100/category/avatar-makers",
+        "mainFrameUrl": "http://127.0.0.1:3100/category/avatar-makers",
+        "at": "2026-09-04T00:40:05.422Z"
+      },
+      {
+        "width": 390,
+        "url": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9616934112105331",
+        "frameUrl": "http://127.0.0.1:3100/category/pixel-avatars",
+        "mainFrameUrl": "http://127.0.0.1:3100/category/pixel-avatars",
+        "at": "2026-09-04T00:40:05.602Z"
+      },
+      {
+        "width": 390,
+        "url": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9616934112105331",
+        "frameUrl": "http://127.0.0.1:3100/category/retro-flash",
+        "mainFrameUrl": "http://127.0.0.1:3100/category/retro-flash",
+        "at": "2026-09-04T00:40:05.786Z"
+      },
+      {
+        "width": 390,
+        "url": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9616934112105331",
+        "frameUrl": "http://127.0.0.1:3100/category/character-creators",
+        "mainFrameUrl": "http://127.0.0.1:3100/category/character-creators",
+        "at": "2026-09-04T00:40:05.986Z"
+      },
+      {
+        "width": 360,
+        "url": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9616934112105331",
+        "frameUrl": "http://127.0.0.1:3100/",
+        "mainFrameUrl": "http://127.0.0.1:3100/",
+        "at": "2026-09-04T00:40:23.687Z"
+      },
+      {
+        "width": 360,
+        "url": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9616934112105331",
+        "frameUrl": "http://127.0.0.1:3100/oval-face-icon-generator",
+        "mainFrameUrl": "http://127.0.0.1:3100/oval-face-icon-generator",
+        "at": "2026-09-04T00:40:23.952Z"
+      },
+      {
+        "width": 360,
+        "url": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9616934112105331",
+        "frameUrl": "http://127.0.0.1:3100/pixel-art-avatar-icon-generator",
+        "mainFrameUrl": "http://127.0.0.1:3100/pixel-art-avatar-icon-generator",
+        "at": "2026-09-04T00:40:24.172Z"
+      },
+      {
+        "width": 360,
+        "url": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9616934112105331",
+        "frameUrl": "http://127.0.0.1:3100/category/face-makers",
+        "mainFrameUrl": "http://127.0.0.1:3100/category/face-makers",
+        "at": "2026-09-04T00:40:24.368Z"
+      },
+      {
+        "width": 360,
+        "url": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9616934112105331",
+        "frameUrl": "http://127.0.0.1:3100/category/avatar-makers",
+        "mainFrameUrl": "http://127.0.0.1:3100/category/avatar-makers",
+        "at": "2026-09-04T00:40:24.568Z"
+      },
+      {
+        "width": 360,
+        "url": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9616934112105331",
+        "frameUrl": "http://127.0.0.1:3100/category/pixel-avatars",
+        "mainFrameUrl": "http://127.0.0.1:3100/category/pixel-avatars",
+        "at": "2026-09-04T00:40:24.767Z"
+      },
+      {
+        "width": 360,
+        "url": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9616934112105331",
+        "frameUrl": "http://127.0.0.1:3100/category/retro-flash",
+        "mainFrameUrl": "http://127.0.0.1:3100/category/retro-flash",
+        "at": "2026-09-04T00:40:24.954Z"
+      },
+      {
+        "width": 360,
+        "url": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9616934112105331",
+        "frameUrl": "http://127.0.0.1:3100/category/character-creators",
+        "mainFrameUrl": "http://127.0.0.1:3100/category/character-creators",
+        "at": "2026-09-04T00:40:25.150Z"
+      }
+    ],
+    "directoryAdRequests": 0,
+    "sourcePageAdRequests": 24
+  },
+  "httpBoundaryFollowup": {
+    "recordedAt": "2026-09-04T00:42:14.449Z",
+    "reason": "The initial extra 404 check incorrectly required a literal anchor in streamed notFound error HTML. Retain that failure; verify status/noindex separately from actual hydrated return navigation.",
+    "http": [
+      {
+        "route": "/games",
+        "status": 200,
+        "noindex": true,
+        "literalMain": true,
+        "streamedErrorShell": false
+      },
+      {
+        "route": "/category/face-makers",
+        "status": 200,
+        "noindex": true,
+        "literalMain": true,
+        "streamedErrorShell": false
+      },
+      {
+        "route": "/category/avatar-makers",
+        "status": 200,
+        "noindex": true,
+        "literalMain": true,
+        "streamedErrorShell": false
+      },
+      {
+        "route": "/category/pixel-avatars",
+        "status": 200,
+        "noindex": true,
+        "literalMain": true,
+        "streamedErrorShell": false
+      },
+      {
+        "route": "/category/retro-flash",
+        "status": 200,
+        "noindex": true,
+        "literalMain": true,
+        "streamedErrorShell": false
+      },
+      {
+        "route": "/category/character-creators",
+        "status": 200,
+        "noindex": true,
+        "literalMain": true,
+        "streamedErrorShell": false
+      },
+      {
+        "route": "/games/nonexistent-directory-check",
+        "status": 404,
+        "noindex": true,
+        "literalMain": false,
+        "streamedErrorShell": true
+      },
+      {
+        "route": "/category/unknown",
+        "status": 404,
+        "noindex": true,
+        "literalMain": false,
+        "streamedErrorShell": true
+      },
+      {
+        "route": "/not-a-real-page",
+        "status": 404,
+        "noindex": true,
+        "literalMain": false,
+        "streamedErrorShell": true
+      }
+    ],
+    "browser": [
+      {
+        "width": 1280,
+        "route": "/games/nonexistent-directory-check",
+        "state": {
+          "title": "Page Not Found | My Square Face Icon",
+          "h1": "This route does not exist",
+          "main": "404 · PAGE NOT FOUND\n\nThis route does not exist\n\nThe game or category address is not part of the published collection. Use one of the verified entry points below instead.\n\nBrowse avatar games\nReturn to Square Face Generator",
+          "width": 1280,
+          "scrollWidth": 1280,
+          "overlay": false
+        },
+        "returnToDirectory": "PASS"
+      },
+      {
+        "width": 1280,
+        "route": "/category/unknown",
+        "state": {
+          "title": "Category Not Found | My Square Face Icon",
+          "h1": "This route does not exist",
+          "main": "404 · PAGE NOT FOUND\n\nThis route does not exist\n\nThe game or category address is not part of the published collection. Use one of the verified entry points below instead.\n\nBrowse avatar games\nReturn to Square Face Generator",
+          "width": 1280,
+          "scrollWidth": 1280,
+          "overlay": false
+        },
+        "returnToDirectory": "PASS"
+      },
+      {
+        "width": 1280,
+        "route": "/not-a-real-page",
+        "state": {
+          "title": "Square Face Generator - Play the Classic Flash Avatar Game Online",
+          "h1": "This route does not exist",
+          "main": "404 · PAGE NOT FOUND\n\nThis route does not exist\n\nThe game or category address is not part of the published collection. Use one of the verified entry points below instead.\n\nBrowse avatar games\nReturn to Square Face Generator",
+          "width": 1280,
+          "scrollWidth": 1280,
+          "overlay": false
+        },
+        "returnToDirectory": "PASS"
+      },
+      {
+        "width": 390,
+        "route": "/games/nonexistent-directory-check",
+        "state": {
+          "title": "Page Not Found | My Square Face Icon",
+          "h1": "This route does not exist",
+          "main": "404 · PAGE NOT FOUND\n\nThis route does not exist\n\nThe game or category address is not part of the published collection. Use one of the verified entry points below instead.\n\nBrowse avatar games\nReturn to Square Face Generator",
+          "width": 390,
+          "scrollWidth": 390,
+          "overlay": false
+        },
+        "returnToDirectory": "PASS"
+      },
+      {
+        "width": 390,
+        "route": "/category/unknown",
+        "state": {
+          "title": "Category Not Found | My Square Face Icon",
+          "h1": "This route does not exist",
+          "main": "404 · PAGE NOT FOUND\n\nThis route does not exist\n\nThe game or category address is not part of the published collection. Use one of the verified entry points below instead.\n\nBrowse avatar games\nReturn to Square Face Generator",
+          "width": 390,
+          "scrollWidth": 390,
+          "overlay": false
+        },
+        "returnToDirectory": "PASS"
+      },
+      {
+        "width": 390,
+        "route": "/not-a-real-page",
+        "state": {
+          "title": "Square Face Generator - Play the Classic Flash Avatar Game Online",
+          "h1": "This route does not exist",
+          "main": "404 · PAGE NOT FOUND\n\nThis route does not exist\n\nThe game or category address is not part of the published collection. Use one of the verified entry points below instead.\n\nBrowse avatar games\nReturn to Square Face Generator",
+          "width": 390,
+          "scrollWidth": 390,
+          "overlay": false
+        },
+        "returnToDirectory": "PASS"
+      }
+    ],
+    "status": "PASS",
+    "finishedAt": "2026-09-04T00:42:23.420Z"
+  },
+  "board": {
+    "version": "1.73",
+    "path": "F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+    "status": "待验收",
+    "validation": "board-checks.json",
+    "sourceAcceptanceCount": 30,
+    "visual": "未验证"
+  },
+  "retainedInitialDiagnostics": [
+    "Initial legacy SSR navigation count assumptions (0/2 rather than 3) corrected by adding the confirmed independent homepage/Oval navigation entries.",
+    "Initial normalized-newline compatibility mismatch corrected with exact raw/LF contracts.",
+    "Initial ROUTE source-location check failed; moved assertions to real metadata/data helpers and passed final tests.",
+    "Initial network follow-up overall failed only at extra raw 404 anchor assertion; retain FAIL and passing separate follow-up."
+  ],
+  "unresolved": [
+    "Registry UNKNOWN and original P0 risks",
+    "whole-site advertising eligibility/CMP and privacy consent unverified; source-document ads retained",
+    "production deployment/version/one-hop/seo:prod/CWV unverified",
+    "KW-04 and human content review unverified",
+    "physical mobile/other engines/SWF internal controls/save/fullscreen/external provider not tested",
+    "existing Oval first-entry/narrow-card/spacing advisories preserved",
+    "authoritative board browser visual not verified"
+  ],
+  "artifacts": [
+    {
+      "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-games-index-v173-20260904\\code-results.json",
+      "sha256": "7230b16abf7fbcc791d726e6116b54a97d7d79d1b441624ca53294c430ec8ec8"
+    },
+    {
+      "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-games-index-v173-20260904\\code-final-results.json",
+      "sha256": "4e45888a2b2bd0740971b1536c1f8fe76ef3f65aae84de76843d7396e7990e98"
+    },
+    {
+      "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-games-index-v173-20260904\\build-results.json",
+      "sha256": "6fd718821a4bfe044c6a4e8e21c20c911d668e90fb22537322d1a75528136723"
+    },
+    {
+      "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-games-index-v173-20260904\\built-results.json",
+      "sha256": "24c842a8788ea2fd2ab63c86eee3d2c9939cc14c3378631d143a1bd3db978d34"
+    },
+    {
+      "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-games-index-v173-20260904\\http-results.json",
+      "sha256": "856a507049157d038ab8b9f8103b5a69b747d80ae3ad236fd05189a818c36a0c"
+    },
+    {
+      "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-games-index-v173-20260904\\browser-results.json",
+      "sha256": "2257e0c45c518b59dd0cfa8c0338cde055700930bfb0977df0bdda7832eac71f"
+    },
+    {
+      "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-games-index-v173-20260904\\navigation-network-results.json",
+      "sha256": "1ddc311769300ce506aa2ac3b7b98c69d67a7e38c9e9918dd65a580526b51144"
+    },
+    {
+      "path": "C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-games-index-v173-20260904\\http-boundary-followup.json",
+      "sha256": "cec47c6167dd636d7a99cdbc6586fbd3b2cce3f2d83c19844530e788534852f5"
+    }
+  ],
+  "rollback": "Only reverse the task-specific exact source deltas after current SHA verification; preserve all unrelated dirty changes, source acceptances, old evidence and cancellation. No production rollback."
+}

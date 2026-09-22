@@ -1,0 +1,85 @@
+{
+  "taskId": "RUFFLE-001",
+  "scope": "RUFFLE_RUNTIME_GOVERNANCE_PROPOSAL",
+  "boardVersion": "1.90",
+  "recordedAt": "2026-09-08T00:39:40.3624401Z",
+  "status": "设计中 / 方案待确认 / 未实施",
+  "result": "现状与方案治理通过；核心运行时方案待确认，应用未实施；全站发布不通过",
+  "proposalPath": "docs/product/ruffle-runtime-governance-proposal.md",
+  "proposalSha256": "4a4b2245657170c627a4a10e8dcecd7a16f2a8e578fed852b6a6bd2da9e08b57",
+  "proposalConfirmation": "确认 RUFFLE-001 方案，进行开发",
+  "dependency": {
+    "taskId": "PLAYER-001",
+    "satisfiedLocally": true
+  },
+  "currentRuntime": {
+    "packageSpec": "^0.2.0-nightly.2026.5.12",
+    "lockVersion": "0.2.0-nightly.2026.5.12",
+    "installedVersion": "0.2.0-nightly.2026.5.12",
+    "publicBase": "/ruffle/",
+    "publicFiles": 5,
+    "publicBytes": 27512697,
+    "packageAndPublicByteIdentical": true,
+    "automaticSyncPresent": false,
+    "runtimeManifestPresent": false,
+    "remoteFallbacks": [
+      "https://unpkg.com/@ruffle-rs/ruffle",
+      "https://cdn.jsdelivr.net/npm/@ruffle-rs/ruffle@latest/ruffle.js"
+    ]
+  },
+  "publicAssetHashesSha256": {
+    "5ab714cfe6d10dcc7003.wasm": "575a14c02e47dcf34d61a2de684783994f29a60046361cd950c37a9feb10df9a",
+    "9e3e2a04bfe37ff3e3e9.wasm": "6e2b664d1a5f4b9f0acaf51cc94caa2460d3920a5584611075a250475ffa0c25",
+    "core.ruffle.549e09f5ab25b1ddd637.js": "b1c9f536332a91f3af74ce4dc954774383abc1df485ba1be331c44fba85eaa86",
+    "core.ruffle.c736d9febaa371cbf8ce.js": "c568b9a9a9a1842eb0bb5fbef9468291c410dc56d535338da9fb81fa471b5803",
+    "ruffle.js": "0f320b07abc9a000a5e9d445eaec8df05d8607351bc3248ef5552f943ba5b7ea"
+  },
+  "preflight": [
+    {"command": "npm run player:check", "exitCode": 0},
+    {"command": "npm run perf-home:check", "exitCode": 0},
+    {"command": "npm run square-home:check", "exitCode": 0},
+    {"command": "npm run oval-page:check", "exitCode": 0}
+  ],
+  "preflightMeaning": "Only the current click-to-load/player/page source contracts were rerun. No new RUFFLE-001 implementation, build, HTTP MIME/cache, browser, mobile, SWF compatibility, CWV or production claim is made.",
+  "proposalDecisions": [
+    "pin the current dependency without a caret",
+    "add explicit sync plus read-only manifest/hash drift checks",
+    "use the same-origin runtime only and remove latest CDN fallbacks",
+    "validate application/wasm and controlled cache behavior on local production plus OpenNext output",
+    "retain click-to-load and independently regress Square and Oval",
+    "document upgrade and rollback without changing this task to a newer nightly"
+  ],
+  "seoInvariant": {
+    "urlsChanged": false,
+    "metadataOrH1Changed": false,
+    "canonicalOrSchemaChanged": false,
+    "robotsOrIndexChanged": false,
+    "sitemapChanged": false,
+    "visibleCopyOrSearchIntentChanged": false,
+    "seoProdRun": false
+  },
+  "governance": {
+    "boardSha256": "cd21fab811c7aef4754a4c1de9fca74ac890dae6f5d51bbc7c38ee37c8712774",
+    "completedTasks": 24,
+    "totalTasks": 60,
+    "sourceAcceptanceKeys": 35,
+    "implementationStarted": false,
+    "applicationCodeChanged": false,
+    "dependenciesChanged": false,
+    "publicRuntimeChanged": false,
+    "fullApplicationQaRerun": false,
+    "buildsRerun": false,
+    "httpMimeCacheBrowserMobileCwvRerun": false,
+    "commitCreated": false,
+    "pushed": false,
+    "deployed": false,
+    "production": "未验证 / 未部署"
+  },
+  "retainedBoundaries": {
+    "squareOvalSwfChanged": false,
+    "rightsVerified": false,
+    "licenseMaterialTaskReopened": false,
+    "assetImgCwvMobileTasksStarted": false,
+    "nextRequiredUserReply": "确认 RUFFLE-001 方案，进行开发"
+  }
+}

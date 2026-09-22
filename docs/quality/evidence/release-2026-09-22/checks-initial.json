@@ -1,0 +1,205 @@
+[
+  {
+    "name": "canonical:check",
+    "start": "2026-09-22T08:34:35.966Z",
+    "exitCode": 0,
+    "stdout": "\n> mysquarefaceicon@0.1.0 canonical:check\n> node scripts/run-canonical-host-check.mjs\n\nOP-11 canonical-host validation passed\n- HTTP apex, HTTP www, and HTTPS www normalize to the HTTPS apex with status 308\n- paths, queries, and method-preserving redirect semantics are retained\n- HTTPS apex, localhost, preview, and unrelated hosts pass through without redirects\n",
+    "stderr": ""
+  },
+  {
+    "name": "terms:check",
+    "start": "2026-09-22T08:34:37.808Z",
+    "exitCode": 0,
+    "stdout": "\n> mysquarefaceicon@0.1.0 terms:check\n> node scripts/check-terms-rights.mjs\n\nTERMS-001 source passed: exact approved copy/date, 1 H1, 7 H2s, 8 paragraphs, KW-02 count 3, two links, frozen remaining source.\nFail-closed negative fixtures: 6 rejected (rights, keyword, link, date and metadata regressions).\nRaw HTTP, browser, actual licenses and production release are NOT verified by a source-only run.\n",
+    "stderr": ""
+  },
+  {
+    "name": "about:check",
+    "start": "2026-09-22T08:34:38.238Z",
+    "exitCode": 0,
+    "stdout": "\n> mysquarefaceicon@0.1.0 about:check\n> node scripts/check-about-rights.mjs\n\nABOUT-001 source passed: seven exact approved regions, frozen remaining source/metadata/schema, 1 H1 / 5 H2 / 7 H3 / 16 paragraphs, KW-02 count 3, eight main links.\nFail-closed source negative fixtures: 14 rejected.\nSource checks do not verify raw HTTP, browser/mobile, actual licenses or production release.\n",
+    "stderr": ""
+  },
+  {
+    "name": "editorial:check",
+    "start": "2026-09-22T08:34:38.671Z",
+    "exitCode": 0,
+    "stdout": "\n> mysquarefaceicon@0.1.0 editorial:check\n> node scripts/check-editorial-rights.mjs\n\nEDITORIAL-001 source passed: five exact approved regions, frozen remaining source/metadata/schema, 1 H1 / 4 H2 / 3 H3 / 10 paragraphs, KW-02 count 3, two main links.\nFail-closed source negative fixtures: 14 rejected.\nSource checks do not verify raw HTTP, browser/mobile, actual licenses or production release.\n",
+    "stderr": ""
+  },
+  {
+    "name": "gallery:check",
+    "start": "2026-09-22T08:34:39.098Z",
+    "exitCode": 0,
+    "stdout": "\n> mysquarefaceicon@0.1.0 gallery:check\n> node scripts/check-gallery-rights.mjs\n\nGALLERY-001 source passed: six confirmed regions, other source frozen, 1 H1 / 4 H2 / 14 H3 / 19 page paragraphs + 1 actual initial community paragraph, eight CSS samples, four main links, KW-02 count 3.\nFail-closed source negative fixtures: 18 rejected. Community in-memory SSR states: empty, load-error, populated-liked, already-liked; no API, database, storage or browser interaction.\nSource/SSR fixtures do not verify HTTP, live UGC availability, browser/mobile, actual licenses or production release.\n",
+    "stderr": ""
+  },
+  {
+    "name": "locale:check",
+    "start": "2026-09-22T08:34:40.021Z",
+    "exitCode": 1,
+    "stdout": "\n> mysquarefaceicon@0.1.0 locale:check\n> node scripts/check-locale-rights.mjs\n\n",
+    "stderr": "LOCALE-001 check failed: lib/games/square-homepage.ts: unexpected RECENT-001 source change\n+ actual - expected\n\n+ '4ad6c56b6fe124a1cbf83365873e9abac269be6a6ca4b0e05498e6cda7f91e3c'\n- '319e298ea362613100410b5400f56765baf996aabb08abd03420d88cb862b6db'\n\n"
+  },
+  {
+    "name": "square-home:check",
+    "start": "2026-09-22T08:34:41.036Z",
+    "exitCode": 1,
+    "stdout": "\n> mysquarefaceicon@0.1.0 square-home:check\n> node scripts/check-square-homepage.mjs\n\n",
+    "stderr": "MIG-SQUARE-001 check failed: lib/games/game-player-model.ts changed outside its confirmed migration boundary\n+ actual - expected\n\n+ '26b6695fba8b6a5956d499ecfa2f61c0747b39cafd2d216ed23ba1879adabe78'\n- '42672e8d0917e9d7d6a1b28137e505ecd4d7b09ba40e3c971751b6d7f3fbe84c'\n\n"
+  },
+  {
+    "name": "oval-page:check",
+    "start": "2026-09-22T08:34:41.645Z",
+    "exitCode": 1,
+    "stdout": "\n> mysquarefaceicon@0.1.0 oval-page:check\n> node scripts/check-oval-legacy-page.mjs\n\n",
+    "stderr": "MIG-OVAL-001 check failed: lib/games/game-player-model.ts changed outside its confirmed migration boundary\n+ actual - expected\n\n+ '26b6695fba8b6a5956d499ecfa2f61c0747b39cafd2d216ed23ba1879adabe78'\n- '42672e8d0917e9d7d6a1b28137e505ecd4d7b09ba40e3c971751b6d7f3fbe84c'\n\n"
+  },
+  {
+    "name": "pixel-page:check",
+    "start": "2026-09-22T08:34:42.239Z",
+    "exitCode": 1,
+    "stdout": "\n> mysquarefaceicon@0.1.0 pixel-page:check\n> node scripts/check-pixel-external-page.mjs\n\n",
+    "stderr": "MIG-PIXEL-001 check failed: AssertionError [ERR_ASSERTION]: app/globals.css: unexpected RECENT-001 source change\n+ actual - expected\n\n+ '88d9f06ea4338be07e37854e62bef6c13b318a7e0d250a2288fda0b6b9fa0be5'\n- 'ba915d64081b80d6f166983c090f155f9434267b0ef844ed3074932c0a2993c6'\n\n    at beforeRecentlyPlayedSource (file:///D:/LYXGIT/mysquarefaceicon/scripts/recently-played-compat.mjs:37:10)\n    at beforeGamesIndexSource (file:///D:/LYXGIT/mysquarefaceicon/scripts/games-index-compat.mjs:15:11)\n    at main (file:///D:/LYXGIT/mysquarefaceicon/scripts/check-pixel-external-page.mjs:1102:78)\n    at file:///D:/LYXGIT/mysquarefaceicon/scripts/check-pixel-external-page.mjs:1167:15\n    at ModuleJob.run (node:internal/modules/esm/module_job:274:25)\n    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:26)\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5)\n"
+  },
+  {
+    "name": "games:check",
+    "start": "2026-09-22T08:34:42.836Z",
+    "exitCode": 0,
+    "stdout": "\n> mysquarefaceicon@0.1.0 games:check\n> node scripts/run-game-data-check.mjs\n\nGAME-DATA-001 validation passed\n- 3 current records validated\n- IDs, slugs, routes, canonicals, relations, and query lookups are unique/valid\n- license status and delivery gates match data/game-license-registry.json\n- local SWF checksums, player sources, and project image files are present\n- external tool remains direct-link-only with no local generator asset path\n",
+    "stderr": ""
+  },
+  {
+    "name": "player:check",
+    "start": "2026-09-22T08:34:44.641Z",
+    "exitCode": 0,
+    "stdout": "\n> mysquarefaceicon@0.1.0 player:check\n> node scripts/run-game-player-check.mjs\n\nPLAYER-001 validation passed\n- all five delivery adapters have valid fixtures and exhaustive capabilities\n- unknown and DIRECT_LINK_ONLY mismatches fail closed\n- ExternalLinkAdapter renders a safe new-tab link and no iframe\n- RuffleAdapter remains conditionally dynamic for click-to-load delivery\n- GamePlayer validates URLs and release policy before runtime adapter dispatch\n- first activation paints loading before the dynamic adapter mounts\n- Ruffle reloads reuse one initialized release\n",
+    "stderr": ""
+  },
+  {
+    "name": "routes:check",
+    "start": "2026-09-22T08:34:46.769Z",
+    "exitCode": 0,
+    "stdout": "\n> mysquarefaceicon@0.1.0 routes:check\n> node scripts/run-game-route-check.mjs\n\nROUTE-001 validation passed\n- three frozen legacy paths resolve without duplicate /games aliases\n- future /games/[slug] routes require exact paths, published status, and release permission\n- five allowlisted categories resolve from real published records; unknown categories fail closed\n- new route families retain explicit noindex and 404 guards\n",
+    "stderr": ""
+  },
+  {
+    "name": "components:check",
+    "start": "2026-09-22T08:34:50.604Z",
+    "exitCode": 0,
+    "stdout": "\n> mysquarefaceicon@0.1.0 components:check\n> node scripts/run-game-component-check.mjs\n\nCOMP-001 validation passed\n- all ten required shared components exist under components/game\n- cards, grids, categories, breadcrumbs, metadata, related records, empty state, and ad shell render from typed data\n- GameControls preserves playable and external-tool capability boundaries\n- route pages consume shared components without duplicate card markup\n- noindex directory/category scaffolds and the 404 boundary do not import AdSlotShell\n",
+    "stderr": ""
+  },
+  {
+    "name": "metadata:check",
+    "start": "2026-09-22T08:34:53.614Z",
+    "exitCode": 0,
+    "stdout": "\n> mysquarefaceicon@0.1.0 metadata:check\n> node scripts/run-game-metadata-check.mjs\n\nMETA-001 validation passed\n- Square, Oval, Pixel, and future game routes use the shared Game Data metadata builder\n- title, description, canonical, OG, Twitter, and one H1 resolve from validated records or the shared detail template\n- frozen legacy canonicals and current index states remain unchanged\n- missing required SEO fields and duplicate index metadata fail closed\n",
+    "stderr": ""
+  },
+  {
+    "name": "home:check",
+    "start": "2026-09-22T08:34:55.177Z",
+    "exitCode": 0,
+    "stdout": "\n> mysquarefaceicon@0.1.0 home:check\n> node scripts/run-home-information-architecture-check.mjs\n\nHOME-IA-001 validation passed\n- Square remains the core section and discovery precedes Gallery and long-form content\n- Related contains only Oval and Pixel published Game Data; Pixel remains External Tool\n- five real category routes render; empty Continue/New modules do not render\n- Guide, Gallery, and Blog links are isolated in the post-FAQ Resources section\n- the mobile core Play button remains centered in resting and hover states\n",
+    "stderr": ""
+  },
+  {
+    "name": "home-hero:check",
+    "start": "2026-09-22T08:34:57.918Z",
+    "exitCode": 0,
+    "stdout": "\n> mysquarefaceicon@0.1.0 home-hero:check\n> node scripts/run-home-hero-check.mjs\n\nHOME-HERO-001 validation passed\n- exact H1/value copy, one core preview, and both Play entry points are present\n- the desktop Hero uses the accepted split layout and mobile hides the duplicate CTA\n- initial HTML contains no Ruffle/WASM/SWF and the heavy adapter remains conditional\n- the external Hero Play action controls the same GamePlayer instance directly\n",
+    "stderr": ""
+  },
+  {
+    "name": "home-discovery:check",
+    "start": "2026-09-22T08:35:00.419Z",
+    "exitCode": 1,
+    "stdout": "\n> mysquarefaceicon@0.1.0 home-discovery:check\n> node scripts/run-home-discovery-check.mjs\n\n",
+    "stderr": "node:assert:801\r\n    throw err;\r\n    ^\r\n\r\nAssertionError [ERR_ASSERTION]: The input did not match the regular expression /image\\.role === \"THUMBNAIL\"/. Input:\r\n\r\n'import { ArrowRight, ExternalLink } from \"lucide-react\";\\n' +\r\n  'import Image from \"next/image\";\\n' +\r\n  'import GameLink from \"./GameLink\";\\n' +\r\n  'import FavoriteToggle, { type FavoriteToggleChangeHandler } from \"./FavoriteToggle\";\\n' +\r\n  'import type { GameRecord } from \"../../lib/games/game-schema\";\\n' +\r\n  'import { getGameImage } from \"../../lib/games/game-images\";\\n' +\r\n  'import { getPublicGameHref } from \"../../lib/games/routes\";\\n' +\r\n  '\\n' +\r\n  'export type GameCardVariant = \"default\" | \"home-media\" | \"detail-related\";\\n' +\r\n  '\\n' +\r\n  'type GameCardProps = {\\n' +\r\n  '  readonly game: GameRecord;\\n' +\r\n  '  readonly actionLabel?: string;\\n' +\r\n  '  readonly variant?: GameCardVariant;\\n' +\r\n  '  readonly reloadDocument?: boolean;\\n' +\r\n  '  readonly onFavoriteChange?: FavoriteToggleChangeHandler;\\n' +\r\n  '};\\n' +\r\n  '\\n' +\r\n  'function getDefaultActionLabel(game: GameRecord) {\\n' +\r\n  '  return game.pageType === \"EXTERNAL_TOOL\" ? \"View access details\" : \"Open game\";\\n' +\r\n  '}\\n' +\r\n  '\\n' +\r\n  'export default function GameCard({\\n' +\r\n  '  game,\\n' +\r\n  '  actionLabel,\\n' +\r\n  '  variant = \"default\",\\n' +\r\n  '  reloadDocument = false,\\n' +\r\n  '  onFavoriteChange\\n' +\r\n  '}: GameCardProps) {\\n' +\r\n  '  const isExternal = game.pageType === \"EXTERNAL_TOOL\";\\n' +\r\n  '  const resolvedActionLabel = actionLabel ?? getDefaultActionLabel(game);\\n' +\r\n  '\\n' +\r\n  '  if (variant === \"default\") {\\n' +\r\n  '    return (\\n' +\r\n  '      <div className=\"favoritable-game-card\">\\n' +\r\n  '        <GameLink\\n' +\r\n  '          className={`game-list-card route-game-link${isExternal ? \" route-game-link-external\" : \"\"}`}\\n' +\r\n  '          href={getPublicGameHref(game)}\\n' +\r\n  '          reloadDocument={reloadDocument}\\n' +\r\n  '          data-game-id={game.id}\\n' +\r\n  '          data-game-page-type={game.pageType}\\n' +\r\n  '        >\\n' +\r\n  '          <span className=\"route-game-type\">{isExternal ? \"External tool\" : \"Browser game\"}</span>\\n' +\r\n  '          <strong>{game.name}</strong>\\n' +\r\n  '          <span>{game.content.summary}</span>\\n' +\r\n  '          <span className=\"route-card-action\">{resolvedActionLabel}</span>\\n' +\r\n  '        </GameLink>\\n' +\r\n  '        <FavoriteToggle\\n' +\r\n  '          gameId={game.id}\\n' +\r\n  '          gameName={game.name}\\n' +\r\n  '          pageType={game.pageType}\\n' +\r\n  '          onFavoriteChange={onFavoriteChange}\\n' +\r\n  '        />\\n' +\r\n  '      </div>\\n' +\r\n  '    );\\n' +\r\n  '  }\\n' +\r\n  '\\n' +\r\n  '  const thumbnail = getGameImage(game, \"THUMBNAIL\");\\n' +\r\n  '\\n' +\r\n  '  if (variant === \"detail-related\") {\\n' +\r\n  '    return (\\n' +\r\n  '      <div className=\"favoritable-game-card\">\\n' +\r\n  '        <GameLink\\n' +\r\n  '          className={`game-list-card route-game-link game-list-card-detail-related${\\n' +\r\n  '            isExternal ? \" route-game-link-external\" : \"\"\\n' +\r\n  '          }${thumbnail ? \"\" : \" game-list-card-without-media\"}`}\\n' +\r\n  '          href={getPublicGameHref(game)}\\n' +\r\n  '          reloadDocument={reloadDocument}\\n' +\r\n  '          data-game-id={game.id}\\n' +\r\n  '          data-game-page-type={game.pageType}\\n' +\r\n  '          data-game-card-variant=\"detail-related\"\\n' +\r\n  '        >\\n' +\r\n  '          {thumbnail ? (\\n' +\r\n  '            <span className=\"game-detail-related-media\">\\n' +\r\n  '              <Image\\n' +\r\n  '                src={thumbnail.src}\\n' +\r\n  '                alt={thumbnail.alt}\\n' +\r\n  '                width={thumbnail.width}\\n' +\r\n  '                height={thumbnail.height}\\n' +\r\n  '                sizes=\"(max-width: 430px) 96px, 88px\"\\n' +\r\n  '                loading=\"lazy\"\\n' +\r\n  '              />\\n' +\r\n  '            </span>\\n' +\r\n  '          ) : null}\\n' +\r\n  '          <span className=\"game-detail-related-copy\">\\n' +\r\n  '            <strong>{game.name}</strong>\\n' +\r\n  '            <span className={`route-game-type${isExternal ? \" route-game-type-external\" : \"\"}`}>\\n' +\r\n  '              {isExternal ? <ExternalLink aria-hidden=\"true\" size={15} strokeWidth={2.2} /> : null}\\n' +\r\n  '              {isExternal ? \"External tool\" : \"Browser game\"}\\n' +\r\n  '            </span>\\n' +\r\n  '            <span className=\"game-detail-related-summary\">{game.content.summary}</span>\\n' +\r\n  '          </span>\\n' +\r\n  '          <span className=\"game-detail-related-action\">\\n' +\r\n  '            {resolvedActionLabel}\\n' +\r\n  '            <ArrowRight aria-hidden=\"true\" size={18} strokeWidth={2.4} />\\n' +\r\n  '          </span>\\n' +\r\n  '        </GameLink>\\n' +\r\n  '        <FavoriteToggle\\n' +\r\n  '          gameId={game.id}\\n' +\r\n  '          gameName={game.name}\\n' +\r\n  '          pageType={game.pageType}\\n' +\r\n  '          onFavoriteChange={onFavoriteChange}\\n' +\r\n  '        />\\n' +\r\n  '      </div>\\n' +\r\n  '    );\\n' +\r\n  '  }\\n' +\r\n  '\\n' +\r\n  '  return (\\n' +\r\n  '    <div className=\"favoritable-game-card\">\\n' +\r\n  '      <GameLink\\n' +\r\n  '        className={`game-list-card route-game-link game-list-card-home-media${\\n' +\r\n  '          isExternal ? \" route-game-link-external\" : \"\"\\n' +\r\n  '        }${thumbnail ? \"\" : \" game-list-card-without-media\"}`}\\n' +\r\n  '        href={getPublicGameHref(game)}\\n' +\r\n  '        reloadDocument={reloadDocument}\\n' +\r\n  '        data-game-id={game.id}\\n' +\r\n  '        data-game-page-type={game.pageType}\\n' +\r\n  '        data-game-card-variant=\"home-media\"\\n' +\r\n  '      >\\n' +\r\n  '        {thumbnail ? (\\n' +\r\n  '          <span className=\"home-game-card-media\">\\n' +\r\n  '            <Image\\n' +\r\n  '              src={thumbnail.src}\\n' +\r\n  '              alt={thumbnail.alt}\\n' +\r\n  '              width={thumbnail.width}\\n' +\r\n  '              height={thumbnail.height}\\n' +\r\n  '              sizes=\"(max-width: 430px) 88px, (max-width: 760px) 96px, (max-width: 1100px) 140px, 180px\"\\n' +\r\n  '              loading=\"lazy\"\\n' +\r\n  '            />\\n' +\r\n  '          </span>\\n' +\r\n  '        ) : null}\\n' +\r\n  '        <span className=\"home-game-card-copy\">\\n' +\r\n  '          <span className={`route-game-type${isExternal ? \" route-game-type-external\" : \"\"}`}>\\n' +\r\n  '            {isExternal ? <ExternalLink aria-hidden=\"true\" size={14} strokeWidth={2.2} /> : null}\\n' +\r\n  '            {isExternal ? \"External tool\" : \"Browser game\"}\\n' +\r\n  '          </span>\\n' +\r\n  '          <strong>{game.name}</strong>\\n' +\r\n  '          <span className=\"home-game-card-summary\">{game.content.summary}</span>\\n' +\r\n  '          <span className=\"route-card-action\">\\n' +\r\n  '            {resolvedActionLabel}\\n' +\r\n  '            <ArrowRight aria-hidden=\"true\" size={17} strokeWidth={2.4} />\\n' +\r\n  '          </span>\\n' +\r\n  '        </span>\\n' +\r\n  '      </GameLink>\\n' +\r\n  '      <FavoriteToggle\\n' +\r\n  '        gameId={game.id}\\n' +\r\n  '        gameName={game.name}\\n' +\r\n  '        pageType={game.pageType}\\n' +\r\n  '        onFavoriteChange={onFavoriteChange}\\n' +\r\n  '      />\\n' +\r\n  '    </div>\\n' +\r\n  '  );\\n' +\r\n  '}\\n'\r\n\r\n    at Object.<anonymous> (D:\\LYXGIT\\mysquarefaceicon\\.home-discovery-check\\scripts\\validate-home-discovery.js:103:18)\r\n    at Module._compile (node:internal/modules/cjs/loader:1730:14)\r\n    at Object..js (node:internal/modules/cjs/loader:1895:10)\r\n    at Module.load (node:internal/modules/cjs/loader:1465:32)\r\n    at Function._load (node:internal/modules/cjs/loader:1282:12)\r\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\r\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\r\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\r\n    at node:internal/main/run_main_module:36:49 {\r\n  generatedMessage: true,\r\n  code: 'ERR_ASSERTION',\r\n  actual: 'import { ArrowRight, ExternalLink } from \"lucide-react\";\\n' +\r\n    'import Image from \"next/image\";\\n' +\r\n    'import GameLink from \"./GameLink\";\\n' +\r\n    'import FavoriteToggle, { type FavoriteToggleChangeHandler } from \"./FavoriteToggle\";\\n' +\r\n    'import type { GameRecord } from \"../../lib/games/game-schema\";\\n' +\r\n    'import { getGameImage } from \"../../lib/games/game-images\";\\n' +\r\n    'import { getPublicGameHref } from \"../../lib/games/routes\";\\n' +\r\n    '\\n' +\r\n    'export type GameCardVariant = \"default\" | \"home-media\" | \"detail-related\";\\n' +\r\n    '\\n' +\r\n    'type GameCardProps = {\\n' +\r\n    '  readonly game: GameRecord;\\n' +\r\n    '  readonly actionLabel?: string;\\n' +\r\n    '  readonly variant?: GameCardVariant;\\n' +\r\n    '  readonly reloadDocument?: boolean;\\n' +\r\n    '  readonly onFavoriteChange?: FavoriteToggleChangeHandler;\\n' +\r\n    '};\\n' +\r\n    '\\n' +\r\n    'function getDefaultActionLabel(game: GameRecord) {\\n' +\r\n    '  return game.pageType === \"EXTERNAL_TOOL\" ? \"View access details\" : \"Open game\";\\n' +\r\n    '}\\n' +\r\n    '\\n' +\r\n    'export default function GameCard({\\n' +\r\n    '  game,\\n' +\r\n    '  actionLabel,\\n' +\r\n    '  variant = \"default\",\\n' +\r\n    '  reloadDocument = false,\\n' +\r\n    '  onFavoriteChange\\n' +\r\n    '}: GameCardProps) {\\n' +\r\n    '  const isExternal = game.pageType === \"EXTERNAL_TOOL\";\\n' +\r\n    '  const resolvedActionLabel = actionLabel ?? getDefaultActionLabel(game);\\n' +\r\n    '\\n' +\r\n    '  if (variant === \"default\") {\\n' +\r\n    '    return (\\n' +\r\n    '      <div className=\"favoritable-game-card\">\\n' +\r\n    '        <GameLink\\n' +\r\n    '          className={`game-list-card route-game-link${isExternal ? \" route-game-link-external\" : \"\"}`}\\n' +\r\n    '          href={getPublicGameHref(game)}\\n' +\r\n    '          reloadDocument={reloadDocument}\\n' +\r\n    '          data-game-id={game.id}\\n' +\r\n    '          data-game-page-type={game.pageType}\\n' +\r\n    '        >\\n' +\r\n    '          <span className=\"route-game-type\">{isExternal ? \"External tool\" : \"Browser game\"}</span>\\n' +\r\n    '          <strong>{game.name}</strong>\\n' +\r\n    '          <span>{game.content.summary}</span>\\n' +\r\n    '          <span className=\"route-card-action\">{resolvedActionLabel}</span>\\n' +\r\n    '        </GameLink>\\n' +\r\n    '        <FavoriteToggle\\n' +\r\n    '          gameId={game.id}\\n' +\r\n    '          gameName={game.name}\\n' +\r\n    '          pageType={game.pageType}\\n' +\r\n    '          onFavoriteChange={onFavoriteChange}\\n' +\r\n    '        />\\n' +\r\n    '      </div>\\n' +\r\n    '    );\\n' +\r\n    '  }\\n' +\r\n    '\\n' +\r\n    '  const thumbnail = getGameImage(game, \"THUMBNAIL\");\\n' +\r\n    '\\n' +\r\n    '  if (variant === \"detail-related\") {\\n' +\r\n    '    return (\\n' +\r\n    '      <div className=\"favoritable-game-card\">\\n' +\r\n    '        <GameLink\\n' +\r\n    '          className={`game-list-card route-game-link game-list-card-detail-related${\\n' +\r\n    '            isExternal ? \" route-game-link-external\" : \"\"\\n' +\r\n    '          }${thumbnail ? \"\" : \" game-list-card-without-media\"}`}\\n' +\r\n    '          href={getPublicGameHref(game)}\\n' +\r\n    '          reloadDocument={reloadDocument}\\n' +\r\n    '          data-game-id={game.id}\\n' +\r\n    '          data-game-page-type={game.pageType}\\n' +\r\n    '          data-game-card-variant=\"detail-related\"\\n' +\r\n    '        >\\n' +\r\n    '          {thumbnail ? (\\n' +\r\n    '            <span className=\"game-detail-related-media\">\\n' +\r\n    '              <Image\\n' +\r\n    '                src={thumbnail.src}\\n' +\r\n    '                alt={thumbnail.alt}\\n' +\r\n    '                width={thumbnail.width}\\n' +\r\n    '                height={thumbnail.height}\\n' +\r\n    '                sizes=\"(max-width: 430px) 96px, 88px\"\\n' +\r\n    '                loading=\"lazy\"\\n' +\r\n    '              />\\n' +\r\n    '            </span>\\n' +\r\n    '          ) : null}\\n' +\r\n    '          <span className=\"game-detail-related-copy\">\\n' +\r\n    '            <strong>{game.name}</strong>\\n' +\r\n    '            <span className={`route-game-type${isExternal ? \" route-game-type-external\" : \"\"}`}>\\n' +\r\n    '              {isExternal ? <ExternalLink aria-hidden=\"true\" size={15} strokeWidth={2.2} /> : null}\\n' +\r\n    '              {isExternal ? \"External tool\" : \"Browser game\"}\\n' +\r\n    '            </span>\\n' +\r\n    '            <span className=\"game-detail-related-summary\">{game.content.summary}</span>\\n' +\r\n    '          </span>\\n' +\r\n    '          <span className=\"game-detail-related-action\">\\n' +\r\n    '            {resolvedActionLabel}\\n' +\r\n    '            <ArrowRight aria-hidden=\"true\" size={18} strokeWidth={2.4} />\\n' +\r\n    '          </span>\\n' +\r\n    '        </GameLink>\\n' +\r\n    '        <FavoriteToggle\\n' +\r\n    '          gameId={game.id}\\n' +\r\n    '          gameName={game.name}\\n' +\r\n    '          pageType={game.pageType}\\n' +\r\n    '          onFavoriteChange={onFavoriteChange}\\n' +\r\n    '        />\\n' +\r\n    '      </div>\\n' +\r\n    '    );\\n' +\r\n    '  }\\n' +\r\n    '\\n' +\r\n    '  return (\\n' +\r\n    '    <div className=\"favoritable-game-card\">\\n' +\r\n    '      <GameLink\\n' +\r\n    '        className={`game-list-card route-game-link game-list-card-home-media${\\n' +\r\n    '          isExternal ? \" route-game-link-external\" : \"\"\\n' +\r\n    '        }${thumbnail ? \"\" : \" game-list-card-without-media\"}`}\\n' +\r\n    '        href={getPublicGameHref(game)}\\n' +\r\n    '        reloadDocument={reloadDocument}\\n' +\r\n    '        data-game-id={game.id}\\n' +\r\n    '        data-game-page-type={game.pageType}\\n' +\r\n    '        data-game-card-variant=\"home-media\"\\n' +\r\n    '      >\\n' +\r\n    '        {thumbnail ? (\\n' +\r\n    '          <span className=\"home-game-card-media\">\\n' +\r\n    '            <Image\\n' +\r\n    '              src={thumbnail.src}\\n' +\r\n    '              alt={thumbnail.alt}\\n' +\r\n    '              width={thumbnail.width}\\n' +\r\n    '              height={thumbnail.height}\\n' +\r\n    '              sizes=\"(max-width: 430px) 88px, (max-width: 760px) 96px, (max-width: 1100px) 140px, 180px\"\\n' +\r\n    '              loading=\"lazy\"\\n' +\r\n    '            />\\n' +\r\n    '          </span>\\n' +\r\n    '        ) : null}\\n' +\r\n    '        <span className=\"home-game-card-copy\">\\n' +\r\n    '          <span className={`route-game-type${isExternal ? \" route-game-type-external\" : \"\"}`}>\\n' +\r\n    '            {isExternal ? <ExternalLink aria-hidden=\"true\" size={14} strokeWidth={2.2} /> : null}\\n' +\r\n    '            {isExternal ? \"External tool\" : \"Browser game\"}\\n' +\r\n    '          </span>\\n' +\r\n    '          <strong>{game.name}</strong>\\n' +\r\n    '          <span className=\"home-game-card-summary\">{game.content.summary}</span>\\n' +\r\n    '          <span className=\"route-card-action\">\\n' +\r\n    '            {resolvedActionLabel}\\n' +\r\n    '            <ArrowRight aria-hidden=\"true\" size={17} strokeWidth={2.4} />\\n' +\r\n    '          </span>\\n' +\r\n    '        </span>\\n' +\r\n    '      </GameLink>\\n' +\r\n    '      <FavoriteToggle\\n' +\r\n    '        gameId={game.id}\\n' +\r\n    '        gameName={game.name}\\n' +\r\n    '        pageType={game.pageType}\\n' +\r\n    '        onFavoriteChange={onFavoriteChange}\\n' +\r\n    '      />\\n' +\r\n    '    </div>\\n' +\r\n    '  );\\n' +\r\n    '}\\n',\r\n  expected: /image\\.role === \"THUMBNAIL\"/,\r\n  operator: 'match'\r\n}\r\n\r\nNode.js v22.16.0\r\n"
+  },
+  {
+    "name": "home-gallery:check",
+    "start": "2026-09-22T08:35:02.800Z",
+    "exitCode": 0,
+    "stdout": "\n> mysquarefaceicon@0.1.0 home-gallery:check\n> node scripts/run-home-gallery-check.mjs\n\nHOME-GALLERY-001 validation passed\n- exact curated title, copy, trust note, six-item order, and ordinary /gallery link passed\n- semantic figures, explicit 512x512 dimensions, lazy loading, and responsive 3x2 CSS passed\n- hardcoded likes, Heart UI, community-title claims, and the old mandatory-like component are absent\n- Home uses the editorial variant; Oval and Pixel use the bounded compact variant\n- the real /gallery CommentSection remains in place\n",
+    "stderr": ""
+  },
+  {
+    "name": "perf-home:check",
+    "start": "2026-09-22T08:35:06.768Z",
+    "exitCode": 0,
+    "stdout": "\n> mysquarefaceicon@0.1.0 perf-home:check\n> node scripts/run-home-performance-check.mjs\n\nPERF-HOME-001 validation passed\n- the LCP cover is a byte-verified local project asset with truthful intrinsic dimensions\n- initial HTML contains no Ruffle runtime, WASM, or SWF request\n- Ruffle remains conditional on activation and preview/loading/runtime share one reserved surface\n- the loading response is committed before the dynamic adapter mounts after a paint opportunity\n- the service-worker install list does not prefetch Ruffle or SWF assets\n",
+    "stderr": ""
+  },
+  {
+    "name": "game-template:check",
+    "start": "2026-09-22T08:35:09.323Z",
+    "exitCode": 0,
+    "stdout": "\n> mysquarefaceicon@0.1.0 game-template:check\n> node scripts/run-game-template-check.mjs\n\nGAME-TPL-001 validation passed\n- five delivery types render through the shared Player-first detail template\n- module order, conditional sections, FAQ DOM, factual rights, and internal navigation are present\n- External Tool structured data stays WebPage-only; playable records use conservative VideoGame data\n- initial template markup contains no Ruffle runtime, WASM, or SWF request URL\n- future route keeps resolver, true-404 boundary, and force-noindex metadata gate\n",
+    "stderr": "Warning: React does not recognize the `fetchPriority` prop on a DOM element. If you intentionally want it to appear in the DOM as a custom attribute, spell it as lowercase `fetchpriority` instead. If you accidentally passed it from a parent component, remove it from the DOM element.\n    at img\n    at button\n    at div\n    at div\n    at div\n    at GamePlayer (D:\\LYXGIT\\mysquarefaceicon\\.game-template-check\\components\\game-player\\GamePlayer.js:81:66)\n    at section\n    at main\n    at GameDetailTemplate (D:\\LYXGIT\\mysquarefaceicon\\.game-template-check\\components\\game\\GameDetailTemplate.js:34:31)\n"
+  },
+  {
+    "name": "games-index:check",
+    "start": "2026-09-22T08:35:12.378Z",
+    "exitCode": 1,
+    "stdout": "\n> mysquarefaceicon@0.1.0 games-index:check\n> node scripts/check-games-index.mjs\n\n",
+    "stderr": "node:internal/modules/run_main:123\r\n    triggerUncaughtException(\r\n    ^\r\n\r\nAssertionError [ERR_ASSERTION]: components/game/GameCard.tsx: unexpected follow-on source change\r\n+ actual - expected\r\n\r\n+ '866b741593de063ed9740bb700a493e62d69693ff0717debb5dc72cfd541a946'\r\n- 'e405ecff0e4a26ef3ed686ef5ac7c06d5c622312d17a010bdcae6e495c66edcd'\r\n\r\n    at beforeGamesIndexSource (file:///D:/LYXGIT/mysquarefaceicon/scripts/games-index-compat.mjs:22:10)\r\n    at file:///D:/LYXGIT/mysquarefaceicon/scripts/check-games-index.mjs:231:6\r\n    at ModuleJob.run (node:internal/modules/esm/module_job:274:25)\r\n    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:26)\r\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5) {\r\n  generatedMessage: false,\r\n  code: 'ERR_ASSERTION',\r\n  actual: '866b741593de063ed9740bb700a493e62d69693ff0717debb5dc72cfd541a946',\r\n  expected: 'e405ecff0e4a26ef3ed686ef5ac7c06d5c622312d17a010bdcae6e495c66edcd',\r\n  operator: 'strictEqual'\r\n}\r\n\r\nNode.js v22.16.0\r\n"
+  },
+  {
+    "name": "category-sample:check",
+    "start": "2026-09-22T08:35:13.782Z",
+    "exitCode": 1,
+    "stdout": "\n> mysquarefaceicon@0.1.0 category-sample:check\n> node scripts/check-category-sample.mjs\n\n",
+    "stderr": "node:internal/modules/run_main:123\r\n    triggerUncaughtException(\r\n    ^\r\n\r\nAssertionError [ERR_ASSERTION]: package.json: change outside confirmed RUFFLE-001 scope\r\n+ actual - expected\r\n\r\n+ '5ff2f86a70c08e508cb485b369eb8627b7488b1c403a078a7ee023400bdeb15d'\r\n- '1fb9813496832e4a574490e10b564b53351f1052eafc2ab52af8742b6c9b6b45'\r\n\r\n    at beforeRuffleSource (file:///D:/LYXGIT/mysquarefaceicon/scripts/ruffle-compat.mjs:66:10)\r\n    at beforeFavoritesSource (file:///D:/LYXGIT/mysquarefaceicon/scripts/favorites-compat.mjs:34:11)\r\n    at beforeRecentlyPlayedSource (file:///D:/LYXGIT/mysquarefaceicon/scripts/recently-played-compat.mjs:32:11)\r\n    at beforeRelatedGamesSource (file:///D:/LYXGIT/mysquarefaceicon/scripts/related-games-compat.mjs:25:11)\r\n    at beforeCategoryRemainingSource (file:///D:/LYXGIT/mysquarefaceicon/scripts/category-remaining-compat.mjs:14:11)\r\n    at beforeCategorySampleSource (file:///D:/LYXGIT/mysquarefaceicon/scripts/category-sample-compat.mjs:12:11)\r\n    at file:///D:/LYXGIT/mysquarefaceicon/scripts/check-category-sample.mjs:192:6\r\n    at ModuleJob.run (node:internal/modules/esm/module_job:274:25)\r\n    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:26)\r\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5) {\r\n  generatedMessage: false,\r\n  code: 'ERR_ASSERTION',\r\n  actual: '5ff2f86a70c08e508cb485b369eb8627b7488b1c403a078a7ee023400bdeb15d',\r\n  expected: '1fb9813496832e4a574490e10b564b53351f1052eafc2ab52af8742b6c9b6b45',\r\n  operator: 'strictEqual'\r\n}\r\n\r\nNode.js v22.16.0\r\n"
+  },
+  {
+    "name": "category-remaining:check",
+    "start": "2026-09-22T08:35:15.523Z",
+    "exitCode": 1,
+    "stdout": "\n> mysquarefaceicon@0.1.0 category-remaining:check\n> node scripts/check-category-remaining.mjs\n\n",
+    "stderr": "node:internal/modules/run_main:123\r\n    triggerUncaughtException(\r\n    ^\r\n\r\nAssertionError [ERR_ASSERTION]: package.json: change outside confirmed RUFFLE-001 scope\r\n+ actual - expected\r\n\r\n+ '5ff2f86a70c08e508cb485b369eb8627b7488b1c403a078a7ee023400bdeb15d'\r\n- '1fb9813496832e4a574490e10b564b53351f1052eafc2ab52af8742b6c9b6b45'\r\n\r\n    at beforeRuffleSource (file:///D:/LYXGIT/mysquarefaceicon/scripts/ruffle-compat.mjs:66:10)\r\n    at beforeFavoritesSource (file:///D:/LYXGIT/mysquarefaceicon/scripts/favorites-compat.mjs:34:11)\r\n    at beforeRecentlyPlayedSource (file:///D:/LYXGIT/mysquarefaceicon/scripts/recently-played-compat.mjs:32:11)\r\n    at beforeRelatedGamesSource (file:///D:/LYXGIT/mysquarefaceicon/scripts/related-games-compat.mjs:25:11)\r\n    at beforeCategoryRemainingSource (file:///D:/LYXGIT/mysquarefaceicon/scripts/category-remaining-compat.mjs:14:11)\r\n    at file:///D:/LYXGIT/mysquarefaceicon/scripts/check-category-remaining.mjs:213:6\r\n    at ModuleJob.run (node:internal/modules/esm/module_job:274:25)\r\n    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:26)\r\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5) {\r\n  generatedMessage: false,\r\n  code: 'ERR_ASSERTION',\r\n  actual: '5ff2f86a70c08e508cb485b369eb8627b7488b1c403a078a7ee023400bdeb15d',\r\n  expected: '1fb9813496832e4a574490e10b564b53351f1052eafc2ab52af8742b6c9b6b45',\r\n  operator: 'strictEqual'\r\n}\r\n\r\nNode.js v22.16.0\r\n"
+  },
+  {
+    "name": "related:check",
+    "start": "2026-09-22T08:35:16.780Z",
+    "exitCode": 0,
+    "stdout": "\n> mysquarefaceicon@0.1.0 related:check\n> node scripts/run-related-games-check.mjs\n\nRELATED-001 validation passed\n- 72 algorithm, boundary, immutability, and Oval source assertions passed\n- real Oval order: Square (3 categories / 3 tags), Pixel External (1 category / 0 tags)\n- quality/popularity remain disabled; unrelated candidates are not used as fillers\n",
+    "stderr": ""
+  },
+  {
+    "name": "recent:check",
+    "start": "2026-09-22T08:35:18.639Z",
+    "exitCode": 0,
+    "stdout": "\n> mysquarefaceicon@0.1.0 recent:check\n> node scripts/run-recently-played-check.mjs\n\nRECENT-001 validation passed\n- versioned parsing, dedupe, ordering, limits, clear isolation and storage failures pass\n- only published playable local candidates are mapped; Pixel External is excluded\n- Square, Oval and future player models use real Game Data IDs at first Play only\n- server output stays empty until valid local history exists; no network-backed state was added\n- homepage, /games, focus recovery and Privacy disclosure match the confirmed scope\n",
+    "stderr": ""
+  },
+  {
+    "name": "favorites:check",
+    "start": "2026-09-22T08:35:21.707Z",
+    "exitCode": 1,
+    "stdout": "\n> mysquarefaceicon@0.1.0 favorites:check\n> node scripts/run-favorites-check.mjs\n\nFAV-001 validation passed\n- versioned local parsing, newest-first order, 50-item limit and fail-closed storage pass\n- all three published Game Data records are eligible, including labeled Pixel External\n- card buttons are link siblings; detail actions preserve primary CTA order and /games visibility\n- empty SSR, focus target, privacy disclosure and no-network boundary match the confirmed scope\n",
+    "stderr": "node:internal/modules/run_main:123\r\n    triggerUncaughtException(\r\n    ^\r\n\r\nAssertionError [ERR_ASSERTION]: components/game/GameCard.tsx: bounded FAV-001 inverse drifted\r\n+ actual - expected\r\n\r\n+ '866b741593de063ed9740bb700a493e62d69693ff0717debb5dc72cfd541a946'\r\n- 'e405ecff0e4a26ef3ed686ef5ac7c06d5c622312d17a010bdcae6e495c66edcd'\r\n\r\n    at file:///D:/LYXGIT/mysquarefaceicon/scripts/validate-favorites-compat.mjs:27:10\r\n    at ModuleJob.run (node:internal/modules/esm/module_job:274:25)\r\n    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:26)\r\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5) {\r\n  generatedMessage: false,\r\n  code: 'ERR_ASSERTION',\r\n  actual: '866b741593de063ed9740bb700a493e62d69693ff0717debb5dc72cfd541a946',\r\n  expected: 'e405ecff0e4a26ef3ed686ef5ac7c06d5c622312d17a010bdcae6e495c66edcd',\r\n  operator: 'strictEqual'\r\n}\r\n\r\nNode.js v22.16.0\r\n"
+  },
+  {
+    "name": "assets:check",
+    "start": "2026-09-22T08:35:24.841Z",
+    "exitCode": 0,
+    "stdout": "\n> mysquarefaceicon@0.1.0 assets:check\n> node scripts/run-game-asset-check.mjs\n\nASSET-001 validation passed\n- 10 Game Data asset references validated\n- 1599640 unique local bytes (1603126 referenced bytes including shared assets)\n- 20 fail-closed negative fixtures rejected\n- no R2 assets declared; Square/Oval SWFs remain blocked, Ruffle excluded, Pixel direct-link-only\n",
+    "stderr": ""
+  },
+  {
+    "name": "images:check",
+    "start": "2026-09-22T08:35:26.743Z",
+    "exitCode": 0,
+    "stdout": "\n> mysquarefaceicon@0.1.0 images:check\n> node scripts/run-game-image-check.mjs\n\nIMG-001 validation passed\n- 29 public images inspected from file signatures (448379 bytes)\n- MIME inventory: image/png=9, image/svg+xml=1, image/webp=18, image/x-icon=1\n- 8 Game Data image records match intrinsic dimensions and ASSET-001 mappings\n- role ratios, required/forbidden roles, alt, provenance, legacy formats and no-array-fallback selection passed\n- non-first-viewport images are explicitly lazy; first-viewport Player preview remains eager/high priority\n- 18 fail-closed image/schema/format/loading negative fixtures rejected\n",
+    "stderr": ""
+  },
+  {
+    "name": "ruffle:check",
+    "start": "2026-09-22T08:35:28.730Z",
+    "exitCode": 0,
+    "stdout": "\n> mysquarefaceicon@0.1.0 ruffle:check\n> node scripts/check-ruffle-runtime.mjs\n\nRUFFLE-001 check passed: 0.2.0-nightly.2026.5.12; 5 files; 27512697 bytes; 10 negative fixtures rejected.\n",
+    "stderr": ""
+  }
+]

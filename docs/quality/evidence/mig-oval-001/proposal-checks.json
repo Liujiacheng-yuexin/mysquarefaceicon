@@ -1,0 +1,1843 @@
+{
+  "schemaVersion": 1,
+  "boardVersion": "1.64",
+  "recordedAt": "2026-09-03T03:02:57.1669554Z",
+  "timezone": "Asia/Shanghai",
+  "userInstruction": "MIG-SQUARE-001 验收通过，现在进行下一步开发",
+  "environment": {
+    "root": "D:/LYXGIT/mysquarefaceicon",
+    "node": "v22.16.0",
+    "branch": "codex/game-platform-rebuild",
+    "head": "c6d30087c2c03a7c4eb8d5bfe6e055e9b8d40228",
+    "buildId": "XnkRSno-fdK5b9heMuS6L",
+    "buildEvidence": "Existing v1.63 artifacts byte-identical; no rebuild, server-liveness or production-deployment claim"
+  },
+  "applicationChanged": false,
+  "fullApplicationChecksRerun": false,
+  "readOnlyCodeChecksRun": true,
+  "previewLivenessVerified": false,
+  "browserQaRun": false,
+  "sourceHashes": {
+    "app/about-us/page.tsx": "bd812baed9b69e531d369be6e0be168dc5232d3729def0d7f5a747fbccbf1779",
+    "app/admin/comments/page.tsx": "5da66215f6c126892b132af3f11937d2fba81dc9d3b86b680b207b0cd6680f99",
+    "app/api/admin/comment-images/[...key]/route.ts": "818b0b4c81cd56f9455a3228adc95137268a90db6b82f1a2e1f6f8ec232f03a0",
+    "app/api/admin/comments/route.ts": "63ddcb14964f633f199af6873497abb9091420dba4e889396ca7d2d775578bb2",
+    "app/api/admin/comments/[id]/route.ts": "e471d00f054151ac6636c81fd9d21ce108b19c86875ee524f2e0b44f429c135b",
+    "app/api/comment-images/[...key]/route.ts": "defb2f8ec7f4be7c19beb82663f781ae2e735cf19db127d603f5c82d8925d98a",
+    "app/api/comments/route.ts": "4297d56bf81fb7182236ef0c880cd1039907dc345415e1bacddc39ae01ab2e7f",
+    "app/api/comments/[id]/like/route.ts": "edf2b13178884db9af47debed1186655b55a96abe807e1dde8f4367381089a14",
+    "app/blog/avatar-maker-without-signup/page.tsx": "27b767b9898a1cf54a8bd8d15949690a99c3bcf8fee0a510275d2c05880dce97",
+    "app/blog/best-discord-avatar-style/page.tsx": "2e0807728e27e7b62e0be6aee9319079626b6d8f259fbf452afb3193f6040b9d",
+    "app/blog/cute-profile-picture-ideas/page.tsx": "23d0d94e184f86457eec7bccce657e83a401d94fef36686008af683fbf9ed126",
+    "app/blog/discord-avatar-size-guide/page.tsx": "3990a509c0f009f3007edf767e28983943e35ec03a9422483d7427972e3a7a24",
+    "app/blog/how-to-make-a-cute-discord-profile-icon/page.tsx": "126709f27ed82ffa275ec56f8c19d3ef97bd972f3a6d7737eca02eb016fe4a38",
+    "app/blog/page.tsx": "ae764e709b2e95b94978264e94f7c8339e18fbb40619e2b61003e73979b777e9",
+    "app/blog/square-avatar-vs-round-avatar/page.tsx": "21831b3d94e787b7442827822de117fd9cb6854408e25ea55443bc5cafb3c82b",
+    "app/blog/tiktok-profile-icon-ideas/page.tsx": "c480c6c80cc10800e1ff12710861712d4bde2aefe7145e7666d8352e0f2c29ad",
+    "app/category/[slug]/page.tsx": "db5f8c1c1c4df37b7f8a0a726e540d1a0897fa14d84efd8a2f50a8b79aaba0e1",
+    "app/contact/page.tsx": "43c774c71e326750845afe0168f4d66bbb1ee47367bcfc6015bb17592860c98e",
+    "app/cute-square-avatar-generator/page.tsx": "fe22cddd887475ecc89983278ceeabc06678a344c8ea7aefb47a65eb7a893042",
+    "app/editorial-policy/page.tsx": "c758e70ce143b58db1453877efcb6d82a9e89fd96d1bc473c73c6dcf4c81a529",
+    "app/free-avatar-maker/page.tsx": "65b5cd3745e7aad2dd9bdb11a851fb8a7fa74fe6e7a2e3221474688c76b75aa5",
+    "app/gallery/page.tsx": "d051f12b8e4c71a9b15a75efb59c3ffbb1f9904ec5d69577f9640ff47d479901",
+    "app/games/page.tsx": "325b8221aec0d9ea69a2374faad321a0fa75dd7e8c0df05c59da4db93e46c44f",
+    "app/games/[slug]/page.tsx": "0131595a7dc55e0b9227944e41f5cf54548213f5527cc62f034eb8a61c05aab4",
+    "app/globals.css": "5b5e8d7253be79edbd479a01a53bf3f760d52482ced5f4c6edcd387975669867",
+    "app/layout.tsx": "c9d72791c1167896c2ab3a72bb9e7eada5b909bbf8f540a6e64fb52bed4e77b5",
+    "app/manifest.ts": "035fb0b64fd59984750a16cca5b4e7bd4e776d8ee7c9a608e339cabef2a8a179",
+    "app/not-found.tsx": "1ae05e6e788c22dba45d7cbdce2a4b9271d584246a553bda51428c396991a351",
+    "app/oval-face-icon-generator/page.tsx": "4b0263e9b0fbba1824e32bcec8b324e45aeae0c373f50375a7ba8fe8f9fd0e54",
+    "app/page.tsx": "d10f79e2522ca3c3e21195e09df0f090b119af6452c265e48eb125639b2c46c1",
+    "app/pixel-art-avatar-icon-generator/page.tsx": "514139869fbd206326dc6d2e426d86c2b49f27c557b86868471de200fe94c50d",
+    "app/pixel-square-face-maker/page.tsx": "b691a2359a6a6581eadc75fb1944a93a1718f85c4fff11ba6ebdfbad756603e5",
+    "app/privacy-policy/page.tsx": "eba51fcadf3aa4e61506242d5d5fb1d9d4ac7d870626e7877670ae0984c7d1c4",
+    "app/robots.ts": "dd47d2bd1355fb44791c0f5e481b06c98142639383a902cd6e976cb4f7583aa8",
+    "app/sitemap.ts": "183aafaeb14f529f8c341c70aa9c3278082f670aeaa4f487271d6ff110e0db18",
+    "app/square-avatar-generator/page.tsx": "a239bb17efb6eddce7e49f3214cef92017eed9f167c0879103855d91b4554a31",
+    "app/square-face-icon-generator/page.tsx": "24e88b1057bfea65f350bb84205cc5fc89fec0cd06e4f6dea24719c7513ff731",
+    "app/terms-of-service/page.tsx": "8121043e9a474a19a5c1c366ed80e03db93ec6bc8dc1ed9eda63ef60d85c83f5",
+    "app/[locale]/page.tsx": "e47894775647c4a8630490b2e7ab0a72cc4fdcc2d0f253ce2ce724676adf7ece",
+    "components/AdminComments.tsx": "a3a1dd2d1bc175a4862a49299b363fe50c9b006945fc6b20df97dc08d527af4d",
+    "components/AvatarGenerator.tsx": "61e65dd817d517975ba89ca2ba7e7b182cf015bc296e4a993aa4733342fda74b",
+    "components/CloudflareAnalytics.tsx": "54e33cdc6f229a708c86013649a283ed946be150f717b11eebc6ccdb793368c4",
+    "components/CommentSection.tsx": "02db74c38bf07f57c92defb239866cd75bfeef561333de1db9acfc9d44ddfd21",
+    "components/CuratedGalleryPreview.tsx": "0238422e69aa37737063f1600e11a82505b0b8f94bd813161eb8ea6985e78792",
+    "components/DeferredThirdPartyScripts.tsx": "09ae2617d036e47be5874e366d0ced2fc1634d03b59ac9c2505f1938c7cfe7e2",
+    "components/FlashGenerator.tsx": "c443323031b15428a502ff4fcad3653ffc424ef75db9335b76883576f45ac794",
+    "components/game/AdSlotShell.tsx": "3c1aaa1ab799dddb7e7e0bb607a31c0cc9d77683c42554b7663bc4bdc4a28a27",
+    "components/game/CategoryChip.tsx": "78e2ddcf2ce6b77899d3ab35f06f5d49a87f82f1015d8f4deb862dfe76ab0850",
+    "components/game/EmptyState.tsx": "2ef1bad5737139a2cd9c1cf9d003b28a9f202a50fa9925072cea8e35cef549d2",
+    "components/game/GameBreadcrumb.tsx": "933a23729f0c280559d64ac1376022520c3d700031a489935d1e1b30b604b474",
+    "components/game/GameCard.tsx": "94af78fdd701884f8e69d2d3cdf919d2a0b730c685b6e5287130d85ef9b92edf",
+    "components/game/GameControls.tsx": "2a738d34297ad718e59a678ea9572d8c6cc981180e083e8fca7cb03e21c1b4da",
+    "components/game/GameDetailTemplate.tsx": "c643d800efd8bdbc6d439047b53c3aad6fae403ad59ed55b7c8349218c1ca43c",
+    "components/game/GameFaq.tsx": "c680b9728a08c896095bb85fc688f6d451360142e0bb447763b8fed0a0a1139a",
+    "components/game/GameGrid.tsx": "261672ac47c7cafeb3f2576caf6ba6240fa3c9b15472f55778b8ae3f45d631b5",
+    "components/game/GameMeta.tsx": "d7c6e283401f295579cff65cd01ee761626d727098fbc6e983e8d18e47f807e9",
+    "components/game/GamePlayer.tsx": "a568634e413cacc1ef816bd2835be4916dfc6094f9cc4d3a2ee3a3fd5d51b2da",
+    "components/game/GameSourceRights.tsx": "ebc2ec19b91bf5dde44eae24ca75b6ee208a487c707a9862f694c6d88dbd2243",
+    "components/game/README.md": "4c7ea3c7e616a686fbf08567f8b9e28082912a2dbcbfc7a73d3166867c172f89",
+    "components/game/RelatedGames.tsx": "1fa094f28bd8b0855c7869596b9df55b0072a48a8db6d3db8c6558f954209aa7",
+    "components/game-player/adapters/adapter-types.ts": "4e6c492777363116b8a450d5b7e822abdf99609e518f15a3fc682f2d6fd84df5",
+    "components/game-player/adapters/ExternalLinkAdapter.tsx": "f7d4c98916a2a25785175af7ae6bf009a700f68271b8345322fd904c2431f45c",
+    "components/game-player/adapters/Html5Adapter.tsx": "524f0c49fd8af608ddf86aed872fe1cd0af72839b30391206be8eae639e08325",
+    "components/game-player/adapters/IframeAdapterFrame.tsx": "af31a35c493f607bacbfb548b386f604cbb98c7722a32cf580da11a7b7b593b6",
+    "components/game-player/adapters/LocalIframeAdapter.tsx": "b73408e66cb4dec9fe5b8460960627c95a1a92c43282345562dbfd173b3f4d9f",
+    "components/game-player/adapters/OfficialIframeAdapter.tsx": "0668f81f43684d59522799c55ecc4affe8fb24fdfc571af7e6ac8e56118cc23c",
+    "components/game-player/adapters/RuffleAdapter.tsx": "5fcff6669f4ca75147728e8a73434cdef8abb2823325110d585ad46a1cfe8ada",
+    "components/game-player/GamePlayer.tsx": "142cf22ac3a485c78285d920bbe84114f3931a38f0e9aec067bbf8ca2e562d5c",
+    "components/GameSidebar.tsx": "1d6d43a434f91bface5858c3d648c3aeff90f8f0d930bfbdc9f2ae0ebd28bb70",
+    "components/home/CoreGamePreview.tsx": "9a05388d53d969ef1ea1f4ea9a6273a0ebd1cd8ec6d1df43a1afd8da1c4c44a1",
+    "components/home/HomeDiscoveryRegion.tsx": "8652a91eeeb4650230235422c661be58841a49475ce1bc446425c7e2ac697b04",
+    "components/home/HomeHero.tsx": "d7c0c2c35b98735c002d4a9066b68615e73df77326cc42468eaee6607b442fd3",
+    "components/home/HomeResourceLinks.tsx": "fd03f53ecc08510a86e3edd54864e132af9e70b363a7d5dee4c50d1eea207e23",
+    "components/HomePage.tsx": "fd9f94372bd2cbc98ddcf88b4364183d860ad24dd5dbb5551790fca63e8a8c9c",
+    "components/InstallPrompt.tsx": "fb4a9fd5a43625673f03b26b8d31284c955b4e970d9fbe80be41863228c02ac8",
+    "components/ShareButtons.tsx": "5becc8e6cf2a779dd192222de56087f468b41243f60950d0290f45ff07a71a28",
+    "components/SiteFooter.tsx": "0a8f7e7ca185853a8494ba94f8ecaa65e9ddd73ba3e43781c0efacfcdd3c2291",
+    "components/SiteHeader.tsx": "8182d2e2a5012cfbb62ebadcc8cb581d088364d263f9eb11f9d217686df115a1",
+    "lib/comment-store.ts": "734fa24cbf3cf6518f5026c93953628dca8c28935db6927d53650d4019865804",
+    "lib/games/catalog.ts": "6cc0df85e3acf146b3cc18b63cc4785982607fc0e59142ce89f59d2d6ef0ac0d",
+    "lib/games/game-player-model.ts": "42672e8d0917e9d7d6a1b28137e505ecd4d7b09ba40e3c971751b6d7f3fbe84c",
+    "lib/games/game-schema.ts": "d9fc42f68efcf228ea1f97dddb5a4aa624c0071fa833e10ff6be163211c6e021",
+    "lib/games/home-discovery.ts": "b172dd4a9e807754f59dfe5f9bb5b42fdc2d360bd89c54eab504f5577dac166e",
+    "lib/games/routes.ts": "058434c725a09ae921c2c5f184396377873ad67603130f985fcfe39bcd97c5a6",
+    "lib/locales.ts": "a96fefe1140236963e49b59ed632641794f1b39b5f5c3bd5df79adac876df8db",
+    "lib/metadata.ts": "ed02bc92dbfe7e71c0988bef9cf8bbdabc34caef5a1a2ba67d40cf69d839a275",
+    "lib/seo/canonical-origin.ts": "2d506dc08f622a898efd6eb57c9210018d2b8ba73ec8666a3bd4c9685e831fd9",
+    "lib/seo/game-metadata.ts": "87e7f42b085e2714cd22bce3634ccf1272fa822fb70b77292c5831d0f38fe660",
+    "lib/seo/game-structured-data.ts": "84193180e9b8827a2566d38585ce753b94ee30f4c9b5f6aee4fe22da3c875391",
+    "data/ai-crawler-policy.json": "adea8bf57c056c93b319da9033654f573989948058ab04a7c74e4739c472487c",
+    "data/curated-icon-ideas.ts": "b51d0f7b57249b1e3cfe0e16bede29688154814168a2c6271a7388ad10933dce",
+    "data/game-categories.ts": "b0bbb1eccbc70bdc70323c05da94acc725df06d857c70eaba8860f5b3e701d8d",
+    "data/game-license-registry.json": "fb0b94f56ffa3c7feca89ee136c73795a95d993de0ebe16d81ca8041da4a8924",
+    "data/games/oval-face.ts": "ee2ded5bf3d11fb4572b4861f5c39164a37d5e7a3d91f404130510c453331f74",
+    "data/games/pixel-art-avatar.ts": "118d1b40325cb26d8ff19141f5af2ff1b451a3b89de0e6131836a37a0510fabb",
+    "data/games/README.md": "71272ce378d8adc438b34b6d60e58080fa32b8728fd9c513e6aad2001eac24ee",
+    "data/games/square-face.ts": "5f70eb18ae8e87db1db4d2603c080e5a4b01d44ae2b57f7abcf9afbf26550d0e",
+    "scripts/check-ai-crawler-policy.mjs": "76e030b11a653a01ed101e13c06460f29354f55d33c1e96aab4ace3f53be5042",
+    "scripts/check-terms-rights.mjs": "62ab3d26bb2459fe9abe92a1c520e740cba77f01cec5324a7d19ddadfe6dba50",
+    "scripts/cloudflare-login.cmd": "9285c7cf0105fa6087da2dbb9264265a5daed85475ea61a12b0310431e3c8b0f",
+    "scripts/cloudflare-provision.cmd": "72b6efc1ad0cab89dc54d6d18cb6a6c3f2c1bbc7fa42444b9be968cc1cd22aeb",
+    "scripts/cloudflare-set-secrets.cmd": "5964a356784cc9ea3beeb76b801fc04ae79762ff1c47ab1fecb9f5a0d35a8cd0",
+    "scripts/patch-opennext-worker.mjs": "1f761820c8ec949e7a32f1435b82f14f9919d46bf965090741ab55add8b4068b",
+    "scripts/post-deploy-check.mjs": "51b28a8e14558dfc69c71779ebe9ed28d195f2f671d5eda07977afe885bbee82",
+    "scripts/README.md": "34bb1ddc052823179c0c04a0930e34a8e3cbcd5e9bcb6495bd35d5a1ac5d7ab9",
+    "scripts/robots-policy.mjs": "0d3f85f8568a4b17a53c2eaa82fd06460a14262160ba53131f29978c5f4416ed",
+    "scripts/run-canonical-host-check.mjs": "99c282d9246c3a3c060c9b697d0c4a769e6b7622a63b97ab99899d41bc2edc4b",
+    "scripts/run-game-component-check.mjs": "bf05d0f3119b094bc4674846c71bbc69482541921ba199ec693dce021ba86e62",
+    "scripts/run-game-data-check.mjs": "985321918bfc7abdbea07a675b710d40fe8ddbbfa6d128e24e67cd90309f536b",
+    "scripts/run-game-metadata-check.mjs": "a6a16a08338143f1ada4f8f446e89f2e08208c0896cf884a5d494c894931ccf8",
+    "scripts/run-game-player-check.mjs": "59f17f0f2dacc0b596f572a9a1871e58f78623a267257e3f33e7f1eac7bd9f09",
+    "scripts/run-game-route-check.mjs": "be951b8407d08aadf9e1b2b29dda30fe33ffb133af6cd8ee6e8c7897a95eac44",
+    "scripts/run-game-template-check.mjs": "c7121e18a868db05d702639ff8448cbaad958c20117e91b71fb0ed71d98ced8d",
+    "scripts/run-home-discovery-check.mjs": "70cb3221dedd42081b24c201902a3dce2ff46c31e54b8ee478384da4545b4196",
+    "scripts/run-home-gallery-check.mjs": "e0bf58437b6de392dd98af862c97be25107432cec1a24df9a8d9d028b7ab738d",
+    "scripts/run-home-hero-check.mjs": "40ad21661b97f27e306c2eaa8d130637ecbd9a31d5c72c8ef25c214fb3a276e0",
+    "scripts/run-home-information-architecture-check.mjs": "6fc9c018915cb8cbdf68f23fde16239be0cb246bd6f92eab7000b243a98d9f66",
+    "scripts/run-home-performance-check.mjs": "58c55d5a6be4d07961c9163167fb2b1394c2807d4a31b8522da4e79ff7d9d308",
+    "scripts/seo-check.mjs": "a56453c56c8f55f4a308790e38a34aed19b667d1ba3514bd09eb18709db2ca9f",
+    "scripts/start-local-preview.cmd": "edd040a98ac02704de22f632fb21f981976c70b88932461874e4631db1dbcfb1",
+    "scripts/submit-indexnow.mjs": "1394eb5cfa2bb600af3bd3fbdf0f8c2eae9adf78b31d18d6f4cd57f3be0f4ae9",
+    "scripts/validate-canonical-host.ts": "1c7d329c5a0d5ac1b06432381f0933cfe70e0f17f8b4081f5e9695d23a6d32aa",
+    "scripts/validate-game-components.tsx": "3ba59b4e768241a57ec53da796c5cca2c35c6b69c95259f827166c0780a7b74d",
+    "scripts/validate-game-data.ts": "7e6f204d5397830accd8e33534939146bcbdd934b3ec49d8653c113b412d73bd",
+    "scripts/validate-game-metadata.ts": "72c8aa3f30b341d9eec53d55551ddd422c9271aca9b52d203469a8910b11b403",
+    "scripts/validate-game-player.tsx": "370b6809735b2b1ccbd99003fea04ea0f06a9761950333d765a661b3157797eb",
+    "scripts/validate-game-routes.ts": "bca62350b59f545437c2e5a8e834275dce7c5df330bb58d268befd12ab00803f",
+    "scripts/validate-game-template.tsx": "5427f7fbd835530eaa34ef7fc514692b203f8f312e71624ed51df3dc14af6406",
+    "scripts/validate-home-discovery.tsx": "f0236c66dc6e603595d39ba675293c5aba44add9a50cd71b7a2f7e461065d894",
+    "scripts/validate-home-gallery.tsx": "9d551c13b6df1c9173c32a805b07abe6ba85bef830057db78bc4653d56aac19b",
+    "scripts/validate-home-hero.tsx": "6d2f6dc8332a7ea2fed9776ae3e453857c6ee2f4adfd2528ce6663fab73c9e3c",
+    "scripts/validate-home-information-architecture.tsx": "e3c0001100d69301d7007ba8fc3840779530fbdadae93bd784d48978138cfbc4",
+    "scripts/validate-home-performance.tsx": "8aefc3b9227758e6f2b651f539b8385bb5275376b6d939f6c0e76f618a48d90d",
+    "public/games/oval-face-cover.png": "0e914b27b602683442d57dfa232c88be1fdea5a2ed45bdabe0da72e3ff464073",
+    "public/games/oval-face-icon.png": "a3cdaeff0397647bd1580980c60e2996e5aa499eab8e5f2e634557b1c5da0909",
+    "public/games/oval-face.swf": "80e974d8ef4ad5e849e93464eaea1833620c269bac30601d960f5438c285e09b",
+    "public/games/README.md": "e5ae6e267570980805a1f298d9a6f0b5cf842f934035ae8e6d2355e5b8a3cf0c",
+    "public/games/square-face-cover.png": "15a5c93f79859441eef3032ce45e07abc2e91a7520a9aaef42158dd4fe00a535",
+    "public/games/square-face.swf": "b1d074c95f15b7dcecdbc2405abf820ead985669bb12cd47247fc8ea7537bc1e",
+    "package.json": "2301b9339a86919fd7797b799a644a7072171cb49d0d9438de1edb8912191a0b",
+    "package-lock.json": "bf7b778ff42d02d40a11190d56d969cb03ac183a0cf70dbd85c199dc79778c97",
+    "next.config.mjs": "10f3416af7a0a92f59c4d283113624e9c286f645c6155e91c5a381d512feb9ee",
+    "middleware.ts": "4ce3b9cd325b843f1f80bca6545c114ac84f3336434a719cbfd47577c7ab53d6",
+    "tsconfig.json": "a749da922f5e6f1d93a68270185c1ed56e3e45c786d1de1ee59f9bdb7512d720",
+    "scripts/check-about-rights.mjs": "5d1591d13e293168dda865890daecbd33048bfca16b569a4059a262afae94868",
+    "scripts/check-editorial-rights.mjs": "1ec7268b707490f6b55d297b5bfb7a1b36f944da45ddcc8d6f561a52518a503b",
+    "scripts/check-gallery-rights.mjs": "bd2ed64fb002334e4e3d72527ec28e87414877bd8777535b97ca102b4953996f",
+    "scripts/check-locale-rights.mjs": "f7c0ddadae9d87b069fd6f12c8e3c26c4b5240fdf39d6e5cc50a71f3b0b753c2",
+    "lib/games/square-homepage.ts": "ce7d111d8a4df65194394ed31468a43fac96c83da1f53c8761090f159efe3aa4",
+    "scripts/check-square-homepage.mjs": "8ce4818d3f785c304b1ab7cc8774740ba66f3c4252bd5a40de0b6ee05500e947"
+  },
+  "historicalEvidenceHashes": {
+    "docs/quality/evidence/about-001-rights-copy/checks.json": "9b5d2192b7ddac92a9b01c8f2368d3faaee116253166bb6c623c83bbf8e647e7",
+    "docs/quality/evidence/about-001-rights-copy/proposal-checks.json": "dbb44b079bd622e93813761c939091e15a0b892a20d2272aaa1cfbd93a690362",
+    "docs/quality/evidence/about-001-rights-copy/README.md": "5a11b0502a2a6efc90f556cd547806ec0b50eaa51f82a1b756ae240e46d38161",
+    "docs/quality/evidence/terms-001-rights-copy/checks.json": "5b0aaefeca88262d57203e5caa92ea3ac465f5c399361be4bf873c28c4dccf1d",
+    "docs/quality/evidence/terms-001-rights-copy/README.md": "9689d72a5b142b65b639cce43b4508d9eeac5a06d34c4efabe1a8716ba352929",
+    "docs/quality/evidence/pf-01-activation-response/README.md": "118652d153b0036190a6afea9c8688739410148ff27d06e0d1a59f670173399c",
+    "docs/quality/evidence/editorial-001-rights-copy/proposal-checks.json": "a30c3eb49860af11e4af1e998dff78d8b42970d909113ee64c7a728256d5beed",
+    "docs/quality/evidence/editorial-001-rights-copy/checks.json": "72f7ff3be63a9e3b14a41a3f651a336c57f7d74d59785fb9173cd2af36117d52",
+    "docs/quality/evidence/gallery-001-rights-copy/proposal-checks.json": "3c00f1471ba2741fb27d44b1efecd823834443243e46754c1aeda8fea1a81a08",
+    "docs/quality/evidence/gallery-001-rights-copy/checks.json": "a41646b12dffdc099bc9c1a84cf10667f6efc1753b1db5be2c437e3695bd86af",
+    "docs/quality/evidence/gallery-001-rights-copy/acceptance-checks.json": "eb8105300c659fdc668f06d64b820bac69fcca5a2011a1bc2da0dfa51c121143",
+    "docs/quality/evidence/gallery-001-rights-copy/README.md": "1034c852b108636c6e72a0fc124ca36ee8f39925141a76cd81ed564c8df075b9",
+    "docs/legal/gallery-rights-consistency-proposal.md": "530e3a7d8388bd35fde4478289df1b2c8e89f0b1fd381a28a44f7f78bb08b145",
+    "docs/quality/evidence/locale-001-rights-copy/proposal-checks.json": "0ec30303ae7c7fc9a3af588e0939017aa2175896e4ec1fef741741ccbfe82de4",
+    "docs/quality/evidence/locale-001-rights-copy/checks.json": "55b49e3506e3141ffd1ef5dd701136411dc06b0c351a10fe99caf1fd9eadfdfb",
+    "docs/quality/evidence/locale-001-rights-copy/mobile-revision-checks.json": "71421d8433f2e8fe3f05c0d62ee46584535e4ef1c378fef54f0ec2bd0b4fb31f",
+    "docs/quality/evidence/locale-001-rights-copy/acceptance-checks.json": "bfe4948dc8eae906a7f6435fbc0cbfc29ee725027f9599a2d49444c305cd9d63",
+    "docs/quality/evidence/license-gate-2026-09-03/checks.json": "4fbe84181fe0d7231944eeb3bf2b64b93b6aae6b557cdba1b9445c4d12eb44fb",
+    "docs/quality/evidence/license-gate-2026-09-03/release-order-confirmation.json": "7481222829e0f28319a65406495fa334c58e535b5c9d038e2b9d9706000cce57",
+    "docs/quality/evidence/mig-square-001/proposal-checks.json": "4f737e30de67ec8de4c70954fb7ab7c9cf9e9ecaf91c96ece597245848636ee6",
+    "docs/quality/evidence/mig-square-001/checks.json": "f3de4b6319696f228e95ad5fddc53f1ba9588d48237daeee2fb31f1d4000daa6"
+  },
+  "preservation": {
+    "sourceFilesUnchanged": 150,
+    "historicalJsonUnchanged": 21,
+    "screenshotsUnchanged": 52,
+    "screenshotHashes": [
+      {
+        "name": "before-es-desktop-1280x900",
+        "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/locale-001-v1.57/before-es-desktop-1280x900.jpg",
+        "bytes": 140055,
+        "sha256": "6644d2ae869baf681b378ceed25c8eea3e34a526fc0478d29617c627e690418c",
+        "recordedAt": "2026-09-02T14:31:31.214Z"
+      },
+      {
+        "name": "before-ar-mobile-390x844",
+        "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/locale-001-v1.57/before-ar-mobile-390x844.jpg",
+        "bytes": 49721,
+        "sha256": "3e72e3c0b2b23ba1694dd6bff876c0dacb790ee65552f19c8d16e2f4e80a519c",
+        "recordedAt": "2026-09-02T14:31:55.220Z"
+      },
+      {
+        "name": "before-ar-desktop-1280x900",
+        "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/locale-001-v1.57/before-ar-desktop-1280x900.jpg",
+        "bytes": 139909,
+        "sha256": "8b1933e675cb6813115127bdab1766c3d44426b694a931bccb3215b13f6b14c3",
+        "recordedAt": "2026-09-02T14:33:52.083Z"
+      },
+      {
+        "name": "after-ar-desktop-1280x900",
+        "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/locale-001-v1.57/after-ar-desktop-1280x900.jpg",
+        "bytes": 140761,
+        "sha256": "9a3eae7c7d663e836d5469b33b73b4f6827ac463d7705a3b9836efb07c169208",
+        "recordedAt": "2026-09-02T14:51:50.771Z"
+      },
+      {
+        "name": "after-es-desktop-1280x900",
+        "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/locale-001-v1.57/after-es-desktop-1280x900.jpg",
+        "bytes": 141164,
+        "sha256": "1cbc83a3f454f93554c10f35403a46ff0f45439dabc3667b4aba7ce2c2db4d07",
+        "recordedAt": "2026-09-02T14:54:03.835Z"
+      },
+      {
+        "name": "after-es-mobile-390x844",
+        "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/locale-001-v1.57/after-es-mobile-390x844.jpg",
+        "bytes": 50282,
+        "sha256": "4880e423597db704be049c2794da834beef5975a728230bdc233d332374790db",
+        "recordedAt": "2026-09-02T14:54:35.006Z"
+      },
+      {
+        "name": "after-es-mobile-sidebar-clipping-390x844",
+        "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/locale-001-v1.57/after-es-mobile-sidebar-clipping-390x844.jpg",
+        "bytes": 48331,
+        "sha256": "96dda5ae0c25dac12938dd24c43e6e249fd869b9e589a1d878166656e870a258",
+        "recordedAt": "2026-09-02T14:55:31.612Z"
+      },
+      {
+        "name": "after-ar-mobile-390x844",
+        "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/locale-001-v1.57/after-ar-mobile-390x844.jpg",
+        "bytes": 56389,
+        "sha256": "7bf8e7ee3875600e916c7a22e3c2c7e647206da8ff66c89b435a2e059b99b716",
+        "recordedAt": "2026-09-02T14:57:06.327Z"
+      },
+      {
+        "name": "after-ar-mobile-sidebar-clipping-retry-390x844",
+        "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/locale-001-v1.57/after-ar-mobile-sidebar-clipping-retry-390x844.jpg",
+        "bytes": 48072,
+        "sha256": "5e4b677c16c5bed13ca08b88a6e4782cb92b8b11273403b64a51d49c6108cf3b",
+        "recordedAt": "2026-09-02T14:57:39.352Z"
+      },
+      {
+        "name": "after-root-desktop-idle-1280x900",
+        "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/locale-001-v1.57/after-root-desktop-idle-1280x900.jpg",
+        "bytes": 79120,
+        "sha256": "ec18b1021bdcd98b8106b5dc81e6238d991ce79001d0e2ed612b31d3dc373b71",
+        "recordedAt": "2026-09-02T14:58:41.271Z"
+      },
+      {
+        "name": "after-root-desktop-ready-1280x900",
+        "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/locale-001-v1.57/after-root-desktop-ready-1280x900.jpg",
+        "bytes": 113570,
+        "sha256": "e25123b553fe99227796f5ef214768f5813adfa924cd0a34cc14bccdf3a7a217",
+        "recordedAt": "2026-09-02T14:59:47.267Z"
+      },
+      {
+        "name": "after-root-mobile-idle-390x844",
+        "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/locale-001-v1.57/after-root-mobile-idle-390x844.jpg",
+        "bytes": 51788,
+        "sha256": "0e8a5d2c0125af35aad9fec3b2389b7cee40365bd63fc999ed466743bf4efbbf",
+        "recordedAt": "2026-09-02T15:00:23.935Z"
+      },
+      {
+        "name": "after-root-mobile-ready-390x844",
+        "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/locale-001-v1.57/after-root-mobile-ready-390x844.jpg",
+        "bytes": 55100,
+        "sha256": "e83cf31569ea5c319c356a53732026fd8614b1e718698328f30b54d1f3b92995",
+        "recordedAt": "2026-09-02T15:01:19.937Z"
+      },
+      {
+        "name": "after-root-desktop-idle-cover-recheck-1280x900",
+        "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/locale-001-v1.57/after-root-desktop-idle-cover-recheck-1280x900.jpg",
+        "bytes": 113440,
+        "sha256": "f1e5bebca8f011802003bb292d922d6bd6435d35a788ff8f1ae8a81fc32cc9b6",
+        "recordedAt": "2026-09-02T15:04:25.956Z"
+      },
+      {
+        "name": "es-first-viewport-390x844",
+        "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/locale-001-v1.58/recheck-2026-09-03/es-first-viewport-390x844.jpg",
+        "bytes": 50282,
+        "sha256": "4880e423597db704be049c2794da834beef5975a728230bdc233d332374790db",
+        "recordedAt": "2026-09-02T16:20:59.587Z"
+      },
+      {
+        "name": "es-sidebar-complete-390x844",
+        "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/locale-001-v1.58/recheck-2026-09-03/es-sidebar-complete-390x844.jpg",
+        "bytes": 47942,
+        "sha256": "18682ca000046d95e6804ca3fa6e3ceeb2dc7d863e6879da7c95b51792d7ca71",
+        "recordedAt": "2026-09-02T16:21:19.925Z"
+      },
+      {
+        "name": "ar-sidebar-complete-390x844",
+        "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/locale-001-v1.58/recheck-2026-09-03/ar-sidebar-complete-390x844.jpg",
+        "bytes": 47653,
+        "sha256": "f4f5c181923589b03847196582a71b5fe29c305699989a49e83572567ea217f5",
+        "recordedAt": "2026-09-02T16:21:38.366Z"
+      },
+      {
+        "name": "ar-sidebar-complete-360x800",
+        "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/locale-001-v1.58/recheck-2026-09-03/ar-sidebar-complete-360x800.jpg",
+        "bytes": 42494,
+        "sha256": "7fe3b827cd64c36c2ed96bb34ce226fa0eae2e2d4c6e41dc466a55b1e18e51f4",
+        "recordedAt": "2026-09-02T16:22:09.900Z"
+      },
+      {
+        "name": "es-sidebar-complete-360x800",
+        "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/locale-001-v1.58/recheck-2026-09-03/es-sidebar-complete-360x800.jpg",
+        "bytes": 43035,
+        "sha256": "73e062d71371fcabcb63f327a8163945a536e92a9f436a80314da7f6c3919039",
+        "recordedAt": "2026-09-02T16:22:10.379Z"
+      },
+      {
+        "name": "ar-desktop-complete-1280x900",
+        "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/locale-001-v1.58/recheck-2026-09-03/ar-desktop-complete-1280x900.jpg",
+        "bytes": 140172,
+        "sha256": "e83d7f374e567acb2a555ece0f7f8ac7b95f6efe206b82b9b2b2a634d812b785",
+        "recordedAt": "2026-09-02T16:22:54.985Z"
+      },
+      {
+        "name": "es-desktop-complete-1280x900",
+        "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/locale-001-v1.58/recheck-2026-09-03/es-desktop-complete-1280x900.jpg",
+        "bytes": 140469,
+        "sha256": "e7b3a834846c87196218af8f8fcfb772d4a5634cde1d5e60f0cf92d24e25c40b",
+        "recordedAt": "2026-09-02T16:22:55.744Z"
+      },
+      {
+        "name": "root-desktop-idle-1280x900",
+        "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/locale-001-v1.58/recheck-2026-09-03/root-desktop-idle-1280x900.jpg",
+        "bytes": 113440,
+        "sha256": "f1e5bebca8f011802003bb292d922d6bd6435d35a788ff8f1ae8a81fc32cc9b6",
+        "recordedAt": "2026-09-02T23:29:22.966Z"
+      },
+      {
+        "name": "root-desktop-ready-1280x900",
+        "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/locale-001-v1.58/recheck-2026-09-03/root-desktop-ready-1280x900.jpg",
+        "bytes": 113566,
+        "sha256": "86a40402c8dec310b990ceed8569a4bff60620bf5769f32687e76143c7656947",
+        "recordedAt": "2026-09-02T23:29:26.589Z"
+      },
+      {
+        "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/locale-001-v1.58/after-ar-mobile-short-copy-390x844.jpg",
+        "sha256": "d02b443f4d07bd9762fa6439d79d9e7636633f2dc5e6da2992979d673ef38d4d",
+        "bytes": 46618,
+        "status": "Prior interrupted-segment screenshot; preserved, not final-build evidence"
+      },
+      {
+        "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/locale-001-v1.58/after-es-mobile-short-copy-390x844.jpg",
+        "sha256": "bfac1784d1ba55259cb5210de33c7e8bcfdb4d195f4017d5cad349b708bff408",
+        "bytes": 42321,
+        "status": "Prior interrupted-segment screenshot; preserved, not final-build evidence"
+      },
+      {
+        "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/locale-001-v1.58/after-es-mobile-short-copy-loaded-390x844.jpg",
+        "sha256": "d8b9b51eb80ca213c3af438818ed6f12d1dae318a37de9d4eaa74e15e722452f",
+        "bytes": 47913,
+        "status": "Prior interrupted-segment screenshot; preserved, not final-build evidence"
+      },
+      {
+        "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/locale-001-v1.58/before-es-mobile-long-copy-390x844.jpg",
+        "sha256": "36b019ad5fec645b07a8a980dc03fd6b3ff07b3937b0f7a5c78b42a593b93d83",
+        "bytes": 48308,
+        "status": "Prior interrupted-segment screenshot; preserved, not final-build evidence"
+      },
+      {
+        "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-square-001-v1.63/before-home-1280.png",
+        "bytes": 113440,
+        "sha256": "f1e5bebca8f011802003bb292d922d6bd6435d35a788ff8f1ae8a81fc32cc9b6"
+      },
+      {
+        "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-square-001-v1.63/before-home-390.png",
+        "bytes": 51788,
+        "sha256": "0e8a5d2c0125af35aad9fec3b2389b7cee40365bd63fc999ed466743bf4efbbf"
+      },
+      {
+        "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-square-001-v1.63/before-home-360.png",
+        "bytes": 49110,
+        "sha256": "3caf873422202f20355af1c57463be1368f70537559e71669d19b10b96fc90e1"
+      },
+      {
+        "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-square-001-v1.63/before-es-1280.png",
+        "bytes": 140324,
+        "sha256": "ea5c6aa81605f6281f0d583b4427d1dd21b3b14e98d8859870ad1dd91a78f719"
+      },
+      {
+        "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-square-001-v1.63/before-es-390.png",
+        "bytes": 50282,
+        "sha256": "4880e423597db704be049c2794da834beef5975a728230bdc233d332374790db"
+      },
+      {
+        "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-square-001-v1.63/before-es-360.png",
+        "bytes": 46166,
+        "sha256": "efe60b62cea7425fd0eb4fb5d492713ffc2245302f7c44639e45c684f73b0e27"
+      },
+      {
+        "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-square-001-v1.63/before-ar-1280.png",
+        "bytes": 140104,
+        "sha256": "b6a182c0d5ee26d6c6197ceab15d582d3f97360cddced0d49616af405b2385e3"
+      },
+      {
+        "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-square-001-v1.63/before-ar-390.png",
+        "bytes": 49721,
+        "sha256": "3e72e3c0b2b23ba1694dd6bff876c0dacb790ee65552f19c8d16e2f4e80a519c"
+      },
+      {
+        "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-square-001-v1.63/before-ar-360.png",
+        "bytes": 45831,
+        "sha256": "73d8afb3268c53655f1822dbd4dc1bb95f5f8e3feea392f46116f0218873b75c"
+      },
+      {
+        "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-square-001-v1.63/after-home-1280.jpg",
+        "bytes": 113440,
+        "sha256": "f1e5bebca8f011802003bb292d922d6bd6435d35a788ff8f1ae8a81fc32cc9b6"
+      },
+      {
+        "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-square-001-v1.63/after-home-390.jpg",
+        "bytes": 51788,
+        "sha256": "0e8a5d2c0125af35aad9fec3b2389b7cee40365bd63fc999ed466743bf4efbbf"
+      },
+      {
+        "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-square-001-v1.63/after-home-360.jpg",
+        "bytes": 49110,
+        "sha256": "3caf873422202f20355af1c57463be1368f70537559e71669d19b10b96fc90e1"
+      },
+      {
+        "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-square-001-v1.63/after-es-1280.jpg",
+        "bytes": 140387,
+        "sha256": "a6f54332c013eb365ddf4b19acef457b7cf7ba80057496c22ae6e3b997a9788a"
+      },
+      {
+        "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-square-001-v1.63/after-es-390.jpg",
+        "bytes": 50282,
+        "sha256": "4880e423597db704be049c2794da834beef5975a728230bdc233d332374790db"
+      },
+      {
+        "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-square-001-v1.63/after-es-360.jpg",
+        "bytes": 46166,
+        "sha256": "efe60b62cea7425fd0eb4fb5d492713ffc2245302f7c44639e45c684f73b0e27"
+      },
+      {
+        "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-square-001-v1.63/after-ar-1280.jpg",
+        "bytes": 140104,
+        "sha256": "b6a182c0d5ee26d6c6197ceab15d582d3f97360cddced0d49616af405b2385e3"
+      },
+      {
+        "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-square-001-v1.63/after-ar-390.jpg",
+        "bytes": 49721,
+        "sha256": "3e72e3c0b2b23ba1694dd6bff876c0dacb790ee65552f19c8d16e2f4e80a519c"
+      },
+      {
+        "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-square-001-v1.63/after-ar-360.jpg",
+        "bytes": 45831,
+        "sha256": "73d8afb3268c53655f1822dbd4dc1bb95f5f8e3feea392f46116f0218873b75c"
+      },
+      {
+        "label": "home-mobile-keyboard-ready",
+        "recordedAt": "2026-09-03T02:14:24.268Z",
+        "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-square-001-v1.63/home-mobile-keyboard-ready.jpg",
+        "bytes": 55100,
+        "sha256": "e83cf31569ea5c319c356a53732026fd8614b1e718698328f30b54d1f3b92995"
+      },
+      {
+        "label": "home-mobile-faq-open",
+        "recordedAt": "2026-09-03T02:14:24.868Z",
+        "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-square-001-v1.63/home-mobile-faq-open.jpg",
+        "bytes": 41016,
+        "sha256": "b87d52c5860e68f368460bb7493e7d435413a4a50a9ede17248f41156b994aa4"
+      },
+      {
+        "label": "es-gallery-sidebar-390",
+        "recordedAt": "2026-09-03T02:15:19.087Z",
+        "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-square-001-v1.63/es-gallery-sidebar-390.jpg",
+        "bytes": 45763,
+        "sha256": "10435bff9722effb36b3b2b2e52ade493af0b8dbc78befc7f4867d2d8feb5b8c"
+      },
+      {
+        "label": "es-gallery-sidebar-360",
+        "recordedAt": "2026-09-03T02:15:19.514Z",
+        "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-square-001-v1.63/es-gallery-sidebar-360.jpg",
+        "bytes": 43128,
+        "sha256": "feb7ce3eb2260ce4097edae14f09dcafaf9c8d31fff512d2bf6384271d5e4254"
+      },
+      {
+        "label": "ar-gallery-sidebar-390",
+        "recordedAt": "2026-09-03T02:15:23.768Z",
+        "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-square-001-v1.63/ar-gallery-sidebar-390.jpg",
+        "bytes": 45734,
+        "sha256": "02806ba3d5d071b5264fd7332228761f004a85d7e03691ba6bf69924f88264c2"
+      },
+      {
+        "label": "ar-gallery-sidebar-360",
+        "recordedAt": "2026-09-03T02:15:24.247Z",
+        "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-square-001-v1.63/ar-gallery-sidebar-360.jpg",
+        "bytes": 42788,
+        "sha256": "27cbb7b4cc4c39a6c3ffb37df76269353b7cfb49552a971d273ae62bfdb581f9"
+      },
+      {
+        "path": "C:/Users/liu/.codex/visualizations/2026/08/31/01a05526-6633-7392-a18d-c5feb0af9cc1/mig-square-001-v1.63/home-desktop-ready.jpg",
+        "bytes": 120709,
+        "sha256": "843ba38c5fd0715af8de271fb08fd07072f6be5562c7d6994d3ba3729597b185",
+        "recordedAt": "2026-09-03T02:11:24.424Z"
+      }
+    ],
+    "artifactsUnchanged": 15,
+    "artifactHashes": [
+      {
+        "url": "/",
+        "path": ".next/server/app/index.html",
+        "bytes": 102044,
+        "sha256": "8a32a26feb48f679bae9b2a31bd7dd4a64361afc932fda6af9266e127f723f52"
+      },
+      {
+        "url": "/es",
+        "path": ".next/server/app/es.html",
+        "bytes": 91755,
+        "sha256": "e984b77115e371c43a2d7dedf6db6160affb352786f6969779899e369b95dc4f"
+      },
+      {
+        "url": "/vi",
+        "path": ".next/server/app/vi.html",
+        "bytes": 91773,
+        "sha256": "ef337ee46de716374bd50e99734c9c357392e8abc449f8711e891b032181971c"
+      },
+      {
+        "url": "/ja",
+        "path": ".next/server/app/ja.html",
+        "bytes": 91761,
+        "sha256": "d33099ee3f9f2ef60059c600a2184e6f600f8b27247fbc011dabd1f9d82ca106"
+      },
+      {
+        "url": "/th",
+        "path": ".next/server/app/th.html",
+        "bytes": 91737,
+        "sha256": "24143b7933cef1e5d09344bdee7ccb7ff5ec8e3ffaba3e61118775c17bbe947f"
+      },
+      {
+        "url": "/ar",
+        "path": ".next/server/app/ar.html",
+        "bytes": 91749,
+        "sha256": "c2e37487d36d72326f96a6419b1ca675e453c1c25a225f83b324dbec01941610"
+      },
+      {
+        "url": "/ru",
+        "path": ".next/server/app/ru.html",
+        "bytes": 91755,
+        "sha256": "130e680b69a1f47ab9fbdb512513d24ead3d62f85e9bd2b5fa915c7a004f579b"
+      },
+      {
+        "url": "/id",
+        "path": ".next/server/app/id.html",
+        "bytes": 91773,
+        "sha256": "a82882a616d37ab0dc853bde63a2b4c2783d2c1490e55f640c57a38e51ce992a"
+      },
+      {
+        "url": "/gallery",
+        "path": ".next/server/app/gallery.html",
+        "bytes": 52414,
+        "sha256": "8b850d1f5852d30121d757f91fd3f8375e69db694e4b3a4431bca50913c52901"
+      },
+      {
+        "url": "/editorial-policy",
+        "path": ".next/server/app/editorial-policy.html",
+        "bytes": 33201,
+        "sha256": "0381074a10f50fc2bdf0de2c204daed1af5ee61d35b15fb4ee45efac53241386"
+      },
+      {
+        "url": "/about-us",
+        "path": ".next/server/app/about-us.html",
+        "bytes": 38196,
+        "sha256": "c5f18296aede58e5a134a418cbb062b8002411985b75a554979892a6fe7650b6"
+      },
+      {
+        "url": "/terms-of-service",
+        "path": ".next/server/app/terms-of-service.html",
+        "bytes": 21778,
+        "sha256": "ea3b9b7f84feaba3106ff205ee647ac8c0654e474f7f4e70a03ed8a1f953a88f"
+      },
+      {
+        "url": "/robots.txt",
+        "path": ".next/server/app/robots.txt.body",
+        "bytes": 711,
+        "sha256": "e114dfaaa714b7b9d2385907a7f1e915e30c606d049f11457f45a9f6549d554f"
+      },
+      {
+        "url": "/sitemap.xml",
+        "path": ".next/server/app/sitemap.xml.body",
+        "bytes": 2770,
+        "sha256": "3f1341c4b3d4e339fc5b231539157032ff42ecfc991e4bc2058903d372bb12a7"
+      },
+      {
+        "path": ".open-next/worker.js",
+        "bytes": 2234,
+        "sha256": "4e7c7cb3850c2ca12374d034118afc422ed5d95f46bfc3df3ff1dba2911807f3"
+      }
+    ],
+    "existingAcceptancesPreserved": 26,
+    "currentSourceAcceptanceCount": 27
+  },
+  "swfHashes": {
+    "public/games/square-face.swf": "b1d074c95f15b7dcecdbc2405abf820ead985669bb12cd47247fc8ea7537bc1e",
+    "public/games/oval-face.swf": "80e974d8ef4ad5e849e93464eaea1833620c269bac30601d960f5438c285e09b"
+  },
+  "rightsStatus": "UNKNOWN",
+  "licenseGateWaived": false,
+  "licenseTaskDeferred": true,
+  "releaseDeferred": true,
+  "releaseResult": "不通过 / 用户暂缓 / 未部署",
+  "governanceValidation": {
+    "status": "PASS",
+    "recordedAt": "2026-09-03T03:09:36.684Z",
+    "mode": "final",
+    "scope": "Acceptance/proposal governance, read-only evidence and unchanged-source/artifact checks; not full application QA",
+    "documents": [
+      {
+        "path": "F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+        "sha256": "f03e23cd3438d6a9096ecd00f7c0f734b8a44050374a0ed9b65a11825bad9378",
+        "unrelatedContentsPreserved": true
+      },
+      {
+        "path": "PAGE_PLAN.md",
+        "sha256": "29bfb0de48c3ad612e974033d8706a7408417b4f23b128efa4263f9555ea8749",
+        "unrelatedContentsPreserved": true
+      },
+      {
+        "path": "LAUNCH_CHECKLIST.md",
+        "sha256": "db479be41beb020ebba491aebb4535afafc12bf9632f94f7cce725c8811f6c9a",
+        "unrelatedContentsPreserved": true
+      },
+      {
+        "path": "SEO_LOG.md",
+        "sha256": "7389ca4c2d4f162fb4702d0d752c1bf2c61222651ce7e9573162f709383eaf80",
+        "unrelatedContentsPreserved": true
+      },
+      {
+        "path": "docs/quality/evidence/mig-square-001/README.md",
+        "sha256": "bdee66c26cedbf53b93b8e7f0245411cdef49f7558488d84260fdea43ce51847",
+        "unrelatedContentsPreserved": true
+      },
+      {
+        "path": "docs/product/square-home-data-binding-proposal.md",
+        "sha256": "abd091e521acff9474c4125aeb8cbc4455261dba3681033ae12db11b50cf9870",
+        "unrelatedContentsPreserved": true
+      },
+      {
+        "path": "docs/quality/evidence/release-2026-09-02/README.md",
+        "sha256": "59341233906688595b960dfd0b72164976d9c3f6d5d0577191968e7fec0108e2",
+        "unrelatedContentsPreserved": true
+      },
+      {
+        "path": "docs/legal/swf-license-evidence-request.md",
+        "sha256": "8d51843469675eb8f9dfa50f05b03ae8419a6d606ce99bb45db77ac653b12654",
+        "unrelatedContentsPreserved": true
+      }
+    ],
+    "proposal": {
+      "path": "docs/product/oval-local-data-binding-proposal.md",
+      "sha256": "fcb2fa9919de9a03ab8f7ae3f817c479a55f21ee55b64e7e567c7244434b858a"
+    },
+    "unchanged": {
+      "sourceFiles": 150,
+      "historicalJsonFiles": 21,
+      "screenshots": 52,
+      "buildArtifacts": 15
+    },
+    "buildId": "XnkRSno-fdK5b9heMuS6L",
+    "applicationChanged": false,
+    "fullApplicationChecksRerun": false,
+    "browserQaRun": false,
+    "previewLivenessVerified": false,
+    "committed": false,
+    "pushed": false,
+    "deployed": false,
+    "board": {
+      "version": "1.64",
+      "focus": "MIG-OVAL-001",
+      "status": "设计中 / 本地阶段方案待确认",
+      "square": "已完成 / 本地已验收",
+      "acceptances": 27,
+      "oldAcceptancesPreserved": 26,
+      "javascript": "PASS",
+      "staticRuntimeParity": "PASS",
+      "resetAndExport": "PASS",
+      "ovalAcceptButtonsDisabled": true,
+      "pixelNotStarted": true,
+      "historicalQaPreserved": true,
+      "visual": "UNVERIFIED_ACCESS_RESTRICTION_PRESERVED"
+    },
+    "gitChecks": [
+      {
+        "cwd": "D:/LYXGIT/mysquarefaceicon",
+        "args": [
+          "branch",
+          "--show-current"
+        ],
+        "startedAt": "2026-09-03T03:09:36.690Z",
+        "completedAt": "2026-09-03T03:09:36.757Z",
+        "exitCode": 0,
+        "stdout": "codex/game-platform-rebuild\n",
+        "stderr": ""
+      },
+      {
+        "cwd": "D:/LYXGIT/mysquarefaceicon",
+        "args": [
+          "rev-parse",
+          "HEAD"
+        ],
+        "startedAt": "2026-09-03T03:09:36.757Z",
+        "completedAt": "2026-09-03T03:09:36.812Z",
+        "exitCode": 0,
+        "stdout": "c6d30087c2c03a7c4eb8d5bfe6e055e9b8d40228\n",
+        "stderr": ""
+      },
+      {
+        "cwd": "D:/LYXGIT/mysquarefaceicon",
+        "args": [
+          "diff",
+          "--check"
+        ],
+        "startedAt": "2026-09-03T03:09:36.812Z",
+        "completedAt": "2026-09-03T03:09:36.888Z",
+        "exitCode": 0,
+        "stdout": "",
+        "stderr": "warning: in the working copy of '.gitignore', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'LAUNCH_CHECKLIST.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'PAGE_PLAN.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'PROJECT_BRIEF.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'SEO_LOG.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'SEO_RULES.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/about-us/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/blog/avatar-maker-without-signup/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/blog/cute-profile-picture-ideas/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/blog/discord-avatar-size-guide/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/blog/how-to-make-a-cute-discord-profile-icon/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/blog/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/blog/tiktok-profile-icon-ideas/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/contact/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/editorial-policy/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/gallery/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/globals.css', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/oval-face-icon-generator/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/pixel-art-avatar-icon-generator/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/privacy-policy/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/robots.ts', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/sitemap.ts', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/terms-of-service/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'components/FlashGenerator.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'components/HomePage.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'components/SiteHeader.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'docs/legal/game-rights.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'docs/quality/installation-and-board-workflow.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'lib/locales.ts', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'package.json', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'public/games/README.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'scripts/README.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'scripts/post-deploy-check.mjs', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'scripts/seo-check.mjs', LF will be replaced by CRLF the next time Git touches it\n"
+      },
+      {
+        "cwd": "F:/LYXGIT/Liu-library",
+        "args": [
+          "diff",
+          "--check",
+          "--",
+          "F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html"
+        ],
+        "startedAt": "2026-09-03T03:09:36.888Z",
+        "completedAt": "2026-09-03T03:09:36.935Z",
+        "exitCode": 0,
+        "stdout": "",
+        "stderr": ""
+      }
+    ]
+  },
+  "changedFiles": [
+    {
+      "path": "F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+      "action": "修改",
+      "scope": "验收/方案/发布边界治理；历史正文及数据保留"
+    },
+    {
+      "path": "PAGE_PLAN.md",
+      "action": "修改",
+      "scope": "验收/方案/发布边界治理；历史正文及数据保留"
+    },
+    {
+      "path": "LAUNCH_CHECKLIST.md",
+      "action": "修改",
+      "scope": "验收/方案/发布边界治理；历史正文及数据保留"
+    },
+    {
+      "path": "SEO_LOG.md",
+      "action": "修改",
+      "scope": "验收/方案/发布边界治理；历史正文及数据保留"
+    },
+    {
+      "path": "docs/quality/evidence/mig-square-001/README.md",
+      "action": "修改",
+      "scope": "验收/方案/发布边界治理；历史正文及数据保留"
+    },
+    {
+      "path": "docs/product/square-home-data-binding-proposal.md",
+      "action": "修改",
+      "scope": "验收/方案/发布边界治理；历史正文及数据保留"
+    },
+    {
+      "path": "docs/quality/evidence/release-2026-09-02/README.md",
+      "action": "修改",
+      "scope": "验收/方案/发布边界治理；历史正文及数据保留"
+    },
+    {
+      "path": "docs/legal/swf-license-evidence-request.md",
+      "action": "修改",
+      "scope": "验收/方案/发布边界治理；历史正文及数据保留"
+    },
+    {
+      "path": "docs/product/oval-local-data-binding-proposal.md",
+      "action": "新增",
+      "scope": "Oval 本地数据绑定阶段方案，待确认"
+    },
+    {
+      "path": "docs/quality/evidence/mig-square-001/acceptance-checks.json",
+      "action": "新增",
+      "scope": "Square 明确本地验收与只读复核证据"
+    },
+    {
+      "path": "docs/quality/evidence/mig-oval-001/proposal-checks.json",
+      "action": "新增",
+      "scope": "Oval 代码核对与原始差异证据，不是实施 QA"
+    }
+  ],
+  "priorQa": {
+    "evidence": "docs/quality/evidence/mig-square-001/checks.json",
+    "sha256": "f3de4b6319696f228e95ad5fddc53f1ba9588d48237daeee2fb31f1d4000daa6",
+    "recordedAt": "2026-09-03T02:44:56Z",
+    "boardVersion": "1.63",
+    "finalCommands": 37,
+    "allFinalExitZero": true,
+    "nextBuild": "PASS at original date",
+    "platformBuild": "PASS at original date",
+    "localSeo": "20 pages / 0 must / 12 should at original date",
+    "browser": "9 responsive comparisons and scoped interactions at original date",
+    "notRerunInThisTurn": true
+  },
+  "checksThisTurn": [
+    {
+      "name": "v1.63 pre-write acceptance baseline",
+      "status": "PASS",
+      "scope": "Existing source/history/metadata/artifact integrity; old pending state checked before recording user's acceptance",
+      "recordedAt": "2026-09-03T02:52:50.160Z"
+    },
+    {
+      "name": "Current Oval source/SSR/built-file reconciliation",
+      "status": "PASS_WITH_FINDING",
+      "scope": "Four arrays equal; effective player prop capture; actual PNG header reveals dimension mismatch; no browser/HTTP QA",
+      "recordedAt": "2026-09-03T02:58:49.683Z"
+    },
+    {
+      "name": "Governance exact inverse-patch/source/history/JS/focus/reset/export/Git checks",
+      "status": "PASS",
+      "recordedAt": "2026-09-03T03:09:36.684Z",
+      "gitChecks": [
+        {
+          "cwd": "D:/LYXGIT/mysquarefaceicon",
+          "args": [
+            "branch",
+            "--show-current"
+          ],
+          "startedAt": "2026-09-03T03:09:36.690Z",
+          "completedAt": "2026-09-03T03:09:36.757Z",
+          "exitCode": 0,
+          "stdout": "codex/game-platform-rebuild\n",
+          "stderr": ""
+        },
+        {
+          "cwd": "D:/LYXGIT/mysquarefaceicon",
+          "args": [
+            "rev-parse",
+            "HEAD"
+          ],
+          "startedAt": "2026-09-03T03:09:36.757Z",
+          "completedAt": "2026-09-03T03:09:36.812Z",
+          "exitCode": 0,
+          "stdout": "c6d30087c2c03a7c4eb8d5bfe6e055e9b8d40228\n",
+          "stderr": ""
+        },
+        {
+          "cwd": "D:/LYXGIT/mysquarefaceicon",
+          "args": [
+            "diff",
+            "--check"
+          ],
+          "startedAt": "2026-09-03T03:09:36.812Z",
+          "completedAt": "2026-09-03T03:09:36.888Z",
+          "exitCode": 0,
+          "stdout": "",
+          "stderr": "warning: in the working copy of '.gitignore', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'LAUNCH_CHECKLIST.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'PAGE_PLAN.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'PROJECT_BRIEF.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'SEO_LOG.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'SEO_RULES.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/about-us/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/blog/avatar-maker-without-signup/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/blog/cute-profile-picture-ideas/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/blog/discord-avatar-size-guide/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/blog/how-to-make-a-cute-discord-profile-icon/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/blog/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/blog/tiktok-profile-icon-ideas/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/contact/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/editorial-policy/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/gallery/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/globals.css', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/oval-face-icon-generator/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/pixel-art-avatar-icon-generator/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/privacy-policy/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/robots.ts', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/sitemap.ts', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'app/terms-of-service/page.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'components/FlashGenerator.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'components/HomePage.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'components/SiteHeader.tsx', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'docs/legal/game-rights.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'docs/quality/installation-and-board-workflow.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'lib/locales.ts', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'package.json', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'public/games/README.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'scripts/README.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'scripts/post-deploy-check.mjs', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'scripts/seo-check.mjs', LF will be replaced by CRLF the next time Git touches it\n"
+        },
+        {
+          "cwd": "F:/LYXGIT/Liu-library",
+          "args": [
+            "diff",
+            "--check",
+            "--",
+            "F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html"
+          ],
+          "startedAt": "2026-09-03T03:09:36.888Z",
+          "completedAt": "2026-09-03T03:09:36.935Z",
+          "exitCode": 0,
+          "stdout": "",
+          "stderr": ""
+        }
+      ]
+    }
+  ],
+  "checksNotRun": [
+    "Full application TypeScript checking",
+    "Full lint",
+    "Full regression suites",
+    "Next build",
+    "Cloudflare/OpenNext build",
+    "HTTP/robots/full SEO checks",
+    "Browser/mobile/visual/runtime interactions",
+    "CWV/fullscreen/all SWF internal controls",
+    "Production seo:prod",
+    "Preview process/liveness verification"
+  ],
+  "diagnostics": [
+    {
+      "kind": "Read-only probe assumption rejected",
+      "result": "The inspection initially asserted the declared 972x774 as actual PNG dimensions. PNG header returned width 974; the assertion failed. The corrected probe reports the observed 974x775 versus declared 972x774 as an unresolved finding, not a pass or an app repair.",
+      "initialOutput": {
+        "chunk_id": "32fb10",
+        "wall_time_seconds": 1.1535341,
+        "exit_code": 1,
+        "original_token_count": 243,
+        "output": "node:assert:95\r\n  throw new AssertionError(obj);\r\n  ^\r\n\r\nAssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\r\n\r\n974 !== 972\r\n\r\n    at Object.<anonymous> (C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-mig-oval-proposal-v164-63f9373f801842cf81610bb55a3eea99\\inspect-oval.cjs:134:8)\r\n    at Module._compile (node:internal/modules/cjs/loader:1730:14)\r\n    at Object..js (node:internal/modules/cjs/loader:1895:10)\r\n    at Module.load (node:internal/modules/cjs/loader:1465:32)\r\n    at Function._load (node:internal/modules/cjs/loader:1282:12)\r\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\r\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\r\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\r\n    at node:internal/main/run_main_module:36:49 {\r\n  generatedMessage: true,\r\n  code: 'ERR_ASSERTION',\r\n  actual: 974,\r\n  expected: 972,\r\n  operator: 'strictEqual'\r\n}\r\n\r\nNode.js v22.16.0\r\n"
+      }
+    },
+    {
+      "kind": "Proposal EOF preservation",
+      "result": "The first governance check detected apply_patch dropping one original trailing blank line from the Square proposal. The original whitespace was restored; exact inverse-hunk hash passed without relaxing the baseline.",
+      "initialOutput": {
+        "chunk_id": "173814",
+        "wall_time_seconds": 0.2714937,
+        "exit_code": 1,
+        "original_token_count": 323,
+        "output": "node:assert:95\r\n  throw new AssertionError(obj);\r\n  ^\r\n\r\nAssertionError [ERR_ASSERTION]: docs/product/square-home-data-binding-proposal.md unrelated contents changed\r\n+ actual - expected\r\n\r\n+ 'ecc69b9d09ce20312cd3742e264209e957cc94fe8055dd534f558f44a2a5d1dd'\r\n- '8a6ce54af118ada7b8b64d7d565b0c6f22487f02026e72cf028adf3e966b8de4'\r\n\r\n    at Object.<anonymous> (C:\\Users\\liu\\AppData\\Local\\Temp\\mysquarefaceicon-mig-oval-proposal-v164-63f9373f801842cf81610bb55a3eea99\\verify-governance.cjs:33:11)\r\n    at Module._compile (node:internal/modules/cjs/loader:1730:14)\r\n    at Object..js (node:internal/modules/cjs/loader:1895:10)\r\n    at Module.load (node:internal/modules/cjs/loader:1465:32)\r\n    at Function._load (node:internal/modules/cjs/loader:1282:12)\r\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\r\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\r\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\r\n    at node:internal/main/run_main_module:36:49 {\r\n  generatedMessage: false,\r\n  code: 'ERR_ASSERTION',\r\n  actual: 'ecc69b9d09ce20312cd3742e264209e957cc94fe8055dd534f558f44a2a5d1dd',\r\n  expected: '8a6ce54af118ada7b8b64d7d565b0c6f22487f02026e72cf028adf3e966b8de4',\r\n  operator: 'strictEqual'\r\n}\r\n\r\nNode.js v22.16.0\r\n"
+      }
+    }
+  ],
+  "skillInfluence": [
+    "website-quality-supervisor: only user's explicit Square acceptance creates completion; Oval scope change remains proposal-gated; license and release P0 remain visible",
+    "react-best-practices: planned data binding keeps server-side text/record resolution and minimal client player props, preserving conditional runtime loading"
+  ],
+  "unresolved": [
+    {
+      "status": "不通过 / 用户暂缓",
+      "area": "Release license P0",
+      "detail": "Exact Square/Oval sources, licensors, written permissions and use scopes remain UNKNOWN; no waiver"
+    },
+    {
+      "status": "未实施 / 待确认",
+      "area": "Oval complete template migration",
+      "detail": "Original roadmap targets unified GameDetailTemplate; current proposal is only a limited local data-binding phase and does not close that full target"
+    },
+    {
+      "status": "未修正 / 待确认",
+      "area": "Oval cover dimensions",
+      "detail": "PNG actual 974x775; current COVER/derived img 972x774. Proposed exception preserves player ratio 972 / 774 and maxWidth 972px, requires later geometry/browser QA"
+    },
+    {
+      "status": "未验证",
+      "area": "Current production",
+      "detail": "Deployment/SHA linkage, one-hop canonical-host, robots, seo:prod, fresh CWV not checked"
+    },
+    {
+      "status": "未关闭",
+      "area": "Prior independent findings",
+      "detail": "12 should, KW-04, Gallery spacing and About/Editorial narrow-card advisories remain at their original evidence dates"
+    },
+    {
+      "status": "未验证",
+      "area": "Extended browser/visual",
+      "detail": "Current physical devices/additional engines, real fullscreen/all SWF controls, board-file visual; board access restriction preserved"
+    }
+  ],
+  "committed": false,
+  "pushed": false,
+  "deployed": false,
+  "releasePipelineRun": false,
+  "seoProd": "未执行 / 未验证",
+  "rollback": {
+    "executed": false,
+    "scope": "Only this turn's 8 governance-document/board updates and 3 new proposal/evidence files; preserve accepted application, old JSON, screenshots and original QA dates",
+    "backups": [
+      {
+        "source": "F:/LYXGIT/Liu-library/我的知识库/05_工作跟进/网站开发/开发计划/mysquarefaceicon/mysquarefaceicon_rebuild_dashboard.html",
+        "destination": "C:/Users/liu/AppData/Local/Temp/mysquarefaceicon-mig-oval-proposal-v164-63f9373f801842cf81610bb55a3eea99/before-governance/01-mysquarefaceicon_rebuild_dashboard.html"
+      },
+      {
+        "source": "D:/LYXGIT/mysquarefaceicon/PAGE_PLAN.md",
+        "destination": "C:/Users/liu/AppData/Local/Temp/mysquarefaceicon-mig-oval-proposal-v164-63f9373f801842cf81610bb55a3eea99/before-governance/02-PAGE_PLAN.md"
+      },
+      {
+        "source": "D:/LYXGIT/mysquarefaceicon/LAUNCH_CHECKLIST.md",
+        "destination": "C:/Users/liu/AppData/Local/Temp/mysquarefaceicon-mig-oval-proposal-v164-63f9373f801842cf81610bb55a3eea99/before-governance/03-LAUNCH_CHECKLIST.md"
+      },
+      {
+        "source": "D:/LYXGIT/mysquarefaceicon/SEO_LOG.md",
+        "destination": "C:/Users/liu/AppData/Local/Temp/mysquarefaceicon-mig-oval-proposal-v164-63f9373f801842cf81610bb55a3eea99/before-governance/04-SEO_LOG.md"
+      },
+      {
+        "source": "D:/LYXGIT/mysquarefaceicon/docs/quality/evidence/mig-square-001/README.md",
+        "destination": "C:/Users/liu/AppData/Local/Temp/mysquarefaceicon-mig-oval-proposal-v164-63f9373f801842cf81610bb55a3eea99/before-governance/05-README.md"
+      },
+      {
+        "source": "D:/LYXGIT/mysquarefaceicon/docs/product/square-home-data-binding-proposal.md",
+        "destination": "C:/Users/liu/AppData/Local/Temp/mysquarefaceicon-mig-oval-proposal-v164-63f9373f801842cf81610bb55a3eea99/before-governance/06-square-home-data-binding-proposal.md"
+      },
+      {
+        "source": "D:/LYXGIT/mysquarefaceicon/docs/quality/evidence/release-2026-09-02/README.md",
+        "destination": "C:/Users/liu/AppData/Local/Temp/mysquarefaceicon-mig-oval-proposal-v164-63f9373f801842cf81610bb55a3eea99/before-governance/07-README.md"
+      },
+      {
+        "source": "D:/LYXGIT/mysquarefaceicon/docs/legal/swf-license-evidence-request.md",
+        "destination": "C:/Users/liu/AppData/Local/Temp/mysquarefaceicon-mig-oval-proposal-v164-63f9373f801842cf81610bb55a3eea99/before-governance/08-swf-license-evidence-request.md"
+      }
+    ],
+    "newFiles": [
+      "docs/product/oval-local-data-binding-proposal.md",
+      "docs/quality/evidence/mig-square-001/acceptance-checks.json",
+      "docs/quality/evidence/mig-oval-001/proposal-checks.json"
+    ],
+    "guard": "Only reverse after verifying no later user changes; no git reset/checkout of dirty worktree",
+    "production": "No deployment and no production rollback"
+  },
+  "taskId": "MIG-OVAL-001",
+  "taskStatus": "设计中",
+  "result": "只读核对通过并发现尺寸差异 / 本地阶段方案待确认",
+  "userProposalConfirmationReceived": false,
+  "proposalConfirmed": false,
+  "implementationStarted": false,
+  "templateMigrationCompleted": false,
+  "scope": "Proposed local data-binding phase only; retain current page/FlashGenerator path, do not claim completed original unified-template goal",
+  "originalRoadmap": {
+    "id": "MIG-OVAL-001",
+    "title": "迁移 Oval Face Icon Generator 到统一模板",
+    "priority": "P0",
+    "status": "未开始",
+    "goal": "验证第二个 Ruffle 游戏能完全通过数据驱动页面运行。",
+    "acceptance": "原 URL 不变；player、related、metadata、how-to 等来自 Game Data；与 Square 之间 Related 双向链接。",
+    "deliverable": "Oval game record + legacy route render",
+    "deps": "GAME-TPL-001",
+    "notes": "保留其独特圆脸搜索意图，避免模板文案只替换关键词。",
+    "weekIndex": 3
+  },
+  "proposal": {
+    "path": "docs/product/oval-local-data-binding-proposal.md",
+    "sha256": "fcb2fa9919de9a03ab8f7ae3f817c479a55f21ee55b64e7e567c7244434b858a",
+    "confirmation": "确认 MIG-OVAL-001 本地数据绑定方案，进行开发",
+    "applicationFiles": [
+      "lib/games/game-schema.ts",
+      "data/games/oval-face.ts",
+      "lib/games/oval-legacy-page.ts",
+      "app/oval-face-icon-generator/page.tsx"
+    ],
+    "checkFiles": [
+      "scripts/check-oval-legacy-page.mjs",
+      "scripts/check-square-homepage.mjs",
+      "package.json",
+      "scripts/README.md"
+    ],
+    "proposedUrl": "/oval-face-icon-generator"
+  },
+  "codeReconciliation": {
+    "recordedAt": "2026-09-03T02:58:49.683Z",
+    "status": "PASS",
+    "scope": "Read-only code reconciliation, current SSR and existing built HTML; no app implementation or fresh runtime/browser QA",
+    "duplicateRows": [
+      {
+        "local": "howToSteps",
+        "recordField": "howToPlay",
+        "count": 3,
+        "equal": true,
+        "sha256": "b7f65bbf54689a927447fbc2e97243cb43527fb07706f58d3805e1ca07763751"
+      },
+      {
+        "local": "features",
+        "recordField": "features",
+        "count": 6,
+        "equal": true,
+        "sha256": "3f4a42594edd247b5cdcfded0cc1147580f292b71a0236af0cca9adcf8e6dbfb"
+      },
+      {
+        "local": "tips",
+        "recordField": "tips",
+        "count": 5,
+        "equal": true,
+        "sha256": "f1eb59f54316b605ec75249819459f51afd8723ba74ab7aaf0537ca0880519c5"
+      },
+      {
+        "local": "faq",
+        "recordField": "faq",
+        "count": 5,
+        "equal": true,
+        "sha256": "312a2b25b35a23f3443f82154925a2d4231a2a3a95c9d42f3029434973e30ea5"
+      }
+    ],
+    "currentRecord": {
+      "route": {
+        "path": "/oval-face-icon-generator",
+        "canonical": "https://mysquarefaceicon.com/oval-face-icon-generator",
+        "indexStatus": "INDEX",
+        "existingPublishedRoute": true
+      },
+      "license": {
+        "registryRecordId": "oval-face-swf",
+        "status": "UNKNOWN",
+        "releaseDecision": "REVIEW_REQUIRED",
+        "newPublicationAllowed": false,
+        "allowedDeliveryTypes": []
+      },
+      "name": "Oval Face Icon Generator",
+      "seo": {
+        "title": "Oval Face Icon Generator - Play the Classic Flash Avatar Game Online",
+        "description": "Play Oval Face Icon Generator online, a classic Flash avatar maker game for creating cute oval face icons in your browser. No Flash Player required.",
+        "h1": "Oval Face Icon Generator",
+        "canonical": "https://mysquarefaceicon.com/oval-face-icon-generator",
+        "primaryKeyword": "oval face icon generator",
+        "secondaryKeywords": [
+          "oval face avatar maker",
+          "rounded profile icon",
+          "classic flash avatar game"
+        ],
+        "searchIntent": "Play an oval face avatar maker and create a rounded profile icon",
+        "semanticCoverage": {
+          "topics": [
+            "oval face creation",
+            "rounded profile icons",
+            "Ruffle browser play",
+            "saving by screenshot",
+            "mobile guidance"
+          ],
+          "score": null,
+          "reviewedAt": null,
+          "note": "Topics mirror the current page; no semantic coverage score was measured in GAME-DATA-001."
+        },
+        "schemaTypes": [
+          "VideoGame",
+          "FAQPage",
+          "BreadcrumbList"
+        ]
+      },
+      "content": {
+        "summary": "Play the classic Oval Face Icon Generator online and create cute rounded face icons in a modern browser.",
+        "description": [
+          "Oval Face Icon Generator is a classic Flash avatar maker game for creating cute rounded face icons in a modern browser.",
+          "The oval version focuses on a rounded face shape, while Square Face Generator keeps the original square icon style."
+        ],
+        "sections": [
+          "game-player",
+          "gallery-preview",
+          "what-is",
+          "how-to-play",
+          "features",
+          "tips",
+          "troubleshooting",
+          "faq"
+        ]
+      },
+      "source": {
+        "kind": "LOCAL_PROJECT_ASSET",
+        "providerName": "Project repository file",
+        "originalUrl": null,
+        "localAssetPath": "public/games/oval-face.swf",
+        "sha256": "80E974D8EF4AD5E849E93464EAEA1833620C269BAC30601D960F5438C285E09B",
+        "attribution": null
+      },
+      "player": {
+        "type": "RUFFLE_SWF",
+        "swfSources": [
+          "/games/oval-face.swf"
+        ],
+        "backgroundColor": "#FFAF03",
+        "aspectRatio": "972 / 774",
+        "clickToLoad": true
+      },
+      "images": [
+        {
+          "role": "THUMBNAIL",
+          "src": "/games/oval-face-icon.png",
+          "alt": "Oval Face Icon Generator preview",
+          "width": 512,
+          "height": 512,
+          "provenance": "PROJECT_ASSET"
+        },
+        {
+          "role": "COVER",
+          "src": "/games/oval-face-cover.png",
+          "alt": "Oval Face Icon Generator game cover",
+          "width": 972,
+          "height": 774,
+          "provenance": "PROJECT_ASSET"
+        },
+        {
+          "role": "OPEN_GRAPH",
+          "src": "/og-image.svg",
+          "alt": "Oval Face Icon Generator classic Flash avatar maker",
+          "width": 1200,
+          "height": 630,
+          "provenance": "PROJECT_ASSET"
+        }
+      ],
+      "howToPlay": [
+        {
+          "title": "Load the oval face game",
+          "text": "Wait for the classic Flash game to appear in the player, then press the START button inside the game."
+        },
+        {
+          "title": "Pick oval face parts",
+          "text": "Use the in-game tabs to choose facial features, hair, expressions, colors, and small accessories."
+        },
+        {
+          "title": "Make a softer profile icon",
+          "text": "Try different combinations until the oval face feels right for your profile. If saving does not work in your browser, take a screenshot."
+        }
+      ],
+      "features": [
+        {
+          "title": "Oval Face Style",
+          "text": "Create a softer rounded avatar look instead of a square face layout."
+        },
+        {
+          "title": "Classic Flash Game",
+          "text": "Play a preserved avatar maker from the classic browser game era."
+        },
+        {
+          "title": "No Flash Player Required",
+          "text": "The game runs through Ruffle, so modern browsers can load the SWF without Adobe Flash Player."
+        },
+        {
+          "title": "Simple Avatar Controls",
+          "text": "Choose parts from the game interface and experiment with different looks."
+        },
+        {
+          "title": "Free to Play",
+          "text": "Open the game directly in your browser without installing software or creating an account."
+        },
+        {
+          "title": "Desktop Friendly",
+          "text": "The original controls were designed for desktop, but mobile landscape mode may still work."
+        }
+      ],
+      "tips": [
+        "Use a desktop or laptop browser for the most reliable controls",
+        "Give Ruffle a few seconds to initialize before pressing buttons",
+        "Use fullscreen mode if the player feels too small",
+        "Reload the game if the SWF freezes or stops responding",
+        "Use landscape mode if you are testing on a phone"
+      ],
+      "faq": [
+        {
+          "question": "What is Oval Face Icon Generator?",
+          "answer": "Oval Face Icon Generator is a classic Flash avatar maker game where you can create cute rounded face icons."
+        },
+        {
+          "question": "Can I play Oval Face Icon Generator online?",
+          "answer": "Yes. You can play it directly in your browser using the Ruffle-powered game player on this page."
+        },
+        {
+          "question": "Is Oval Face Icon Generator different from Square Face Generator?",
+          "answer": "Yes. The oval version focuses on a rounded face shape, while Square Face Generator keeps the original square icon style."
+        },
+        {
+          "question": "Does Oval Face Icon Generator work on mobile?",
+          "answer": "It may work on some mobile browsers, but the original Flash game controls are usually better on desktop or laptop devices."
+        },
+        {
+          "question": "Can I save my oval face icon?",
+          "answer": "If the original game save feature does not work in your browser, you can take a screenshot of your finished avatar."
+        }
+      ]
+    },
+    "existingPresentation": {
+      "troubleshooting": [
+        {
+          "title": "Oval Face Icon Generator is not loading",
+          "text": "Wait a few seconds first. If it still does not start, use Reload Game or refresh the page."
+        },
+        {
+          "title": "The game freezes after loading",
+          "text": "Click Reload Game to remount the Ruffle player without leaving the page."
+        },
+        {
+          "title": "Mobile buttons are hard to use",
+          "text": "This is a classic Flash game built for desktop-style input. Rotate your phone or use a desktop browser."
+        },
+        {
+          "title": "Do I need Adobe Flash Player?",
+          "text": "No. This page uses a modern Flash emulator, so you do not need to install Adobe Flash Player."
+        }
+      ],
+      "gallery": [
+        {
+          "title": "Soft Oval",
+          "src": "/games/oval-face-icon.png",
+          "alt": "Rounded pale face icon with brown hair, closed eyes, and a pink smile",
+          "width": 512,
+          "height": 512
+        },
+        {
+          "title": "Cute",
+          "src": "/game-face-samples/cute.webp",
+          "alt": "Cute square face icon with pigtails, blush cheeks, and a red hair bow",
+          "width": 512,
+          "height": 512
+        },
+        {
+          "title": "Retro",
+          "src": "/game-face-samples/retro.webp",
+          "alt": "Retro smiling square face icon with a red hair clip",
+          "width": 512,
+          "height": 512
+        },
+        {
+          "title": "Minimal",
+          "src": "/game-face-samples/minimal.webp",
+          "alt": "Minimal square face icon with closed eyes and a small expression",
+          "width": 512,
+          "height": 512
+        },
+        {
+          "title": "Gamer",
+          "src": "/game-face-samples/gamer.webp",
+          "alt": "Square face icon with large black glasses and a focused expression",
+          "width": 512,
+          "height": 512
+        },
+        {
+          "title": "Classic",
+          "src": "/game-face-samples/classic.webp",
+          "alt": "Classic pale square face icon with fine brown hair lines and a pink smile",
+          "width": 512,
+          "height": 512
+        }
+      ],
+      "sidebar": [
+        {
+          "title": "Square Face Generator",
+          "text": "Play the original square-shaped classic Flash avatar maker.",
+          "href": "/",
+          "imageSrc": "/square-face-icon.png",
+          "imageAlt": "Square Face Generator preview"
+        },
+        {
+          "title": "Pixel Art Avatar Icon Generator",
+          "text": "Open a chibi pixel avatar maker with source credit.",
+          "href": "/pixel-art-avatar-icon-generator",
+          "imageSrc": "/game-face-samples/gamer.webp",
+          "imageAlt": "Pixel art avatar icon generator preview"
+        },
+        {
+          "title": "Free Avatar Maker",
+          "text": "Use a fast avatar workflow for profile pictures and icons.",
+          "href": "/free-avatar-maker",
+          "imageSrc": "/game-face-samples/ideas/discord-pfp.webp",
+          "imageAlt": "Free avatar maker preview"
+        },
+        {
+          "title": "Square Avatar Guide",
+          "text": "Learn how square and oval face icons work for profiles.",
+          "href": "/square-face-icon-generator",
+          "imageSrc": "/game-face-samples/ideas/simple-icon-face.webp",
+          "imageAlt": "Square avatar guide preview"
+        },
+        {
+          "title": "Gallery",
+          "text": "Explore approved community face icon creations.",
+          "href": "/gallery",
+          "imageSrc": "/game-face-samples/ideas/cute-square-face.webp",
+          "imageAlt": "Community gallery preview"
+        },
+        {
+          "title": "Blog Guide",
+          "text": "Read tips and tutorials about avatar making.",
+          "href": "/blog",
+          "imageSrc": "/game-face-samples/ideas/favicon-style.webp",
+          "imageAlt": "Avatar blog guide preview"
+        }
+      ]
+    },
+    "metadata": {
+      "title": {
+        "absolute": "Oval Face Icon Generator - Play the Classic Flash Avatar Game Online"
+      },
+      "description": "Play Oval Face Icon Generator online, a classic Flash avatar maker game for creating cute oval face icons in your browser. No Flash Player required.",
+      "alternates": {
+        "canonical": "https://mysquarefaceicon.com/oval-face-icon-generator"
+      },
+      "openGraph": {
+        "type": "website",
+        "url": "https://mysquarefaceicon.com/oval-face-icon-generator",
+        "title": "Oval Face Icon Generator - Play the Classic Flash Avatar Game Online",
+        "description": "Play Oval Face Icon Generator online, a classic Flash avatar maker game for creating cute oval face icons in your browser. No Flash Player required.",
+        "siteName": "My Square Face Icon",
+        "images": [
+          {
+            "url": "/og-image.svg",
+            "width": 1200,
+            "height": 630,
+            "alt": "Oval Face Icon Generator classic Flash avatar maker"
+          }
+        ]
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "title": "Oval Face Icon Generator - Play the Classic Flash Avatar Game Online",
+        "description": "Play Oval Face Icon Generator online, a classic Flash avatar maker game for creating cute oval face icons in your browser. No Flash Player required.",
+        "images": [
+          "/og-image.svg"
+        ]
+      }
+    },
+    "realSsr": {
+      "bytes": 40578,
+      "sha256": "596caccb2532fe501d36b0a7b5bb9f159bb4b34c279e7f056ef8204ee829ae53",
+      "mainSha256": "8629f4da7d5b41e368933b9a4bd241bb665eb02d4a2b0e0d77eba418e1833006",
+      "h1": [
+        "Oval Face Icon Generator"
+      ],
+      "h2": [
+        "Play Oval Face Icon Generator Online",
+        "More Avatar Games",
+        "Curated Icon Ideas",
+        "What Is Oval Face Icon Generator?",
+        "How to Play Oval Face Icon Generator",
+        "Oval Face Icon Generator Features",
+        "Tips for the Best Oval Face Experience",
+        "Troubleshooting Oval Face Icon Generator",
+        "Frequently Asked Questions",
+        "Related Avatar Games and Tools"
+      ],
+      "h3Count": 13,
+      "paragraphCount": 37,
+      "detailsCount": 9,
+      "mainHrefs": [
+        "#game-player",
+        "#how-to-play",
+        "/contact",
+        "/",
+        "/pixel-art-avatar-icon-generator",
+        "/free-avatar-maker",
+        "/square-face-icon-generator",
+        "/gallery",
+        "/blog",
+        "/free-avatar-maker",
+        "/gallery",
+        "/",
+        "/square-face-icon-generator",
+        "/free-avatar-maker",
+        "/gallery"
+      ],
+      "sectionIds": [
+        "game-player",
+        "what-is",
+        "how-to-play",
+        "features",
+        "troubleshooting",
+        "faq"
+      ],
+      "schema": [
+        {
+          "@context": "https://schema.org",
+          "@type": "VideoGame",
+          "name": "Oval Face Icon Generator",
+          "description": "Play the classic Oval Face Icon Generator Flash avatar maker game online.",
+          "url": "https://mysquarefaceicon.com/oval-face-icon-generator",
+          "gamePlatform": "Web browser",
+          "applicationCategory": "Game",
+          "operatingSystem": "Web"
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What is Oval Face Icon Generator?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Oval Face Icon Generator is a classic Flash avatar maker game where you can create cute rounded face icons."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I play Oval Face Icon Generator online?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. You can play it directly in your browser using the Ruffle-powered game player on this page."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Oval Face Icon Generator different from Square Face Generator?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. The oval version focuses on a rounded face shape, while Square Face Generator keeps the original square icon style."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does Oval Face Icon Generator work on mobile?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "It may work on some mobile browsers, but the original Flash game controls are usually better on desktop or laptop devices."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I save my oval face icon?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "If the original game save feature does not work in your browser, you can take a screenshot of your finished avatar."
+              }
+            }
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Square Face Generator",
+              "item": "https://mysquarefaceicon.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Oval Face Icon Generator",
+              "item": "https://mysquarefaceicon.com/oval-face-icon-generator"
+            }
+          ]
+        }
+      ],
+      "schemaSha256": "e3fd2950b8059029832927053ac4fa9d01b3ec7716eebeb98bac313f2a52cf2c",
+      "mainText": "Classic Flash oval avatar maker Oval Face Icon Generator Play the classic Oval Face Icon Generator Flash game online. Create cute rounded face icons directly in your browser with a softer avatar style. Play Now How to Play Oval Face Icon Generator Play Oval Face Icon Generator Online Click Play Now to load the classic oval face Flash game in Ruffle. It keeps the original rounded avatar maker intact while the page around it stays mobile friendly. Classic Flash Game Start Game Start Game Reload Game Help Oval Face Icon Generator is ready. Click Start Game to load the player. This classic Flash game works best on desktop. If you are using a phone, try landscape mode for a better oval face editing experience. More Avatar Games Square Face Generator Play the original square-shaped classic Flash avatar maker. Pixel Art Avatar Icon Generator Open a chibi pixel avatar maker with source credit. Free Avatar Maker Use a fast avatar workflow for profile pictures and icons. Square Avatar Guide Learn how square and oval face icons work for profiles. Gallery Explore approved community face icon creations. Blog Guide Read tips and tutorials about avatar making. Browse All Games Curated Icon Ideas Browse six site-curated face styles for color and expression ideas before making a softer oval avatar. Site-curated examples — not community submissions. Soft Oval Cute Retro Minimal Gamer Classic Browse All Icon Ideas About the game What Is Oval Face Icon Generator? Oval Face Icon Generator is a classic Flash avatar maker game for designing rounded face icons. It is useful when you want a softer character look than a square icon while keeping the same quick browser-game workflow. Three simple steps How to Play Oval Face Icon Generator Step 1 Load the oval face game Wait for the classic Flash game to appear in the player, then press the START button inside the game. Step 2 Pick oval face parts Use the in-game tabs to choose facial features, hair, expressions, colors, and small accessories. Step 3 Make a softer profile icon Try different combinations until the oval face feels right for your profile. If saving does not work in your browser, take a screenshot. Game features Oval Face Icon Generator Features Oval Face Style Create a softer rounded avatar look instead of a square face layout. Classic Flash Game Play a preserved avatar maker from the classic browser game era. No Flash Player Required The game runs through Ruffle, so modern browsers can load the SWF without Adobe Flash Player. Simple Avatar Controls Choose parts from the game interface and experiment with different looks. Free to Play Open the game directly in your browser without installing software or creating an account. Desktop Friendly The original controls were designed for desktop, but mobile landscape mode may still work. Best experience Tips for the Best Oval Face Experience Use a desktop or laptop browser for the most reliable controls Give Ruffle a few seconds to initialize before pressing buttons Use fullscreen mode if the player feels too small Reload the game if the SWF freezes or stops responding Use landscape mode if you are testing on a phone Help Troubleshooting Oval Face Icon Generator Oval Face Icon Generator is not loading Wait a few seconds first. If it still does not start, use Reload Game or refresh the page. The game freezes after loading Click Reload Game to remount the Ruffle player without leaving the page. Mobile buttons are hard to use This is a classic Flash game built for desktop-style input. Rotate your phone or use a desktop browser. Do I need Adobe Flash Player? No. This page uses a modern Flash emulator, so you do not need to install Adobe Flash Player. FAQ Frequently Asked Questions What is Oval Face Icon Generator? Oval Face Icon Generator is a classic Flash avatar maker game where you can create cute rounded face icons. Can I play Oval Face Icon Generator online? Yes. You can play it directly in your browser using the Ruffle-powered game player on this page. Is Oval Face Icon Generator different from Square Face Generator? Yes. The oval version focuses on a rounded face shape, while Square Face Generator keeps the original square icon style. Does Oval Face Icon Generator work on mobile? It may work on some mobile browsers, but the original Flash game controls are usually better on desktop or laptop devices. Can I save my oval face icon? If the original game save feature does not work in your browser, you can take a screenshot of your finished avatar. More avatar makers Related Avatar Games and Tools Square Face Generator Play the square-shaped version of the classic face icon maker. Square Face Icon Guide Learn how square face icons work for social and gaming profiles. Free Avatar Maker Compare quick avatar creation workflows for profile pictures. Community Gallery Browse approved community creations and square face examples.",
+      "htmlPolicy": {
+        "canonical": null,
+        "noindex": false
+      }
+    },
+    "built": {
+      "path": ".next/server/app/oval-face-icon-generator.html",
+      "buildId": "XnkRSno-fdK5b9heMuS6L",
+      "bytes": 96305,
+      "sha256": "8eae5a8a18bd9d3df9f0afc8e64086bb89039ed79d73569fa9fb0357e7b37ca3",
+      "mainSha256": "38901a7d205984dd27fb2b8e4059631c1489efc4b804057fae4afb61f54051e7",
+      "h1": [
+        "Oval Face Icon Generator"
+      ],
+      "h2": [
+        "Play Oval Face Icon Generator Online",
+        "More Avatar Games",
+        "Curated Icon Ideas",
+        "What Is Oval Face Icon Generator?",
+        "How to Play Oval Face Icon Generator",
+        "Oval Face Icon Generator Features",
+        "Tips for the Best Oval Face Experience",
+        "Troubleshooting Oval Face Icon Generator",
+        "Frequently Asked Questions",
+        "Related Avatar Games and Tools"
+      ],
+      "h3Count": 13,
+      "paragraphCount": 37,
+      "detailsCount": 9,
+      "mainHrefs": [
+        "#game-player",
+        "#how-to-play",
+        "/contact",
+        "/",
+        "/pixel-art-avatar-icon-generator",
+        "/free-avatar-maker",
+        "/square-face-icon-generator",
+        "/gallery",
+        "/blog",
+        "/free-avatar-maker",
+        "/gallery",
+        "/",
+        "/square-face-icon-generator",
+        "/free-avatar-maker",
+        "/gallery"
+      ],
+      "sectionIds": [
+        "game-player",
+        "what-is",
+        "how-to-play",
+        "features",
+        "troubleshooting",
+        "faq"
+      ],
+      "schema": [
+        {
+          "@context": "https://schema.org",
+          "@type": "VideoGame",
+          "name": "Oval Face Icon Generator",
+          "description": "Play the classic Oval Face Icon Generator Flash avatar maker game online.",
+          "url": "https://mysquarefaceicon.com/oval-face-icon-generator",
+          "gamePlatform": "Web browser",
+          "applicationCategory": "Game",
+          "operatingSystem": "Web"
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What is Oval Face Icon Generator?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Oval Face Icon Generator is a classic Flash avatar maker game where you can create cute rounded face icons."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I play Oval Face Icon Generator online?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. You can play it directly in your browser using the Ruffle-powered game player on this page."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Oval Face Icon Generator different from Square Face Generator?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. The oval version focuses on a rounded face shape, while Square Face Generator keeps the original square icon style."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does Oval Face Icon Generator work on mobile?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "It may work on some mobile browsers, but the original Flash game controls are usually better on desktop or laptop devices."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I save my oval face icon?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "If the original game save feature does not work in your browser, you can take a screenshot of your finished avatar."
+              }
+            }
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Square Face Generator",
+              "item": "https://mysquarefaceicon.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Oval Face Icon Generator",
+              "item": "https://mysquarefaceicon.com/oval-face-icon-generator"
+            }
+          ]
+        }
+      ],
+      "schemaSha256": "e3fd2950b8059029832927053ac4fa9d01b3ec7716eebeb98bac313f2a52cf2c",
+      "mainText": "Classic Flash oval avatar maker Oval Face Icon Generator Play the classic Oval Face Icon Generator Flash game online. Create cute rounded face icons directly in your browser with a softer avatar style. Play Now How to Play Oval Face Icon Generator Play Oval Face Icon Generator Online Click Play Now to load the classic oval face Flash game in Ruffle. It keeps the original rounded avatar maker intact while the page around it stays mobile friendly. Classic Flash Game Start Game Start Game Reload Game Help Oval Face Icon Generator is ready. Click Start Game to load the player. This classic Flash game works best on desktop. If you are using a phone, try landscape mode for a better oval face editing experience. More Avatar Games Square Face Generator Play the original square-shaped classic Flash avatar maker. Pixel Art Avatar Icon Generator Open a chibi pixel avatar maker with source credit. Free Avatar Maker Use a fast avatar workflow for profile pictures and icons. Square Avatar Guide Learn how square and oval face icons work for profiles. Gallery Explore approved community face icon creations. Blog Guide Read tips and tutorials about avatar making. Browse All Games Curated Icon Ideas Browse six site-curated face styles for color and expression ideas before making a softer oval avatar. Site-curated examples — not community submissions. Soft Oval Cute Retro Minimal Gamer Classic Browse All Icon Ideas About the game What Is Oval Face Icon Generator? Oval Face Icon Generator is a classic Flash avatar maker game for designing rounded face icons. It is useful when you want a softer character look than a square icon while keeping the same quick browser-game workflow. Three simple steps How to Play Oval Face Icon Generator Step 1 Load the oval face game Wait for the classic Flash game to appear in the player, then press the START button inside the game. Step 2 Pick oval face parts Use the in-game tabs to choose facial features, hair, expressions, colors, and small accessories. Step 3 Make a softer profile icon Try different combinations until the oval face feels right for your profile. If saving does not work in your browser, take a screenshot. Game features Oval Face Icon Generator Features Oval Face Style Create a softer rounded avatar look instead of a square face layout. Classic Flash Game Play a preserved avatar maker from the classic browser game era. No Flash Player Required The game runs through Ruffle, so modern browsers can load the SWF without Adobe Flash Player. Simple Avatar Controls Choose parts from the game interface and experiment with different looks. Free to Play Open the game directly in your browser without installing software or creating an account. Desktop Friendly The original controls were designed for desktop, but mobile landscape mode may still work. Best experience Tips for the Best Oval Face Experience Use a desktop or laptop browser for the most reliable controls Give Ruffle a few seconds to initialize before pressing buttons Use fullscreen mode if the player feels too small Reload the game if the SWF freezes or stops responding Use landscape mode if you are testing on a phone Help Troubleshooting Oval Face Icon Generator Oval Face Icon Generator is not loading Wait a few seconds first. If it still does not start, use Reload Game or refresh the page. The game freezes after loading Click Reload Game to remount the Ruffle player without leaving the page. Mobile buttons are hard to use This is a classic Flash game built for desktop-style input. Rotate your phone or use a desktop browser. Do I need Adobe Flash Player? No. This page uses a modern Flash emulator, so you do not need to install Adobe Flash Player. FAQ Frequently Asked Questions What is Oval Face Icon Generator? Oval Face Icon Generator is a classic Flash avatar maker game where you can create cute rounded face icons. Can I play Oval Face Icon Generator online? Yes. You can play it directly in your browser using the Ruffle-powered game player on this page. Is Oval Face Icon Generator different from Square Face Generator? Yes. The oval version focuses on a rounded face shape, while Square Face Generator keeps the original square icon style. Does Oval Face Icon Generator work on mobile? It may work on some mobile browsers, but the original Flash game controls are usually better on desktop or laptop devices. Can I save my oval face icon? If the original game save feature does not work in your browser, you can take a screenshot of your finished avatar. More avatar makers Related Avatar Games and Tools Square Face Generator Play the square-shaped version of the classic face icon maker. Square Face Icon Guide Learn how square face icons work for social and gaming profiles. Free Avatar Maker Compare quick avatar creation workflows for profile pictures. Community Gallery Browse approved community creations and square face examples.",
+      "htmlPolicy": {
+        "canonical": "https://mysquarefaceicon.com/oval-face-icon-generator",
+        "noindex": false
+      }
+    },
+    "player": {
+      "explicitProps": [
+        "gameName",
+        "swfSources",
+        "coverImageUrl",
+        "backgroundColor",
+        "aspectRatio",
+        "maxWidth",
+        "coverImageWidth",
+        "coverImageHeight",
+        "ariaLabel",
+        "coverLabel",
+        "loadingMessage",
+        "errorMessage",
+        "slowLoadingHint",
+        "deviceNotice"
+      ],
+      "inheritedProps": [
+        "reportHref",
+        "startLabel",
+        "reloadLabel",
+        "helpLabel",
+        "showStartControl"
+      ],
+      "resolvedProps": {
+        "gameName": "Oval Face Icon Generator",
+        "swfSources": [
+          "/games/oval-face.swf"
+        ],
+        "coverImageUrl": "/games/oval-face-cover.png",
+        "backgroundColor": "#FFAF03",
+        "aspectRatio": "972 / 774",
+        "coverImageWidth": 972,
+        "coverImageHeight": 774,
+        "ariaLabel": "Oval face Flash generator",
+        "coverLabel": "Start Oval Face Icon Generator game",
+        "loadingMessage": "Loading Oval Face Icon Generator...",
+        "errorMessage": "The oval face game could not be loaded. Please refresh the page or try a desktop browser.",
+        "slowLoadingHint": "Still loading? This classic oval face game may take a few seconds to start.",
+        "deviceNotice": "This classic Flash game works best on desktop. If you are using a phone, try landscape mode for a better oval face editing experience.",
+        "maxWidth": "972px",
+        "reportHref": "/contact",
+        "startLabel": "Start Game",
+        "reloadLabel": "Reload",
+        "helpLabel": "Game Help",
+        "showStartControl": true
+      },
+      "existingCompatibilityPolicy": {
+        "releaseDecision": "REVIEW_REQUIRED",
+        "allowedDeliveryTypes": [
+          "RUFFLE_SWF"
+        ]
+      },
+      "genericRejection": "RUFFLE_SWF is not allowed by the game release policy."
+    },
+    "coverDimensions": {
+      "width": 974,
+      "height": 775
+    },
+    "declaredCoverDimensions": {
+      "width": 972,
+      "height": 774
+    },
+    "coverDimensionsMatchRecord": false,
+    "sourceHashes": {
+      "app/oval-face-icon-generator/page.tsx": "4b0263e9b0fbba1824e32bcec8b324e45aeae0c373f50375a7ba8fe8f9fd0e54",
+      "data/games/oval-face.ts": "ee2ded5bf3d11fb4572b4861f5c39164a37d5e7a3d91f404130510c453331f74",
+      "components/FlashGenerator.tsx": "c443323031b15428a502ff4fcad3653ffc424ef75db9335b76883576f45ac794",
+      "components/game/GameDetailTemplate.tsx": "c643d800efd8bdbc6d439047b53c3aad6fae403ad59ed55b7c8349218c1ca43c",
+      "lib/games/game-player-model.ts": "42672e8d0917e9d7d6a1b28137e505ecd4d7b09ba40e3c971751b6d7f3fbe84c",
+      "scripts/check-square-homepage.mjs": "8ce4818d3f785c304b1ab7cc8774740ba66f3c4252bd5a40de0b6ee05500e947"
+    },
+    "warnings": [
+      "Warning: React does not recognize the `%s` prop on a DOM element. If you intentionally want it to appear in the DOM as a custom attribute, spell it as lowercase `%s` instead. If you accidentally passed it from a parent component, remove it from the DOM element.%s fetchPriority fetchpriority \n    at img\n    at button\n    at div\n    at div\n    at div\n    at GamePlayer (components/game-player/GamePlayer.tsx:80:66)\n    at FlashGenerator (components/FlashGenerator.tsx:12:74)\n    at div\n    at div\n    at div\n    at section\n    at main\n    at div\n    at OvalFaceIconGeneratorPage"
+    ],
+    "applicationChanged": false,
+    "fullApplicationChecksRerun": false,
+    "browserQaRun": false,
+    "deployed": false
+  },
+  "plannedChanges": {
+    "duplicateArrays": {
+      "howTo": 3,
+      "features": 6,
+      "tips": 5,
+      "faq": 5,
+      "allExactMatches": true
+    },
+    "playerInputs": {
+      "total": 19,
+      "currentlyExplicit": 14,
+      "currentlyInherited": 5,
+      "defaults": [
+        "reportHref",
+        "startLabel",
+        "reloadLabel",
+        "helpLabel",
+        "showStartControl"
+      ],
+      "currentlyResolved": {
+        "gameName": "Oval Face Icon Generator",
+        "swfSources": [
+          "/games/oval-face.swf"
+        ],
+        "coverImageUrl": "/games/oval-face-cover.png",
+        "backgroundColor": "#FFAF03",
+        "aspectRatio": "972 / 774",
+        "coverImageWidth": 972,
+        "coverImageHeight": 774,
+        "ariaLabel": "Oval face Flash generator",
+        "coverLabel": "Start Oval Face Icon Generator game",
+        "loadingMessage": "Loading Oval Face Icon Generator...",
+        "errorMessage": "The oval face game could not be loaded. Please refresh the page or try a desktop browser.",
+        "slowLoadingHint": "Still loading? This classic oval face game may take a few seconds to start.",
+        "deviceNotice": "This classic Flash game works best on desktop. If you are using a phone, try landscape mode for a better oval face editing experience.",
+        "maxWidth": "972px",
+        "reportHref": "/contact",
+        "startLabel": "Start Game",
+        "reloadLabel": "Reload",
+        "helpLabel": "Game Help",
+        "showStartControl": true
+      },
+      "plannedResolved": {
+        "gameName": "Oval Face Icon Generator",
+        "swfSources": [
+          "/games/oval-face.swf"
+        ],
+        "coverImageUrl": "/games/oval-face-cover.png",
+        "backgroundColor": "#FFAF03",
+        "aspectRatio": "972 / 774",
+        "coverImageWidth": 974,
+        "coverImageHeight": 775,
+        "ariaLabel": "Oval face Flash generator",
+        "coverLabel": "Start Oval Face Icon Generator game",
+        "loadingMessage": "Loading Oval Face Icon Generator...",
+        "errorMessage": "The oval face game could not be loaded. Please refresh the page or try a desktop browser.",
+        "slowLoadingHint": "Still loading? This classic oval face game may take a few seconds to start.",
+        "deviceNotice": "This classic Flash game works best on desktop. If you are using a phone, try landscape mode for a better oval face editing experience.",
+        "maxWidth": "972px",
+        "reportHref": "/contact",
+        "startLabel": "Start Game",
+        "reloadLabel": "Reload",
+        "helpLabel": "Game Help",
+        "showStartControl": true
+      }
+    },
+    "content": "Typed optional content.legacyPage for existing hero/card/about/headings/troubleshooting/VideoGame description and player presentation; no change to general summary/description or Square homepage",
+    "related": "Resolve existing Square/Pixel targets from relatedGameIds and public Catalog rules; keep current labels/links/order/layout and separate resources/curated data",
+    "coverException": {
+      "sourceFile": "public/games/oval-face-cover.png",
+      "observed": {
+        "width": 974,
+        "height": 775
+      },
+      "declared": {
+        "width": 972,
+        "height": 774
+      },
+      "changeImageFile": false,
+      "plannedAttributeChangeOnly": true,
+      "preserveAspectRatio": "972 / 774",
+      "preserveMaxWidth": "972px",
+      "browserParityVerified": false
+    },
+    "frozenSquareChecker": "Precisely adapt only the Oval record allowance after proving new legacyPage + exact two COVER scalars; retain original Square SSR/player/negative baselines and all other frozen source contracts",
+    "noLicenseBypass": true,
+    "noTemplateChange": true,
+    "noLayoutOrTextChange": true
+  },
+  "next": "确认 MIG-OVAL-001 本地数据绑定方案，进行开发"
+}

@@ -67,6 +67,10 @@
 - 发布前必须通过 type-check、lint、必需测试、框架 build 和 Cloudflare/OpenNext 等效 build（OP-09）；失败或未执行不得写成通过。
 - 只有授权部署后才运行生产发布验收；HTTP/HTTPS、www/非 www 必须一跳归一（OP-02、OP-11、OP-12）。
 
-## 8. 尚未决定
+## 8. AI crawler 项目决策
 
-`AI-01` 要求在 `PROJECT_BRIEF.md` 逐个记录 AI crawler 的允许/禁止决定。当前 robots 已有实现，但用户尚未确认完整的训练抓取与搜索抓取策略；在取得单独决定前不得擅自改变。
+- 用户于 2026-09-02 明确回复 `确认 AI-01 分流策略`，批准训练/批量抓取阻止、搜索/用户检索允许的分流口径。
+- `PROJECT_BRIEF.md` 是逐 crawler 决策与理由的项目记录；`data/ai-crawler-policy.json` 是代码与自动检查共用的执行来源。
+- 训练/批量组全站阻止；搜索/用户检索组允许公开路径，但 `/admin/`、`/api/` 继续阻止。普通 `*` 组也保持公开允许、私有路径阻止。
+- 当前清单包含 `RULES.md` 的 10 项以及一手资料新增的 `Claude-SearchBot`。`Bytespider` 因缺少当前一手厂商用途说明采用保守阻止，不把推断写成供应商已确认事实。
+- 本决策不改变普通 Google Search 抓取、页面 index/noindex、canonical、sitemap、URL、metadata、可见内容或搜索意图。

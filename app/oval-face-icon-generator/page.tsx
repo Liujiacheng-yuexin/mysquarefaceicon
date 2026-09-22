@@ -1,121 +1,50 @@
-import type { Metadata } from "next";
 import FlashGenerator from "@/components/FlashGenerator";
-import GalleryPreview from "@/components/GalleryPreview";
+import CuratedGalleryPreview from "@/components/CuratedGalleryPreview";
 import GameSidebar, { type GameSidebarItem } from "@/components/GameSidebar";
 import InstallPrompt from "@/components/InstallPrompt";
 import SiteHeader from "@/components/SiteHeader";
+import { curatedIconIdeas, type CuratedIconIdea } from "@/data/curated-icon-ideas";
+import { getPublicGameHref, requireLegacyGamePath } from "@/lib/games/routes";
+import { resolveOvalLegacyPage } from "@/lib/games/oval-legacy-page";
+import { selectRelatedGames } from "@/lib/recommendations/related-games";
+import { buildGameMetadata, getGamePageH1 } from "@/lib/seo/game-metadata";
 import { CirclePlay, Monitor, Sparkles } from "lucide-react";
+import FavoriteToggle from "@/components/game/FavoriteToggle";
 
-const pageUrl = "https://mysquarefaceicon.com/oval-face-icon-generator";
-const pageTitle = "Oval Face Icon Generator - Play the Classic Flash Avatar Game Online";
-const pageDescription =
-  "Play Oval Face Icon Generator online, a classic Flash avatar maker game for creating cute oval face icons in your browser. No Flash Player required.";
-
-const howToSteps = [
-  {
-    title: "Load the oval face game",
-    text: "Wait for the classic Flash game to appear in the player, then press the START button inside the game."
-  },
-  {
-    title: "Pick oval face parts",
-    text: "Use the in-game tabs to choose facial features, hair, expressions, colors, and small accessories."
-  },
-  {
-    title: "Make a softer profile icon",
-    text:
-      "Try different combinations until the oval face feels right for your profile. If saving does not work in your browser, take a screenshot."
-  }
-];
-
-const features = [
-  {
-    title: "Oval Face Style",
-    text: "Create a softer rounded avatar look instead of a square face layout."
-  },
-  {
-    title: "Classic Flash Game",
-    text: "Play a preserved avatar maker from the classic browser game era."
-  },
-  {
-    title: "No Flash Player Required",
-    text: "The game runs through Ruffle, so modern browsers can load the SWF without Adobe Flash Player."
-  },
-  {
-    title: "Simple Avatar Controls",
-    text: "Choose parts from the game interface and experiment with different looks."
-  },
-  {
-    title: "Free to Play",
-    text: "Open the game directly in your browser without installing software or creating an account."
-  },
-  {
-    title: "Desktop Friendly",
-    text: "The original controls were designed for desktop, but mobile landscape mode may still work."
-  }
-];
-
-const tips = [
-  "Use a desktop or laptop browser for the most reliable controls",
-  "Give Ruffle a few seconds to initialize before pressing buttons",
-  "Use fullscreen mode if the player feels too small",
-  "Reload the game if the SWF freezes or stops responding",
-  "Use landscape mode if you are testing on a phone"
-];
+const ovalFaceGame = requireLegacyGamePath("/oval-face-icon-generator");
+const ovalPage = resolveOvalLegacyPage(ovalFaceGame);
+const { content } = ovalPage;
+const { howToPlay: howToSteps, features, tips, faq } = ovalFaceGame;
+const troubleshooting = content.troubleshooting;
+const pageUrl = ovalFaceGame.route.canonical;
+const ovalRelatedGames = selectRelatedGames(ovalFaceGame).recommendations.map(({ game }) => {
+  const reviewedLegacyCard = ovalPage.relatedCards.find((card) => card.gameId === game.id);
+  return {
+    gameId: game.id,
+    title: reviewedLegacyCard?.title ?? game.name,
+    text: reviewedLegacyCard?.text ?? game.content.summary,
+    href: getPublicGameHref(game),
+    external: game.pageType === "EXTERNAL_TOOL"
+  };
+});
 
 const ovalGalleryPreviewItems = [
   {
     title: "Soft Oval",
     src: "/games/oval-face-icon.png",
-    alt: "Soft oval face icon preview",
-    likes: 96
+    alt: "Rounded pale face icon with brown hair, closed eyes, and a pink smile",
+    width: 512,
+    height: 512
   },
-  {
-    title: "Cute",
-    src: "/game-face-samples/cute.webp",
-    alt: "Cute face icon gallery preview",
-    likes: 120
-  },
-  {
-    title: "Retro",
-    src: "/game-face-samples/retro.webp",
-    alt: "Retro face icon gallery preview",
-    likes: 98
-  },
-  {
-    title: "Minimal",
-    src: "/game-face-samples/minimal.webp",
-    alt: "Minimal face icon gallery preview",
-    likes: 76
-  },
-  {
-    title: "Gamer",
-    src: "/game-face-samples/gamer.webp",
-    alt: "Gamer face icon gallery preview",
-    likes: 110
-  },
-  {
-    title: "Classic",
-    src: "/game-face-samples/classic.webp",
-    alt: "Classic face icon gallery preview",
-    likes: 85
-  }
-];
+  curatedIconIdeas.cute,
+  curatedIconIdeas.retro,
+  curatedIconIdeas.minimal,
+  curatedIconIdeas.gamer,
+  curatedIconIdeas.classic
+] as const satisfies readonly CuratedIconIdea[];
 
 const ovalSidebarItems: GameSidebarItem[] = [
-  {
-    title: "Square Face Generator",
-    text: "Play the original square-shaped classic Flash avatar maker.",
-    href: "/",
-    imageSrc: "/square-face-icon.png",
-    imageAlt: "Square Face Generator preview"
-  },
-  {
-    title: "Pixel Art Avatar Icon Generator",
-    text: "Open a chibi pixel avatar maker with source credit.",
-    href: "/pixel-art-avatar-icon-generator",
-    imageSrc: "/game-face-samples/gamer.webp",
-    imageAlt: "Pixel art avatar icon generator preview"
-  },
+  ...ovalPage.sidebarGames,
   {
     title: "Free Avatar Maker",
     text: "Use a fast avatar workflow for profile pictures and icons.",
@@ -146,89 +75,14 @@ const ovalSidebarItems: GameSidebarItem[] = [
   }
 ];
 
-const troubleshooting = [
-  {
-    title: "Oval Face Icon Generator is not loading",
-    text: "Wait a few seconds first. If it still does not start, use Reload Game or refresh the page."
-  },
-  {
-    title: "The game freezes after loading",
-    text: "Click Reload Game to remount the Ruffle player without leaving the page."
-  },
-  {
-    title: "Mobile buttons are hard to use",
-    text: "This is a classic Flash game built for desktop-style input. Rotate your phone or use a desktop browser."
-  },
-  {
-    title: "Do I need Adobe Flash Player?",
-    text: "No. This page uses a modern Flash emulator, so you do not need to install Adobe Flash Player."
-  }
-];
-
-const faq = [
-  {
-    question: "What is Oval Face Icon Generator?",
-    answer:
-      "Oval Face Icon Generator is a classic Flash avatar maker game where you can create cute rounded face icons."
-  },
-  {
-    question: "Can I play Oval Face Icon Generator online?",
-    answer: "Yes. You can play it directly in your browser using the Ruffle-powered game player on this page."
-  },
-  {
-    question: "Is Oval Face Icon Generator different from Square Face Generator?",
-    answer:
-      "Yes. The oval version focuses on a rounded face shape, while Square Face Generator keeps the original square icon style."
-  },
-  {
-    question: "Does Oval Face Icon Generator work on mobile?",
-    answer:
-      "It may work on some mobile browsers, but the original Flash game controls are usually better on desktop or laptop devices."
-  },
-  {
-    question: "Can I save my oval face icon?",
-    answer:
-      "If the original game save feature does not work in your browser, you can take a screenshot of your finished avatar."
-  }
-];
-
-export const metadata: Metadata = {
-  title: {
-    absolute: pageTitle
-  },
-  description: pageDescription,
-  alternates: {
-    canonical: pageUrl
-  },
-  openGraph: {
-    type: "website",
-    url: pageUrl,
-    title: pageTitle,
-    description: pageDescription,
-    siteName: "My Square Face Icon",
-    images: [
-      {
-        url: "/og-image.svg",
-        width: 1200,
-        height: 630,
-        alt: "Oval Face Icon Generator classic Flash avatar maker"
-      }
-    ]
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: pageTitle,
-    description: pageDescription,
-    images: ["/og-image.svg"]
-  }
-};
+export const metadata = buildGameMetadata(ovalFaceGame);
 
 export default function OvalFaceIconGeneratorPage() {
   const videoGameSchema = {
     "@context": "https://schema.org",
     "@type": "VideoGame",
-    name: "Oval Face Icon Generator",
-    description: "Play the classic Oval Face Icon Generator Flash avatar maker game online.",
+name: ovalFaceGame.name,
+    description: content.videoGameDescription,
     url: pageUrl,
     gamePlatform: "Web browser",
     applicationCategory: "Game",
@@ -261,7 +115,7 @@ export default function OvalFaceIconGeneratorPage() {
       {
         "@type": "ListItem",
         position: 2,
-        name: "Oval Face Icon Generator",
+name: ovalFaceGame.name,
         item: pageUrl
       }
     ]
@@ -280,75 +134,60 @@ export default function OvalFaceIconGeneratorPage() {
           <div className="game-station-grid">
             <div className="game-station-main">
               <div className="game-title-block">
-              <p className="eyebrow">Classic Flash oval avatar maker</p>
-              <h1>Oval Face Icon Generator</h1>
-              <p className="hero-text">
-                Play the classic Oval Face Icon Generator Flash game online. Create cute rounded face icons directly in
-                your browser with a softer avatar style.
-              </p>
+<p className="eyebrow">{content.hero.eyebrow}</p>
+              <h1>{getGamePageH1(ovalFaceGame)}</h1>
+              <p className="hero-text">{content.hero.intro}</p>
               <div className="hero-actions" aria-label="Hero actions">
                 <a className="hero-primary-link" href="#game-player">
                   <CirclePlay aria-hidden="true" size={20} />
-                  Play Now
+                  {content.hero.playLabel}
                 </a>
-                <a className="hero-secondary-link" href="#how-to-play">How to Play</a>
+<a className="hero-secondary-link" href="#how-to-play">{content.hero.howToPlayLabel}</a>
+                <FavoriteToggle
+                  gameId={ovalFaceGame.id}
+                  gameName={ovalFaceGame.name}
+                  pageType={ovalFaceGame.pageType}
+                  variant="detail"
+                  showViewLink
+                />
               </div>
             </div>
             <div className="game-card station-game-card">
             <div className="game-card-header">
               <div>
-                <p className="tool-card-kicker">Oval Face Icon Generator</p>
-                <h2>Play Oval Face Icon Generator Online</h2>
-                <p className="tool-card-description">
-                  Click Play Now to load the classic oval face Flash game in Ruffle. It keeps the original rounded avatar
-                  maker intact while the page around it stays mobile friendly.
-                </p>
+<p className="tool-card-kicker">{content.card.label}</p>
+<h2>{content.card.title}</h2>
+                <p className="tool-card-description">{content.card.description}</p>
               </div>
-              <span className="tool-card-badge">Classic Flash Game</span>
+<span className="tool-card-badge">{content.card.badge}</span>
             </div>
-            <FlashGenerator
-              gameName="Oval Face Icon Generator"
-              swfSources={["/games/oval-face.swf"]}
-              coverImageUrl="/games/oval-face-cover.png"
-              aspectRatio="972 / 774"
-              maxWidth="972px"
-              coverImageWidth={972}
-              coverImageHeight={774}
-              ariaLabel="Oval face Flash generator"
-              coverLabel="Start Oval Face Icon Generator game"
-              loadingMessage="Loading Oval Face Icon Generator..."
-              errorMessage="The oval face game could not be loaded. Please refresh the page or try a desktop browser."
-              slowLoadingHint="Still loading? This classic oval face game may take a few seconds to start."
-              deviceNotice="This classic Flash game works best on desktop. If you are using a phone, try landscape mode for a better oval face editing experience."
-            />
+            <FlashGenerator {...ovalPage.player} />
           </div>
             </div>
             <GameSidebar items={ovalSidebarItems} />
           </div>
         </section>
 
-        <GalleryPreview
-          title="Community Gallery Preview"
-          intro="Browse a few face icon examples before you make a softer oval avatar."
+        <CuratedGalleryPreview
+          title="Curated Icon Ideas"
+          intro="Browse six site-curated face styles for color and expression ideas before making a softer oval avatar."
+          trustNote="Site-curated examples — not community submissions."
           items={ovalGalleryPreviewItems}
+          variant="compact"
         />
 
         <section className="content-band" id="what-is">
           <div className="section-heading">
-            <p className="eyebrow">About the game</p>
-            <h2>What Is Oval Face Icon Generator?</h2>
-            <p className="section-intro">
-              Oval Face Icon Generator is a classic Flash avatar maker game for designing rounded face icons. It is
-              useful when you want a softer character look than a square icon while keeping the same quick browser-game
-              workflow.
-            </p>
+<p className="eyebrow">{content.about.eyebrow}</p>
+<h2>{content.about.title}</h2>
+            <p className="section-intro">{content.about.text}</p>
           </div>
         </section>
 
         <section className="content-band alt-band" id="how-to-play">
           <div className="section-heading">
-            <p className="eyebrow">Three simple steps</p>
-            <h2>How to Play Oval Face Icon Generator</h2>
+<p className="eyebrow">{content.headings.howToPlayEyebrow}</p>
+<h2>{content.headings.howToPlay}</h2>
           </div>
           <div className="steps-grid">
             {howToSteps.map((step, index) => (
@@ -363,8 +202,8 @@ export default function OvalFaceIconGeneratorPage() {
 
         <section className="content-band" id="features">
           <div className="section-heading">
-            <p className="eyebrow">Game features</p>
-            <h2>Oval Face Icon Generator Features</h2>
+<p className="eyebrow">{content.headings.featuresEyebrow}</p>
+<h2>{content.headings.features}</h2>
           </div>
           <div className="feature-grid">
             {features.map((feature) => (
@@ -378,8 +217,8 @@ export default function OvalFaceIconGeneratorPage() {
 
         <section className="content-band playful-band">
           <div className="section-heading">
-            <p className="eyebrow">Best experience</p>
-            <h2>Tips for the Best Oval Face Experience</h2>
+<p className="eyebrow">{content.headings.tipsEyebrow}</p>
+<h2>{content.headings.tips}</h2>
           </div>
           <ul className="tips-list">
             {tips.map((tip) => (
@@ -393,8 +232,8 @@ export default function OvalFaceIconGeneratorPage() {
 
         <section className="content-band alt-band" id="troubleshooting">
           <div className="section-heading">
-            <p className="eyebrow">Help</p>
-            <h2>Troubleshooting Oval Face Icon Generator</h2>
+<p className="eyebrow">{content.headings.troubleshootingEyebrow}</p>
+<h2>{content.headings.troubleshooting}</h2>
           </div>
           <div className="faq-list">
             {troubleshooting.map((item) => (
@@ -408,8 +247,8 @@ export default function OvalFaceIconGeneratorPage() {
 
         <section className="content-band" id="faq">
           <div className="section-heading">
-            <p className="eyebrow">FAQ</p>
-            <h2>Frequently Asked Questions</h2>
+<p className="eyebrow">{content.headings.faqEyebrow}</p>
+<h2>{content.headings.faq}</h2>
           </div>
           <div className="faq-list">
             {faq.map((item) => (
@@ -421,17 +260,43 @@ export default function OvalFaceIconGeneratorPage() {
           </div>
         </section>
 
-        <section className="content-band alt-band">
+        {ovalRelatedGames.length > 0 ? (
+          <section className="content-band alt-band" aria-labelledby="related-avatar-games-heading">
+            <div className="section-heading">
+<p className="eyebrow">{content.headings.relatedEyebrow}</p>
+<h2 id="related-avatar-games-heading">{content.headings.related}</h2>
+            </div>
+            <div className="related-grid" aria-label="Related avatar games and tools">
+              {ovalRelatedGames.map((item) => (
+                <div className="favoritable-game-card favoritable-related-card" key={item.gameId}>
+                  <a
+                    className={`related-card${item.external ? " route-game-link-external" : ""}`}
+                    data-game-id={item.gameId}
+                    data-game-page-type={item.external ? "EXTERNAL_TOOL" : "GAME"}
+                    href={item.href}
+                  >
+                    <Sparkles aria-hidden="true" size={20} />
+                    {item.external ? <span className="route-game-type">External tool</span> : null}
+                    <h3>{item.title}</h3>
+                    <p>{item.text}</p>
+                    {item.external ? <span className="route-card-action">View access details</span> : null}
+                  </a>
+                  <FavoriteToggle
+                    gameId={item.gameId}
+                    gameName={item.title}
+                    pageType={item.external ? "EXTERNAL_TOOL" : "GAME"}
+                  />
+                </div>
+              ))}
+            </div>
+          </section>
+        ) : null}
+
+        <section className="content-band" aria-labelledby="avatar-guides-heading">
           <div className="section-heading">
-            <p className="eyebrow">More avatar makers</p>
-            <h2>Related Avatar Games and Tools</h2>
+            <h2 id="avatar-guides-heading">Avatar guides and inspiration</h2>
           </div>
-          <div className="related-grid">
-            <a className="related-card" href="/">
-              <Sparkles aria-hidden="true" size={20} />
-              <h3>Square Face Generator</h3>
-              <p>Play the square-shaped version of the classic face icon maker.</p>
-            </a>
+          <div className="related-grid" aria-label="Avatar guides and inspiration">
             <a className="related-card" href="/square-face-icon-generator">
               <Sparkles aria-hidden="true" size={20} />
               <h3>Square Face Icon Guide</h3>
@@ -462,6 +327,7 @@ export default function OvalFaceIconGeneratorPage() {
             <a href="/">Square Face Generator</a>
             <a href="#game-player">Oval Face Icon Generator</a>
             <a href="/pixel-art-avatar-icon-generator">Pixel Art Avatar Icon Generator</a>
+            <a href="/games">All avatar games</a>
             <a href="#how-to-play">How to Play</a>
             <a href="#faq">FAQ</a>
           </div>

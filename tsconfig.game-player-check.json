@@ -1,0 +1,24 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "jsx": "react-jsx",
+    "noEmit": false,
+    "outDir": ".game-player-check",
+    "rootDir": ".",
+    "incremental": false,
+    "isolatedModules": false,
+    "declaration": false,
+    "sourceMap": false,
+    "plugins": []
+  },
+  "include": [
+    "components/game-player/adapters/ExternalLinkAdapter.tsx",
+    "data/games/**/*.ts",
+    "lib/games/**/*.ts",
+    "scripts/validate-game-player.tsx"
+  ],
+  "exclude": ["node_modules", ".next", ".game-player-check", "app/sitemap.ts"]
+}

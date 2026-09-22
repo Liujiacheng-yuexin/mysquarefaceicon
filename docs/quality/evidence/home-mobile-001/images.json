@@ -1,0 +1,10 @@
+{
+  "name": "images",
+  "command": "node scripts/run-game-image-check.mjs",
+  "startedAt": "2026-09-22T07:57:01.767Z",
+  "finishedAt": "2026-09-22T07:57:05.332Z",
+  "exitCode": 0,
+  "signal": null,
+  "stdout": "IMG-001 validation passed\n- 29 public images inspected from file signatures (448379 bytes)\n- MIME inventory: image/png=9, image/svg+xml=1, image/webp=18, image/x-icon=1\n- 8 Game Data image records match intrinsic dimensions and ASSET-001 mappings\n- role ratios, required/forbidden roles, alt, provenance, legacy formats and no-array-fallback selection passed\n- non-first-viewport images are explicitly lazy; first-viewport Player preview remains eager/high priority\n- 18 fail-closed image/schema/format/loading negative fixtures rejected\n",
+  "stderr": ""
+}

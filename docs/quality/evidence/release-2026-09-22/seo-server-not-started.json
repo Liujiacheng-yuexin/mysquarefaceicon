@@ -1,0 +1,7 @@
+{
+  "command": "npm run seo:check",
+  "at": "2026-09-22T08:54:19.240Z",
+  "exitCode": 2,
+  "stdout": "\n> mysquarefaceicon@0.1.0 seo:check\n> node scripts/seo-check.mjs --base http://localhost:3000\n\n",
+  "stderr": "错误：sitemap 中没有可检查的 URL。\n"
+}

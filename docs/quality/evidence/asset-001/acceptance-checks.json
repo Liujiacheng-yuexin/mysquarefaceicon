@@ -1,0 +1,47 @@
+{
+  "taskId": "ASSET-001",
+  "scope": "GAME_ASSET_STORAGE_LOCAL_IMPLEMENTATION",
+  "boardVersion": "1.96",
+  "recordedAt": "2026-09-08T04:43:09.8228925Z",
+  "result": "通过（用户明确本地验收）；不是外部 R2、权利、生产或发布通过",
+  "userAcceptanceReceived": true,
+  "userAcceptance": "ASSET-001 验收通过",
+  "source": "用户明确回复",
+  "localOnly": true,
+  "wholeTaskCompleted": true,
+  "implementationEvidencePath": "docs/quality/evidence/asset-001/checks.json",
+  "applicationCodeChangedForAcceptance": false,
+  "testsOrCheckersChangedForAcceptance": false,
+  "applicationQaRerunForAcceptance": false,
+  "retainedDecisions": {
+    "r2AssetsDeclared": 0,
+    "externalR2MutationAuthorized": false,
+    "squareAndOvalSwf": "BLOCKED_RIGHTS_UNKNOWN",
+    "pixelExternal": "EXTERNAL_DIRECT_ONLY",
+    "ruffle": "EXCLUDED_RUNTIME",
+    "squareCover": "KEEP_APP_STATIC_LCP"
+  },
+  "retainedUnverified": [
+    "fresh 390/360 browser validation from the ASSET implementation turn",
+    "browser network panel and final-build console",
+    "failure injection, Retry and real fullscreen",
+    "real devices and additional browser engines",
+    "field and production CWV",
+    "Square/Oval rights",
+    "human factual, advertising and CMP gates",
+    "production SEO and deployment"
+  ],
+  "board": {
+    "completedTasks": 26,
+    "totalTasks": 60,
+    "sourceAcceptanceKeys": 37,
+    "nextTaskId": "IMG-001",
+    "nextTaskStatus": "设计中 / 方案待确认"
+  },
+  "release": {
+    "commitCreated": false,
+    "pushed": false,
+    "deployed": false,
+    "production": "未验证 / 未部署"
+  }
+}

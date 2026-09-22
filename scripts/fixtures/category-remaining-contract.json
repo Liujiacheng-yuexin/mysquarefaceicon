@@ -1,0 +1,509 @@
+{
+  "task": "CATEGORY-001",
+  "scope": "CATEGORY_REMAINING_PAGES",
+  "capturedAt": "2026-09-04T03:25:06.015Z",
+  "beforeBoardVersion": "1.77",
+  "baselineSha256": "327e5713fcfe499a0c631a47f798394e64b1babebac0bd69a637c59a3238e283",
+  "categories": {
+    "face-makers": {
+      "beforeMetadataSha256": "5741ea04d6d2968287de60e10078a98fbbcae70ea38db7569fc80eb953294c2b",
+      "beforeSsrSha256": "7773906a6964bbb1f7ae44cce625c9ebe379d0377284115b6b7d538a9f4fd60c",
+      "afterSsrSha256": "7773906a6964bbb1f7ae44cce625c9ebe379d0377284115b6b7d538a9f4fd60c",
+      "beforeMainSha256": "2700eab1944e074f6015d065c24c733bb681f7e9ae1979d704bc5187ca0126af",
+      "afterMain": "<main class=\"route-directory-shell\" data-ad-eligible=\"false\"><nav class=\"game-breadcrumb route-breadcrumb\" aria-label=\"Breadcrumb\"><a href=\"/\" data-navigation=\"document\">Home</a><span aria-hidden=\"true\">/</span><a href=\"/games\" data-navigation=\"document\">Games</a><span aria-hidden=\"true\">/</span><span aria-current=\"page\">Face Makers</span></nav><header class=\"route-directory-hero route-category-hero\"><p class=\"route-eyebrow\">Avatar game category</p><h1>Face Makers</h1><p>Browse browser-based tools centered on choosing and combining facial features for profile icons.</p></header><section class=\"route-directory-section\" aria-labelledby=\"category-games-heading\"><div class=\"route-section-heading\"><div><p class=\"route-eyebrow\">Current collection</p><h2 id=\"category-games-heading\">Face maker entries</h2></div><span>2 entries</span></div><ul class=\"game-grid route-game-list\" aria-label=\"Face maker entries\"><li><a class=\"game-list-card route-game-link\" data-game-id=\"square-face\" data-game-page-type=\"GAME\" href=\"/\" data-navigation=\"document\"><span class=\"route-game-type\">Browser game</span><strong>Square Face Generator</strong><span>Play the classic Square Face Generator online and create retro square face icons for avatars and profile images.</span><span class=\"route-card-action\">Open game</span></a></li><li><a class=\"game-list-card route-game-link\" data-game-id=\"oval-face\" data-game-page-type=\"GAME\" href=\"/oval-face-icon-generator\" data-navigation=\"document\"><span class=\"route-game-type\">Browser game</span><strong>Oval Face Icon Generator</strong><span>Play the classic Oval Face Icon Generator online and create cute rounded face icons in a modern browser.</span><span class=\"route-card-action\">Open game</span></a></li></ul></section><section class=\"route-directory-section\" aria-labelledby=\"category-choice-heading\"><h2 id=\"category-choice-heading\">Choosing a face maker</h2><p>Square Face Generator focuses on square face icons. Oval Face Icon Generator offers a rounded face style. Both entries open a maker page on this site; choose the shape you want to start with.</p><p>Each maker loads its player after you select Play. See the maker page for controls, saving guidance, and source or usage limitations.</p></section><section class=\"route-directory-section\" aria-labelledby=\"other-categories-heading\"><h2 id=\"other-categories-heading\">Other avatar categories</h2><p>Categories overlap: the same entry can appear in more than one group.</p><div class=\"route-category-links\"><a class=\"category-chip\" data-category-slug=\"avatar-makers\" href=\"/category/avatar-makers\" data-navigation=\"document\"><strong>Avatar Makers</strong><span>3 current entries</span></a><a class=\"category-chip\" data-category-slug=\"pixel-avatars\" href=\"/category/pixel-avatars\" data-navigation=\"document\"><strong>Pixel Avatars</strong><span>1 current entry</span></a><a class=\"category-chip\" data-category-slug=\"retro-flash\" href=\"/category/retro-flash\" data-navigation=\"document\"><strong>Retro Flash</strong><span>2 current entries</span></a><a class=\"category-chip\" data-category-slug=\"character-creators\" href=\"/category/character-creators\" data-navigation=\"document\"><strong>Character Creators</strong><span>1 current entry</span></a></div></section><div class=\"route-return-links\" aria-label=\"Continue browsing\"><a href=\"/games\" data-navigation=\"document\">Browse all avatar games</a><a href=\"/\" data-navigation=\"document\">Return to Square Face Generator</a></div></main>",
+      "afterMetadata": {
+        "title": {
+          "absolute": "Face Makers | My Square Face Icon"
+        },
+        "description": "Browse browser-based tools centered on choosing and combining facial features for profile icons.",
+        "alternates": {
+          "canonical": "https://mysquarefaceicon.com/category/face-makers"
+        },
+        "robots": {
+          "index": false,
+          "follow": true,
+          "googleBot": {
+            "index": false,
+            "follow": true
+          }
+        },
+        "openGraph": {
+          "type": "website",
+          "title": "Face Makers | My Square Face Icon",
+          "description": "Browse browser-based tools centered on choosing and combining facial features for profile icons.",
+          "url": "https://mysquarefaceicon.com/category/face-makers",
+          "siteName": "My Square Face Icon",
+          "images": [
+            {
+              "url": "/og-image.svg",
+              "width": 1200,
+              "height": 630,
+              "alt": "My Square Face Icon brand illustration"
+            }
+          ]
+        },
+        "twitter": {
+          "card": "summary_large_image",
+          "title": "Face Makers | My Square Face Icon",
+          "description": "Browse browser-based tools centered on choosing and combining facial features for profile icons.",
+          "images": [
+            "/og-image.svg"
+          ]
+        }
+      }
+    },
+    "avatar-makers": {
+      "beforeMetadataSha256": "d70be897c73ecacc9caeb73e6c30877976b166c284602a21d6a1c763426339e6",
+      "beforeSsrSha256": "8010197f5ad7ba0d7060a34923cbfd7730feaf9105027a1b7c904a616e6f2e26",
+      "afterSsrSha256": "4da1e45e76cc906bb612cb7e31aeb2db92cb54206d611a65046ebcea6e420d8f",
+      "beforeMainSha256": "7ece227f8b9bdd9d26d38c383b3b9faeceaa75e974c52d68e054a1eceabd6c27",
+      "afterMain": "<main class=\"route-directory-shell\" data-ad-eligible=\"false\"><nav class=\"game-breadcrumb route-breadcrumb\" aria-label=\"Breadcrumb\"><a href=\"/\" data-navigation=\"document\">Home</a><span aria-hidden=\"true\">/</span><a href=\"/games\" data-navigation=\"document\">Games</a><span aria-hidden=\"true\">/</span><span aria-current=\"page\">Avatar Makers</span></nav><header class=\"route-directory-hero route-category-hero\"><p class=\"route-eyebrow\">Avatar game category</p><h1>Avatar Makers</h1><p>Browse tools for creating profile avatars, icons, and lightweight character portraits.</p></header><section class=\"route-directory-section\" aria-labelledby=\"category-games-heading\"><div class=\"route-section-heading\"><div><p class=\"route-eyebrow\">Current collection</p><h2 id=\"category-games-heading\">Avatar maker entries</h2></div><span>3 entries</span></div><ul class=\"game-grid route-game-list\" aria-label=\"Avatar maker entries\"><li><a class=\"game-list-card route-game-link\" data-game-id=\"square-face\" data-game-page-type=\"GAME\" href=\"/\" data-navigation=\"document\"><span class=\"route-game-type\">Browser game</span><strong>Square Face Generator</strong><span>Play the classic Square Face Generator online and create retro square face icons for avatars and profile images.</span><span class=\"route-card-action\">Open game</span></a></li><li><a class=\"game-list-card route-game-link\" data-game-id=\"oval-face\" data-game-page-type=\"GAME\" href=\"/oval-face-icon-generator\" data-navigation=\"document\"><span class=\"route-game-type\">Browser game</span><strong>Oval Face Icon Generator</strong><span>Play the classic Oval Face Icon Generator online and create cute rounded face icons in a modern browser.</span><span class=\"route-card-action\">Open game</span></a></li><li><a class=\"game-list-card route-game-link route-game-link-external\" data-game-id=\"pixel-art-avatar\" data-game-page-type=\"EXTERNAL_TOOL\" href=\"/pixel-art-avatar-icon-generator\" data-navigation=\"document\"><span class=\"route-game-type\">External tool</span><strong>Pixel Art Avatar Icon Generator</strong><span>Open the original icongenerators.net pixel avatar maker with visible attribution, usage tips, and a direct-link-only boundary.</span><span class=\"route-card-action\">View access details</span></a></li></ul></section><section class=\"route-directory-section\" aria-labelledby=\"category-choice-heading\"><h2 id=\"category-choice-heading\">Choose where to create</h2><p>Square Face Generator and Oval Face Icon Generator open maker pages on this site. Start with either entry if you want a square or rounded face icon.</p><p>Pixel Art Avatar Icon Generator is an external tool entry. Its card opens our access-details page first, where you can review the source and usage notes before visiting the original website.</p></section><section class=\"route-directory-section\" aria-labelledby=\"other-categories-heading\"><h2 id=\"other-categories-heading\">Other avatar categories</h2><p>Categories overlap: the same entry can appear in more than one group.</p><div class=\"route-category-links\"><a class=\"category-chip\" data-category-slug=\"face-makers\" href=\"/category/face-makers\" data-navigation=\"document\"><strong>Face Makers</strong><span>2 current entries</span></a><a class=\"category-chip\" data-category-slug=\"pixel-avatars\" href=\"/category/pixel-avatars\" data-navigation=\"document\"><strong>Pixel Avatars</strong><span>1 current entry</span></a><a class=\"category-chip\" data-category-slug=\"retro-flash\" href=\"/category/retro-flash\" data-navigation=\"document\"><strong>Retro Flash</strong><span>2 current entries</span></a><a class=\"category-chip\" data-category-slug=\"character-creators\" href=\"/category/character-creators\" data-navigation=\"document\"><strong>Character Creators</strong><span>1 current entry</span></a></div></section><div class=\"route-return-links\" aria-label=\"Continue browsing\"><a href=\"/games\" data-navigation=\"document\">Browse all avatar games</a><a href=\"/\" data-navigation=\"document\">Return to Square Face Generator</a></div></main>",
+      "afterMetadata": {
+        "title": {
+          "absolute": "Avatar Makers | My Square Face Icon"
+        },
+        "description": "Browse tools for creating profile avatars, icons, and lightweight character portraits.",
+        "alternates": {
+          "canonical": "https://mysquarefaceicon.com/category/avatar-makers"
+        },
+        "robots": {
+          "index": false,
+          "follow": true,
+          "googleBot": {
+            "index": false,
+            "follow": true
+          }
+        },
+        "openGraph": {
+          "type": "website",
+          "title": "Avatar Makers | My Square Face Icon",
+          "description": "Browse tools for creating profile avatars, icons, and lightweight character portraits.",
+          "url": "https://mysquarefaceicon.com/category/avatar-makers",
+          "siteName": "My Square Face Icon",
+          "images": [
+            {
+              "url": "/og-image.svg",
+              "width": 1200,
+              "height": 630,
+              "alt": "My Square Face Icon brand illustration"
+            }
+          ]
+        },
+        "twitter": {
+          "card": "summary_large_image",
+          "title": "Avatar Makers | My Square Face Icon",
+          "description": "Browse tools for creating profile avatars, icons, and lightweight character portraits.",
+          "images": [
+            "/og-image.svg"
+          ]
+        }
+      },
+      "choiceSection": "<section class=\"route-directory-section\" aria-labelledby=\"category-choice-heading\"><h2 id=\"category-choice-heading\">Choose where to create</h2><p>Square Face Generator and Oval Face Icon Generator open maker pages on this site. Start with either entry if you want a square or rounded face icon.</p><p>Pixel Art Avatar Icon Generator is an external tool entry. Its card opens our access-details page first, where you can review the source and usage notes before visiting the original website.</p></section>",
+      "otherSection": "<section class=\"route-directory-section\" aria-labelledby=\"other-categories-heading\"><h2 id=\"other-categories-heading\">Other avatar categories</h2><p>Categories overlap: the same entry can appear in more than one group.</p><div class=\"route-category-links\"><a class=\"category-chip\" data-category-slug=\"face-makers\" href=\"/category/face-makers\" data-navigation=\"document\"><strong>Face Makers</strong><span>2 current entries</span></a><a class=\"category-chip\" data-category-slug=\"pixel-avatars\" href=\"/category/pixel-avatars\" data-navigation=\"document\"><strong>Pixel Avatars</strong><span>1 current entry</span></a><a class=\"category-chip\" data-category-slug=\"retro-flash\" href=\"/category/retro-flash\" data-navigation=\"document\"><strong>Retro Flash</strong><span>2 current entries</span></a><a class=\"category-chip\" data-category-slug=\"character-creators\" href=\"/category/character-creators\" data-navigation=\"document\"><strong>Character Creators</strong><span>1 current entry</span></a></div></section>",
+      "schemaScripts": [
+        "<script type=\"application/ld+json\">{\"@context\":\"https://schema.org\",\"@type\":\"CollectionPage\",\"name\":\"Avatar Makers\",\"url\":\"https://mysquarefaceicon.com/category/avatar-makers\",\"mainEntity\":{\"@type\":\"ItemList\",\"numberOfItems\":3,\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Square Face Generator\",\"url\":\"https://mysquarefaceicon.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Oval Face Icon Generator\",\"url\":\"https://mysquarefaceicon.com/oval-face-icon-generator\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Pixel Art Avatar Icon Generator\",\"url\":\"https://mysquarefaceicon.com/pixel-art-avatar-icon-generator\"}]}}</script>",
+        "<script type=\"application/ld+json\">{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://mysquarefaceicon.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Games\",\"item\":\"https://mysquarefaceicon.com/games\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Avatar Makers\",\"item\":\"https://mysquarefaceicon.com/category/avatar-makers\"}]}</script>"
+      ],
+      "headingEdits": [
+        [
+          "<h2 id=\"category-games-heading\">Avatar maker entries</h2>",
+          "<h2 id=\"category-games-heading\">Available Avatar Makers</h2>"
+        ],
+        [
+          "aria-label=\"Avatar maker entries\"",
+          "aria-label=\"Available Avatar Makers\""
+        ]
+      ]
+    },
+    "pixel-avatars": {
+      "beforeMetadataSha256": "4772b48b7a469c9393cf9d513c03b42649312eaf8965266401f582d147d686f2",
+      "beforeSsrSha256": "227c2e386719514a75c92f2b15d2ff51bf35a41e3a21eba293a93a2236d39af9",
+      "afterSsrSha256": "6990b07688fb6fdef7eaced421f0f0303f1c182110901ded331ade2536049baa",
+      "beforeMainSha256": "c5f6ed3e259dcd26a9dd310a91ce1cdb872d33e4f7736e47dcd9c3100cbe67da",
+      "afterMain": "<main class=\"route-directory-shell\" data-ad-eligible=\"false\"><nav class=\"game-breadcrumb route-breadcrumb\" aria-label=\"Breadcrumb\"><a href=\"/\" data-navigation=\"document\">Home</a><span aria-hidden=\"true\">/</span><a href=\"/games\" data-navigation=\"document\">Games</a><span aria-hidden=\"true\">/</span><span aria-current=\"page\">Pixel Avatars</span></nav><header class=\"route-directory-hero route-category-hero\"><p class=\"route-eyebrow\">Avatar game category</p><h1>Pixel Avatars</h1><p>Browse pixel-art and chibi-style avatar tools with clear on-site or external-use boundaries.</p></header><section class=\"route-directory-section\" aria-labelledby=\"category-games-heading\"><div class=\"route-section-heading\"><div><p class=\"route-eyebrow\">Current collection</p><h2 id=\"category-games-heading\">Pixel avatar entries</h2></div><span>1 entry</span></div><ul class=\"game-grid route-game-list\" aria-label=\"Pixel avatar entries\"><li><a class=\"game-list-card route-game-link route-game-link-external\" data-game-id=\"pixel-art-avatar\" data-game-page-type=\"EXTERNAL_TOOL\" href=\"/pixel-art-avatar-icon-generator\" data-navigation=\"document\"><span class=\"route-game-type\">External tool</span><strong>Pixel Art Avatar Icon Generator</strong><span>Open the original icongenerators.net pixel avatar maker with visible attribution, usage tips, and a direct-link-only boundary.</span><span class=\"route-card-action\">View access details</span></a></li></ul></section><section class=\"route-directory-section\" aria-labelledby=\"category-choice-heading\"><h2 id=\"category-choice-heading\">Before opening the pixel avatar tool</h2><p>The Pixel Art Avatar Icon Generator entry is an external tool. Its card opens the access-details page on this site, not an embedded editor.</p><p>Read the source and usage notes on that page before following the link to the original website. For the site&#x27;s Square and Oval entries, browse <a href=\"/category/face-makers\" data-navigation=\"document\">Face Makers</a>.</p></section><section class=\"route-directory-section\" aria-labelledby=\"other-categories-heading\"><h2 id=\"other-categories-heading\">Other avatar categories</h2><p>Categories overlap: the same entry can appear in more than one group.</p><div class=\"route-category-links\"><a class=\"category-chip\" data-category-slug=\"face-makers\" href=\"/category/face-makers\" data-navigation=\"document\"><strong>Face Makers</strong><span>2 current entries</span></a><a class=\"category-chip\" data-category-slug=\"avatar-makers\" href=\"/category/avatar-makers\" data-navigation=\"document\"><strong>Avatar Makers</strong><span>3 current entries</span></a><a class=\"category-chip\" data-category-slug=\"retro-flash\" href=\"/category/retro-flash\" data-navigation=\"document\"><strong>Retro Flash</strong><span>2 current entries</span></a><a class=\"category-chip\" data-category-slug=\"character-creators\" href=\"/category/character-creators\" data-navigation=\"document\"><strong>Character Creators</strong><span>1 current entry</span></a></div></section><div class=\"route-return-links\" aria-label=\"Continue browsing\"><a href=\"/games\" data-navigation=\"document\">Browse all avatar games</a><a href=\"/\" data-navigation=\"document\">Return to Square Face Generator</a></div></main>",
+      "afterMetadata": {
+        "title": {
+          "absolute": "Pixel Avatars | My Square Face Icon"
+        },
+        "description": "Browse pixel-art and chibi-style avatar tools with clear on-site or external-use boundaries.",
+        "alternates": {
+          "canonical": "https://mysquarefaceicon.com/category/pixel-avatars"
+        },
+        "robots": {
+          "index": false,
+          "follow": true,
+          "googleBot": {
+            "index": false,
+            "follow": true
+          }
+        },
+        "openGraph": {
+          "type": "website",
+          "title": "Pixel Avatars | My Square Face Icon",
+          "description": "Browse pixel-art and chibi-style avatar tools with clear on-site or external-use boundaries.",
+          "url": "https://mysquarefaceicon.com/category/pixel-avatars",
+          "siteName": "My Square Face Icon",
+          "images": [
+            {
+              "url": "/og-image.svg",
+              "width": 1200,
+              "height": 630,
+              "alt": "My Square Face Icon brand illustration"
+            }
+          ]
+        },
+        "twitter": {
+          "card": "summary_large_image",
+          "title": "Pixel Avatars | My Square Face Icon",
+          "description": "Browse pixel-art and chibi-style avatar tools with clear on-site or external-use boundaries.",
+          "images": [
+            "/og-image.svg"
+          ]
+        }
+      },
+      "choiceSection": "<section class=\"route-directory-section\" aria-labelledby=\"category-choice-heading\"><h2 id=\"category-choice-heading\">Before opening the pixel avatar tool</h2><p>The Pixel Art Avatar Icon Generator entry is an external tool. Its card opens the access-details page on this site, not an embedded editor.</p><p>Read the source and usage notes on that page before following the link to the original website. For the site&#x27;s Square and Oval entries, browse <a href=\"/category/face-makers\" data-navigation=\"document\">Face Makers</a>.</p></section>",
+      "otherSection": "<section class=\"route-directory-section\" aria-labelledby=\"other-categories-heading\"><h2 id=\"other-categories-heading\">Other avatar categories</h2><p>Categories overlap: the same entry can appear in more than one group.</p><div class=\"route-category-links\"><a class=\"category-chip\" data-category-slug=\"face-makers\" href=\"/category/face-makers\" data-navigation=\"document\"><strong>Face Makers</strong><span>2 current entries</span></a><a class=\"category-chip\" data-category-slug=\"avatar-makers\" href=\"/category/avatar-makers\" data-navigation=\"document\"><strong>Avatar Makers</strong><span>3 current entries</span></a><a class=\"category-chip\" data-category-slug=\"retro-flash\" href=\"/category/retro-flash\" data-navigation=\"document\"><strong>Retro Flash</strong><span>2 current entries</span></a><a class=\"category-chip\" data-category-slug=\"character-creators\" href=\"/category/character-creators\" data-navigation=\"document\"><strong>Character Creators</strong><span>1 current entry</span></a></div></section>",
+      "schemaScripts": [
+        "<script type=\"application/ld+json\">{\"@context\":\"https://schema.org\",\"@type\":\"CollectionPage\",\"name\":\"Pixel Avatars\",\"url\":\"https://mysquarefaceicon.com/category/pixel-avatars\",\"mainEntity\":{\"@type\":\"ItemList\",\"numberOfItems\":1,\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Pixel Art Avatar Icon Generator\",\"url\":\"https://mysquarefaceicon.com/pixel-art-avatar-icon-generator\"}]}}</script>",
+        "<script type=\"application/ld+json\">{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://mysquarefaceicon.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Games\",\"item\":\"https://mysquarefaceicon.com/games\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Pixel Avatars\",\"item\":\"https://mysquarefaceicon.com/category/pixel-avatars\"}]}</script>"
+      ],
+      "headingEdits": [
+        [
+          "<h2 id=\"category-games-heading\">Pixel avatar entries</h2>",
+          "<h2 id=\"category-games-heading\">Available Pixel Avatars</h2>"
+        ],
+        [
+          "aria-label=\"Pixel avatar entries\"",
+          "aria-label=\"Available Pixel Avatars\""
+        ]
+      ]
+    },
+    "retro-flash": {
+      "beforeMetadataSha256": "60927e34aaa05087528d0dc57027a60e261088606b25297e165cb370ff7cb3dc",
+      "beforeSsrSha256": "e8d5b0c5fc3fe6cb01dfc387336ed83c354d888a4b373dd1d103b01d0acab083",
+      "afterSsrSha256": "727e8bea37750d4b28b16c293c8a51adab7bfcaec2be5189714804a4357f1beb",
+      "beforeMainSha256": "0fda9a795efa1deb9ba88d34d27011f61c8c475c4952ded7c618d038956d6c40",
+      "afterMain": "<main class=\"route-directory-shell\" data-ad-eligible=\"false\"><nav class=\"game-breadcrumb route-breadcrumb\" aria-label=\"Breadcrumb\"><a href=\"/\" data-navigation=\"document\">Home</a><span aria-hidden=\"true\">/</span><a href=\"/games\" data-navigation=\"document\">Games</a><span aria-hidden=\"true\">/</span><span aria-current=\"page\">Retro Flash</span></nav><header class=\"route-directory-hero route-category-hero\"><p class=\"route-eyebrow\">Avatar game category</p><h1>Retro Flash</h1><p>Browse preserved creator experiences that run in the browser through a compatible Flash runtime.</p></header><section class=\"route-directory-section\" aria-labelledby=\"category-games-heading\"><div class=\"route-section-heading\"><div><p class=\"route-eyebrow\">Current collection</p><h2 id=\"category-games-heading\">Retro Flash entries</h2></div><span>2 entries</span></div><ul class=\"game-grid route-game-list\" aria-label=\"Retro Flash entries\"><li><a class=\"game-list-card route-game-link\" data-game-id=\"square-face\" data-game-page-type=\"GAME\" href=\"/\" data-navigation=\"document\"><span class=\"route-game-type\">Browser game</span><strong>Square Face Generator</strong><span>Play the classic Square Face Generator online and create retro square face icons for avatars and profile images.</span><span class=\"route-card-action\">Open game</span></a></li><li><a class=\"game-list-card route-game-link\" data-game-id=\"oval-face\" data-game-page-type=\"GAME\" href=\"/oval-face-icon-generator\" data-navigation=\"document\"><span class=\"route-game-type\">Browser game</span><strong>Oval Face Icon Generator</strong><span>Play the classic Oval Face Icon Generator online and create cute rounded face icons in a modern browser.</span><span class=\"route-card-action\">Open game</span></a></li></ul></section><section class=\"route-directory-section\" aria-labelledby=\"category-choice-heading\"><h2 id=\"category-choice-heading\">Opening the Flash-based makers</h2><p>Square Face Generator and Oval Face Icon Generator use Flash-based game files with a browser player. Open a maker page on this site, then select Play to load its player.</p><p>This category does not run a game or download its player on its own. See the maker page for controls, saving guidance, and source or usage limitations.</p></section><section class=\"route-directory-section\" aria-labelledby=\"other-categories-heading\"><h2 id=\"other-categories-heading\">Other avatar categories</h2><p>Categories overlap: the same entry can appear in more than one group.</p><div class=\"route-category-links\"><a class=\"category-chip\" data-category-slug=\"face-makers\" href=\"/category/face-makers\" data-navigation=\"document\"><strong>Face Makers</strong><span>2 current entries</span></a><a class=\"category-chip\" data-category-slug=\"avatar-makers\" href=\"/category/avatar-makers\" data-navigation=\"document\"><strong>Avatar Makers</strong><span>3 current entries</span></a><a class=\"category-chip\" data-category-slug=\"pixel-avatars\" href=\"/category/pixel-avatars\" data-navigation=\"document\"><strong>Pixel Avatars</strong><span>1 current entry</span></a><a class=\"category-chip\" data-category-slug=\"character-creators\" href=\"/category/character-creators\" data-navigation=\"document\"><strong>Character Creators</strong><span>1 current entry</span></a></div></section><div class=\"route-return-links\" aria-label=\"Continue browsing\"><a href=\"/games\" data-navigation=\"document\">Browse all avatar games</a><a href=\"/\" data-navigation=\"document\">Return to Square Face Generator</a></div></main>",
+      "afterMetadata": {
+        "title": {
+          "absolute": "Retro Flash | My Square Face Icon"
+        },
+        "description": "Browse preserved creator experiences that run in the browser through a compatible Flash runtime.",
+        "alternates": {
+          "canonical": "https://mysquarefaceicon.com/category/retro-flash"
+        },
+        "robots": {
+          "index": false,
+          "follow": true,
+          "googleBot": {
+            "index": false,
+            "follow": true
+          }
+        },
+        "openGraph": {
+          "type": "website",
+          "title": "Retro Flash | My Square Face Icon",
+          "description": "Browse preserved creator experiences that run in the browser through a compatible Flash runtime.",
+          "url": "https://mysquarefaceicon.com/category/retro-flash",
+          "siteName": "My Square Face Icon",
+          "images": [
+            {
+              "url": "/og-image.svg",
+              "width": 1200,
+              "height": 630,
+              "alt": "My Square Face Icon brand illustration"
+            }
+          ]
+        },
+        "twitter": {
+          "card": "summary_large_image",
+          "title": "Retro Flash | My Square Face Icon",
+          "description": "Browse preserved creator experiences that run in the browser through a compatible Flash runtime.",
+          "images": [
+            "/og-image.svg"
+          ]
+        }
+      },
+      "choiceSection": "<section class=\"route-directory-section\" aria-labelledby=\"category-choice-heading\"><h2 id=\"category-choice-heading\">Opening the Flash-based makers</h2><p>Square Face Generator and Oval Face Icon Generator use Flash-based game files with a browser player. Open a maker page on this site, then select Play to load its player.</p><p>This category does not run a game or download its player on its own. See the maker page for controls, saving guidance, and source or usage limitations.</p></section>",
+      "otherSection": "<section class=\"route-directory-section\" aria-labelledby=\"other-categories-heading\"><h2 id=\"other-categories-heading\">Other avatar categories</h2><p>Categories overlap: the same entry can appear in more than one group.</p><div class=\"route-category-links\"><a class=\"category-chip\" data-category-slug=\"face-makers\" href=\"/category/face-makers\" data-navigation=\"document\"><strong>Face Makers</strong><span>2 current entries</span></a><a class=\"category-chip\" data-category-slug=\"avatar-makers\" href=\"/category/avatar-makers\" data-navigation=\"document\"><strong>Avatar Makers</strong><span>3 current entries</span></a><a class=\"category-chip\" data-category-slug=\"pixel-avatars\" href=\"/category/pixel-avatars\" data-navigation=\"document\"><strong>Pixel Avatars</strong><span>1 current entry</span></a><a class=\"category-chip\" data-category-slug=\"character-creators\" href=\"/category/character-creators\" data-navigation=\"document\"><strong>Character Creators</strong><span>1 current entry</span></a></div></section>",
+      "schemaScripts": [
+        "<script type=\"application/ld+json\">{\"@context\":\"https://schema.org\",\"@type\":\"CollectionPage\",\"name\":\"Retro Flash\",\"url\":\"https://mysquarefaceicon.com/category/retro-flash\",\"mainEntity\":{\"@type\":\"ItemList\",\"numberOfItems\":2,\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Square Face Generator\",\"url\":\"https://mysquarefaceicon.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Oval Face Icon Generator\",\"url\":\"https://mysquarefaceicon.com/oval-face-icon-generator\"}]}}</script>",
+        "<script type=\"application/ld+json\">{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://mysquarefaceicon.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Games\",\"item\":\"https://mysquarefaceicon.com/games\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Retro Flash\",\"item\":\"https://mysquarefaceicon.com/category/retro-flash\"}]}</script>"
+      ],
+      "headingEdits": [
+        [
+          "<h2 id=\"category-games-heading\">Retro Flash entries</h2>",
+          "<h2 id=\"category-games-heading\">Available Retro Flash</h2>"
+        ],
+        [
+          "aria-label=\"Retro Flash entries\"",
+          "aria-label=\"Available Retro Flash\""
+        ]
+      ]
+    },
+    "character-creators": {
+      "beforeMetadataSha256": "941aa1f73476fd1722a42451999954a45997f9dccf915dae18cede1403c1a94b",
+      "beforeSsrSha256": "fa33f884f95b96b3898b3a29d2f24491bbc2bc879a981ba4e375d446151dca39",
+      "afterSsrSha256": "2249bf3fdcb29e65d4126826c7b90e6d72b0cc58606fe350fb598bbb8313c875",
+      "beforeMainSha256": "77415efe4f4e6b446e9efae4f19b2b61bedf4544f447293565a81b8ab34d7f0b",
+      "afterMain": "<main class=\"route-directory-shell\" data-ad-eligible=\"false\"><nav class=\"game-breadcrumb route-breadcrumb\" aria-label=\"Breadcrumb\"><a href=\"/\" data-navigation=\"document\">Home</a><span aria-hidden=\"true\">/</span><a href=\"/games\" data-navigation=\"document\">Games</a><span aria-hidden=\"true\">/</span><span aria-current=\"page\">Character Creators</span></nav><header class=\"route-directory-hero route-category-hero\"><p class=\"route-eyebrow\">Avatar game category</p><h1>Character Creators</h1><p>Browse focused tools for building a character look that can work as an avatar or profile image.</p></header><section class=\"route-directory-section\" aria-labelledby=\"category-games-heading\"><div class=\"route-section-heading\"><div><p class=\"route-eyebrow\">Current collection</p><h2 id=\"category-games-heading\">Character creator entries</h2></div><span>1 entry</span></div><ul class=\"game-grid route-game-list\" aria-label=\"Character creator entries\"><li><a class=\"game-list-card route-game-link route-game-link-external\" data-game-id=\"pixel-art-avatar\" data-game-page-type=\"EXTERNAL_TOOL\" href=\"/pixel-art-avatar-icon-generator\" data-navigation=\"document\"><span class=\"route-game-type\">External tool</span><strong>Pixel Art Avatar Icon Generator</strong><span>Open the original icongenerators.net pixel avatar maker with visible attribution, usage tips, and a direct-link-only boundary.</span><span class=\"route-card-action\">View access details</span></a></li></ul></section><section class=\"route-directory-section\" aria-labelledby=\"category-choice-heading\"><h2 id=\"category-choice-heading\">About this collection</h2><p>The current character-creator entry is Pixel Art Avatar Icon Generator. It is listed here as an external tool, so this collection is a starting point for browsing rather than an on-site character editor.</p><p>For a face-based character, browse <a href=\"/category/face-makers\" data-navigation=\"document\">Face Makers</a> for the Square and Oval entries. Compare their square and rounded face styles before choosing a maker page.</p></section><section class=\"route-directory-section\" aria-labelledby=\"other-categories-heading\"><h2 id=\"other-categories-heading\">Other avatar categories</h2><p>Categories overlap: the same entry can appear in more than one group.</p><div class=\"route-category-links\"><a class=\"category-chip\" data-category-slug=\"face-makers\" href=\"/category/face-makers\" data-navigation=\"document\"><strong>Face Makers</strong><span>2 current entries</span></a><a class=\"category-chip\" data-category-slug=\"avatar-makers\" href=\"/category/avatar-makers\" data-navigation=\"document\"><strong>Avatar Makers</strong><span>3 current entries</span></a><a class=\"category-chip\" data-category-slug=\"pixel-avatars\" href=\"/category/pixel-avatars\" data-navigation=\"document\"><strong>Pixel Avatars</strong><span>1 current entry</span></a><a class=\"category-chip\" data-category-slug=\"retro-flash\" href=\"/category/retro-flash\" data-navigation=\"document\"><strong>Retro Flash</strong><span>2 current entries</span></a></div></section><div class=\"route-return-links\" aria-label=\"Continue browsing\"><a href=\"/games\" data-navigation=\"document\">Browse all avatar games</a><a href=\"/\" data-navigation=\"document\">Return to Square Face Generator</a></div></main>",
+      "afterMetadata": {
+        "title": {
+          "absolute": "Character Creators | My Square Face Icon"
+        },
+        "description": "Browse focused tools for building a character look that can work as an avatar or profile image.",
+        "alternates": {
+          "canonical": "https://mysquarefaceicon.com/category/character-creators"
+        },
+        "robots": {
+          "index": false,
+          "follow": true,
+          "googleBot": {
+            "index": false,
+            "follow": true
+          }
+        },
+        "openGraph": {
+          "type": "website",
+          "title": "Character Creators | My Square Face Icon",
+          "description": "Browse focused tools for building a character look that can work as an avatar or profile image.",
+          "url": "https://mysquarefaceicon.com/category/character-creators",
+          "siteName": "My Square Face Icon",
+          "images": [
+            {
+              "url": "/og-image.svg",
+              "width": 1200,
+              "height": 630,
+              "alt": "My Square Face Icon brand illustration"
+            }
+          ]
+        },
+        "twitter": {
+          "card": "summary_large_image",
+          "title": "Character Creators | My Square Face Icon",
+          "description": "Browse focused tools for building a character look that can work as an avatar or profile image.",
+          "images": [
+            "/og-image.svg"
+          ]
+        }
+      },
+      "choiceSection": "<section class=\"route-directory-section\" aria-labelledby=\"category-choice-heading\"><h2 id=\"category-choice-heading\">About this collection</h2><p>The current character-creator entry is Pixel Art Avatar Icon Generator. It is listed here as an external tool, so this collection is a starting point for browsing rather than an on-site character editor.</p><p>For a face-based character, browse <a href=\"/category/face-makers\" data-navigation=\"document\">Face Makers</a> for the Square and Oval entries. Compare their square and rounded face styles before choosing a maker page.</p></section>",
+      "otherSection": "<section class=\"route-directory-section\" aria-labelledby=\"other-categories-heading\"><h2 id=\"other-categories-heading\">Other avatar categories</h2><p>Categories overlap: the same entry can appear in more than one group.</p><div class=\"route-category-links\"><a class=\"category-chip\" data-category-slug=\"face-makers\" href=\"/category/face-makers\" data-navigation=\"document\"><strong>Face Makers</strong><span>2 current entries</span></a><a class=\"category-chip\" data-category-slug=\"avatar-makers\" href=\"/category/avatar-makers\" data-navigation=\"document\"><strong>Avatar Makers</strong><span>3 current entries</span></a><a class=\"category-chip\" data-category-slug=\"pixel-avatars\" href=\"/category/pixel-avatars\" data-navigation=\"document\"><strong>Pixel Avatars</strong><span>1 current entry</span></a><a class=\"category-chip\" data-category-slug=\"retro-flash\" href=\"/category/retro-flash\" data-navigation=\"document\"><strong>Retro Flash</strong><span>2 current entries</span></a></div></section>",
+      "schemaScripts": [
+        "<script type=\"application/ld+json\">{\"@context\":\"https://schema.org\",\"@type\":\"CollectionPage\",\"name\":\"Character Creators\",\"url\":\"https://mysquarefaceicon.com/category/character-creators\",\"mainEntity\":{\"@type\":\"ItemList\",\"numberOfItems\":1,\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Pixel Art Avatar Icon Generator\",\"url\":\"https://mysquarefaceicon.com/pixel-art-avatar-icon-generator\"}]}}</script>",
+        "<script type=\"application/ld+json\">{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://mysquarefaceicon.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Games\",\"item\":\"https://mysquarefaceicon.com/games\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Character Creators\",\"item\":\"https://mysquarefaceicon.com/category/character-creators\"}]}</script>"
+      ],
+      "headingEdits": [
+        [
+          "<h2 id=\"category-games-heading\">Character creator entries</h2>",
+          "<h2 id=\"category-games-heading\">Available Character Creators</h2>"
+        ],
+        [
+          "aria-label=\"Character creator entries\"",
+          "aria-label=\"Available Character Creators\""
+        ]
+      ]
+    }
+  },
+  "frozenFiles": {
+    "app/games/[slug]/page.tsx": "0131595a7dc55e0b9227944e41f5cf54548213f5527cc62f034eb8a61c05aab4",
+    "app/games/page.tsx": "5c154f0c23e174f94b68ce7e705ae978f7ecb6ffab15d04fd1439e148234d3c5",
+    "app/not-found.tsx": "508a22e3b5b22cacde2ccf576b7a4b47f6cdfdc6b29138bb3cbf8eada71665c8",
+    "components/CuratedGalleryPreview.tsx": "0238422e69aa37737063f1600e11a82505b0b8f94bd813161eb8ea6985e78792",
+    "components/game-player/GamePlayer.tsx": "142cf22ac3a485c78285d920bbe84114f3931a38f0e9aec067bbf8ca2e562d5c",
+    "components/game-player/adapters/ExternalLinkAdapter.tsx": "f7d4c98916a2a25785175af7ae6bf009a700f68271b8345322fd904c2431f45c",
+    "components/game-player/adapters/Html5Adapter.tsx": "524f0c49fd8af608ddf86aed872fe1cd0af72839b30391206be8eae639e08325",
+    "components/game-player/adapters/IframeAdapterFrame.tsx": "af31a35c493f607bacbfb548b386f604cbb98c7722a32cf580da11a7b7b593b6",
+    "components/game-player/adapters/LocalIframeAdapter.tsx": "b73408e66cb4dec9fe5b8460960627c95a1a92c43282345562dbfd173b3f4d9f",
+    "components/game-player/adapters/OfficialIframeAdapter.tsx": "0668f81f43684d59522799c55ecc4affe8fb24fdfc571af7e6ac8e56118cc23c",
+    "components/game-player/adapters/RuffleAdapter.tsx": "5fcff6669f4ca75147728e8a73434cdef8abb2823325110d585ad46a1cfe8ada",
+    "components/game-player/adapters/adapter-types.ts": "4e6c492777363116b8a450d5b7e822abdf99609e518f15a3fc682f2d6fd84df5",
+    "components/game/AdSlotShell.tsx": "3c1aaa1ab799dddb7e7e0bb607a31c0cc9d77683c42554b7663bc4bdc4a28a27",
+    "components/game/CategoryChip.tsx": "ef65d12fb1ace3a669ed33e14379cc76d8edb0b5822ef19acdcd0834f836c1e5",
+    "components/game/EmptyState.tsx": "2ef1bad5737139a2cd9c1cf9d003b28a9f202a50fa9925072cea8e35cef549d2",
+    "components/game/GameBreadcrumb.tsx": "db7beaf87e42bf14ed8966dd1912dfa81dc34b1a09eec87d40a446e28daceb3f",
+    "components/game/GameCard.tsx": "e405ecff0e4a26ef3ed686ef5ac7c06d5c622312d17a010bdcae6e495c66edcd",
+    "components/game/GameControls.tsx": "2a738d34297ad718e59a678ea9572d8c6cc981180e083e8fca7cb03e21c1b4da",
+    "components/game/GameDetailTemplate.tsx": "3ed1e3577a95db9c5bf455d52fa1f09a7b5be214f16d3706773b2c5d6ae81d4a",
+    "components/game/GameFaq.tsx": "c680b9728a08c896095bb85fc688f6d451360142e0bb447763b8fed0a0a1139a",
+    "components/game/GameGrid.tsx": "ae5a454723185b9c2b34f2129c00e1e3cc3d6336567034d9b4f7798767b71f6c",
+    "components/game/GameLink.tsx": "0c260fc2424a48582bc75c209763c3de36860c9a953451ff302574c03297d7d3",
+    "components/game/GameMeta.tsx": "d7c6e283401f295579cff65cd01ee761626d727098fbc6e983e8d18e47f807e9",
+    "components/game/GamePlayer.tsx": "a568634e413cacc1ef816bd2835be4916dfc6094f9cc4d3a2ee3a3fd5d51b2da",
+    "components/game/GameSourceRights.tsx": "ebc2ec19b91bf5dde44eae24ca75b6ee208a487c707a9862f694c6d88dbd2243",
+    "components/game/README.md": "4c7ea3c7e616a686fbf08567f8b9e28082912a2dbcbfc7a73d3166867c172f89",
+    "components/game/RelatedGames.tsx": "1fa094f28bd8b0855c7869596b9df55b0072a48a8db6d3db8c6558f954209aa7",
+    "components/home/CoreGamePreview.tsx": "9a05388d53d969ef1ea1f4ea9a6273a0ebd1cd8ec6d1df43a1afd8da1c4c44a1",
+    "components/home/HomeDiscoveryRegion.tsx": "8652a91eeeb4650230235422c661be58841a49475ce1bc446425c7e2ac697b04",
+    "components/home/HomeHero.tsx": "d7c0c2c35b98735c002d4a9066b68615e73df77326cc42468eaee6607b442fd3",
+    "components/home/HomeResourceLinks.tsx": "fd03f53ecc08510a86e3edd54864e132af9e70b363a7d5dee4c50d1eea207e23",
+    "data/ai-crawler-policy.json": "adea8bf57c056c93b319da9033654f573989948058ab04a7c74e4739c472487c",
+    "data/curated-icon-ideas.ts": "b51d0f7b57249b1e3cfe0e16bede29688154814168a2c6271a7388ad10933dce",
+    "data/game-categories.ts": "b0bbb1eccbc70bdc70323c05da94acc725df06d857c70eaba8860f5b3e701d8d",
+    "data/games/README.md": "71272ce378d8adc438b34b6d60e58080fa32b8728fd9c513e6aad2001eac24ee",
+    "data/games/oval-face.ts": "03d3c9d884161baafd9f5baadf85bbb05567324cc8e7251f094ca0bbe4b872fe",
+    "data/games/pixel-art-avatar.ts": "29d6d8696f5ad1d4ef59ee45080d1ae42723f38640c56c0cf0a685c7fc19c7b8",
+    "data/games/square-face.ts": "5f70eb18ae8e87db1db4d2603c080e5a4b01d44ae2b57f7abcf9afbf26550d0e",
+    "lib/games/catalog.ts": "6cc0df85e3acf146b3cc18b63cc4785982607fc0e59142ce89f59d2d6ef0ac0d",
+    "lib/games/categories.ts": "94213ee06bcfc6d621c2e0f4e260c6a91e0e161048730813fced1ee0320d52a4",
+    "lib/games/category-content.ts": "a5005bd17bcc5b81541ad97b0cebc9653f04e3086ef55dbcd5145a9c7bc01db6",
+    "lib/games/category-policy.ts": "7e21cea3f2fee12e29f8aca9cbe5b47c2316963572278aae9b8f531ccb4c7454",
+    "lib/games/directory-policy.ts": "72fc949b2d939681de626cefac8d43be4bb22042c6a5fe9a5eb509a942af7b30",
+    "lib/games/directory.ts": "ae6f5e98a8886478ec3daafecc7801d99ad4725d63e81faa1dcf5dcaedab0f3d",
+    "lib/games/game-player-model.ts": "42672e8d0917e9d7d6a1b28137e505ecd4d7b09ba40e3c971751b6d7f3fbe84c",
+    "lib/games/game-schema.ts": "b3d036c8973bc9562b99b55058e042d9040605f6e04f008dc54378eb005e8df6",
+    "lib/games/home-discovery.ts": "b172dd4a9e807754f59dfe5f9bb5b42fdc2d360bd89c54eab504f5577dac166e",
+    "lib/games/oval-legacy-page.ts": "29a465e18d5a0520e1e4db970f7fa5b7b23b6022f317f890d31c8ba22efa4f79",
+    "lib/games/pixel-external-page.ts": "00ef4fb078b36124ca0ba8f21d1823ce12caad1886908f9765fe1dc9b27626df",
+    "lib/games/routes.ts": "058434c725a09ae921c2c5f184396377873ad67603130f985fcfe39bcd97c5a6",
+    "lib/games/square-homepage.ts": "ce7d111d8a4df65194394ed31468a43fac96c83da1f53c8761090f159efe3aa4",
+    "lib/seo/canonical-origin.ts": "2d506dc08f622a898efd6eb57c9210018d2b8ba73ec8666a3bd4c9685e831fd9",
+    "lib/seo/category-sample.ts": "480e51f9faaf60b3260b54f7bdd539bf8574fd24f2fc06440d62ecadbb8d190e",
+    "lib/seo/game-metadata.ts": "87e7f42b085e2714cd22bce3634ccf1272fa822fb70b77292c5831d0f38fe660",
+    "lib/seo/game-structured-data.ts": "84193180e9b8827a2566d38585ce753b94ee30f4c9b5f6aee4fe22da3c875391",
+    "lib/seo/games-directory.ts": "02da1204cd8dac745877c5fd1507d55921fb611f788e714225839918413ec4a0",
+    "public/games/square-face-cover.png": "15a5c93f79859441eef3032ce45e07abc2e91a7520a9aaef42158dd4fe00a535",
+    "scripts/category-sample-test-utils.mjs": "a5ed8f340980c011f8e8e42cf960d5dd6a0483aa332d150b39b5a346bd18b472",
+    "scripts/check-about-rights.mjs": "5d1591d13e293168dda865890daecbd33048bfca16b569a4059a262afae94868",
+    "scripts/check-ai-crawler-policy.mjs": "76e030b11a653a01ed101e13c06460f29354f55d33c1e96aab4ace3f53be5042",
+    "scripts/check-editorial-rights.mjs": "1ec7268b707490f6b55d297b5bfb7a1b36f944da45ddcc8d6f561a52518a503b",
+    "scripts/check-gallery-rights.mjs": "bd2ed64fb002334e4e3d72527ec28e87414877bd8777535b97ca102b4953996f",
+    "scripts/check-games-index.mjs": "df86ca15473cc373707d0451809baf3a81565a931a0536532b8da21c0e694282",
+    "scripts/check-locale-rights.mjs": "05acbc5cf323e2a024e1f664d0a71badaede373a7b9955627020336403b5aeef",
+    "scripts/check-oval-legacy-page.mjs": "e956d6505ff788195c61f9e664cb63bc98e04bc75bd940871df0710fff612bc2",
+    "scripts/check-pixel-external-page.mjs": "51df87ab42a045b6b37b494805cefa4e8841da934fbfe6caaafd398b52828ad9",
+    "scripts/check-square-homepage.mjs": "41e99e6ec5b81d0ca3cc849cb8705d13bc87e1a2b52f772c8b6d2823f2d6c852",
+    "scripts/check-terms-rights.mjs": "62ab3d26bb2459fe9abe92a1c520e740cba77f01cec5324a7d19ddadfe6dba50",
+    "scripts/fixtures/category-sample-approved-source-delta.json": "2d121f1f37eb1366d8259febab3e7df801c0f2fe74f976f06294c0ec09c4964f",
+    "scripts/fixtures/category-sample-baseline.json": "850a3175bfdbf7fff5e7af50730be85ca88b572194dac7da9ff21fae497cadda",
+    "scripts/fixtures/games-index-approved-source-delta.json": "abeb25af3c27fd7b6f1c9479be31c7d8233b91587a1401b2ae3b7d00fa8d9cec",
+    "scripts/games-index-compat.mjs": "fc9b87e8c900d32b3058d4a023ff2e58374e173ddd932671ac7079093062ead9",
+    "scripts/robots-policy.mjs": "0d3f85f8568a4b17a53c2eaa82fd06460a14262160ba53131f29978c5f4416ed",
+    "scripts/run-canonical-host-check.mjs": "99c282d9246c3a3c060c9b697d0c4a769e6b7622a63b97ab99899d41bc2edc4b",
+    "scripts/run-game-component-check.mjs": "bf05d0f3119b094bc4674846c71bbc69482541921ba199ec693dce021ba86e62",
+    "scripts/run-game-data-check.mjs": "985321918bfc7abdbea07a675b710d40fe8ddbbfa6d128e24e67cd90309f536b",
+    "scripts/run-game-metadata-check.mjs": "a6a16a08338143f1ada4f8f446e89f2e08208c0896cf884a5d494c894931ccf8",
+    "scripts/run-game-player-check.mjs": "59f17f0f2dacc0b596f572a9a1871e58f78623a267257e3f33e7f1eac7bd9f09",
+    "scripts/run-game-route-check.mjs": "be951b8407d08aadf9e1b2b29dda30fe33ffb133af6cd8ee6e8c7897a95eac44",
+    "scripts/run-game-template-check.mjs": "c7121e18a868db05d702639ff8448cbaad958c20117e91b71fb0ed71d98ced8d",
+    "scripts/run-home-discovery-check.mjs": "70cb3221dedd42081b24c201902a3dce2ff46c31e54b8ee478384da4545b4196",
+    "scripts/run-home-gallery-check.mjs": "e0bf58437b6de392dd98af862c97be25107432cec1a24df9a8d9d028b7ab738d",
+    "scripts/run-home-hero-check.mjs": "40ad21661b97f27e306c2eaa8d130637ecbd9a31d5c72c8ef25c214fb3a276e0",
+    "scripts/run-home-information-architecture-check.mjs": "6fc9c018915cb8cbdf68f23fde16239be0cb246bd6f92eab7000b243a98d9f66",
+    "scripts/run-home-performance-check.mjs": "58c55d5a6be4d07961c9163167fb2b1394c2807d4a31b8522da4e79ff7d9d308",
+    "scripts/validate-canonical-host.ts": "1c7d329c5a0d5ac1b06432381f0933cfe70e0f17f8b4081f5e9695d23a6d32aa",
+    "scripts/validate-game-components.tsx": "3ba59b4e768241a57ec53da796c5cca2c35c6b69c95259f827166c0780a7b74d",
+    "scripts/validate-game-data.ts": "7e6f204d5397830accd8e33534939146bcbdd934b3ec49d8653c113b412d73bd",
+    "scripts/validate-game-metadata.ts": "72c8aa3f30b341d9eec53d55551ddd422c9271aca9b52d203469a8910b11b403",
+    "scripts/validate-game-player.tsx": "370b6809735b2b1ccbd99003fea04ea0f06a9761950333d765a661b3157797eb",
+    "scripts/validate-game-routes.ts": "6c9795ea4b3611650465bbe424ad0e88514c08fa9761cf4952c1ca1b54ef7680",
+    "scripts/validate-game-template.tsx": "5427f7fbd835530eaa34ef7fc514692b203f8f312e71624ed51df3dc14af6406",
+    "scripts/validate-home-discovery.tsx": "f0236c66dc6e603595d39ba675293c5aba44add9a50cd71b7a2f7e461065d894",
+    "scripts/validate-home-gallery.tsx": "9d551c13b6df1c9173c32a805b07abe6ba85bef830057db78bc4653d56aac19b",
+    "scripts/validate-home-hero.tsx": "6d2f6dc8332a7ea2fed9776ae3e453857c6ee2f4adfd2528ce6663fab73c9e3c",
+    "scripts/validate-home-information-architecture.tsx": "e3c0001100d69301d7007ba8fc3840779530fbdadae93bd784d48978138cfbc4",
+    "scripts/validate-home-performance.tsx": "8aefc3b9227758e6f2b651f539b8385bb5275376b6d939f6c0e76f618a48d90d",
+    "app/[locale]/page.tsx": "e47894775647c4a8630490b2e7ab0a72cc4fdcc2d0f253ce2ce724676adf7ece",
+    "app/about-us/page.tsx": "bd812baed9b69e531d369be6e0be168dc5232d3729def0d7f5a747fbccbf1779",
+    "app/admin/comments/page.tsx": "5da66215f6c126892b132af3f11937d2fba81dc9d3b86b680b207b0cd6680f99",
+    "app/api/admin/comment-images/[...key]/route.ts": "818b0b4c81cd56f9455a3228adc95137268a90db6b82f1a2e1f6f8ec232f03a0",
+    "app/api/admin/comments/[id]/route.ts": "e471d00f054151ac6636c81fd9d21ce108b19c86875ee524f2e0b44f429c135b",
+    "app/api/admin/comments/route.ts": "63ddcb14964f633f199af6873497abb9091420dba4e889396ca7d2d775578bb2",
+    "app/api/comment-images/[...key]/route.ts": "defb2f8ec7f4be7c19beb82663f781ae2e735cf19db127d603f5c82d8925d98a",
+    "app/api/comments/[id]/like/route.ts": "edf2b13178884db9af47debed1186655b55a96abe807e1dde8f4367381089a14",
+    "app/api/comments/route.ts": "4297d56bf81fb7182236ef0c880cd1039907dc345415e1bacddc39ae01ab2e7f",
+    "app/blog/avatar-maker-without-signup/page.tsx": "27b767b9898a1cf54a8bd8d15949690a99c3bcf8fee0a510275d2c05880dce97",
+    "app/blog/best-discord-avatar-style/page.tsx": "2e0807728e27e7b62e0be6aee9319079626b6d8f259fbf452afb3193f6040b9d",
+    "app/blog/cute-profile-picture-ideas/page.tsx": "23d0d94e184f86457eec7bccce657e83a401d94fef36686008af683fbf9ed126",
+    "app/blog/discord-avatar-size-guide/page.tsx": "3990a509c0f009f3007edf767e28983943e35ec03a9422483d7427972e3a7a24",
+    "app/blog/how-to-make-a-cute-discord-profile-icon/page.tsx": "126709f27ed82ffa275ec56f8c19d3ef97bd972f3a6d7737eca02eb016fe4a38",
+    "app/blog/page.tsx": "ae764e709b2e95b94978264e94f7c8339e18fbb40619e2b61003e73979b777e9",
+    "app/blog/square-avatar-vs-round-avatar/page.tsx": "21831b3d94e787b7442827822de117fd9cb6854408e25ea55443bc5cafb3c82b",
+    "app/blog/tiktok-profile-icon-ideas/page.tsx": "c480c6c80cc10800e1ff12710861712d4bde2aefe7145e7666d8352e0f2c29ad",
+    "app/contact/page.tsx": "43c774c71e326750845afe0168f4d66bbb1ee47367bcfc6015bb17592860c98e",
+    "app/cute-square-avatar-generator/page.tsx": "fe22cddd887475ecc89983278ceeabc06678a344c8ea7aefb47a65eb7a893042",
+    "app/editorial-policy/page.tsx": "c758e70ce143b58db1453877efcb6d82a9e89fd96d1bc473c73c6dcf4c81a529",
+    "app/free-avatar-maker/page.tsx": "65b5cd3745e7aad2dd9bdb11a851fb8a7fa74fe6e7a2e3221474688c76b75aa5",
+    "app/gallery/page.tsx": "d051f12b8e4c71a9b15a75efb59c3ffbb1f9904ec5d69577f9640ff47d479901",
+    "app/globals.css": "5b5e8d7253be79edbd479a01a53bf3f760d52482ced5f4c6edcd387975669867",
+    "app/layout.tsx": "c9d72791c1167896c2ab3a72bb9e7eada5b909bbf8f540a6e64fb52bed4e77b5",
+    "app/manifest.ts": "035fb0b64fd59984750a16cca5b4e7bd4e776d8ee7c9a608e339cabef2a8a179",
+    "app/oval-face-icon-generator/page.tsx": "d52adae5f4e58886ff467df0a335128ba5b1752cd9875d085edd29f452a27e22",
+    "app/page.tsx": "d10f79e2522ca3c3e21195e09df0f090b119af6452c265e48eb125639b2c46c1",
+    "app/pixel-art-avatar-icon-generator/page.tsx": "6116dc65fae1b664512d2267263f242b5085765f4a5f0fbac3368c301d92496c",
+    "app/pixel-square-face-maker/page.tsx": "b691a2359a6a6581eadc75fb1944a93a1718f85c4fff11ba6ebdfbad756603e5",
+    "app/privacy-policy/page.tsx": "eba51fcadf3aa4e61506242d5d5fb1d9d4ac7d870626e7877670ae0984c7d1c4",
+    "app/robots.ts": "dd47d2bd1355fb44791c0f5e481b06c98142639383a902cd6e976cb4f7583aa8",
+    "app/sitemap.ts": "183aafaeb14f529f8c341c70aa9c3278082f670aeaa4f487271d6ff110e0db18",
+    "app/square-avatar-generator/page.tsx": "a239bb17efb6eddce7e49f3214cef92017eed9f167c0879103855d91b4554a31",
+    "app/square-face-icon-generator/page.tsx": "24e88b1057bfea65f350bb84205cc5fc89fec0cd06e4f6dea24719c7513ff731",
+    "app/terms-of-service/page.tsx": "8121043e9a474a19a5c1c366ed80e03db93ec6bc8dc1ed9eda63ef60d85c83f5",
+    "components/AdminComments.tsx": "a3a1dd2d1bc175a4862a49299b363fe50c9b006945fc6b20df97dc08d527af4d",
+    "components/AvatarGenerator.tsx": "61e65dd817d517975ba89ca2ba7e7b182cf015bc296e4a993aa4733342fda74b",
+    "components/CloudflareAnalytics.tsx": "54e33cdc6f229a708c86013649a283ed946be150f717b11eebc6ccdb793368c4",
+    "components/CommentSection.tsx": "02db74c38bf07f57c92defb239866cd75bfeef561333de1db9acfc9d44ddfd21",
+    "components/DeferredThirdPartyScripts.tsx": "d660cbb3e2912dbbd9a0bb118e00237cb41aa81455fc0034be26f7fd17e261df",
+    "components/FlashGenerator.tsx": "c443323031b15428a502ff4fcad3653ffc424ef75db9335b76883576f45ac794",
+    "components/GameSidebar.tsx": "fc0c33185e4852ae7024c1c3474c7976817a012bd96360721fc32d29399567da",
+    "components/HomePage.tsx": "294ff206904e9cc127fcf986d54e4820017331370208a5d4731c84dbb5999623",
+    "components/InstallPrompt.tsx": "fb4a9fd5a43625673f03b26b8d31284c955b4e970d9fbe80be41863228c02ac8",
+    "components/ShareButtons.tsx": "5becc8e6cf2a779dd192222de56087f468b41243f60950d0290f45ff07a71a28",
+    "components/SiteFooter.tsx": "9e02069c0ad45f33e14aace05afbba2d1a6f01d29c64e593b93dce0e52a38565",
+    "components/SiteHeader.tsx": "dd7b227b9b8cd195352bd4167ced3365e3866757043953a470982ab897222dbc",
+    "data/game-license-registry.json": "fb0b94f56ffa3c7feca89ee136c73795a95d993de0ebe16d81ca8041da4a8924",
+    "lib/comment-store.ts": "734fa24cbf3cf6518f5026c93953628dca8c28935db6927d53650d4019865804",
+    "lib/locales.ts": "a96fefe1140236963e49b59ed632641794f1b39b5f5c3bd5df79adac876df8db",
+    "lib/metadata.ts": "ed02bc92dbfe7e71c0988bef9cf8bbdabc34caef5a1a2ba67d40cf69d839a275",
+    "public/07647d4631f55c330de4b7c203375f6e.txt": "00d523da026f8eab82be8ff615c798b1d157ee9d10b8f6d165ff920e31c25106",
+    "public/ads.txt": "5c1e1f2f952846d71cfd0548be371c7bbf2884a76b640fc2563723c40ffb65ff",
+    "public/favicon.ico": "e13224f7b7c3f2cf5e78ddf90c9e541ab09a08e29cd9cf912e2f7bdde52ee534",
+    "public/favicon16.png": "7e17a011679d625f17612a266831532ea06d89fde9eae6cf3e2da54c355f0bfe",
+    "public/favicon180.png": "4a5c287400d99e411fbce126fdd57d13ed82ea3e8fe9081d8fa93941659994bf",
+    "public/favicon192.png": "6375bd4e44062528b5a31a063be815db588639e6bce40f96b4efe70b7ed8437d",
+    "public/favicon32.png": "ff27303534461c396a7d1094c888bb1883b243ca8f55084140edcaf2352011fe",
+    "public/favicon512.png": "7c29beef953a42953af5d95f307f21eae97be72303ac16b52ccb7201ee4c42ac",
+    "public/game-face-samples/classic.webp": "77fa0970ea091a812a47c9c4e14d46d75e39edcac08bc7960178c48bcf12cf22",
+    "public/game-face-samples/cute.webp": "3bfed93670c92dbd396866385e5f18d085a975668eddc5b8f7dc34869b5208e8",
+    "public/game-face-samples/funny.webp": "c0b0efcaafe1b534a95b3fdad84f1536e64ddb0a41b28ef3c8982461999bcada",
+    "public/game-face-samples/gamer.webp": "92012feead14455b70f8d53433a5d5bafc6850da3441d4c13abace4e1254f1b3",
+    "public/game-face-samples/ideas/classic-face.webp": "f6d11c9d21ffc1aadef442668ed2019b2b6c1392f52d91c9de16df1d9c0f928b",
+    "public/game-face-samples/ideas/cute-square-face.webp": "3bfed93670c92dbd396866385e5f18d085a975668eddc5b8f7dc34869b5208e8",
+    "public/game-face-samples/ideas/discord-pfp.webp": "a2eaedde2f2c607b0ed2e770d82ef29b4e9641f8dc0fd892268994b0fa9780cc",
+    "public/game-face-samples/ideas/favicon-style.webp": "e07b26fd6206b17a6975d21984a33912d8c92a0bff17b2cceae700f83c0cd1c4",
+    "public/game-face-samples/ideas/funny-square-face.webp": "c0b0efcaafe1b534a95b3fdad84f1536e64ddb0a41b28ef3c8982461999bcada",
+    "public/game-face-samples/ideas/gamer-avatar.webp": "92012feead14455b70f8d53433a5d5bafc6850da3441d4c13abace4e1254f1b3",
+    "public/game-face-samples/ideas/github-avatar.webp": "77fa0970ea091a812a47c9c4e14d46d75e39edcac08bc7960178c48bcf12cf22",
+    "public/game-face-samples/ideas/minimal-face.webp": "a1afea4eb1fc3c2dd46ebd98404efd78f5647b0531007b33ce8fa6814996cdc7",
+    "public/game-face-samples/ideas/notion-icon.webp": "302252e9b323adfd3fc877bc8072c2eb644dbc5910610c58f5f3f847748b0c25",
+    "public/game-face-samples/ideas/retro-flash-face.webp": "1c35a2552ed615558b423adda68de9848c21194826dd20f6629e22b7c3536b10",
+    "public/game-face-samples/ideas/simple-icon-face.webp": "7699ad059b65eb17c7c33aa0a4097590978773de8155f91dc9accb7081649f2f",
+    "public/game-face-samples/ideas/weird-face.webp": "79831db5cfa2fac85e040cf8f553925399cd0bcd57d8ed27164245e5274ed341",
+    "public/game-face-samples/minimal.webp": "a1afea4eb1fc3c2dd46ebd98404efd78f5647b0531007b33ce8fa6814996cdc7",
+    "public/game-face-samples/retro.webp": "1c35a2552ed615558b423adda68de9848c21194826dd20f6629e22b7c3536b10",
+    "public/games/README.md": "e5ae6e267570980805a1f298d9a6f0b5cf842f934035ae8e6d2355e5b8a3cf0c",
+    "public/games/oval-face-cover.png": "0e914b27b602683442d57dfa232c88be1fdea5a2ed45bdabe0da72e3ff464073",
+    "public/games/oval-face-icon.png": "a3cdaeff0397647bd1580980c60e2996e5aa499eab8e5f2e634557b1c5da0909",
+    "public/games/oval-face.swf": "80e974d8ef4ad5e849e93464eaea1833620c269bac30601d960f5438c285e09b",
+    "public/games/square-face.swf": "b1d074c95f15b7dcecdbc2405abf820ead985669bb12cd47247fc8ea7537bc1e",
+    "public/og-image.svg": "62b25f254895de06e9253402370a8c10c14f6360e59621dffb3d9e88f084896a",
+    "public/ruffle/5ab714cfe6d10dcc7003.wasm": "575a14c02e47dcf34d61a2de684783994f29a60046361cd950c37a9feb10df9a",
+    "public/ruffle/9e3e2a04bfe37ff3e3e9.wasm": "6e2b664d1a5f4b9f0acaf51cc94caa2460d3920a5584611075a250475ffa0c25",
+    "public/ruffle/core.ruffle.549e09f5ab25b1ddd637.js": "b1c9f536332a91f3af74ce4dc954774383abc1df485ba1be331c44fba85eaa86",
+    "public/ruffle/core.ruffle.c736d9febaa371cbf8ce.js": "c568b9a9a9a1842eb0bb5fbef9468291c410dc56d535338da9fb81fa471b5803",
+    "public/ruffle/ruffle.js": "0f320b07abc9a000a5e9d445eaec8df05d8607351bc3248ef5552f943ba5b7ea",
+    "public/square-face-icon.png": "7c29beef953a42953af5d95f307f21eae97be72303ac16b52ccb7201ee4c42ac",
+    "public/sw.js": "05b14d5b9f3e447b180a12fb025c6937675bc7009b6e68082eebb4a8d83f322d",
+    "scripts/cloudflare-login.cmd": "9285c7cf0105fa6087da2dbb9264265a5daed85475ea61a12b0310431e3c8b0f",
+    "scripts/cloudflare-provision.cmd": "72b6efc1ad0cab89dc54d6d18cb6a6c3f2c1bbc7fa42444b9be968cc1cd22aeb",
+    "scripts/cloudflare-set-secrets.cmd": "5964a356784cc9ea3beeb76b801fc04ae79762ff1c47ab1fecb9f5a0d35a8cd0",
+    "scripts/patch-opennext-worker.mjs": "1f761820c8ec949e7a32f1435b82f14f9919d46bf965090741ab55add8b4068b",
+    "scripts/post-deploy-check.mjs": "51b28a8e14558dfc69c71779ebe9ed28d195f2f671d5eda07977afe885bbee82",
+    "scripts/seo-check.mjs": "a56453c56c8f55f4a308790e38a34aed19b667d1ba3514bd09eb18709db2ca9f",
+    "scripts/start-local-preview.cmd": "edd040a98ac02704de22f632fb21f981976c70b88932461874e4631db1dbcfb1",
+    "scripts/submit-indexnow.mjs": "1394eb5cfa2bb600af3bd3fbdf0f8c2eae9adf78b31d18d6f4cd57f3be0f4ae9"
+  },
+  "newRuntime": {
+    "path": "lib/games/category-remaining-content.ts",
+    "sha256": "61bc5d007cb00c5d6fb4527ab163addce8cde5397bfee5b7d3898f7f8e596360"
+  }
+}
