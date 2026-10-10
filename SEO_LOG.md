@@ -1,5 +1,21 @@
 # SEO_LOG.md
 
+## 2026-10-10 · Discord Banner Size 授权发布批次
+
+用户明确授权修复后提交、部署，并要求以后直接在 main 开发。已核对并快进 main 到既有已发布基线，原本地交付完整保留。修复 Firefox 的去 EXIF 分片 Blob 解码、共享导航文字对比度/可访问名称，并让 Banner 页手机 Resize 直达编辑器；保留现有 URL/H1/canonical 和搜索意图。Server Banners 文档更新日补录为 2022-05-31。
+
+发布前：30 项回归、28 组 / 860 断言、type/lint/Next/OpenNext 均通过；Chrome、Firefox、WebKit 本批累计 78 个真实下载；手机初始/载图 Lighthouse Accessibility/SEO/Best Practices 均 100。本地 21 URL SEO 为 0 must / 12 should，robots 通过。精确主词检索前十条结果的主题清单现已复核，覆盖 10/12（83.3%），缺失项和检索排名边界见 [实现与证据说明](docs/product/discord-banner-size.md)。不为提高词频堆叠主词。
+
+本条记录发布批次及提交时已有的验证。实际 commit、Worker version、生产 SEO/浏览器/重定向和回滚证据以权威 HTML 看板 `DISCORD-BANNER-001` 与该说明内的发布证据目录为准；不把本地检查或部署授权写成生产成功。未提交 IndexNow/GSC，不宣称收录、排名或流量提升。真机/实际 Discord 账号/CWV 和既有权利 UNKNOWN 保留。
+
+## 2026-10-09 · Discord Banner Size P0 本地实现，待验收
+
+按用户本次明确指定的附件与开发范围，新增 `/discord-banner-size`：官方规格、680×240 与 600×240 来源差异、server 推荐至少 960×540、invite 精确 1920×1080，以及本地静态 PNG/JPEG Crop/Fit。官方权益、文档日期和限制逐项链接；不把 600×240、5:2 或 10 MB 写成通用规则。复用既有布局和导航，新增资源/相关文章原生内链；新页已完成后加入本地 sitemap 和关键词配置。首页主要意图、已有 URL/H1/canonical、robots 和多语言边界保持。
+
+新页首个 HTML 为 HTTP 200，唯一 Title/H1，非 www self-canonical，index/follow，独立 PNG OG 和 WebPage/BreadcrumbList。21 URL 本地 SEO 自动检查 0 必须失败、12 应该提醒；新页密度约 0.27% 属建议项，保留自然语言；其它 11 项位于已有页面。robots、框架与平台等效构建、实际下载、隐私与移动端检查见 [实现与证据说明](docs/product/discord-banner-size.md)。KW-04 已有 10 个检索样本的主题覆盖清单，但精确主词检索两次连接失败，完整主词前十排名复核未验证；自动 SEO 不能替代此人工检查。
+
+当前为本地可审查代码，权威看板 `DISCORD-BANNER-001` 待验收。真机、Firefox/Safari、人工读屏、Discord 实际上传、生产脚本/域名/SEO/GSC/CWV 未验证。没有新建分支、提交、推送、部署或索引提交；因此这是本地 SEO 变更记录，不是新的生产发布或搜索效果记录。原权利 UNKNOWN、IMG-001 验收及材料任务取消边界保持。
+
 ## 2026-09-08 · RUFFLE-001 v1.91 本地实施（无页面 SEO 变更）
 
 用户明确确认 `RUFFLE-001` 方案后，运行时固定为 `@ruffle-rs/ruffle@0.2.0-nightly.2026.5.12`，并增加 5 文件 manifest/哈希、显式离线 sync、只读构建门、仅同源 `/ruffle/` adapter、WASM MIME、入口重验证/哈希子资源长缓存、service-worker cache 版本和升级/回滚手册。没有修改 URL、Title、description、H1、canonical、OG/Twitter、schema、robots/index、sitemap、关键词、页面文字、布局或搜索意图，故没有新的生产 SEO 内容条目或 IndexNow 提交。

@@ -169,6 +169,7 @@ export default function BestDiscordAvatarStylePage() {
 
         <section>
           <h2>Make a Discord Avatar With My Square Face Icon</h2>
+          <p>For the background above your profile, compare <a href="/discord-banner-size">Discord banner dimensions</a> and crop or fit a static image without stretching it.</p>
           <div className="link-grid">
             <a href="/#maker">
               <h3>Open the generator</h3>

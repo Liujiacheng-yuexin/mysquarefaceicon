@@ -131,6 +131,7 @@ export default function DiscordProfileIconGuidePage() {
 
         <section id="colors">
           <h2>Pick Colors That Stay Readable</h2>
+          <p>To pair the icon with a profile background, <a href="/discord-banner-size">resize your Discord banner</a> using the dimensions for its intended location.</p>
           <p>
             Cute does not always mean pastel. Pastel colors can work, but the face still needs enough contrast. If the background, skin tone, and hair color are too close, the avatar may look washed out in the Discord dark interface.
           </p>

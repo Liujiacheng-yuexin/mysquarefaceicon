@@ -2,6 +2,7 @@
 
 import { usePathname } from "next/navigation";
 import { useEffect, useRef } from "react";
+import { crossesBannerBoundary, isBannerPath } from "../lib/discord-banner/config";
 import { canLoadAdsOutsideCategory, crossesCategoryBoundary } from "../lib/games/category-policy";
 import {
   canLoadAdsOutsideGamesDirectory,
@@ -39,7 +40,8 @@ export default function DeferredThirdPartyScripts({
   useEffect(() => {
     // Collection links use document navigation; also guard a future missed client-side link.
     if (crossesGamesDirectoryBoundary(documentPath.current, pathname)
-      || crossesCategoryBoundary(documentPath.current, pathname)) {
+      || crossesCategoryBoundary(documentPath.current, pathname)
+      || crossesBannerBoundary(documentPath.current, pathname)) {
       window.location.replace(window.location.href);
     }
   }, [pathname]);
@@ -60,6 +62,9 @@ export default function DeferredThirdPartyScripts({
       if (loaded) return;
       loaded = true;
       cleanup();
+
+      // The local-file editor runs in a clean document with no analytics or ad runtime.
+      if (isBannerPath(documentPath.current) || isBannerPath(window.location.pathname)) return;
 
       if (canLoadAdsOutsideGamesDirectory(documentPath.current, window.location.pathname)
         && canLoadAdsOutsideCategory(documentPath.current, window.location.pathname)) {

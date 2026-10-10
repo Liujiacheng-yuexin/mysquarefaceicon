@@ -2,6 +2,12 @@
 
 This is an SEO-focused web tool project for `mysquarefaceicon.com`.
 
+## Branch workflow · confirmed 2026-10-10
+
+- The user explicitly requested future work directly on `main`. Use the existing `main` checkout by default; do not create or switch to a feature branch unless the user requests one.
+- Before editing, inspect `main`, its remote state and any uncommitted changes. Preserve unrelated work and use normal fast-forward updates where possible; never force-push.
+- Working on `main` does not by itself authorize a commit, push or deployment. Follow the user's current release instruction and the validation gates below. The 2026-10-10 instruction authorizes repairing, committing and deploying the scoped Discord Banner Size work.
+
 ## Required project context
 
 Before development, SEO edits, new pages, launch checks, content work, or quality reviews, read:

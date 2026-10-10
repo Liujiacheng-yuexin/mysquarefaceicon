@@ -6646,3 +6646,10 @@ body {
     gap: 10px;
   }
 }
+
+/* Shared navigation contrast verified during the Discord banner review. */
+.site-nav .mobile-start-link,
+.site-nav .nav-cta,
+.site-nav .nav-cta:hover {
+  color: var(--text);
+}

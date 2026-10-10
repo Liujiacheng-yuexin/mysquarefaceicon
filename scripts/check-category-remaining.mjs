@@ -5,7 +5,9 @@ import { readFileSync } from "node:fs";
 import { resolve } from "node:path";
 import { beforeCategoryRemainingMarkup, beforeCategoryRemainingMetadata, beforeCategoryRemainingSource } from "./category-remaining-compat.mjs";
 import { beforeRelatedGamesSource } from "./related-games-compat.mjs";
-import { beforeFavoritesMarkup } from "./favorites-compat.mjs";
+import { beforeFavoritesMarkup as beforeFavoritesMarkupBase } from "./favorites-compat.mjs";
+import { beforeDiscordBannerMarkup } from "./discord-banner-compat.mjs";
+const beforeFavoritesMarkup = value => beforeDiscordBannerMarkup(beforeFavoritesMarkupBase(value));
 import { root, read, plain, React, render, modules } from "./category-sample-test-utils.mjs";
 
 const sha = value => createHash("sha256").update(value).digest("hex");

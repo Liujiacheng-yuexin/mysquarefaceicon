@@ -1,4 +1,5 @@
 # PAGE_PLAN.md
+> 2026-10-09 当前增量：用户明确要求按附件新建 `/discord-banner-size`，P0 本地代码与验证已交付；[范围、来源与 QA](docs/product/discord-banner-size.md)。仅在现有资源区和三篇 Discord 文章增加关联入口，既有页面意图及核心模块顺序保持。状态以权威 HTML 看板 `DISCORD-BANNER-001` 为准；等待用户验收，不提交或发布。下方旧“当前任务”保留其原日期语境。
 > 2026-09-22 当前任务：用户已验收 HOME-CTR-001 首页摘要，并明确确认 [首页移动编辑器方案](docs/seo/home-ctr-2026-09-22.md)。HOME-MOBILE-001 在原首页接入 Classic game / Simple maker 切换，手机默认简版、桌面默认经典；本轮不新增 URL、不改索引或部署。最终状态与证据以权威 HTML 看板为准，原 IMG-001 与所有历史验收保持。
 
 
@@ -57,6 +58,7 @@
 
 | Page | URL | Type | Primary Keyword | Search Intent | Priority | Status |
 |---|---|---|---|---|---|---|
+| Discord Banner Size | `/discord-banner-size` | Guide + local static image tool | discord banner size | Identify the right banner surface and crop/fit PNG or JPEG locally | P0 | Local implementation; acceptance follows authoritative board |
 | Home EN | `/` | Tool page | square face generator | Play a square face avatar maker and create an icon | P0 | Implemented |
 | Home ES | `/es` | Tool page | generador de caras cuadradas | Play the localized generator | P0 | Implemented |
 | Home VI | `/vi` | Tool page | square face generator | Play the localized generator | P0 | Implemented |

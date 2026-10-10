@@ -44,6 +44,10 @@ export default function BlogIndexPage() {
         <section>
           <h2>Latest Square Face Icon Guides</h2>
           <div className="link-grid">
+            <a href="/discord-banner-size">
+              <h3>Discord Banner Size</h3>
+              <p>Compare profile, server and invite dimensions, then crop or fit a static PNG or JPG in your browser.</p>
+            </a>
             <a href="/blog/avatar-maker-without-signup">
               <h3>Avatar Maker Without Signup</h3>
               <p>Learn how to create a cute profile avatar quickly without account creation or design software.</p>

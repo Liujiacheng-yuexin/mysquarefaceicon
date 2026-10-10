@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import { createHash } from "node:crypto";
 import { readFileSync } from "node:fs";
+import { beforeDiscordBannerSource } from "./discord-banner-compat.mjs";
 
 const fixture = JSON.parse(readFileSync(new URL("./fixtures/image-mobile-legacy-delta.json", import.meta.url), "utf8"));
 const sha = value => createHash("sha256").update(value).digest("hex");
@@ -30,6 +31,7 @@ const markers = {
 // Test-only exact inverse. Historical golden hashes and runtime sources remain
 // unchanged. Current image behavior and maker interactions have their own QA.
 export function beforeImageMobileSource(file, value) {
+  value = beforeDiscordBannerSource(file, value);
   const contract = fixture.files[file];
   if (!contract) return value;
   let source = value.toString().replace(/\r\n/g, "\n");

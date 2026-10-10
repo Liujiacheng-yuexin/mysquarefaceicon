@@ -11,7 +11,7 @@ export default function SiteHeader({
 }: SiteHeaderProps = {}) {
   return (
     <header className="site-nav">
-      <a className="brand" href="/" aria-label="My Square Face Icon home">
+      <a className="brand" href="/" aria-label="Square Face Generator home">
         <span className="brand-mark" aria-hidden="true" />
         <span>Square Face Generator</span>
       </a>

@@ -1,0 +1,104 @@
+{
+  "baseCommit": "8efe9c73aaaa1a3c02c528ff54a1207f8c47f187",
+  "scope": "User-requested Discord banner P0; release repairs, commit and deployment explicitly authorized 2026-10-10",
+  "files": {
+    "app/layout.tsx": {
+      "marker": "discord-banner-size",
+      "beforeSha256": "c9d72791c1167896c2ab3a72bb9e7eada5b909bbf8f540a6e64fb52bed4e77b5",
+      "afterSha256": "34e4a6be01d4cc2eaaabb295cba60d0153b52968757429559ad62d14bda8fdd5",
+      "before": "        <script async src={`https://www.googletagmanager.com/gtag/js?id=${googleAnalyticsId}`} />\n        <script\n          dangerouslySetInnerHTML={{\n            __html: `\n              window.dataLayer = window.dataLayer || [];\n              function gtag(){dataLayer.push(arguments);}\n              gtag('js', new Date());\n              gtag('config', '${googleAnalyticsId}');\n",
+      "after": "        <script\n          dangerouslySetInnerHTML={{\n            __html: `\n              var localFilePage = true;\n              try { localFilePage = /^\\\\/discord-banner-size\\\\/?$/.test(decodeURIComponent(window.location.pathname)); } catch (_) {}\n              if (!localFilePage) {\n                window.dataLayer = window.dataLayer || [];\n                window.gtag = function(){dataLayer.push(arguments);};\n                gtag('js', new Date());\n                gtag('config', '${googleAnalyticsId}');\n                var analytics = document.createElement('script');\n                analytics.async = true;\n                analytics.src = 'https://www.googletagmanager.com/gtag/js?id=${googleAnalyticsId}';\n                document.head.appendChild(analytics);\n              }\n"
+    },
+    "components/DeferredThirdPartyScripts.tsx": {
+      "marker": "crossesBannerBoundary",
+      "beforeSha256": "d660cbb3e2912dbbd9a0bb118e00237cb41aa81455fc0034be26f7fd17e261df",
+      "afterSha256": "001b3410940f5d6e717cd6df4221eb8896d1dd13576705639b57da0046f5e850",
+      "before": "import { canLoadAdsOutsideCategory, crossesCategoryBoundary } from \"../lib/games/category-policy\";\nimport {\n  canLoadAdsOutsideGamesDirectory,\n  crossesGamesDirectoryBoundary\n} from \"../lib/games/directory-policy\";\n\ntype DeferredThirdPartyScriptsProps = {\n  googleAdsenseClient: string;\n  cloudflareAnalyticsToken?: string;\n};\n\nconst INTERACTION_EVENTS = [\"pointerdown\", \"keydown\", \"touchstart\", \"scroll\"];\n\nfunction appendScript(src: string, attributes: Record<string, string> = {}) {\n  if (document.querySelector(`script[src=\"${src}\"]`)) return;\n\n  const script = document.createElement(\"script\");\n  script.async = true;\n  script.src = src;\n\n  Object.entries(attributes).forEach(([key, value]) => {\n    script.setAttribute(key, value);\n  });\n\n  document.head.appendChild(script);\n}\n\nexport default function DeferredThirdPartyScripts({\n  googleAdsenseClient,\n  cloudflareAnalyticsToken\n}: DeferredThirdPartyScriptsProps) {\n  const pathname = usePathname();\n  const documentPath = useRef<string | null>(pathname);\n\n  useEffect(() => {\n    // Collection links use document navigation; also guard a future missed client-side link.\n    if (crossesGamesDirectoryBoundary(documentPath.current, pathname)\n      || crossesCategoryBoundary(documentPath.current, pathname)) {\n      window.location.replace(window.location.href);\n    }\n  }, [pathname]);\n\n  useEffect(() => {\n    let loaded = false;\n    let timer: number | undefined;\n\n    function cleanup() {\n      if (timer !== undefined) window.clearTimeout(timer);\n      window.removeEventListener(\"load\", scheduleAfterLoad);\n      INTERACTION_EVENTS.forEach((eventName) => {\n        window.removeEventListener(eventName, loadScripts);\n      });\n    }\n\n    function loadScripts() {\n      if (loaded) return;\n      loaded = true;\n      cleanup();\n",
+      "after": "import { crossesBannerBoundary, isBannerPath } from \"../lib/discord-banner/config\";\nimport { canLoadAdsOutsideCategory, crossesCategoryBoundary } from \"../lib/games/category-policy\";\nimport {\n  canLoadAdsOutsideGamesDirectory,\n  crossesGamesDirectoryBoundary\n} from \"../lib/games/directory-policy\";\n\ntype DeferredThirdPartyScriptsProps = {\n  googleAdsenseClient: string;\n  cloudflareAnalyticsToken?: string;\n};\n\nconst INTERACTION_EVENTS = [\"pointerdown\", \"keydown\", \"touchstart\", \"scroll\"];\n\nfunction appendScript(src: string, attributes: Record<string, string> = {}) {\n  if (document.querySelector(`script[src=\"${src}\"]`)) return;\n\n  const script = document.createElement(\"script\");\n  script.async = true;\n  script.src = src;\n\n  Object.entries(attributes).forEach(([key, value]) => {\n    script.setAttribute(key, value);\n  });\n\n  document.head.appendChild(script);\n}\n\nexport default function DeferredThirdPartyScripts({\n  googleAdsenseClient,\n  cloudflareAnalyticsToken\n}: DeferredThirdPartyScriptsProps) {\n  const pathname = usePathname();\n  const documentPath = useRef<string | null>(pathname);\n\n  useEffect(() => {\n    // Collection links use document navigation; also guard a future missed client-side link.\n    if (crossesGamesDirectoryBoundary(documentPath.current, pathname)\n      || crossesCategoryBoundary(documentPath.current, pathname)\n      || crossesBannerBoundary(documentPath.current, pathname)) {\n      window.location.replace(window.location.href);\n    }\n  }, [pathname]);\n\n  useEffect(() => {\n    let loaded = false;\n    let timer: number | undefined;\n\n    function cleanup() {\n      if (timer !== undefined) window.clearTimeout(timer);\n      window.removeEventListener(\"load\", scheduleAfterLoad);\n      INTERACTION_EVENTS.forEach((eventName) => {\n        window.removeEventListener(eventName, loadScripts);\n      });\n    }\n\n    function loadScripts() {\n      if (loaded) return;\n      loaded = true;\n      cleanup();\n\n      // The local-file editor runs in a clean document with no analytics or ad runtime.\n      if (isBannerPath(documentPath.current) || isBannerPath(window.location.pathname)) return;\n"
+    },
+    "components/home/HomeResourceLinks.tsx": {
+      "marker": "discord-banner-size",
+      "beforeSha256": "fd03f53ecc08510a86e3edd54864e132af9e70b363a7d5dee4c50d1eea207e23",
+      "afterSha256": "0768b88dbd70fe2316f90f6320b4a19e129452438127e7ef01b2c1576c64ee2c",
+      "before": "        </nav>\n",
+      "after": "          <a className=\"home-resource-link\" href=\"/discord-banner-size\">\n            <span>Guide &amp; tool</span>\n            <strong>Discord Banner Size</strong>\n            <small>Check profile, server and invite dimensions, then crop or fit a static image.</small>\n          </a>\n        </nav>\n"
+    },
+    "app/sitemap.ts": {
+      "marker": "discord-banner-size",
+      "beforeSha256": "183aafaeb14f529f8c341c70aa9c3278082f670aeaa4f487271d6ff110e0db18",
+      "afterSha256": "5e8875181f0fe01fd16af9fa74b5b4edabb4a323e5383c70b8f5a1f7a575a61c",
+      "before": "  \"/blog/avatar-maker-without-signup\",\n",
+      "after": "  \"/discord-banner-size\",\n  \"/blog/avatar-maker-without-signup\",\n"
+    },
+    "app/blog/page.tsx": {
+      "marker": "discord-banner-size",
+      "beforeSha256": "ae764e709b2e95b94978264e94f7c8339e18fbb40619e2b61003e73979b777e9",
+      "afterSha256": "e6e01820a9832b19d464f258d81f89c589deddc3a3ff967f635594d912a16496",
+      "before": "            <a href=\"/blog/avatar-maker-without-signup\">\n",
+      "after": "            <a href=\"/discord-banner-size\">\n              <h3>Discord Banner Size</h3>\n              <p>Compare profile, server and invite dimensions, then crop or fit a static PNG or JPG in your browser.</p>\n            </a>\n            <a href=\"/blog/avatar-maker-without-signup\">\n"
+    },
+    "app/blog/discord-avatar-size-guide/page.tsx": {
+      "marker": "discord-banner-size",
+      "beforeSha256": "3990a509c0f009f3007edf767e28983943e35ec03a9422483d7427972e3a7a24",
+      "afterSha256": "50793b37c9efbe83776a50a1637aedfac62aaa660886474c15623b83dbfcbfb4",
+      "before": "          <h2>Discord Avatar Size FAQ</h2>\n",
+      "after": "          <p>Preparing the image above your avatar too? Check the <a href=\"/discord-banner-size\">Discord banner size guide</a> to choose the correct profile, server or invite canvas and resize a static image.</p>\n          <h2>Discord Avatar Size FAQ</h2>\n"
+    },
+    "app/blog/best-discord-avatar-style/page.tsx": {
+      "marker": "discord-banner-size",
+      "beforeSha256": "2e0807728e27e7b62e0be6aee9319079626b6d8f259fbf452afb3193f6040b9d",
+      "afterSha256": "582024fbc4788d8c9d1a46796890673b5e555c7fae55349b6a01ea0a9721f1bb",
+      "before": "          <div className=\"link-grid\">\n",
+      "after": "          <p>For the background above your profile, compare <a href=\"/discord-banner-size\">Discord banner dimensions</a> and crop or fit a static image without stretching it.</p>\n          <div className=\"link-grid\">\n"
+    },
+    "app/blog/how-to-make-a-cute-discord-profile-icon/page.tsx": {
+      "marker": "discord-banner-size",
+      "beforeSha256": "126709f27ed82ffa275ec56f8c19d3ef97bd972f3a6d7737eca02eb016fe4a38",
+      "afterSha256": "16d3dde25dc87cb682b1c6f758524406558df7c8a24ef2e55864675f2304b7af",
+      "before": "          <p>\n",
+      "after": "          <p>To pair the icon with a profile background, <a href=\"/discord-banner-size\">resize your Discord banner</a> using the dimensions for its intended location.</p>\n          <p>\n"
+    },
+    "seo-check.config.json": {
+      "marker": "discord-banner-size",
+      "beforeSha256": "5cdfde7432572142acdf8b4ec94cbe9c2611737c520d2bd92e84943adf85730c",
+      "afterSha256": "b413a34fcb7fdd79e497964c0b9b915213e786e1f69c980a86ff67dff4c109ad",
+      "before": "    \"/blog/how-to-make-a-cute-discord-profile-icon\": \"how to make a cute Discord profile icon\",\n",
+      "after": "    \"/discord-banner-size\": \"Discord banner size\",\n    \"/blog/how-to-make-a-cute-discord-profile-icon\": \"how to make a cute Discord profile icon\",\n"
+    },
+    "package.json": {
+      "marker": "\"banner:check\"",
+      "beforeSha256": "db1f5e3701e4700e116ce18aa0dd88336d2b2c9ebf6b4c297652a5ad33af7087",
+      "afterSha256": "1aca990fbc30936aa387802adfb54e4d3ac576642889d10855387f19951cb594",
+      "before": "    \"indexnow\": \"node scripts/submit-indexnow.mjs\",\n",
+      "after": "    \"banner:check\": \"node scripts/check-discord-banner.mjs\",\n    \"indexnow\": \"node scripts/submit-indexnow.mjs\",\n"
+    },
+    "components/SiteHeader.tsx": {
+      "marker": "aria-label=\"Square Face Generator home\"",
+      "beforeSha256": "dd7b227b9b8cd195352bd4167ced3365e3866757043953a470982ab897222dbc",
+      "afterSha256": "24258e305f7131c6f121e23135e90a1a6b47500549abe82f5eddac9e3e249e47",
+      "before": "aria-label=\"My Square Face Icon home\"",
+      "after": "aria-label=\"Square Face Generator home\""
+    },
+    "app/globals.css": {
+      "marker": "Shared navigation contrast verified during the Discord banner review.",
+      "beforeSha256": "7a31b6b3f7a219dc4372b575bbab96ae0786291d503848d0ee51131d89454434",
+      "afterSha256": "1fce8d73511845538c98db196ccc92b3e34b14a54b20ab5b0c7dc13ce3e29e68",
+      "before": "",
+      "after": "\n/* Shared navigation contrast verified during the Discord banner review. */\n.site-nav .mobile-start-link,\n.site-nav .nav-cta,\n.site-nav .nav-cta:hover {\n  color: var(--text);\n}\n"
+    },
+    "scripts/check-category-sample.mjs": {
+      "marker": "beforeDiscordBannerMarkup",
+      "beforeSha256": "ce2c38c06cc8d6bab4e0ec19f57a99dcc1e7cf0dbc58f520b98bdc8892a0d4ab",
+      "afterSha256": "c1d92d2f473d0458d41799739496d3c3d64acaf954cd35655d9e8a2c83d34712",
+      "before": "import { beforeFavoritesMarkup } from \"./favorites-compat.mjs\";",
+      "after": "import { beforeFavoritesMarkup as beforeFavoritesMarkupBase } from \"./favorites-compat.mjs\";\nimport { beforeDiscordBannerMarkup } from \"./discord-banner-compat.mjs\";\nconst beforeFavoritesMarkup = value => beforeDiscordBannerMarkup(beforeFavoritesMarkupBase(value));"
+    },
+    "scripts/check-category-remaining.mjs": {
+      "marker": "beforeDiscordBannerMarkup",
+      "beforeSha256": "77504bc190e338e604f65f7a250cd80c10d520e484117958616ddd15cd14c161",
+      "afterSha256": "6c49052184cbfc87f653abe2eeb2cd77b840580a8899089823919c29d8a112c6",
+      "before": "import { beforeFavoritesMarkup } from \"./favorites-compat.mjs\";",
+      "after": "import { beforeFavoritesMarkup as beforeFavoritesMarkupBase } from \"./favorites-compat.mjs\";\nimport { beforeDiscordBannerMarkup } from \"./discord-banner-compat.mjs\";\nconst beforeFavoritesMarkup = value => beforeDiscordBannerMarkup(beforeFavoritesMarkupBase(value));"
+    }
+  }
+}

@@ -10,6 +10,7 @@
     "cf:deploy": "npm run ruffle:check && opennextjs-cloudflare build && node scripts/patch-opennext-worker.mjs && opennextjs-cloudflare deploy",
     "start": "next start",
     "lint": "next lint",
+    "banner:check": "node scripts/check-discord-banner.mjs",
     "indexnow": "node scripts/submit-indexnow.mjs",
     "seo:check": "node scripts/seo-check.mjs --base http://localhost:3000",
     "seo:prod": "node scripts/post-deploy-check.mjs --base https://mysquarefaceicon.com",

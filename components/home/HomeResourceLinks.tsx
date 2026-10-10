@@ -47,6 +47,11 @@ export default function HomeResourceLinks() {
               <small>{resource.text}</small>
             </Link>
           ))}
+          <a className="home-resource-link" href="/discord-banner-size">
+            <span>Guide &amp; tool</span>
+            <strong>Discord Banner Size</strong>
+            <small>Check profile, server and invite dimensions, then crop or fit a static image.</small>
+          </a>
         </nav>
       </div>
     </section>

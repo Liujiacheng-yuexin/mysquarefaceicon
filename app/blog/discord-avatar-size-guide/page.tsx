@@ -190,6 +190,7 @@ export default function DiscordAvatarSizeGuidePage() {
         </section>
 
         <section id="faq">
+          <p>Preparing the image above your avatar too? Check the <a href="/discord-banner-size">Discord banner size guide</a> to choose the correct profile, server or invite canvas and resize a static image.</p>
           <h2>Discord Avatar Size FAQ</h2>
           <div className="faq-list">
             {faq.map((item) => (

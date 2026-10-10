@@ -14,6 +14,7 @@ const contentPaths = [
   "/gallery",
   "/square-face-icon-generator",
   "/blog",
+  "/discord-banner-size",
   "/blog/avatar-maker-without-signup",
   "/blog/cute-profile-picture-ideas",
   "/blog/best-discord-avatar-style",

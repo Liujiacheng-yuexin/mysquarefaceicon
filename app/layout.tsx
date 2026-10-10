@@ -63,14 +63,21 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <script async src={`https://www.googletagmanager.com/gtag/js?id=${googleAnalyticsId}`} />
         <script
           dangerouslySetInnerHTML={{
             __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', '${googleAnalyticsId}');
+              var localFilePage = true;
+              try { localFilePage = /^\\/discord-banner-size\\/?$/.test(decodeURIComponent(window.location.pathname)); } catch (_) {}
+              if (!localFilePage) {
+                window.dataLayer = window.dataLayer || [];
+                window.gtag = function(){dataLayer.push(arguments);};
+                gtag('js', new Date());
+                gtag('config', '${googleAnalyticsId}');
+                var analytics = document.createElement('script');
+                analytics.async = true;
+                analytics.src = 'https://www.googletagmanager.com/gtag/js?id=${googleAnalyticsId}';
+                document.head.appendChild(analytics);
+              }
             `
           }}
         />
