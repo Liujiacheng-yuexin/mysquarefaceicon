@@ -174,7 +174,7 @@ test("Exact historical inverses reject unrelated changes to every touched shared
   for (const [path, change] of Object.entries(delta.files)) {
     const source = readFileSync(resolve(root, path), "utf8");
     const original = beforeDiscordBannerSource(path, source);
-    same(createHash("sha256").update(original).digest("hex"), change.beforeSha256, path);
+    same(createHash("sha256").update(original).digest("hex"), change.beforeReturnedSha256 ?? change.beforeSha256, path);
     rejects(() => beforeDiscordBannerSource(path, source + "\n// unrequested change\n"), /unexpected Discord banner change/);
     rejects(() => beforeDiscordBannerSource(path, source.replace(change.after, change.after + " ")), /unexpected Discord banner change/);
   }

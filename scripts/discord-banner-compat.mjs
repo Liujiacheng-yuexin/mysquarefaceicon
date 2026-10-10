@@ -17,6 +17,11 @@ export function beforeDiscordBannerSource(file, value) {
   assert.equal(source.split(change.after).length - 1, 1, `${file}: exact banner delta must be unique`);
   source = source.replace(change.after, change.before);
   assert.equal(sha(source), change.beforeSha256, `${file}: change outside requested banner scope`);
+  // The historical HomePage byte snapshots retained CRLF only at EOF.
+  if (change.legacyFinalCRLF) {
+    source = source.replace(/\n$/, "\r\n");
+    assert.equal(sha(source), change.beforeReturnedSha256, `${file}: legacy byte form changed`);
+  }
   return source;
 }
 
