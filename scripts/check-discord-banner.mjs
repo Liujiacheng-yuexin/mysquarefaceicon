@@ -5,6 +5,8 @@ import { modules, plain, root } from "./category-sample-test-utils.mjs";
 import { resolve } from "node:path";
 import { beforeDiscordBannerMarkup, beforeDiscordBannerSource } from "./discord-banner-compat.mjs";
 import { createHash } from "node:crypto";
+import vm from "node:vm";
+import { protectBannerWorker } from "./banner-worker-policy.mjs";
 
 let closed = 0, decodeCalls = 0;
 const loader = modules({}, { Blob, createImageBitmap: async () => { decodeCalls++; return { width: 680, height: 240, close() { closed++; } }; } });
@@ -138,6 +140,35 @@ test("Historical SSR inverse preserves all content except the reviewed brand lab
   same(beforeDiscordBannerMarkup(after.replace("Unchanged", "Unexpected")), beforeDiscordBannerMarkup(after).replace("Unchanged", "Unexpected"));
   rejects(() => beforeDiscordBannerMarkup(after + after), /unique/);
 });
+const workerFixture = `export default {
+    async fetch(request, env, ctx) {
+        return runWithCloudflareRequestContext(request, env, ctx, async () => {
+            return upstream;
+        });
+    },
+};
+`;
+test("Worker privacy patch is idempotent and fails on an unexpected generated entry", () => {
+  const patched = protectBannerWorker(workerFixture);
+  same(protectBannerWorker(patched), patched);
+  rejects(() => protectBannerWorker(workerFixture.replace("runWithCloudflareRequestContext", "unknownContext")), /entry changed/);
+  rejects(() => protectBannerWorker(patched.replace('headers.set("Cache-Control"', 'headers.set("X-Other"')), /incomplete/);
+});
+for (const path of ["/discord-banner-size", "/discord-banner-size?x=1", "/%64iscord-banner-size", "/discord%2Dbanner%2Dsize/", "/", "/blog", "/discord-banner-size-other", "/%ZZ"]) {
+  for (const cache of [null, "public, max-age=600", "private, no-store, no-transform"]) {
+    const upstream = new Response("unchanged streamed body", { status: 404, headers: { "X-Robots-Tag": "noindex", ...(cache ? { "Cache-Control": cache } : {}) } });
+    const context = { URL, Response, Headers, upstream, runWithCloudflareRequestContext: (_request, _env, _ctx, callback) => callback() };
+    vm.runInNewContext(protectBannerWorker(workerFixture).replace("export default", "globalThis.worker ="), context);
+    const result = await context.worker.fetch(new Request("https://mysquarefaceicon.com" + path), {}, {});
+    same(result.status, 404); same(result.headers.get("X-Robots-Tag"), "noindex");
+    if (isBannerPath(path)) {
+      same(result.body === upstream.body, true, "body is streamed without buffering");
+      same(result.headers.get("Cache-Control"), cache?.includes("no-transform") ? cache : cache ? cache + ", no-transform" : "no-transform");
+    } else same(result === upstream, true, "unrelated response is not modified");
+    same(await result.text(), "unchanged streamed body");
+  }
+}
+cases++; console.log("PASS Worker policy paths, status, body stream, noindex and cache preservation");
 test("Exact historical inverses reject unrelated changes to every touched shared file", () => {
   const delta = JSON.parse(readFileSync(resolve(root, "scripts/fixtures/discord-banner-local-delta.json"), "utf8"));
   for (const [path, change] of Object.entries(delta.files)) {

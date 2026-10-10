@@ -1,5 +1,6 @@
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
+import { protectBannerWorker } from "./banner-worker-policy.mjs";
 
 const targets = [
   join(process.cwd(), ".open-next", "worker.js"),
@@ -23,7 +24,7 @@ for (const target of targets) {
   if (!existsSync(target)) continue;
 
   const source = readFileSync(target, "utf8");
-  let patched = source;
+  let patched = target === targets[0] ? protectBannerWorker(source) : source;
   let fileCount = 0;
 
   for (const { pattern, replacement } of replacements) {
@@ -34,7 +35,7 @@ for (const target of targets) {
     });
   }
 
-  if (fileCount > 0) {
+  if (patched !== source) {
     writeFileSync(target, patched);
     console.log(`Patched ${fileCount} OpenNext chdir call(s) in ${target}`);
   }

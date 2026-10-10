@@ -2,6 +2,14 @@
 
 ## 2026-10-10 · 授权发布批次
 
+### 生产边缘注入修复
+
+首个提交 `caf694a` 的 Cloudflare 自动构建成功，Worker `a7fae433-c502-4e34-bbcb-ab2cb2107e38` 已上线，但随后真实浏览器检查发现 Cloudflare 自动注入 `beacon.min.js` 并发送 `/cdn-cgi/rum` 请求。Node 抓取 HTML 没有出现该脚本，因此不能用服务器抓取替代浏览器隐私检查。该次发布隐私检查记为失败；没有把 CI 成功当成完整验收通过。
+
+按 [Cloudflare 官方说明](https://developers.cloudflare.com/web-analytics/get-started/)，在既有 OpenNext 构建补丁中给 Banner 响应追加 `Cache-Control: no-transform`，保留已有缓存指令、状态、noindex 和流式 body。仅匹配正常及解码后的 Banner 路径；其它页面返回原 Response。构建补丁若遇到不同的 OpenNext 入口结构会失败，避免静默漏掉隔离。新增 Worker 语义/幂等/结构漂移测试，`banner:check` 增至 **30 组 / 974 断言**；平台 dry-run 与本地 Worker 响应检查另存证据。修复是否线上生效仍以随后的真实浏览器复测与权威看板收据为准。
+
+生产 OpenNext 对两种编码路径返回真实 404 + noindex，本机 Next 则接受别名；这些地址不会提供上传控件，仍检查不注入分析脚本。正常路径和查询参数路径必须 200 并完成真实下载。首次 `seo:prod` 的 HTTP apex 检查遇到请求失败（HTTP 0）；随后 curl 和 Node 同地址都得到正确一跳 308，原失败保留并进行完整复测。
+
 用户明确要求“将遇到的问题进行修复，修复完成后再提交并部署，并且以后直接修改main”。已 fetch 核对：旧 main 是已发布基线 `8efe9c7` 的祖先，无分叉；原 26 个交付文件与上一轮证据逐项同哈希。main 已安全快进并承接这些未提交改动，`AGENTS.md` 记录以后默认直接在 main 开发；以后是否提交/部署仍按当次用户授权。没有新建分支、强推或覆盖其它工作。
 
 本批实际修复：

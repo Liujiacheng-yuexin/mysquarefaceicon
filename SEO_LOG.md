@@ -2,6 +2,8 @@
 
 ## 2026-10-10 · Discord Banner Size 授权发布批次
 
+生产补查：`caf694a` 的自动构建发布成功后，真实浏览器发现 Cloudflare 自动注入的统计脚本，Node HTML 抓取未检出。已在现有 Worker 构建补丁增加本页专用 `no-transform`，不改变 Title/H1/canonical/index，也不改变其它页面缓存。新增策略测试使 banner 检查增至 30 组 / 974 断言；以最终生产浏览器复测确认隔离，不将首个 CI 成功写成隐私验收通过。生产编码别名为 404/noindex，正常及查询入口仍应为 200。此前生产 HTTP apex 请求失败另留原始记录，后续独立请求已确认 308；最终检查见权威看板与发布目录。
+
 用户明确授权修复后提交、部署，并要求以后直接在 main 开发。已核对并快进 main 到既有已发布基线，原本地交付完整保留。修复 Firefox 的去 EXIF 分片 Blob 解码、共享导航文字对比度/可访问名称，并让 Banner 页手机 Resize 直达编辑器；保留现有 URL/H1/canonical 和搜索意图。Server Banners 文档更新日补录为 2022-05-31。
 
 发布前：30 项回归、28 组 / 860 断言、type/lint/Next/OpenNext 均通过；Chrome、Firefox、WebKit 本批累计 78 个真实下载；手机初始/载图 Lighthouse Accessibility/SEO/Best Practices 均 100。本地 21 URL SEO 为 0 must / 12 should，robots 通过。精确主词检索前十条结果的主题清单现已复核，覆盖 10/12（83.3%），缺失项和检索排名边界见 [实现与证据说明](docs/product/discord-banner-size.md)。不为提高词频堆叠主词。
