@@ -31,14 +31,14 @@ const friendBlockTest = defineGame({
   ],
   tips: [
     "Choose what feels most like you, rather than the answer you expect a friend to guess.",
-    "Send the complete link, including #. If an app trims it, copy it again from the link box.",
+    "Use the game's Copy link button, not the address bar. Shared links open the quiz automatically; keep the original link if you want to reopen it.",
     "Keep the original link. Clearing browser storage removes the identifiers used to collect results on this device.",
     "Use the score as a conversation starter. Preferences change; a low score does not make someone a fake friend.",
     "After playing, choose Make my square face to create a separate avatar on the homepage."
   ],
   faq: [
     { question: "Is this the block you test or Don't Block Me quiz from another website?", answer: "No. Friend Block Test is an independent game made for My Square Face Icon. A block you test link created on another website works with that website, not here. Use this page to make a new ten-question friend quiz." },
-    { question: "Does the game save or upload my answers?", answer: "The quiz does not upload anything. Answers are carried in the share link. This browser saves up to 20 created-quiz identifiers and the latest 50 received results, including nicknames, avatars and scores. It does not store your original answer list in that results list. Clear quiz records removes local records. Anyone with the link can read its contents." },
+    { question: "Does the game save or upload my answers?", answer: "Quiz content is not uploaded. Answers are carried in the share link. This browser saves up to 20 created-quiz identifiers and the latest 50 received results, including nicknames, avatars and scores. It does not store your original answer list in that results list. Clear quiz records removes local records. The surrounding site uses analytics and ads; private link contents are kept out of analytics page URLs. Anyone with the link can read its contents." },
     { question: "Do my friends need to sign up?", answer: "No. A friend needs the complete link and a browser with JavaScript enabled. They choose a nickname and avatar before guessing. Sending links uses your own messaging app; the game does not send messages for you." },
     { question: "Can I play on a phone?", answer: "The quiz uses large answer buttons and a single-question flow for narrow screens. Clipboard access can vary in social-app browsers; when copying is blocked, select the displayed link and use your browser's Copy command. No app installation is required." },
     { question: "What if a quiz link will not open?", answer: "Check that everything after # was copied. A damaged or unsupported link shows a recovery message. Ask the sender for a fresh copy. Links from another quiz website must be opened on that original site." },

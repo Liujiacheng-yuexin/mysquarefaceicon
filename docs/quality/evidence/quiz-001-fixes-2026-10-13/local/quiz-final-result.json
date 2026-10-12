@@ -1,0 +1,13 @@
+{
+  "command": [
+    "C:/nvm4w/nodejs/node.exe",
+    "C:/nvm4w/nodejs/node_modules/npm/bin/npm-cli.js",
+    "run",
+    "quiz:check"
+  ],
+  "exitCode": 0,
+  "signal": null,
+  "durationMs": 1676,
+  "recordedAt": "2026-10-12T17:08:12.737Z",
+  "log": "quiz-final.log"
+}

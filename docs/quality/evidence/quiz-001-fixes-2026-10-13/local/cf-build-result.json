@@ -1,0 +1,13 @@
+{
+  "command": [
+    "C:\\nvm4w\\nodejs\\node.exe",
+    "C:\\nvm4w\\nodejs\\node_modules\\npm\\bin\\npm-cli.js",
+    "run",
+    "cf:build"
+  ],
+  "exitCode": 0,
+  "signal": null,
+  "durationMs": 62470,
+  "recordedAt": "2026-10-12T17:04:45.132Z",
+  "log": "cf-build.log"
+}

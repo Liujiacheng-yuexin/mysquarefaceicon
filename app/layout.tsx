@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import DeferredThirdPartyScripts from "@/components/DeferredThirdPartyScripts";
+import { friendQuizBootstrap } from "@/lib/games/friend-quiz-bootstrap";
 import "./globals.css";
 
 const siteUrl = "https://mysquarefaceicon.com";
@@ -63,18 +64,34 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <script data-cfasync="false" dangerouslySetInnerHTML={{ __html: friendQuizBootstrap }} />
         <script
           dangerouslySetInnerHTML={{
             __html: `
               var localFilePage = true;
-              try { localFilePage = /^\\/discord-banner-size\\/?$/.test(decodeURIComponent(window.location.pathname)) || /^\\/games\\/friend-block-test(?:\\/|$)/.test(decodeURIComponent(window.location.pathname)); } catch (_) {}
+              var friendQuizPage = false;
+              try {
+                var decodedPath = decodeURIComponent(window.location.pathname);
+                friendQuizPage = /^\\/games\\/friend-block-test\\/?$/.test(decodedPath);
+                localFilePage = /^\\/discord-banner-size\\/?$/.test(decodedPath) || /^\\/games\\/friend-block-test\\/.+/.test(decodedPath);
+              } catch (_) {}
               if (!localFilePage) {
                 window.dataLayer = window.dataLayer || [];
                 window.gtag = function(){dataLayer.push(arguments);};
                 gtag('js', new Date());
-                gtag('config', '${googleAnalyticsId}');
+                if (friendQuizPage) {
+                  // Only the public page identity is measured, never invitation data.
+                  gtag('consent', 'default', { ad_storage: 'denied', analytics_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied' });
+                  gtag('set', 'ads_data_redaction', true);
+                  window.adsbygoogle = window.adsbygoogle || [];
+                  window.adsbygoogle.requestNonPersonalizedAds = 1;
+                  gtag('config', '${googleAnalyticsId}', { page_location: window.location.origin + '/games/friend-block-test', page_referrer: document.referrer.split('#')[0], allow_ad_personalization_signals: false });
+                } else {
+                  gtag('config', '${googleAnalyticsId}');
+                }
                 var analytics = document.createElement('script');
                 analytics.async = true;
+                if (friendQuizPage) analytics.referrerPolicy = 'no-referrer';
                 analytics.src = 'https://www.googletagmanager.com/gtag/js?id=${googleAnalyticsId}';
                 document.head.appendChild(analytics);
               }

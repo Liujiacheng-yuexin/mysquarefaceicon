@@ -15,7 +15,7 @@ for(const base of bases){
     assert.equal((text.match(/<h1(?:\s|>)/g)||[]).length,1,path+' one H1');
     if(path==='/games/friend-block-test'){
       assert.match(text,/<title>Friend Block Test: How Well Do Your Friends Know You\?<\/title>/);
-      assert.match(response.headers.get('cache-control'),/no-transform/);
+      assert.doesNotMatch(response.headers.get('cache-control')||'',/no-transform/, 'The public detail page allows the Cloudflare beacon');
       const types=[...text.matchAll(/<script[^>]*type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/g)].map(m=>JSON.parse(m[1])['@type']);
       assert.deepEqual(types.sort(),['BreadcrumbList','FAQPage','VideoGame'].sort());
       assert.doesNotMatch(text,/aggregateRating/);
@@ -24,9 +24,9 @@ for(const base of bases){
   const nonIndex=['/games','/category/face-makers','/category/avatar-makers','/category/pixel-avatars','/category/retro-flash','/category/character-creators','/category/friend-quizzes','/es','/vi','/ja','/th','/ar','/ru','/id','/cute-square-avatar-generator','/pixel-square-face-maker'];
   for(const path of nonIndex){const{response,text}=await request(base,path);assert.equal(response.status,200,path);assert.match(text,/<meta[^>]+name="robots"[^>]+content="[^"]*noindex/i,path);}
   for(const path of ['/games/not-a-real-quiz','/games/square-face-generator','/category/not-a-category']){const{response,text}=await request(base,path);assert.equal(response.status,404,path);assert.match(text,/noindex/);}
-  for(const path of ['/games/%66riend-block-test','/games/friend%2Dblock%2Dtest?ref=local']){const{response,text}=await request(base,path);assert.equal(response.status,200,path);assert.match(text,/<h1>Friend Block Test<\/h1>/);if(base===(process.env.QUIZ_WORKER_BASE||'http://127.0.0.1:3113'))assert.match(response.headers.get('cache-control'),/no-transform/);}
+  for(const path of ['/games/%66riend-block-test','/games/friend%2Dblock%2Dtest?ref=local']){const{response,text}=await request(base,path);assert.equal(response.status,200,path);assert.match(text,/<h1>Friend Block Test<\/h1>/);if(base===(process.env.QUIZ_WORKER_BASE||'http://127.0.0.1:3113'))assert.doesNotMatch(response.headers.get('cache-control')||'',/no-transform/);}
   const{response:raw,text:html}=await request(base,'/games/friend-block-test/index.html');assert.equal(raw.status,200);assert.equal(raw.headers.get('location'),null);assert.match(html,/name="robots" content="noindex, follow"/);assert.match(html,/connect-src 'none'/);assert.match(raw.headers.get('cache-control'),/no-transform/);
   rows.push({base,indexedPages:22,preservedNoindexPages:nonIndex.length,real404s:3,encodedRoutes:2,detail:{status:200,canonical:site+'/games/friend-block-test',indexable:true,schemas:['VideoGame','FAQPage','BreadcrumbList']},staticEntry:{status:200,noindex:true,noRedirect:true,noTransform:true},sitemapUnique:true});
   console.log(`PASS ${base}: 22 index pages, 16 noindex pages, 3 real 404s, encoded quiz routes and separate static entry.`);
 }
-writeFileSync('docs/quality/evidence/quiz-001/final/http-results.json',JSON.stringify({date:'2026-10-12',nextBuildId:readFileSync('.next/BUILD_ID','utf8').trim(),results:rows},null,2));
+writeFileSync(process.env.QUIZ_HTTP_OUT||'docs/quality/evidence/quiz-001/final/http-results.json',JSON.stringify({recordedAt:new Date().toISOString(),nextBuildId:readFileSync('.next/BUILD_ID','utf8').trim(),results:rows},null,2));

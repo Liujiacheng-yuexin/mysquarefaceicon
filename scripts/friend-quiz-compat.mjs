@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import { createHash } from "node:crypto";
 import { readFileSync } from "node:fs";
+import { beforeFriendQuizFixesSource } from "./friend-quiz-fixes-compat.mjs";
 
 const fixture = JSON.parse(readFileSync(new URL("./fixtures/friend-quiz-approved-delta.json", import.meta.url), "utf8"));
 const sha = value => createHash("sha256").update(value).digest("hex");
@@ -8,6 +9,7 @@ const sha = value => createHash("sha256").update(value).digest("hex");
 // A test-only exact inverse of the approved QUIZ-001 delta. It preserves older
 // task goldens; current quiz behavior is checked against real, unmodified files.
 export function beforeFriendQuizSource(file, value) {
+  value = beforeFriendQuizFixesSource(file, value);
   const change = fixture.files[file];
   if (!change) return value;
   const source = value.toString().replace(/\r\n/g, "\n");

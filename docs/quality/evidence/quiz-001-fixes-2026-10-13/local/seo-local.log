@@ -1,0 +1,35 @@
+
+> mysquarefaceicon@0.1.0 seo:check
+> node scripts/seo-check.mjs --base http://localhost:3000 --base http://127.0.0.1:3114
+
+正在检查 22 个 URL …
+正在探测 9 个站内链接目标 …
+
+================================================================
+seo-check · 规范版本 2026-08-31 · 已检查 22 个页面
+================================================================
+
+! 应该  KW-03  (3 处)
+      /discord-banner-size  —  密度 0.27% < 0.5%（命中 4 次 / 1471 词）
+      /blog/how-to-make-a-cute-discord-profile-icon  —  密度 0.48% < 0.5%（命中 3 次 / 628 词）
+      /privacy-policy  —  密度 0.46% < 0.5%（命中 3 次 / 648 词）
+
+! 应该  META-03  (7 处)
+      /free-avatar-maker  —  title 66 字符，超过建议上限 60
+      /oval-face-icon-generator  —  title 68 字符，超过建议上限 60
+      /pixel-art-avatar-icon-generator  —  title 68 字符，超过建议上限 60
+      /square-avatar-generator  —  title 68 字符，超过建议上限 60
+      /gallery  —  title 68 字符，超过建议上限 60
+      /blog/best-discord-avatar-style  —  title 71 字符，超过建议上限 60
+      /blog/how-to-make-a-cute-discord-profile-icon  —  title 61 字符，超过建议上限 60
+
+! 应该  META-04  (3 处)
+      /free-avatar-maker  —  description 175 字符，超过建议上限 160
+      /privacy-policy  —  description 仅 83 字符，短于建议下限 110
+      /terms-of-service  —  description 仅 76 字符，短于建议下限 110
+
+----------------------------------------------------------------
+必须级失败 0 项 · 应该级提醒 13 项
+注：KW-04 语义覆盖、CT-05 独有内容等语义类规则需人工判断，本脚本不检查。
+----------------------------------------------------------------
+

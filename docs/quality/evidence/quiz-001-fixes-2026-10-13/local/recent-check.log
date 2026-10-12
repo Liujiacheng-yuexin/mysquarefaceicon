@@ -1,0 +1,10 @@
+
+> mysquarefaceicon@0.1.0 recent:check
+> node scripts/run-recently-played-check.mjs
+
+RECENT-001 validation passed
+- versioned parsing, dedupe, ordering, limits, clear isolation and storage failures pass
+- only published playable local candidates are mapped; Pixel External is excluded
+- Square, Oval and future player models use real Game Data IDs at first Play only
+- server output stays empty until valid local history exists; no network-backed state was added
+- homepage, /games, focus recovery and Privacy disclosure match the confirmed scope

@@ -14,7 +14,7 @@ export default function PrivacyPolicyPage() {
     <main className="legal-page">
       <a className="back-link" href="/">Back to Square Face Generator</a>
       <h1>Privacy Policy</h1>
-      <p>Last updated: October 12, 2026</p>
+      <p>Last updated: October 13, 2026</p>
       <p>
         My Square Face Icon is designed as a browser-based classic Flash avatar
         maker page. The main game runs through Ruffle so visitors can play the
@@ -76,14 +76,22 @@ export default function PrivacyPolicyPage() {
         (nicknames, avatars and scores), with no account or device sync. The original answer list
         is carried in the link, not the local results list. Use Clear quiz records in the game to
         remove its identifiers and results. Storage restrictions or clearing site data may prevent
-        collecting future results for a quiz. Third-party analytics and advertising are disabled
-        on the quiz page and its embedded game.
+        collecting future results for a quiz. The surrounding quiz page uses Google Analytics,
+        AdSense and Cloudflare Web Analytics. The private link fragment is removed from the
+        outer page address before those scripts run and passed locally to the embedded game;
+        it is not included in analytics page URLs. The embedded game does not load analytics
+        or ads. Keep the original invitation or use the game&apos;s Copy link button to share
+        or reopen it; copying the cleaned address bar does not copy the quiz.
       </p>
       <h2>Analytics and Advertising</h2>
       <p>
-        Advertising is not enabled by default. Cloudflare Web Analytics may be
-        added when a site token is configured, helping measure aggregate traffic
-        without requiring accounts.
+        Public pages may use Google Analytics, Google AdSense and Cloudflare Web Analytics
+        to measure visits and performance and display ads. These services can receive
+        page, device and network information and may use cookies subject to consent and
+        browser settings. Friend Block Test does not send quiz nicknames, answers, scores
+        or share-link contents to these services. On that page, analytics and ad storage
+        and ad personalization default to denied. Ad availability depends on consent,
+        browser settings and the provider; this does not require a game account.
       </p>
       <h2>Contact</h2>
       <p>

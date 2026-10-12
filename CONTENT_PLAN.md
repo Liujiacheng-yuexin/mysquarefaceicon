@@ -133,3 +133,8 @@
 - `70-84`：暂缓 index，人工复核。
 - `≥85`：仅为 index 候选，仍需满足全部必须级规则。
 - 删除前执行 OP-04，检查外链、收录和排名。
+
+
+## Friend Block Test disclosures · 2026-10-13
+
+Update the existing FAQ, tips, game notice and privacy policy for the confirmed repair: quiz content stays local, the surrounding site uses analytics/ads, shared links open automatically, and users should use Copy link or retain the original invitation because the address bar is cleaned before vendors run. Do not describe the whole page as ad-free or imply analytics receives quiz data. No keyword/intent/URL expansion or fabricated content-review result. See docs/product/friend-block-test-fixes.md.

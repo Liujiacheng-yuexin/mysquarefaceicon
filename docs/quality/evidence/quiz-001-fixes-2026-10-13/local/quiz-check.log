@@ -1,0 +1,23 @@
+
+> mysquarefaceicon@0.1.0 quiz:check
+> node scripts/check-friend-quiz.mjs && node scripts/check-friend-quiz-integration.mjs && node scripts/check-friend-quiz-fixes.mjs
+
+PASS Q1 quiz and result round trips preserve every field
+PASS Q2 truncated, tampered, malformed, oversized and unknown versions recover
+  q: 286 characters
+  r: 454 characters
+PASS Q3 longest Unicode nicknames and both full links stay below 1800
+PASS Q4 nickname Unicode limits, controls, markup and links
+PASS Q5 all scores and four tier boundaries
+PASS Q6 24 unique original questions; exactly four distinct choices; swaps preserve uniqueness
+PASS Q7 static game has no external resource domains or upload/network APIs
+PASS Local results require creator association, recompute scores and deduplicate
+PASS Blocked, full, corrupted and oversized storage remains recoverable
+QUIZ-001: 9 check groups passed.
+PASS actual fourth record, directory grouping, sixth category and noindex/ad boundaries
+PASS raw game and banner GA/ad exclusion, and full-document transition guard
+PASS Worker streaming/no-transform and static asset privacy headers
+PASS 38 exact deltas, twice as many rejected unrelated mutations, existing rights preserved and local-data disclosures
+PASS fragment captured before telemetry, local-only handoff, hash/popstate privacy guard, sanitized GA, deferred AdSense/beacon and encoded routes
+PASS 16-character input, fragment-free iframe URLs, trusted handoff and public-page beacon eligibility
+PASS 17 exact repair deltas; historical goldens and original QUIZ-001 fixture preserved

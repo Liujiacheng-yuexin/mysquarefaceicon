@@ -46,7 +46,8 @@
     "ruffle:sync": "node scripts/sync-ruffle-runtime.mjs",
     "ruffle:check": "node scripts/check-ruffle-runtime.mjs",
     "quality:code": "npm run lint && npm run build",
-    "quiz:check": "node scripts/check-friend-quiz.mjs && node scripts/check-friend-quiz-integration.mjs"
+    "quiz:check": "node scripts/check-friend-quiz.mjs && node scripts/check-friend-quiz-integration.mjs && node scripts/check-friend-quiz-fixes.mjs",
+    "quiz:browser:check": "node scripts/qa-friend-quiz-fixes.mjs"
   },
   "dependencies": {
     "@ruffle-rs/ruffle": "0.2.0-nightly.2026.5.12",

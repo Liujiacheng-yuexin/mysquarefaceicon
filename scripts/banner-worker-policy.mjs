@@ -7,7 +7,7 @@ const protectedEnd = `        });
         // Discord banner privacy: prevent Cloudflare's automatic analytics injection.
         // https://developers.cloudflare.com/web-analytics/get-started/
         let privateBanner = false;
-        try { privateBanner = /^\\/discord-banner-size\\/?$/.test(decodeURIComponent(new URL(request.url).pathname)) || /^\\/games\\/friend-block-test(?:\\/|$)/.test(decodeURIComponent(new URL(request.url).pathname)); } catch {}
+        try { privateBanner = /^\\/discord-banner-size\\/?$/.test(decodeURIComponent(new URL(request.url).pathname)) || /^\\/games\\/friend-block-test\\/.+/.test(decodeURIComponent(new URL(request.url).pathname)); } catch {}
         if (!privateBanner) return response;
         const headers = new Headers(response.headers);
         const cacheControl = headers.get("Cache-Control");

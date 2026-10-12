@@ -415,3 +415,8 @@ LICENSE-GATE 与累计发布继续暂缓 / P0 未关闭，Square/Oval 权利 UNK
 | Gallery | `/` | Square Face Generator |
 | Support pages | `/blog` | Square Face Icon Guides |
 | Legal pages | `/` | Square Face Generator |
+
+
+## QUIZ-001 production repair · 2026-10-13
+
+User-confirmed repair of the existing /games/friend-block-test: unopened mobile stage/controls fit 320px, quiz/result links auto-start and scroll, nickname maxlength=16, and the public page enables ads/analytics after removing private fragments. URL/title/H1/canonical/index/sitemap and category noindex stay unchanged. Local checks passed; final release status and evidence belong to the authoritative board and docs/quality/evidence/quiz-001-fixes-2026-10-13/README.md.

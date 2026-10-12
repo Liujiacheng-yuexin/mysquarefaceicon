@@ -1,0 +1,105 @@
+{
+  "baseCommit": "a835bb89b60ddc955e4bbf986ead1a44909488f3",
+  "files": [
+    {
+      "path": "app/globals.css",
+      "sha256": "abd4f9223b03e86c675ab7a8c9ed64f024f33a336abb09de841fd76875d2e2c0"
+    },
+    {
+      "path": "app/layout.tsx",
+      "sha256": "8d079b77bc7458f82f6cca95d6dd4700e389ce81c8d0a0e87261b00c60d30023"
+    },
+    {
+      "path": "app/privacy-policy/page.tsx",
+      "sha256": "77a2a56055818cff9c0a8fdd29e92b4fc82446a67c0a44dd254efc0136722e92"
+    },
+    {
+      "path": "components/DeferredThirdPartyScripts.tsx",
+      "sha256": "9f6507fad99c8695106335fa749a98a5f2e98ea649f21ac21c64d02e04ff15a5"
+    },
+    {
+      "path": "components/game-player/adapters/FriendQuizFrame.tsx",
+      "sha256": "59633d0dae5443e458dca4df06e4352d5427402b1bf107e53857e64fb17ed1cc"
+    },
+    {
+      "path": "components/game/GameDetailTemplate.tsx",
+      "sha256": "bdad1cc15860b549ea7f46418f21a9c08f57cf17868c63d36a1c6b93a5e98127"
+    },
+    {
+      "path": "data/game-asset-manifest.json",
+      "sha256": "cd5dbd3f8df1505afcdce57d7022569c7780b350f6b215b6143acf29be40f766"
+    },
+    {
+      "path": "data/games/friend-block-test.ts",
+      "sha256": "639325e408c4f123c8419f49ab220b8a1fc7fcf7d400075e87105775023b857a"
+    },
+    {
+      "path": "next.config.mjs",
+      "sha256": "96c84380d49f97e60a7a5fbc35034ffd134add8b11561e42c05db8864cdd219d"
+    },
+    {
+      "path": "package.json",
+      "sha256": "6f4913b61050627de76430dd9c25b6afd7d3a11ebe848ccbf586771cb80e7af8"
+    },
+    {
+      "path": "public/games/friend-block-test/app.mjs",
+      "sha256": "79d69453a0d6790e33b55b4a60af034fd26cdda61df3a2abdc15dc225ff41fb5"
+    },
+    {
+      "path": "scripts/banner-worker-policy.mjs",
+      "sha256": "6946a73d52bb3109da6d2e5576fbda30bda42ef62bb4485a823172d2c2b36990"
+    },
+    {
+      "path": "scripts/category-sample-test-utils.mjs",
+      "sha256": "832df39c6a349c74f16828a4595f7a970595add6b2c2ba5d13bfc52aa42fb78d"
+    },
+    {
+      "path": "scripts/check-friend-quiz-integration.mjs",
+      "sha256": "e744b200a9010a3baec1ed9b57619c8d1ebef98679d64cbb515529220763a73d"
+    },
+    {
+      "path": "scripts/friend-quiz-compat.mjs",
+      "sha256": "5023f7d60a284f881490af012bef4a62f9a7a2fcb04f42bbbfc0be047a4dbcb8"
+    },
+    {
+      "path": "scripts/qa-friend-quiz-http.mjs",
+      "sha256": "7fdb5ab930f39232317ea3330cde4a62a8cf0f3f92c2fa9777ea8410c2182760"
+    },
+    {
+      "path": "scripts/validate-favorites.tsx",
+      "sha256": "0efef43a0f28afc1f37310fc8ad49bb4b6398e8f4ee94cbe9ab4ea4bf9f33f86"
+    },
+    {
+      "path": "scripts/validate-recently-played.tsx",
+      "sha256": "2bae79a27f19ca83a9d38114ab00d5490f250efaaefe39c5708ed33e130e263d"
+    },
+    {
+      "path": "components/game/FriendQuizPlayer.tsx",
+      "sha256": "c9f381b1ef261c491b52d5ad978f05e005afec8de5126159c2dd8b5ec1d44194"
+    },
+    {
+      "path": "lib/games/friend-quiz-bootstrap.ts",
+      "sha256": "520b86caebcb69ec7b6db0b62bc12a5a1799a2ff14ae4b87e0cf838055dbd998"
+    },
+    {
+      "path": "lib/games/friend-quiz-browser.ts",
+      "sha256": "0460f683cff906f7aedf78fe3ba9219f5140580532bdff31f8dac657ce7f8f8d"
+    },
+    {
+      "path": "scripts/check-friend-quiz-fixes.mjs",
+      "sha256": "dfcc3c75d163ecccd16bc8c533386b4c0c6e4c84b20774a11da28baa01e46330"
+    },
+    {
+      "path": "scripts/fixtures/friend-quiz-fixes-delta.json",
+      "sha256": "70fdaa4f5ff14724c367c14108c3edddb2fb99b725b4fd1ade830f284fa11f4c"
+    },
+    {
+      "path": "scripts/friend-quiz-fixes-compat.mjs",
+      "sha256": "05d5c202feb904d1e9a816c5d4ba5934f0510bb6e1ff353d084cf3c47d465ab7"
+    },
+    {
+      "path": "scripts/qa-friend-quiz-fixes.mjs",
+      "sha256": "a13fe725dd2b9d4538166ca64d7eb9ffabefd7253aab5147b6f6d6900d1a4213"
+    }
+  ]
+}

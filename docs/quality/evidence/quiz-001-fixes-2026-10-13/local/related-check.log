@@ -1,0 +1,8 @@
+
+> mysquarefaceicon@0.1.0 related:check
+> node scripts/run-related-games-check.mjs
+
+RELATED-001 validation passed
+- 72 algorithm, boundary, immutability, and Oval source assertions passed
+- real Oval order: Square (3 categories / 3 tags), Pixel External (1 category / 0 tags)
+- quality/popularity remain disabled; unrelated candidates are not used as fillers

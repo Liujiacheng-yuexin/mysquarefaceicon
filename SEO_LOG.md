@@ -249,3 +249,11 @@ main 与 origin/main 同步于 1d275c6；lint、Next build（含类型验证）�
 用户在本地交付后明确要求“提交并部署”。本批发布已验证的 Friend Block Test、唯一新页面索引白名单、Friend Quizzes noindex 分类、资源/隐私隔离和相关文档。发布前重新核对 61 个实现文件的 SHA-256，与已通过 type/lint、31 项离线检查、Next/OpenNext、四宽及触屏/键盘验证的内容一致；main 与 origin/main 同步，无无关改动混入。
 
 本条为提交前发布记录，不提前声明上线成功。实际 commit、push、Worker version、生产 SEO/HTTP/浏览器结果和回滚版本见 [发布记录](docs/quality/evidence/quiz-001/RELEASE.md) 指向的外部回执与权威看板。保留 12 项既有 SEO 提醒、KW-04/独立人工内容审核、真机/Safari/读屏/CWV 和旧权利 UNKNOWN；不把部署指令写成这些检查通过。此次不操作 IndexNow/GSC，看板保持待验收。
+
+## 2026-10-13 · QUIZ-001 生产修复与授权发布
+
+用户确认手机启动前裁切修复、分享链接自动启动/滚动、昵称 maxlength=16，并明确保留启用广告/统计的可选项及检查通过后的提交/推送/部署授权。静态游戏继续无第三方资源和上传；公开页面在第三方脚本前捕获并清理私有片段，经本地消息传递给不含片段的 iframe。GA 只记录公开页面 URL；广告存储和个性化默认 denied。隐私、FAQ 和分享提示同步更新，URL/H1/title/canonical/index/sitemap、分类 noindex 与旧 SWF/许可事实保持。
+
+31 项离线检查、type、零警告 lint、Next/OpenNext 构建通过；新增真实启动前 320/375/390 尺寸检查，以及本地 Worker 320/375 创建/自动邀请/答题/自动回传/去重/片段变更检查通过。296 个本地请求未包含片段、昵称或 quiz ID，厂商脚本在本地使用受控替身，发布后另测真实厂商。SEO 22 页 0 must / 13 should：原 12 项，加上必要隐私披露造成的 KW-03 0.46% 提醒，不为词频填充正文。robots 和两运行时的索引/404/资源入口矩阵通过。
+
+本条为提交前证据，不提前声明生产成功。实际 commit、Worker version、seo:prod 和真实厂商移动流程见 [修复与发布证据](docs/quality/evidence/quiz-001-fixes-2026-10-13/README.md) 指向的回执及权威看板。真机/Safari/读屏、实际广告填充、后台统计接收、地区/CMP、CWV、KW-04/独立人工审核及旧权利 UNKNOWN 保留；不写入 IndexNow/GSC，不自动完成看板任务。

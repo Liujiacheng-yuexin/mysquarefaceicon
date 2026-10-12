@@ -1,0 +1,8 @@
+
+> mysquarefaceicon@0.1.0 pixel-page:check
+> node scripts/check-pixel-external-page.mjs
+
+MIG-PIXEL-001 source/real SSR passed: 3 How-to / 6 Features / 5 Tips / 6 FAQ; 41 content/link bindings; original metadata and minimal PlayerModel preserved.
+Exact old source/SSR reversals passed; 37 source/data normalization negatives, 127 fail-closed record/Registry negatives, 11 badge negatives rejected; 7 unpublished/non-External sidebar exclusions.
+144 other source/check/config hashes unchanged. No rights waiver, iframe, hosted tool, extra runtime, schema claim, or URL/index change.
+Browser/mobile/new-tab behavior, external generator functionality, CWV, actual licensing, production and deployment require separate evidence.

@@ -20,6 +20,7 @@ import GameSourceRights from "./GameSourceRights";
 import RelatedGames from "./RelatedGames";
 import FavoriteToggle from "./FavoriteToggle";
 import FriendQuizStartButton from "./FriendQuizStartButton";
+import FriendQuizPlayer from "./FriendQuizPlayer";
 
 type GameDetailTemplateProps = {
   readonly game: GameRecord;
@@ -77,7 +78,7 @@ export default function GameDetailTemplate({ game, playerModel, relatedGameRecor
         </header>
 
         <section id="game-player" className="game-detail-player" aria-label={`${game.name} experience`}>
-          <GamePlayer model={playerModel} />
+          {game.id === "friend-block-test" ? <FriendQuizPlayer model={playerModel} /> : <GamePlayer model={playerModel} />}
         </section>
 
         <section className="game-detail-meta" aria-label={`${game.name} facts`}>

@@ -43,7 +43,7 @@ export function modules(overrides = {}, globals = {}, sources = {}) {
 }
 
 // Real loader effects, with isolated hook/DOM/time mocks; never executes remote scripts.
-export function scriptHarness(initialPath, readyState = "complete") {
+export function scriptHarness(initialPath, readyState = "complete", browserExtras = {}) {
   let currentPath = initialPath, ref, cursor = 0;
   const effects = [], slots = [], listeners = new Map(), timers = new Map(), scripts = [], replacements = [];
   const window = {
@@ -59,6 +59,7 @@ export function scriptHarness(initialPath, readyState = "complete") {
     createElement: () => ({ setAttribute(name, value) { this[name] = value; } }),
     head: { appendChild: script => scripts.push(script) }
   };
+  Object.assign(window, browserExtras);
   const hooks = {
     ...React,
     useRef: value => { ref ??= { current: value }; return ref; },

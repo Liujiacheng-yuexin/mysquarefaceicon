@@ -1,0 +1,27 @@
+{
+  "base": "http://127.0.0.1:3112",
+  "commit": "a835bb89",
+  "rows": [
+    {
+      "width": 320,
+      "stageWidth": 480,
+      "left": 12,
+      "viewport": 320,
+      "playerWidth": 480
+    },
+    {
+      "width": 375,
+      "stageWidth": 480,
+      "left": 12,
+      "viewport": 375,
+      "playerWidth": 480
+    },
+    {
+      "width": 390,
+      "stageWidth": 480,
+      "left": 12,
+      "viewport": 390,
+      "playerWidth": 480
+    }
+  ]
+}

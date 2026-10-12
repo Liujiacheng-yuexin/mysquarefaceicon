@@ -5,6 +5,7 @@ import { useEffect, useRef } from "react";
 import { crossesBannerBoundary, isBannerPath } from "../lib/discord-banner/config";
 import { canLoadAdsOutsideCategory, crossesCategoryBoundary } from "../lib/games/category-policy";
 import { crossesFriendQuizBoundary, isFriendQuizPath } from "../lib/games/friend-quiz-policy";
+import { getFriendQuizBridge } from "../lib/games/friend-quiz-browser";
 import {
   canLoadAdsOutsideGamesDirectory,
   crossesGamesDirectoryBoundary
@@ -67,12 +68,16 @@ export default function DeferredThirdPartyScripts({
 
       // The local-file editor runs in a clean document with no analytics or ad runtime.
       if (isBannerPath(documentPath.current) || isBannerPath(window.location.pathname)) return;
-      if (isFriendQuizPath(documentPath.current) || isFriendQuizPath(window.location.pathname)) return;
+      const friendQuiz = isFriendQuizPath(documentPath.current) || isFriendQuizPath(window.location.pathname);
+      // The raw game remains private. The public detail page must install its
+      // fragment guard before any deferred third-party code is allowed to run.
+      if (friendQuiz && !getFriendQuizBridge()) return;
 
       if (canLoadAdsOutsideGamesDirectory(documentPath.current, window.location.pathname)
         && canLoadAdsOutsideCategory(documentPath.current, window.location.pathname)) {
         appendScript(`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${googleAdsenseClient}`, {
-          crossorigin: "anonymous"
+          crossorigin: "anonymous",
+          ...(friendQuiz ? { referrerpolicy: "no-referrer" } : {})
         });
       }
 

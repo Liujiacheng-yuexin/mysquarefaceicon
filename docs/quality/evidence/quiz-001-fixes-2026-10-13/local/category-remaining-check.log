@@ -1,0 +1,5 @@
+
+> mysquarefaceicon@0.1.0 category-remaining:check
+> node scripts/check-category-remaining.mjs
+
+{"task":"CATEGORY-001","scope":"CATEGORY_REMAINING_PAGES","result":"PASS","assertions":380,"negativeFixtures":162,"mode":"source/SSR","humanReview":"not completed","browser":"separate evidence required","indexing":"noindex remains; independent search value not certified"}

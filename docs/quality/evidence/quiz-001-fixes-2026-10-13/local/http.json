@@ -1,0 +1,54 @@
+{
+  "recordedAt": "2026-10-12T17:08:18.322Z",
+  "nextBuildId": "jqHexBmsr0Ok_6Na_3zSS",
+  "results": [
+    {
+      "base": "http://127.0.0.1:3114",
+      "indexedPages": 22,
+      "preservedNoindexPages": 16,
+      "real404s": 3,
+      "encodedRoutes": 2,
+      "detail": {
+        "status": 200,
+        "canonical": "https://mysquarefaceicon.com/games/friend-block-test",
+        "indexable": true,
+        "schemas": [
+          "VideoGame",
+          "FAQPage",
+          "BreadcrumbList"
+        ]
+      },
+      "staticEntry": {
+        "status": 200,
+        "noindex": true,
+        "noRedirect": true,
+        "noTransform": true
+      },
+      "sitemapUnique": true
+    },
+    {
+      "base": "http://127.0.0.1:3115",
+      "indexedPages": 22,
+      "preservedNoindexPages": 16,
+      "real404s": 3,
+      "encodedRoutes": 2,
+      "detail": {
+        "status": 200,
+        "canonical": "https://mysquarefaceicon.com/games/friend-block-test",
+        "indexable": true,
+        "schemas": [
+          "VideoGame",
+          "FAQPage",
+          "BreadcrumbList"
+        ]
+      },
+      "staticEntry": {
+        "status": 200,
+        "noindex": true,
+        "noRedirect": true,
+        "noTransform": true
+      },
+      "sitemapUnique": true
+    }
+  ]
+}

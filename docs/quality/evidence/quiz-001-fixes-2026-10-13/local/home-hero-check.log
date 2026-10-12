@@ -1,0 +1,9 @@
+
+> mysquarefaceicon@0.1.0 home-hero:check
+> node scripts/run-home-hero-check.mjs
+
+HOME-HERO-001 validation passed
+- exact H1/value copy, one core preview, and both Play entry points are present
+- the desktop Hero uses the accepted split layout and mobile hides the duplicate CTA
+- initial HTML contains no Ruffle/WASM/SWF and the heavy adapter remains conditional
+- the external Hero Play action controls the same GamePlayer instance directly

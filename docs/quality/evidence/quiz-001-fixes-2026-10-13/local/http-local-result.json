@@ -1,0 +1,11 @@
+{
+  "command": [
+    "C:/nvm4w/nodejs/node.exe",
+    "scripts/qa-friend-quiz-http.mjs"
+  ],
+  "exitCode": 0,
+  "signal": null,
+  "durationMs": 4893,
+  "recordedAt": "2026-10-12T17:08:18.353Z",
+  "log": "http-local.log"
+}

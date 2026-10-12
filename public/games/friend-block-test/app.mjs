@@ -27,7 +27,7 @@ function reset() {
   go("start");
 }
 function privacy() {
-  return element("p", { class: "privacy" }, "No signup. Answers stay in the share link; results stay on this device. Nothing from the quiz is uploaded. Share only with people you choose. Anyone with the link can read its contents.");
+  return element("p", { class: "privacy" }, "No signup. Quiz content is not uploaded; results stay on this device. The surrounding site uses analytics and ads. Use Copy link to share; anyone with the link can read its contents.");
 }
 function masthead() {
   return element("div", { class: "masthead" }, element("span", { class: "wordmark" }, "FRIEND BLOCK TEST"),
@@ -39,7 +39,7 @@ function identity(answering) {
     avatars.querySelectorAll("button").forEach((node, i) => node.setAttribute("aria-pressed", String(i === index)));
     announce(`${name} avatar selected.`);
   }, "avatar", { "aria-label": `${name} avatar`, "aria-pressed": index === selectedAvatar })));
-  const input = element("input", { id: "nickname", class: "nickname", type: "text", value: nickname, autocomplete: "off", maxlength: 160, "aria-describedby": "nickname-hint", placeholder: "Your nickname", oninput: event => { nickname = event.target.value; } });
+  const input = element("input", { id: "nickname", class: "nickname", type: "text", value: nickname, autocomplete: "off", maxlength: 16, "aria-describedby": "nickname-hint", placeholder: "Your nickname", oninput: event => { nickname = event.target.value; } });
   const form = element("form", { onsubmit: event => {
     event.preventDefault();
     const cleaned = cleanName(nickname);
@@ -136,8 +136,7 @@ function reportSize() {
   if (window.parent === window) return;
   requestAnimationFrame(() => window.parent.postMessage({ type: "friend-quiz:size", height: Math.ceil(app.getBoundingClientRect().height + status.getBoundingClientRect().height + 8) }, location.origin));
 }
-function readLink() {
-  const hash = location.hash;
+function readLink(hash = location.hash) {
   if (!hash || hash === "#game-player") { stage = "start"; }
   else {
     const parsed = decode(hash);
@@ -151,7 +150,11 @@ function readLink() {
   }
   render();
 }
-window.addEventListener("hashchange", readLink);
+window.addEventListener("hashchange", () => readLink());
+window.addEventListener("message", event => {
+  if (event.source !== window.parent || event.origin !== location.origin || window.parent === window) return;
+  if (event.data?.type === "friend-quiz:link" && typeof event.data.fragment === "string") readLink(event.data.fragment);
+});
 window.addEventListener("resize", reportSize);
 new ResizeObserver(reportSize).observe(app);
 readLink();

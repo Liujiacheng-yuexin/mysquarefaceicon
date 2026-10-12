@@ -11,6 +11,8 @@
 
 ## Confirmed Product Direction
 
+- On 2026-10-13, the user confirmed the QUIZ-001 mobile-preview, shared-link auto-start and nickname repairs and explicitly included enabling the public page's ads/analytics. This supersedes only the earlier quiz-page script exclusion: the embedded game remains without third-party resources/uploads, and private fragments are captured and removed before vendors run. Main commit/push/deployment is authorized after the required checks. See `docs/product/friend-block-test-fixes.md`.
+
 - On 2026-10-12, the user explicitly confirmed QUIZ-001 for local development: one avatar-led Friend Block Test at `/games/friend-block-test`, a `friend-quizzes` category, a per-record indexing exception and quiz-only third-party script isolation. This is a single supplementary experience, not an expansion into a general games portal. The Square flagship and homepage first viewport remain unchanged. Implementation acceptance and release permission remain separate; see `docs/product/friend-block-test-proposal.md`.
 
 - On 2026-09-22, the user accepted HOME-CTR-001 homepage metadata and confirmed the HOME-MOBILE-001 proposal: a Classic game / Simple maker switch within the same homepage tool region. Phones default to the geometric Canvas maker; desktop defaults to the classic game. These are distinct visual styles, not a remake of the SWF. Homepage keyword, H1, canonical, index policy and vertical scope remain unchanged. Implementation acceptance and deployment remain separate.

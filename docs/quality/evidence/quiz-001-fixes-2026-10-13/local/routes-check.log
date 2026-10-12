@@ -1,0 +1,9 @@
+
+> mysquarefaceicon@0.1.0 routes:check
+> node scripts/run-game-route-check.mjs
+
+ROUTE-001 validation passed
+- three frozen legacy paths resolve without duplicate /games aliases
+- future /games/[slug] routes require exact paths, published status, and release permission
+- six allowlisted categories resolve from real published records; unknown categories fail closed
+- new route families retain default noindex with one approved index exception and true 404 guards

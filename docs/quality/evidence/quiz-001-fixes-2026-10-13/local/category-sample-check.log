@@ -1,0 +1,5 @@
+
+> mysquarefaceicon@0.1.0 category-sample:check
+> node scripts/check-category-sample.mjs
+
+{"task":"CATEGORY-001","scope":"CATEGORY_SAMPLE","result":"PASS","assertions":581,"negativeFixtures":80,"mode":"source/SSR/loader","humanReview":"not completed","browser":"separate evidence required"}

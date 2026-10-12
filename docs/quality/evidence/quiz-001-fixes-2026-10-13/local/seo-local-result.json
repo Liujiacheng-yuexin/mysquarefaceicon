@@ -1,0 +1,16 @@
+{
+  "command": [
+    "C:/nvm4w/nodejs/node.exe",
+    "C:/nvm4w/nodejs/node_modules/npm/bin/npm-cli.js",
+    "run",
+    "seo:check",
+    "--",
+    "--base",
+    "http://127.0.0.1:3114"
+  ],
+  "exitCode": 0,
+  "signal": null,
+  "durationMs": 902,
+  "recordedAt": "2026-10-12T17:08:14.336Z",
+  "log": "seo-local.log"
+}

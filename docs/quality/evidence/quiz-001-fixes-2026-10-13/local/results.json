@@ -1,0 +1,188 @@
+[
+  {
+    "command": "npm run banner:check",
+    "exitCode": 0,
+    "durationMs": 1127,
+    "log": "C:\\Users\\liu\\.codex\\visualizations\\2026\\10\\13\\01a13010-c102-71b3-876d-6bacaa8d5aa9\\quiz-001-fixes/checks-final/banner-check.log"
+  },
+  {
+    "command": "npm run canonical:check",
+    "exitCode": 0,
+    "durationMs": 1839,
+    "log": "C:\\Users\\liu\\.codex\\visualizations\\2026\\10\\13\\01a13010-c102-71b3-876d-6bacaa8d5aa9\\quiz-001-fixes/checks-final/canonical-check.log"
+  },
+  {
+    "command": "npm run terms:check",
+    "exitCode": 0,
+    "durationMs": 489,
+    "log": "C:\\Users\\liu\\.codex\\visualizations\\2026\\10\\13\\01a13010-c102-71b3-876d-6bacaa8d5aa9\\quiz-001-fixes/checks-final/terms-check.log"
+  },
+  {
+    "command": "npm run about:check",
+    "exitCode": 0,
+    "durationMs": 381,
+    "log": "C:\\Users\\liu\\.codex\\visualizations\\2026\\10\\13\\01a13010-c102-71b3-876d-6bacaa8d5aa9\\quiz-001-fixes/checks-final/about-check.log"
+  },
+  {
+    "command": "npm run editorial:check",
+    "exitCode": 0,
+    "durationMs": 362,
+    "log": "C:\\Users\\liu\\.codex\\visualizations\\2026\\10\\13\\01a13010-c102-71b3-876d-6bacaa8d5aa9\\quiz-001-fixes/checks-final/editorial-check.log"
+  },
+  {
+    "command": "npm run gallery:check",
+    "exitCode": 0,
+    "durationMs": 902,
+    "log": "C:\\Users\\liu\\.codex\\visualizations\\2026\\10\\13\\01a13010-c102-71b3-876d-6bacaa8d5aa9\\quiz-001-fixes/checks-final/gallery-check.log"
+  },
+  {
+    "command": "npm run locale:check",
+    "exitCode": 0,
+    "durationMs": 1056,
+    "log": "C:\\Users\\liu\\.codex\\visualizations\\2026\\10\\13\\01a13010-c102-71b3-876d-6bacaa8d5aa9\\quiz-001-fixes/checks-final/locale-check.log"
+  },
+  {
+    "command": "npm run square-home:check",
+    "exitCode": 0,
+    "durationMs": 3253,
+    "log": "C:\\Users\\liu\\.codex\\visualizations\\2026\\10\\13\\01a13010-c102-71b3-876d-6bacaa8d5aa9\\quiz-001-fixes/checks-final/square-home-check.log"
+  },
+  {
+    "command": "npm run oval-page:check",
+    "exitCode": 0,
+    "durationMs": 3068,
+    "log": "C:\\Users\\liu\\.codex\\visualizations\\2026\\10\\13\\01a13010-c102-71b3-876d-6bacaa8d5aa9\\quiz-001-fixes/checks-final/oval-page-check.log"
+  },
+  {
+    "command": "npm run pixel-page:check",
+    "exitCode": 0,
+    "durationMs": 3091,
+    "log": "C:\\Users\\liu\\.codex\\visualizations\\2026\\10\\13\\01a13010-c102-71b3-876d-6bacaa8d5aa9\\quiz-001-fixes/checks-final/pixel-page-check.log"
+  },
+  {
+    "command": "npm run games:check",
+    "exitCode": 0,
+    "durationMs": 1808,
+    "log": "C:\\Users\\liu\\.codex\\visualizations\\2026\\10\\13\\01a13010-c102-71b3-876d-6bacaa8d5aa9\\quiz-001-fixes/checks-final/games-check.log"
+  },
+  {
+    "command": "npm run player:check",
+    "exitCode": 0,
+    "durationMs": 1977,
+    "log": "C:\\Users\\liu\\.codex\\visualizations\\2026\\10\\13\\01a13010-c102-71b3-876d-6bacaa8d5aa9\\quiz-001-fixes/checks-final/player-check.log"
+  },
+  {
+    "command": "npm run routes:check",
+    "exitCode": 0,
+    "durationMs": 3748,
+    "log": "C:\\Users\\liu\\.codex\\visualizations\\2026\\10\\13\\01a13010-c102-71b3-876d-6bacaa8d5aa9\\quiz-001-fixes/checks-final/routes-check.log"
+  },
+  {
+    "command": "npm run components:check",
+    "exitCode": 0,
+    "durationMs": 2859,
+    "log": "C:\\Users\\liu\\.codex\\visualizations\\2026\\10\\13\\01a13010-c102-71b3-876d-6bacaa8d5aa9\\quiz-001-fixes/checks-final/components-check.log"
+  },
+  {
+    "command": "npm run metadata:check",
+    "exitCode": 0,
+    "durationMs": 1423,
+    "log": "C:\\Users\\liu\\.codex\\visualizations\\2026\\10\\13\\01a13010-c102-71b3-876d-6bacaa8d5aa9\\quiz-001-fixes/checks-final/metadata-check.log"
+  },
+  {
+    "command": "npm run home:check",
+    "exitCode": 0,
+    "durationMs": 2693,
+    "log": "C:\\Users\\liu\\.codex\\visualizations\\2026\\10\\13\\01a13010-c102-71b3-876d-6bacaa8d5aa9\\quiz-001-fixes/checks-final/home-check.log"
+  },
+  {
+    "command": "npm run home-hero:check",
+    "exitCode": 0,
+    "durationMs": 2528,
+    "log": "C:\\Users\\liu\\.codex\\visualizations\\2026\\10\\13\\01a13010-c102-71b3-876d-6bacaa8d5aa9\\quiz-001-fixes/checks-final/home-hero-check.log"
+  },
+  {
+    "command": "npm run home-discovery:check",
+    "exitCode": 0,
+    "durationMs": 2214,
+    "log": "C:\\Users\\liu\\.codex\\visualizations\\2026\\10\\13\\01a13010-c102-71b3-876d-6bacaa8d5aa9\\quiz-001-fixes/checks-final/home-discovery-check.log"
+  },
+  {
+    "command": "npm run home-gallery:check",
+    "exitCode": 0,
+    "durationMs": 3761,
+    "log": "C:\\Users\\liu\\.codex\\visualizations\\2026\\10\\13\\01a13010-c102-71b3-876d-6bacaa8d5aa9\\quiz-001-fixes/checks-final/home-gallery-check.log"
+  },
+  {
+    "command": "npm run perf-home:check",
+    "exitCode": 0,
+    "durationMs": 2428,
+    "log": "C:\\Users\\liu\\.codex\\visualizations\\2026\\10\\13\\01a13010-c102-71b3-876d-6bacaa8d5aa9\\quiz-001-fixes/checks-final/perf-home-check.log"
+  },
+  {
+    "command": "npm run game-template:check",
+    "exitCode": 0,
+    "durationMs": 2896,
+    "log": "C:\\Users\\liu\\.codex\\visualizations\\2026\\10\\13\\01a13010-c102-71b3-876d-6bacaa8d5aa9\\quiz-001-fixes/checks-final/game-template-check.log"
+  },
+  {
+    "command": "npm run games-index:check",
+    "exitCode": 0,
+    "durationMs": 1720,
+    "log": "C:\\Users\\liu\\.codex\\visualizations\\2026\\10\\13\\01a13010-c102-71b3-876d-6bacaa8d5aa9\\quiz-001-fixes/checks-final/games-index-check.log"
+  },
+  {
+    "command": "npm run category-sample:check",
+    "exitCode": 0,
+    "durationMs": 2869,
+    "log": "C:\\Users\\liu\\.codex\\visualizations\\2026\\10\\13\\01a13010-c102-71b3-876d-6bacaa8d5aa9\\quiz-001-fixes/checks-final/category-sample-check.log"
+  },
+  {
+    "command": "npm run category-remaining:check",
+    "exitCode": 0,
+    "durationMs": 1727,
+    "log": "C:\\Users\\liu\\.codex\\visualizations\\2026\\10\\13\\01a13010-c102-71b3-876d-6bacaa8d5aa9\\quiz-001-fixes/checks-final/category-remaining-check.log"
+  },
+  {
+    "command": "npm run related:check",
+    "exitCode": 0,
+    "durationMs": 1843,
+    "log": "C:\\Users\\liu\\.codex\\visualizations\\2026\\10\\13\\01a13010-c102-71b3-876d-6bacaa8d5aa9\\quiz-001-fixes/checks-final/related-check.log"
+  },
+  {
+    "command": "npm run recent:check",
+    "exitCode": 0,
+    "durationMs": 2303,
+    "log": "C:\\Users\\liu\\.codex\\visualizations\\2026\\10\\13\\01a13010-c102-71b3-876d-6bacaa8d5aa9\\quiz-001-fixes/checks-final/recent-check.log"
+  },
+  {
+    "command": "npm run favorites:check",
+    "exitCode": 0,
+    "durationMs": 2324,
+    "log": "C:\\Users\\liu\\.codex\\visualizations\\2026\\10\\13\\01a13010-c102-71b3-876d-6bacaa8d5aa9\\quiz-001-fixes/checks-final/favorites-check.log"
+  },
+  {
+    "command": "npm run assets:check",
+    "exitCode": 0,
+    "durationMs": 1793,
+    "log": "C:\\Users\\liu\\.codex\\visualizations\\2026\\10\\13\\01a13010-c102-71b3-876d-6bacaa8d5aa9\\quiz-001-fixes/checks-final/assets-check.log"
+  },
+  {
+    "command": "npm run images:check",
+    "exitCode": 0,
+    "durationMs": 1801,
+    "log": "C:\\Users\\liu\\.codex\\visualizations\\2026\\10\\13\\01a13010-c102-71b3-876d-6bacaa8d5aa9\\quiz-001-fixes/checks-final/images-check.log"
+  },
+  {
+    "command": "npm run ruffle:check",
+    "exitCode": 0,
+    "durationMs": 341,
+    "log": "C:\\Users\\liu\\.codex\\visualizations\\2026\\10\\13\\01a13010-c102-71b3-876d-6bacaa8d5aa9\\quiz-001-fixes/checks-final/ruffle-check.log"
+  },
+  {
+    "command": "npm run quiz:check",
+    "exitCode": 0,
+    "durationMs": 1614,
+    "log": "C:\\Users\\liu\\.codex\\visualizations\\2026\\10\\13\\01a13010-c102-71b3-876d-6bacaa8d5aa9\\quiz-001-fixes/checks-final/quiz-check.log"
+  }
+]

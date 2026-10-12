@@ -1,0 +1,10 @@
+
+> mysquarefaceicon@0.1.0 home-gallery:check
+> node scripts/run-home-gallery-check.mjs
+
+HOME-GALLERY-001 validation passed
+- exact curated title, copy, trust note, six-item order, and ordinary /gallery link passed
+- semantic figures, explicit 512x512 dimensions, lazy loading, and responsive 3x2 CSS passed
+- hardcoded likes, Heart UI, community-title claims, and the old mandatory-like component are absent
+- Home uses the editorial variant; Oval and Pixel use the bounded compact variant
+- the real /gallery CommentSection remains in place

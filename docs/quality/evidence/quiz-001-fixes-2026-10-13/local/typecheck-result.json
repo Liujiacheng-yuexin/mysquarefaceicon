@@ -1,0 +1,12 @@
+{
+  "command": [
+    "C:\\nvm4w\\nodejs\\node.exe",
+    "node_modules/typescript/bin/tsc",
+    "--noEmit"
+  ],
+  "exitCode": 0,
+  "signal": null,
+  "durationMs": 1601,
+  "recordedAt": "2026-10-12T17:03:18.449Z",
+  "log": "typecheck.log"
+}
