@@ -257,3 +257,5 @@ main 与 origin/main 同步于 1d275c6；lint、Next build（含类型验证）�
 31 项离线检查、type、零警告 lint、Next/OpenNext 构建通过；新增真实启动前 320/375/390 尺寸检查，以及本地 Worker 320/375 创建/自动邀请/答题/自动回传/去重/片段变更检查通过。296 个本地请求未包含片段、昵称或 quiz ID，厂商脚本在本地使用受控替身，发布后另测真实厂商。SEO 22 页 0 must / 13 should：原 12 项，加上必要隐私披露造成的 KW-03 0.46% 提醒，不为词频填充正文。robots 和两运行时的索引/404/资源入口矩阵通过。
 
 本条为提交前证据，不提前声明生产成功。实际 commit、Worker version、seo:prod 和真实厂商移动流程见 [修复与发布证据](docs/quality/evidence/quiz-001-fixes-2026-10-13/README.md) 指向的回执及权威看板。真机/Safari/读屏、实际广告填充、后台统计接收、地区/CMP、CWV、KW-04/独立人工审核及旧权利 UNKNOWN 保留；不写入 IndexNow/GSC，不自动完成看板任务。
+
+首次发布 eec84e19 的生产 SEO/HTTP 与启动前尺寸通过；真实网络复测暴露 iframe 的 load 回调延迟到答题中途，重复初始化导致返回昵称页。追加修复改为仅一次的 game-ready 握手，并按模块内容 hash 更新脚本 URL，避免现有 service worker 缓存旧脚本。新增延迟图片及旧缓存浏览器回归，完整门禁重跑后继续同一授权发布；首轮失败保留在外部证据，最终 commit/version 与生产结论以 followup 回执及看板为准。

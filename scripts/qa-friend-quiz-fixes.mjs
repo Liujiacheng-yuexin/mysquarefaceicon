@@ -13,6 +13,7 @@ const realTelemetry = process.env.QUIZ_REAL_TELEMETRY === "true";
 mkdirSync(out, { recursive: true });
 const browser = await chromium.launch({ channel: process.env.QUIZ_BROWSER_CHANNEL || "chrome", headless: true });
 const rows = [], requests = [], consoleMessages = [], appErrors = [];
+const requestRecords = new WeakMap();
 const save = () => writeFileSync(join(out, "results.json"), JSON.stringify({ recordedAt: new Date().toISOString(), base, realTelemetry, browser: browser.version(), simulatedViewports: true, browserPlugin: "Browser plugin not available; existing Playwright and Chrome used", rows, consoleMessages, appErrors, requests }, null, 2));
 const privateNeedles = new Set(["fbt1.", "QUIZHOSTPRIVACY", "QUIZPALPRIVACY"]);
 function decoded(text) { for (let i = 0; i < 3; i++) { try { text = decodeURIComponent(text); } catch { break; } } return text; }
@@ -21,6 +22,7 @@ function checkRequest(request) {
   let frameUrl = ""; try { frameUrl = request.frame().url(); } catch {}
   data.gameFrame = frameUrl.includes("/games/friend-block-test/index.html");
   requests.push(data);
+  requestRecords.set(request, data);
 }
 function assertNetwork() {
   for (const request of requests) {
@@ -37,12 +39,18 @@ async function context(width) {
   const result = await browser.newContext({ viewport: { width, height: 844 }, permissions: ["clipboard-read", "clipboard-write"] });
   if (!realTelemetry) await result.route("**/*", async route => {
     const request = route.request();
-    if (new URL(request.url()).origin === new URL(base).origin) return route.continue();
+    if (new URL(request.url()).origin === new URL(base).origin) {
+      // Force the iframe's load event to arrive after its interactive module.
+      if (new URL(request.url()).pathname === "/game-face-samples/classic.webp") await new Promise(resolve => setTimeout(resolve, 1800));
+      return route.continue();
+    }
     if (request.resourceType() === "script") return route.fulfill({ contentType: "text/javascript", body: `fetch('https://telemetry.example.invalid/probe',{method:'POST',body:JSON.stringify({url:location.href,referrer:document.referrer})}).catch(function(){});` });
     return route.fulfill({ status: 204, body: "" });
   });
   result.on("page", page => {
     page.on("request", checkRequest);
+    page.on("response", response => { const record = requestRecords.get(response.request()); if (record) record.status = response.status(); });
+    page.on("requestfailed", request => { const record = requestRecords.get(request); if (record) record.failure = request.failure()?.errorText; });
     page.on("pageerror", error => appErrors.push(error.stack || error.message));
     page.on("console", message => { if (["error", "warning"].includes(message.type())) consoleMessages.push({ type: message.type(), text: message.text(), location: message.location() }); });
   });
@@ -97,6 +105,16 @@ try {
   }
   for (const width of [320, 375]) {
     const maker = await context(width), friend = await context(width), a = await maker.newPage(), b = await friend.newPage();
+    if (width === 375) {
+      await a.goto(base + "/games/friend-block-test", { waitUntil: "load" });
+      await a.evaluate(async () => {
+        await navigator.serviceWorker.register("/sw.js");
+        await navigator.serviceWorker.ready;
+        if (!navigator.serviceWorker.controller) await new Promise(resolve => navigator.serviceWorker.addEventListener("controllerchange", resolve, { once: true }));
+        const cache = await caches.open("msfi-v9-ruffle-2026-05-12");
+        await cache.put("/games/friend-block-test/app.mjs", new Response("document.getElementById('app').textContent='STALE QUIZ MODULE';", { headers: { "Content-Type": "text/javascript" } }));
+      });
+    }
     const fa = await visit(a, base + "/games/friend-block-test");
     assert.equal(await fa.locator("#nickname").getAttribute("maxlength"), "16");
     await fa.locator("#nickname").fill("12345678901234567");
@@ -109,6 +127,10 @@ try {
       await fa.locator(".option").nth(i % 4).click(); await noOverflow(a, fa);
       if (i === 0) await a.screenshot({ path: join(out, `create-${width}.png`) });
       await fa.getByRole("button", { name: i === 9 ? "Get my share link" : "Next question", exact: true }).click();
+      if (i === 0) {
+        await a.waitForTimeout(2200);
+        assert.match(await fa.locator(".progress-row").innerText(), /2\s*\/\s*10/, "A late iframe load must not reset an in-progress quiz");
+      }
     }
     const quizLink = await fa.locator("#share-link").inputValue();
     privateNeedles.add(decode(new URL(quizLink).hash).payload.id);
@@ -137,7 +159,7 @@ try {
     assert.equal(new URL(a.url()).hash, "");
     await a.waitForTimeout(13000);
     assertNetwork();
-    rows.push({ width, state: "create/answer/result", autoStartsSharedQuiz: true, autoStartsSharedResult: true, scrolledIntoView: true, maxlength: 16, score: 70, savedOnce: true, hashChangeAfterTelemetry: true, privatePayloadRequests: 0 }); save();
+    rows.push({ width, state: "create/answer/result", autoStartsSharedQuiz: true, autoStartsSharedResult: true, scrolledIntoView: true, maxlength: 16, score: 70, savedOnce: true, hashChangeAfterTelemetry: true, lateFrameLoadDoesNotReset: true, oldServiceWorkerCacheBypassed: width === 375, privatePayloadRequests: 0 }); save();
     await maker.close(); await friend.close();
     console.log(`PASS ${width}: create → fresh automatic invitation → answer → 70/100 → automatic return → saved once; no private payload in requests`);
   }

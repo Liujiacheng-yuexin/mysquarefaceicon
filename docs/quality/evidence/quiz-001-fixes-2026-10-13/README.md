@@ -28,6 +28,8 @@ URLs: `/games/friend-block-test`, its static entry, and the updated `/privacy-po
 
 ## Release evidence and limitations
 
+The first deployment (`eec84e19`, Worker `977f2ae1-f3c7-410f-842e-38ea868997a2`) passed production SEO/HTTP and the unopened-width checks. The real-network browser run exposed a late iframe-load initialization resetting an in-progress quiz. A follow-up uses a one-time ready handshake and a content-hashed module URL so existing service-worker caches cannot keep the old behavior. A delayed-image regression and a seeded stale-cache browser are added. Follow-up gate/release records live under `followup/` in the external evidence directory below; the original failed production run is preserved, not relabeled as passing.
+
 This document is committed before release and does not claim deployment has already succeeded. The exact source commit, Worker annotation/version, push result, `seo:prod`, real-vendor 320/375 round trips, request audit and screenshots are recorded after deployment in the authoritative HTML board and:
 
 `C:/Users/liu/.codex/visualizations/2026/10/13/01a13010-c102-71b3-876d-6bacaa8d5aa9/quiz-001-fixes/`
@@ -39,3 +41,7 @@ No physical phone/Safari/screen-reader, actual ad fill, vendor-dashboard receipt
 Rollback source: base commit `a835bb89`. Before this release the active Worker was `eb878f23-c269-4cbc-9210-5bfe7a5d99e2` (100%). Verify availability and use the normal Wrangler rollback procedure with appropriate authorization if a confirmed regression needs recovery; then repeat production checks. No data migration occurred; Worker rollback does not restore KV/R2. Use ordinary source revert, never force-push/reset.
 
 References: [GA page-view configuration](https://developers.google.com/analytics/devguides/collection/ga4/views), [Google consent mode](https://developers.google.com/tag-platform/security/guides/consent), [Cloudflare beacon collection](https://developers.cloudflare.com/web-analytics/data-metrics/data-origin-and-collection/).
+
+## Follow-up local gate · 2026-10-13
+
+All 31 offline checks, TypeScript, lint, Next build and Cloudflare build passed again on the handshake/cache repair. Both local production HTTP matrices pass, robots passes and SEO remains 0 must / 13 should. The local Worker browser passes unopened 320/375/390 and full 320/375 sharing/results, delayed-image initialization and a deliberately stale service-worker cache at 375. All 307 inspected local requests contain no quiz fragment, nickname or quiz ID. Vendors are mocked only for this local test; production transport is tested separately. Logs and the updated source fingerprint are in `followup/`; the earlier fingerprints remain historical.

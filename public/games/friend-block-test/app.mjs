@@ -2,6 +2,7 @@ import { AVATARS, QUESTIONS, PAGE_PATH, STORAGE_KEY, cleanName, decode, newQuiz,
 
 const app = document.getElementById("app");
 const status = document.getElementById("status");
+let linkInitialized = window.parent === window;
 let storage;
 try { storage = window.localStorage; } catch { storage = { getItem() { throw new Error(); }, setItem() { throw new Error(); }, removeItem() { throw new Error(); } }; }
 let stage = "start", quiz = null, result = null, step = 0, guesses = [], selectedAvatar = 0, nickname = "", savedNote = "", originStage = "start", confirmClear = false;
@@ -133,10 +134,11 @@ function render() {
   reportSize();
 }
 function reportSize() {
-  if (window.parent === window) return;
+  if (window.parent === window || !linkInitialized) return;
   requestAnimationFrame(() => window.parent.postMessage({ type: "friend-quiz:size", height: Math.ceil(app.getBoundingClientRect().height + status.getBoundingClientRect().height + 8) }, location.origin));
 }
 function readLink(hash = location.hash) {
+  linkInitialized = true;
   if (!hash || hash === "#game-player") { stage = "start"; }
   else {
     const parsed = decode(hash);
@@ -157,4 +159,5 @@ window.addEventListener("message", event => {
 });
 window.addEventListener("resize", reportSize);
 new ResizeObserver(reportSize).observe(app);
-readLink();
+if (window.parent === window) readLink();
+else window.parent.postMessage({ type: "friend-quiz:ready" }, location.origin);

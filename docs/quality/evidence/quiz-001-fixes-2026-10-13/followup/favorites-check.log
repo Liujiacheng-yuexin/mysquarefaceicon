@@ -1,0 +1,12 @@
+
+> mysquarefaceicon@0.1.0 favorites:check
+> node scripts/run-favorites-check.mjs
+
+FAV-001 validation passed
+- versioned local parsing, newest-first order, 50-item limit and fail-closed storage pass
+- all three published Game Data records are eligible, including labeled Pixel External
+- card buttons are link siblings; detail actions preserve primary CTA order and /games visibility
+- empty SSR, focus target, privacy disclosure and no-network boundary match the confirmed scope
+FAV-001 compatibility validation passed
+- exact pre-FAV source hashes remain available to immutable historical checks
+- binary inputs remain byte-identical and only favorite wrappers/controls are removed from legacy SSR

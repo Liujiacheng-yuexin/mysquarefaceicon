@@ -264,7 +264,7 @@
         "sourceName": "My Square Face Icon original implementation for QUIZ-001",
         "sourceUrl": null,
         "repositoryPath": "public/games/friend-block-test/index.html",
-        "sha256": "57FCAF31AD0841D4A96B4E0193926F895626317D44352309A32904B56CDE7158",
+        "sha256": "5B7F07AE210844A39900F3ECBD88B753E50269A1954C83AF3A25B3FEEA1ADDF3",
         "evidencePaths": [
           "docs/product/friend-block-test-proposal.md",
           "public/games/friend-block-test/core.mjs",

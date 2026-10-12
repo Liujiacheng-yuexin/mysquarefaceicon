@@ -1,0 +1,7 @@
+
+> mysquarefaceicon@0.1.0 about:check
+> node scripts/check-about-rights.mjs
+
+ABOUT-001 source passed: seven exact approved regions, frozen remaining source/metadata/schema, 1 H1 / 5 H2 / 7 H3 / 16 paragraphs, KW-02 count 3, eight main links.
+Fail-closed source negative fixtures: 14 rejected.
+Source checks do not verify raw HTTP, browser/mobile, actual licenses or production release.

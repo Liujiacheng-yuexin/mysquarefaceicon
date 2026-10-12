@@ -1,0 +1,2 @@
+PASS http://127.0.0.1:3114: 22 index pages, 16 noindex pages, 3 real 404s, encoded quiz routes and separate static entry.
+PASS http://127.0.0.1:3115: 22 index pages, 16 noindex pages, 3 real 404s, encoded quiz routes and separate static entry.

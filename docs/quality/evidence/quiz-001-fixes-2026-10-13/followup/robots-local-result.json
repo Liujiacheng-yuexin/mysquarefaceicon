@@ -1,0 +1,13 @@
+{
+  "command": [
+    "C:/nvm4w/nodejs/node.exe",
+    "scripts/check-ai-crawler-policy.mjs",
+    "--base",
+    "http://127.0.0.1:3114"
+  ],
+  "exitCode": 0,
+  "signal": null,
+  "durationMs": 244,
+  "recordedAt": "2026-10-12T17:39:39.605Z",
+  "log": "robots-local.log"
+}

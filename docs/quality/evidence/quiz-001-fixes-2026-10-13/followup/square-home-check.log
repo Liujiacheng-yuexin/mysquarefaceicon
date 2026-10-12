@@ -1,0 +1,7 @@
+
+> mysquarefaceicon@0.1.0 square-home:check
+> node scripts/check-square-homepage.mjs
+
+MIG-SQUARE-001 passed: 19 explicit player props; 8 original full real-component SSR contracts with only the verified MIG-PIXEL sidebar label reversed; 56 content-binding and 38 end-to-end prop-forwarding cases.
+Fail-closed malformed-record fixtures: 150 rejected; optional schema, 11 frozen source files, two SWF hashes, and unchanged UNKNOWN generic-model rejection verified.
+SSR allows only the pre-existing React 18 fetchPriority warning; interaction, fresh CWV, actual licensing, and deployment require separate evidence.

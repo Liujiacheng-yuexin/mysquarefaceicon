@@ -9,6 +9,8 @@ The user reported the production issues observed on 2026-10-12 and explicitly co
 
 The cleaned address bar no longer contains an invitation. Keep the original link or use the game's Copy link button to share/reopen it. Reloading the outer page discards the in-memory invitation. No private payload is added to a server, query string, analytics dataLayer or browser-history state.
 
+Production follow-up: initialization is a one-time game-ready handshake, so a late iframe load cannot reset answers entered while images load. The module URL includes its content hash to bypass an old module cached by the site's existing service worker. The browser gate delays an image and tests a returning browser with a deliberately stale module in that cache.
+
 The page URL, title/H1, canonical, index allowlist, sitemap membership, category noindex policy, original rights records, SWFs and homepage first viewport stay unchanged. Copy and the privacy policy disclose the surrounding ads/analytics accurately. Legacy checks retain their original goldens via an exact, hash-checked inverse of this approved repair; new tests exercise the actual current code.
 
 Evidence: `docs/quality/evidence/quiz-001-fixes-2026-10-13/`. The authoritative HTML board remains the only task tracker and will end at `待验收`, not automatically `已完成`.

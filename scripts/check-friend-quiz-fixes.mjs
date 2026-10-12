@@ -56,6 +56,10 @@ assert.match(app, /maxlength: 16[, }]/); assert.doesNotMatch(app, /maxlength: 16
 assert.match(app, /event\.source !== window\.parent/); assert.match(app, /event\.origin !== location\.origin/);
 const frame = readFileSync("components/game-player/adapters/FriendQuizFrame.tsx", "utf8");
 assert.match(frame, /src=\{FRIEND_QUIZ_ENTRY\}/); assert.doesNotMatch(frame, /src=.*fragment/);
+assert.match(frame, /!connected\.current/);
+assert.match(app, /friend-quiz:ready/);
+const appHash = createHash("sha256").update(readFileSync("public/games/friend-block-test/app.mjs")).digest("hex").slice(0, 16);
+assert(readFileSync("public/games/friend-block-test/index.html", "utf8").includes(`src="./app.mjs?v=${appHash}"`), "Game module URL must change with its bytes to bypass old service-worker caches");
 console.log("PASS 16-character input, fragment-free iframe URLs, trusted handoff and public-page beacon eligibility");
 
 const fixture = JSON.parse(readFileSync("scripts/fixtures/friend-quiz-fixes-delta.json", "utf8"));

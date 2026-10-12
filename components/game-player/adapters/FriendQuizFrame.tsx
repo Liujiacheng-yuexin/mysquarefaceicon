@@ -9,11 +9,15 @@ export default function FriendQuizFrame({ onStatusChange }: { readonly onStatusC
   const frame = useRef<HTMLIFrameElement>(null);
   const [height, setHeight] = useState(640);
   const ready = useRef(false);
+  const connected = useRef(false);
 
   useEffect(() => {
     const receive = (event: MessageEvent) => {
       if (event.origin !== window.location.origin || event.source !== frame.current?.contentWindow) return;
-      if (event.data?.type === "friend-quiz:size" && Number.isFinite(event.data.height)) {
+      if (event.data?.type === "friend-quiz:ready" && !connected.current && frame.current) {
+        connected.current = true;
+        getFriendQuizBridge()?.connect(frame.current);
+      } else if (event.data?.type === "friend-quiz:size" && Number.isFinite(event.data.height)) {
         setHeight(Math.max(520, Math.min(3000, Math.ceil(event.data.height))));
         if (!ready.current) { ready.current = true; onStatusChange({ state: "ready", message: "Friend Block Test is ready. Your quiz stays in your browser." }); }
       } else if (event.data?.type === "friend-quiz:reset") {
@@ -39,7 +43,12 @@ export default function FriendQuizFrame({ onStatusChange }: { readonly onStatusC
     <iframe ref={frame} className="friend-quiz-frame" data-player-adapter="HTML5"
       src={FRIEND_QUIZ_ENTRY} title="Friend Block Test HTML5 game"
       height={height} allow="fullscreen; clipboard-write" referrerPolicy="no-referrer"
-      onLoad={() => { if (frame.current) getFriendQuizBridge()?.connect(frame.current); }}
+      onLoad={() => {
+        if (!connected.current && frame.current) {
+          connected.current = true;
+          getFriendQuizBridge()?.connect(frame.current);
+        }
+      }}
       onError={() => onStatusChange({ state: "error", message: "The quiz could not start. Reload to try again." })} />
   );
 }

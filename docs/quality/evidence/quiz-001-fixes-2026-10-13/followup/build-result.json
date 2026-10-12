@@ -1,0 +1,13 @@
+{
+  "command": [
+    "C:\\nvm4w\\nodejs\\node.exe",
+    "C:\\nvm4w\\nodejs\\node_modules\\npm\\bin\\npm-cli.js",
+    "run",
+    "build"
+  ],
+  "exitCode": 0,
+  "signal": null,
+  "durationMs": 21086,
+  "recordedAt": "2026-10-12T17:37:57.760Z",
+  "log": "build.log"
+}

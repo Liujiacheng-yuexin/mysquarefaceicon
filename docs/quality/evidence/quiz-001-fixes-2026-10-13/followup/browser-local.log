@@ -1,0 +1,10 @@
+
+> mysquarefaceicon@0.1.0 quiz:browser:check
+> node scripts/qa-friend-quiz-fixes.mjs
+
+PASS 320 before activation: stage 296px, cover/Start/Restart/Report Issue fit
+PASS 375 before activation: stage 351px, cover/Start/Restart/Report Issue fit
+PASS 390 before activation: stage 366px, cover/Start/Restart/Report Issue fit
+PASS 320: create → fresh automatic invitation → answer → 70/100 → automatic return → saved once; no private payload in requests
+PASS 375: create → fresh automatic invitation → answer → 70/100 → automatic return → saved once; no private payload in requests
+PASS telemetry: GA/AdSense (mock vendors); 307 inspected requests, zero quiz fragments, nicknames or quiz IDs transmitted

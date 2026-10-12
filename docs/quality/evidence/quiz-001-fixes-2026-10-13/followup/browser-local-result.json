@@ -1,0 +1,13 @@
+{
+  "command": [
+    "C:/nvm4w/nodejs/node.exe",
+    "C:/nvm4w/nodejs/node_modules/npm/bin/npm-cli.js",
+    "run",
+    "quiz:browser:check"
+  ],
+  "exitCode": 0,
+  "signal": null,
+  "durationMs": 40382,
+  "recordedAt": "2026-10-12T17:40:19.698Z",
+  "log": "browser-local.log"
+}

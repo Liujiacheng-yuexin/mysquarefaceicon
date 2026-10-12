@@ -1,0 +1,9 @@
+
+> mysquarefaceicon@0.1.0 locale:check
+> node scripts/check-locale-rights.mjs
+
+MIG-OVAL-001 isolated discovery guard: 7 negative fixtures rejected; original eight SSR hashes and all existing fixtures retained.
+MIG-PIXEL-001 isolated discovery guard: 8 negative fixtures rejected; only exact confirmed data/side-label differences reversed, no golden refresh.
+LOCALE-001 source passed: four confirmed copy regions plus MIG-SQUARE data binding, other source frozen; 8 unchanged isolated HomePage/GameSidebar SSR and metadata contracts.
+Fail-closed source negative fixtures: 19 rejected. Player/Hero/discovery/gallery/resource/install components use explicit isolated stubs, not browser proof.
+This check does not prove actual SWF/image permissions, browser hydration/mobile behavior, current CWV, or production deployment.

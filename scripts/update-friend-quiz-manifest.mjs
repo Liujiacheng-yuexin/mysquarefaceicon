@@ -6,6 +6,14 @@ const manifest = JSON.parse(readFileSync(path, "utf8"));
 manifest.cachePolicies.appStaticNoTransform = "public, max-age=0, no-transform";
 const originals = manifest.assets.filter(asset => asset.gameId !== "friend-block-test");
 const root = "public/games/friend-block-test/";
+// The existing service worker caches /games/ files by URL. A content version
+// prevents an older module from surviving an HTML/game protocol upgrade.
+const appVersion = createHash("sha256").update(readFileSync(root + "app.mjs")).digest("hex").slice(0, 16);
+const htmlPath = root + "index.html";
+const html = readFileSync(htmlPath, "utf8");
+const versionedHtml = html.replace(/src="\.\/app\.mjs(?:\?v=[a-f0-9]+)?"/, `src="./app.mjs?v=${appVersion}"`);
+if (versionedHtml === html && !html.includes(`src="./app.mjs?v=${appVersion}"`)) throw new Error("Review the game module reference before refreshing assets");
+writeFileSync(htmlPath, versionedHtml);
 const files = readdirSync(root).filter(file => /\.(html|css|mjs|webp)$/.test(file)).map(file => root + file);
 for (const avatar of ["classic", "cute", "funny", "gamer", "minimal", "retro"]) files.push(`public/game-face-samples/${avatar}.webp`);
 const entries = files.map(sourcePath => {
@@ -25,4 +33,12 @@ const entries = files.map(sourcePath => {
 });
 manifest.assets = [...originals, ...entries];
 writeFileSync(path, JSON.stringify(manifest, null, 2) + "\n");
+// Keep the project-authored entry's byte fingerprint in sync. This does not
+// change any provenance or permission decision in the shared registry.
+const registryPath = "data/game-license-registry.json";
+const registry = JSON.parse(readFileSync(registryPath, "utf8"));
+const record = registry.records.find(item => item.id === "friend-block-test-original");
+if (!record || record.source.repositoryPath !== htmlPath) throw new Error("Review the quiz registry entry before refreshing its fingerprint");
+record.source.sha256 = createHash("sha256").update(readFileSync(htmlPath)).digest("hex").toUpperCase();
+writeFileSync(registryPath, JSON.stringify(registry, null, 2) + "\n");
 console.log(`QUIZ-001 manifest: ${entries.length} local files; ${originals.length} previous entries unchanged.`);

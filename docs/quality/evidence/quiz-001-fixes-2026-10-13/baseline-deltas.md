@@ -8,6 +8,9 @@ Base: a835bb89b60ddc955e4bbf986ead1a44909488f3. Original QUIZ-001 and older gold
 - components/DeferredThirdPartyScripts.tsx
 - components/game-player/adapters/FriendQuizFrame.tsx
 - components/game/GameDetailTemplate.tsx
+- data/game-license-registry.json
+- public/games/friend-block-test/index.html
+- scripts/update-friend-quiz-manifest.mjs
 - data/game-asset-manifest.json
 - data/games/friend-block-test.ts
 - next.config.mjs
@@ -23,4 +26,4 @@ Base: a835bb89b60ddc955e4bbf986ead1a44909488f3. Original QUIZ-001 and older gold
 
 The two local-data disclosure assertions now expect October 13 because the privacy text actually changed. No old negative fixtures were removed. The browser check measures the unopened stage and every cover/control rectangle at 320/375/390, then validates automatic invitations/results and request privacy at 320/375.
 
-The HTTP verifier now expects beacon eligibility on the public detail page while retaining no-transform/noindex on the standalone game. Total exact repair deltas: 18.
+The HTTP verifier now expects beacon eligibility on the public detail page while retaining no-transform/noindex on the standalone game. Total exact repair deltas after the production follow-up: 21. The added files are the versioned static entry, its manifest updater and the project-authored registry byte fingerprint. No rights decision changed.

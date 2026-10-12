@@ -1,0 +1,2528 @@
+{
+  "recordedAt": "2026-10-12T17:40:19.436Z",
+  "base": "http://127.0.0.1:3115",
+  "realTelemetry": false,
+  "browser": "154.0.8037.98",
+  "simulatedViewports": true,
+  "browserPlugin": "Browser plugin not available; existing Playwright and Chrome used",
+  "rows": [
+    {
+      "width": 320,
+      "state": "before activation",
+      "stageWidth": 296,
+      "allControlsFit": true
+    },
+    {
+      "width": 375,
+      "state": "before activation",
+      "stageWidth": 351,
+      "allControlsFit": true
+    },
+    {
+      "width": 390,
+      "state": "before activation",
+      "stageWidth": 366,
+      "allControlsFit": true
+    },
+    {
+      "width": 320,
+      "state": "create/answer/result",
+      "autoStartsSharedQuiz": true,
+      "autoStartsSharedResult": true,
+      "scrolledIntoView": true,
+      "maxlength": 16,
+      "score": 70,
+      "savedOnce": true,
+      "hashChangeAfterTelemetry": true,
+      "lateFrameLoadDoesNotReset": true,
+      "oldServiceWorkerCacheBypassed": false,
+      "privatePayloadRequests": 0
+    },
+    {
+      "width": 375,
+      "state": "create/answer/result",
+      "autoStartsSharedQuiz": true,
+      "autoStartsSharedResult": true,
+      "scrolledIntoView": true,
+      "maxlength": 16,
+      "score": 70,
+      "savedOnce": true,
+      "hashChangeAfterTelemetry": true,
+      "lateFrameLoadDoesNotReset": true,
+      "oldServiceWorkerCacheBypassed": true,
+      "privatePayloadRequests": 0
+    }
+  ],
+  "consoleMessages": [],
+  "appErrors": [],
+  "requests": [
+    {
+      "url": "http://127.0.0.1:3115/games/friend-block-test",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/games/friend-block-test/cover.webp",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/css/80d553d1ead6053f.css",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/webpack-b2628c98ac2f4b8e.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/fd9d1056-b274eb5e39dbf81f.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/117-010bb39d6492d54b.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/main-app-da634f42b4651571.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/972-99d9e8826ca68552.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/753-f85409e84e4ded85.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/281-f60ee5c2bb69ea93.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/app/games/%5Bslug%5D/page-38feb4292a3b4af3.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/app/layout-fdc7987757194de7.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtag/js?id=G-VPL9X65STX",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/square-face-icon.png",
+      "method": "GET",
+      "body": "",
+      "referrer": "http://127.0.0.1:3115/_next/static/css/80d553d1ead6053f.css",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "https://telemetry.example.invalid/probe",
+      "method": "POST",
+      "body": "{\"url\":\"http://127.0.0.1:3115/games/friend-block-test\",\"referrer\":\"\"}",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 204,
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/image?url=%2Fgame-face-samples%2Fgamer.webp&w=96&q=75",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/image?url=%2Fsquare-face-icon.png&w=96&q=75",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/?_rsc=1w0y2",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/games?_rsc=1w0y2",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/favicon32.png",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/194-1c41ff6d3a3bde74.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/777-2e3f4b0ecd2efee7.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/app/page-d21120132451a8a1.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/app/games/page-508555e4ea9e1f3b.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false
+    },
+    {
+      "url": "http://127.0.0.1:3115/games/friend-block-test",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/games/friend-block-test/cover.webp",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/css/80d553d1ead6053f.css",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/webpack-b2628c98ac2f4b8e.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/fd9d1056-b274eb5e39dbf81f.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/117-010bb39d6492d54b.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/main-app-da634f42b4651571.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/972-99d9e8826ca68552.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/753-f85409e84e4ded85.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/281-f60ee5c2bb69ea93.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/app/games/%5Bslug%5D/page-38feb4292a3b4af3.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/app/layout-fdc7987757194de7.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtag/js?id=G-VPL9X65STX",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/square-face-icon.png",
+      "method": "GET",
+      "body": "",
+      "referrer": "http://127.0.0.1:3115/_next/static/css/80d553d1ead6053f.css",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/image?url=%2Fgame-face-samples%2Fgamer.webp&w=96&q=75",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/image?url=%2Fsquare-face-icon.png&w=96&q=75",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/?_rsc=1w0y2",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/games?_rsc=1w0y2",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "https://telemetry.example.invalid/probe",
+      "method": "POST",
+      "body": "{\"url\":\"http://127.0.0.1:3115/games/friend-block-test\",\"referrer\":\"\"}",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 204,
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:3115/favicon32.png",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/194-1c41ff6d3a3bde74.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/777-2e3f4b0ecd2efee7.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/app/page-d21120132451a8a1.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/app/games/page-508555e4ea9e1f3b.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/games/friend-block-test",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/games/friend-block-test/cover.webp",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/css/80d553d1ead6053f.css",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/webpack-b2628c98ac2f4b8e.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/fd9d1056-b274eb5e39dbf81f.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/117-010bb39d6492d54b.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/main-app-da634f42b4651571.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/972-99d9e8826ca68552.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/753-f85409e84e4ded85.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/281-f60ee5c2bb69ea93.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/app/games/%5Bslug%5D/page-38feb4292a3b4af3.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/app/layout-fdc7987757194de7.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtag/js?id=G-VPL9X65STX",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/square-face-icon.png",
+      "method": "GET",
+      "body": "",
+      "referrer": "http://127.0.0.1:3115/_next/static/css/80d553d1ead6053f.css",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/image?url=%2Fgame-face-samples%2Fgamer.webp&w=96&q=75",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/image?url=%2Fsquare-face-icon.png&w=96&q=75",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/?_rsc=1w0y2",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/games?_rsc=1w0y2",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "https://telemetry.example.invalid/probe",
+      "method": "POST",
+      "body": "{\"url\":\"http://127.0.0.1:3115/games/friend-block-test\",\"referrer\":\"\"}",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 204,
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:3115/favicon32.png",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/194-1c41ff6d3a3bde74.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/777-2e3f4b0ecd2efee7.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/app/page-d21120132451a8a1.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/app/games/page-508555e4ea9e1f3b.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/games/friend-block-test",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/games/friend-block-test/cover.webp",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/css/80d553d1ead6053f.css",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/webpack-b2628c98ac2f4b8e.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/fd9d1056-b274eb5e39dbf81f.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/117-010bb39d6492d54b.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/main-app-da634f42b4651571.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/972-99d9e8826ca68552.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/753-f85409e84e4ded85.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/281-f60ee5c2bb69ea93.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/app/games/%5Bslug%5D/page-38feb4292a3b4af3.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/app/layout-fdc7987757194de7.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtag/js?id=G-VPL9X65STX",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/square-face-icon.png",
+      "method": "GET",
+      "body": "",
+      "referrer": "http://127.0.0.1:3115/_next/static/css/80d553d1ead6053f.css",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/image?url=%2Fgame-face-samples%2Fgamer.webp&w=96&q=75",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/image?url=%2Fsquare-face-icon.png&w=96&q=75",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/?_rsc=1w0y2",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/games?_rsc=1w0y2",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "https://telemetry.example.invalid/probe",
+      "method": "POST",
+      "body": "{\"url\":\"http://127.0.0.1:3115/games/friend-block-test\",\"referrer\":\"\"}",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 204,
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:3115/favicon32.png",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9616934112105331",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/games/friend-block-test/index.html",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/194-1c41ff6d3a3bde74.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/777-2e3f4b0ecd2efee7.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/app/page-d21120132451a8a1.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/app/games/page-508555e4ea9e1f3b.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "https://telemetry.example.invalid/probe",
+      "method": "POST",
+      "body": "{\"url\":\"http://127.0.0.1:3115/games/friend-block-test\",\"referrer\":\"\"}",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 204,
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:3115/games/friend-block-test/style.css",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": true,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/games/friend-block-test/app.mjs?v=02289b985403a3c9",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": true,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/games/friend-block-test/core.mjs",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": true,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/game-face-samples/classic.webp",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": true,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/game-face-samples/cute.webp",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": true,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/game-face-samples/funny.webp",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": true,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/game-face-samples/gamer.webp",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": true,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/game-face-samples/minimal.webp",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": true,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/game-face-samples/retro.webp",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": true,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/games/friend-block-test",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/games/friend-block-test/cover.webp",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/css/80d553d1ead6053f.css",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/webpack-b2628c98ac2f4b8e.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/fd9d1056-b274eb5e39dbf81f.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/117-010bb39d6492d54b.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/main-app-da634f42b4651571.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/972-99d9e8826ca68552.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/753-f85409e84e4ded85.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/281-f60ee5c2bb69ea93.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/app/games/%5Bslug%5D/page-38feb4292a3b4af3.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/app/layout-fdc7987757194de7.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtag/js?id=G-VPL9X65STX",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/square-face-icon.png",
+      "method": "GET",
+      "body": "",
+      "referrer": "http://127.0.0.1:3115/_next/static/css/80d553d1ead6053f.css",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/image?url=%2Fgame-face-samples%2Fgamer.webp&w=96&q=75",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/image?url=%2Fsquare-face-icon.png&w=96&q=75",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/games?_rsc=1w0y2",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/pixel-art-avatar-icon-generator?_rsc=1w0y2",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9616934112105331",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/games/friend-block-test/index.html",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "https://telemetry.example.invalid/probe",
+      "method": "POST",
+      "body": "{\"url\":\"http://127.0.0.1:3115/games/friend-block-test\",\"referrer\":\"\"}",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 204,
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://telemetry.example.invalid/probe",
+      "method": "POST",
+      "body": "{\"url\":\"http://127.0.0.1:3115/games/friend-block-test\",\"referrer\":\"\"}",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 204,
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:3115/games/friend-block-test/style.css",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": true,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/games/friend-block-test/app.mjs?v=02289b985403a3c9",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": true,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/app/games/page-508555e4ea9e1f3b.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/app/pixel-art-avatar-icon-generator/page-ba03e836b94ffc6d.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/194-1c41ff6d3a3bde74.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/777-2e3f4b0ecd2efee7.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/app/page-d21120132451a8a1.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/games/friend-block-test/core.mjs",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": true,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/game-face-samples/classic.webp",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": true,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/game-face-samples/cute.webp",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": true,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/game-face-samples/funny.webp",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": true,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/game-face-samples/gamer.webp",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": true,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/game-face-samples/minimal.webp",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": true,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/game-face-samples/retro.webp",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": true,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/favicon32.png",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/games/friend-block-test",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/games/friend-block-test/cover.webp",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/css/80d553d1ead6053f.css",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/webpack-b2628c98ac2f4b8e.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/fd9d1056-b274eb5e39dbf81f.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/117-010bb39d6492d54b.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/main-app-da634f42b4651571.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/972-99d9e8826ca68552.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/753-f85409e84e4ded85.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/281-f60ee5c2bb69ea93.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/app/games/%5Bslug%5D/page-38feb4292a3b4af3.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/app/layout-fdc7987757194de7.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtag/js?id=G-VPL9X65STX",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/square-face-icon.png",
+      "method": "GET",
+      "body": "",
+      "referrer": "http://127.0.0.1:3115/_next/static/css/80d553d1ead6053f.css",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/image?url=%2Fgame-face-samples%2Fgamer.webp&w=96&q=75",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/image?url=%2Fsquare-face-icon.png&w=96&q=75",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "https://telemetry.example.invalid/probe",
+      "method": "POST",
+      "body": "{\"url\":\"http://127.0.0.1:3115/games/friend-block-test\",\"referrer\":\"\"}",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 204,
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:3115/games?_rsc=1w0y2",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/pixel-art-avatar-icon-generator?_rsc=1w0y2",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9616934112105331",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/favicon32.png",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/games/friend-block-test/index.html",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "https://telemetry.example.invalid/probe",
+      "method": "POST",
+      "body": "{\"url\":\"http://127.0.0.1:3115/games/friend-block-test\",\"referrer\":\"\"}",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 204,
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:3115/games/friend-block-test/style.css",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": true,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/games/friend-block-test/app.mjs?v=02289b985403a3c9",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": true,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/app/games/page-508555e4ea9e1f3b.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/app/pixel-art-avatar-icon-generator/page-ba03e836b94ffc6d.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/194-1c41ff6d3a3bde74.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/777-2e3f4b0ecd2efee7.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/app/page-d21120132451a8a1.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/games/friend-block-test/core.mjs",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": true,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/game-face-samples/classic.webp",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": true,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/favicon32.png",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/games/friend-block-test",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/games/friend-block-test/cover.webp",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/css/80d553d1ead6053f.css",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/webpack-b2628c98ac2f4b8e.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/fd9d1056-b274eb5e39dbf81f.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/117-010bb39d6492d54b.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/main-app-da634f42b4651571.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/972-99d9e8826ca68552.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/753-f85409e84e4ded85.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/281-f60ee5c2bb69ea93.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/app/games/%5Bslug%5D/page-38feb4292a3b4af3.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/app/layout-fdc7987757194de7.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtag/js?id=G-VPL9X65STX",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/square-face-icon.png",
+      "method": "GET",
+      "body": "",
+      "referrer": "http://127.0.0.1:3115/_next/static/css/80d553d1ead6053f.css",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/image?url=%2Fgame-face-samples%2Fgamer.webp&w=96&q=75",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/image?url=%2Fsquare-face-icon.png&w=96&q=75",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "https://telemetry.example.invalid/probe",
+      "method": "POST",
+      "body": "{\"url\":\"http://127.0.0.1:3115/games/friend-block-test\",\"referrer\":\"\"}",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 204,
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:3115/?_rsc=1w0y2",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/games?_rsc=1w0y2",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/favicon32.png",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/194-1c41ff6d3a3bde74.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/777-2e3f4b0ecd2efee7.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/app/page-d21120132451a8a1.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/app/games/page-508555e4ea9e1f3b.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/games/friend-block-test",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/css/80d553d1ead6053f.css",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/games/friend-block-test/cover.webp",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtag/js?id=G-VPL9X65STX",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/square-face-icon.png",
+      "method": "GET",
+      "body": "",
+      "referrer": "http://127.0.0.1:3115/_next/static/css/80d553d1ead6053f.css",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "https://telemetry.example.invalid/probe",
+      "method": "POST",
+      "body": "{\"url\":\"http://127.0.0.1:3115/games/friend-block-test\",\"referrer\":\"\"}",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 204,
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/webpack-b2628c98ac2f4b8e.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/main-app-da634f42b4651571.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/972-99d9e8826ca68552.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/753-f85409e84e4ded85.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/117-010bb39d6492d54b.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/fd9d1056-b274eb5e39dbf81f.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/image?url=%2Fgame-face-samples%2Fgamer.webp&w=96&q=75",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/image?url=%2Fsquare-face-icon.png&w=96&q=75",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/app/games/%5Bslug%5D/page-38feb4292a3b4af3.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/app/layout-fdc7987757194de7.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/281-f60ee5c2bb69ea93.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9616934112105331",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "https://telemetry.example.invalid/probe",
+      "method": "POST",
+      "body": "{\"url\":\"http://127.0.0.1:3115/games/friend-block-test\",\"referrer\":\"\"}",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 204,
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:3115/?_rsc=1w0y2",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/games?_rsc=1w0y2",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/games/friend-block-test/index.html",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/194-1c41ff6d3a3bde74.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/app/page-d21120132451a8a1.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/777-2e3f4b0ecd2efee7.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/app/games/page-508555e4ea9e1f3b.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/games/friend-block-test/style.css",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": true,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/games/friend-block-test/app.mjs?v=02289b985403a3c9",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": true,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/games/friend-block-test/core.mjs",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": true,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/game-face-samples/cute.webp",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": true,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/game-face-samples/funny.webp",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": true,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/game-face-samples/gamer.webp",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": true,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/game-face-samples/minimal.webp",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": true,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/game-face-samples/retro.webp",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": true,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/game-face-samples/classic.webp",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": true,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/games/friend-block-test",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/games/friend-block-test/cover.webp",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/css/80d553d1ead6053f.css",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/webpack-b2628c98ac2f4b8e.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/fd9d1056-b274eb5e39dbf81f.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/117-010bb39d6492d54b.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/main-app-da634f42b4651571.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/972-99d9e8826ca68552.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/753-f85409e84e4ded85.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/281-f60ee5c2bb69ea93.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/app/games/%5Bslug%5D/page-38feb4292a3b4af3.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/app/layout-fdc7987757194de7.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtag/js?id=G-VPL9X65STX",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/square-face-icon.png",
+      "method": "GET",
+      "body": "",
+      "referrer": "http://127.0.0.1:3115/_next/static/css/80d553d1ead6053f.css",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/image?url=%2Fgame-face-samples%2Fgamer.webp&w=96&q=75",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/image?url=%2Fsquare-face-icon.png&w=96&q=75",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/?_rsc=1w0y2",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/games?_rsc=1w0y2",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/pixel-art-avatar-icon-generator?_rsc=1w0y2",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9616934112105331",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/games/friend-block-test/index.html",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "https://telemetry.example.invalid/probe",
+      "method": "POST",
+      "body": "{\"url\":\"http://127.0.0.1:3115/games/friend-block-test\",\"referrer\":\"\"}",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 204,
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://telemetry.example.invalid/probe",
+      "method": "POST",
+      "body": "{\"url\":\"http://127.0.0.1:3115/games/friend-block-test\",\"referrer\":\"\"}",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 204,
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:3115/games/friend-block-test/style.css",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": true,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/games/friend-block-test/app.mjs?v=02289b985403a3c9",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": true,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/194-1c41ff6d3a3bde74.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/777-2e3f4b0ecd2efee7.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/app/page-d21120132451a8a1.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/app/games/page-508555e4ea9e1f3b.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/app/pixel-art-avatar-icon-generator/page-ba03e836b94ffc6d.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/games/friend-block-test/core.mjs",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": true,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/game-face-samples/classic.webp",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": true,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/game-face-samples/cute.webp",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": true,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/game-face-samples/funny.webp",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": true,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/game-face-samples/gamer.webp",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": true,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/game-face-samples/minimal.webp",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": true,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/game-face-samples/retro.webp",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": true,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/favicon32.png",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/games/friend-block-test",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/games/friend-block-test/cover.webp",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/css/80d553d1ead6053f.css",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/webpack-b2628c98ac2f4b8e.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtag/js?id=G-VPL9X65STX",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/square-face-icon.png",
+      "method": "GET",
+      "body": "",
+      "referrer": "http://127.0.0.1:3115/_next/static/css/80d553d1ead6053f.css",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "https://telemetry.example.invalid/probe",
+      "method": "POST",
+      "body": "{\"url\":\"http://127.0.0.1:3115/games/friend-block-test\",\"referrer\":\"\"}",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 204,
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/main-app-da634f42b4651571.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/972-99d9e8826ca68552.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/753-f85409e84e4ded85.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/281-f60ee5c2bb69ea93.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/117-010bb39d6492d54b.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/fd9d1056-b274eb5e39dbf81f.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/image?url=%2Fgame-face-samples%2Fgamer.webp&w=96&q=75",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/image?url=%2Fsquare-face-icon.png&w=96&q=75",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/app/games/%5Bslug%5D/page-38feb4292a3b4af3.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/app/layout-fdc7987757194de7.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9616934112105331",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "https://telemetry.example.invalid/probe",
+      "method": "POST",
+      "body": "{\"url\":\"http://127.0.0.1:3115/games/friend-block-test\",\"referrer\":\"\"}",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 204,
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:3115/games/friend-block-test/index.html",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/games/friend-block-test/style.css",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": true,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/games/friend-block-test/app.mjs?v=02289b985403a3c9",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": true,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/games/friend-block-test/core.mjs",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": true,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/?_rsc=1w0y2",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/games?_rsc=1w0y2",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/pixel-art-avatar-icon-generator?_rsc=1w0y2",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/194-1c41ff6d3a3bde74.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/777-2e3f4b0ecd2efee7.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/app/page-d21120132451a8a1.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/app/pixel-art-avatar-icon-generator/page-ba03e836b94ffc6d.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/_next/static/chunks/app/games/page-508555e4ea9e1f3b.js",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": false,
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:3115/game-face-samples/classic.webp",
+      "method": "GET",
+      "body": "",
+      "referrer": "",
+      "gameFrame": true,
+      "status": 200
+    }
+  ]
+}
