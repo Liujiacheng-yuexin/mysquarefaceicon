@@ -80,7 +80,7 @@ assert.equal(recordRecentlyPlayed("square-face", times[0], throwingStorage), fal
 assert.equal(clearRecentlyPlayed(throwingStorage), false);
 
 const currentCandidates = resolveRecentlyPlayedCandidates();
-assert.deepEqual(currentCandidates.map((candidate) => candidate.gameId), ["square-face", "oval-face"]);
+assert.deepEqual(currentCandidates.map((candidate) => candidate.gameId), ["square-face", "oval-face", "friend-block-test"]);
 assert.ok(currentCandidates.every((candidate) => candidate.href.startsWith("/")));
 assert.ok(currentCandidates.every((candidate) => candidate.image?.src.startsWith("/")));
 assert.doesNotMatch(JSON.stringify(currentCandidates), /pixel-art-avatar|EXTERNAL_LINK|https:\/\//);
@@ -124,7 +124,7 @@ const fakeLegacy = {
 } satisfies GameRecord;
 assert.deepEqual(
   resolveRecentlyPlayedCandidates([...gameCatalog, futurePlayable, fakeLegacy]).map((candidate) => candidate.gameId),
-  ["square-face", "oval-face", "future-avatar"],
+  ["square-face", "oval-face", "friend-block-test", "future-avatar"],
   "Only known legacy identities or approved routable future games may become candidates."
 );
 
@@ -182,7 +182,7 @@ assert.ok(gamesSource.indexOf("<RecentlyPlayed") < gamesSource.indexOf("on-site-
 assert.match(gamesSource, /nextHeadingSelector="#on-site-games-heading"/);
 
 const privacySource = source("app/privacy-policy/page.tsx");
-assert.match(privacySource, /Last updated: September 7, 2026/);
+assert.match(privacySource, /Last updated: October 12, 2026/);
 assert.match(privacySource, /stable ID and start time of recently played/);
 assert.match(privacySource, /does not sync across devices/);
 

@@ -11,6 +11,8 @@
 
 ## Confirmed Product Direction
 
+- On 2026-10-12, the user explicitly confirmed QUIZ-001 for local development: one avatar-led Friend Block Test at `/games/friend-block-test`, a `friend-quizzes` category, a per-record indexing exception and quiz-only third-party script isolation. This is a single supplementary experience, not an expansion into a general games portal. The Square flagship and homepage first viewport remain unchanged. Implementation acceptance and release permission remain separate; see `docs/product/friend-block-test-proposal.md`.
+
 - On 2026-09-22, the user accepted HOME-CTR-001 homepage metadata and confirmed the HOME-MOBILE-001 proposal: a Classic game / Simple maker switch within the same homepage tool region. Phones default to the geometric Canvas maker; desktop defaults to the classic game. These are distinct visual styles, not a remake of the SWF. Homepage keyword, H1, canonical, index policy and vertical scope remain unchanged. Implementation acceptance and deployment remain separate.
 - On 2026-08-31, the user explicitly confirmed the STRAT-001 “vertical avatar game portal” proposal.
 - Square Face Generator remains the flagship homepage experience and the primary intent of `/`; the portal role is additive and must not displace the core game.

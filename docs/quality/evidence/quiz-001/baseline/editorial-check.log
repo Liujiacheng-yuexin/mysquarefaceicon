@@ -1,0 +1,7 @@
+
+> mysquarefaceicon@0.1.0 editorial:check
+> node scripts/check-editorial-rights.mjs
+
+EDITORIAL-001 source passed: five exact approved regions, frozen remaining source/metadata/schema, 1 H1 / 4 H2 / 3 H3 / 10 paragraphs, KW-02 count 3, two main links.
+Fail-closed source negative fixtures: 14 rejected.
+Source checks do not verify raw HTTP, browser/mobile, actual licenses or production release.

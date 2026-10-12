@@ -1,0 +1,58 @@
+[
+  {
+    "name": "banner:check",
+    "exitCode": 1
+  },
+  {
+    "name": "oval-page:check",
+    "exitCode": 0
+  },
+  {
+    "name": "pixel-page:check",
+    "exitCode": 0
+  },
+  {
+    "name": "home:check",
+    "exitCode": 0
+  },
+  {
+    "name": "home-hero:check",
+    "exitCode": 0
+  },
+  {
+    "name": "home-discovery:check",
+    "exitCode": 0
+  },
+  {
+    "name": "perf-home:check",
+    "exitCode": 0
+  },
+  {
+    "name": "game-template:check",
+    "exitCode": 0
+  },
+  {
+    "name": "games-index:check",
+    "exitCode": 1
+  },
+  {
+    "name": "category-sample:check",
+    "exitCode": 0
+  },
+  {
+    "name": "category-remaining:check",
+    "exitCode": 0
+  },
+  {
+    "name": "related:check",
+    "exitCode": 0
+  },
+  {
+    "name": "recent:check",
+    "exitCode": 1
+  },
+  {
+    "name": "favorites:check",
+    "exitCode": 1
+  }
+]

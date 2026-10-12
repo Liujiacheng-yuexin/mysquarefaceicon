@@ -13,10 +13,10 @@ const { featuredGames, newGames, categories } = resolveHomeDiscovery(squareFaceG
 
 assert.deepEqual(
   featuredGames.map((game) => game.id),
-  ["oval-face", "pixel-art-avatar"],
+  ["oval-face", "pixel-art-avatar", "friend-block-test"],
   "Homepage Related must follow the shared Category + Tags score order."
 );
-assert.equal(categories.length, 5, "Only the five allowlisted categories with published records should render.");
+assert.equal(categories.length, 6, "Only the six allowlisted categories with published records should render.");
 
 const discoveryMarkup = beforeFavoritesMarkup(renderToStaticMarkup(
   <HomeDiscoveryRegion featuredGames={featuredGames} newGames={newGames} categories={categories} />
@@ -24,12 +24,12 @@ const discoveryMarkup = beforeFavoritesMarkup(renderToStaticMarkup(
 assert.match(discoveryMarkup, /data-home-section="discovery"/);
 assert.match(discoveryMarkup, /data-home-module="related"/);
 assert.match(discoveryMarkup, /data-home-module="categories"/);
-assert.equal((discoveryMarkup.match(/data-game-id=/g) ?? []).length, 2);
+assert.equal((discoveryMarkup.match(/data-game-id=/g) ?? []).length, 3);
 assert.match(discoveryMarkup, /data-game-id="oval-face"/);
 assert.match(discoveryMarkup, /data-game-id="pixel-art-avatar"/);
 assert.doesNotMatch(discoveryMarkup, /data-game-id="square-face"/);
 assert.match(discoveryMarkup, /External tool/);
-assert.equal((discoveryMarkup.match(/data-category-slug=/g) ?? []).length, 5);
+assert.equal((discoveryMarkup.match(/data-category-slug=/g) ?? []).length, 6);
 assert.doesNotMatch(discoveryMarkup, /Continue Playing|New Games/i, "Empty Continue and New modules must not render.");
 assert.doesNotMatch(discoveryMarkup, /Popular|Trending|rating|users/i, "Discovery must not invent popularity signals.");
 assert.doesNotMatch(
@@ -97,7 +97,7 @@ assert.match(
 
 console.log("HOME-IA-001 validation passed");
 console.log("- Square remains the core section and discovery precedes Gallery and long-form content");
-console.log("- Related contains only Oval and Pixel published Game Data; Pixel remains External Tool");
-console.log("- five real category routes render; empty Continue/New modules do not render");
+console.log("- Related contains Oval, Pixel and the approved friend quiz; Pixel remains External Tool");
+console.log("- six real category routes render; empty Continue/New modules do not render");
 console.log("- Guide, Gallery, and Blog links are isolated in the post-FAQ Resources section");
 console.log("- the mobile core Play button remains centered in resting and hover states");

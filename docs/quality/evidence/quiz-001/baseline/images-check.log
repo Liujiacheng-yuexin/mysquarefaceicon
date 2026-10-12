@@ -1,0 +1,11 @@
+
+> mysquarefaceicon@0.1.0 images:check
+> node scripts/run-game-image-check.mjs
+
+IMG-001 validation passed
+- 30 public images inspected from file signatures (513192 bytes)
+- MIME inventory: image/png=10, image/svg+xml=1, image/webp=18, image/x-icon=1
+- 8 Game Data image records match intrinsic dimensions and ASSET-001 mappings
+- role ratios, required/forbidden roles, alt, provenance, legacy formats and no-array-fallback selection passed
+- non-first-viewport images are explicitly lazy; first-viewport Player preview remains eager/high priority
+- 18 fail-closed image/schema/format/loading negative fixtures rejected

@@ -1,0 +1,10 @@
+
+> mysquarefaceicon@0.1.0 games:check
+> node scripts/run-game-data-check.mjs
+
+GAME-DATA-001 validation passed
+- 3 current records validated
+- IDs, slugs, routes, canonicals, relations, and query lookups are unique/valid
+- license status and delivery gates match data/game-license-registry.json
+- local SWF checksums, player sources, and project image files are present
+- external tool remains direct-link-only with no local generator asset path

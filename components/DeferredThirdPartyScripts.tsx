@@ -4,6 +4,7 @@ import { usePathname } from "next/navigation";
 import { useEffect, useRef } from "react";
 import { crossesBannerBoundary, isBannerPath } from "../lib/discord-banner/config";
 import { canLoadAdsOutsideCategory, crossesCategoryBoundary } from "../lib/games/category-policy";
+import { crossesFriendQuizBoundary, isFriendQuizPath } from "../lib/games/friend-quiz-policy";
 import {
   canLoadAdsOutsideGamesDirectory,
   crossesGamesDirectoryBoundary
@@ -41,7 +42,8 @@ export default function DeferredThirdPartyScripts({
     // Collection links use document navigation; also guard a future missed client-side link.
     if (crossesGamesDirectoryBoundary(documentPath.current, pathname)
       || crossesCategoryBoundary(documentPath.current, pathname)
-      || crossesBannerBoundary(documentPath.current, pathname)) {
+      || crossesBannerBoundary(documentPath.current, pathname)
+      || crossesFriendQuizBoundary(documentPath.current, pathname)) {
       window.location.replace(window.location.href);
     }
   }, [pathname]);
@@ -65,6 +67,7 @@ export default function DeferredThirdPartyScripts({
 
       // The local-file editor runs in a clean document with no analytics or ad runtime.
       if (isBannerPath(documentPath.current) || isBannerPath(window.location.pathname)) return;
+      if (isFriendQuizPath(documentPath.current) || isFriendQuizPath(window.location.pathname)) return;
 
       if (canLoadAdsOutsideGamesDirectory(documentPath.current, window.location.pathname)
         && canLoadAdsOutsideCategory(documentPath.current, window.location.pathname)) {

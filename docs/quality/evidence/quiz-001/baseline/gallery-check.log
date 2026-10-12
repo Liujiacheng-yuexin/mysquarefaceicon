@@ -1,0 +1,7 @@
+
+> mysquarefaceicon@0.1.0 gallery:check
+> node scripts/check-gallery-rights.mjs
+
+GALLERY-001 source passed: six confirmed regions, other source frozen, 1 H1 / 4 H2 / 14 H3 / 19 page paragraphs + 1 actual initial community paragraph, eight CSS samples, four main links, KW-02 count 3.
+Fail-closed source negative fixtures: 18 rejected. Community in-memory SSR states: empty, load-error, populated-liked, already-liked; no API, database, storage or browser interaction.
+Source/SSR fixtures do not verify HTTP, live UGC availability, browser/mobile, actual licenses or production release.

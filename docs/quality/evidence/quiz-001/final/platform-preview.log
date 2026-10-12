@@ -1,0 +1,25 @@
+X [ERROR] Build failed with 3 errors:
+
+  X [ERROR] Could not resolve "./.build/durable-objects/queue.js"
+  
+      .open-next/worker.js:6:31:
+        6 │ export { DOQueueHandler } from "./.build/durable-objects/queue.js";
+          ╵                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  
+  
+  X [ERROR] Could not resolve "./.build/durable-objects/sharded-tag-cache.js"
+  
+      .open-next/worker.js:8:34:
+        8 │ ...dedTagCache } from "./.build/durable-objects/sharded-tag-cache.js";
+          ╵                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  
+  
+  X [ERROR] Could not resolve "./.build/durable-objects/bucket-cache-purge.js"
+  
+      .open-next/worker.js:10:33:
+        10 │ ...achePurge } from "./.build/durable-objects/bucket-cache-purge.js";
+           ╵                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  
+  
+
+

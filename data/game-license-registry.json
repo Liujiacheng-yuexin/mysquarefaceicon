@@ -251,6 +251,56 @@
           "Do not describe generated images as commercially licensed."
         ]
       }
+    },
+    {
+      "id": "friend-block-test-original",
+      "gameName": "Friend Block Test",
+      "publicPage": "https://mysquarefaceicon.com/games/friend-block-test",
+      "deliveryType": "LOCAL_HTML5",
+      "currentState": "LOCAL_IMPLEMENTATION",
+      "reviewedAt": "2026-10-12",
+      "source": {
+        "status": "PROJECT_AUTHORED",
+        "sourceName": "My Square Face Icon original implementation for QUIZ-001",
+        "sourceUrl": null,
+        "repositoryPath": "public/games/friend-block-test/index.html",
+        "sha256": "57FCAF31AD0841D4A96B4E0193926F895626317D44352309A32904B56CDE7158",
+        "evidencePaths": [
+          "docs/product/friend-block-test-proposal.md",
+          "public/games/friend-block-test/core.mjs",
+          "scripts/generate-friend-quiz-assets.py"
+        ]
+      },
+      "author": {
+        "status": "VERIFIED",
+        "name": "My Square Face Icon"
+      },
+      "rightsHolder": {
+        "status": "VERIFIED",
+        "name": "My Square Face Icon"
+      },
+      "license": {
+        "status": "VERIFIED",
+        "licenseName": "Project-authored quiz code, questions and code-drawn cover artwork; site use approved for QUIZ-001",
+        "licenseEvidenceUrl": null,
+        "writtenPermissionPath": "docs/product/friend-block-test-proposal.md"
+      },
+      "permissions": {
+        "hosting": "YES",
+        "publicPerformance": "YES",
+        "embedding": "YES",
+        "modification": "YES",
+        "commercialUse": "YES",
+        "redistribution": "UNKNOWN"
+      },
+      "releaseDecision": {
+        "status": "APPROVED",
+        "newPublicationAllowed": true,
+        "allowedDeliveryTypes": [
+          "HTML5"
+        ],
+        "note": "Original project implementation. This record is not a deployment receipt or a change to any existing work or license. Avatar options reference the user-designated existing project samples; no third-party artwork rights are expanded."
+      }
     }
   ]
 }

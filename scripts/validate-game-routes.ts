@@ -39,7 +39,7 @@ const expectedLegacyRoutes = new Map([
   ["/pixel-art-avatar-icon-generator", "pixel-art-avatar"]
 ]);
 
-expect(listPublishedGames().length === 3, "The current route catalog must expose exactly three published records.");
+expect(listPublishedGames().length === 4, "The current route catalog must expose three legacy records and the approved quiz.");
 
 for (const [path, gameId] of expectedLegacyRoutes) {
   const game = resolveLegacyGamePath(path);
@@ -51,10 +51,11 @@ expect(resolveLegacyGamePath("/oval-face-icon-generator/") === undefined, "Legac
 expect(resolveLegacyGamePath("/games/square-face-generator") === undefined, "Legacy lookup must not map a duplicate /games URL.");
 expectThrows(() => requireLegacyGamePath("/missing-game"), "Missing legacy mappings must throw.");
 
-for (const game of gameCatalog) {
+for (const game of gameCatalog.filter((record) => record.route.existingPublishedRoute)) {
   expect(resolveNewGameSlug(game.slug) === undefined, `${game.id} must not receive a duplicate /games/[slug] route.`);
 }
-expect(getNewGameStaticParams().length === 0, "The current catalog must not generate new-game static params.");
+expect(JSON.stringify(getNewGameStaticParams()) === JSON.stringify([{ slug: "friend-block-test" }]), "Only the approved quiz generates new-game static params.");
+expect(resolveNewGameSlug("friend-block-test")?.id === "friend-block-test", "The quiz must resolve through the real new-game route.");
 expect(resolveNewGameSlug("../square-face") === undefined, "Unsafe slugs must fail closed.");
 expect(resolveNewGameSlug("Square-Face") === undefined, "Non-canonical slugs must fail closed.");
 
@@ -129,10 +130,11 @@ const expectedCategoryCounts = new Map([
   ["avatar-makers", 3],
   ["pixel-avatars", 1],
   ["retro-flash", 2],
-  ["character-creators", 1]
+  ["character-creators", 1],
+  ["friend-quizzes", 1]
 ]);
 
-expect(gameCategories.length === expectedCategoryCounts.size, "The route category allowlist must contain five categories.");
+expect(gameCategories.length === expectedCategoryCounts.size, "The route category allowlist must contain five legacy categories and Friend Quizzes.");
 expect(listAvailableCategoryRoutes().length === expectedCategoryCounts.size, "Every current allowlisted category must have records.");
 expect(getCategoryStaticParams().length === expectedCategoryCounts.size, "Category static params must match available categories.");
 
@@ -150,7 +152,7 @@ const routeSourceAssertions = [
   ["lib/seo/games-directory.ts", ["index: false", "follow: true", "gamesDirectoryUrl"]],
   ["lib/games/directory.ts", ["listPublishedGames", "EXTERNAL_TOOL"]],
   ["app/category/[slug]/page.tsx", ["dynamicParams = true", "index: false", "notFound()"]],
-  ["app/games/[slug]/page.tsx", ["dynamicParams = true", "forceNoIndex: true", "resolveNewGameSlug", "notFound()"]],
+  ["app/games/[slug]/page.tsx", ["dynamicParams = true", "forceNoIndex: !isIndexAllowedNewGame(game)", "resolveNewGameSlug", "notFound()"]],
   ["app/not-found.tsx", ["404 · Page not found", "Browse avatar games", "SiteFooter"]]
 ] as const;
 
@@ -169,6 +171,6 @@ if (errors.length > 0) {
   console.log("ROUTE-001 validation passed");
   console.log("- three frozen legacy paths resolve without duplicate /games aliases");
   console.log("- future /games/[slug] routes require exact paths, published status, and release permission");
-  console.log("- five allowlisted categories resolve from real published records; unknown categories fail closed");
-  console.log("- new route families retain explicit noindex and 404 guards");
+  console.log("- six allowlisted categories resolve from real published records; unknown categories fail closed");
+  console.log("- new route families retain default noindex with one approved index exception and true 404 guards");
 }

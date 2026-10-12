@@ -1,0 +1,5 @@
+
+> mysquarefaceicon@0.1.0 games-index:check
+> node scripts/check-games-index.mjs
+
+{"task":"GAMES-INDEX-001","result":"PASS","assertions":368,"negativeFixtures":60,"mode":"source/SSR/loader","browser":"separate evidence required"}

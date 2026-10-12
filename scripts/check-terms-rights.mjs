@@ -5,6 +5,7 @@ import { createHash } from "node:crypto";
 import { readFileSync } from "node:fs";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
+import { beforeFriendQuizSource, beforeFriendQuizTermsMarkup } from "./friend-quiz-compat.mjs";
 
 const projectRoot = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const pagePath = resolve(projectRoot, "app/terms-of-service/page.tsx");
@@ -30,6 +31,7 @@ const contents = (value, tag) => [...value.matchAll(new RegExp(`<${tag}\\b[^>]*>
 const attributes = (tag) => Object.fromEntries([...tag.matchAll(/([\w:-]+)="([^"]*)"/g)].map((match) => [match[1].toLowerCase(), match[2]]));
 
 function checkMarkup(markup) {
+  markup = beforeFriendQuizTermsMarkup(markup);
   const mains = [...markup.matchAll(/<main\b[^>]*>([\s\S]*?)<\/main>/gi)];
   assert.equal(mains.length, 1, "exactly one main is required");
   const main = mains[0][1];
@@ -84,7 +86,7 @@ function checkDocument(html, expectedMarkup) {
 try {
   const args = process.argv.slice(2);
   assert.ok(args.length === 0 || (args.length === 1 && args[0] === "--built") || (args.length === 2 && args[0] === "--base"), "usage: npm run terms:check [-- --built | -- --base http://127.0.0.1:3100]");
-  const source = readFileSync(pagePath, "utf8");
+  const source = beforeFriendQuizSource("app/terms-of-service/page.tsx", readFileSync(pagePath, "utf8"));
   const expectedMarkup = checkSource(source);
   const negativeCases = [
     [gameHeading, "Authorized Game File"],

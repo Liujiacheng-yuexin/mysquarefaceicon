@@ -4,6 +4,7 @@ import GameDetailTemplate from "@/components/game/GameDetailTemplate";
 import { createGamePlayerModel } from "@/lib/games/game-player-model";
 import { getNewGameStaticParams, resolveNewGameSlug } from "@/lib/games/routes";
 import { buildGameMetadata, buildMissingGameMetadata } from "@/lib/seo/game-metadata";
+import { isIndexAllowedNewGame } from "@/lib/games/friend-quiz-policy";
 
 type NewGameRoutePageProps = {
   params: {
@@ -25,7 +26,7 @@ export function generateMetadata({ params }: NewGameRoutePageProps): Metadata {
     return buildMissingGameMetadata();
   }
 
-  return buildGameMetadata(game, { forceNoIndex: true });
+  return buildGameMetadata(game, { forceNoIndex: !isIndexAllowedNewGame(game) });
 }
 
 export default function NewGameRoutePage({ params }: NewGameRoutePageProps) {
@@ -34,11 +35,15 @@ export default function NewGameRoutePage({ params }: NewGameRoutePageProps) {
 
   const playerModel = createGamePlayerModel(game, {
     labels: {
-      start: "Play Game",
+      start: game.id === "friend-block-test" ? "Start Friend Block Test" : "Play Game",
       reload: "Reload Game",
       help: "Report Issue"
     },
-    showStartControl: false
+    showStartControl: false,
+    ...(game.id === "friend-block-test" ? {
+      maxWidth: "760px", aspectRatio: "8 / 5", backgroundColor: "#fffdf8",
+      labels: { start: "Start Friend Block Test", cover: "Start Friend Block Test", reload: "Restart quiz", help: "Report Issue" }
+    } : {})
   });
 
   return <GameDetailTemplate game={game} playerModel={playerModel} />;

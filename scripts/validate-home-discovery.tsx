@@ -18,7 +18,7 @@ const currentDiscovery = resolveHomeDiscovery(squareFaceGame);
 
 assert.deepEqual(
   currentDiscovery.featuredGames.map((game) => game.id),
-  ["oval-face", "pixel-art-avatar"],
+  ["oval-face", "pixel-art-avatar", "friend-block-test"],
   "Related must follow the shared Category + Tags score order."
 );
 assert.deepEqual(
@@ -33,7 +33,8 @@ assert.deepEqual(
     ["avatar-makers", 3],
     ["pixel-avatars", 1],
     ["retro-flash", 2],
-    ["character-creators", 1]
+    ["character-creators", 1],
+    ["friend-quizzes", 1]
   ]
 );
 
@@ -52,7 +53,7 @@ assert.match(currentMarkup, />Related Avatar Games</);
 assert.match(currentMarkup, /Matched from published games that share avatar categories or tags with Square Face Generator./);
 assert.match(currentMarkup, /aria-label="Related avatar games"/);
 assert.doesNotMatch(currentMarkup, /data-home-module="new"|>New Games</);
-assert.equal((currentMarkup.match(/data-game-card-variant="home-media"/g) ?? []).length, 2);
+assert.equal((currentMarkup.match(/data-game-card-variant="home-media"/g) ?? []).length, 3);
 assert.match(currentMarkup, /data-game-id="oval-face"/);
 assert.match(currentMarkup, /data-game-id="pixel-art-avatar"/);
 assert.match(currentMarkup, /oval-face-icon\.png/);
@@ -63,7 +64,7 @@ assert.match(currentMarkup, /route-game-link-external/);
 assert.match(currentMarkup, /External tool/);
 assert.match(currentMarkup, /href="\/pixel-art-avatar-icon-generator"/);
 assert.doesNotMatch(currentMarkup, /target="_blank"/);
-assert.equal((currentMarkup.match(/data-category-chip-variant="home-discovery"/g) ?? []).length, 5);
+assert.equal((currentMarkup.match(/data-category-chip-variant="home-discovery"/g) ?? []).length, 6);
 for (const countLabel of ["2 current entries", "3 current entries", "1 current entry"]) {
   assert.match(currentMarkup, new RegExp(countLabel));
 }
@@ -80,7 +81,7 @@ const ignoredRelationFixture = {
 } satisfies GameRecord;
 assert.deepEqual(
   resolveHomeFeaturedGames(ignoredRelationFixture).map((game) => game.id),
-  ["oval-face", "pixel-art-avatar"],
+  ["oval-face", "pixel-art-avatar", "friend-block-test"],
   "Related selection must ignore legacy relatedGameIds ordering and use shared overlap scoring."
 );
 
@@ -189,5 +190,5 @@ console.log("HOME-DISC-001 validation passed");
 console.log("- Related uses the shared Category + Tags selector and ignores legacy relatedGameIds order");
 console.log("- New requires a valid VERIFIED publication timestamp and is absent for current UNKNOWN data");
 console.log("- cards use real Game Data thumbnails; Pixel remains an onsite External Tool details link");
-console.log("- five non-empty categories render with truthful counts; all-empty discovery renders nothing");
+console.log("- six non-empty categories render with truthful counts; all-empty discovery renders nothing");
 console.log("- desktop media cards and the compact two-column mobile category layout are present");

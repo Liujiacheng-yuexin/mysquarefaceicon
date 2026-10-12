@@ -344,7 +344,9 @@ try {
     const source = beforeGamesIndexSource(file, read(file));
     const original = ["data/games/pixel-art-avatar.ts", "app/pixel-art-avatar-icon-generator/page.tsx"].includes(file)
       ? originalPixelSource(file, source) : source;
-    assert.equal(sha(original), hash, file + " changed outside its confirmed migration boundary");
+    // The legacy baseline is LF. The reviewed banner inverse can restore a CRLF
+    // tail; normalize it after the complete inverse chain, without changing golden.
+    assert.equal(sha(original.toString().replace(/\r\n/g, "\n")), hash, file + " changed outside its confirmed migration boundary");
   }
   for (const [file, hash] of Object.entries(golden.binaryHashes)) assert.equal(sha(readFileSync(resolve(root, file))), hash, file + " bytes must not change");
   const png = readFileSync(resolve(root, "public/games/oval-face-cover.png"));

@@ -227,3 +227,25 @@ RELATED-001 本地整项验收后，用户明确要求下一步开发。路线�
 ## 2026-09-22 · 用户授权累计成果提交与部署
 
 用户明确指令“提交并部署”。发布前完整 29 项回归通过；为既有 IMG-001 与本轮 HOME-MOBILE-001 增加测试专用精确逆向兼容层，保留原 golden 与历史失败，40 项无关变更反例通过。应用文案/URL/index/canonical 不因修复测试而改变。最终 Next/OpenNext 平台构建与 type/lint 通过，本地 SEO 20 页 0 必须失败、11 应该提醒。发布前线上四种域/协议均 200，部署后需要验证候选的规范域 308 实际生效。生产 commit/version/SEO/browser 证据以权威看板和 release-production 外部回执为准，本条为提交前记录，不提前声称部署成功。具体范围、失败处置和回滚版本见 docs/quality/evidence/release-2026-09-22/README.md。
+
+
+## 2026-10-12 · QUIZ-001 页面提案与开发前基线（未实施）
+
+用户要求读取朋友测验附件并开发新页面。本轮保存附件原文、核对现有 Game Data/HTML5/template/index/隐私边界并形成 `docs/product/friend-block-test-proposal.md`；附件中的 goal 确认/上线授权不当作当前用户指令。权威看板新增 QUIZ-001，状态为设计中 / 方案待确认；应用、既有 URL/索引/首屏、Registry 与 SWF 未改。
+
+main 与 origin/main 同步于 1d275c6；lint、Next build（含类型验证）、本地生产 SEO 21 URL（0 must / 12 should）和 robots 通过；30 项离线检查 29 通过、oval-page:check 的既有首页冻结哈希失败。完整原始日志和逐项退出码见 `docs/quality/evidence/quiz-001/README.md`；未更新任何 golden 或夹具。平台构建、新游戏浏览器/手机流程、人工 SEO、生产/GSC 均未验证。没有生产 SEO 变更或发布成功记录：本轮未编码、未提交/推送/部署/IndexNow，待用户确认页面方案后实施。
+
+
+## 2026-10-12 · QUIZ-001 本地实现与待验收
+
+用户明确确认“确认 QUIZ-001 方案，继续本地开发”。新增 Friend Block Test 的 24 题库、10 题分享/答题/回传、本机结果与错误恢复；唯一新 INDEX 记录 `/games/friend-block-test` 配自引用 canonical、sitemap、OG 和可见一致 schema，Friend Quizzes 分类 noindex/无广告。首页首屏、旧 URL/索引、旧 Registry 与 SWF 保持。隐私/条款增量说明本机数据与分享内容，本页隔离第三方脚本。
+
+类型/lint、31 项离线检查、Next/Cloudflare 构建通过；Next 与本地 Worker SEO 均 22 URL、0 must / 12 既有 should；两运行时的 22 index/16 noindex/3 真实404、独立 HTML 入口与 20 项资产响应验证通过。四宽完整跨环境往返、手机 Play 保留片段、触屏模拟、键盘/焦点/全屏/剪贴板拒绝/存储错误通过。原 Oval 换行哈希、HTML 规范化冲突、缓存比较和 EBUSY 均保留诊断与修复证据。没有可靠 SERP，不宣称 KW-04 或趋势数据通过；人类内容审核、真机/Safari/读屏、生产/GSC/CWV 未验证。
+
+权威看板置待验收；未 commit/push/deploy/IndexNow，没有生产 SEO 成功记录。详见 `docs/quality/evidence/quiz-001/DELIVERY.md`、逐项基线说明和实现指纹。下一步由用户验收本地页面，发布另行决定。
+
+## 2026-10-12 · QUIZ-001 授权提交与部署
+
+用户在本地交付后明确要求“提交并部署”。本批发布已验证的 Friend Block Test、唯一新页面索引白名单、Friend Quizzes noindex 分类、资源/隐私隔离和相关文档。发布前重新核对 61 个实现文件的 SHA-256，与已通过 type/lint、31 项离线检查、Next/OpenNext、四宽及触屏/键盘验证的内容一致；main 与 origin/main 同步，无无关改动混入。
+
+本条为提交前发布记录，不提前声明上线成功。实际 commit、push、Worker version、生产 SEO/HTTP/浏览器结果和回滚版本见 [发布记录](docs/quality/evidence/quiz-001/RELEASE.md) 指向的外部回执与权威看板。保留 12 项既有 SEO 提醒、KW-04/独立人工内容审核、真机/Safari/读屏/CWV 和旧权利 UNKNOWN；不把部署指令写成这些检查通过。此次不操作 IndexNow/GSC，看板保持待验收。

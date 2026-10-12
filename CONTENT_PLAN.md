@@ -1,5 +1,7 @@
 # CONTENT_PLAN.md · v2.1 内容规划
 
+> 2026-10-12 · QUIZ-001 已确认本地开发：`/games/friend-block-test` 只承接“制作一份新的朋友测验”的独立意图，包含 24 道本项目编写的题、三步玩法、计分档位、本机成绩、分享链接与错误恢复说明。FAQ 明确本站独立实现、其他站链接不通用、无注册、手机交互及数据范围；正文不把附件的趋势百分比、搜索难度或排名写成已核验事实。原始资料未能通过本轮独立 SERP 核验，不宣称 KW-04 已通过。已有权利 UNKNOWN 与 CT-06 人类审核门禁保持；本地实现和 Agent QA 不等于人工验收。详见 [单页方案](docs/product/friend-block-test-proposal.md) 和 [验证证据](docs/quality/evidence/quiz-001/README.md)。
+
 > 本文件只做 MySquareFaceIcon 内容规划。规则唯一来源是 [RULES.md](RULES.md)，项目专用决策见 [SEO_RULES.md](SEO_RULES.md)。
 >
 > 2026-08-31 已按用户决定停止使用旧版 `3%-5%` 关键词密度目标和 CSS `content` 调词方案。

@@ -1,0 +1,12 @@
+
+> mysquarefaceicon@0.1.0 player:check
+> node scripts/run-game-player-check.mjs
+
+PLAYER-001 validation passed
+- all five delivery adapters have valid fixtures and exhaustive capabilities
+- unknown and DIRECT_LINK_ONLY mismatches fail closed
+- ExternalLinkAdapter renders a safe new-tab link and no iframe
+- RuffleAdapter remains conditionally dynamic for click-to-load delivery
+- GamePlayer validates URLs and release policy before runtime adapter dispatch
+- first activation paints loading before the dynamic adapter mounts
+- Ruffle reloads reuse one initialized release

@@ -289,7 +289,7 @@ assert.equal(serializeGameStructuredData({ value: "</script>" }).includes("</scr
 
 const routeSource = readFileSync(resolve(projectRoot, "app/games/[slug]/page.tsx"), "utf8");
 assert.match(routeSource, /resolveNewGameSlug/);
-assert.match(routeSource, /forceNoIndex:\s*true/);
+assert.match(routeSource, /forceNoIndex:\s*!isIndexAllowedNewGame\(game\)/);
 assert.match(routeSource, /createGamePlayerModel/);
 assert.match(routeSource, /<GameDetailTemplate/);
 assert.doesNotMatch(routeSource, /AdSlotShell/);

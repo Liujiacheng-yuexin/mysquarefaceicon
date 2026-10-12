@@ -14,7 +14,7 @@ export default function TermsOfServicePage() {
     <main className="legal-page">
       <a className="back-link" href="/">Back to Square Face Generator</a>
       <h1>Terms of Service</h1>
-      <p>Last updated: September 2, 2026</p>
+      <p>Last updated: October 12, 2026</p>
       <h2>Terms of Service: Use of the Tool</h2>
       <p>
         My Square Face Icon provides a free browser-based generator for creating
@@ -47,6 +47,14 @@ export default function TermsOfServicePage() {
         here. Availability on this site must not be treated as proof of
         authorization or official affiliation. These terms do not grant
         permission to extract, redistribute, or reuse third-party game files.
+      </p>
+      <h2>Friend Quizzes</h2>
+      <p>
+        Friend Block Test is for lighthearted entertainment, not a judgment of friendship.
+        Use a nickname and share links thoughtfully: anyone with a quiz or result link can read
+        its contents. Results and created-quiz identifiers stay in your browser without server
+        backup or device sync. Clear quiz records removes this game&apos;s local records.
+        Storage restrictions or clearing browser data can prevent collecting later results.
       </p>
       <h2>No Warranty</h2>
       <p>

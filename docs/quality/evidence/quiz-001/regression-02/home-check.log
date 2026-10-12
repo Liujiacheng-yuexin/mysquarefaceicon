@@ -1,0 +1,10 @@
+
+> mysquarefaceicon@0.1.0 home:check
+> node scripts/run-home-information-architecture-check.mjs
+
+HOME-IA-001 validation passed
+- Square remains the core section and discovery precedes Gallery and long-form content
+- Related contains only Oval and Pixel published Game Data; Pixel remains External Tool
+- five real category routes render; empty Continue/New modules do not render
+- Guide, Gallery, and Blog links are isolated in the post-FAQ Resources section
+- the mobile core Play button remains centered in resting and hover states

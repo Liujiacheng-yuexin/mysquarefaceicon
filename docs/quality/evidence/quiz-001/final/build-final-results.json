@@ -1,0 +1,14 @@
+[
+  {
+    "command": "npm run build",
+    "exitCode": 0,
+    "durationMs": 39751,
+    "log": "build-final-mobile-link.log"
+  },
+  {
+    "command": "npm run cf:build",
+    "exitCode": 0,
+    "durationMs": 95191,
+    "log": "cf-build-final-mobile-link.log"
+  }
+]

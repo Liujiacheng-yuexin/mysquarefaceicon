@@ -1,0 +1,12 @@
+PASS Q1 quiz and result round trips preserve every field
+PASS Q2 truncated, tampered, malformed, oversized and unknown versions recover
+  q: 286 characters
+  r: 454 characters
+PASS Q3 longest Unicode nicknames and both full links stay below 1800
+PASS Q4 nickname Unicode limits, controls, markup and links
+PASS Q5 all scores and four tier boundaries
+PASS Q6 24 unique original questions; exactly four distinct choices; swaps preserve uniqueness
+PASS Q7 static game has no external resource domains or upload/network APIs
+PASS Local results require creator association, recompute scores and deduplicate
+PASS Blocked, full, corrupted and oversized storage remains recoverable
+QUIZ-001: 9 check groups passed.

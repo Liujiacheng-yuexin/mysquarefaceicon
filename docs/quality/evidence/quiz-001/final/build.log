@@ -1,0 +1,83 @@
+
+> mysquarefaceicon@0.1.0 build
+> npm run ruffle:check && next build
+
+
+> mysquarefaceicon@0.1.0 ruffle:check
+> node scripts/check-ruffle-runtime.mjs
+
+RUFFLE-001 check passed: 0.2.0-nightly.2026.5.12; 5 files; 27512697 bytes; 10 negative fixtures rejected.
+  ▲ Next.js 14.2.35
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully
+   Linting and checking validity of types ...
+   Collecting page data ...
+   Generating static pages (0/45) ...
+   Generating static pages (11/45) 
+   Generating static pages (22/45) 
+   Generating static pages (33/45) 
+ ✓ Generating static pages (45/45)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                                        Size     First Load JS
+┌ ○ /                                              146 B           119 kB
+├ ○ /_not-found                                    184 B          87.5 kB
+├ ● /[locale]                                      146 B           119 kB
+├   ├ /es
+├   ├ /vi
+├   ├ /ja
+├   └ [+4 more paths]
+├ ○ /about-us                                      184 B          87.5 kB
+├ ○ /admin/comments                                2.04 kB          95 kB
+├ ƒ /api/admin/comment-images/[...key]             0 B                0 B
+├ ƒ /api/admin/comments                            0 B                0 B
+├ ƒ /api/admin/comments/[id]                       0 B                0 B
+├ ƒ /api/comment-images/[...key]                   0 B                0 B
+├ ƒ /api/comments                                  0 B                0 B
+├ ƒ /api/comments/[id]/like                        0 B                0 B
+├ ○ /blog                                          185 B          87.5 kB
+├ ○ /blog/avatar-maker-without-signup              184 B          87.5 kB
+├ ○ /blog/best-discord-avatar-style                184 B          87.5 kB
+├ ○ /blog/cute-profile-picture-ideas               183 B          87.5 kB
+├ ○ /blog/discord-avatar-size-guide                184 B          87.5 kB
+├ ○ /blog/how-to-make-a-cute-discord-profile-icon  184 B          87.5 kB
+├ ○ /blog/square-avatar-vs-round-avatar            185 B          87.5 kB
+├ ○ /blog/tiktok-profile-icon-ideas                184 B          87.5 kB
+├ ● /category/[slug]                               1.51 kB         103 kB
+├   ├ /category/face-makers
+├   ├ /category/avatar-makers
+├   ├ /category/pixel-avatars
+├   └ [+3 more paths]
+├ ○ /contact                                       184 B          87.5 kB
+├ ○ /cute-square-avatar-generator                  184 B          87.5 kB
+├ ○ /discord-banner-size                           5.67 kB         102 kB
+├ ○ /editorial-policy                              184 B          87.5 kB
+├ ○ /free-avatar-maker                             184 B          87.5 kB
+├ ○ /gallery                                       3.92 kB        96.8 kB
+├ ○ /games                                         18.6 kB         120 kB
+├ ● /games/[slug]                                  1.99 kB         110 kB
+├   └ /games/friend-block-test
+├ ○ /manifest.webmanifest                          0 B                0 B
+├ ○ /oval-face-icon-generator                      3.46 kB         111 kB
+├ ○ /pixel-art-avatar-icon-generator               1.99 kB         110 kB
+├ ○ /pixel-square-face-maker                       184 B          87.5 kB
+├ ○ /privacy-policy                                185 B          87.5 kB
+├ ○ /robots.txt                                    0 B                0 B
+├ ○ /sitemap.xml                                   0 B                0 B
+├ ○ /square-avatar-generator                       184 B          87.5 kB
+├ ○ /square-face-icon-generator                    184 B          87.5 kB
+└ ○ /terms-of-service                              185 B          87.5 kB
++ First Load JS shared by all                      87.3 kB
+  ├ chunks/117-010bb39d6492d54b.js                 31.7 kB
+  ├ chunks/fd9d1056-b274eb5e39dbf81f.js            53.6 kB
+  └ other shared chunks (total)                    1.97 kB
+
+
+ƒ Middleware                                       26.8 kB
+
+○  (Static)   prerendered as static content
+●  (SSG)      prerendered as static HTML (uses getStaticProps)
+ƒ  (Dynamic)  server-rendered on demand
+

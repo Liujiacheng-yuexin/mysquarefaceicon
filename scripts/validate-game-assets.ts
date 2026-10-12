@@ -6,6 +6,7 @@ import { gameCatalog } from "../lib/games/catalog";
 import {
   GAME_ASSET_CDN_ORIGIN,
   validateGameAssetManifest,
+  matchesAssetCacheControl,
   type GameAssetEntry,
   type GameAssetManifest
 } from "../lib/games/game-asset-schema";
@@ -47,6 +48,14 @@ const projectRoot = resolve(__dirname, "../..");
 const manifestPath = resolve(projectRoot, "data/game-asset-manifest.json");
 const registryPath = resolve(projectRoot, "data/game-license-registry.json");
 const rawManifest: unknown = JSON.parse(readFileSync(manifestPath, "utf8"));
+assert.equal(matchesAssetCacheControl("public, max-age=0, must-revalidate", "public, max-age=0"), true);
+assert.equal(matchesAssetCacheControl("max-age=0, no-transform, public, must-revalidate", "public, max-age=0, no-transform"), true);
+for (const actual of [null, "public, max-age=0", "public, max-age=600, no-transform", "private, max-age=0, no-transform", "public, max-age=0, no-transform, immutable"]) {
+  assert.equal(matchesAssetCacheControl(actual, "public, max-age=0, no-transform"), false, "Cache comparison must not accept missing privacy or changed freshness directives");
+}
+const invalidPrivateCache = JSON.parse(JSON.stringify(rawManifest));
+invalidPrivateCache.cachePolicies.appStaticNoTransform = "public, max-age=600, no-transform";
+assert.ok(validateGameAssetManifest(invalidPrivateCache).some((error) => error.includes("appStaticNoTransform")));
 const registry = JSON.parse(readFileSync(registryPath, "utf8")) as LicenseRegistry;
 const registryById = new Map(registry.records.map((record) => [record.id, record]));
 const gamesById = new Map(gameCatalog.map((game) => [game.id, game]));
@@ -230,7 +239,7 @@ async function verifyHttp(manifest: GameAssetManifest, baseArgument: string) {
     const response = await fetch(new URL(asset.url, base), { signal: AbortSignal.timeout(20_000) });
     assert.equal(response.status, 200, `${asset.url} HTTP status drifted`);
     assert.equal(response.headers.get("content-type")?.split(";")[0].toLowerCase(), asset.contentType, `${asset.url} HTTP MIME drifted`);
-    assert.equal(response.headers.get("cache-control")?.toLowerCase(), asset.cacheControl, `${asset.url} HTTP cache policy drifted`);
+    assert.ok(matchesAssetCacheControl(response.headers.get("cache-control"), asset.cacheControl), `${asset.url} HTTP cache policy drifted: ${response.headers.get("cache-control")}`);
     const body = Buffer.from(await response.arrayBuffer());
     assert.equal(body.byteLength, asset.bytes, `${asset.url} HTTP byte length drifted`);
     assert.equal(createHash("sha256").update(body).digest("hex"), asset.sha256, `${asset.url} HTTP SHA-256 drifted`);

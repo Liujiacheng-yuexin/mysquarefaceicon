@@ -1,0 +1,9 @@
+
+> mysquarefaceicon@0.1.0 metadata:check
+> node scripts/run-game-metadata-check.mjs
+
+META-001 validation passed
+- Square, Oval, Pixel, and future game routes use the shared Game Data metadata builder
+- title, description, canonical, OG, Twitter, and one H1 resolve from validated records or the shared detail template
+- frozen legacy canonicals and current index states remain unchanged
+- missing required SEO fields and duplicate index metadata fail closed

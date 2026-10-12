@@ -1,0 +1,10 @@
+
+> mysquarefaceicon@0.1.0 perf-home:check
+> node scripts/run-home-performance-check.mjs
+
+PERF-HOME-001 validation passed
+- the LCP cover is a byte-verified local project asset with truthful intrinsic dimensions
+- initial HTML contains no Ruffle runtime, WASM, or SWF request
+- Ruffle remains conditional on activation and preview/loading/runtime share one reserved surface
+- the loading response is committed before the dynamic adapter mounts after a paint opportunity
+- the service-worker install list does not prefetch Ruffle or SWF assets

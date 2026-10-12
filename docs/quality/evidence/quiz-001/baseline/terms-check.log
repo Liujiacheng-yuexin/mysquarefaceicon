@@ -1,0 +1,7 @@
+
+> mysquarefaceicon@0.1.0 terms:check
+> node scripts/check-terms-rights.mjs
+
+TERMS-001 source passed: exact approved copy/date, 1 H1, 7 H2s, 8 paragraphs, KW-02 count 3, two links, frozen remaining source.
+Fail-closed negative fixtures: 6 rejected (rights, keyword, link, date and metadata regressions).
+Raw HTTP, browser, actual licenses and production release are NOT verified by a source-only run.

@@ -1,0 +1,40 @@
+
+> mysquarefaceicon@0.1.0 perf-home:check
+> node scripts/run-home-performance-check.mjs
+
+node:internal/modules/cjs/loader:1404
+  throw err;
+  ^
+
+Error: Cannot find module '@/lib/games/friend-quiz-policy'
+Require stack:
+- D:\LYXGIT\mysquarefaceicon\.home-performance-check\components\game-player\adapters\FriendQuizFrame.js
+- D:\LYXGIT\mysquarefaceicon\.home-performance-check\components\game-player\adapters\Html5Adapter.js
+- D:\LYXGIT\mysquarefaceicon\.home-performance-check\components\game-player\GamePlayer.js
+- D:\LYXGIT\mysquarefaceicon\.home-performance-check\components\FlashGenerator.js
+- D:\LYXGIT\mysquarefaceicon\.home-performance-check\components\home\CoreGamePreview.js
+- D:\LYXGIT\mysquarefaceicon\.home-performance-check\components\home\HomeHero.js
+- D:\LYXGIT\mysquarefaceicon\.home-performance-check\scripts\validate-home-performance.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)
+    at Function._load (node:internal/modules/cjs/loader:1211:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1487:12)
+    at require (node:internal/modules/helpers:135:16)
+    at Object.<anonymous> (D:\LYXGIT\mysquarefaceicon\.home-performance-check\components\game-player\adapters\FriendQuizFrame.js:7:30)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'D:\\LYXGIT\\mysquarefaceicon\\.home-performance-check\\components\\game-player\\adapters\\FriendQuizFrame.js',
+    'D:\\LYXGIT\\mysquarefaceicon\\.home-performance-check\\components\\game-player\\adapters\\Html5Adapter.js',
+    'D:\\LYXGIT\\mysquarefaceicon\\.home-performance-check\\components\\game-player\\GamePlayer.js',
+    'D:\\LYXGIT\\mysquarefaceicon\\.home-performance-check\\components\\FlashGenerator.js',
+    'D:\\LYXGIT\\mysquarefaceicon\\.home-performance-check\\components\\home\\CoreGamePreview.js',
+    'D:\\LYXGIT\\mysquarefaceicon\\.home-performance-check\\components\\home\\HomeHero.js',
+    'D:\\LYXGIT\\mysquarefaceicon\\.home-performance-check\\scripts\\validate-home-performance.js'
+  ]
+}
+
+Node.js v22.16.0

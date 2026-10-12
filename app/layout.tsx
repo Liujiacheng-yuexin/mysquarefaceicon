@@ -67,7 +67,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{
             __html: `
               var localFilePage = true;
-              try { localFilePage = /^\\/discord-banner-size\\/?$/.test(decodeURIComponent(window.location.pathname)); } catch (_) {}
+              try { localFilePage = /^\\/discord-banner-size\\/?$/.test(decodeURIComponent(window.location.pathname)) || /^\\/games\\/friend-block-test(?:\\/|$)/.test(decodeURIComponent(window.location.pathname)); } catch (_) {}
               if (!localFilePage) {
                 window.dataLayer = window.dataLayer || [];
                 window.gtag = function(){dataLayer.push(arguments);};

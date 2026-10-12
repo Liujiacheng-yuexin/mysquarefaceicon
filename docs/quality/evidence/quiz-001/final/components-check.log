@@ -1,0 +1,10 @@
+
+> mysquarefaceicon@0.1.0 components:check
+> node scripts/run-game-component-check.mjs
+
+COMP-001 validation passed
+- all ten required shared components exist under components/game
+- cards, grids, categories, breadcrumbs, metadata, related records, empty state, and ad shell render from typed data
+- GameControls preserves playable and external-tool capability boundaries
+- route pages consume shared components without duplicate card markup
+- noindex directory/category scaffolds and the 404 boundary do not import AdSlotShell

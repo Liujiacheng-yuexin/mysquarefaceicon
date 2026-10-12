@@ -1,0 +1,188 @@
+[
+  {
+    "command": "npm run banner:check",
+    "exitCode": 1,
+    "durationMs": 937,
+    "log": "banner-check.log"
+  },
+  {
+    "command": "npm run canonical:check",
+    "exitCode": 0,
+    "durationMs": 1914,
+    "log": "canonical-check.log"
+  },
+  {
+    "command": "npm run terms:check",
+    "exitCode": 0,
+    "durationMs": 402,
+    "log": "terms-check.log"
+  },
+  {
+    "command": "npm run about:check",
+    "exitCode": 0,
+    "durationMs": 389,
+    "log": "about-check.log"
+  },
+  {
+    "command": "npm run editorial:check",
+    "exitCode": 0,
+    "durationMs": 426,
+    "log": "editorial-check.log"
+  },
+  {
+    "command": "npm run gallery:check",
+    "exitCode": 0,
+    "durationMs": 992,
+    "log": "gallery-check.log"
+  },
+  {
+    "command": "npm run locale:check",
+    "exitCode": 0,
+    "durationMs": 1252,
+    "log": "locale-check.log"
+  },
+  {
+    "command": "npm run square-home:check",
+    "exitCode": 0,
+    "durationMs": 4379,
+    "log": "square-home-check.log"
+  },
+  {
+    "command": "npm run oval-page:check",
+    "exitCode": 0,
+    "durationMs": 3428,
+    "log": "oval-page-check.log"
+  },
+  {
+    "command": "npm run pixel-page:check",
+    "exitCode": 1,
+    "durationMs": 542,
+    "log": "pixel-page-check.log"
+  },
+  {
+    "command": "npm run games:check",
+    "exitCode": 0,
+    "durationMs": 2001,
+    "log": "games-check.log"
+  },
+  {
+    "command": "npm run player:check",
+    "exitCode": 0,
+    "durationMs": 2211,
+    "log": "player-check.log"
+  },
+  {
+    "command": "npm run routes:check",
+    "exitCode": 0,
+    "durationMs": 4702,
+    "log": "routes-check.log"
+  },
+  {
+    "command": "npm run components:check",
+    "exitCode": 0,
+    "durationMs": 4115,
+    "log": "components-check.log"
+  },
+  {
+    "command": "npm run metadata:check",
+    "exitCode": 0,
+    "durationMs": 1756,
+    "log": "metadata-check.log"
+  },
+  {
+    "command": "npm run home:check",
+    "exitCode": 1,
+    "durationMs": 3294,
+    "log": "home-check.log"
+  },
+  {
+    "command": "npm run home-hero:check",
+    "exitCode": 1,
+    "durationMs": 3198,
+    "log": "home-hero-check.log"
+  },
+  {
+    "command": "npm run home-discovery:check",
+    "exitCode": 1,
+    "durationMs": 2613,
+    "log": "home-discovery-check.log"
+  },
+  {
+    "command": "npm run home-gallery:check",
+    "exitCode": 0,
+    "durationMs": 8086,
+    "log": "home-gallery-check.log"
+  },
+  {
+    "command": "npm run perf-home:check",
+    "exitCode": 1,
+    "durationMs": 3152,
+    "log": "perf-home-check.log"
+  },
+  {
+    "command": "npm run game-template:check",
+    "exitCode": 1,
+    "durationMs": 3492,
+    "log": "game-template-check.log"
+  },
+  {
+    "command": "npm run games-index:check",
+    "exitCode": 1,
+    "durationMs": 769,
+    "log": "games-index-check.log"
+  },
+  {
+    "command": "npm run category-sample:check",
+    "exitCode": 1,
+    "durationMs": 940,
+    "log": "category-sample-check.log"
+  },
+  {
+    "command": "npm run category-remaining:check",
+    "exitCode": 1,
+    "durationMs": 980,
+    "log": "category-remaining-check.log"
+  },
+  {
+    "command": "npm run related:check",
+    "exitCode": 1,
+    "durationMs": 1997,
+    "log": "related-check.log"
+  },
+  {
+    "command": "npm run recent:check",
+    "exitCode": 1,
+    "durationMs": 2371,
+    "log": "recent-check.log"
+  },
+  {
+    "command": "npm run favorites:check",
+    "exitCode": 1,
+    "durationMs": 2420,
+    "log": "favorites-check.log"
+  },
+  {
+    "command": "npm run assets:check",
+    "exitCode": 0,
+    "durationMs": 1967,
+    "log": "assets-check.log"
+  },
+  {
+    "command": "npm run images:check",
+    "exitCode": 0,
+    "durationMs": 1944,
+    "log": "images-check.log"
+  },
+  {
+    "command": "npm run ruffle:check",
+    "exitCode": 0,
+    "durationMs": 456,
+    "log": "ruffle-check.log"
+  },
+  {
+    "command": "npm run quiz:check",
+    "exitCode": 0,
+    "durationMs": 355,
+    "log": "quiz-check.log"
+  }
+]

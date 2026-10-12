@@ -14,7 +14,7 @@ export default function PrivacyPolicyPage() {
     <main className="legal-page">
       <a className="back-link" href="/">Back to Square Face Generator</a>
       <h1>Privacy Policy</h1>
-      <p>Last updated: September 7, 2026</p>
+      <p>Last updated: October 12, 2026</p>
       <p>
         My Square Face Icon is designed as a browser-based classic Flash avatar
         maker page. The main game runs through Ruffle so visitors can play the
@@ -67,6 +67,17 @@ export default function PrivacyPolicyPage() {
         in Cloudflare KV. This helps count likes without showing your identity on
         the public page. The moderation area may use configured secrets or
         request headers to protect admin actions.
+      </p>
+      <h2>Friend Quiz Links and Results</h2>
+      <p>
+        Friend Block Test processes nicknames, answers and scores in your browser without uploading them.
+        Quiz and result links contain their data after # and can be read by anyone who has the link.
+        This browser keeps up to 20 created-quiz identifiers and the latest 50 received results
+        (nicknames, avatars and scores), with no account or device sync. The original answer list
+        is carried in the link, not the local results list. Use Clear quiz records in the game to
+        remove its identifiers and results. Storage restrictions or clearing site data may prevent
+        collecting future results for a quiz. Third-party analytics and advertising are disabled
+        on the quiz page and its embedded game.
       </p>
       <h2>Analytics and Advertising</h2>
       <p>

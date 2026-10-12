@@ -1,0 +1,217 @@
+
+> mysquarefaceicon@0.1.0 recent:check
+> node scripts/run-recently-played-check.mjs
+
+node:assert:801
+    throw err;
+    ^
+
+AssertionError [ERR_ASSERTION]: The input did not match the regular expression /Last updated: September 7, 2026/. Input:
+
+'import type { Metadata } from "next";\n' +
+  '\n' +
+  'export const metadata: Metadata = {\n' +
+  '  title: "Privacy Policy",\n' +
+  '  description:\n' +
+  '    "Privacy Policy for My Square Face Icon, a free browser-based square face generator.",\n' +
+  '  alternates: {\n' +
+  '    canonical: "https://mysquarefaceicon.com/privacy-policy"\n' +
+  '  }\n' +
+  '};\n' +
+  '\n' +
+  'export default function PrivacyPolicyPage() {\n' +
+  '  return (\n' +
+  '    <main className="legal-page">\n' +
+  '      <a className="back-link" href="/">Back to Square Face Generator</a>\n' +
+  '      <h1>Privacy Policy</h1>\n' +
+  '      <p>Last updated: October 12, 2026</p>\n' +
+  '      <p>\n' +
+  '        My Square Face Icon is designed as a browser-based classic Flash avatar\n' +
+  '        maker page. The main game runs through Ruffle so visitors can play the\n' +
+  '        SWF game in modern browsers without installing Adobe Flash Player.\n' +
+  '      </p>\n' +
+  '      <p>\n' +
+  '        This privacy policy explains what information is provided through public\n' +
+  '        comments, how moderation uses it, and which details are not shown publicly.\n' +
+  '      </p>\n' +
+  '      <h2>Privacy Policy: Information We Collect</h2>\n' +
+  '      <p>\n' +
+  '        We do not require accounts to use the generator. If you submit a public\n' +
+  '        comment, we collect the name, email address, rating, comment text, and\n' +
+  '        optional image you provide. Your email is used for moderation context and\n' +
+  '        is not displayed publicly.\n' +
+  '      </p>\n' +
+  '      <h2>Generated Images</h2>\n' +
+  '      <p>\n' +
+  '        The game runs in your browser. If you save an image through the original\n' +
+  '        game or take a screenshot of your creation, that action is handled by\n' +
+  '        your browser or device.\n' +
+  '      </p>\n' +
+  '      <h2>Comment Images</h2>\n' +
+  '      <p>\n' +
+  '        Optional comment images are limited to JPG, PNG, WebP, or GIF files up to\n' +
+  '        2MB. Approved comments may show the uploaded image publicly. Rejected or\n' +
+  '        deleted comments may have their image removed from storage.\n' +
+  '      </p>\n' +
+  '      <h2>Cookies and Local Storage</h2>\n' +
+  '      <p>\n' +
+  '        The site may use local storage to remember whether you dismissed the PWA\n' +
+  '        install prompt and to keep a simple visitor ID for comment likes. The\n' +
+  '        visitor ID is used to reduce duplicate likes from the same browser and is\n' +
+  '        not a login account.\n' +
+  '      </p>\n' +
+  '      <p>\n' +
+  '        This browser may also save the stable ID and start time of recently played\n' +
+  '        games to show Continue Playing. You can remove that history with Clear\n' +
+  '        history, and it does not sync across devices.\n' +
+  '      </p>\n' +
+  '      <p>\n' +
+  '        If you use Favorite or Save tool, this browser stores only stable game IDs\n' +
+  '        so it can show your saved games and tools on the Games page. Favorites do\n' +
+  '        not contain account or personal information and do not sync across devices.\n' +
+  '        Press the Favorited or Saved tool button again to remove an item, or clear\n' +
+  '        this site&apos;s stored data in your browser settings.\n' +
+  '      </p>\n' +
+  '      <p>\n' +
+  '        Comment likes may store a hashed visitor identifier with the comment ID\n' +
+  '        in Cloudflare KV. This helps count likes without showing your identity on\n' +
+  '        the public page. The moderation area may use configured secrets or\n' +
+  '        request headers to protect admin actions.\n' +
+  '      </p>\n' +
+  '      <h2>Friend Quiz Links and Results</h2>\n' +
+  '      <p>\n' +
+  '        Friend Block Test processes nicknames, answers and scores in your browser without uploading them.\n' +
+  '        Quiz and result links contain their data after # and can be read by anyone who has the link.\n' +
+  '        This browser keeps up to 20 created-quiz identifiers and the latest 50 received results\n' +
+  '        (nicknames, avatars and scores), with no account or device sync. The original answer list\n' +
+  '        is carried in the link, not the local results list. Use Clear quiz records in the game to\n' +
+  '        remove its identifiers and results. Storage restrictions or clearing site data may prevent\n' +
+  '        collecting future results for a quiz. Third-party analytics and advertising are disabled\n' +
+  '        on the quiz page and its embedded game.\n' +
+  '      </p>\n' +
+  '      <h2>Analytics and Advertising</h2>\n' +
+  '      <p>\n' +
+  '        Advertising is not enabled by default. Cloudflare Web Analytics may be\n' +
+  '        added when a site token is configured, helping measure aggregate traffic\n' +
+  '        without requiring accounts.\n' +
+  '      </p>\n' +
+  '      <h2>Contact</h2>\n' +
+  '      <p>\n' +
+  '        For privacy questions, use the <a href="/contact">contact page</a> or email\n' +
+  '        <a href="mailto:contact@mysquarefaceicon.com"> contact@mysquarefaceicon.com</a>.\n' +
+  '      </p>\n' +
+  '    </main>\n' +
+  '  );\n' +
+  '}\n'
+
+    at Object.<anonymous> (D:\LYXGIT\mysquarefaceicon\.recently-played-check\scripts\validate-recently-played.js:143:18)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49 {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: 'import type { Metadata } from "next";\n' +
+    '\n' +
+    'export const metadata: Metadata = {\n' +
+    '  title: "Privacy Policy",\n' +
+    '  description:\n' +
+    '    "Privacy Policy for My Square Face Icon, a free browser-based square face generator.",\n' +
+    '  alternates: {\n' +
+    '    canonical: "https://mysquarefaceicon.com/privacy-policy"\n' +
+    '  }\n' +
+    '};\n' +
+    '\n' +
+    'export default function PrivacyPolicyPage() {\n' +
+    '  return (\n' +
+    '    <main className="legal-page">\n' +
+    '      <a className="back-link" href="/">Back to Square Face Generator</a>\n' +
+    '      <h1>Privacy Policy</h1>\n' +
+    '      <p>Last updated: October 12, 2026</p>\n' +
+    '      <p>\n' +
+    '        My Square Face Icon is designed as a browser-based classic Flash avatar\n' +
+    '        maker page. The main game runs through Ruffle so visitors can play the\n' +
+    '        SWF game in modern browsers without installing Adobe Flash Player.\n' +
+    '      </p>\n' +
+    '      <p>\n' +
+    '        This privacy policy explains what information is provided through public\n' +
+    '        comments, how moderation uses it, and which details are not shown publicly.\n' +
+    '      </p>\n' +
+    '      <h2>Privacy Policy: Information We Collect</h2>\n' +
+    '      <p>\n' +
+    '        We do not require accounts to use the generator. If you submit a public\n' +
+    '        comment, we collect the name, email address, rating, comment text, and\n' +
+    '        optional image you provide. Your email is used for moderation context and\n' +
+    '        is not displayed publicly.\n' +
+    '      </p>\n' +
+    '      <h2>Generated Images</h2>\n' +
+    '      <p>\n' +
+    '        The game runs in your browser. If you save an image through the original\n' +
+    '        game or take a screenshot of your creation, that action is handled by\n' +
+    '        your browser or device.\n' +
+    '      </p>\n' +
+    '      <h2>Comment Images</h2>\n' +
+    '      <p>\n' +
+    '        Optional comment images are limited to JPG, PNG, WebP, or GIF files up to\n' +
+    '        2MB. Approved comments may show the uploaded image publicly. Rejected or\n' +
+    '        deleted comments may have their image removed from storage.\n' +
+    '      </p>\n' +
+    '      <h2>Cookies and Local Storage</h2>\n' +
+    '      <p>\n' +
+    '        The site may use local storage to remember whether you dismissed the PWA\n' +
+    '        install prompt and to keep a simple visitor ID for comment likes. The\n' +
+    '        visitor ID is used to reduce duplicate likes from the same browser and is\n' +
+    '        not a login account.\n' +
+    '      </p>\n' +
+    '      <p>\n' +
+    '        This browser may also save the stable ID and start time of recently played\n' +
+    '        games to show Continue Playing. You can remove that history with Clear\n' +
+    '        history, and it does not sync across devices.\n' +
+    '      </p>\n' +
+    '      <p>\n' +
+    '        If you use Favorite or Save tool, this browser stores only stable game IDs\n' +
+    '        so it can show your saved games and tools on the Games page. Favorites do\n' +
+    '        not contain account or personal information and do not sync across devices.\n' +
+    '        Press the Favorited or Saved tool button again to remove an item, or clear\n' +
+    '        this site&apos;s stored data in your browser settings.\n' +
+    '      </p>\n' +
+    '      <p>\n' +
+    '        Comment likes may store a hashed visitor identifier with the comment ID\n' +
+    '        in Cloudflare KV. This helps count likes without showing your identity on\n' +
+    '        the public page. The moderation area may use configured secrets or\n' +
+    '        request headers to protect admin actions.\n' +
+    '      </p>\n' +
+    '      <h2>Friend Quiz Links and Results</h2>\n' +
+    '      <p>\n' +
+    '        Friend Block Test processes nicknames, answers and scores in your browser without uploading them.\n' +
+    '        Quiz and result links contain their data after # and can be read by anyone who has the link.\n' +
+    '        This browser keeps up to 20 created-quiz identifiers and the latest 50 received results\n' +
+    '        (nicknames, avatars and scores), with no account or device sync. The original answer list\n' +
+    '        is carried in the link, not the local results list. Use Clear quiz records in the game to\n' +
+    '        remove its identifiers and results. Storage restrictions or clearing site data may prevent\n' +
+    '        collecting future results for a quiz. Third-party analytics and advertising are disabled\n' +
+    '        on the quiz page and its embedded game.\n' +
+    '      </p>\n' +
+    '      <h2>Analytics and Advertising</h2>\n' +
+    '      <p>\n' +
+    '        Advertising is not enabled by default. Cloudflare Web Analytics may be\n' +
+    '        added when a site token is configured, helping measure aggregate traffic\n' +
+    '        without requiring accounts.\n' +
+    '      </p>\n' +
+    '      <h2>Contact</h2>\n' +
+    '      <p>\n' +
+    '        For privacy questions, use the <a href="/contact">contact page</a> or email\n' +
+    '        <a href="mailto:contact@mysquarefaceicon.com"> contact@mysquarefaceicon.com</a>.\n' +
+    '      </p>\n' +
+    '    </main>\n' +
+    '  );\n' +
+    '}\n',
+  expected: /Last updated: September 7, 2026/,
+  operator: 'match'
+}
+
+Node.js v22.16.0

@@ -19,6 +19,7 @@ import GamePlayer from "./GamePlayer";
 import GameSourceRights from "./GameSourceRights";
 import RelatedGames from "./RelatedGames";
 import FavoriteToggle from "./FavoriteToggle";
+import FriendQuizStartButton from "./FriendQuizStartButton";
 
 type GameDetailTemplateProps = {
   readonly game: GameRecord;
@@ -52,8 +53,9 @@ export default function GameDetailTemplate({ game, playerModel, relatedGameRecor
       <SiteHeader
         mobileStartHref="#game-player"
         mobileStartLabel={game.pageType === "EXTERNAL_TOOL" ? "Open" : "Play"}
+        mobileStartControl={game.id === "friend-block-test" ? <FriendQuizStartButton /> : undefined}
       />
-      <main className="game-detail-shell">
+      <main className="game-detail-shell" data-game-id={game.id}>
         <GameBreadcrumb
           items={[
             { label: "Home", href: "/" },

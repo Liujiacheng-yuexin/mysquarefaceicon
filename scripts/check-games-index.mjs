@@ -61,12 +61,12 @@ const directory = resolveGamesDirectory();
 same(seo.gamesDirectoryMetadata.robots, { index: false, follow: true, googleBot: { index: false, follow: true } });
 same(seo.gamesDirectoryMetadata.alternates.canonical, "https://mysquarefaceicon.com/games");
 same(seo.gamesDirectoryMetadata.openGraph.url, "https://mysquarefaceicon.com/games");
-same(directory.games.map(game => game.id), ["square-face", "oval-face", "pixel-art-avatar"], "stable unique catalog");
-same([directory.onSiteGames.length, directory.externalTools.length], [2, 1]);
-same(directory.categoryRoutes.map(({ games }) => games.length), [2, 3, 1, 2, 1]);
+same(directory.games.map(game => game.id), ["square-face", "oval-face", "pixel-art-avatar", "friend-block-test"], "stable unique catalog");
+same([directory.onSiteGames.length, directory.externalTools.length], [3, 1]);
+same(directory.categoryRoutes.map(({ games }) => games.length), [2, 3, 1, 2, 1, 1]);
 same([directoryEntryCount(0), directoryEntryCount(1), directoryEntryCount(2)], ["0 entries", "1 entry", "2 entries"]);
 same(resolveGamesDirectory([]), { games: [], onSiteGames: [], externalTools: [], categoryRoutes: [] });
-same(resolveGamesDirectory([...gameCatalog, ...gameCatalog]).games.length, 3, "deduplicate ids and paths");
+same(resolveGamesDirectory([...gameCatalog, ...gameCatalog]).games.length, 4, "deduplicate ids and paths");
 
 const badRecords = [
   record => { record.status = "DRAFT"; },
@@ -99,19 +99,19 @@ function checkDocument(html, withHead = false) {
   assert.ok(main.includes("Avatar Games &amp; Face Makers"));
   assert.match(html, /data-ad-eligible="false"/);
   const cards = [...main.matchAll(/<a\b[^>]*data-game-id="([^"]*)"[^>]*>[\s\S]*?<\/a>/g)];
-  assert.deepEqual(cards.map(card => card[1]), ["square-face", "oval-face", "pixel-art-avatar"]);
+  assert.deepEqual(cards.map(card => card[1]), ["square-face", "oval-face", "friend-block-test", "pixel-art-avatar"]);
   for (const [index, card] of cards.entries()) {
-    assert.ok(card[0].includes(`href="${gameCatalog[index].route.path}"`));
+    assert.ok(card[0].includes(`href="${gameCatalog.find(game => game.id === card[1]).route.path}"`));
     assert.ok(card[0].includes('data-navigation="document"'));
-    assert.ok(card[0].includes(gameCatalog[index].content.summary.replace(/&/g, "&amp;").replace(/'/g, "&#x27;")));
+    assert.ok(card[0].includes(gameCatalog.find(game => game.id === card[1]).content.summary.replace(/&/g, "&amp;").replace(/'/g, "&#x27;")));
     assert.doesNotMatch(card[0], /target="_blank"|available|rating/i);
   }
-  assert.match(cards[2][0], /External tool/);
-  assert.match(cards[2][0], /View source and access details/);
-  assert.match(main, /2 entries/); assert.match(main, /1 entry/);
+  assert.match(cards[3][0], /External tool/);
+  assert.match(cards[3][0], /View source and access details/);
+  assert.match(main, /3 entries/); assert.match(main, /1 entry/);
   assert.match(main, /Categories overlap/);
   const categories = [...main.matchAll(/<a\b[^>]*data-category-slug="([^"]*)"[^>]*>/g)];
-  assert.deepEqual(categories.map(item => item[1]), ["face-makers", "avatar-makers", "pixel-avatars", "retro-flash", "character-creators"]);
+  assert.deepEqual(categories.map(item => item[1]), ["face-makers", "avatar-makers", "pixel-avatars", "retro-flash", "character-creators", "friend-quizzes"]);
   for (const item of categories) assert.ok(item[0].includes('data-navigation="document"'));
   for (const item of main.matchAll(/<a\b[^>]*>/g)) assert.ok(item[0].includes('data-navigation="document"'), "every main exit starts a clean document");
   assert.doesNotMatch(main, /<iframe|<img|<button|\.swf|\.wasm|Popular|Trending|Featured|>New</i);
@@ -134,11 +134,11 @@ for (const [from, to] of [
   ['data-ad-eligible="false"', 'data-ad-eligible="true"'],
   ['data-game-id="square-face"', 'data-game-id="invented"'],
   ['href="/pixel-art-avatar-icon-generator" data-navigation="document"', 'href="https://example.invalid/tool"'],
-  ['2 entries', '20 entries'], ['1 entry', '1 available'],
+  ['3 entries', '30 entries'], ['1 entry', '1 available'],
   ['External tool', 'Playable here'], ['Categories overlap', 'Nine distinct games'],
   ['data-navigation="document"', 'data-navigation="client"'],
   ['All avatar games', 'All popular games'],
-  ['"numberOfItems":3', '"numberOfItems":99']
+  ['"numberOfItems":4', '"numberOfItems":99']
 ]) {
   assert.ok(html.includes(from), "fixture must mutate actual markup: " + from);
   rejects(() => checkDocument(html.replace(from, to)), "negative HTML: " + from);

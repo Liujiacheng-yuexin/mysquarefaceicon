@@ -1,0 +1,8 @@
+
+> mysquarefaceicon@0.1.0 oval-page:check
+> node scripts/check-oval-legacy-page.mjs
+
+MIG-OVAL-001 source passed: 19 explicit player inputs and end-to-end forwarding cases; 75 text bindings, 2 sidebar image bindings, 3 resolved related href bindings.
+Full real-component SSR/metadata/three schemas preserved except the two verified cover dimensions and exact MIG-PIXEL sidebar label; 250 malformed records rejected, 26 related exclusions verified.
+22 frozen sources and three binary hashes unchanged; optional schema and UNKNOWN generic-model rejection preserved.
+Existing React 18 fetchPriority SSR warning only. This local binding phase is not full template migration, rights approval, browser/CWV verification or deployment.

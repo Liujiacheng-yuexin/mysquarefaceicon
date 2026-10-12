@@ -1,5 +1,7 @@
 import type { MetadataRoute } from "next";
 import { getLocaleUrl, reviewedLocaleCodes } from "@/lib/locales";
+import { gameCatalog } from "@/lib/games/catalog";
+import { isIndexAllowedNewGame } from "@/lib/games/friend-quiz-policy";
 
 const baseUrl = "https://mysquarefaceicon.com";
 
@@ -26,6 +28,7 @@ const contentPaths = [
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
+    ...gameCatalog.filter(isIndexAllowedNewGame).map((game) => ({ url: game.seo.canonical, changeFrequency: "monthly", priority: 0.7 }) satisfies MetadataRoute.Sitemap[number]),
     ...reviewedLocaleCodes.map((locale) => ({
       url: getLocaleUrl(locale),
       changeFrequency: "weekly",

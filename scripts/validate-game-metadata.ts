@@ -4,6 +4,8 @@ import { resolve } from "node:path";
 import ovalFaceGame from "../data/games/oval-face";
 import pixelArtAvatarGame from "../data/games/pixel-art-avatar";
 import squareFaceGame from "../data/games/square-face";
+import friendBlockTest from "../data/games/friend-block-test";
+import { isIndexAllowedNewGame } from "../lib/games/friend-quiz-policy";
 import { gameCatalog } from "../lib/games/catalog";
 import type { GameRecord } from "../lib/games/game-schema";
 import { resolveSquareHomepage } from "../lib/games/square-homepage";
@@ -16,6 +18,26 @@ import {
 } from "../lib/seo/game-metadata";
 
 const projectRoot = resolve(__dirname, "../..");
+
+assert.equal(isIndexAllowedNewGame(friendBlockTest), true);
+const deniedNewGames: GameRecord[] = [
+  { ...friendBlockTest, id: "different-game" },
+  { ...friendBlockTest, slug: "different-slug" },
+  { ...friendBlockTest, status: "REVIEW" },
+  { ...friendBlockTest, pageType: "EXTERNAL_TOOL" },
+  { ...friendBlockTest, route: { ...friendBlockTest.route, indexStatus: "NOINDEX" } },
+  { ...friendBlockTest, player: { type: "HTML5", entryUrl: "/games/other/index.html" } },
+  { ...friendBlockTest, license: { ...friendBlockTest.license, newPublicationAllowed: false } },
+  { ...friendBlockTest, license: { ...friendBlockTest.license, releaseDecision: "REVIEW_REQUIRED" } },
+  { ...friendBlockTest, license: { ...friendBlockTest.license, status: "UNKNOWN" } },
+  { ...friendBlockTest, license: { ...friendBlockTest.license, allowedDeliveryTypes: [] } },
+  { ...friendBlockTest, license: { ...friendBlockTest.license, registryRecordId: "another-record" } }
+];
+for (const game of deniedNewGames) {
+  assert.equal(isIndexAllowedNewGame(game), false);
+  assert.equal(JSON.parse(JSON.stringify(buildGameMetadata(game, { forceNoIndex: false }))).robots.index, false);
+}
+assert.equal(JSON.parse(JSON.stringify(buildGameMetadata(friendBlockTest))).robots, undefined);
 
 assert.doesNotThrow(() => assertValidGameMetadataCatalog(gameCatalog));
 assert.equal(resolveSquareHomepage(squareFaceGame).h1, getGamePageH1(squareFaceGame));

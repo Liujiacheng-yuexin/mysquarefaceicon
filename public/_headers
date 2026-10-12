@@ -1,0 +1,5 @@
+/games/friend-block-test/*
+  Cache-Control: public, max-age=0, no-transform
+  Referrer-Policy: no-referrer
+  X-Robots-Tag: noindex, follow
+  Content-Security-Policy: default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'self'

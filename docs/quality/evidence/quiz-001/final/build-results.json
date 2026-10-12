@@ -1,0 +1,14 @@
+[
+  {
+    "command": "npm run build",
+    "exitCode": 0,
+    "durationMs": 51158,
+    "log": "build.log"
+  },
+  {
+    "command": "npm run cf:build",
+    "exitCode": 0,
+    "durationMs": 106934,
+    "log": "cf-build.log"
+  }
+]

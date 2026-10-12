@@ -36,6 +36,7 @@ export type GameAssetManifest = {
   readonly objectKeyConvention: "games/{game-id}/{kind}/{sha256-prefix}/{filename}";
   readonly cachePolicies: {
     readonly appStatic: "public, max-age=0";
+    readonly appStaticNoTransform?: "public, max-age=0, no-transform";
     readonly immutable: "public, max-age=31536000, immutable";
     readonly mutablePointer: "public, max-age=0, must-revalidate";
   };
@@ -128,6 +129,9 @@ export function validateGameAssetManifest(value: unknown): string[] {
     errors.push("manifest.cachePolicies must be an object.");
   } else {
     if (cachePolicies.appStatic !== "public, max-age=0") errors.push("manifest.cachePolicies.appStatic drifted.");
+    if (cachePolicies.appStaticNoTransform !== undefined && cachePolicies.appStaticNoTransform !== "public, max-age=0, no-transform") {
+      errors.push("manifest.cachePolicies.appStaticNoTransform must preserve revalidation and prevent transformations.");
+    }
     if (cachePolicies.immutable !== "public, max-age=31536000, immutable") {
       errors.push("manifest.cachePolicies.immutable drifted.");
     }
@@ -214,7 +218,8 @@ export function validateGameAssetManifest(value: unknown): string[] {
       if (!hasText(asset.sourcePath) || asset.sourcePath !== `public${asset.url}`) {
         errors.push(`${path}.sourcePath must exactly map the APP_STATIC URL into public/.`);
       }
-      if (isRecord(cachePolicies) && asset.cacheControl !== cachePolicies.appStatic) {
+      if (isRecord(cachePolicies) && asset.cacheControl !== cachePolicies.appStatic
+        && !(cachePolicies.appStaticNoTransform && asset.cacheControl === cachePolicies.appStaticNoTransform)) {
         errors.push(`${path}.cacheControl must use the APP_STATIC policy.`);
       }
       if (asset.migrationStatus === "R2_CANDIDATE" || asset.migrationStatus === "MIGRATED") {
@@ -271,4 +276,15 @@ export function validateGameAssetManifest(value: unknown): string[] {
   });
 
   return errors;
+}
+
+// Workers Assets may add must-revalidate to a max-age=0 response. This tightens
+// the same freshness policy; it must not hide missing no-transform or other drift.
+export function matchesAssetCacheControl(actual: string | null, expected: string): boolean {
+  if (!actual) return false;
+  const required = new Set(expected.toLowerCase().split(",").map((value) => value.trim()));
+  const received = new Set(actual.toLowerCase().split(",").map((value) => value.trim()));
+  return [...required].every((directive) => received.has(directive))
+    && [...received].every((directive) => required.has(directive)
+      || (required.has("max-age=0") && directive === "must-revalidate"));
 }

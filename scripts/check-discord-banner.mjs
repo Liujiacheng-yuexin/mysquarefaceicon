@@ -7,6 +7,7 @@ import { beforeDiscordBannerMarkup, beforeDiscordBannerSource } from "./discord-
 import { createHash } from "node:crypto";
 import vm from "node:vm";
 import { protectBannerWorker } from "./banner-worker-policy.mjs";
+import { beforeFriendQuizSource } from "./friend-quiz-compat.mjs";
 
 let closed = 0, decodeCalls = 0;
 const loader = modules({}, { Blob, createImageBitmap: async () => { decodeCalls++; return { width: 680, height: 240, close() { closed++; } }; } });
@@ -175,8 +176,10 @@ test("Exact historical inverses reject unrelated changes to every touched shared
     const source = readFileSync(resolve(root, path), "utf8");
     const original = beforeDiscordBannerSource(path, source);
     same(createHash("sha256").update(original).digest("hex"), change.beforeReturnedSha256 ?? change.beforeSha256, path);
-    rejects(() => beforeDiscordBannerSource(path, source + "\n// unrequested change\n"), /unexpected Discord banner change/);
-    rejects(() => beforeDiscordBannerSource(path, source.replace(change.after, change.after + " ")), /unexpected Discord banner change/);
+    rejects(() => beforeDiscordBannerSource(path, source + "\n// unrequested change\n"), /unexpected (?:Discord banner change|QUIZ-001 delta)/);
+    const bannerSource = beforeFriendQuizSource(path, source);
+    assert.ok(bannerSource.includes(change.after), "Historical negative fixture must mutate a real fragment");
+    rejects(() => beforeDiscordBannerSource(path, bannerSource.replace(change.after, change.after + " ")), /unexpected (?:Discord banner change|QUIZ-001 delta)/);
   }
 });
 console.log(`Discord banner: ${cases} cases, ${assertions} numeric/structural assertions passed. Browser pixels, lifecycle and downloads require the separate browser matrix.`);

@@ -1,0 +1,5 @@
+
+> mysquarefaceicon@0.1.0 ruffle:check
+> node scripts/check-ruffle-runtime.mjs
+
+RUFFLE-001 check passed: 0.2.0-nightly.2026.5.12; 5 files; 27512697 bytes; 10 negative fixtures rejected.

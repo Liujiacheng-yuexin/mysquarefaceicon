@@ -1,0 +1,5 @@
+# QUIZ-001 manifests verify these static files byte for byte across Windows/CI.
+public/games/friend-block-test/*.html text eol=lf
+public/games/friend-block-test/*.mjs text eol=lf
+public/games/friend-block-test/*.css text eol=lf
+public/games/friend-block-test/*.webp binary

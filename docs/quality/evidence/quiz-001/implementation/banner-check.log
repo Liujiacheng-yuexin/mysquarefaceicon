@@ -1,0 +1,77 @@
+
+> mysquarefaceicon@0.1.0 banner:check
+> node scripts/check-discord-banner.mjs
+
+PASS A01 exact-ratio profile
+PASS A02 square -> profile Crop
+PASS A03 square -> profile Fit
+PASS A04 landscape -> server Crop/Fit
+PASS A05 square -> server Crop
+PASS A06 square -> server Fit
+PASS A07 zoom 2 and enlargement
+PASS A08 crop edges
+PASS A09 small image is allowed with scale 2
+PASS A10 EXIF orientation matrices include all rotations and mirrors
+PASS A13 wide source -> server
+PASS A14 invite exact dimensions
+PASS Finite guards, clamping, Fit zoom independence, random geometry bounds
+PASS B01 signatures, including renamed GIF/WebP/SVG/HEIC
+PASS B02 APNG chunks vs incidental acTL text
+PASS B03 byte, area and longest-side limits are inclusive for input
+PASS B04 PNG boundaries, CRC, zero size, truncation and JPEG markers
+PASS EXIF 1-8 normalized dimensions and decoder metadata exclusion
+PASS B05 null encoding
+PASS B05 MIME fallback
+PASS B05 MIME lies about signature
+PASS B06 exactly 9,500,000 bytes
+PASS B06 above byte limit
+PASS wrong real pixel dimensions
+PASS Private route policy covers slash/query/hash and document boundaries
+PASS P0 surface has no file telemetry/storage sink or remote input
+PASS Historical SSR inverse preserves all content except the reviewed brand label
+PASS Worker privacy patch is idempotent and fails on an unexpected generated entry
+PASS Worker policy paths, status, body stream, noindex and cache preservation
+node:internal/modules/run_main:123
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: The input did not match the regular expression /unexpected Discord banner change/. Input:
+
+'AssertionError [ERR_ASSERTION]: app/layout.tsx: unexpected QUIZ-001 delta\n' +
+  '+ actual - expected\n' +
+  '\n' +
+  "+ '5179b0997959579510796d156efcf733e29549d492bfac548bb9de421d395ea3'\n" +
+  "- '27d9a03446e9380178990b12b9dda5b0721c9d8fc811dd906bf18667ea09c22c'\n"
+
+    at rejects (file:///D:/LYXGIT/mysquarefaceicon/scripts/check-discord-banner.mjs:21:75)
+    at file:///D:/LYXGIT/mysquarefaceicon/scripts/check-discord-banner.mjs:178:5
+    at test (file:///D:/LYXGIT/mysquarefaceicon/scripts/check-discord-banner.mjs:18:27)
+    at file:///D:/LYXGIT/mysquarefaceicon/scripts/check-discord-banner.mjs:172:1 {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: AssertionError [ERR_ASSERTION]: app/layout.tsx: unexpected QUIZ-001 delta
+  + actual - expected
+  
+  + '5179b0997959579510796d156efcf733e29549d492bfac548bb9de421d395ea3'
+  - '27d9a03446e9380178990b12b9dda5b0721c9d8fc811dd906bf18667ea09c22c'
+  
+      at beforeFriendQuizSource (file:///D:/LYXGIT/mysquarefaceicon/scripts/friend-quiz-compat.mjs:15:10)
+      at beforeDiscordBannerSource (file:///D:/LYXGIT/mysquarefaceicon/scripts/discord-banner-compat.mjs:12:11)
+      at file:///D:/LYXGIT/mysquarefaceicon/scripts/check-discord-banner.mjs:178:19
+      at getActual (node:assert:531:5)
+      at Function.throws (node:assert:677:24)
+      at rejects (file:///D:/LYXGIT/mysquarefaceicon/scripts/check-discord-banner.mjs:21:75)
+      at file:///D:/LYXGIT/mysquarefaceicon/scripts/check-discord-banner.mjs:178:5
+      at test (file:///D:/LYXGIT/mysquarefaceicon/scripts/check-discord-banner.mjs:18:27)
+      at file:///D:/LYXGIT/mysquarefaceicon/scripts/check-discord-banner.mjs:172:1 {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: '5179b0997959579510796d156efcf733e29549d492bfac548bb9de421d395ea3',
+    expected: '27d9a03446e9380178990b12b9dda5b0721c9d8fc811dd906bf18667ea09c22c',
+    operator: 'strictEqual'
+  },
+  expected: /unexpected Discord banner change/,
+  operator: 'throws'
+}
+
+Node.js v22.16.0

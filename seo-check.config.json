@@ -30,7 +30,8 @@
     "/blog/best-discord-avatar-style": "best Discord avatar style",
     "/blog/avatar-maker-without-signup": "avatar maker without signup",
     "/privacy-policy": "privacy policy",
-    "/terms-of-service": "terms of service"
+    "/terms-of-service": "terms of service",
+    "/games/friend-block-test": "friend block test"
   },
   "ignore": [
     "/api",

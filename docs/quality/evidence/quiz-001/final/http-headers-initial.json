@@ -1,0 +1,156 @@
+[
+  {
+    "base": "http://127.0.0.1:3112",
+    "path": "/games/friend-block-test",
+    "status": 200,
+    "location": null,
+    "cache": "public, max-age=0, no-transform",
+    "robotsHeader": null,
+    "h1": [
+      "Friend Block Test"
+    ],
+    "robots": [],
+    "canonical": "https://mysquarefaceicon.com/games/friend-block-test",
+    "sitemapQuiz": false
+  },
+  {
+    "base": "http://127.0.0.1:3112",
+    "path": "/games/friend-block-test/index.html",
+    "status": 200,
+    "location": null,
+    "cache": "public, max-age=0, no-transform",
+    "robotsHeader": null,
+    "h1": [],
+    "robots": [
+      "noindex, follow"
+    ],
+    "canonical": "/games/friend-block-test",
+    "sitemapQuiz": false
+  },
+  {
+    "base": "http://127.0.0.1:3112",
+    "path": "/games/friend-block-test/core.mjs",
+    "status": 200,
+    "location": null,
+    "cache": "public, max-age=0, no-transform",
+    "robotsHeader": null,
+    "h1": [],
+    "robots": [],
+    "sitemapQuiz": false
+  },
+  {
+    "base": "http://127.0.0.1:3112",
+    "path": "/category/friend-quizzes",
+    "status": 200,
+    "location": null,
+    "cache": "s-maxage=31536000, stale-while-revalidate",
+    "robotsHeader": null,
+    "h1": [
+      "Friend Quizzes"
+    ],
+    "robots": [
+      "noindex, follow"
+    ],
+    "canonical": "https://mysquarefaceicon.com/category/friend-quizzes",
+    "sitemapQuiz": false
+  },
+  {
+    "base": "http://127.0.0.1:3112",
+    "path": "/games/not-a-real-quiz",
+    "status": 404,
+    "location": null,
+    "cache": "s-maxage=31536000, stale-while-revalidate",
+    "robotsHeader": null,
+    "h1": [],
+    "robots": [
+      "noindex",
+      "noindex, nofollow"
+    ],
+    "sitemapQuiz": false
+  },
+  {
+    "base": "http://127.0.0.1:3112",
+    "path": "/sitemap.xml",
+    "status": 200,
+    "location": null,
+    "cache": "public, max-age=0, must-revalidate",
+    "robotsHeader": null,
+    "h1": [],
+    "robots": [],
+    "sitemapQuiz": true
+  },
+  {
+    "base": "http://127.0.0.1:3113",
+    "path": "/games/friend-block-test",
+    "status": 307,
+    "location": "/games/friend-block-test/",
+    "cache": null,
+    "robotsHeader": null,
+    "h1": [],
+    "robots": [],
+    "sitemapQuiz": false
+  },
+  {
+    "base": "http://127.0.0.1:3113",
+    "path": "/games/friend-block-test/index.html",
+    "status": 307,
+    "location": "/games/friend-block-test/",
+    "cache": "public, max-age=0, no-transform",
+    "robotsHeader": "noindex, follow",
+    "h1": [],
+    "robots": [],
+    "sitemapQuiz": false
+  },
+  {
+    "base": "http://127.0.0.1:3113",
+    "path": "/games/friend-block-test/core.mjs",
+    "status": 200,
+    "location": null,
+    "cache": "public, max-age=0, no-transform",
+    "robotsHeader": "noindex, follow",
+    "h1": [],
+    "robots": [],
+    "sitemapQuiz": false
+  },
+  {
+    "base": "http://127.0.0.1:3113",
+    "path": "/category/friend-quizzes",
+    "status": 200,
+    "location": null,
+    "cache": "s-maxage=31536000, stale-while-revalidate=2592000",
+    "robotsHeader": null,
+    "h1": [
+      "Friend Quizzes"
+    ],
+    "robots": [
+      "noindex, follow"
+    ],
+    "canonical": "https://mysquarefaceicon.com/category/friend-quizzes",
+    "sitemapQuiz": false
+  },
+  {
+    "base": "http://127.0.0.1:3113",
+    "path": "/games/not-a-real-quiz",
+    "status": 404,
+    "location": null,
+    "cache": "private, no-cache, no-store, max-age=0, must-revalidate",
+    "robotsHeader": null,
+    "h1": [],
+    "robots": [
+      "noindex",
+      "noindex, nofollow"
+    ],
+    "sitemapQuiz": false
+  },
+  {
+    "base": "http://127.0.0.1:3113",
+    "path": "/sitemap.xml",
+    "status": 200,
+    "location": null,
+    "cache": "public, max-age=0, must-revalidate",
+    "robotsHeader": null,
+    "h1": [],
+    "robots": [],
+    "sitemapQuiz": true
+  }
+]

@@ -31,7 +31,7 @@ const errors: string[] = [];
 const registryPath = resolve(projectRoot, "data/game-license-registry.json");
 const registry = JSON.parse(readFileSync(registryPath, "utf8")) as LicenseRegistry;
 const registryById = new Map(registry.records.map((record) => [record.id, record]));
-const expectedGameIds = new Set(["square-face", "oval-face", "pixel-art-avatar"]);
+const expectedGameIds = new Set(["square-face", "oval-face", "pixel-art-avatar", "friend-block-test"]);
 
 const registryDeliveryType: Record<GameDeliveryType, string> = {
   RUFFLE_SWF: "LOCAL_RUFFLE_SWF",
@@ -133,6 +133,12 @@ for (const game of gameCatalog) {
     if (game.license.allowedDeliveryTypes.length !== 1 || game.license.allowedDeliveryTypes[0] !== "EXTERNAL_LINK") {
       errors.push(`${game.id} must remain constrained to EXTERNAL_LINK delivery.`);
     }
+  }
+
+  if (game.player.type === "HTML5") {
+    verifyFile(`public${game.player.entryUrl}`, `${game.id} HTML5 entry`);
+    verifySha256(registryRecord.source.repositoryPath, registryRecord.source.sha256, `${game.id} registered entry`);
+    if (game.source.localAssetPath !== registryRecord.source.repositoryPath) errors.push(`${game.id} HTML5 source path differs from Registry.`);
   }
 }
 

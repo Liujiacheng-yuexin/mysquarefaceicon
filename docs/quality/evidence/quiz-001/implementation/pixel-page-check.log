@@ -1,0 +1,15 @@
+
+> mysquarefaceicon@0.1.0 pixel-page:check
+> node scripts/check-pixel-external-page.mjs
+
+MIG-PIXEL-001 check failed: AssertionError [ERR_ASSERTION]: scripts/check-terms-rights.mjs is outside MIG-PIXEL-001 plus confirmed directory changes
++ actual - expected
+
++ 'addb06b24419dc7ad415b3e4895f77f9f704e2444aadd30ad959e0a4d18df730'
+- '62ab3d26bb2459fe9abe92a1c520e740cba77f01cec5324a7d19ddadfe6dba50'
+
+    at main (file:///D:/LYXGIT/mysquarefaceicon/scripts/check-pixel-external-page.mjs:1103:68)
+    at file:///D:/LYXGIT/mysquarefaceicon/scripts/check-pixel-external-page.mjs:1168:15
+    at ModuleJob.run (node:internal/modules/esm/module_job:274:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5)

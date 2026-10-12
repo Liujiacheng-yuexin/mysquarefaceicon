@@ -1423,6 +1423,26 @@ h3 {
   background: #ffffff;
 }
 
+/* QUIZ-001: only the new question game uses a content-height frame. */
+[data-game-id="friend-block-test"] .flash-player {
+  aspect-ratio: auto;
+  min-height: 300px;
+  border: 1px solid var(--border);
+  background: #fffdf8;
+}
+[data-game-id="friend-block-test"] [data-player-activated="false"] .flash-player {
+  aspect-ratio: 8 / 5;
+}
+.friend-quiz-frame { display: block; width: 100%; border: 0; background: #fffdf8; scroll-margin-top: 80px; }
+.site-nav .friend-quiz-start-button { border: 0; color: var(--text); font: inherit; font-weight: 900; cursor: pointer; }
+[data-game-id="friend-block-test"] #game-player { scroll-margin-top: 80px; }
+[data-game-id="friend-block-test"] .flash-stage:fullscreen { overflow-y: auto; background: #fffaf1; }
+[data-game-id="friend-block-test"] .flash-stage:fullscreen .flash-player { max-height: none; }
+@media (max-width: 520px) {
+  [data-game-id="friend-block-test"] .game-detail-heading { margin-bottom: 16px; }
+  [data-game-id="friend-block-test"] .flash-play-panel { font-size: 14px; padding: 12px 16px; }
+}
+
 .game-player-source-chip {
   position: absolute;
   top: 10px;

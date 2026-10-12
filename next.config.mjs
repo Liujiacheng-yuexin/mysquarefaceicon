@@ -8,13 +8,16 @@ const ruffleRuntimeManifest = JSON.parse(
 const nextConfig = {
   reactStrictMode: true,
   async headers() {
-    return ruffleRuntimeManifest.files.map((file) => ({
+    return [{
+      source: "/games/friend-block-test/:path*",
+      headers: [{ key: "Cache-Control", value: "public, max-age=0, no-transform" }, { key: "Referrer-Policy", value: "no-referrer" }]
+    }, ...ruffleRuntimeManifest.files.map((file) => ({
       source: `${ruffleRuntimeManifest.publicBasePath}${file.path}`,
       headers: [
         { key: "Content-Type", value: file.contentType },
         { key: "Cache-Control", value: file.cacheControl }
       ]
-    }));
+    }))];
   }
 };
 

@@ -1,0 +1,46 @@
+{
+  "date": "2026-10-12",
+  "base": "http://127.0.0.1:3113",
+  "browser": "154.0.8037.98",
+  "browserPlugin": "Browser plugin not available; bundled Playwright used",
+  "simulatedViewports": true,
+  "records": [
+    {
+      "width": 320,
+      "height": 844,
+      "create": true,
+      "answer": true,
+      "result": true,
+      "freshContextRoundTrip": true,
+      "score": 70,
+      "duplicatePrevented": true,
+      "copyMatches": true,
+      "noOverflow": true,
+      "consoleErrors": [],
+      "requests": 118,
+      "externalRequests": 0,
+      "quizLinkLength": 222,
+      "resultLinkLength": 318
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "create": true,
+      "answer": true,
+      "result": true,
+      "freshContextRoundTrip": true,
+      "score": 70,
+      "duplicatePrevented": true,
+      "copyMatches": true,
+      "noOverflow": true,
+      "consoleErrors": [],
+      "requests": 118,
+      "externalRequests": 0,
+      "quizLinkLength": 223,
+      "resultLinkLength": 319
+    },
+    {
+      "failure": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n+ actual - expected\n\n+ 'http://127.0.0.1:3113/games/friend-block-test#fbt1.eyJ2IjoxLCJrIjoicSIsImlkIjoiODdjYjQyZGFkNTEzIiwibiI6IkFsZXggMTIzNDU2Nzg5MDEiLCJhIjozLCJxIjpbMTIsNyw5LDExLDEsMjMsMTUsMjIsNiwxMF0sIngiOlswLDEsMiwzLDAsMSwyLDMsMCwxXX0.f52ad764'\n- 'http://127.0.0.1:3113/games/friend-block-test#fbt1.eyJ2IjoxLCJrIjoicSIsImlkIjoiYjE1ZTg1NjNmYTcyIiwibiI6IkFsZXggMTIzNDU2Nzg5MDEiLCJhIjozLCJxIjpbMTEsOCwzLDEwLDEsMjMsMTgsMTMsMTksMTVdLCJ4IjpbMCwxLDIsMywwLDEsMiwzLDAsMV19.024d91f0'\n\n    at file:///D:/LYXGIT/mysquarefaceicon/scripts/qa-friend-quiz.mjs:56:12"
+    }
+  ]
+}

@@ -29,6 +29,11 @@ const categoryDefinitions = [
     slug: "character-creators",
     name: "Character Creators",
     description: "Browse focused tools for building a character look that can work as an avatar or profile image."
+  },
+  {
+    slug: "friend-quizzes",
+    name: "Friend Quizzes",
+    description: "Make a friendly quiz with a face of your choice, share your ten picks, and compare results with friends."
   }
 ] as const satisfies readonly GameCategoryDefinition[];
 

@@ -1,4 +1,5 @@
 # PAGE_PLAN.md
+> 2026-10-12 · QUIZ-001：用户已确认 [Friend Block Test 单页方案](docs/product/friend-block-test-proposal.md)，本地新增 `/games/friend-block-test`（单条 INDEX 白名单、自引用 canonical、sitemap）及 `/category/friend-quizzes`（noindex、无广告、不进 sitemap）。沿用详情模板和现有发现规则，首页首屏与既有 URL/index 状态保持。出题、猜题、成绩回传都在浏览器运行；页面和静态入口隔离第三方脚本。工程/浏览器证据见 [QUIZ-001](docs/quality/evidence/quiz-001/README.md)，当前任务状态以权威 HTML 看板为准；没有发布授权。
 > 2026-10-09 当前增量：用户明确要求按附件新建 `/discord-banner-size`，P0 本地代码与验证已交付；[范围、来源与 QA](docs/product/discord-banner-size.md)。仅在现有资源区和三篇 Discord 文章增加关联入口，既有页面意图及核心模块顺序保持。状态以权威 HTML 看板 `DISCORD-BANNER-001` 为准；等待用户验收，不提交或发布。下方旧“当前任务”保留其原日期语境。
 > 2026-09-22 当前任务：用户已验收 HOME-CTR-001 首页摘要，并明确确认 [首页移动编辑器方案](docs/seo/home-ctr-2026-09-22.md)。HOME-MOBILE-001 在原首页接入 Classic game / Simple maker 切换，手机默认简版、桌面默认经典；本轮不新增 URL、不改索引或部署。最终状态与证据以权威 HTML 看板为准，原 IMG-001 与所有历史验收保持。
 

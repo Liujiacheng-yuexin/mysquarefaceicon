@@ -71,14 +71,14 @@ ok(gameCatalog.every((game) => game.measurements.qualityScore === null), "curren
 ok(gameCatalog.every((game) => !("popularity" in game)), "no popularity field is invented");
 
 const realSquare = selectRelatedGames(square);
-same(realSquare.recommendations.map(({ game }) => game.id), ["oval-face", "pixel-art-avatar"], "real Square order");
+same(realSquare.recommendations.map(({ game }) => game.id), ["oval-face", "pixel-art-avatar", "friend-block-test"], "real Square order");
 same(realSquare.recommendations[0].sharedCategories, ["face-makers", "avatar-makers", "retro-flash"], "Square to Oval category overlap");
 same(realSquare.recommendations[0].sharedTags, ["avatar-maker", "flash-game", "ruffle"], "Square to Oval tag overlap");
 same(realSquare.recommendations[1].sharedCategories, ["avatar-makers"], "Square to Pixel category overlap");
 same(realSquare.recommendations[1].sharedTags, ["profile-icon"], "Square to Pixel tag overlap");
 
 const realPixel = selectRelatedGames(pixel);
-same(realPixel.recommendations.map(({ game }) => game.id), ["square-face", "oval-face"], "real Pixel order");
+same(realPixel.recommendations.map(({ game }) => game.id), ["square-face", "oval-face", "friend-block-test"], "real Pixel order");
 same(realPixel.recommendations[0].sharedCategories, ["avatar-makers"], "Pixel to Square category overlap");
 same(realPixel.recommendations[0].sharedTags, ["profile-icon"], "Pixel to Square tag overlap");
 same(realPixel.recommendations[1].sharedCategories, ["avatar-makers"], "Pixel to Oval category overlap");

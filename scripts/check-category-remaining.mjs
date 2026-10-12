@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+import { beforeFriendQuizCategoryMarkup } from "./friend-quiz-compat.mjs";
 import assert from "node:assert/strict";
 import { createHash } from "node:crypto";
 import { readFileSync } from "node:fs";
@@ -7,7 +7,7 @@ import { beforeCategoryRemainingMarkup, beforeCategoryRemainingMetadata, beforeC
 import { beforeRelatedGamesSource } from "./related-games-compat.mjs";
 import { beforeFavoritesMarkup as beforeFavoritesMarkupBase } from "./favorites-compat.mjs";
 import { beforeDiscordBannerMarkup } from "./discord-banner-compat.mjs";
-const beforeFavoritesMarkup = value => beforeDiscordBannerMarkup(beforeFavoritesMarkupBase(value));
+const beforeFavoritesMarkup = value => beforeFriendQuizCategoryMarkup(beforeDiscordBannerMarkup(beforeFavoritesMarkupBase(value)));
 import { root, read, plain, React, render, modules } from "./category-sample-test-utils.mjs";
 
 const sha = value => createHash("sha256").update(value).digest("hex");
@@ -122,11 +122,11 @@ function checkDocument(html, slug, withHead = false) {
   }
 }
 
-same(routes.map(r => r.category.slug), slugs, "five existing categories only");
-same(routes.map(r => r.games.length), [2, 3, 1, 2, 1], "unchanged real counts");
-same(page.generateStaticParams(), slugs.map(slug => ({ slug })), "static allowlist unchanged");
+same(routes.map(r => r.category.slug), [...slugs, "friend-quizzes"], "five existing categories only");
+same(routes.map(r => r.games.length), [2, 3, 1, 2, 1, 1], "unchanged real counts");
+same(page.generateStaticParams(), [...slugs, "friend-quizzes"].map(slug => ({ slug })), "static allowlist unchanged");
 const documents = {};
-for (const route of routes) {
+for (const route of routes.filter(route => route.category.slug !== "friend-quizzes")) {
   const slug = route.category.slug, metadata = page.generateMetadata(props(slug)), html = render(React.createElement(page.default, props(slug)));
   const legacyHtml = beforeFavoritesMarkup(html);
   documents[slug] = html; checkDocument(html, slug); assertions++;

@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import { createHash } from "node:crypto";
 import { readFileSync } from "node:fs";
+import { beforeFriendQuizSource } from "./friend-quiz-compat.mjs";
 
 // Test-only inverse of the user's Discord banner scope and authorized release fixes.
 // Historical goldens stay unchanged;
@@ -8,6 +9,7 @@ import { readFileSync } from "node:fs";
 const changes = JSON.parse(readFileSync(new URL("./fixtures/discord-banner-local-delta.json", import.meta.url), "utf8"));
 const sha = text => createHash("sha256").update(text).digest("hex");
 export function beforeDiscordBannerSource(file, value) {
+  value = beforeFriendQuizSource(file, value);
   const change = changes.files[file];
   if (!change) return value;
   let source = value.toString().replace(/\r\n/g, "\n");

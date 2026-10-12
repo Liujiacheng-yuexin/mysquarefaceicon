@@ -60,7 +60,7 @@ assert.deepEqual(readFavorites(throwingStorage), []);
 assert.deepEqual(setFavorite("square-face", true, throwingStorage), { ok: false, isFavorite: false });
 
 const candidates = resolveFavoriteGames();
-assert.deepEqual(candidates.map((game) => game.id), ["square-face", "oval-face", "pixel-art-avatar"]);
+assert.deepEqual(candidates.map((game) => game.id), ["square-face", "oval-face", "pixel-art-avatar", "friend-block-test"]);
 assert.equal(candidates.find((game) => game.id === "pixel-art-avatar")?.pageType, "EXTERNAL_TOOL");
 assert.deepEqual(
   selectFavoriteGames(["missing", "pixel-art-avatar", "square-face", "pixel-art-avatar"], candidates)
@@ -117,7 +117,7 @@ assert.ok(pixelSource.indexOf("hero-primary-link") < pixelSource.indexOf("<Favor
 assert.match(pixelSource, /pageType=\{pixelArtAvatarGame\.pageType\}/);
 
 const privacySource = source("app/privacy-policy/page.tsx");
-assert.match(privacySource, /Last updated: September 7, 2026/);
+assert.match(privacySource, /Last updated: October 12, 2026/);
 assert.match(privacySource, /Favorite or Save tool/);
 assert.match(privacySource, /only stable game IDs/);
 assert.match(privacySource, /do not sync across devices/);

@@ -1,0 +1,31 @@
+{
+  "base": "http://127.0.0.1:3112",
+  "browser": "154.0.8037.98",
+  "simulated": true,
+  "records": [
+    {
+      "test": "full keyboard create flow and visible focus",
+      "passed": true
+    },
+    {
+      "test": "hash navigation and results from a link made before editing",
+      "passed": true
+    },
+    {
+      "test": "clear only quiz storage with explicit confirmation",
+      "passed": true
+    },
+    {
+      "test": "three damaged/unknown/truncated links recover to a new quiz",
+      "passed": true
+    },
+    {
+      "test": "blocked storage, cleaned markup/URL nickname and clipboard fallback remain usable",
+      "passed": true
+    },
+    {
+      "test": "fullscreen enter, interaction and exit in desktop Chromium",
+      "passed": true
+    }
+  ]
+}

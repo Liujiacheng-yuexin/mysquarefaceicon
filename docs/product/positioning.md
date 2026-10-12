@@ -1,5 +1,7 @@
 # STRAT-001 · MySquareFaceIcon 产品定位
 
+> 2026-10-12 单项例外（QUIZ-001）：用户明确回复“确认 QUIZ-001 方案，继续本地开发”。允许在 `/games/friend-block-test` 新增一个以项目头像为载体的朋友测验，作为旗舰工具的补充体验，并新增 noindex 的 Friend Quizzes 分类。仅该记录按确认方案进入索引白名单；这不开放通用小游戏库存，不改变 Square 旗舰、首页首屏、既有 URL 或既有索引状态。游戏数据本地处理，本页隔离第三方脚本。此确认是本地开发授权，不是提交、推送、部署、IndexNow 或成果验收。方案：`friend-block-test-proposal.md`；实际证据：`../quality/evidence/quiz-001/README.md`。
+
 > 方案确认：用户于 2026-08-31 明确回复“确认 STRAT-001 方案”<br>
 > 任务范围：产品、SEO 与交互边界治理<br>
 > 生产影响：本任务不修改页面 UI、URL、metadata、索引状态、播放器或游戏文件<br>

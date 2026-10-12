@@ -1,0 +1,251 @@
+{
+  "baseCommit": "1d275c678a1e15170a8e836b2c540ab3c68ea8f6",
+  "branch": "main",
+  "fingerprint": "2919f740f15afbcfd7ac72c3cc54a46c465f50aa8c561dcffe715a1e9cffcbe5",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "sha256": "4267516e1de5d935b2dd0d0eab0ba8d3de9ee31e283a74e1d77ed9bc2fee5f3c"
+    },
+    {
+      "path": "app/games/[slug]/page.tsx",
+      "sha256": "b629f72663a23d539df4d1d7a5a3e1bf9421766d9e68eb4b8bb20a31da3321c8"
+    },
+    {
+      "path": "app/globals.css",
+      "sha256": "f7862304e580c006e617a2a2c91143d46d30eb9261e08a761a55fea59f1668ce"
+    },
+    {
+      "path": "app/layout.tsx",
+      "sha256": "27d9a03446e9380178990b12b9dda5b0721c9d8fc811dd906bf18667ea09c22c"
+    },
+    {
+      "path": "app/privacy-policy/page.tsx",
+      "sha256": "1e3007324697cdaa417e5db4213893a07e49e0eac016153c8f978ac7bbf8e3ae"
+    },
+    {
+      "path": "app/sitemap.ts",
+      "sha256": "76f8008c841a972e50e19e62809894038525e8052b10089bc9d52d7e5a9b70d0"
+    },
+    {
+      "path": "app/terms-of-service/page.tsx",
+      "sha256": "b8b158c169c8532a4c5dba85e6187337ef9ce7b7a8b862143828fe66abe9820f"
+    },
+    {
+      "path": "components/DeferredThirdPartyScripts.tsx",
+      "sha256": "0543bf5e71faaa0a1495a8bbaca5d7d88d288fafe1a5373b0fcd5c15a7726737"
+    },
+    {
+      "path": "components/game-player/adapters/FriendQuizFrame.tsx",
+      "sha256": "db0d7be972b581529c808b7326fdc3752c375ea33b2cec2dccf807e8e307e493"
+    },
+    {
+      "path": "components/game-player/adapters/Html5Adapter.tsx",
+      "sha256": "4935efe6cb89b113497bcae28d0febade14bd563b741107a7285f722a42aedda"
+    },
+    {
+      "path": "components/game/FriendQuizStartButton.tsx",
+      "sha256": "c28a53d705cf39c7c8b11e464c117c902393e0358b5b5d2c18d2840bf145238a"
+    },
+    {
+      "path": "components/game/GameDetailTemplate.tsx",
+      "sha256": "7e85cf6fde5c76c07a7629bfc9d36b8dd752e79a9511c6125b9960a39f6f3a32"
+    },
+    {
+      "path": "components/game/GameLink.tsx",
+      "sha256": "b641c41220dda9788132a5d3100a537c922263f621cf155f2932fe0e27ee6054"
+    },
+    {
+      "path": "components/SiteHeader.tsx",
+      "sha256": "2c293f50b12d81c8e15d554014d7d2da4153738e618fda0fe3c9ef57964246a5"
+    },
+    {
+      "path": "data/game-asset-manifest.json",
+      "sha256": "f1c23d7ce49c59e711127ddbdd4e1d7e85b79c14e17a5ad9439676568b4629d4"
+    },
+    {
+      "path": "data/game-categories.ts",
+      "sha256": "239b5de8c7b86fedfd43c2b72eda58fe7c575a55fd9d7a0837e78d48b873523a"
+    },
+    {
+      "path": "data/game-license-registry.json",
+      "sha256": "876a79520b0a85ce687738fb20e719ad94aa0299c60e5536785d6f0dceac6a9f"
+    },
+    {
+      "path": "data/games/friend-block-test.ts",
+      "sha256": "ee60d6d794e2b42e6948d472b2937e9ab26ce15add468679232a9faa80cf31c1"
+    },
+    {
+      "path": "lib/games/catalog.ts",
+      "sha256": "a4ded79eef1b18ba4b68cf511a12c92e365680c265fd7746ebddfe346acaaff9"
+    },
+    {
+      "path": "lib/games/friend-quiz-policy.ts",
+      "sha256": "b7e7a111e73cc345695a20cd00cd3a9284909ca3e975374e5d40010195052d63"
+    },
+    {
+      "path": "lib/games/game-asset-schema.ts",
+      "sha256": "6d91a15972e138c0f9534b34cf35b0a7df4d857f0dca9e3aa0938f5f4d1a6904"
+    },
+    {
+      "path": "lib/seo/game-metadata.ts",
+      "sha256": "8b51dc126f33de051ecc578606bd744252f93130f8d985e93ab5897f53c627fd"
+    },
+    {
+      "path": "next.config.mjs",
+      "sha256": "7a96b7006ae589f993a704c553a15aed2aa9c9761cede55dc46c7dcbb8dac7de"
+    },
+    {
+      "path": "package.json",
+      "sha256": "b0d4faeae02ac506e5b3e9fc2ec4966b52516acaed0073acde41644b75f06272"
+    },
+    {
+      "path": "public/_headers",
+      "sha256": "0ac33c57a37ae76d8ae594e4a06ce1691937eb25950f0f23ccd86883e8cc850a"
+    },
+    {
+      "path": "public/games/friend-block-test/app.mjs",
+      "sha256": "f882f8d0bc29fbdd9cd77ad462fdc01dbf76d73d5c3315e0e301578c510690e6"
+    },
+    {
+      "path": "public/games/friend-block-test/core.mjs",
+      "sha256": "90dab7c05cf446ca3196de19d758b2a2936fb2e2b6f8f738cc316f23081fdb62"
+    },
+    {
+      "path": "public/games/friend-block-test/cover.webp",
+      "sha256": "da4741bd8e19dedb6d850b9978716289f79bf650e987e8da60da3a1453c97a60"
+    },
+    {
+      "path": "public/games/friend-block-test/index.html",
+      "sha256": "57fcaf31ad0841d4a96b4e0193926f895626317d44352309a32904b56cde7158"
+    },
+    {
+      "path": "public/games/friend-block-test/og.webp",
+      "sha256": "f9c242f3446c42d5005e55a4de7cc6f0716ee6c4d66e541769f0dd6d1a7fb855"
+    },
+    {
+      "path": "public/games/friend-block-test/style.css",
+      "sha256": "919111ea6bbff043cb864227d5bcd58e8d8ac47d24ca64e14346a56dbe559bbb"
+    },
+    {
+      "path": "public/games/friend-block-test/thumbnail.webp",
+      "sha256": "d807d2165f3834c43ec5e1c8c42748359e91e48744c5df189365b65e0fc6bb9a"
+    },
+    {
+      "path": "scripts/banner-worker-policy.mjs",
+      "sha256": "c977bed46692efdf0422c3713c8fc59f7c0f63d6ec1896e6e5c8f522548224b0"
+    },
+    {
+      "path": "scripts/check-category-remaining.mjs",
+      "sha256": "1ecf6ac37df4ae58b83e5a885cca5f24bb85cbd4aac9f2082ce4e47874263c27"
+    },
+    {
+      "path": "scripts/check-category-sample.mjs",
+      "sha256": "69f33a16a9c8faac4ea35e0fa975cc7e65ffcef913abea84e55b53c1c3b0e9a3"
+    },
+    {
+      "path": "scripts/check-discord-banner.mjs",
+      "sha256": "634be5646987d90d636404193749e99e8ec2008d9fac8babc4a7e1cec7d49dd8"
+    },
+    {
+      "path": "scripts/check-friend-quiz-integration.mjs",
+      "sha256": "529d5f1e7f862da6c209b61cd1f5e39ba2fbd05803afb27a32e257334cf44230"
+    },
+    {
+      "path": "scripts/check-friend-quiz.mjs",
+      "sha256": "a3b67837d398123939a737491b41193ac181d7294f5a3e9382c897c0f32de731"
+    },
+    {
+      "path": "scripts/check-games-index.mjs",
+      "sha256": "0bc6d818de7ebc318b1c353666ce7b8de11ec7d942010cca558112b3cb94656d"
+    },
+    {
+      "path": "scripts/check-oval-legacy-page.mjs",
+      "sha256": "9c480836f0d848989dbd5292e9e9f8bb92aeecefe48efd401ddc36706942e44e"
+    },
+    {
+      "path": "scripts/check-terms-rights.mjs",
+      "sha256": "addb06b24419dc7ad415b3e4895f77f9f704e2444aadd30ad959e0a4d18df730"
+    },
+    {
+      "path": "scripts/discord-banner-compat.mjs",
+      "sha256": "dd2918d45e4176bf95421484817bb79b638302a50e2c1a26bb91fe10a8a755a3"
+    },
+    {
+      "path": "scripts/fixtures/friend-quiz-approved-delta.json",
+      "sha256": "0cc72b412aadae22e95735dab3ba167279f278fa95846388c33f64d4c160bb51"
+    },
+    {
+      "path": "scripts/friend-quiz-compat.mjs",
+      "sha256": "73fbb9b4bf1c9ddb9fd25788e19c9b5b233ae35ec6532e915cc29adfe09e83ce"
+    },
+    {
+      "path": "scripts/generate-friend-quiz-assets.py",
+      "sha256": "5c9467d46c7fe38be8f514301e4ef009a335cfe0892a68ff28cf403826e7e419"
+    },
+    {
+      "path": "scripts/qa-friend-quiz-edge-cases.mjs",
+      "sha256": "1b0782eb9eedcf1fd242bc67801206f0cc5012d846041528727415a39760df9a"
+    },
+    {
+      "path": "scripts/qa-friend-quiz-http.mjs",
+      "sha256": "51d4db50c90605047894bba09e34acd65ba5ef698b5b9c500c8d4a16f951c566"
+    },
+    {
+      "path": "scripts/qa-friend-quiz.mjs",
+      "sha256": "e2e9db837625d2eabd2c6250adfac778ecd55b32c4152e7dafddacb843526a06"
+    },
+    {
+      "path": "scripts/update-friend-quiz-manifest.mjs",
+      "sha256": "931549ae448741dbc7460d0cb939c5e3706f98036ffd49b20e7b6f9c57a20d50"
+    },
+    {
+      "path": "scripts/validate-favorites.tsx",
+      "sha256": "9e2c7bd272ecda431564c5509344d24d686873e68bbd4bc36173244c6f6a2808"
+    },
+    {
+      "path": "scripts/validate-game-assets.ts",
+      "sha256": "e03bc1dacd3c2cee920cdcb859f23126fc2ba8acc6147d9959fb77b208f4c2b3"
+    },
+    {
+      "path": "scripts/validate-game-data.ts",
+      "sha256": "c160a54d5e5105df878dc6484df1304e2c81717d1f6b0015eb8fade9556587ff"
+    },
+    {
+      "path": "scripts/validate-game-metadata.ts",
+      "sha256": "b10e8725dbfde65894a93c28d08492647026b93ed57504defcc5b08da9f753f3"
+    },
+    {
+      "path": "scripts/validate-game-routes.ts",
+      "sha256": "93e2444ace7e232774cdc031ed1cb3231a8d71ce4a1ee258545db665f1f83be4"
+    },
+    {
+      "path": "scripts/validate-game-template.tsx",
+      "sha256": "21ca001ab119808bb9d8c914517ee8dee56a10e54be147894e2f376d859a3a83"
+    },
+    {
+      "path": "scripts/validate-home-discovery.tsx",
+      "sha256": "308f3cbecd862e0e287d0f4353268c8bb6044c5b45bbf332bbbecf505e13fdb8"
+    },
+    {
+      "path": "scripts/validate-home-information-architecture.tsx",
+      "sha256": "2b62de51d58c31f53dfbf824ae1a88c80e1edfb7416c3c4173f7a93c704289b7"
+    },
+    {
+      "path": "scripts/validate-recently-played.tsx",
+      "sha256": "b492875f3126cbc7eee4356064724ccbdd111142c719ca49afbf6281b4bd63f3"
+    },
+    {
+      "path": "scripts/validate-related-games.ts",
+      "sha256": "45468eeff72590d10dc986ac54645cc6866d08505d57c001920babe281408a77"
+    },
+    {
+      "path": "seo-check.config.json",
+      "sha256": "c8eec5bcf760ee2627c4740a0a986b4304ba7d1632ce974b750b40526e5741f8"
+    },
+    {
+      "path": "wrangler.toml",
+      "sha256": "9640bf41de1e9c4445e684197b1c4f9a7f3da3f6f4fdfb67ea22fe43e4bd9048"
+    }
+  ]
+}

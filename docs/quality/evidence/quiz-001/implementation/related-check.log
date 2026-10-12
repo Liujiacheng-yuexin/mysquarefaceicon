@@ -1,0 +1,35 @@
+
+> mysquarefaceicon@0.1.0 related:check
+> node scripts/run-related-games-check.mjs
+
+node:assert:95
+  throw new AssertionError(obj);
+  ^
+
+AssertionError [ERR_ASSERTION]: real Square order
++ actual - expected
+
+  [
+    'oval-face',
+    'pixel-art-avatar',
++   'friend-block-test'
+  ]
+
+    at same (D:\LYXGIT\mysquarefaceicon\.related-games-check\scripts\validate-related-games.js:22:22)
+    at Object.<anonymous> (D:\LYXGIT\mysquarefaceicon\.related-games-check\scripts\validate-related-games.js:67:1)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: [ 'oval-face', 'pixel-art-avatar', 'friend-block-test' ],
+  expected: [ 'oval-face', 'pixel-art-avatar' ],
+  operator: 'deepStrictEqual'
+}
+
+Node.js v22.16.0

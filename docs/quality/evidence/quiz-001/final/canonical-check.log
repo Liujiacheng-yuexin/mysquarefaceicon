@@ -1,0 +1,8 @@
+
+> mysquarefaceicon@0.1.0 canonical:check
+> node scripts/run-canonical-host-check.mjs
+
+OP-11 canonical-host validation passed
+- HTTP apex, HTTP www, and HTTPS www normalize to the HTTPS apex with status 308
+- paths, queries, and method-preserving redirect semantics are retained
+- HTTPS apex, localhost, preview, and unrelated hosts pass through without redirects

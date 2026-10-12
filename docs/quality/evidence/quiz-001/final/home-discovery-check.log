@@ -1,0 +1,10 @@
+
+> mysquarefaceicon@0.1.0 home-discovery:check
+> node scripts/run-home-discovery-check.mjs
+
+HOME-DISC-001 validation passed
+- Related uses the shared Category + Tags selector and ignores legacy relatedGameIds order
+- New requires a valid VERIFIED publication timestamp and is absent for current UNKNOWN data
+- cards use real Game Data thumbnails; Pixel remains an onsite External Tool details link
+- six non-empty categories render with truthful counts; all-empty discovery renders nothing
+- desktop media cards and the compact two-column mobile category layout are present

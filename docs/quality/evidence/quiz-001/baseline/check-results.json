@@ -1,0 +1,242 @@
+[
+  {
+    "command": "npm run banner:check",
+    "exitCode": 0,
+    "signal": null,
+    "error": null,
+    "durationMs": 1252,
+    "log": "baseline/banner-check.log"
+  },
+  {
+    "command": "npm run canonical:check",
+    "exitCode": 0,
+    "signal": null,
+    "error": null,
+    "durationMs": 2915,
+    "log": "baseline/canonical-check.log"
+  },
+  {
+    "command": "npm run terms:check",
+    "exitCode": 0,
+    "signal": null,
+    "error": null,
+    "durationMs": 352,
+    "log": "baseline/terms-check.log"
+  },
+  {
+    "command": "npm run about:check",
+    "exitCode": 0,
+    "signal": null,
+    "error": null,
+    "durationMs": 384,
+    "log": "baseline/about-check.log"
+  },
+  {
+    "command": "npm run editorial:check",
+    "exitCode": 0,
+    "signal": null,
+    "error": null,
+    "durationMs": 358,
+    "log": "baseline/editorial-check.log"
+  },
+  {
+    "command": "npm run gallery:check",
+    "exitCode": 0,
+    "signal": null,
+    "error": null,
+    "durationMs": 2349,
+    "log": "baseline/gallery-check.log"
+  },
+  {
+    "command": "npm run locale:check",
+    "exitCode": 0,
+    "signal": null,
+    "error": null,
+    "durationMs": 1934,
+    "log": "baseline/locale-check.log"
+  },
+  {
+    "command": "npm run square-home:check",
+    "exitCode": 0,
+    "signal": null,
+    "error": null,
+    "durationMs": 5729,
+    "log": "baseline/square-home-check.log"
+  },
+  {
+    "command": "npm run oval-page:check",
+    "exitCode": 1,
+    "signal": null,
+    "error": null,
+    "durationMs": 706,
+    "log": "baseline/oval-page-check.log"
+  },
+  {
+    "command": "npm run pixel-page:check",
+    "exitCode": 0,
+    "signal": null,
+    "error": null,
+    "durationMs": 2927,
+    "log": "baseline/pixel-page-check.log"
+  },
+  {
+    "command": "npm run games:check",
+    "exitCode": 0,
+    "signal": null,
+    "error": null,
+    "durationMs": 2015,
+    "log": "baseline/games-check.log"
+  },
+  {
+    "command": "npm run player:check",
+    "exitCode": 0,
+    "signal": null,
+    "error": null,
+    "durationMs": 1917,
+    "log": "baseline/player-check.log"
+  },
+  {
+    "command": "npm run routes:check",
+    "exitCode": 0,
+    "signal": null,
+    "error": null,
+    "durationMs": 4018,
+    "log": "baseline/routes-check.log"
+  },
+  {
+    "command": "npm run components:check",
+    "exitCode": 0,
+    "signal": null,
+    "error": null,
+    "durationMs": 3147,
+    "log": "baseline/components-check.log"
+  },
+  {
+    "command": "npm run metadata:check",
+    "exitCode": 0,
+    "signal": null,
+    "error": null,
+    "durationMs": 1416,
+    "log": "baseline/metadata-check.log"
+  },
+  {
+    "command": "npm run home:check",
+    "exitCode": 0,
+    "signal": null,
+    "error": null,
+    "durationMs": 2622,
+    "log": "baseline/home-check.log"
+  },
+  {
+    "command": "npm run home-hero:check",
+    "exitCode": 0,
+    "signal": null,
+    "error": null,
+    "durationMs": 2436,
+    "log": "baseline/home-hero-check.log"
+  },
+  {
+    "command": "npm run home-discovery:check",
+    "exitCode": 0,
+    "signal": null,
+    "error": null,
+    "durationMs": 2178,
+    "log": "baseline/home-discovery-check.log"
+  },
+  {
+    "command": "npm run home-gallery:check",
+    "exitCode": 0,
+    "signal": null,
+    "error": null,
+    "durationMs": 5192,
+    "log": "baseline/home-gallery-check.log"
+  },
+  {
+    "command": "npm run perf-home:check",
+    "exitCode": 0,
+    "signal": null,
+    "error": null,
+    "durationMs": 2410,
+    "log": "baseline/perf-home-check.log"
+  },
+  {
+    "command": "npm run game-template:check",
+    "exitCode": 0,
+    "signal": null,
+    "error": null,
+    "durationMs": 2976,
+    "log": "baseline/game-template-check.log"
+  },
+  {
+    "command": "npm run games-index:check",
+    "exitCode": 0,
+    "signal": null,
+    "error": null,
+    "durationMs": 1700,
+    "log": "baseline/games-index-check.log"
+  },
+  {
+    "command": "npm run category-sample:check",
+    "exitCode": 0,
+    "signal": null,
+    "error": null,
+    "durationMs": 2997,
+    "log": "baseline/category-sample-check.log"
+  },
+  {
+    "command": "npm run category-remaining:check",
+    "exitCode": 0,
+    "signal": null,
+    "error": null,
+    "durationMs": 2020,
+    "log": "baseline/category-remaining-check.log"
+  },
+  {
+    "command": "npm run related:check",
+    "exitCode": 0,
+    "signal": null,
+    "error": null,
+    "durationMs": 2600,
+    "log": "baseline/related-check.log"
+  },
+  {
+    "command": "npm run recent:check",
+    "exitCode": 0,
+    "signal": null,
+    "error": null,
+    "durationMs": 2556,
+    "log": "baseline/recent-check.log"
+  },
+  {
+    "command": "npm run favorites:check",
+    "exitCode": 0,
+    "signal": null,
+    "error": null,
+    "durationMs": 2864,
+    "log": "baseline/favorites-check.log"
+  },
+  {
+    "command": "npm run assets:check",
+    "exitCode": 0,
+    "signal": null,
+    "error": null,
+    "durationMs": 2282,
+    "log": "baseline/assets-check.log"
+  },
+  {
+    "command": "npm run images:check",
+    "exitCode": 0,
+    "signal": null,
+    "error": null,
+    "durationMs": 2239,
+    "log": "baseline/images-check.log"
+  },
+  {
+    "command": "npm run ruffle:check",
+    "exitCode": 0,
+    "signal": null,
+    "error": null,
+    "durationMs": 366,
+    "log": "baseline/ruffle-check.log"
+  }
+]

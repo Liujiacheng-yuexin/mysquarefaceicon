@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-12",
+  "base": "http://127.0.0.1:3113",
+  "environment": "Desktop Chrome with isMobile and hasTouch; not a physical phone",
+  "viewport": {
+    "width": 390,
+    "height": 844,
+    "deviceScaleFactor": 2
+  },
+  "create": true,
+  "answer": true,
+  "returnedResult": true,
+  "mobilePlayPreservesHash": true,
+  "answerTargetsAtLeast44px": true,
+  "score": 50,
+  "externalRequests": 0,
+  "pageErrors": []
+}

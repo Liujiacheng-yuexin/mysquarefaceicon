@@ -1,13 +1,16 @@
 import { ChevronDown, Gamepad2, Menu } from "lucide-react";
+import type { ReactNode } from "react";
 
 type SiteHeaderProps = {
   readonly mobileStartHref?: string;
   readonly mobileStartLabel?: string;
+  readonly mobileStartControl?: ReactNode;
 };
 
 export default function SiteHeader({
   mobileStartHref = "/#maker",
-  mobileStartLabel = "Start"
+  mobileStartLabel = "Start",
+  mobileStartControl
 }: SiteHeaderProps = {}) {
   return (
     <header className="site-nav">
@@ -15,7 +18,7 @@ export default function SiteHeader({
         <span className="brand-mark" aria-hidden="true" />
         <span>Square Face Generator</span>
       </a>
-      <a className="mobile-start-link" href={mobileStartHref}>{mobileStartLabel}</a>
+      {mobileStartControl ?? <a className="mobile-start-link" href={mobileStartHref}>{mobileStartLabel}</a>}
       <nav className="nav-links" aria-label="Primary navigation">
         <details className="nav-dropdown">
           <summary>

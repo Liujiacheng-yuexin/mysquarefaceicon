@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import type { GameRecord } from "../games/game-schema";
 import { getGameOpenGraphImage } from "../games/game-images";
+import { isIndexAllowedNewGame } from "../games/friend-quiz-policy";
 
 const SITE_NAME = "My Square Face Icon";
 const PRODUCTION_HOST = "mysquarefaceicon.com";
@@ -133,7 +134,8 @@ export function buildGameMetadata(game: GameRecord, options: GameMetadataOptions
 
   const openGraphImage = getGameOpenGraphImage(game);
 
-  const noIndex = options.forceNoIndex === true || game.route.indexStatus === "NOINDEX";
+  const noIndex = options.forceNoIndex === true || game.route.indexStatus === "NOINDEX"
+    || (!game.route.existingPublishedRoute && !isIndexAllowedNewGame(game));
   const follow = options.follow ?? true;
 
   return {

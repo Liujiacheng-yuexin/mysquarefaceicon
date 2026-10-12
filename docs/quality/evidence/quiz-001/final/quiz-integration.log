@@ -1,0 +1,4 @@
+PASS actual fourth record, directory grouping, sixth category and noindex/ad boundaries
+PASS initial GA exclusion, delayed analytics/ads exclusion and full-document transition guard
+PASS Worker streaming/no-transform and static asset privacy headers
+PASS 35 exact deltas, twice as many rejected unrelated mutations, existing rights preserved and local-data disclosures

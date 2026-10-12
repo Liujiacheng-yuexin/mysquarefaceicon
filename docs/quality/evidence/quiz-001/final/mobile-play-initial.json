@@ -1,0 +1,7 @@
+{
+  "beforePreservedQuiz": true,
+  "afterHash": "#game-player",
+  "heading": "Who knows your little quirks?",
+  "expected": "Jade's friend quiz",
+  "passed": false
+}

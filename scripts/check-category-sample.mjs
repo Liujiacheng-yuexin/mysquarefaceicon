@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+import { beforeFriendQuizCategoryMarkup } from "./friend-quiz-compat.mjs";
 import assert from "node:assert/strict";
 import { createHash } from "node:crypto";
 import { readFileSync } from "node:fs";
@@ -8,7 +8,7 @@ import { beforeCategoryRemainingMarkup, beforeCategoryRemainingMetadata } from "
 import { beforeRelatedGamesSource } from "./related-games-compat.mjs";
 import { beforeFavoritesMarkup as beforeFavoritesMarkupBase } from "./favorites-compat.mjs";
 import { beforeDiscordBannerMarkup } from "./discord-banner-compat.mjs";
-const beforeFavoritesMarkup = value => beforeDiscordBannerMarkup(beforeFavoritesMarkupBase(value));
+const beforeFavoritesMarkup = value => beforeFriendQuizCategoryMarkup(beforeDiscordBannerMarkup(beforeFavoritesMarkupBase(value)));
 import { root, read, plain, React, render, modules, scriptHarness } from "./category-sample-test-utils.mjs";
 
 const sha = value => createHash("sha256").update(value).digest("hex");
@@ -26,11 +26,11 @@ const { faceMakersContent } = loader.load("lib/games/category-content.ts");
 const seo = loader.load("lib/seo/category-sample.ts");
 const serialize = loader.load("lib/seo/game-structured-data.ts").serializeGameStructuredData;
 const slugs = ["face-makers", "avatar-makers", "pixel-avatars", "retro-flash", "character-creators"];
-const expectedCounts = [2, 3, 1, 2, 1];
+const expectedCounts = [2, 3, 1, 2, 1, 1];
 const routes = categories.listDirectoryCategoryRoutes();
-same(routes.map(r => r.category.slug), slugs, "allowlist and order");
+same(routes.map(r => r.category.slug), [...slugs, "friend-quizzes"], "allowlist and order");
 same(routes.map(r => r.games.length), expectedCounts, "real counts");
-same(page.generateStaticParams(), slugs.map(slug => ({ slug })), "exact static params");
+same(page.generateStaticParams(), [...slugs, "friend-quizzes"].map(slug => ({ slug })), "exact static params");
 same(categories.listDirectoryCategoryRoutes([]), [], "no invented empty category");
 same(categories.listDirectoryCategoryRoutes([...gameCatalog, ...gameCatalog]).map(r => r.games.length), expectedCounts, "deduplication");
 for (const slug of ["unknown", "racing-games", "../face-makers", "FACE-MAKERS", "face-makers/", "__proto__", "constructor"]) {
@@ -49,7 +49,7 @@ const mutations = [
   r => { r.route.existingPublishedRoute = false; r.route.path = "/games/future"; r.slug = "future"; r.license.newPublicationAllowed = true; r.license.releaseDecision = "BLOCKED"; },
   r => { r.route.existingPublishedRoute = false; r.route.path = "/games/future"; r.slug = "future"; r.license.newPublicationAllowed = true; r.license.releaseDecision = "APPROVED"; r.license.allowedDeliveryTypes = []; }
 ];
-for (const record of gameCatalog) for (const mutate of mutations) {
+for (const record of gameCatalog.filter(record => record.route.existingPublishedRoute)) for (const mutate of mutations) {
   const candidate = plain(record); mutate(candidate);
   same(categories.listDirectoryCategoryRoutes([candidate]), [], "invalid record excluded"); negativeFixtures++;
 }

@@ -1,0 +1,46 @@
+
+> mysquarefaceicon@0.1.0 category-sample:check
+> node scripts/check-category-sample.mjs
+
+node:internal/modules/run_main:123
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: allowlist and order
++ actual - expected
+
+  [
+    'face-makers',
+    'avatar-makers',
+    'pixel-avatars',
+    'retro-flash',
+    'character-creators',
++   'friend-quizzes'
+  ]
+
+    at same (file:///D:/LYXGIT/mysquarefaceicon/scripts/check-category-sample.mjs:19:39)
+    at file:///D:/LYXGIT/mysquarefaceicon/scripts/check-category-sample.mjs:31:1
+    at ModuleJob.run (node:internal/modules/esm/module_job:274:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5) {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: [
+    'face-makers',
+    'avatar-makers',
+    'pixel-avatars',
+    'retro-flash',
+    'character-creators',
+    'friend-quizzes'
+  ],
+  expected: [
+    'face-makers',
+    'avatar-makers',
+    'pixel-avatars',
+    'retro-flash',
+    'character-creators'
+  ],
+  operator: 'deepStrictEqual'
+}
+
+Node.js v22.16.0

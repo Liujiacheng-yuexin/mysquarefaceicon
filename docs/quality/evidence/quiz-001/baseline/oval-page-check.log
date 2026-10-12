@@ -1,0 +1,10 @@
+
+> mysquarefaceicon@0.1.0 oval-page:check
+> node scripts/check-oval-legacy-page.mjs
+
+MIG-OVAL-001 check failed: components/HomePage.tsx changed outside its confirmed migration boundary
++ actual - expected
+
++ 'fd9f94372bd2cbc98ddcf88b4364183d860ad24dd5dbb5551790fca63e8a8c9c'
+- '5ef46b20b057f491dbcd16051db5dac33a5b1dd1b24f184d0391e3ba43b4fe2f'
+

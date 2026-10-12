@@ -1,0 +1,9 @@
+
+> mysquarefaceicon@0.1.0 assets:check
+> node scripts/run-game-asset-check.mjs
+
+ASSET-001 validation passed
+- 23 Game Data asset references validated
+- 1739247 unique local bytes (1754787 referenced bytes including shared assets)
+- 20 fail-closed negative fixtures rejected
+- no R2 assets declared; Square/Oval SWFs remain blocked, Ruffle excluded, Pixel direct-link-only
