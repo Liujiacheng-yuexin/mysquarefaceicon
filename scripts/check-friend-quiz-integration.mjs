@@ -80,6 +80,6 @@ const original=JSON.parse(beforeFriendQuizSource('data/game-license-registry.jso
 assert.deepEqual(registry.records.filter(r=>r.id!=='friend-block-test-original'),original.records);
 assert.equal(registry.records.find(r=>r.id==='friend-block-test-original').releaseDecision.status,'APPROVED');
 for(const path of ['app/privacy-policy/page.tsx','app/terms-of-service/page.tsx']){
-  const text=readFileSync(path,'utf8');assert.match(text,/Friend Block Test/);assert.match(text,/Clear quiz records/);assert.match(text,path.includes('privacy-policy')?/October 13, 2026/:/October 12, 2026/);
+  const text=readFileSync(path,'utf8');assert.match(text,/Friend Block Test/);assert.match(text,/Clear quiz records/);assert.match(text,path.includes('privacy-policy')?/October 17, 2026/:/October 12, 2026/);
 }
 console.log(`PASS ${Object.keys(deltas.files).length} exact deltas, twice as many rejected unrelated mutations, existing rights preserved and local-data disclosures`);

@@ -444,8 +444,11 @@ export default function HomePage({ locale }: HomePageProps) {
           <a href="/blog">Blog</a>
           <a href="/about-us">About</a>
           <a href="/contact">Contact</a>
+          <a href="/editorial-policy">Editorial Policy</a>
+          <a href="/privacy-policy">Privacy Policy</a>
+          <a href="/terms-of-service">Terms of Service</a>
         </nav>
-        <p className="home-footer-copyright">&copy; 2025 mysquarefaceicon.com. All rights reserved.</p>
+        <p className="home-footer-copyright">&copy; 2026 mysquarefaceicon.com. All rights reserved.</p>
         <div className="home-footer-social" aria-label="Social links">
           <a href="/contact" aria-label="Contact My Square Face Icon">●</a>
           <a href="/blog" aria-label="Read the blog">●</a>

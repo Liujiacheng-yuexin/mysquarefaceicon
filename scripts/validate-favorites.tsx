@@ -117,7 +117,7 @@ assert.ok(pixelSource.indexOf("hero-primary-link") < pixelSource.indexOf("<Favor
 assert.match(pixelSource, /pageType=\{pixelArtAvatarGame\.pageType\}/);
 
 const privacySource = source("app/privacy-policy/page.tsx");
-assert.match(privacySource, /Last updated: October 13, 2026/);
+assert.match(privacySource, /Last updated: October 17, 2026/);
 assert.match(privacySource, /Favorite or Save tool/);
 assert.match(privacySource, /only stable game IDs/);
 assert.match(privacySource, /do not sync across devices/);

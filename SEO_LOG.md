@@ -1,5 +1,13 @@
 # SEO_LOG.md
 
+## 2026-10-17 · ADSENSE-PRIV-001 隐私政策可发现性与广告披露，本地实现，待验收
+
+起因：seo.web.cafe/adsense 预检报 ADS-PRIV-01 Blocker / ADS-PRIV-02 High / ADS-UX-05 Medium。实测线上 22 个 sitemap URL：首页独立页脚（`components/HomePage.tsx`）无 Privacy/Terms 链接，`/privacy-policy` 与 `/terms-of-service` 自身无页头页脚，隐私页缺 Google 第三方广告 Cookie 标准披露。
+
+改动：首页页脚加 Editorial Policy / Privacy Policy / Terms of Service 链接，版权年 2026（所有 locale 首页共用）；`/privacy-policy` 加 SiteHeader/SiteFooter，新增 AdSense 披露、退出链接、Analytics、欧洲同意、托管日志、位置、儿童、用户请求、政策变更段落，更新日期 October 17, 2026，description 更新；`/contact` 删除"早期邮箱未启用"占位句。无 URL、canonical、index、H1、搜索意图变化。用户批准以本次隐私页为新基线，已更新 friend-quiz-fixes-delta.json 与三处日期断言。Terms 页受 TERMS-001 冻结，未改。
+
+验证（LF worktree，与 CI 一致）：干净 main 与本次改动均 30/30 个 `*:check` 通过。用户依次批准 privacy、首页页脚、/contact 为新基线（privacy 与 contact 记录于 friend-quiz-fixes-delta.json 最外层逆向层，首页记录于 discord-banner-local-delta.json；未改动 MIG-PIXEL-001/category 冻结哈希常量）。本机 lint、build 通过；seo:check 必须级 0、应该级 13（新增 /contact 密度 2.61%、/privacy-policy 密度 0.27% 提醒，非门禁）；内置浏览器 375px 与桌面检查首页页脚、隐私页、联系页通过。cf:build 与生产未验证。未提交、未部署。方案与复检清单见 `docs/quality/adsense-remediation-2026-10-17.md`。权威看板路径本机不可访问，看板证据待补。
+
 ## 2026-10-10 · Discord Banner Size 授权发布批次
 
 生产补查：`caf694a` 的自动构建发布成功后，真实浏览器发现 Cloudflare 自动注入的统计脚本，Node HTML 抓取未检出。已在现有 Worker 构建补丁增加本页专用 `no-transform`，不改变 Title/H1/canonical/index，也不改变其它页面缓存。新增策略测试使 banner 检查增至 30 组 / 974 断言；以最终生产浏览器复测确认隔离，不将首个 CI 成功写成隐私验收通过。生产编码别名为 404/noindex，正常及查询入口仍应为 200。此前生产 HTTP apex 请求失败另留原始记录，后续独立请求已确认 308；最终检查见权威看板与发布目录。

@@ -182,7 +182,7 @@ assert.ok(gamesSource.indexOf("<RecentlyPlayed") < gamesSource.indexOf("on-site-
 assert.match(gamesSource, /nextHeadingSelector="#on-site-games-heading"/);
 
 const privacySource = source("app/privacy-policy/page.tsx");
-assert.match(privacySource, /Last updated: October 13, 2026/);
+assert.match(privacySource, /Last updated: October 17, 2026/);
 assert.match(privacySource, /stable ID and start time of recently played/);
 assert.match(privacySource, /does not sync across devices/);
 
