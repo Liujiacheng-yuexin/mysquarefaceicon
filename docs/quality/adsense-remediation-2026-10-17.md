@@ -162,6 +162,10 @@ About / Contact / Editorial Policy / Privacy / Terms 已存在。剩余：
 
 过程事故（已修复）：搭建临时 worktree 时误把 `core.autocrlf=false` 写进本仓库 `.git/config`（worktree 共享配置），期间 stash 往返使 9 个改动文件变为双 CR（CR CR LF）行尾。已删除该本地配置（恢复为系统级 true），并把 9 个文件恢复为单 CRLF；`git hash-object` 确认提交时将存为纯 LF，diff 内容不变（228+/114−）。
 
+## 4.6 发布记录
+
+发布（用户 2026-10-17 验收通过并授权"在 main 提交、跑 cf:build 并部署，部署后跑 seo:prod"）：提交 `d040b2b` 已推送 origin/main；`cf:build` 通过；`opennextjs-cloudflare deploy` 发布 Worker version `80047fcd-7a73-4e8c-a1a2-20cbf7405012`（部署前 `c8600d60-1a7e-409a-a114-49ad7c6d3509`）。`seo:prod` 全部通过（17 页抽查、sitemap 22 URL、OP-11 一跳 308、无 noindex）。线上核对：21/22 个 sitemap URL 含 privacy 链接（仅 `/terms-of-service` 缺页头页脚，受 TERMS-001 冻结，待用户决定）；首页页脚含 Editorial/Privacy/Terms 与 © 2026；隐私页含 October 17、Google 标准披露句与退出链接；/contact 已无 early launch 句。回滚：`npx wrangler rollback c8600d60-1a7e-409a-a114-49ad7c6d3509`。
+
 ## 5. 整改后复检清单
 
 部署前（本地）：
@@ -171,15 +175,15 @@ About / Contact / Editorial Policy / Privacy / Terms 已存在。剩余：
 - [x] （本地）`/contact` 不再出现 "early launch" 句子
 - [x] privacy 页门禁基线已获批准并更新（ADSENSE-PRIV-001）
 - [x] 30 个 `*:check` 在 LF worktree 全部通过
-- [x] `npm run lint`、`npm run build` 通过（`cf:build` 待做）
+- [x] `npm run lint`、`npm run build`、`npm run cf:build` 通过
 - [x] `seo:check` 必须级 0（应该级 13，含 /contact 密度复核）
 - [x] 375px 下首页页脚换行正常、无横向滚动
 
 部署后（线上）：
 
-- [ ] `curl -s https://mysquarefaceicon.com/ | grep -c 'href="/privacy-policy"'` ≥ 1
-- [ ] 全部 22 个 sitemap URL 均含 privacy-policy 链接（terms 页待你确认后补）
-- [ ] `npm run seo:prod` 通过
+- [x] 线上首页含 privacy-policy 链接（d040b2b / Worker 80047fcd）
+- [ ] 全部 22 个 sitemap URL 均含 privacy-policy 链接（现 21/22，仅 terms 页待你确认后补）
+- [x] `npm run seo:prod` 通过（2026-10-17）
 - [x] AdSense 后台：GDPR 消息已发布（R3，2026-05-21 已存在）
 - [ ] 获批后：AdSense 网页排除加入 /admin/*、/contact、法律页（R2；未获批前后台无此入口）
 - [ ] 对 R1（第三方 SWF 页是否出广告）已做出决定并落地
